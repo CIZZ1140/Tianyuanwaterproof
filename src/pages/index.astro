@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+const products = [
+  {
+    title: "SBS/APP Modified Bitumen Membrane",
+    desc: "Torch-applied high-performance waterproofing for concrete roofs and basements.",
+    image: "https://sc04.alicdn.com/kf/H8d7ba0b4752c4c4ea051b0098d1e432cZ.jpg",
+    slug: "sbs-bitumen-membrane"
+  },
+  {
+    title: "Self-Adhesive Bitumen Membrane",
+    desc: "Cold-applied innovation for rapid installation and fire-sensitive projects.",
+    image: "https://sc04.alicdn.com/kf/H3cb6c885126c48ab92a056637d9f1cd2x.jpg",
+    slug: "self-adhesive-bitumen-membrane"
+  }
+];
+---
+
+<Layout title="Tianyuan Waterproof - Global Leader in Waterproofing Solutions">
+	<main>
+		<!-- Hero Section -->
+		<section class="relative h-[80vh] flex items-center justify-center overflow-hidden bg-slate-900">
+			<div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://sc04.alicdn.com/kf/Hfe087a70867f43a8bd7c11db0b7f9e20T.png_960x960q80.jpg');"></div>
+			<div class="relative z-10 text-center px-4 max-w-4xl">
+				<h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
+					Engineering <span class="text-blue-400">Future-Proof</span> Protection
+				</h1>
+				<p class="text-xl text-slate-200 mb-10 leading-relaxed">
+					20+ years of excellence in manufacturing premium SBS, PVC, and TPO waterproofing systems for global construction projects.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<button class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all">Explore Products</button>
+					<button class="bg-white/10 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all">View Case Studies</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Featured Products -->
+		<section class="py-24 max-w-7xl mx-auto px-4">
+			<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+				<div>
+					<h2 class="text-blue-600 font-bold tracking-widest uppercase text-sm mb-3">Featured Solutions</h2>
+					<p class="text-4xl font-bold text-slate-900">Core Waterproofing Membranes</p>
+				</div>
+				<a href="#" class="text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all">View All Products <span>→</span></a>
+			</div>
+
+			<div class="grid md:grid-cols-2 gap-10">
+				{products.map(p => (
+					<div class="group cursor-pointer">
+						<div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-slate-100">
+							<img src={p.image} alt={p.title} class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+							<div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+						</div>
+						<h3 class="text-2xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">{p.title}</h3>
+						<p class="text-slate-600 mb-6 leading-relaxed">{p.desc}</p>
+						<span class="inline-flex items-center gap-2 font-bold text-blue-600">Learn More <span class="text-xl leading-none">›</span></span>
+					</div>
+				))}
+			</div>
+		</section>
+
+    <!-- Why Us -->
+    <section class="bg-slate-100 py-24">
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12 text-center">
+        <div>
+          <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">✓</div>
+          <h4 class="text-xl font-bold mb-3">Certified Quality</h4>
+          <p class="text-slate-600">Full compliance with ISO 9001, ISO 14001, and international CE standards.</p>
+        </div>
+        <div>
+          <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">🌍</div>
+          <h4 class="text-xl font-bold mb-3">Global Export</h4>
+          <p class="text-slate-600">Trusted by major contractors across Southeast Asia, the Middle East, and Africa.</p>
+        </div>
+        <div>
+          <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">⚙</div>
+          <h4 class="text-xl font-bold mb-3">Technical Support</h4>
+          <p class="text-slate-600">From design phase to installation, our engineers provide complete project solutions.</p>
+        </div>
+      </div>
+    </section>
+	</main>
+</Layout>
