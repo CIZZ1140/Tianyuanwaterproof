@@ -1,7 +1,7 @@
 ---
 title: "Classic 3-Tab Asphalt Shingles"
 description: "High-quality, cost-effective roofing shingles for residential and commercial projects. Lightweight, durable, and weather-resistant."
-category: "Asphalt Shingles"
+category: "asphalt-shingles"
 image: "https://sc04.alicdn.com/kf/H782168e7f74bb45ed86de507eaeca5e17t.png"
 specs:
   - label: "Type"

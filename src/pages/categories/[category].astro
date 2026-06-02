@@ -1,0 +1,193 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const categories = [
+    {
+      id: "asphalt-membranes",
+      name: "Asphalt Membranes",
+      desc: "Premium modified bitumen and self-adhesive waterproofing membranes for commercial, residential, and civil engineering structures.",
+      image: "https://sc04.alicdn.com/kf/Hfe087a70867f43a8bd7c11db0b7f9e20T.png_960x960q80.jpg",
+      capabilities: [
+        "SBS/APP Modified Bitumen (3mm/4mm/5mm)",
+        "Self-Adhesive Waterproof Roll",
+        "Saturated Organic Asphalt Roofing Felt (15lb/30lb)",
+        "High Temperature Resistance & Low Temp Flexibility",
+        "Direct Factory Container Pricing & Custom OEM Packaging"
+      ]
+    },
+    {
+      id: "asphalt-shingles",
+      name: "Asphalt Shingles",
+      desc: "Lightweight, flexible, and extremely durable roofing shingles featuring classic 3-tab, multi-layer laminated, and hexagonal artistic designs.",
+      image: "https://sc04.alicdn.com/kf/H7e087a70867f43a8bd7c11db0b7f9e20T.jpg",
+      capabilities: [
+        "3-Tab Classic Shingles",
+        "Architectural Laminated Composite Shingles",
+        "Hexagonal & Fish-Scale Artistic Shingles",
+        "Colored Natural Sintered Mineral Granules Surface",
+        "Wind-resistant & Weather-proof Architectural Roofing"
+      ]
+    },
+    {
+      id: "waterproof-tapes",
+      name: "Waterproof Tapes",
+      desc: "High-adhesion butyl sealant tapes, aluminum flashing tapes, and self-adhesive sealing bands for metal roofs, flashing repairs, and window joints.",
+      image: "https://sc04.alicdn.com/kf/Hfe087a70867f43a8bd7c11db0b7f9e20T.png_960x960q80.jpg",
+      capabilities: [
+        "Double-sided & Single-sided Aluminum Butyl Tapes",
+        "Super Adhesion UV-Resistant Roof Sealing Tape",
+        "Anti-crack RV / Pipe Joint Repair Tapes",
+        "Custom Roll Lengths, Widths, and Thicknesses",
+        "Branded Wholesale Packaging & Label Customization"
+      ]
+    },
+    {
+      id: "waterproof-coatings",
+      name: "Waterproof Coatings",
+      desc: "Liquid-applied high-elasticity polyurethane, high-polymer acrylic, and polymer-cementitious waterproof coatings for seamless surface protection.",
+      image: "https://sc01.alicdn.com/kf/Hdb438925582c4ac683687a185028b305u.png",
+      capabilities: [
+        "Single-Component Polyurethane Waterproof Coating",
+        "Eco-friendly High-Elastic Acrylic Coating",
+        "Polymer-Modified Cementitious Waterproofing Slurry",
+        "Ideal for Bathrooms, Balconies, Swimming Pools & Roofs",
+        "Available in 5kg, 10kg, 20kg B2B Wholesale Drums"
+      ]
+    },
+    {
+      id: "geosynthetics",
+      name: "Geosynthetics",
+      desc: "High-strength non-woven geotextiles, HDPE geomembranes, and drainage geogrids for soil stabilization, landfills, and water conservancy projects.",
+      image: "https://sc04.alicdn.com/kf/Hfe087a70867f43a8bd7c11db0b7f9e20T.png_960x960q80.jpg",
+      capabilities: [
+        "HDPE Smooth / Textured Geomembrane Liners (0.5mm - 2.0mm)",
+        "Polyester (PET) Continuous Filament Non-Woven Geotextiles",
+        "Geomembranes for Pond Liners, Aquaculture, Landfills",
+        "High Tensile Strength & Outstanding Puncture Resistance",
+        "ISO certified factory-direct supply, container shipping"
+      ]
+    }
+  ];
+
+  return categories.map(cat => ({
+    params: { category: cat.id },
+    props: { cat },
+  }));
+}
+
+const { cat } = Astro.props;
+
+const products = await getCollection('products', ({ data }) => {
+  return data.category === cat.id;
+});
+---
+
+<Layout title={`${cat.name} Wholesale & OEM - Weifang Tianyuan Waterproof`} description={cat.desc}>
+  <main class="bg-slate-50 min-h-screen">
+    <!-- Category Hero Header -->
+    <section class="relative py-24 bg-slate-900 text-white overflow-hidden">
+      <div class="absolute inset-0 opacity-20 bg-cover bg-center" style={`background-image: url('${cat.image}');`}></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 text-center sm:text-left">
+        <nav class="flex text-xs text-slate-400 gap-2 justify-center sm:justify-start items-center mb-6">
+          <a href="/" class="hover:text-blue-400 transition-colors">Home</a>
+          <span>/</span>
+          <span class="text-white font-semibold">{cat.name}</span>
+        </nav>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">{cat.name}</h1>
+        <p class="text-lg md:text-xl text-slate-300 max-w-3xl leading-relaxed">{cat.desc}</p>
+      </div>
+    </section>
+
+    <!-- Product Showcase / Capabilities split -->
+    <section class="max-w-7xl mx-auto px-4 py-20">
+      {products.length > 0 ? (
+        <div>
+          <div class="mb-12">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-blue-600 mb-2">Available Products</h2>
+            <p class="text-3xl font-extrabold text-slate-900">Standard Specifications</p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-10">
+            {products.map(p => (
+              <a href={`/products/${p.slug}`} class="group block bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-all cursor-pointer">
+                <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-slate-50 flex items-center justify-center">
+                  {p.data.image ? (
+                    <img src={p.data.image} alt={p.data.title} class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                  ) : (
+                    <div class="w-full h-full flex flex-col items-center justify-center text-slate-400 p-6 text-center select-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mb-3 text-slate-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                      </svg>
+                      <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Image Coming Soon</span>
+                    </div>
+                  )}
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2" title={p.data.title}>{p.data.title}</h3>
+                <p class="text-slate-500 mb-6 text-sm leading-relaxed line-clamp-3">{p.data.description}</p>
+                <span class="inline-flex items-center gap-2 font-bold text-blue-600 text-sm">Learn More <span class="text-xl leading-none">›</span></span>
+              </a>
+            ))}
+          </div>
+        </div>
+      ) : (
+        /* Empty/Coming-Soon Category Template */
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          <!-- Capabilities List -->
+          <div class="lg:col-span-7">
+            <span class="text-blue-600 font-bold uppercase tracking-wider text-xs block mb-2">Industrial OEM & Wholesale Sourcing</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">Custom {cat.name} Supply</h2>
+            <p class="text-slate-600 mb-8 leading-relaxed">
+              Weifang Tianyuan is a direct factory manufacturer. While our standard catalog for online retail is being updated, we offer **full customization, OEM manufacturing, and wholesale export supply** for all types of {cat.name.toLowerCase()} for commercial and industrial construction projects worldwide.
+            </p>
+
+            <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm">
+              <h3 class="font-bold text-slate-900 mb-4">Our Manufacturing Capabilities & Ranges:</h3>
+              <ul class="space-y-3">
+                {cat.capabilities.map(cap => (
+                  <li class="flex items-start gap-3 text-sm text-slate-600">
+                    <span class="text-blue-600 font-bold">✓</span>
+                    <span>{cap}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <!-- B2B Lead Form -->
+          <div class="lg:col-span-5 bg-slate-900 text-white rounded-3xl p-8 md:p-10 shadow-xl border border-slate-800">
+            <h3 class="text-2xl font-bold mb-2">Request Bulk Catalog</h3>
+            <p class="text-slate-400 text-xs mb-6">Send us your technical specs, required sizes, and destination port. We will supply direct factory prices and OEM catalogs.</p>
+
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('Request received successfully! Our manufacturing team will send the wholesale catalog to your email.');">
+              <div>
+                <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Your Name</label>
+                <input type="text" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition-colors" placeholder="e.g. John Smith" />
+              </div>
+
+              <div>
+                <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Business Email</label>
+                <input type="email" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition-colors" placeholder="john@company.com" />
+              </div>
+
+              <div>
+                <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Company Name</label>
+                <input type="text" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition-colors" placeholder="e.g. Apex Construction Co." />
+              </div>
+
+              <div>
+                <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Requirement Details</label>
+                <textarea rows="3" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition-colors resize-none" placeholder={`Please specify your ${cat.name.toLowerCase()} requirements (width, thickness, tensile strength)...`}></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-blue-600/10 text-center block text-sm">
+                Get Wholesale Catalog
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+    </section>
+  </main>
+</Layout>

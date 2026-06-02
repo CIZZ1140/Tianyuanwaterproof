@@ -1,7 +1,7 @@
 ---
 title: "Self-Adhesive Easy-Construction Bituminous Waterproofing Membrane"
 description: "Cold-applied SBS modified asphalt membrane. No torch required. Ideal for metal roofs and rapid repairs."
-category: "Self-Adhesive Series"
+category: "asphalt-membranes"
 image: ""
 specs:
   - label: "Installation"

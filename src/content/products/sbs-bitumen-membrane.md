@@ -1,7 +1,7 @@
 ---
 title: "Tianyuan Premium SBS/APP Modified Bitumen Waterproof Membrane"
 description: "High-performance 3mm/4mm torch-down waterproofing solution for concrete roofs and basements. ISO & CE certified."
-category: "Bitumen Membranes"
+category: "asphalt-membranes"
 image: "https://sc04.alicdn.com/kf/H8d7ba0b4752c4c4ea051b0098d1e432cZ.jpg"
 specs:
   - label: "Thickness"

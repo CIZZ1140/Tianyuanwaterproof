@@ -17,6 +17,16 @@ const { Content } = await entry.render();
 const specsList = Array.isArray(entry.data.specs)
   ? entry.data.specs
   : Object.entries(entry.data.specs || {}).map(([label, value]) => ({ label, value }));
+
+const categoryNames = {
+  "asphalt-membranes": "Asphalt Membranes",
+  "asphalt-shingles": "Asphalt Shingles",
+  "waterproof-tapes": "Waterproof Tapes",
+  "waterproof-coatings": "Waterproof Coatings",
+  "geosynthetics": "Geosynthetics"
+};
+const categoryId = entry.data.category || "asphalt-membranes";
+const categoryName = categoryNames[categoryId] || "Waterproofing Systems";
 ---
 
 <Layout title={`${entry.data.title} - Weifang Tianyuan Waterproof`} description={entry.data.description}>
@@ -26,7 +36,7 @@ const specsList = Array.isArray(entry.data.specs)
       <nav class="flex text-sm text-slate-500 gap-2 items-center">
         <a href="/" class="hover:text-blue-600 transition-colors">Home</a>
         <span class="text-slate-300">/</span>
-        <a href="/#products-grid" class="hover:text-blue-600 transition-colors">Products</a>
+        <a href={`/categories/${categoryId}`} class="hover:text-blue-600 transition-colors">{categoryName}</a>
         <span class="text-slate-300">/</span>
         <span class="text-slate-800 font-medium truncate max-w-[200px] sm:max-w-none">{entry.data.title}</span>
       </nav>
@@ -49,7 +59,7 @@ const specsList = Array.isArray(entry.data.specs)
               </div>
             )}
             <div class="absolute bottom-4 left-4 bg-slate-900/80 backdrop-blur-sm text-white px-3 py-1.5 rounded-lg text-xs font-semibold">
-              {entry.data.category || 'Waterproofing Systems'}
+              {categoryName}
             </div>
           </div>
         </div>

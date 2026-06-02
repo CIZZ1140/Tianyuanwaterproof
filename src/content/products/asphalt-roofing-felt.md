@@ -1,7 +1,7 @@
 ---
 title: "TY-SHIELD™ Organic Asphalt Saturated Roofing Felt"
 description: "Professional grade 15lb & 30lb saturated organic asphalt felt underlayment. High-strength secondary barrier for shingle and metal roofing systems."
-category: "Roofing Underlayment"
+category: "asphalt-membranes"
 image: "https://s.alicdn.com/@sc04/kf/Ha8168e7f74bb45ed86de507eaeca5e17t.png_960x960q80.jpg"
 specs:
   - label: "Weight Grade"

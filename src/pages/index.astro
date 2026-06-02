@@ -3,80 +3,202 @@ import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
 const products = await getCollection('products');
+
+const categories = [
+  {
+    id: "asphalt-membranes",
+    name: "Asphalt Membranes",
+    desc: "SBS modified bitumen, self-adhesive rolls, and high-tensile organic roofing felt.",
+    image: "https://sc04.alicdn.com/kf/Hfe087a70867f43a8bd7c11db0b7f9e20T.png_960x960q80.jpg",
+    features: ["SBS/APP Modified", "Self-Adhesive (Peel & Stick)", "Roofing Felt (15lb/30lb)"],
+    hasProducts: true
+  },
+  {
+    id: "asphalt-shingles",
+    name: "Asphalt Shingles",
+    desc: "Elegant and lightweight roofing shingles in classic 3-tab, architectural laminated, and hexagonal formats.",
+    image: "https://sc04.alicdn.com/kf/H7e087a70867f43a8bd7c11db0b7f9e20T.jpg",
+    features: ["3-Tab Classic", "Laminated Composite", "Artistic Hexagonal"],
+    hasProducts: true
+  },
+  {
+    id: "waterproof-tapes",
+    name: "Waterproof Tapes",
+    desc: "Self-adhesive butyl sealant tapes and heavy-duty aluminum flashing tapes for absolute sealing.",
+    image: "https://sc04.alicdn.com/kf/Hfe087a70867f43a8bd7c11db0b7f9e20T.png_960x960q80.jpg",
+    features: ["Aluminum Butyl Tapes", "RV Flashing Tape", "Double-Sided Sealing"],
+    hasProducts: false
+  },
+  {
+    id: "waterproof-coatings",
+    name: "Waterproof Coatings",
+    desc: "Liquid-applied high-elasticity polyurethane, acrylic, and cementitious waterproof coatings.",
+    image: "https://sc01.alicdn.com/kf/Hdb438925582c4ac683687a185028b305u.png",
+    features: ["Polyurethane Liquid", "High-Elastic Acrylic", "Cementitious Slurries"],
+    hasProducts: false
+  },
+  {
+    id: "geosynthetics",
+    name: "Geosynthetics",
+    desc: "High-density polyethylene geomembranes and non-woven polyester geotextiles for major civil works.",
+    image: "https://sc04.alicdn.com/kf/Hfe087a70867f43a8bd7c11db0b7f9e20T.png_960x960q80.jpg",
+    features: ["HDPE Geomembranes", "Non-Woven Geotextiles", "Pond & Landfill Liners"],
+    hasProducts: false
+  }
+];
+
+const getCount = (catId) => products.filter(p => p.data.category === catId).length;
 ---
 
-<Layout title="Tianyuan Waterproof - Global Leader in Waterproofing Solutions">
-	<main>
-		<!-- Hero Section -->
-		<section class="relative h-[80vh] flex items-center justify-center overflow-hidden bg-slate-900">
-			<div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://sc04.alicdn.com/kf/Hfe087a70867f43a8bd7c11db0b7f9e20T.png_960x960q80.jpg');"></div>
-			<div class="relative z-10 text-center px-4 max-w-4xl">
-				<h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
-					Engineering <span class="text-blue-400">Future-Proof</span> Protection
-				</h1>
-				<p class="text-xl text-slate-200 mb-10 leading-relaxed">
-					20+ years of excellence in manufacturing premium SBS, PVC, and TPO waterproofing systems for global construction projects.
-				</p>
-				<div class="flex flex-col sm:flex-row gap-4 justify-center">
-					<a href="#products-grid" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all text-center">Explore Products</a>
-					<a href="#why-us" class="bg-white/10 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all text-center">Why Choose Us</a>
-				</div>
-			</div>
-		</section>
+<Layout title="Weifang Tianyuan Waterproof - Factory-Direct B2B Global Supply">
+  <main class="bg-slate-50">
+    <!-- Hero Section -->
+    <section class="relative h-[85vh] flex items-center justify-center overflow-hidden bg-slate-900">
+      <div class="absolute inset-0 opacity-30 bg-cover bg-center" style="background-image: url('https://sc04.alicdn.com/kf/Hfe087a70867f43a8bd7c11db0b7f9e20T.png_960x960q80.jpg');"></div>
+      <div class="relative z-10 text-center px-4 max-w-5xl">
+        <span class="inline-block bg-blue-600/20 text-blue-400 border border-blue-500/30 px-4 py-1.5 rounded-full font-bold text-xs uppercase tracking-widest mb-6">
+          Direct Factory Manufacturer • ISO 9001 & CE Certified
+        </span>
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight leading-none">
+          Engineering <span class="text-blue-500">Future-Proof</span> Waterproofing Systems
+        </h1>
+        <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+          20+ years of manufacturing excellence in modified bitumen membranes, asphalt shingles, coatings, and civil geosynthetics. Direct B2B export & custom OEM solutions.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#categories" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all text-center shadow-lg shadow-blue-600/25">
+            Browse B2B Categories
+          </a>
+          <a href="#why-us" class="bg-white/10 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all text-center">
+            Factory Capabilities
+          </a>
+        </div>
+      </div>
+    </section>
 
-		<!-- Featured Products -->
-		<section id="products-grid" class="py-24 max-w-7xl mx-auto px-4 scroll-mt-6">
-			<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-				<div>
-					<h2 class="text-blue-600 font-bold tracking-widest uppercase text-sm mb-3">Featured Solutions</h2>
-					<p class="text-4xl font-bold text-slate-900">Core Waterproofing Membranes</p>
-				</div>
-				<span class="text-slate-500 font-semibold text-sm">{products.length} Professional Products Available</span>
-			</div>
+    <!-- B2B Category Showcase -->
+    <section id="categories" class="py-24 max-w-7xl mx-auto px-4 scroll-mt-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-blue-600 font-bold tracking-widest uppercase text-xs mb-3">Core Sourcing Divisions</h2>
+        <p class="text-4xl font-extrabold text-slate-900 tracking-tight">Industrial Waterproofing Categories</p>
+        <p class="text-slate-500 mt-4 leading-relaxed">
+          Select a category to view standard product specifications or to request custom OEM manufacturing parameters.
+        </p>
+      </div>
 
-			<div class="grid md:grid-cols-3 gap-10">
-				{products.map(p => (
-					<a href={`/products/${p.slug}`} class="group block cursor-pointer">
-						<div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-slate-100 flex items-center justify-center">
-							{p.data.image ? (
-								<img src={p.data.image} alt={p.data.title} class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
-							) : (
-								<div class="w-full h-full flex flex-col items-center justify-center text-slate-400 p-6 text-center select-none">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mb-3 text-slate-300">
-										<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-									</svg>
-									<span class="text-xs font-bold uppercase tracking-wider text-slate-400">Image Coming Soon</span>
-								</div>
-							)}
-							<div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-						</div>
-						<h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2" title={p.data.title}>{p.data.title}</h3>
-						<p class="text-slate-600 mb-6 leading-relaxed line-clamp-3 text-sm">{p.data.description}</p>
-						<span class="inline-flex items-center gap-2 font-bold text-blue-600 text-sm">Learn More <span class="text-xl leading-none">›</span></span>
-					</a>
-				))}
-			</div>
-		</section>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {categories.map(cat => {
+          const count = getCount(cat.id);
+          return (
+            <div class="group bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-md hover:border-slate-200 transition-all flex flex-col justify-between">
+              <div>
+                <!-- Category Meta -->
+                <div class="flex justify-between items-center mb-6">
+                  <div class="p-3 bg-blue-50 rounded-2xl text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    {cat.id === "asphalt-membranes" && (
+                      <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                      </svg>
+                    )}
+                    {cat.id === "asphalt-shingles" && (
+                      <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                      </svg>
+                    )}
+                    {cat.id === "waterproof-tapes" && (
+                      <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                    )}
+                    {cat.id === "waterproof-coatings" && (
+                      <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                      </svg>
+                    )}
+                    {cat.id === "geosynthetics" && (
+                      <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2zM4 21a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2z" />
+                      </svg>
+                    )}
+                  </div>
+                  <span class="text-xs font-bold px-3 py-1 bg-slate-100 rounded-full text-slate-500">
+                    {cat.hasProducts ? `${count} Products` : "OEM Available"}
+                  </span>
+                </div>
 
-		<!-- Why Us -->
-		<section id="why-us" class="bg-slate-100 py-24 scroll-mt-6">
-			<div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12 text-center">
-				<div>
-					<div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">✓</div>
-					<h4 class="text-xl font-bold mb-3">Certified Quality</h4>
-					<p class="text-slate-600">Full compliance with ISO 9001, ISO 14001, and international CE standards.</p>
-				</div>
-				<div>
-					<div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">🌍</div>
-					<h4 class="text-xl font-bold mb-3">Global Export</h4>
-					<p class="text-slate-600">Trusted by major contractors across Southeast Asia, the Middle East, and Africa.</p>
-				</div>
-				<div>
-					<div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">⚙</div>
-					<h4 class="text-xl font-bold mb-3">Technical Support</h4>
-					<p class="text-slate-600">From design phase to installation, our engineers provide complete project solutions.</p>
-				</div>
-			</div>
-		</section>
-	</main>
+                <!-- Title & Desc -->
+                <h3 class="text-2xl font-extrabold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  {cat.name}
+                </h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                  {cat.desc}
+                </p>
+
+                <!-- Features bullet list -->
+                <ul class="space-y-2.5 mb-8">
+                  {cat.features.map(f => (
+                    <li class="flex items-center gap-2 text-xs font-semibold text-slate-500">
+                      <span class="text-blue-500 font-bold">•</span>
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <!-- Action Link -->
+              <a href={`/categories/${cat.id}`} class="w-full bg-slate-100 group-hover:bg-blue-600 group-hover:text-white text-slate-800 text-center py-3.5 rounded-xl font-bold text-sm transition-colors cursor-pointer select-none">
+                {cat.hasProducts ? "View Specifications" : "OEM Custom Sourcing"}
+              </a>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- Factory & OEM Advantage -->
+    <section id="why-us" class="bg-slate-900 text-white py-24 scroll-mt-6 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10 bg-grid-pattern"></div>
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-20">
+          <h2 class="text-blue-400 font-bold tracking-widest uppercase text-xs mb-3">Our Credentials</h2>
+          <p class="text-4xl font-extrabold tracking-tight">Global Commercial Supply Capabilities</p>
+          <p class="text-slate-400 mt-4 leading-relaxed">
+            Tian Yuan waterproof systems are certified to meet international engineering and trade standards, ensuring seamless project execution.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-12 text-center">
+          <div class="bg-slate-800/50 rounded-3xl p-8 border border-slate-800 backdrop-blur-sm">
+            <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              ✓
+            </div>
+            <h4 class="text-xl font-bold mb-3">Certified Quality Standards</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Full compliance with international standards: ISO 9001 (Quality Management), ISO 14001 (Environmental), and EU CE Safety Certification.
+            </p>
+          </div>
+
+          <div class="bg-slate-800/50 rounded-3xl p-8 border border-slate-800 backdrop-blur-sm">
+            <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
+              🌍
+            </div>
+            <h4 class="text-xl font-bold mb-3">Worldwide Port Logistics</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Serving industrial waterproofing contractors and distributors across Southeast Asia, South America, the Middle East, and Africa.
+            </p>
+          </div>
+
+          <div class="bg-slate-800/50 rounded-3xl p-8 border border-slate-800 backdrop-blur-sm">
+            <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl">
+              ⚙
+            </div>
+            <h4 class="text-xl font-bold mb-3">Custom B2B Manufacturing</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Custom roll size, backing material, granular color, and branded roll-wrapping options for custom OEM/ODM distributor requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
