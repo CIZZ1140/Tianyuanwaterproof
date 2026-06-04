@@ -1,13 +1,14 @@
 {
   "name": "waterproofing-astro-tailwind",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview"
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "latest",

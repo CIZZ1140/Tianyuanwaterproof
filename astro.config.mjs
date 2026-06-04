@@ -1,12 +1,9 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 
-const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1];
-const isProjectPages = process.env.GITHUB_PAGES === 'true' && repoName && !repoName.endsWith('.github.io');
-
 export default defineConfig({
-  site: process.env.SITE_URL || 'https://tyuanwaterproof.com',
-  base: process.env.BASE_PATH || (isProjectPages ? `/${repoName}` : '/'),
+  site: 'https://tyuanwaterproof.com',
+  base: '/',
   output: 'static',
   integrations: [tailwind({ applyBaseStyles: false })]
 });
