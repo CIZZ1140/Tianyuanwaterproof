@@ -1,7 +1,8 @@
 export const site = {
   brand: 'Tianyuan Waterproof',
-  tagline: 'Waterproofing Materials Manufacturer',
+  tagline: 'Bitumen Membrane & Roofing Felt Manufacturer',
   email: 'sales@tyuanwaterproof.com',
+
   phone: '+86 000 0000 0000',
   whatsapp: '+86 000 0000 0000',
   address: 'Your factory address, China',
