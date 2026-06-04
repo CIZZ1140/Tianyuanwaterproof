@@ -1,11 +1,11 @@
 export const site = {
-  brand: 'YOUR BRAND',
+  brand: 'Tianyuan Waterproof',
   tagline: 'Waterproofing Materials Manufacturer',
-  email: 'sales@example.com',
+  email: 'sales@tyuanwaterproof.com',
   phone: '+86 000 0000 0000',
   whatsapp: '+86 000 0000 0000',
   address: 'Your factory address, China',
-  domain: 'https://example.com'
+  domain: 'https://tyuanwaterproof.com'
 };
 
 export const nav = [
