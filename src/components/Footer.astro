@@ -1,0 +1,37 @@
+---
+import { site } from '@/data/site';
+const base = import.meta.env.BASE_URL;
+const withBase = (href: string) => href === '/' ? base : `${base}${href.replace(/^\//, '')}`;
+---
+<footer class="bg-slate-950 text-white">
+  <div class="container-wrap grid gap-10 py-14 md:grid-cols-4">
+    <div class="md:col-span-2">
+      <div class="mb-4 flex items-center gap-3">
+        <span class="grid h-11 w-11 place-items-center rounded-2xl bg-accent font-black text-slate-950">WB</span>
+        <div>
+          <strong class="block text-lg">{site.brand}</strong>
+          <span class="text-sm text-white/60">{site.tagline}</span>
+        </div>
+      </div>
+      <p class="max-w-xl text-sm leading-7 text-white/65">Factory supply of waterproofing membrane, waterproofing tape and waterproofing coating for B2B distributors, contractors and construction material buyers.</p>
+    </div>
+    <div>
+      <h3 class="mb-4 text-sm font-bold uppercase tracking-wider text-white">Products</h3>
+      <ul class="space-y-3 text-sm text-white/65">
+        <li><a href={withBase('/products/waterproofing-membrane/')} class="hover:text-white">Waterproofing Membrane</a></li>
+        <li><a href={withBase('/products/waterproofing-tape/')} class="hover:text-white">Waterproofing Tape</a></li>
+        <li><a href={withBase('/products/waterproofing-coating/')} class="hover:text-white">Waterproofing Coating</a></li>
+        <li><a href={withBase('/technical/download-center/')} class="hover:text-white">Download Center</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="mb-4 text-sm font-bold uppercase tracking-wider text-white">Contact</h3>
+      <ul class="space-y-3 text-sm text-white/65">
+        <li>Email: {site.email}</li>
+        <li>WhatsApp: {site.whatsapp}</li>
+        <li>{site.address}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-5 text-center text-xs text-white/50">© {new Date().getFullYear()} {site.brand}. All rights reserved.</div>
+</footer>

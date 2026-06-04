@@ -1,0 +1,11 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import CTA from '@/components/CTA.astro';
+import { applications } from '@/data/applications';
+const base = import.meta.env.BASE_URL;
+---
+<Layout title="Applications | Waterproofing Solutions">
+  <section class="bg-navy py-16 text-white"><div class="container-wrap"><p class="eyebrow">Applications</p><h1 class="mt-3 text-4xl font-black text-white md:text-5xl">Waterproofing solutions by application</h1><p class="mt-5 max-w-3xl text-white/70">Help buyers select suitable membranes, tapes and coatings according to project area.</p></div></section>
+  <section class="py-16"><div class="container-wrap grid gap-6 md:grid-cols-2 lg:grid-cols-3">{applications.map((app) => <a class="card" href={`${base}applications/${app.slug}/`}><h2 class="text-2xl font-bold">{app.title}</h2><p class="mt-3 text-sm leading-6">{app.intro}</p><span class="mt-5 inline-flex text-sm font-bold text-industrial">View solution →</span></a>)}</div></section>
+  <CTA />
+</Layout>

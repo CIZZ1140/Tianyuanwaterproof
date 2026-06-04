@@ -1,0 +1,9 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import CTA from '@/components/CTA.astro';
+---
+<Layout title="About Us | Waterproofing Materials Manufacturer">
+  <section class="bg-navy py-16 text-white"><div class="container-wrap"><p class="eyebrow">About us</p><h1 class="mt-3 text-4xl font-black text-white md:text-5xl">B2B waterproofing materials supplier</h1><p class="mt-5 max-w-3xl text-white/70">Replace this page with your real factory profile, production capacity, quality control process and export experience.</p></div></section>
+  <section class="py-16"><div class="container-wrap grid gap-6 md:grid-cols-3">{['Factory Supply','Quality Control','OEM / ODM'].map((title) => <div class="card"><h2 class="text-2xl font-bold">{title}</h2><p class="mt-3 text-sm leading-6 text-slate-600">Add real photos, certifications, production equipment and export packaging details to improve buyer trust.</p></div>)}</div></section>
+  <CTA />
+</Layout>

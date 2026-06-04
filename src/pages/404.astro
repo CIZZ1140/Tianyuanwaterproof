@@ -1,0 +1,7 @@
+---
+import Layout from '@/layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Layout title="404 | Page Not Found">
+  <section class="py-24"><div class="container-wrap text-center"><h1 class="text-5xl font-black">404</h1><p class="mt-4 text-slate-600">Page not found.</p><a class="btn-primary mt-8" href={base}>Back Home</a></div></section>
+</Layout>

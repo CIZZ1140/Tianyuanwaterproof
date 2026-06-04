@@ -1,0 +1,20 @@
+---
+import { site, nav } from '@/data/site';
+const base = import.meta.env.BASE_URL;
+const withBase = (href: string) => href === '/' ? base : `${base}${href.replace(/^\//, '')}`;
+---
+<header class="sticky top-0 z-50 border-b border-white/10 bg-navy/95 backdrop-blur">
+  <div class="container-wrap flex h-20 items-center justify-between">
+    <a href={withBase('/')} class="flex items-center gap-3 text-white" aria-label={site.brand}>
+      <span class="grid h-11 w-11 place-items-center rounded-2xl bg-accent font-black text-slate-950">WB</span>
+      <span>
+        <span class="block text-lg font-black tracking-wide">{site.brand}</span>
+        <span class="block text-xs text-white/65">{site.tagline}</span>
+      </span>
+    </a>
+    <nav class="hidden items-center gap-7 lg:flex">
+      {nav.map((item) => <a class="text-sm font-semibold text-white/80 transition hover:text-white" href={withBase(item.href)}>{item.label}</a>)}
+    </nav>
+    <a class="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-slate-950 transition hover:bg-yellow-400 md:inline-flex" href={withBase('/contact/')}>Get Quote</a>
+  </div>
+</header>
