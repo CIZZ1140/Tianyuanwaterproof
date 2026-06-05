@@ -53,7 +53,7 @@ Selling unit: Single roll. Approx. 8,000 to 10,000 square meters per 20ft contai
 ## Storage & Shelf Life
 Rolls must be stored horizontally on flat surfaces in clean, dry conditions. Keep away from fire and direct sunlight. Shelf life is 12 to 24 months.
 
-## OEM Options
+## OEM / Private Label Options
 Custom colors (White, Grey, Green), private branding, and reinforcement variations (Polyester/Glass-fiber) are available.
 
 ## FAQ

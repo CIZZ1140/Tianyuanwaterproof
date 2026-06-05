@@ -38,7 +38,7 @@ Ethylene Propylene Diene Monomer (EPDM) synthetic rubber waterproofing membrane.
 - Basements, retaining walls, foundation waterproofing, and underground garages
 - Subway stations, highway/railway tunnels, and municipal joints
 
-## Surface/Thickness/Roll Size Options
+## Surface / Thickness / Roll Size Options
 - **Membrane Types**: H (Homogeneous), L (Backed), Self-Adhesive
 - **Thickness Options**: 1.0 mm, 1.2 mm, 1.5 mm, 2.0 mm
 - **Width Options**: 1.0 m, 1.2 m, 2.0 m, Large sheets up to 8.0 m
@@ -74,4 +74,6 @@ Custom widths (up to 8m seamless), thicknesses (1.0 to 3.0 mm), and private labe
   <form id="mzdqdpwd">
     <!-- Form content handled by component -->
   </form>
+</div>
+orm>
 </div>

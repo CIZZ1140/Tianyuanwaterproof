@@ -39,7 +39,7 @@ A multi-layer high-polymer composite waterproofing membrane. It is manufactured 
 - Swimming pools, potable water tanks, and sewage treatment basins
 - Underground basements, retaining walls, and irrigation works
 
-## Surface/Thickness/Roll Size Options
+## Surface / Thickness / Roll Size Options
 - **Color Options**: Grey, Red, White, Green, Customized
 - **Thickness Options**: 0.5 mm to 1.5 mm
 - **Width Options**: 1.0 m, 1.15 m, 1.2 m
@@ -75,4 +75,6 @@ Custom unit weight (200-1000g/sqm), tailored dimensions, and printed grid lines 
   <form id="mzdqdpwd">
     <!-- Form content handled by component -->
   </form>
+</div>
+orm>
 </div>

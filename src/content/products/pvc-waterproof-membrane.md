@@ -52,7 +52,7 @@ Rolls are wrapped with core protectors, packed in moisture-proof woven PP bags, 
 ## Storage & Shelf Life
 Store horizontally on flat surfaces in clean, dry conditions. Keep away from fire, heat, direct sunlight, and moisture. Shelf life is 12 to 24 months.
 
-## OEM Options
+## OEM / Private Label Options
 Custom colors, private branding, and specific reinforcement variations are available upon request.
 
 ## FAQ

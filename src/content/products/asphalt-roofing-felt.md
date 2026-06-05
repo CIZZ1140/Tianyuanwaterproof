@@ -53,7 +53,7 @@ Selling unit: Single roll. Approx. 800 to 1,200 rolls per 20ft container (subjec
 ## Storage & Shelf Life
 Rolls must be stored vertically in an upright position in a dry, well-ventilated warehouse. Shelf life is 12 months.
 
-## OEM Options
+## OEM / Private Label Options
 Customized packaging, logo printing, and adjustable roll specifications (length, width, weight) are available.
 
 ## FAQ

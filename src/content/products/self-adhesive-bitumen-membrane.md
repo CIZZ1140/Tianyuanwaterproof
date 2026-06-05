@@ -53,7 +53,7 @@ Each roll is wrapped in a protective polybag, placed vertically or horizontally 
 ## Storage & Shelf Life
 Must be stored vertically on flat, dry, shaded ground. Protect from direct sunlight, rain, extreme heat, and sparks. Ambient storage temperature should not exceed 45°C. Stack rolls only in a single layer to prevent core deformation. Shelf life is 12 months.
 
-## OEM Options
+## OEM / Private Label Options
 Customized packaging, logo printing, and specific thickness/surface options are available. Minimum order quantity for custom branding: 2,000 square meters.
 
 ## FAQ

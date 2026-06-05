@@ -52,7 +52,7 @@ Rolls are tightly wrapped with plastic strapping bands, labeled, and vertically 
 ## Storage & Shelf Life
 Store rolls vertically in a dry, well-ventilated, indoor warehouse environment. Keep away from direct sunlight, rain, moisture, and any sources of heat or ignition. Do not double-stack pallets to prevent deformation of the rolls. Shelf life is 12 months under optimal storage conditions.
 
-## OEM Options
+## OEM / Private Label Options
 Minor customization (thickness, width, length), Sample-based customization, Full customization (custom branding, private labels, custom cardboard cartons). Minimum order quantity for custom packaging and logos: 2,000 square meters.
 
 ## FAQ

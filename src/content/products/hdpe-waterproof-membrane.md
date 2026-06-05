@@ -39,7 +39,7 @@ A pre-applied high-density polyethylene (HDPE) self-adhesive waterproofing membr
 - Industrial basements and municipal civil engineering projects
 - Water conservancy, tunnels, and deep underground excavation structures
 
-## Surface/Thickness/Roll Size Options
+## Surface / Thickness / Roll Size Options
 - **Surface Finishes**: White Sand Surface, Yellow Sand Surface, Adhesive PET Release Film
 - **Thickness Options**: 1.2 mm, 1.5 mm, 2.0 mm
 - **Width Options**: 1.0 m, 2.0 m
@@ -75,4 +75,6 @@ Customized packaging, logo printing, graphic customization, and custom colors ar
   <form id="mzdqdpwd">
     <!-- Form content handled by component -->
   </form>
+</div>
+orm>
 </div>

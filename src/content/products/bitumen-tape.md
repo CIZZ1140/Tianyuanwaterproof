@@ -38,7 +38,7 @@ Bitumen Self-Adhesive Waterproof Sealing Aluminum Tape is a cold-applied flashin
 - Steel roofing panel overlaps and warehouse tile joint sealing
 - Pipeline corrosion protection and exterior joint seam sealing
 
-## Surface/Thickness/Roll Size Options
+## Surface / Thickness / Roll Size Options
 - **Surface Options**: Reinforced Silver Aluminum Foil, UV-Resistant Blue/Red PET Foil
 - **Thickness Options**: 1.0 mm, 1.2 mm, 1.5 mm, 2.0 mm, Customizable
 - **Width Options**: 50mm, 100mm, 150mm, 200mm, 300mm, 500mm, 1000mm
@@ -81,4 +81,6 @@ quiry Form
   <form id="mzdqdpwd">
     <!-- Form content handled by component -->
   </form>
+</div>
+orm>
 </div>

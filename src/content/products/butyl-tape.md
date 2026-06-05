@@ -53,7 +53,7 @@ Rolls are individually shrink-wrapped with clean release paper side-shields, pac
 ## Storage & Shelf Life
 Store in a cool, dry place. Keep away from direct sunlight and heat. Shelf life is 12-24 months in original packaging.
 
-## OEM Options
+## OEM / Private Label Options
 Custom tape widths, lengths, thickness, and branded packaging (cartons/labels) are available.
 
 ## FAQ
