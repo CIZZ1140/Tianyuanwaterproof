@@ -5,5 +5,5 @@ export default defineConfig({
   site: 'https://tyuanwaterproof.com',
   base: '/',
   output: 'static',
-  integrations: [tailwind({ applyBaseStyles: false })]
+  integrations: [tailwind()]
 });
