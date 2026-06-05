@@ -53,7 +53,7 @@ Rolls are individually shrink-wrapped, packed into heavy-duty corrugated cardboa
 ## Storage & Shelf Life
 Store in a cool, dry place away from direct sunlight. Do not stack pallets to avoid crushing. Shelf life is 12 months.
 
-## OEM Options
+## OEM / Private Label Options
 Custom widths, lengths, and branded export cartons are available for bulk orders.
 
 ## FAQ

@@ -39,7 +39,7 @@ TFY Self-adhesive Bitumen Waterproof Membrane is a high-polymer "peel-and-stick"
 - Exposed pipe insulation cladding and underground pipeline wraps
 - Courtyards, outdoor balconies, swimming pools, and residential bathrooms
 
-## Surface/Thickness/Roll Size Options
+## Surface / Thickness / Roll Size Options
 - **Surface Options**: Aluminum Foil Film (Silver/Blue), PE Film, Fine Sand, Reinforced Cross Film
 - **Thickness Options**: 1.0 mm, 1.2 mm, 1.5 mm, 2.0 mm, 3.0 mm, Customizable
 - **Roll Size Options**: 1.0m x 10m, 1.0m x 15m, 1.0m x 20m, Customizable

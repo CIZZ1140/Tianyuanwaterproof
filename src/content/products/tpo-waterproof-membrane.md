@@ -38,7 +38,7 @@ Thermoplastic Polyolefin (TPO) single-ply waterproofing roofing membrane. This a
 - Refurbishment and retrofitting of worn-out metal roofing systems
 - Swimming pools, artificial ponds, and underground civil structures
 
-## Surface/Thickness/Roll Size Options
+## Surface / Thickness / Roll Size Options
 - **Membrane Types**: H (Homogeneous), L (Fleece-backed), P (Reinforced)
 - **Thickness Options**: 1.2 mm, 1.5 mm (60 mil), 1.8 mm, 2.0 mm (80 mil)
 - **Width Options**: 1.0 m, 2.0 m

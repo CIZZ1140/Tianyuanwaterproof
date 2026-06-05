@@ -39,7 +39,7 @@ Traditional saturated organic asphalt roofing felt, commonly known as tar paper 
 - Temporary waterproofing barrier for sheds and outbuildings
 - Heavy-duty industrial protective packaging
 
-## Surface/Thickness/Roll Size Options
+## Surface / Thickness / Roll Size Options
 - **Surface Coatings**: Anti-sticking talcum powder, Fine sand, Refined bitumen
 - **Roll Sizes**: 1.0m width x 10m/15m/20m length
 - **Weight Specs**: 8 lbs to 60 lbs per roll

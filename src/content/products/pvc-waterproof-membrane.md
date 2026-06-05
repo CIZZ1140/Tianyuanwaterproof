@@ -38,7 +38,7 @@ Building Roof Flexible PVC Waterproofing Membrane is a high-grade polymer sheet 
 - Green roof gardens, subterranean civil defense structures, and basements
 - Water containment facilities including artificial lakes, pools, and tunnels
 
-## Surface/Thickness/Roll Size Options
+## Surface / Thickness / Roll Size Options
 - **Color Options**: Light Grey, White, Green, Red, Blue, Customizable
 - **Thickness Options**: 1.2 mm, 1.5 mm, 2.0 mm
 - **Roll Size Options**: 1.0m x 20m, 2.05m x 20m, 2.05m x 30m

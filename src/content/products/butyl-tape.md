@@ -38,7 +38,7 @@ Roofing Repair Sealant Tape Butyl Waterproof Tape is a highly flexible, non-hard
 - RV, caravan, and mobile home window sealing and repair
 - Wall cracks, pipe penetrations, glass sunrooms, and marine hatch covers
 
-## Surface/Thickness/Roll Size Options
+## Surface / Thickness / Roll Size Options
 - **Surface Options**: Embossed Aluminum Foil, Grid Aluminum Foil, Plain Aluminum Foil
 - **Thickness Options**: 0.8 mm, 1.0 mm, 1.2 mm, 1.5 mm, 2.0 mm, Customizable
 - **Standard Widths**: 50mm, 100mm, 150mm, 200mm, 300mm

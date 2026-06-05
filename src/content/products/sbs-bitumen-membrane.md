@@ -38,7 +38,7 @@ Styrene-Butadiene-Styrene (SBS) Modified Bitumen Waterproof Membrane is a high-p
 - Civil infrastructure including subways, tunnels, and bridge decks
 - Water conservancy projects such as pools, canals, and reservoirs
 
-## Surface/Thickness/Roll Size Options
+## Surface / Thickness / Roll Size Options
 - **Surface Options**: PE Film, Fine Sand, Mineral Granules (Slate Flakes), Aluminum Foil
 - **Thickness Options**: 3.0 mm, 4.0 mm, 5.0 mm, Customizable
 - **Roll Size Options**: 1.0m x 10m (Standard)

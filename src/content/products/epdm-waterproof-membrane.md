@@ -53,7 +53,7 @@ Selling unit: Single roll. Approx. 8,000 square meters per 20ft container (for 1
 ## Storage & Shelf Life
 Store horizontally on flat ground in a cool, dry, well-ventilated warehouse. Keep away from petroleum products. Shelf life is 12 to 24 months for packaged rolls.
 
-## OEM Options
+## OEM / Private Label Options
 Custom widths (up to 8m seamless), thicknesses (1.0 to 3.0 mm), and private label wrappers are available.
 
 ## FAQ
