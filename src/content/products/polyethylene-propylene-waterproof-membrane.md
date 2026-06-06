@@ -2,7 +2,7 @@
 title: "Polyethylene Propylene (PP/PE) Composite Membrane"
 description: "Multi-layer high-polymer composite waterproofing membrane with PP fleece reinforcement. Excellent breathability and wet-substrate application."
 category: "polymer-membranes"
-image: "/assets/images/products/polyethylene-propylene-waterproof-membrane.webp"
+image: "https://img.tyuanwaterproof.com/assets/images/products/polyethylene-propylene-waterproof-membrane.webp"
 specs:
   - label: "Material"
     value: "Polyethylene + Polypropylene"

@@ -3,7 +3,7 @@ title: "Roofing Grade Two-Component Spray Polyurethane"
 shortTitle: "PU Coating"
 description: "High-performance two-component spray polyurethane waterproof coating with excellent elasticity and fast curing properties. Ideal for complex roof structures and industrial applications."
 category: "waterproof-coatings"
-image: "/assets/images/home/factory.png"
+image: "https://img.tyuanwaterproof.com/assets/images/home/factory.png"
 featured: true
 order: 100
 specs:

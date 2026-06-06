@@ -3,7 +3,7 @@ title: "Self-adhesive Bitumen Waterproof Membrane (Peel & Stick)"
 shortTitle: "Self Adhesive Bitumen"
 description: "Advanced cold-applied self-adhesive bitumen membrane with aluminum foil surface. Safe, flame-free installation with exceptional bonding."
 category: "asphalt-membranes"
-image: "/assets/images/products/self-adhesive-waterproof-membrane.webp"
+image: "https://img.tyuanwaterproof.com/assets/images/products/self-adhesive-waterproof-membrane.webp"
 featured: true
 order: 20
 specs:

@@ -2,7 +2,7 @@
 title: "Traditional Organic Asphalt Saturated Roofing Felt"
 description: "Time-tested organic asphalt saturated felt (tar paper) for sloped roofing underlayment. High asphalt saturation for durable protection."
 category: "asphalt-membranes"
-image: "/assets/images/products/asphalt-roofing-felt.webp"
+image: "https://img.tyuanwaterproof.com/assets/images/products/asphalt-roofing-felt.webp"
 specs:
   - label: "Weight Grade"
     value: "15lb, 30lb, 40lb, 50lb, 60lb"
