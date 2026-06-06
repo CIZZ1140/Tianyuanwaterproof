@@ -10,7 +10,7 @@ export const site = {
   address: 'Weifang, Shandong, China',
   siteUrl: 'https://tyuanwaterproof.com',
   year: 2026,
-  heroImage: 'https://img.tyuanwaterproof.com/home/banner.png',
+  heroImage: 'https://img.tyuanwaterproof.com/home/banner-v2.png',
   social: {
     linkedin: '#',
     facebook: '#',
