@@ -2,7 +2,7 @@
 title: "Premium EPDM Synthetic Rubber Waterproof Membrane"
 description: "Ultra-durable EPDM synthetic rubber membrane with extreme elasticity and 50+ year life expectancy. Ideal for ponds and complex roofing."
 category: "polymer-membranes"
-image: "https://img.tyuanwaterproof.com/assets/images/products/epdm-waterproof-membrane.webp"
+image: "https://img.tyuanwaterproof.com/products/epdm-waterproof-membrane.webp"
 specs:
   - label: "Material"
     value: "Vulcanized EPDM Rubber"

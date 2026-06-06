@@ -2,7 +2,7 @@
 title: "Industrial Grade PVC Waterproofing Membrane"
 description: "Durable single-ply PVC roofing membrane with polyester reinforcement. Exceptional weather resistance and heat-welded seams for maximum security."
 category: "polymer-membranes"
-image: "https://img.tyuanwaterproof.com/assets/images/products/pvc-waterproof-membrane.webp"
+image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
 specs:
   - label: "Material"
     value: "Premium PVC Polymer"

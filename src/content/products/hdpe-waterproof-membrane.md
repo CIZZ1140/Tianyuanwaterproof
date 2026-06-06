@@ -2,7 +2,7 @@
 title: "Pre-applied HDPE Self-adhesive Waterproof Membrane"
 description: "High-performance pre-applied HDPE membrane with chemical bond for underground concrete structures. Eliminates lateral water migration."
 category: "polymer-membranes"
-image: "https://img.tyuanwaterproof.com/assets/images/products/hdpe-waterproof-membrane.webp"
+image: "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp"
 specs:
   - label: "Material"
     value: "High-Density Polyethylene"
