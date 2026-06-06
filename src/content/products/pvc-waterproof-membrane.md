@@ -62,13 +62,13 @@ Custom colors, private branding, and specific reinforcement variations are avail
 - **Payment**: T/T, L/C
 
 ## Related Products
-- [TPO Waterproof Membrane](/products/tpo-waterproof-membrane)
-- [EPDM Waterproof Membrane](/products/epdm-waterproof-membrane)
-- [HDPE Waterproof Membrane](/products/hdpe-waterproof-membrane)
-- [SBS Modified Bitumen Membrane](/products/sbs-bitumen-membrane)
+- [TPO Waterproof Membrane](/products/tpo-waterproof-membrane/)
+- [EPDM Waterproof Membrane](/products/epdm-waterproof-membrane/)
+- [HDPE Waterproof Membrane](/products/hdpe-waterproof-membrane/)
+- [SBS Modified Bitumen Membrane](/products/sbs-bitumen-membrane/)
 
 ## Inquiry Form
-联系我们获取批发报价或免费样品。
+Contact us for wholesale quotes or free samples.
 <div class="inquiry-form-container">
   <form id="mzdqdpwd">
     <!-- Form content handled by component -->

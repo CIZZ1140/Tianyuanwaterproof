@@ -66,13 +66,13 @@ Custom tape widths, lengths, thickness, and branded packaging (cartons/labels) a
 - **Payment**: T/T, PayPal, Western Union
 
 ## Related Products
-- [Bitumen Sealing Tape](/products/bitumen-tape)
-- [Self-adhesive Bitumen Membrane](/products/self-adhesive-bitumen-membrane)
-- [PVC Waterproof Membrane](/products/pvc-waterproof-membrane)
-- [EPDM Waterproof Membrane](/products/epdm-waterproof-membrane)
+- [Bitumen Sealing Tape](/products/bitumen-tape/)
+- [Self-adhesive Bitumen Membrane](/products/self-adhesive-bitumen-membrane/)
+- [PVC Waterproof Membrane](/products/pvc-waterproof-membrane/)
+- [EPDM Waterproof Membrane](/products/epdm-waterproof-membrane/)
 
 ## Inquiry Form
-联系我们获取批发报价或免费样品。
+Contact us for wholesale quotes or free samples.
 <div class="inquiry-form-container">
   <form id="mzdqdpwd">
     <!-- Form content handled by component -->

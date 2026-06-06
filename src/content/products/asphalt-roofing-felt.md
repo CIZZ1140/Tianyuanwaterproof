@@ -63,12 +63,12 @@ Customized packaging, logo printing, and adjustable roll specifications (length,
 - **Payment**: T/T, L/C
 
 ## Related Products
-- [Asphalt Roofing Shingles](/products/asphalt-shingles-laminated)
-- [SBS Modified Bitumen Membrane](/products/sbs-bitumen-membrane)
-- [Self-adhesive Bitumen Membrane](/products/self-adhesive-bitumen-membrane)
+- [Asphalt Roofing Shingles](/products/asphalt-shingles-laminated/)
+- [SBS Modified Bitumen Membrane](/products/sbs-bitumen-membrane/)
+- [Self-adhesive Bitumen Membrane](/products/self-adhesive-bitumen-membrane/)
 
 ## Inquiry Form
-联系我们获取批发报价或免费样品。
+Contact us for wholesale quotes or free samples.
 <div class="inquiry-form-container">
   <form id="mzdqdpwd">
     <!-- Form content handled by component -->

@@ -72,7 +72,7 @@ const allProducts = await getCollection('products');
         <h2 class="text-2xl font-bold text-slate-900 mb-8">All Products ({allProducts.length})</h2>
         <div class="grid md:grid-cols-3 gap-8">
           {allProducts.map(p => (
-            <a href={`/products/${p.slug}`} class="group block bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-all">
+            <a href={`/products/${p.slug}/`} class="group block bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-all">
               <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-slate-50 flex items-center justify-center">
                 {p.data.image ? (
                   <img src={p.data.image} alt={p.data.title} class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />

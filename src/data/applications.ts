@@ -2,23 +2,44 @@ export const applications = [
   {
     slug: 'roof-waterproofing',
     title: 'Roof Waterproofing',
-    intro: 'Waterproofing systems for flat roofs, metal roofs, industrial roofs and residential roof underlayment.',
-    recommended: ['SBS/APP Modified Bitumen Torch-applied Waterproofing Membrane', 'Self-Adhesive Waterproof Membrane for Color Steel & Metal Roofing', 'Petroleum Saturated Organic Roofing Felt (15lb / 30lb)'],
+    intro: 'High-performance solutions for commercial and residential flat roofs.',
+    recommended: ['SBS Membrane', 'TPO Membrane', 'PU Coating'],
     points: ['High-performance torch-applied membranes', 'Specialized self-adhesive metal roof solutions', 'Traditional organic felt underlayment for shingles']
   },
   {
-    slug: 'metal-roof-sealing',
-    title: 'Metal Roof Sealing',
-    intro: 'Professional waterproofing solutions specifically designed for color steel and metal roofing systems.',
-    recommended: ['Self-Adhesive Waterproof Membrane for Color Steel & Metal Roofing'],
-    points: ['Super strong adhesion to metal surfaces', 'Cold-applied peel-and-stick installation', 'Safe and efficient for industrial warehouses']
+    slug: 'basement-waterproofing',
+    title: 'Basement Waterproofing',
+    intro: 'Reliable underground systems for foundations and retaining walls.',
+    recommended: ['HDPE Membrane', 'Self-adhesive Membrane'],
+    points: ['Reliable underground systems', 'Extreme pressure resistance', 'Long-term durability']
   },
   {
-    slug: 'underground-projects',
-    title: 'Underground Projects',
-    intro: 'Reliable waterproofing barriers for tunnels, basements, foundations and civil engineering projects.',
-    recommended: ['SBS/APP Modified Bitumen Torch-applied Waterproofing Membrane'],
-    points: ['Heat and corrosion resistant', 'UV and anti-aging protection', 'Durable barrier for extreme environments']
+    slug: 'bathroom-waterproofing',
+    title: 'Bathroom Waterproofing',
+    intro: 'Liquid-applied coatings for wet areas and shower rooms.',
+    recommended: ['PU Coating', 'JS Coating'],
+    points: ['Seamless protection', 'Eco-friendly materials', 'Excellent adhesion to concrete']
+  },
+  {
+    slug: 'tunnel-waterproofing',
+    title: 'Tunnel Waterproofing',
+    intro: 'Specialized membranes for subways, tunnels and civil infrastructure.',
+    recommended: ['PVC Membrane', 'EVA Membrane'],
+    points: ['Puncture resistance', 'High tensile strength', 'Subway & tunnel specialized']
+  },
+  {
+    slug: 'joint-sealing',
+    title: 'Joint Sealing',
+    intro: 'Flexible tapes for expansion joints and structural cracks.',
+    recommended: ['Butyl Tape', 'Bitumen Tape'],
+    points: ['Expansion joint compatibility', 'Superior elasticity', 'UV resistant sealing']
+  },
+  {
+    slug: 'window-door-sealing',
+    title: 'Window & Door Sealing',
+    intro: 'Self-adhesive flashing tapes for perimeter sealing.',
+    recommended: ['Bitumen Tape', 'Butyl Tape'],
+    points: ['Perimeter flashing', 'Easy peel-and-stick', 'Weatherproof performance']
   }
 ];
 

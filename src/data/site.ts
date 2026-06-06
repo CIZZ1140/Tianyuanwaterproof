@@ -31,39 +31,39 @@ export const nav = [
 export const productCategories = [
   {
     title: 'Waterproofing Membranes',
-    href: '/products/waterproofing-membranes/',
+    href: '/categories/asphalt-membranes/',
     image: 'https://img.tyuanwaterproof.com/products/sbs-torch-applied-membrane.jpg',
     items: [
-      { title: 'Bitumen Waterproofing Membranes', href: '/products/bitumen-waterproofing-membranes/' },
-      { title: 'Polymer Waterproofing Membranes', href: '/products/polymer-waterproofing-membranes/' }
+      { title: 'Bitumen Waterproofing Membranes', href: '/categories/asphalt-membranes/' },
+      { title: 'Polymer Waterproofing Membranes', href: '/categories/polymer-membranes/' }
     ]
   },
   {
     title: 'Waterproofing Tapes',
-    href: '/products/waterproofing-tapes/',
+    href: '/categories/waterproof-tapes/',
     image: 'https://img.tyuanwaterproof.com/products/butyl-tape.webp',
     items: [
-      { title: 'Butyl Waterproof Tape', href: '/products/butyl-waterproof-tape/' },
-      { title: 'Bitumen Waterproof Tape', href: '/products/bitumen-waterproof-tape/' }
+      { title: 'Butyl Waterproof Tape', href: '/categories/waterproof-tapes/' },
+      { title: 'Bitumen Waterproof Tape', href: '/categories/waterproof-tapes/' }
     ]
   },
   {
     title: 'Waterproofing Coatings',
-    href: '/products/waterproofing-coatings/',
+    href: '/categories/waterproof-coatings/',
     image: 'https://img.tyuanwaterproof.com/home/factory.png',
     items: [
-      { title: 'Polyurethane Waterproof Coating', href: '/products/polyurethane-waterproof-coating/' },
-      { title: 'Transparent Waterproof Coating', href: '/products/transparent-waterproof-coating/' },
-      { title: 'JS Waterproof Coating', href: '/products/js-waterproof-coating/' }
+      { title: 'Polyurethane Waterproof Coating', href: '/categories/waterproof-coatings/' },
+      { title: 'Transparent Waterproof Coating', href: '/categories/waterproof-coatings/' },
+      { title: 'JS Waterproof Coating', href: '/categories/waterproof-coatings/' }
     ]
   },
   {
     title: 'Tools & Accessories',
-    href: '/products/tools-accessories/',
+    href: '/categories/waterproof-coatings/',
     image: 'https://img.tyuanwaterproof.com/home/banner.png',
     items: [
-      { title: 'Waterproofing Primer', href: '/products/waterproofing-primer/' },
-      { title: 'Spray Gun Tools', href: '/products/spray-gun-tools/' }
+      { title: 'Waterproofing Primer', href: '/categories/waterproof-coatings/' },
+      { title: 'Spray Gun Tools', href: '/categories/waterproof-coatings/' }
     ]
   }
 ];

@@ -66,20 +66,20 @@ Custom widths, lengths, and branded export cartons are available for bulk orders
 - **Payment**: T/T, L/C
 
 ## Related Products
-- [Butyl Waterproof Tape](/products/butyl-tape)
-- [Self-adhesive Bitumen Membrane](/products/self-adhesive-bitumen-membrane)
-- [SBS Modified Bitumen Membrane](/products/sbs-bitumen-membrane)
-- [Asphalt Roofing Felt](/products/asphalt-roofing-felt)
+- [Butyl Waterproof Tape](/products/butyl-tape/)
+- [Self-adhesive Bitumen Membrane](/products/self-adhesive-bitumen-membrane/)
+- [SBS Modified Bitumen Membrane](/products/sbs-bitumen-membrane/)
+- [Asphalt Roofing Felt](/products/asphalt-roofing-felt/)
 
 ## Inquiry Form
-联系我们获取批发报价或免费样品。
+Contact us for wholesale quotes or free samples.
 <div class="inquiry-form-container">
   <form id="mzdqdpwd">
     <!-- Form content handled by component -->
   </form>
 </div>
 quiry Form
-联系我们获取批发报价或免费样品。
+Contact us for wholesale quotes or free samples.
 <div class="inquiry-form-container">
   <form id="mzdqdpwd">
     <!-- Form content handled by component -->

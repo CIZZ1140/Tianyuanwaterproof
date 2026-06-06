@@ -66,13 +66,13 @@ Custom colors (White, Grey, Green), private branding, and reinforcement variatio
 - **Payment**: T/T, L/C
 
 ## Related Products
-- [PVC Waterproof Membrane](/products/pvc-waterproof-membrane)
-- [EPDM Waterproof Membrane](/products/epdm-waterproof-membrane)
-- [HDPE Waterproof Membrane](/products/hdpe-waterproof-membrane)
-- [SBS Modified Bitumen Membrane](/products/sbs-bitumen-membrane)
+- [PVC Waterproof Membrane](/products/pvc-waterproof-membrane/)
+- [EPDM Waterproof Membrane](/products/epdm-waterproof-membrane/)
+- [HDPE Waterproof Membrane](/products/hdpe-waterproof-membrane/)
+- [SBS Modified Bitumen Membrane](/products/sbs-bitumen-membrane/)
 
 ## Inquiry Form
-联系我们获取批发报价或免费样品。
+Contact us for wholesale quotes or free samples.
 <div class="inquiry-form-container">
   <form id="mzdqdpwd">
     <!-- Form content handled by component -->

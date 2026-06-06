@@ -66,13 +66,13 @@ Customized packaging, logo printing, and specific thickness/surface options are 
 - **Payment**: L/C, T/T (30% deposit)
 
 ## Related Products
-- [SBS Modified Bitumen Membrane](/products/sbs-bitumen-membrane)
-- [Butyl Waterproof Tape](/products/butyl-tape)
-- [Bitumen Sealing Tape](/products/bitumen-tape)
-- [PVC Waterproof Membrane](/products/pvc-waterproof-membrane)
+- [SBS Modified Bitumen Membrane](/products/sbs-bitumen-membrane/)
+- [Butyl Waterproof Tape](/products/butyl-tape/)
+- [Bitumen Sealing Tape](/products/bitumen-tape/)
+- [PVC Waterproof Membrane](/products/pvc-waterproof-membrane/)
 
 ## Inquiry Form
-联系我们获取批发报价或免费样品。
+Contact us for wholesale quotes or free samples.
 <div class="inquiry-form-container">
   <form id="mzdqdpwd">
     <!-- Form content handled by component -->

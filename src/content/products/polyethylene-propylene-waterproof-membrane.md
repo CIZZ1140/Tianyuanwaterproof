@@ -64,13 +64,13 @@ Custom unit weight (200-1000g/sqm), tailored dimensions, and printed grid lines 
 - **Payment**: T/T, L/C
 
 ## Related Products
-- [Polymer Dry Powder Adhesive](/products/polyethylene-propylene-waterproof-membrane)
-- [Non-Woven TPE Sealing Tape](/products/polyethylene-propylene-waterproof-membrane)
-- [PVC Waterproof Membrane](/products/pvc-waterproof-membrane)
-- [HDPE Waterproof Membrane](/products/hdpe-waterproof-membrane)
+- [Polymer Dry Powder Adhesive](/products/polyethylene-propylene-waterproof-membrane/)
+- [Non-Woven TPE Sealing Tape](/products/polyethylene-propylene-waterproof-membrane/)
+- [PVC Waterproof Membrane](/products/pvc-waterproof-membrane/)
+- [HDPE Waterproof Membrane](/products/hdpe-waterproof-membrane/)
 
 ## Inquiry Form
-联系我们获取批发报价或免费样品。
+Contact us for wholesale quotes or free samples.
 <div class="inquiry-form-container">
   <form id="mzdqdpwd">
     <!-- Form content handled by component -->
