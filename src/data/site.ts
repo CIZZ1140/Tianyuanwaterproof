@@ -5,17 +5,13 @@ export const site = {
   logo: '/favicon.svg',
   tagline: 'Bitumen Membrane & Roofing Felt Manufacturer',
   email: 'sales@tyuanwaterproof.com',
-  whatsapp: '15263640998',
-  phone: '+86 15263640998',
+
+  phone: '+86 152 6364 0998',
+  whatsapp: '8615263640998',
   address: 'Weifang, Shandong, China',
-  siteUrl: 'https://tyuanwaterproof.com',
-  year: 2026,
-  heroImage: 'https://img.tyuanwaterproof.com/home/banner-v2.png',
-  social: {
-    linkedin: '#',
-    facebook: '#',
-    youtube: '#'
-  }
+  domain: 'https://tyuanwaterproof.com',
+  alibabaStore: 'https://tyfangshui.en.alibaba.com',
+  heroImage: 'https://images.unsplash.com/photo-1635424710928-0544e8512eae?q=80&w=2071&auto=format&fit=crop'
 };
 
 export const nav = [
