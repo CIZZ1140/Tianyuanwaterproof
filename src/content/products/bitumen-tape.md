@@ -1,8 +1,11 @@
 ---
 title: "Self-Adhesive Bitumen Sealing Aluminum Tape"
+shortTitle: "Bitumen Tape"
 description: "Quick-repair bitumen flashing tape with reinforced aluminum surface. Immediate high-grab waterproofing for roof seams and cracks."
 category: "waterproof-tapes"
 image: "/assets/images/products/bitumen-tape.webp"
+featured: true
+order: 30
 specs:
   - label: "Material"
     value: "Polymer Modified Bitumen"

@@ -10,7 +10,7 @@ export const site = {
   address: 'Weifang, Shandong, China',
   siteUrl: 'https://tyuanwaterproof.com',
   year: 2026,
-  heroImage: 'https://sc04.alicdn.com/kf/H76256c78119842c385c7f8a7e082855fK.jpg',
+  heroImage: '/assets/images/home/banner.png',
   social: {
     linkedin: '#',
     facebook: '#',
@@ -50,7 +50,7 @@ export const productCategories = [
   {
     title: 'Waterproofing Coatings',
     href: '/products/waterproofing-coatings/',
-    image: 'https://sc01.alicdn.com/@sc04/kf/Hdb438925582c4ac683687a185028b305u.png',
+    image: '/assets/images/home/factory.png',
     items: [
       { title: 'Polyurethane Waterproof Coating', href: '/products/polyurethane-waterproof-coating/' },
       { title: 'Transparent Waterproof Coating', href: '/products/transparent-waterproof-coating/' },
@@ -60,7 +60,7 @@ export const productCategories = [
   {
     title: 'Tools & Accessories',
     href: '/products/tools-accessories/',
-    image: 'https://sc04.alicdn.com/kf/H7e087a70867f43a8bd7c11db0b7f9e20T.jpg',
+    image: '/assets/images/home/banner.png',
     items: [
       { title: 'Waterproofing Primer', href: '/products/waterproofing-primer/' },
       { title: 'Spray Gun Tools', href: '/products/spray-gun-tools/' }
@@ -72,16 +72,44 @@ export const applications = [
   {
     title: 'Roof Waterproofing',
     slug: 'roof-waterproofing',
-    image: '/assets/images/products/tpo-waterproof-membrane.webp',
-    summary: 'Membranes, tapes and coatings for flat roofs, commercial roofs and roof repair projects.',
-    products: ['SBS Waterproofing Membrane', 'APP Waterproofing Membrane', 'TPO Waterproofing Membrane']
+    image: '/assets/images/home/commercial-roof.png',
+    summary: 'High-performance solutions for commercial and residential flat roofs.',
+    products: ['SBS Membrane', 'TPO Membrane', 'PU Coating']
   },
   {
     title: 'Basement Waterproofing',
     slug: 'basement-waterproofing',
-    image: '/assets/images/products/hdpe-waterproof-membrane.webp',
-    summary: 'Below-grade systems for basements, foundations and retaining walls.',
-    products: ['HDPE Waterproofing Membrane', 'JS Waterproof Coating']
+    image: '/assets/images/home/basement.png',
+    summary: 'Reliable underground systems for foundations and retaining walls.',
+    products: ['HDPE Membrane', 'Self-adhesive Membrane']
+  },
+  {
+    title: 'Bathroom Waterproofing',
+    slug: 'bathroom-waterproofing',
+    image: '/assets/images/home/basement.png',
+    summary: 'Liquid-applied coatings for wet areas and shower rooms.',
+    products: ['PU Coating', 'JS Coating']
+  },
+  {
+    title: 'Tunnel Waterproofing',
+    slug: 'tunnel-waterproofing',
+    image: '/assets/images/home/tunnel.png',
+    summary: 'Specialized membranes for subways, tunnels and civil infrastructure.',
+    products: ['PVC Membrane', 'EVA Membrane']
+  },
+  {
+    title: 'Joint Sealing',
+    slug: 'joint-sealing',
+    image: '/assets/images/products/butyl-tape.webp',
+    summary: 'Flexible tapes for expansion joints and structural cracks.',
+    products: ['Butyl Tape', 'Bitumen Tape']
+  },
+  {
+    title: 'Window & Door Sealing',
+    slug: 'window-door-sealing',
+    image: '/assets/images/products/bitumen-tape.webp',
+    summary: 'Self-adhesive flashing tapes for perimeter sealing.',
+    products: ['Bitumen Tape', 'Butyl Tape']
   }
 ];
 

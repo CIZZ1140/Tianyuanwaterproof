@@ -1,8 +1,11 @@
 ---
 title: "TPO Thermoplastic Polyolefin Roofing Membrane"
+shortTitle: "TPO Membrane"
 description: "Energy-efficient TPO single-ply roofing membrane with high solar reflectance. Heat-welded seams and extreme weather resistance."
 category: "polymer-membranes"
 image: "/assets/images/products/tpo-waterproof-membrane.webp"
+featured: true
+order: 50
 specs:
   - label: "Material"
     value: "Thermoplastic Polyolefin"

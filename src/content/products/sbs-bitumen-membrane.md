@@ -1,8 +1,11 @@
 ---
 title: "Tianyuan Premium SBS Modified Bitumen Waterproof Membrane"
+shortTitle: "Bitumen Membrane"
 description: "High-performance torch-applied SBS modified bitumen membrane for structural waterproofing. Exceptional low-temperature flexibility and durability."
 category: "asphalt-membranes"
 image: "/assets/images/products/sbs-waterproof-membrane.webp"
+featured: true
+order: 10
 specs:
   - label: "Thickness"
     value: "3.0mm, 4.0mm, 5.0mm"

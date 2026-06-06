@@ -61,15 +61,15 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
 
   <section class="py-14">
     <div class="container grid gap-8 lg:grid-cols-2 lg:items-center">
-      <div>
-        <p class="section-kicker">Why Choose Us</p>
-        <h2 class="section-title normal-case text-4xl leading-tight">A Global Leader in Waterproofing Innovation</h2>
+        <div>
+          <p class="section-kicker text-xs opacity-80">Why Choose Us</p>
+          <h2 class="section-title normal-case text-4xl leading-tight">A Global Leader in Waterproofing Innovation</h2>
         <div class="mt-5 space-y-4 text-sm leading-7 text-slate-700">
           <p>Weifang Tianyuan Waterproof Material Co., Ltd., located in the “Waterproofing Capital of China” — Shouguang, is a premier manufacturer specializing in advanced waterproofing systems. With over 20 years of industry expertise, we integrate R&D, manufacturing, and international sales to deliver high-performance solutions for residential, commercial, and industrial projects worldwide.</p>
           <p>Our state-of-the-art facility is equipped with multiple automated production lines for bitumen membranes, polymer sheets, and eco-friendly coatings. At Tianyuan Waterproof, we don’t just sell products; we provide peace of mind through engineering excellence.</p>
         </div>
       </div>
-      <img src="https://sc04.alicdn.com/kf/H85966377627a4216893796ec12658823G.jpg" alt="Tianyuan Waterproof factory" class="rounded-2xl shadow-card" />
+      <img src="/assets/images/home/factory.png" alt="Tianyuan Waterproof factory" class="rounded-2xl shadow-card" />
       <div class="lg:col-span-2 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         {[
           ['Factory Direct Supply','Competitive pricing from source manufacturer with stable production capacity.'],
@@ -87,6 +87,40 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
       <SectionHeader title="Featured Products" href="/products/" linkLabel="View All Products" />
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-6">
         {featured.map((p)=><ProductCard title={p.data.shortTitle || p.data.title} href={`/products/${p.slug}/`} image={p.data.image} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 overflow-hidden">
+    <div class="container">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div class="max-w-2xl">
+          <p class="text-brand font-bold tracking-[0.2em] uppercase text-sm mb-4">Success Stories</p>
+          <h2 class="text-4xl md:text-5xl font-black text-navy uppercase">Global Projects & Case Studies</h2>
+        </div>
+        <a href="/projects/" class="text-brand font-bold uppercase tracking-widest text-sm border-b-2 border-brand pb-1">View All Case Studies →</a>
+      </div>
+      
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="group relative overflow-hidden rounded-3xl bg-navy aspect-[16/10]">
+          <img src="/assets/images/home/tunnel.png" alt="Bangkok Subway Project" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"></div>
+          <div class="absolute bottom-8 left-8 right-8">
+            <span class="bg-brand text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full mb-3 inline-block">Infrastructure</span>
+            <h3 class="text-2xl font-bold text-white mb-2 uppercase">Bangkok Subway Extension</h3>
+            <p class="text-white/70 text-sm line-clamp-2">Thailand - Supplying 50,000+ SQM of HDPE pre-applied membranes for station waterproofing and tunnel segments.</p>
+          </div>
+        </div>
+        
+        <div class="group relative overflow-hidden rounded-3xl bg-navy aspect-[16/10]">
+          <img src="/assets/images/home/factory.png" alt="Industrial Plant Vietnam" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"></div>
+          <div class="absolute bottom-8 left-8 right-8">
+            <span class="bg-brand text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full mb-3 inline-block">Industrial</span>
+            <h3 class="text-2xl font-bold text-white mb-2 uppercase">Samsung Factory Complex</h3>
+            <p class="text-white/70 text-sm line-clamp-2">Vietnam - TPO roofing systems and specialized bitumen membranes for major industrial production facilities in Bac Ninh.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

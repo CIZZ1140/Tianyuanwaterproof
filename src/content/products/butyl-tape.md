@@ -1,8 +1,11 @@
 ---
 title: "Aluminum Foil Butyl Waterproof Sealing Tape"
+shortTitle: "Butyl Tape"
 description: "High-tack, non-curing butyl rubber sealant tape for roof repairs and joint sealing. Permanent flexibility and excellent UV resistance."
 category: "waterproof-tapes"
 image: "/assets/images/products/butyl-tape.webp"
+featured: true
+order: 40
 specs:
   - label: "Material"
     value: "Butyl Rubber + Aluminum Foil"
