@@ -1,20 +1,55 @@
 ---
-import { site, nav } from '@/data/site';
-const base = import.meta.env.BASE_URL;
-const withBase = (href: string) => href === '/' ? base : `${base}${href.replace(/^\//, '')}`;
+import { nav, productCategories, site } from '@data/site';
 ---
-<header class="sticky top-0 z-50 border-b border-white/10 bg-navy/95 backdrop-blur">
-  <div class="container-wrap flex h-20 items-center justify-between">
-    <a href={withBase('/')} class="flex items-center gap-3 text-white" aria-label={site.brand}>
-      <span class="grid h-11 w-11 place-items-center rounded-2xl bg-accent font-black text-slate-950">WB</span>
-      <span>
-        <span class="block text-lg font-black tracking-wide">{site.brand}</span>
-        <span class="block text-xs text-white/65">{site.tagline}</span>
-      </span>
+<header class="sticky top-0 z-50 border-b border-white/10 bg-deep/95 text-white backdrop-blur">
+  <div class="container flex h-20 items-center justify-between gap-4">
+    <a href="/" class="flex items-center gap-3" aria-label="Tianyuan Waterproof home">
+      <img src={site.logo} alt="Tianyuan Waterproof logo" class="h-10 w-10 rounded-full object-contain bg-white p-0.5" />
+      <span class="font-black text-xl tracking-tight hidden sm:block">{site.shortName}</span>
     </a>
-    <nav class="hidden items-center gap-7 lg:flex">
-      {nav.map((item) => <a class="text-sm font-semibold text-white/80 transition hover:text-white" href={withBase(item.href)}>{item.label}</a>)}
+    <nav class="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
+      {nav.map((item) => (
+        item.label === 'Products' ? (
+          <div class="group relative">
+            <a href={item.href} class="text-sm font-semibold text-white/90 hover:text-white py-8 block">Products</a>
+            <div class="invisible absolute left-1/2 top-full w-[800px] -translate-x-1/2 rounded-2xl border border-line bg-white p-6 text-slate-800 opacity-0 shadow-2xl transition-all group-hover:visible group-hover:opacity-100">
+              <div class="grid grid-cols-4 gap-5">
+                {productCategories.map((cat) => (
+                  <div>
+                    <a href={cat.href} class="block text-sm font-extrabold uppercase text-navy hover:text-brand">{cat.title}</a>
+                    <ul class="mt-3 space-y-2">
+                      {cat.items.map((sub) => <li><a href={sub.href} class="text-sm text-slate-600 hover:text-brand">{sub.title}</a></li>)}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ) : (
+          <a href={item.href} class="text-sm font-semibold text-white/90 hover:text-white">{item.label}</a>
+        )
+      ))}
     </nav>
-    <a class="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-slate-950 transition hover:bg-yellow-400 md:inline-flex" href={withBase('/contact/')}>Get Quote</a>
+    <div class="hidden items-center gap-4 lg:flex">
+      <a href="/contact/" class="btn-primary py-2.5">Request a Quote</a>
+    </div>
+    <button id="mobile-menu-button" class="inline-flex rounded-lg border border-white/20 p-2 lg:hidden" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open mobile menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden border-t border-white/10 bg-deep lg:hidden">
+    <div class="container space-y-1 py-4">
+      {nav.map((item) => <a href={item.href} class="block rounded-lg px-3 py-3 text-sm font-bold text-white/90 hover:bg-white/10">{item.label}</a>)}
+      <a href="/contact/" class="mt-3 flex justify-center rounded-lg bg-brand px-4 py-3 text-sm font-bold">Request a Quote</a>
+    </div>
   </div>
 </header>
+<script>
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  button?.addEventListener('click', () => {
+    const isOpen = !menu?.classList.contains('hidden');
+    menu?.classList.toggle('hidden');
+    button.setAttribute('aria-expanded', String(!isOpen));
+  });
+</script>

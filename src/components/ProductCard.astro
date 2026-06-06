@@ -1,13 +1,14 @@
 ---
-const { product } = Astro.props;
-const base = import.meta.env.BASE_URL;
+interface Props { title: string; href: string; image: string; excerpt?: string; }
+const { title, href, image, excerpt } = Astro.props;
 ---
-<a class="card group block" href={`${base}products/${product.slug}/`}>
-  <div class="mb-5 grid h-44 place-items-center rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200">
-    <div class="h-24 w-40 rounded-[50%] border-[18px] border-industrial bg-white shadow-inner"></div>
+<a href={href} class="group card block overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all">
+  <div class="aspect-[4/3] bg-slate-50 p-5">
+    <img src={image} alt={title} loading="lazy" class="h-full w-full object-contain" />
   </div>
-  <p class="mb-2 text-xs font-bold uppercase tracking-wider text-accent">{product.category}</p>
-  <h3 class="text-xl font-bold text-slate-950 group-hover:text-industrial">{product.name}</h3>
-  <p class="mt-3 line-clamp-3 text-sm leading-6 text-slate-600">{product.intro}</p>
-  <span class="mt-5 inline-flex text-sm font-bold text-industrial">View Details →</span>
+  <div class="p-5">
+    <h3 class="text-base font-extrabold text-navy group-hover:text-brand">{title}</h3>
+    {excerpt && <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-600">{excerpt}</p>}
+    <span class="mt-4 inline-flex text-sm font-bold text-brand">View Details →</span>
+  </div>
 </a>

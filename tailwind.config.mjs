@@ -1,18 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-  theme: {
-    extend: {
-      colors: {
-        navy: '#0B2A4A',
-        industrial: '#0F3D66',
-        accent: '#F59E0B',
-        slateText: '#334155'
-      },
-      boxShadow: {
-        soft: '0 18px 45px rgba(15, 23, 42, 0.10)'
-      }
-    }
-  },
-  plugins: []
-};
+	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	theme: {
+		extend: {
+			colors: {
+				navy: '#06284c',
+				deep: '#031b33',
+				brand: '#005bd8',
+				accent: '#ff7a1a',
+				line: '#dbe7f5'
+			},
+			boxShadow: {
+				card: '0 10px 30px rgba(6, 40, 76, 0.08)'
+			}
+		},
+	},
+	plugins: [],
+}
