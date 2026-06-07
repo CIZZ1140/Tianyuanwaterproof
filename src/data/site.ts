@@ -45,7 +45,7 @@ export const productCategories = [
   {
     title: 'Waterproofing Coatings',
     href: '/categories/waterproof-coatings/',
-    image: 'https://img.tyuanwaterproof.com/home/factory.png',
+    image: '/assets/images/optimized/factory.webp',
     items: [
       { title: 'Polyurethane Waterproof Coating', href: '/categories/waterproof-coatings/' },
       { title: 'Transparent Waterproof Coating', href: '/categories/waterproof-coatings/' },
@@ -55,7 +55,7 @@ export const productCategories = [
   {
     title: 'Tools & Accessories',
     href: '/categories/waterproof-coatings/',
-    image: 'https://img.tyuanwaterproof.com/home/banner.png',
+    image: '/assets/images/optimized/banner.webp',
     items: [
       { title: 'Waterproofing Primer', href: '/categories/waterproof-coatings/' },
       { title: 'Spray Gun Tools', href: '/categories/waterproof-coatings/' }
@@ -67,28 +67,28 @@ export const applications = [
   {
     title: 'Roof Waterproofing',
     slug: 'roof-waterproofing',
-    image: 'https://img.tyuanwaterproof.com/home/commercial-roof.png',
+    image: '/assets/images/optimized/commercial-roof.webp',
     summary: 'High-performance solutions for commercial and residential flat roofs.',
     products: ['SBS Membrane', 'TPO Membrane', 'PU Coating']
   },
   {
     title: 'Basement Waterproofing',
     slug: 'basement-waterproofing',
-    image: 'https://img.tyuanwaterproof.com/home/basement.png',
+    image: '/assets/images/optimized/basement.webp',
     summary: 'Reliable underground systems for foundations and retaining walls.',
     products: ['HDPE Membrane', 'Self-adhesive Membrane']
   },
   {
     title: 'Bathroom Waterproofing',
     slug: 'bathroom-waterproofing',
-    image: 'https://img.tyuanwaterproof.com/home/basement.png',
+    image: '/assets/images/optimized/basement.webp',
     summary: 'Liquid-applied coatings for wet areas and shower rooms.',
     products: ['PU Coating', 'JS Coating']
   },
   {
     title: 'Tunnel Waterproofing',
     slug: 'tunnel-waterproofing',
-    image: 'https://img.tyuanwaterproof.com/home/tunnel.png',
+    image: '/assets/images/optimized/tunnel.webp',
     summary: 'Specialized membranes for subways, tunnels and civil infrastructure.',
     products: ['PVC Membrane', 'EVA Membrane']
   },
