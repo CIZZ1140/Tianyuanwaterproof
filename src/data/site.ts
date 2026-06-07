@@ -5,9 +5,8 @@ export const site = {
   logo: '/favicon.svg',
   tagline: 'Bitumen Membrane & Roofing Felt Manufacturer',
   email: 'sales@tyuanwaterproof.com',
-
-  phone: '+86 152 6364 0998',
   whatsapp: '8615263640998',
+  phone: '+86 152 6364 0998',
   address: 'Weifang, Shandong, China',
   domain: 'https://tyuanwaterproof.com',
   alibabaStore: 'https://tyfangshui.en.alibaba.com',
