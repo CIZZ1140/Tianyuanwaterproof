@@ -29,7 +29,7 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
   </section>
 
   <section class="py-12">
-    <div class="container">
+    <div class="container mx-auto">
       <SectionHeader title="Product Categories" href="/products/" linkLabel="View All Products" />
       <div class="grid gap-6 lg:grid-cols-3">
         {productCategories.slice(0,3).map((cat)=>(
@@ -45,7 +45,7 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
   </section>
 
   <section class="bg-slate-50 py-12">
-    <div class="container">
+    <div class="container mx-auto">
       <SectionHeader title="Applications" href="/applications/" linkLabel="View All Applications" />
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
         {applications.map((app)=>(
@@ -60,7 +60,7 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
   </section>
 
   <section class="py-14">
-    <div class="container grid gap-8 lg:grid-cols-2 lg:items-center">
+    <div class="container mx-auto grid gap-8 lg:grid-cols-2 lg:items-center">
         <div>
           <p class="section-kicker text-xs opacity-80">Why Choose Us</p>
           <h2 class="section-title normal-case text-4xl leading-tight">A Global Leader in Waterproofing Innovation</h2>
@@ -83,7 +83,7 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
   </section>
 
   <section class="bg-slate-50 py-12">
-    <div class="container">
+    <div class="container mx-auto">
       <SectionHeader title="Featured Products" href="/products/" linkLabel="View All Products" />
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-6">
         {featured.map((p)=><ProductCard title={p.data.shortTitle || p.data.title} href={`/products/${p.slug}/`} image={p.data.image} />)}
@@ -92,7 +92,7 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
   </section>
 
   <section class="py-20 overflow-hidden">
-    <div class="container">
+    <div class="container mx-auto">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
         <div class="max-w-2xl">
           <p class="text-brand font-bold tracking-[0.2em] uppercase text-sm mb-4">Success Stories</p>
