@@ -9,6 +9,7 @@ export const site = {
   phone: '+86 152 6364 0998',
   address: 'Weifang, Shandong, China',
   domain: 'https://tyuanwaterproof.com',
+  year: 2026,
   alibabaStore: 'https://tyfangshui.en.alibaba.com',
   heroImage: 'https://images.unsplash.com/photo-1635424710928-0544e8512eae?q=80&w=2071&auto=format&fit=crop'
 };

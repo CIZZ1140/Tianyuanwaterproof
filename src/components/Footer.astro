@@ -35,7 +35,7 @@ import { productCategories, applications, site } from '@data/site';
         <li>{site.address}</li>
         <li><a href={`mailto:${site.email}`} class="hover:text-white">{site.email}</a></li>
         <li>WhatsApp: {site.whatsapp}</li>
-        <li><a href={site.siteUrl} class="hover:text-white">{site.siteUrl.replace('https://','')}</a></li>
+        <li><a href={site.domain} class="hover:text-white">{site.domain.replace('https://','')}</a></li>
       </ul>
     </div>
   </div>
