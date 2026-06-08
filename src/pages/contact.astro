@@ -69,7 +69,7 @@ const labelClass = 'mb-2 block text-xs font-semibold uppercase tracking-[0.18em]
         <h1 class="font-serif text-4xl font-semibold tracking-tight text-[#241F1A] sm:text-5xl lg:text-6xl">
           Let’s discuss your waterproofing project
         </h1>
-        <p class="mt-5 text-base leading-8 text-[#6F6255] sm:text-lg">
+        <p class="mt-5 text-base leading-8 text-[#6F6255] sm:lg">
           Send us your project details, product requirements, quantity, and destination market.
           Our team will respond with product matching, quotation, and technical support.
         </p>
@@ -91,7 +91,7 @@ const labelClass = 'mb-2 block text-xs font-semibold uppercase tracking-[0.18em]
             method="POST"
           >
             <input type="hidden" name="_subject" value="New inquiry from Tianyuan Waterproof website" />
-            <input type="hidden" name="source" value={site?.brand ?? 'Tianyuan Waterproof'} />
+            <input type="hidden" name="source" value={site?.name ?? 'Tianyuan Waterproof'} />
 
             <div class="grid gap-5 sm:grid-cols-2">
               <div>
