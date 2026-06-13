@@ -1,8 +1,8 @@
 ---
 title: "Self-Adhesive Waterproof Membrane for Color Steel & Metal Roofing"
 description: "Cold-applied self-adhesive bitumen membrane with super strong adhesion to metal. Ideal for industrial warehouses and metal roofing."
-category: "Self-Adhesive Series"
-image: "https://sc04.alicdn.com/kf/H3cb6c885126c48ab92a056637d9f1cd2x.jpg"
+category: "asphalt-membranes"
+image: "https://img.tyuanwaterproof.com/products/self-adhesive-color-steel-membrane.webp"
 specs:
   - label: "Thickness"
     value: "1.2mm / 1.5mm / 2.0mm"

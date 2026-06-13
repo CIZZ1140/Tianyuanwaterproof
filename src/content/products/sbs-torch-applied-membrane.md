@@ -1,8 +1,8 @@
 ---
 title: "SBS/APP Modified Bitumen Torch-applied Waterproofing Membrane"
 description: "High-performance SBS/APP modified bitumen membrane for roofs, tunnels, and underground projects. UV and anti-aging resistant."
-category: "Bitumen Membranes"
-image: "https://sc04.alicdn.com/kf/H8d7ba0b4752c4c4ea051b0098d1e432cZ.jpg"
+category: "asphalt-membranes"
+image: "https://img.tyuanwaterproof.com/products/sbs-torch-applied-membrane.webp"
 specs:
   - label: "Thickness"
     value: "3.0mm / 4.0mm"

@@ -1,8 +1,8 @@
 ---
 title: "Petroleum Saturated Organic Roofing Felt (15lb / 30lb)"
 description: "High absorption petroleum saturated organic paper roofing felt. Excellent flexibility and secondary waterproof barrier for asphalt shingles."
-category: "Roofing Underlayment"
-image: "https://s.alicdn.com/@sc04/kf/H341c3e2fdfd24f7993538edd69895497k/TIANYUAN-Traditional-Saturated-15lb-30lb-Waterproof-Organic.png_480x480.jpg"
+category: "asphalt-membranes"
+image: "https://img.tyuanwaterproof.com/products/organic-roofing-felt.webp"
 specs:
   - label: "Weight"
     value: "15lb / 30lb"

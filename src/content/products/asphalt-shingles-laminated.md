@@ -2,7 +2,7 @@
 title: "Premium Laminated Architectural Shingles"
 description: "High-end laminated roofing shingles with a 3D aesthetic effect. Superior thickness and wind resistance for villas and luxury resorts."
 category: "asphalt-shingles"
-image: "https://sc04.alicdn.com/kf/H7e087a70867f43a8bd7c11db0b7f9e20T.jpg"
+image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-laminated.webp"
 specs:
   - label: "Type"
     value: "Laminated / Architectural"

@@ -28,7 +28,7 @@ export const productCategories = [
   {
     title: 'Waterproofing Membranes',
     href: '/categories/asphalt-membranes/',
-    image: 'https://img.tyuanwaterproof.com/products/sbs-torch-applied-membrane.jpg',
+    image: 'https://img.tyuanwaterproof.com/products/sbs-torch-applied-membrane.webp',
     items: [
       { title: 'Bitumen Waterproofing Membranes', href: '/categories/asphalt-membranes/' },
       { title: 'Polymer Waterproofing Membranes', href: '/categories/polymer-membranes/' }

@@ -2,7 +2,7 @@
 title: "Artistic Hexagonal & Fish-Scale Shingles"
 description: "Creative roofing shingles for unique architectural designs. Flexible, lightweight, and perfect for steep or curved roofs."
 category: "asphalt-shingles"
-image: "https://sc04.alicdn.com/kf/H8d7ba0b4752c4c4ea051b0098d1e432cZ.jpg"
+image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-artistic.webp"
 specs:
   - label: "Type"
     value: "Hexagonal / Fish-Scale"
