@@ -69,8 +69,8 @@ const {
 ---
 
 <footer class="relative w-full bg-[#081E36] text-[#B8C7DA]">
-  <div class="mx-auto grid max-w-7xl gap-10 px-4 py-20 md:grid-cols-2 md:px-6 lg:grid-cols-6 lg:px-8">
-    <div class="lg:col-span-2">
+  <div class="mx-auto grid max-w-7xl gap-y-12 gap-x-8 px-4 py-20 md:grid-cols-2 lg:grid-cols-12 lg:px-8">
+    <div class="lg:col-span-3">
       <a href="/" class="flex items-center gap-5 group">
         <img
           src={logoSrc}
@@ -91,7 +91,7 @@ const {
     </div>
 
     {footerGroups.map((group) => (
-      <nav aria-label={group.title}>
+      <nav aria-label={group.title} class="lg:col-span-2">
         <h3 class="text-[17px] font-bold uppercase tracking-widest text-white">
           {group.title}
         </h3>
@@ -111,19 +111,19 @@ const {
       </nav>
     ))}
 
-    <div>
+    <div class="lg:col-span-3">
       <h3 class="text-[17px] font-bold uppercase tracking-widest text-white">
         CONTACT INFO
       </h3>
 
-      <ul class="mt-6 space-y-5">
+      <ul class="mt-6 space-y-6">
         {contactItems.map((item) => (
           <li class="text-[15px] leading-relaxed">
-            <span class="block text-white/40 uppercase tracking-widest font-bold text-[10px] mb-1">{item.label}</span>
+            <span class="block text-white/50 uppercase tracking-wider font-bold text-xs mb-1">{item.label}</span>
             {item.href ? (
               <a
                 href={item.href}
-                class="text-[#DDE7F2] transition hover:text-[#F58A1F] break-all"
+                class="text-[#DDE7F2] transition hover:text-[#F58A1F] break-words whitespace-normal"
               >
                 {item.value}
               </a>

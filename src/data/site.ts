@@ -110,8 +110,8 @@ export const applications = [
 ];
 
 export const stats = [
-  { value: '20+', label: 'Years Experience' },
-  { value: '3', label: 'Production Bases' },
+  { value: '30+', label: 'Years Experience' },
+  { value: '3', label: 'Product Lines' },
   { value: '50+', label: 'Countries Exported' },
   { value: 'OEM/ODM', label: 'Service' },
   { value: '24/7', label: 'Quick Response' }
