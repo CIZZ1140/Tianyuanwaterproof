@@ -2,13 +2,14 @@ export const site = {
   brand: 'TIANYUAN WATERPROOF',
   legalName: 'Weifang Tianyuan Waterproof Material Co., Ltd.',
   shortName: 'Tianyuan Waterproof',
-  logo: '/favicon.svg',
+  logo: '/logo.png',
   tagline: 'Bitumen Membrane & Roofing Felt Manufacturer',
   email: 'sales@tyuanwaterproof.com',
-  whatsapp: '8615263640998',
+  whatsapp: '15263640998',
   phone: '+86 152 6364 0998',
   address: 'Weifang, Shandong, China',
   domain: 'https://tyuanwaterproof.com',
+  year: 2026,
   alibabaStore: 'https://tyfangshui.en.alibaba.com',
   heroImage: 'https://images.unsplash.com/photo-1635424710928-0544e8512eae?q=80&w=2071&auto=format&fit=crop'
 };

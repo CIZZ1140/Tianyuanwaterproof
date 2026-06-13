@@ -1,8 +1,7 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { site } from '../data/site';
+import Layout from '@/layouts/Layout.astro';
+import { site } from '@/data/site';
 
-const whatsappNumber = site.whatsapp.replace(/[^0-9]/g, '');
 const buyerTypes = [
   'Importer',
   'Distributor / Wholesaler',
@@ -10,163 +9,314 @@ const buyerTypes = [
   'Construction Contractor',
   'Waterproofing Contractor',
   'OEM / Private Label Buyer',
-  'other'
+  'Other',
 ];
+
 const productInterests = [
   'Waterproofing Membranes',
   'Waterproofing Tapes',
   'Waterproofing Coatings',
-  'Tools & Accessories'
+  'Tools & Accessories',
 ];
+
 const contactCards = [
   {
     label: 'WHATSAPP',
-    value: `+${site.whatsapp}`,
-    href: `https://wa.me/${whatsappNumber}`,
-    tone: 'whatsapp',
-    icon: 'whatsapp'
+    value: '+86 15263640998',
+    href: 'https://wa.me/8615263640998',
+    iconBg: 'bg-green-100',
+    iconText: 'text-green-600',
+    icon: 'whatsapp',
   },
   {
     label: 'EMAIL',
-    value: site.email,
-    href: `mailto:${site.email}`,
-    tone: 'email',
-    icon: 'email'
+    value: 'sales@tyuanwaterproof.com',
+    href: 'mailto:sales@tyuanwaterproof.com',
+    iconBg: 'bg-[#F3E8D4]',
+    iconText: 'text-[#A87835]',
+    icon: 'email',
   },
   {
     label: 'FACTORY',
-    value: site.address,
+    value: 'Weifang, Shandong, China',
     href: '',
-    tone: 'factory',
-    icon: 'pin'
+    iconBg: 'bg-[#E8E2D8]',
+    iconText: 'text-[#7B746B]',
+    icon: 'location',
   },
   {
     label: 'ALIBABA STORE',
     value: 'tyfangshui.en.alibaba.com',
-    href: site.alibabaStore,
-    tone: 'alibaba',
-    icon: 'store'
-  }
+    href: 'https://tyfangshui.en.alibaba.com',
+    iconBg: 'bg-orange-100',
+    iconText: 'text-orange-500',
+    icon: 'store',
+  },
 ];
+
+const inputClass =
+  'w-full rounded-2xl border border-[#D1C7B7] bg-white/80 px-4 py-3 text-sm text-[#2F2A24] outline-none transition-all duration-300 placeholder:text-[#9A9186] focus:border-[#A68A64] focus:ring-4 focus:ring-[#A68A64]/10';
+const labelClass = 'mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-[#6F6255]';
 ---
-<Layout
-  title="Contact Tianyuan Waterproof | Request a Waterproofing Materials Quote"
-  description="Contact Tianyuan Waterproof for waterproofing membranes, tapes and coatings. Send your product interest, buyer type, quantity and project details to get a quotation."
->
-  <section class="relative overflow-hidden bg-slate-900 text-white">
-    <div class="absolute inset-0 opacity-25">
-      <img src={site.heroImage} alt="Torch applied waterproofing membrane construction" class="h-full w-full object-cover" />
-    </div>
-    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/95 to-slate-900/70"></div>
-    <div class="container mx-auto max-w-7xl px-5 relative py-16 lg:py-20">
-      <p class="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-extrabold uppercase tracking-[0.22em] text-blue-100">Contact Tianyuan Waterproof</p>
-      <div class="mt-6 max-w-4xl">
-        <h1 class="text-4xl font-black leading-tight md:text-6xl text-white">Request a Waterproofing Materials Quote</h1>
-        <p class="mt-5 max-w-3xl text-lg leading-8 text-white/80">Send your product interest, buyer type, size, quantity and project requirements. We will reply with quotation details, technical support and export packaging information.</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="bg-[#f7f3ec] py-14 lg:py-20">
-    <div class="container mx-auto max-w-7xl px-5 grid gap-8 lg:grid-cols-[minmax(0,1.25fr)_minmax(340px,.75fr)]">
-      <div class="rounded-[1.75rem] border border-[#e5dccd] bg-white p-6 shadow-sm lg:p-10">
-        <div class="max-w-2xl">
-          <p class="text-sm font-extrabold uppercase tracking-[0.18em] text-accent">Send Inquiry</p>
-          <h2 class="mt-3 text-3xl font-black text-slate-900">Tell us about your sourcing request</h2>
-          <p class="mt-3 text-slate-600">Fields marked * are required. More details help us match the right waterproofing membrane, tape or coating for your market and project.</p>
+<Layout title="Contact Us | Tianyuan Waterproof">
+  <main class="min-h-screen bg-[#F9F7F2]">
+    <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <div class="mb-12 max-w-3xl">
+        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-[#A68A64]">
+          Contact Tianyuan Waterproof
+        </p>
+        <h1 class="font-serif text-4xl font-semibold tracking-tight text-[#241F1A] sm:text-5xl lg:text-6xl">
+          Let’s discuss your waterproofing project
+        </h1>
+        <p class="mt-5 text-base leading-8 text-[#6F6255] sm:lg">
+          Send us your project details, product requirements, quantity, and destination market.
+          Our team will respond with product matching, quotation, and technical support.
+        </p>
+      </div>
+
+      <div class="grid gap-8 lg:grid-cols-[1.35fr_0.85fr] lg:items-start">
+        <div class="rounded-[2rem] border border-[#D1C7B7] bg-white/80 p-6 shadow-sm sm:p-8 lg:p-10">
+          <h2 class="font-serif text-3xl font-semibold text-[#241F1A]">
+            Tell us about your project
+          </h2>
+          <p class="mt-3 text-sm leading-7 text-[#6F6255]">
+            Fields marked with an asterisk are required. Please include the product type,
+            specifications, order quantity, and application area so we can reply more precisely.
+          </p>
+
+          <form
+            class="mt-8 space-y-6"
+            action="https://formspree.io/f/mzdqdpwd"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New inquiry from Tianyuan Waterproof website" />
+            <input type="hidden" name="source" value={site?.name ?? 'Tianyuan Waterproof'} />
+
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label class={labelClass} for="fullName">Full Name *</label>
+                <input
+                  id="fullName"
+                  name="Full Name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  placeholder="Your full name"
+                  class={inputClass}
+                />
+              </div>
+
+              <div>
+                <label class={labelClass} for="company">Company *</label>
+                <input
+                  id="company"
+                  name="Company"
+                  type="text"
+                  autocomplete="organization"
+                  required
+                  placeholder="Company name"
+                  class={inputClass}
+                />
+              </div>
+
+              <div>
+                <label class={labelClass} for="email">Email *</label>
+                <input
+                  id="email"
+                  name="Email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  placeholder="name@company.com"
+                  class={inputClass}
+                />
+              </div>
+
+              <div>
+                <label class={labelClass} for="country">Country</label>
+                <input
+                  id="country"
+                  name="Country"
+                  type="text"
+                  autocomplete="country-name"
+                  placeholder="Your country"
+                  class={inputClass}
+                />
+              </div>
+
+              <div>
+                <label class={labelClass} for="phone">WhatsApp / Phone</label>
+                <input
+                  id="phone"
+                  name="WhatsApp / Phone"
+                  type="text"
+                  autocomplete="tel"
+                  placeholder="+00 000 0000 0000"
+                  class={inputClass}
+                />
+              </div>
+
+              <div>
+                <label class={labelClass} for="role">Your Role *</label>
+                <select id="role" name="Your Role" required class={inputClass}>
+                  <option value="">Select your role...</option>
+                  {buyerTypes.map((type) => <option value={type}>{type}</option>)}
+                </select>
+              </div>
+
+              <div>
+                <label class={labelClass} for="productInterest">Product Interest</label>
+                <select id="productInterest" name="Product Interest" class={inputClass}>
+                  <option value="">Select product interest...</option>
+                  {productInterests.map((item) => <option value={item}>{item}</option>)}
+                </select>
+              </div>
+
+              <div>
+                <label class={labelClass} for="sizeQuantity">Size & Quantity</label>
+                <input
+                  id="sizeQuantity"
+                  name="Size & Quantity"
+                  type="text"
+                  placeholder="e.g. 4.0mm, 1m x 10m, 1 container"
+                  class={inputClass}
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class={labelClass} for="message">Message *</label>
+              <textarea
+                id="message"
+                name="Message"
+                rows="6"
+                required
+                placeholder="Tell us your application, required specifications, quantity, destination port, or any technical questions."
+                class={`${inputClass} resize-y`}
+              ></textarea>
+            </div>
+
+            <div class="flex flex-col gap-4 border-t border-[#D1C7B7]/70 pt-6 sm:flex-row sm:items-center sm:justify-between">
+              <p class="text-sm leading-6 text-[#6F6255]">
+                We usually respond within 24 hours on working days.
+              </p>
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center rounded-2xl bg-[#1E4F9A] px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#163D79] hover:shadow-md focus:outline-none focus:ring-4 focus:ring-[#1E4F9A]/20"
+              >
+                Submit Inquiry
+                <svg
+                  class="ml-2 h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
 
-        <form class="mt-10 space-y-6" action="https://formspree.io/f/mzdqdpwd" method="POST">
-          <div class="grid gap-6 md:grid-cols-2">
-            <label class="field-label">Full Name *<input required name="name" class="input" placeholder="Your name" /></label>
-            <label class="field-label">Company *<input required name="company" class="input" placeholder="Company name" /></label>
-            <label class="field-label">Email *<input required type="email" name="email" class="input" placeholder="name@company.com" /></label>
-            <label class="field-label">Country<input name="country" class="input" placeholder="Country / Region" /></label>
-            <label class="field-label">WhatsApp / Phone<input name="whatsapp" class="input" placeholder="+00 000 0000" /></label>
-            <label class="field-label">Buyer Type *<select required name="buyer_type" class="input"><option value="">Select your role...</option>{buyerTypes.map((type) => <option value={type}>{type}</option>)}</select></label>
-            <label class="field-label">Product Interest<select name="product_interest" class="input"><option value="">Select product interest...</option>{productInterests.map((item) => <option value={item}>{item}</option>)}</select></label>
-            <label class="field-label">Size & Quantity<input name="quantity" class="input" placeholder="e.g. 4.0mm × 1m × 10m, 1 container" /></label>
+        <aside class="rounded-[2rem] border border-[#D1C7B7] bg-white/70 p-6 shadow-sm sm:p-8">
+          <h2 class="font-serif text-2xl font-semibold text-[#241F1A]">
+            Get in touch directly
+          </h2>
+          <p class="mt-3 text-sm leading-7 text-[#6F6255]">
+            Prefer a quicker channel? We’re available on WhatsApp, email, factory contact and Alibaba store.
+          </p>
+
+          <div class="mt-7 space-y-4">
+            {
+              contactCards.map((card) => {
+                const CardTag = card.href ? 'a' : 'div';
+
+                return (
+                  <CardTag
+                    href={card.href || undefined}
+                    target={card.href && !card.href.startsWith('mailto:') ? '_blank' : undefined}
+                    rel={card.href && !card.href.startsWith('mailto:') ? 'noopener noreferrer' : undefined}
+                    class="group flex items-center gap-4 rounded-2xl border border-[#D1C7B7] bg-[#F4F0E8] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#A68A64] hover:shadow-md"
+                  >
+                    <span
+                      class={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${card.iconBg} ${card.iconText}`}
+                    >
+                      {card.icon === 'whatsapp' && (
+                        <svg
+                          class="h-6 w-6"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path d="M12.04 2A9.86 9.86 0 0 0 2.2 11.84a9.72 9.72 0 0 0 1.34 4.94L2 22l5.36-1.48a9.86 9.86 0 0 0 4.68 1.19h.01A9.86 9.86 0 0 0 21.9 11.86 9.86 9.86 0 0 0 12.04 2Zm5.78 14.04c-.24.67-1.4 1.28-1.96 1.36-.5.07-1.13.1-1.82-.11-.42-.13-.95-.31-1.64-.61-2.89-1.25-4.77-4.16-4.91-4.35-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.1 1-2.39.26-.29.58-.36.77-.36h.56c.18.01.42-.07.66.5.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.29-.12.58.17.29.75 1.23 1.6 2 .1.09 1.11.99 2.57 1.37.32.08.5.07.69-.12.22-.22.79-.92 1-1.24.22-.31.43-.26.72-.16.29.1 1.86.88 2.18 1.04.31.16.53.24.6.38.07.14.07.81-.17 1.48Z" />
+                        </svg>
+                      )}
+
+                      {card.icon === 'email' && (
+                        <svg
+                          class="h-6 w-6"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="M4 6h16v12H4z"></path>
+                          <path d="m4 8 8 5 8-5"></path>
+                        </svg>
+                      )}
+
+                      {card.icon === 'location' && (
+                        <svg
+                          class="h-6 w-6"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="M12 21s7-5.1 7-11a7 7 0 1 0-14 0c0 5.9 7 11 7 11Z"></path>
+                          <circle cx="12" cy="10" r="2.4"></circle>
+                        </svg>
+                      )}
+
+                      {card.icon === 'store' && (
+                        <svg
+                          class="h-6 w-6"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path d="M5.2 4h13.6l1.2 5.1a3.04 3.04 0 0 1-4.9 3.02A3.05 3.05 0 0 1 12 13.2a3.05 3.05 0 0 1-3.1-1.08A3.04 3.04 0 0 1 4 9.1L5.2 4ZM5 14.3c.62.2 1.35.18 2-.05V20h10v-5.75c.65.23 1.38.25 2 .05V20.5c0 .83-.67 1.5-1.5 1.5h-11A1.5 1.5 0 0 1 5 20.5v-6.2Zm4 1.2h6V20H9v-4.5Z" />
+                        </svg>
+                      )}
+                    </span>
+
+                    <span class="min-w-0">
+                      <span class="block text-xs font-bold uppercase tracking-[0.14em] text-[#6F6255]">
+                        {card.label}
+                      </span>
+                      <span class="mt-1 block break-words text-base font-medium text-[#241F1A]">
+                        {card.value}
+                      </span>
+                    </span>
+                  </CardTag>
+                );
+              })
+            }
           </div>
-          <label class="field-label">Message *<textarea required name="message" rows="6" class="input" placeholder="Tell us product type, thickness, surface finish, quantity, packaging requirement, destination port or project details."></textarea></label>
-          <button class="btn-primary w-full" type="submit">Send Inquiry →</button>
-          <p class="text-center text-xs text-slate-500">We usually reply with quotation and technical support within 24 hours.</p>
-        </form>
+        </aside>
       </div>
-
-      <aside class="rounded-[1.75rem] border border-[#e5dccd] bg-white p-6 shadow-sm lg:p-10 h-fit">
-        <h2 class="text-2xl font-bold text-slate-900">Get in touch directly</h2>
-        <p class="mt-4 text-base leading-7 text-slate-600">Prefer a quicker channel? We’re available on WhatsApp, email, factory contact and Alibaba store.</p>
-        <div class="mt-8 space-y-4">
-          {contactCards.map((card) => {
-            const isClickable = Boolean(card.href);
-            const CardTag = isClickable ? 'a' : 'div';
-            return (
-            <CardTag href={isClickable ? card.href : undefined} target={isClickable && card.href.startsWith('http') ? '_blank' : undefined} rel={isClickable && card.href.startsWith('http') ? 'noreferrer' : undefined} class={`direct-card group ${!isClickable ? 'cursor-default' : ''}`}>
-              <span class={`direct-icon ${card.tone}`} aria-hidden="true">
-                {card.icon === 'whatsapp' && (
-                  <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M12.04 2a9.8 9.8 0 0 0-8.47 14.72L2.4 21.6l5-1.12A9.8 9.8 0 1 0 12.04 2Zm0 1.8a8 8 0 0 1 6.84 12.15 8 8 0 0 1-10.88 2.8l-.33-.18-2.9.65.67-2.8-.2-.35A8 8 0 0 1 12.04 3.8Zm-3.15 4.3c-.18 0-.47.07-.72.35-.25.28-.95.93-.95 2.26s.98 2.62 1.12 2.8c.14.19 1.9 3.05 4.72 4.15 2.34.92 2.82.74 3.33.7.51-.05 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33l-1.57-.78c-.28-.14-.48-.21-.68.07-.2.28-.78.92-.96 1.1-.18.19-.35.21-.63.07-.28-.14-1.2-.44-2.29-1.41-.85-.76-1.42-1.7-1.59-1.98-.16-.28-.02-.44.12-.58.13-.13.28-.35.42-.53.14-.19.19-.33.28-.56.09-.23.05-.42-.02-.58-.07-.14-.63-1.52-.88-2.08-.23-.54-.47-.47-.65-.48h-.55Z" /></svg>
-                )}
-                {card.icon === 'email' && (
-                  <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
-                )}
-                {card.icon === 'pin' && (
-                  <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.1 7-11a7 7 0 0 0-14 0c0 5.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-                )}
-                {card.icon === 'store' && (
-                  <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M4 5h16l1 5a4 4 0 0 1-6.5 3.1A4 4 0 0 1 12 14a4 4 0 0 1-2.5-.9A4 4 0 0 1 3 10l1-5Zm2 10.3c.9.42 2 .45 3 .1.94.37 2.06.37 3 0 .94.37 2.06.37 3 0 .96.34 2.05.32 3-.1V20H6v-4.7Z" /></svg>
-                )}
-              </span>
-              <span class="min-w-0">
-                <span class="block text-sm font-black uppercase tracking-wide text-slate-500">{card.label}</span>
-                <span class="mt-1 block break-words text-base font-semibold text-slate-900">{card.value}</span>
-              </span>
-            </CardTag>
-            );
-          })}
-        </div>
-      </aside>
-    </div>
-  </section>
+    </section>
+  </main>
 </Layout>
-
-<style>
-  .field-label {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 0.8rem;
-    font-weight: 800;
-    color: #0b2348;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-  .direct-card {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-    border-radius: 1.25rem;
-    border: 1px solid #e2e8f0;
-    background: #f8fafc;
-    padding: 1.25rem;
-    transition: all .2s ease;
-  }
-  .direct-card:hover:not(.cursor-default) {
-    transform: translateY(-2px);
-    border-color: #cbd5e1;
-    background: #fff;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-  }
-  .direct-icon {
-    display: inline-flex;
-    height: 3.5rem;
-    width: 3.5rem;
-    flex: 0 0 auto;
-    align-items: center;
-    justify-content: center;
-    border-radius: 999px;
-  }
-  .direct-icon.whatsapp { background: #25d366; color: #fff; }
-  .direct-icon.email { background: #f1f5f9; color: #0f172a; }
-  .direct-icon.factory { background: #f1f5f9; color: #0f172a; }
-  .direct-icon.alibaba { background: #fff7ed; color: #ea580c; }
-</style>
