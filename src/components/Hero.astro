@@ -24,22 +24,28 @@ type HeroProps = {
 const {
   imageSrc = "https://img.tyuanwaterproof.com/banner.webp",
   imageAlt = "Professional waterproofing membrane installation on a modern roof",
-  title = "RELIABLE WATERPROOFING MATERIALS FROM CHINA",
+  title = "Waterproofing Materials Supplier from China",
   description = "Factory supply of waterproofing membranes, tapes and coatings with OEM packaging, technical data support and fast quotation service.",
   primaryAction = {
     label: "REQUEST A QUOTE →",
     href: "/#categories",
   },
   secondaryAction = {
-    label: "View Products ↓",
+    label: "View Products",
     href: "/#categories",
   },
-  stats = siteStats,
+  stats = [
+    { value: "30+", label: "Years Experience" },
+    { value: "3", label: "Product Lines" },
+    { value: "50+", label: "Countries Exported" },
+    { value: "OEM/ODM", label: "Service" },
+    { value: "24/7", label: "Quick Response" },
+  ],
 } = Astro.props as HeroProps;
 ---
 
 <section class="relative w-full overflow-hidden bg-[#0E2A47] text-white">
-  <div class="relative min-h-[520px] md:min-h-[560px] lg:min-h-[620px]">
+  <div class="relative min-h-[520px] md:min-h-[560px] lg:min-h-[620px] flex items-center">
     <img
       src={imageSrc}
       alt={imageAlt}
@@ -47,29 +53,29 @@ const {
       loading="eager"
     />
 
-    <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,24,49,0.86)_0%,rgba(14,42,71,0.66)_48%,rgba(14,42,71,0.30)_100%)]"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,17,36,0.92)_0%,rgba(14,42,71,0.60)_50%,rgba(14,42,71,0.20)_100%)]"></div>
 
-    <div class="relative mx-auto flex min-h-[520px] max-w-7xl items-center px-4 py-20 md:min-h-[560px] md:px-6 lg:min-h-[620px] lg:px-8">
-      <div class="max-w-2xl">
-        <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl uppercase">
+    <div class="relative mx-auto w-full max-w-7xl px-4 md:px-6 lg:px-8">
+      <div class="max-w-[600px] text-left">
+        <h1 class="text-[38px] md:text-[56px] font-extrabold leading-[1.1] tracking-tight text-white uppercase">
           {title}
         </h1>
 
-        <p class="mt-5 max-w-xl text-base leading-7 text-white/90 md:text-lg">
+        <p class="mt-6 text-[17px] md:text-[18px] leading-[1.6] text-white/90">
           {description}
         </p>
 
-        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
           <a
             href={primaryAction.href}
-            class="inline-flex items-center justify-center rounded-xl bg-[#F58A1F] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-[#F58A1F]/20 transition hover:bg-[#E37812]"
+            class="inline-flex items-center justify-center rounded-xl bg-[#F58A1F] px-10 py-4 text-[15px] font-bold text-white shadow-lg shadow-[#F58A1F]/20 transition hover:bg-[#E37812]"
           >
             {primaryAction.label}
           </a>
 
           <a
             href={secondaryAction.href}
-            class="inline-flex items-center justify-center rounded-xl border border-white/60 px-8 py-4 text-sm font-bold text-white transition hover:bg-white hover:text-[#0E2A47] backdrop-blur-sm"
+            class="inline-flex items-center justify-center rounded-xl border border-white/60 px-10 py-4 text-[15px] font-bold text-white transition hover:bg-white hover:text-[#0E2A47] backdrop-blur-sm"
           >
             {secondaryAction.label}
           </a>
@@ -78,14 +84,14 @@ const {
     </div>
   </div>
 
-  <div class="relative bg-[linear-gradient(90deg,#0E2A47_0%,#1F4E8C_100%)] border-t border-white/10">
-    <div class="mx-auto grid max-w-7xl grid-cols-2 gap-px px-4 py-6 md:grid-cols-5 md:px-6 lg:px-8">
+  <div class="relative bg-[linear-gradient(90deg,#0E2A47_0%,#1F4E8C_100%)] border-t border-white/10 min-h-[90px] flex items-center">
+    <div class="mx-auto grid w-full max-w-7xl grid-cols-2 gap-px px-4 py-4 md:grid-cols-5 md:px-6 lg:px-8">
       {stats.map((item) => (
-        <div class="border-white/10 px-3 py-3 text-center md:border-l first:md:border-l-0">
-          <div class="text-2xl font-extrabold text-white md:text-3xl">
+        <div class="border-white/10 px-3 py-2 text-center md:border-l first:md:border-l-0">
+          <div class="text-[28px] md:text-[32px] font-extrabold text-white leading-none">
             {item.value}
           </div>
-          <div class="mt-1 text-[10px] font-bold uppercase tracking-wider text-[#BFD0E4] md:text-xs">
+          <div class="mt-2 text-[10px] font-bold uppercase tracking-wider text-[#BFD0E4] md:text-xs">
             {item.label}
           </div>
         </div>
