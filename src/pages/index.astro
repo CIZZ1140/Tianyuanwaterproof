@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
 import ProductCard from '../components/ProductCard.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import CTA from '../components/CTA.astro';
@@ -10,25 +11,9 @@ const products = (await getCollection('products')).sort((a,b)=>a.data.order-b.da
 const featured = products.filter((p)=>p.data.featured).slice(0,6);
 ---
 <Layout title="Waterproofing Membranes, Tapes & Coatings Manufacturer">
-  <section class="relative overflow-hidden bg-deep text-white">
-    <img src={site.heroImage} alt="Torch applied waterproofing membrane roof construction" class="absolute inset-0 h-full w-full object-cover opacity-55" />
-    <div class="absolute inset-0 bg-gradient-to-r from-deep via-deep/75 to-deep/15"></div>
-    <div class="container relative grid min-h-[560px] items-center py-20">
-      <div class="max-w-2xl">
-        <h1 class="text-5xl font-black uppercase leading-tight md:text-7xl">Reliable Waterproofing Materials from China</h1>
-        <p class="mt-6 max-w-xl text-lg leading-8 text-white/85">Factory supply of waterproofing membranes, tapes and coatings with OEM packaging, technical data support and fast quotation service.</p>
-        <div class="mt-8 flex flex-wrap gap-4"><a href="/contact/" class="btn-primary">Request a Quote →</a><a href="/products/" class="btn-secondary">View Products ↓</a></div>
-      </div>
-    </div>
-  </section>
+  <Hero />
 
-  <section class="bg-navy py-6 text-white">
-    <div class="container grid grid-cols-2 gap-4 md:grid-cols-5">
-      {stats.map((s)=><div class="border-white/10 md:border-r last:border-0"><p class="text-2xl font-black text-blue-300">{s.value}</p><p class="text-xs font-semibold text-white/70">{s.label}</p></div>)}
-    </div>
-  </section>
-
-  <section class="py-12">
+  <section class="py-12" id="categories">
     <div class="container">
       <SectionHeader title="Product Categories" href="/products/" linkLabel="View All Products" />
       <div class="grid gap-6 lg:grid-cols-3">
@@ -59,7 +44,7 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
     </div>
   </section>
 
-  <section class="py-14">
+  <section class="py-14" id="why-us">
     <div class="container grid gap-8 lg:grid-cols-2 lg:items-center">
         <div>
           <p class="section-kicker text-xs opacity-80">Why Choose Us</p>
@@ -126,5 +111,4 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
   </section>
 
   <CTA />
-</Layout>
 </Layout>

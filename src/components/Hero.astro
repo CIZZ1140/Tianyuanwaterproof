@@ -1,0 +1,95 @@
+---
+import { stats as siteStats } from '../data/site';
+
+type HeroAction = {
+  label: string;
+  href: string;
+};
+
+type HeroStat = {
+  value: string;
+  label: string;
+};
+
+type HeroProps = {
+  imageSrc?: string;
+  imageAlt?: string;
+  title?: string;
+  description?: string;
+  primaryAction?: HeroAction;
+  secondaryAction?: HeroAction;
+  stats?: HeroStat[];
+};
+
+const {
+  imageSrc = "https://sc02.alicdn.com/kf/Hece694da3fcb48038170d405421b73a0g.png",
+  imageAlt = "Professional waterproofing membrane installation on a modern roof",
+  title = "RELIABLE WATERPROOFING MATERIALS FROM CHINA",
+  description = "Factory supply of waterproofing membranes, tapes and coatings with OEM packaging, technical data support and fast quotation service.",
+  primaryAction = {
+    label: "REQUEST A QUOTE →",
+    href: "/#categories",
+  },
+  secondaryAction = {
+    label: "View Products ↓",
+    href: "/#categories",
+  },
+  stats = siteStats,
+} = Astro.props as HeroProps;
+---
+
+<section class="relative w-full overflow-hidden bg-[#0E2A47] text-white">
+  <div class="relative min-h-[520px] md:min-h-[560px] lg:min-h-[620px]">
+    <img
+      src={imageSrc}
+      alt={imageAlt}
+      class="absolute inset-0 h-full w-full object-cover"
+      loading="eager"
+    />
+
+    <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,24,49,0.86)_0%,rgba(14,42,71,0.66)_48%,rgba(14,42,71,0.30)_100%)]"></div>
+
+    <div class="relative mx-auto flex min-h-[520px] max-w-7xl items-center px-4 py-20 md:min-h-[560px] md:px-6 lg:min-h-[620px] lg:px-8">
+      <div class="max-w-2xl">
+        <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl uppercase">
+          {title}
+        </h1>
+
+        <p class="mt-5 max-w-xl text-base leading-7 text-white/90 md:text-lg">
+          {description}
+        </p>
+
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a
+            href={primaryAction.href}
+            class="inline-flex items-center justify-center rounded-xl bg-[#F58A1F] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-[#F58A1F]/20 transition hover:bg-[#E37812]"
+          >
+            {primaryAction.label}
+          </a>
+
+          <a
+            href={secondaryAction.href}
+            class="inline-flex items-center justify-center rounded-xl border border-white/60 px-8 py-4 text-sm font-bold text-white transition hover:bg-white hover:text-[#0E2A47] backdrop-blur-sm"
+          >
+            {secondaryAction.label}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative bg-[linear-gradient(90deg,#0E2A47_0%,#1F4E8C_100%)] border-t border-white/10">
+    <div class="mx-auto grid max-w-7xl grid-cols-2 gap-px px-4 py-6 md:grid-cols-5 md:px-6 lg:px-8">
+      {stats.map((item) => (
+        <div class="border-white/10 px-3 py-3 text-center md:border-l first:md:border-l-0">
+          <div class="text-2xl font-extrabold text-white md:text-3xl">
+            {item.value}
+          </div>
+          <div class="mt-1 text-[10px] font-bold uppercase tracking-wider text-[#BFD0E4] md:text-xs">
+            {item.label}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
