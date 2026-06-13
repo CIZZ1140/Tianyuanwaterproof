@@ -46,8 +46,7 @@ const defaultFooterGroups: FooterGroup[] = [
 const defaultContactItems: ContactItem[] = [
   { label: "Location", value: site.address },
   { label: "Email", value: site.email, href: `mailto:${site.email}` },
-  { label: "WhatsApp", value: site.phone, href: `https://wa.me/${site.whatsapp}` },
-  { label: "Website", value: site.domain.replace('https://', ''), href: "/" },
+  { label: "WhatsApp", value: site.phone, href: `https://wa.me/${site.whatsapp.replace(/\D/g, '')}` },
 ];
 
 const defaultLegalLinks: FooterLink[] = [
