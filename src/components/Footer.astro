@@ -68,29 +68,9 @@ const {
 ---
 
 <footer class="relative w-full bg-[#081E36] text-[#B8C7DA]">
-  <div class="mx-auto grid max-w-7xl gap-y-12 gap-x-8 px-4 py-20 md:grid-cols-2 lg:grid-cols-12 lg:px-8">
-    <div class="lg:col-span-3">
-      <a href="/" class="flex items-center gap-5 group">
-        <img
-          src={logoSrc}
-          alt={logoAlt}
-          class="h-[52px] w-[52px] object-contain transition-transform group-hover:scale-105"
-        />
-        <div>
-          <span class="block text-[22px] font-extrabold leading-tight text-white uppercase tracking-wider">
-            {brandName}
-          </span>
-          <span class="text-xs text-white/50 font-bold tracking-tight">Bitumen Membrane & Roofing Felt Manufacturer</span>
-        </div>
-      </a>
-
-      <p class="mt-8 max-w-sm text-[15px] leading-[1.6] text-[#B8C7DA]">
-        {description}
-      </p>
-    </div>
-
+  <div class="mx-auto grid max-w-7xl gap-y-12 gap-x-12 px-4 py-20 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
     {footerGroups.map((group) => (
-      <nav aria-label={group.title} class="lg:col-span-2">
+      <nav aria-label={group.title}>
         <h3 class="text-[17px] font-bold uppercase tracking-widest text-white">
           {group.title}
         </h3>
@@ -110,7 +90,7 @@ const {
       </nav>
     ))}
 
-    <div class="lg:col-span-3">
+    <div>
       <h3 class="text-[17px] font-bold uppercase tracking-widest text-white">
         CONTACT INFO
       </h3>
