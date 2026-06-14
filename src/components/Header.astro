@@ -35,22 +35,22 @@ const {
 } = Astro.props as HeaderProps;
 ---
 
-<header class="relative w-full bg-[#0E2A47] text-white shadow-sm">
-  <div class="mx-auto grid min-h-[74px] max-w-[1600px] grid-cols-[auto_auto] items-center gap-4 px-5 md:px-8 lg:grid-cols-[320px_minmax(0,1fr)_320px] lg:px-10 xl:px-14">
+<header class="relative w-full bg-[#0E2A47] text-white shadow-sm border-b border-white/5">
+  <div class="mx-auto grid min-h-[76px] max-w-[1680px] grid-cols-[auto_auto] items-center gap-4 px-6 md:px-10 lg:grid-cols-[360px_minmax(0,1fr)_360px] lg:px-10 xl:px-16">
     <a href="/" class="flex shrink-0 items-center gap-3">
       <img
         src={logoSrc}
         alt={logoAlt}
-        class="h-10 w-10 rounded-full bg-white object-contain p-1"
+        class="h-11 w-11 rounded-full bg-white object-contain p-1"
       />
 
-      <span class="text-[18px] font-extrabold tracking-tight text-white">
+      <span class="text-[19px] font-extrabold tracking-tight text-white">
         {brandName}
       </span>
     </a>
 
     <nav
-      class="hidden items-center justify-center gap-8 lg:flex xl:gap-10"
+      class="hidden items-center justify-center gap-8 lg:flex xl:gap-10 2xl:gap-12"
       aria-label="Main navigation"
     >
       {navLinks.map((item) => (
@@ -63,14 +63,14 @@ const {
       ))}
     </nav>
 
-    <div class="hidden items-center justify-end gap-4 lg:flex">
-      <span class="rounded-full border border-white/20 px-3.5 py-1.5 text-xs font-bold text-white/85">
+    <div class="hidden items-center justify-end gap-5 lg:flex">
+      <span class="rounded-full border border-white/20 px-4 py-2 text-xs font-bold text-white/85">
         {languageLabel}
       </span>
 
       <a
         href={quoteHref}
-        class="rounded-xl bg-[#F58A1F] px-6 py-3 text-sm font-extrabold text-white shadow-sm transition hover:bg-[#E37812]"
+        class="rounded-xl bg-[#F58A1F] px-7 py-3.5 text-sm font-extrabold text-white shadow-sm transition hover:bg-[#E37812]"
       >
         {quoteLabel}
       </a>
