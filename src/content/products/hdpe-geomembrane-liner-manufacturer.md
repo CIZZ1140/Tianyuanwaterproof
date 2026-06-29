@@ -2,8 +2,8 @@
 title: "HDPE Geomembrane for Landfill and Water Containment"
 category: "geosynthetics"
 product_category: "HDPE Geomembrane"
-image: "https://img.tyuanwaterproof.com/products/hdpe-geomembrane.webp"
-main_image: "https://img.tyuanwaterproof.com/products/hdpe-geomembrane.webp"
+image: "https://img.tyuanwaterproof.com/products/hdpe-geomembrane-liner-roll.webp"
+main_image: "https://img.tyuanwaterproof.com/products/hdpe-geomembrane-liner-roll.webp"
 
 hero_description: "Professional HDPE geomembrane manufacturer providing high-density polyethylene liners for landfills, mining ponds, reservoirs, and aquaculture anti-seepage projects."
 
