@@ -172,10 +172,6 @@ related_products:
     description: "Self-adhesive pre-applied HDPE membrane for basement and underground structural waterproofing."
     image: "https://img.tyuanwaterproof.com/products/pre-applied-hdpe-waterproof-membrane.webp"
     href: "/products/pre-applied-hdpe-membrane-supplier/"
-  - title: "Bentonite Geosynthetic Clay Liner (GCL)"
-    description: "Composite anti-seepage material combining bentonite and geotextiles for environmental projects."
-    image: "https://img.tyuanwaterproof.com/products/gcl-liner.webp"
-    href: "/products/gcl-bentonite-liner-factory/"
 
 faqs:
   - question: "What is the difference between Smooth and Textured HDPE Geomembrane?"

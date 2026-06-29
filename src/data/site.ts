@@ -103,10 +103,10 @@ export const productCategories = [
     title: 'Geosynthetics',
     slug: 'geosynthetics',
     href: '/categories/geosynthetics/',
-    image: '/assets/images/optimized/factory.webp',
+    image: 'https://img.tyuanwaterproof.com/products/hdpe-geomembrane-liner-roll.webp',
     description: 'Geomembranes and geotextiles for environmental and infrastructure projects.',
     items: [
-      { title: 'Geomembrane', href: '/products/pp-pe-composite-waterproofing-membrane/' }
+      { title: 'Geomembrane', href: '/products/hdpe-geomembrane-liner-manufacturer/' }
     ]
   }
 ];
