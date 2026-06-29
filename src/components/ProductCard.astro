@@ -1,0 +1,25 @@
+---
+interface Props { title: string; href: string; image: string; excerpt?: string; }
+const { title, href, image, excerpt } = Astro.props;
+
+const isFullWidthProduct = [
+  "sbs-bitumen-waterproofing-membrane-manufacturer",
+  "self-adhesive-bitumen-waterproofing-membrane-wholesale",
+  "asphalt-roofing-felt-manufacturer",
+  "epdm-waterproofing-membrane-wholesale",
+  "polyurethane-waterproof-coating-factory"
+].some(slug => href.includes(slug));
+
+const imageFitClass = isFullWidthProduct ? "object-cover p-0" : "object-contain p-5";
+---
+<a href={href} class="group card block overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all">
+  <div class="aspect-[4/3] bg-slate-50">
+    <img src={image} alt={title} loading="lazy" class={`h-full w-full ${imageFitClass}`} />
+  </div>
+  <div class="p-5">
+    <h3 class="text-base font-extrabold text-navy group-hover:text-brand">{title}</h3>
+    {excerpt && <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-600">{excerpt}</p>}
+    <span class="mt-4 inline-flex text-sm font-bold text-brand">View Details →</span>
+  </div>
+</a>
+

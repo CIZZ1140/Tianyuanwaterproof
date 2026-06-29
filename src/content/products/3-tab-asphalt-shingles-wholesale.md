@@ -1,0 +1,166 @@
+---
+title: "Classic 3-Tab Asphalt Shingles"
+category: "asphalt-shingles"
+product_category: "Asphalt Shingles"
+main_image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-3-tab.webp"
+
+hero_description: "Factory-supplied classic 3-tab asphalt roofing shingles for residential and commercial projects. Features a high-strength fiberglass carrier, durable mineral surface, and easy cold installation."
+
+hero_tags:
+  - "3-Tab Shingles"
+  - "Fiberglass Carrier"
+  - "GB/T 20474-2006"
+  - "Economic & Durable"
+  - "1000mm x 333mm"
+
+gallery:
+  - image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-3-tab.webp"
+    title: "Classic 3-Tab Surface"
+  - image: "https://img.tyuanwaterproof.com/factory/production-line.webp"
+    title: "Production Line"
+
+spec_table:
+  - label: "Product Type"
+    value: "Classic 3-Tab Asphalt Shingles"
+  - label: "Standard"
+    value: "GB/T 20474-2006"
+  - label: "Base Material"
+    value: "High-quality fiberglass carrier dipped with petroleum bitumen"
+  - label: "Surface"
+    value: "Colored mineral particles providing UV protection"
+  - label: "Dimensions"
+    value: "1000mm x 333mm (± 3mm)"
+  - label: "Thickness"
+    value: "2.6mm - 3.0mm"
+  - label: "Weight"
+    value: "Approx. 25kg - 28kg / bundle"
+  - label: "Application"
+    value: "Exposed pitched roof waterproofing & decoration"
+  - label: "OEM Support"
+    value: "Color, packaging, and private label customization available"
+
+quick_facts:
+  - title: "Fiberglass Strength"
+    text: "Reinforced fiberglass mat ensures superior dimensional stability."
+  - title: "Mineral Protection"
+    text: "Ceramic-coated granules offer excellent UV resistance and color stability."
+  - title: "Cold Construction"
+    text: "Easy installation with nails and sealant, no torching required."
+  - title: "Economic Choice"
+    text: "The most cost-effective roofing solution for large-scale housing projects."
+
+applications:
+  - title: "Residential Houses"
+    text: "Ideal for standard sloped roofs of residential buildings and apartments."
+  - title: "Commercial Roofing"
+    text: "Reliable and economic waterproofing for commercial pitched roofs."
+  - title: "Public Projects"
+    text: "Used in schools, hospitals, and public equipment roofing works."
+  - title: "Roof Renovation"
+    text: "Perfect for replacing old tiles with a lightweight, durable alternative."
+
+features:
+  - title: "Lightweight Material"
+    text: "Significantly reduces roof load compared to traditional clay or concrete tiles."
+  - title: "Sound Absorption"
+    text: "The mineral surface helps reduce noise during heavy rain or hail."
+  - title: "Weather Resistance"
+    text: "Built to withstand extreme heat, wind, and temperature fluctuations."
+  - title: "Decorative Options"
+    text: "Available in multiple colors to match various architectural styles."
+
+technical_data:
+  - label: "Tensile Strength (Long.)"
+    unit: "N/50mm"
+    standard: "GB/T 20474"
+    requirement: "≥ 600"
+    value: "Qualified (700+)"
+  - label: "Heat Resistance"
+    unit: "°C"
+    standard: "GB/T 20474"
+    requirement: "90°C, 2h"
+    value: "No sliding, flowing, or dripping"
+  - label: "Low Temp Flexibility"
+    unit: "°C"
+    standard: "GB/T 20474"
+    requirement: "-10°C"
+    value: "No crack"
+  - label: "Wind Resistance"
+    unit: "km/h"
+    standard: "ASTM D3161"
+    requirement: "Class F (110mph)"
+    value: "Passed"
+  - label: "Fire Resistance"
+    unit: "—"
+    standard: "UL 790"
+    requirement: "Class A"
+    value: "Class A Fire Rated"
+
+application_guide:
+  - title: "Surface Prep"
+    text: "Ensure the roof deck is dry, smooth, and clean. Install waterproof underlayment first."
+  - title: "Starter Strip"
+    text: "Install the starter course at the eaves to provide a secure base for the first row."
+  - title: "Alignment"
+    text: "Use datum lines to keep shingles straight and ensure proper staggered joints."
+  - title: "Fixing & Nailing"
+    text: "Apply 4-6 proper roofing nails per piece according to slope and wind conditions."
+  - title: "Overlap Sealing"
+    text: "Press shingles firmly to engage the thermal-activated self-sealing strips."
+  - title: "Ridge Installation"
+    text: "Finish the roof with matching ridge tiles for a complete waterproof seal."
+
+packaging:
+  - title: "Bundle Packing"
+    text: "Standard export bundles with 21 pieces each, providing ~3.1 m² coverage."
+  - title: "Pallet Shipping"
+    text: "Shrink-wrapped pallets with corner protection for safe ocean transit."
+  - title: "OEM Branding"
+    text: "Custom bundle wrappers and private label support for B2B distributors."
+
+loading_data:
+  - label: "20FT Container"
+    value: "Approx. 2,000 - 2,500 m² depending on thickness"
+  - label: "Weight Limit"
+    value: "Max 27-28 Tons per container load"
+
+downloads:
+  - title: "3-Tab Shingles TDS"
+    description: "Detailed technical data and performance specifications."
+    type: "PDF"
+    href: ""
+  - title: "Installation Manual"
+    description: "Step-by-step construction guide for pitched roofs."
+    type: "PDF"
+    href: ""
+
+related_products:
+  - title: "SBS Modified Bitumen Membrane"
+    image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
+    href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
+  - title: "Self-Adhesive Bitumen Membrane"
+    image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
+    href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
+  - title: "PVC Waterproofing Membrane"
+    image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
+    href: "/products/pvc-waterproofing-membrane-manufacturer/"
+  - title: "TPO Waterproofing Membrane"
+    image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
+    href: "/products/tpo-waterproofing-membrane-manufacturer/"
+
+faqs:
+  - question: "Are 3-tab shingles suitable for high-wind areas?"
+    answer: "Yes, our 3-tab shingles feature high-strength fiberglass mats and thermal-activated sealant strips to meet international wind resistance standards."
+  - question: "How many colors are available?"
+    answer: "We offer 12+ standard colors, including charcoal grey, terracotta red, and desert tan. Custom color matching is available for bulk OEM orders."
+  - question: "Can they be installed over existing roofs?"
+    answer: "While it is possible to install over a single layer of old shingles, we recommend a clean deck for the best long-term performance and warranty."
+  - question: "What is the life expectancy of these shingles?"
+    answer: "With proper installation and ventilation, our premium modified bitumen 3-tab shingles typically last 20 to 30 years."
+---
+
+# Economic and Durable Roofing Solution
+
+Asphalt roofing shingles are tile-shaped asphalt waterproofing sheets designed for exposed pitched roof waterproofing and decorative roof applications. The product uses fiberglass carrier dipped with qualified petroleum bitumen. One side is covered with colored mineral particles or metal foil, while the other side uses isolation material to support packaging, transportation, and installation.
+
+This roofing material is suitable for inclined roofs of civil houses, villas, public buildings, and roof projects with complex geometry. It provides both waterproofing and decorative roofing functions, with different colors and surface appearances available for project and market requirements. Its cold construction method makes it suitable for pitched roof systems where torch application is not required.

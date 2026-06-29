@@ -1,0 +1,164 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const pageTitle = "Product Center | Tianyuan Waterproof";
+const pageDescription = "Explore our premium modified bitumen, polymer membranes, and professional waterproofing solutions.";
+
+// 1. Data Fetching
+const rawProducts = await getCollection("products");
+const products = rawProducts.filter(p => !p.data.draft);
+
+// 2. Category Mapping (Strict Labeling)
+const categoryMapping = {
+  "bitumen-membranes": "Bitumen Membranes",
+  "asphalt-membranes": "Bitumen Membranes",
+  "polymer-membranes": "Polymer Membranes",
+  "asphalt-shingles": "Asphalt Shingles",
+  "waterproof-tapes": "Waterproof Tapes",
+  "waterproof-coatings": "Waterproof Coatings",
+  "geosynthetics": "Geosynthetics",
+  "other": "Other Waterproof Products",
+};
+
+const categoryOrder = [
+  "Bitumen Membranes",
+  "Polymer Membranes",
+  "Asphalt Shingles",
+  "Waterproof Tapes",
+  "Waterproof Coatings",
+  "Geosynthetics",
+  "Other Waterproof Products",
+];
+
+// 3. Process Products for UI
+const processedProducts = products.map(p => {
+  const categoryId = p.data.category || "bitumen-membranes";
+  const categoryLabel = categoryMapping[categoryId] || "Other Waterproof Products";
+  
+  const isFullWidthProduct = [
+    "sbs-bitumen-waterproofing-membrane-manufacturer",
+    "self-adhesive-bitumen-waterproofing-membrane-wholesale",
+    "asphalt-roofing-felt-manufacturer",
+    "epdm-waterproofing-membrane-wholesale"
+  ].includes(p.slug);
+
+  return {
+    ...p,
+    categoryLabel,
+    imageFitClass: isFullWidthProduct ? "object-cover" : "object-contain",
+    href: `/products/${p.slug}/`
+  };
+}).sort((a, b) => (b.data.order || 0) - (a.data.order || 0));
+
+// 4. Generate Category Stats (Based on Labels)
+const categoryStats = categoryOrder.map(label => {
+  const count = processedProducts.filter(p => p.categoryLabel === label).length;
+  return { label, count };
+});
+
+const categories = [
+  { label: "All Products", count: processedProducts.length },
+  ...categoryStats
+];
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-[#F5F7FA] min-h-screen">
+    <section class="bg-gradient-to-r from-[#0B1E3B] to-[#162D55] text-white py-20 px-6 border-b border-white/10">
+      <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-black mb-4 text-white">Product Center</h1>
+        <p class="text-slate-200 max-w-2xl text-lg leading-relaxed">High-performance waterproofing solutions for global B2B construction projects.</p>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-12">
+      <div class="grid lg:grid-cols-[280px_1fr] gap-10">
+        <aside>
+          <div class="bg-white rounded-3xl p-6 border border-[#dbe7f5] shadow-sm sticky top-24">
+            <h2 class="text-lg font-bold text-[#102033] mb-6 px-2">Product Overview</h2>
+            <nav class="space-y-2">
+              {categories.map((cat, idx) => (
+                <button 
+                  data-category-filter={cat.label}
+                  class={`w-full flex justify-between items-center px-4 py-3 rounded-2xl text-sm font-bold transition-all ${idx === 0 ? 'bg-[#EAF3FF] text-[#1F4E8C]' : 'text-[#102033] hover:bg-[#F5F7FA] hover:text-[#F58A1F]'}`}
+                >
+                  <span class="cat-label text-left flex-1 leading-tight mr-4">{cat.label}</span>
+                  <span class="text-xs text-[#5B6B7C] bg-[#F5F7FA] px-2 py-1 rounded-lg shrink-0">{cat.count}</span>
+                </button>
+              ))}
+            </nav>
+          </div>
+        </aside>
+
+        <div class="space-y-8">
+          <div class="flex justify-between items-end">
+            <h2 class="text-2xl font-extrabold text-[#102033]">
+              <span id="list-title">All Products</span>
+              <span class="text-[#5B6B7C] font-normal ml-2">(<span id="list-count">{processedProducts.length}</span>)</span>
+            </h2>
+          </div>
+
+          <div id="product-grid" class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+            {processedProducts.map(p => (
+              <article 
+                data-product-card 
+                data-category={p.categoryLabel}
+                class="group bg-white rounded-3xl border border-[#dbe7f5] overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1"
+              >
+                <a href={p.href} class="block">
+                  <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+                    <img src={p.data.main_image || p.data.image || '/images/product-placeholder.webp'} alt={p.data.title} class={`w-full h-full ${p.imageFitClass} transition-transform duration-500 group-hover:scale-105`} />
+                  </div>
+                  <div class="p-6">
+                    <p class="text-xs font-bold text-[#F58A1F] uppercase tracking-wider mb-2">{p.categoryLabel}</p>
+                    <h3 class="text-xl font-extrabold text-[#102033] mb-3 line-clamp-2">{p.data.title}</h3>
+                    <p class="text-sm text-[#5B6B7C] leading-relaxed line-clamp-3 mb-6">{p.data.description}</p>
+                    <span class="text-sm font-bold text-[#1F4E8C] inline-flex items-center gap-2 group-hover:text-[#F58A1F] transition-colors">
+                      Product Specs 
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+                    </span>
+                  </div>
+                </a>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll('[data-category-filter]');
+    const cards = document.querySelectorAll('[data-product-card]');
+    const title = document.getElementById('list-title');
+    const countDisplay = document.getElementById('list-count');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetLabel = btn.getAttribute('data-category-filter');
+        
+        // Update active style
+        buttons.forEach(b => b.classList.remove('bg-[#EAF3FF]', 'text-[#1F4E8C]'));
+        btn.classList.add('bg-[#EAF3FF]', 'text-[#1F4E8C]');
+
+        // Filter cards by exact Label text
+        let visibleCount = 0;
+        cards.forEach(card => {
+          const cardLabel = card.getAttribute('data-category');
+          if (targetLabel === 'All Products' || cardLabel === targetLabel) {
+            (card as HTMLElement).style.display = 'block';
+            visibleCount++;
+          } else {
+            (card as HTMLElement).style.display = 'none';
+          }
+        });
+
+        // Update Title & Count
+        if (title) title.innerText = targetLabel || 'All Products';
+        if (countDisplay) countDisplay.innerText = String(visibleCount);
+      });
+    });
+  </script>
+</Layout>
+

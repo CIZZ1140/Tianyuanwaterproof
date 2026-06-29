@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tyuanwaterproof.com/sitemap-index.xml

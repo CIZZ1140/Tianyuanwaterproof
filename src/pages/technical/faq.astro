@@ -1,0 +1,7 @@
+---
+import Layout from '@/layouts/Layout.astro';
+---
+<Layout title="FAQ | Waterproofing Materials">
+  <section class="bg-navy py-16 text-white"><div class="container-wrap"><p class="eyebrow">FAQ</p><h1 class="mt-3 text-4xl font-black text-white md:text-5xl">Frequently asked questions</h1></div></section>
+  <section class="py-16"><div class="container-wrap grid gap-5">{['Can you provide OEM packaging?','Can you provide TDS and MSDS?','What specifications can be customized?','What information is needed for quotation?'].map((q) => <div class="card"><h2 class="text-xl font-bold">{q}</h2><p class="mt-3 text-sm leading-6 text-slate-600">Yes. Please send product type, thickness, width, length, quantity, packaging requirement and destination port.</p></div>)}</div></section>
+</Layout>

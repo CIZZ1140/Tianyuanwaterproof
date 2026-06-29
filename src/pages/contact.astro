@@ -1,0 +1,326 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { site } from '@/data/site';
+
+const buyerTypes = [
+  'Importer',
+  'Distributor / Wholesaler',
+  'Building Materials Supplier',
+  'Construction Contractor',
+  'Waterproofing Contractor',
+  'OEM / Private Label Buyer',
+  'Other',
+];
+
+const productInterests = [
+  'Bitumen Membranes',
+  'Polymer Membranes',
+  'Asphalt Shingles',
+  'Waterproof Tapes',
+  'Waterproof Coatings',
+  'Geosynthetics',
+  'Other Waterproof Products',
+];
+
+const contactCards = [
+  {
+    label: 'WHATSAPP',
+    value: '+86 15263640998',
+    href: 'https://wa.me/8615263640998',
+    iconBg: 'bg-green-100',
+    iconText: 'text-green-600',
+    icon: 'whatsapp',
+  },
+  {
+    label: 'EMAIL',
+    value: 'sales@tyuanwaterproof.com',
+    href: 'mailto:sales@tyuanwaterproof.com',
+    iconBg: 'bg-[#F3E8D4]',
+    iconText: 'text-[#A87835]',
+    icon: 'email',
+  },
+  {
+    label: 'FACTORY',
+    value: 'Weifang, Shandong, China',
+    href: '',
+    iconBg: 'bg-[#E8E2D8]',
+    iconText: 'text-[#7B746B]',
+    icon: 'location',
+  },
+  {
+    label: 'ALIBABA STORE',
+    value: 'tyfangshui.en.alibaba.com',
+    href: 'https://tyfangshui.en.alibaba.com',
+    iconBg: 'bg-orange-100',
+    iconText: 'text-orange-500',
+    icon: 'store',
+  },
+];
+
+const inputClass =
+  'w-full rounded-2xl border border-[#D1C7B7] bg-white/80 px-4 py-3 text-sm text-[#2F2A24] outline-none transition-all duration-300 placeholder:text-[#9A9186] focus:border-[#A68A64] focus:ring-4 focus:ring-[#A68A64]/10';
+const labelClass = 'mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-[#6F6255]';
+---
+
+<Layout title="Contact Us | Tianyuan Waterproof">
+  <main class="min-h-screen bg-[#F9F7F2]">
+    <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <div class="mb-12 max-w-3xl">
+        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-[#A68A64]">
+          Contact Tianyuan Waterproof
+        </p>
+        <h1 class="font-serif text-4xl font-semibold tracking-tight text-[#241F1A] sm:text-5xl lg:text-6xl">
+          Let’s discuss your waterproofing project
+        </h1>
+        <p class="mt-5 text-base leading-8 text-[#6F6255] sm:lg">
+          Send us your project details, product requirements, quantity, and destination market.
+          Our team will respond with product matching, quotation, and technical support.
+        </p>
+      </div>
+
+      <div class="grid gap-8 lg:grid-cols-[1.35fr_0.85fr] lg:items-start">
+        <div class="rounded-[2rem] border border-[#D1C7B7] bg-white/80 p-6 shadow-sm sm:p-8 lg:p-10">
+          <h2 class="font-serif text-3xl font-semibold text-[#241F1A]">
+            Tell us about your project
+          </h2>
+          <p class="mt-3 text-sm leading-7 text-[#6F6255]">
+            Fields marked with an asterisk are required. Please include the product type,
+            specifications, order quantity, and application area so we can reply more precisely.
+          </p>
+
+          <form
+            class="mt-8 space-y-6"
+            action="https://formspree.io/f/mzdqdpwd"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New inquiry from Tianyuan Waterproof website" />
+            <input type="hidden" name="source" value={site?.name ?? 'Tianyuan Waterproof'} />
+
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label class={labelClass} for="fullName">Full Name *</label>
+                <input
+                  id="fullName"
+                  name="Full Name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  placeholder="Your full name"
+                  class={inputClass}
+                />
+              </div>
+
+              <div>
+                <label class={labelClass} for="company">Company *</label>
+                <input
+                  id="company"
+                  name="Company"
+                  type="text"
+                  autocomplete="organization"
+                  required
+                  placeholder="Company name"
+                  class={inputClass}
+                />
+              </div>
+
+              <div>
+                <label class={labelClass} for="email">Email *</label>
+                <input
+                  id="email"
+                  name="Email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  placeholder="name@company.com"
+                  class={inputClass}
+                />
+              </div>
+
+              <div>
+                <label class={labelClass} for="country">Country</label>
+                <input
+                  id="country"
+                  name="Country"
+                  type="text"
+                  autocomplete="country-name"
+                  placeholder="Your country"
+                  class={inputClass}
+                />
+              </div>
+
+              <div>
+                <label class={labelClass} for="phone">WhatsApp / Phone</label>
+                <input
+                  id="phone"
+                  name="WhatsApp / Phone"
+                  type="text"
+                  autocomplete="tel"
+                  placeholder="+00 000 0000 0000"
+                  class={inputClass}
+                />
+              </div>
+
+              <div>
+                <label class={labelClass} for="role">Your Role *</label>
+                <select id="role" name="Your Role" required class={inputClass}>
+                  <option value="">Select your role...</option>
+                  {buyerTypes.map((type) => <option value={type}>{type}</option>)}
+                </select>
+              </div>
+
+              <div>
+                <label class={labelClass} for="productInterest">Product Interest</label>
+                <select id="productInterest" name="Product Interest" class={inputClass}>
+                  <option value="">Select product interest...</option>
+                  {productInterests.map((item) => <option value={item}>{item}</option>)}
+                </select>
+              </div>
+
+              <div>
+                <label class={labelClass} for="sizeQuantity">Size & Quantity</label>
+                <input
+                  id="sizeQuantity"
+                  name="Size & Quantity"
+                  type="text"
+                  placeholder="e.g. 4.0mm, 1m x 10m, 1 container"
+                  class={inputClass}
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class={labelClass} for="message">Message *</label>
+              <textarea
+                id="message"
+                name="Message"
+                rows="6"
+                required
+                placeholder="Tell us your application, required specifications, quantity, destination port, or any technical questions."
+                class={`${inputClass} resize-y`}
+              ></textarea>
+            </div>
+
+            <div class="flex flex-col gap-4 border-t border-[#D1C7B7]/70 pt-6 sm:flex-row sm:items-center sm:justify-between">
+              <p class="text-sm leading-6 text-[#6F6255]">
+                We usually respond within 24 hours on working days.
+              </p>
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center rounded-2xl bg-[#1E4F9A] px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#163D79] hover:shadow-md focus:outline-none focus:ring-4 focus:ring-[#1E4F9A]/20"
+              >
+                Submit Inquiry
+                <svg
+                  class="ml-2 h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="rounded-[2rem] border border-[#D1C7B7] bg-white/70 p-6 shadow-sm sm:p-8">
+          <h2 class="font-serif text-2xl font-semibold text-[#241F1A]">
+            Get in touch directly
+          </h2>
+          <p class="mt-3 text-sm leading-7 text-[#6F6255]">
+            Prefer a quicker channel? We’re available on WhatsApp, email, factory contact and Alibaba store.
+          </p>
+
+          <div class="mt-7 space-y-4">
+            {
+              contactCards.map((card) => {
+                const CardTag = card.href ? 'a' : 'div';
+
+                return (
+                  <CardTag
+                    href={card.href || undefined}
+                    target={card.href && !card.href.startsWith('mailto:') ? '_blank' : undefined}
+                    rel={card.href && !card.href.startsWith('mailto:') ? 'noopener noreferrer' : undefined}
+                    class="group flex items-center gap-4 rounded-2xl border border-[#D1C7B7] bg-[#F4F0E8] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#A68A64] hover:shadow-md"
+                  >
+                    <span
+                      class={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${card.iconBg} ${card.iconText}`}
+                    >
+                      {card.icon === 'whatsapp' && (
+                        <svg
+                          class="h-6 w-6"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path d="M12.04 2A9.86 9.86 0 0 0 2.2 11.84a9.72 9.72 0 0 0 1.34 4.94L2 22l5.36-1.48a9.86 9.86 0 0 0 4.68 1.19h.01A9.86 9.86 0 0 0 21.9 11.86 9.86 9.86 0 0 0 12.04 2Zm5.78 14.04c-.24.67-1.4 1.28-1.96 1.36-.5.07-1.13.1-1.82-.11-.42-.13-.95-.31-1.64-.61-2.89-1.25-4.77-4.16-4.91-4.35-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.1 1-2.39.26-.29.58-.36.77-.36h.56c.18.01.42-.07.66.5.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.29-.12.58.17.29.75 1.23 1.6 2 .1.09 1.11.99 2.57 1.37.32.08.5.07.69-.12.22-.22.79-.92 1-1.24.22-.31.43-.26.72-.16.29.1 1.86.88 2.18 1.04.31.16.53.24.6.38.07.14.07.81-.17 1.48Z" />
+                        </svg>
+                      )}
+
+                      {card.icon === 'email' && (
+                        <svg
+                          class="h-6 w-6"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="M4 6h16v12H4z"></path>
+                          <path d="m4 8 8 5 8-5"></path>
+                        </svg>
+                      )}
+
+                      {card.icon === 'location' && (
+                        <svg
+                          class="h-6 w-6"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="M12 21s7-5.1 7-11a7 7 0 1 0-14 0c0 5.9 7 11 7 11Z"></path>
+                          <circle cx="12" cy="10" r="2.4"></circle>
+                        </svg>
+                      )}
+
+                      {card.icon === 'store' && (
+                        <svg
+                          class="h-6 w-6"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path d="M5.2 4h13.6l1.2 5.1a3.04 3.04 0 0 1-4.9 3.02A3.05 3.05 0 0 1 12 13.2a3.05 3.05 0 0 1-3.1-1.08A3.04 3.04 0 0 1 4 9.1L5.2 4ZM5 14.3c.62.2 1.35.18 2-.05V20h10v-5.75c.65.23 1.38.25 2 .05V20.5c0 .83-.67 1.5-1.5 1.5h-11A1.5 1.5 0 0 1 5 20.5v-6.2Zm4 1.2h6V20H9v-4.5Z" />
+                        </svg>
+                      )}
+                    </span>
+
+                    <span class="min-w-0">
+                      <span class="block text-xs font-bold uppercase tracking-[0.14em] text-[#6F6255]">
+                        {card.label}
+                      </span>
+                      <span class="mt-1 block break-words text-base font-medium text-[#241F1A]">
+                        {card.value}
+                      </span>
+                    </span>
+                  </CardTag>
+                );
+              })
+            }
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+</Layout>
+

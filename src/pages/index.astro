@@ -1,0 +1,215 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import ProductCard from '../components/ProductCard.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import CTA from '../components/CTA.astro';
+import { getCollection } from 'astro:content';
+import { applications, productCategories, site, stats } from '../data/site';
+
+const products = (await getCollection('products')).sort((a,b)=>a.data.order-b.data.order);
+const featured = products.filter((p)=>p.data.featured).slice(0,6);
+---
+<Layout title="Waterproofing Membranes, Tapes & Coatings Manufacturer">
+  <Hero />
+  <h2 class="sr-only">Main Content</h2>
+
+  <section class="py-12" id="categories" aria-labelledby="cat-title">
+    <div class="container mx-auto">
+      <SectionHeader title="Product Categories" href="/products/" linkLabel="View All Products" id="cat-title" />
+      <div class="grid gap-6 lg:grid-cols-3">
+        {productCategories.slice(0,3).map((cat)=>(
+          <article class="card overflow-hidden p-6">
+            <a href={cat.href} class="block aspect-[16/9] rounded-xl bg-slate-50 p-4"><img src={cat.image} alt={cat.title} class="h-full w-full object-contain" /></a>
+            <h3 class="mt-5 text-xl font-extrabold uppercase text-navy"><a href={cat.href}>{cat.title}</a></h3>
+            <ul class="mt-3 space-y-2 text-sm text-slate-600">{cat.items.map((i)=><li>• <a href={i.href} class="hover:text-brand">{i.title}</a></li>)}</ul>
+            <a href={cat.href} class="mt-6 inline-flex text-sm font-bold text-brand">View All →</a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-12" aria-labelledby="app-title">
+    <div class="container mx-auto">
+      <SectionHeader title="Applications" href="/applications/" linkLabel="View All Applications" id="app-title" />
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
+        {applications.map((app)=>{
+          // Using stable public paths with optimized dimensions
+          let displayImage = app.image;
+          if (app.slug === 'basement-waterproofing') displayImage = '/assets/images/optimized/basement-application.webp';
+          if (app.slug === 'bathroom-waterproofing') displayImage = '/assets/images/optimized/bathroom-application.webp';
+          if (app.slug === 'window-door-sealing') displayImage = '/assets/images/optimized/window-door-application.webp';
+          if (app.slug === 'tunnel-waterproofing') displayImage = '/assets/images/optimized/tunnel.webp';
+          if (app.slug === 'roof-waterproofing') displayImage = '/assets/images/optimized/commercial-roof.webp';
+          
+          return (
+            <a href={`/applications/${app.slug}/`} class="group relative min-h-44 overflow-hidden rounded-xl shadow-card">
+              <img src={displayImage} alt={app.title} loading="lazy" class="absolute inset-0 h-full w-full object-cover transition-transform group-hover:scale-105" width="400" height="300" />
+              <div class="absolute inset-0 bg-gradient-to-t from-deep via-deep/45 to-transparent"></div>
+              <h3 class="absolute bottom-4 left-4 right-4 text-lg font-extrabold text-white">{app.title}</h3>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24" id="why-us" aria-labelledby="why-title">
+    <div class="container mx-auto">
+      <div class="grid gap-8 lg:grid-cols-12 lg:items-stretch mb-12">
+        <!-- Left: Why Choose Us Content Card -->
+        <article class="relative rounded-3xl border border-line bg-white p-6 shadow-sm sm:p-8 lg:p-10 lg:col-span-7 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="h-0.5 w-8 rounded-full bg-brand"></span>
+              <p class="text-sm font-semibold text-brand uppercase">Why Choose Us</p>
+            </div>
+
+            <h2 class="mt-5 max-w-3xl text-3xl font-bold leading-tight tracking-tight text-navy sm:text-4xl lg:text-5xl" id="why-title">
+              Trusted Waterproofing Manufacturer for Long-Term Supply
+            </h2>
+
+            <div class="mt-5 h-1 w-20 rounded-full bg-brand"></div>
+
+            <div class="mt-8 max-w-3xl space-y-5 text-base leading-8 text-slate-700">
+              <p>
+                Located in Shouguang, China&rsquo;s &ldquo;Waterproofing Capital&rdquo;,
+                Tianyuan Waterproof specializes in manufacturing reliable waterproofing
+                materials for roofing, basement, tunnel, bridge, and infrastructure
+                applications.
+              </p>
+              <p>
+                With 30+ years of manufacturing experience, 5 production lines, and global
+                export service, we help project buyers reduce sourcing risk through stable
+                quality, fast response, and professional technical support.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="mt-8 grid gap-4 grid-cols-1 sm:grid-cols-3">
+              <div class="rounded-2xl border border-line bg-slate-50 p-4">
+                <div class="flex items-center gap-3">
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand/10 text-brand">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3L19 6V11C19 15.5 16.1 19.4 12 21C7.9 19.4 5 15.5 5 11V6L12 3Z" stroke-linejoin="round"/><path d="M9 12L11.2 14.2L15.5 9.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-xl font-bold text-brand leading-none">30+</p>
+                    <p class="mt-1 text-[11px] font-bold uppercase tracking-wider text-slate-500">Experience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rounded-2xl border border-line bg-slate-50 p-4">
+                <div class="flex items-center gap-3">
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand/10 text-brand">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19H20" stroke-linecap="round"/><path d="M6 19V10L10 12V10L14 12V8L18 10V19" stroke-linejoin="round"/><path d="M8 15H9.5M12 15H13.5M16 15H17" stroke-linecap="round"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-xl font-bold text-brand leading-none">5</p>
+                    <p class="mt-1 text-[11px] font-bold uppercase tracking-wider text-slate-500">Prod. Lines</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rounded-2xl border border-line bg-slate-50 p-4">
+                <div class="flex items-center gap-3">
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand/10 text-brand">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"/><path d="M3.6 9H20.4M3.6 15H20.4" stroke-linecap="round"/><path d="M12 3C14 5.2 15 8.2 15 12C15 15.8 14 18.8 12 21C10 18.8 9 15.8 9 12C9 8.2 10 5.2 12 3Z" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-xl font-bold text-brand leading-none">50+</p>
+                    <p class="mt-1 text-[11px] font-bold uppercase tracking-wider text-slate-500">Countries</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="/contact/" class="inline-flex items-center justify-center rounded-xl bg-brand px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-brand/20 transition hover:bg-accent">
+                Get a Quote <span class="ml-2">→</span>
+              </a>
+              <a href="/about/" class="inline-flex items-center justify-center rounded-xl border border-brand bg-white px-7 py-3.5 text-sm font-bold text-brand transition hover:bg-brand hover:text-white">
+                Learn More <span class="ml-2">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Right: Factory High-res Image -->
+        <div class="lg:col-span-5 relative group overflow-hidden rounded-3xl shadow-card bg-slate-100">
+          <img 
+            src="https://img.tyuanwaterproof.com/home/factory.webp" 
+            alt="Tianyuan Waterproof high-tech production facility" 
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="800"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        </div>
+      </div>
+
+      <!-- Bottom: Key Advantages Grid -->
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+        {[
+          ['Factory Direct Supply','Competitive pricing from source manufacturer with stable production capacity.'],
+          ['Global Certifications','Products strictly adhere to CE and ISO international standards.'],
+          ['Premium QC System','Rigorous quality control process to ensure zero-defect delivery.'],
+          ['Global Export Presence','Trusted partner in 50+ countries across SE Asia, Middle East, Africa, and Americas.'],
+          ['Full-Cycle Service','Fast quotation, and end-to-end logistics management.']
+        ].map(([t,d])=>(
+          <div class="card p-6 bg-white border border-line rounded-2xl hover:shadow-xl transition-all duration-300">
+            <p class="font-extrabold text-navy text-sm uppercase tracking-wide">{t}</p>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">{d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-12" aria-labelledby="feat-title">
+    <div class="container mx-auto">
+      <SectionHeader title="Featured Products" href="/products/" linkLabel="View All Products" id="feat-title" />
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-6">
+        {featured.map((p)=><ProductCard title={p.data.shortTitle || p.data.title} href={`/products/${p.slug}/`} image={p.data.image} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 overflow-hidden" aria-labelledby="proj-title">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div class="max-w-2xl">
+          <p class="text-brand font-bold tracking-[0.2em] uppercase text-sm mb-4">Success Stories</p>
+          <h2 class="text-4xl md:text-5xl font-black text-navy uppercase" id="proj-title">Global Projects & Case Studies</h2>
+        </div>
+        <a href="/projects/" class="text-brand font-bold uppercase tracking-widest text-sm border-b-2 border-brand pb-1">View All Case Studies →</a>
+      </div>
+      
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="group relative overflow-hidden rounded-3xl bg-navy aspect-[16/10]">
+          <img src="/assets/images/optimized/tunnel.webp" alt="Bangkok Subway Project" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" width="800" height="500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"></div>
+          <div class="absolute bottom-8 left-8 right-8">
+            <span class="bg-brand text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full mb-3 inline-block">Infrastructure</span>
+            <h3 class="text-2xl font-bold text-white mb-2 uppercase">Bangkok Subway Extension</h3>
+            <p class="text-white/70 text-sm line-clamp-2">Thailand - Supplying 50,000+ SQM of HDPE pre-applied membranes for station waterproofing and tunnel segments.</p>
+          </div>
+        </div>
+        
+        <div class="group relative overflow-hidden rounded-3xl bg-navy aspect-[16/10]">
+          <img src="/assets/images/optimized/factory.webp" alt="Industrial Plant Vietnam" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" width="800" height="500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"></div>
+          <div class="absolute bottom-8 left-8 right-8">
+            <span class="bg-brand text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full mb-3 inline-block">Industrial</span>
+            <h3 class="text-2xl font-bold text-white mb-2 uppercase">Samsung Factory Complex</h3>
+            <p class="text-white/70 text-sm line-clamp-2">Vietnam - TPO roofing systems and specialized bitumen membranes for major industrial production facilities in Bac Ninh.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTA />
+</Layout>

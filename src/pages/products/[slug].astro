@@ -1,0 +1,768 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import {
+  ArrowRight,
+  Box,
+  Boxes,
+  ChevronDown,
+  ClipboardCheck,
+  Download,
+  Droplets,
+  Factory,
+  FileText,
+  Flame,
+  FlaskConical,
+  Hammer,
+  Image as ImageIcon,
+  Layers,
+  MessageCircle,
+  Package,
+  Ruler,
+  ShieldCheck,
+  Sun,
+  Truck,
+  Wrench,
+  Snowflake,
+} from "lucide-astro";
+
+/**
+ * Technical Table Strategy:
+ * If all rows lack specialized B2B fields (unit, standard, requirement),
+ * we switch to a simplified 2-column mode to avoid empty '-' dashes.
+ */
+
+function normalizeAsset(value: any) {
+  if (!value) return "";
+  if (typeof value === "string") return value;
+  if (typeof value?.src === "string") return value.src;
+  if (typeof value?.url === "string") return value.url;
+  return "";
+}
+
+function normalizeString(value: any, fallback = "") {
+  if (typeof value === "string" && value.trim()) return value.trim();
+  if (typeof value === "number") return String(value);
+  return fallback;
+}
+
+function normalizeTagList(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (!item) return "";
+      if (typeof item === "string") return item;
+      return item.title ?? item.label ?? item.name ?? item.value ?? "";
+    })
+    .map((item) => String(item).trim())
+    .filter(Boolean);
+}
+
+function normalizeRows(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (!item) return null;
+      if (typeof item === "string") return { label: item, value: "", unit: "", standard: "", requirement: "" };
+      return {
+        label: item.label ?? item.name ?? item.item ?? item.title ?? item.test_item ?? "",
+        value: item.value ?? item.result ?? item.notes ?? item.detail ?? item.text ?? "",
+        unit: item.unit ?? "",
+        standard: item.standard ?? item.test_standard ?? item.testMethod ?? item.test_method ?? item.method ?? "",
+        requirement: item.requirement ?? item.class ?? item.requirement_class ?? item.requirement_or_class ?? "",
+      };
+    })
+    .filter((item) => item && (item.label || item.value));
+}
+
+function normalizeCards(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (!item) return null;
+      if (typeof item === "string") return { title: item, text: "", image: "", href: "" };
+      return {
+        title: item.title ?? item.label ?? item.name ?? "",
+        text: item.text ?? item.description ?? item.value ?? item.detail ?? "",
+        image: normalizeAsset(item.image ?? item.main_image ?? item.img),
+        href: item.href ?? item.url ?? item.link ?? "",
+      };
+    })
+    .filter((item) => item && (item.title || item.text || item.image));
+}
+
+function normalizeApplicationGuide(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item, index) => {
+      if (!item) return null;
+      if (typeof item === "string") {
+        return {
+          title: `Step ${index + 1}`,
+          text: item,
+          image: "",
+          href: "",
+        };
+      }
+      return {
+        title: item.title ?? item.label ?? item.name ?? `Step ${index + 1}`,
+        text: item.text ?? item.description ?? item.value ?? item.detail ?? "",
+        image: normalizeAsset(item.image ?? item.main_image ?? item.img),
+        href: item.href ?? item.url ?? item.link ?? "",
+      };
+    })
+    .filter((item) => item && (item.title || item.text));
+}
+
+function normalizeGallery(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (!item) return null;
+      if (typeof item === "string") return { image: item, title: "Product Detail" };
+      return {
+        image: normalizeAsset(item.image ?? item.src ?? item.url),
+        title: item.title ?? item.label ?? item.name ?? "Product Detail",
+      };
+    })
+    .filter((item) => item && item.image);
+}
+
+function normalizeDownloads(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (!item) return null;
+      if (typeof item === "string") return { title: item, description: "", type: "PDF", href: "" };
+      return {
+        title: item.title ?? item.label ?? item.name ?? "Technical Document",
+        description: item.description ?? item.text ?? item.detail ?? "",
+        type: item.type ?? item.format ?? "PDF",
+        href: item.href ?? item.url ?? item.file ?? "",
+      };
+    })
+    .filter((item) => item && item.title);
+}
+
+function normalizeRelatedProducts(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (!item) return null;
+      return {
+        title: item.title ?? item.name ?? "",
+        description: item.description ?? item.text ?? item.summary ?? "",
+        image: normalizeAsset(item.image ?? item.main_image ?? item.img),
+        href: item.href ?? item.url ?? item.link ?? "#",
+      };
+    })
+    .filter((item) => item && item.title);
+}
+
+function normalizeFaqs(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (!item) return null;
+      return {
+        question: item.question ?? item.title ?? item.q ?? "",
+        answer: item.answer ?? item.text ?? item.a ?? "",
+      };
+    })
+    .filter((item) => item && item.question);
+}
+
+function getSpecValue(rows: any[], keywords: string[]) {
+  const target = rows.find((row) => {
+    const label = String(row?.label ?? "").toLowerCase();
+    return keywords.some((keyword) => label.includes(keyword.toLowerCase()));
+  });
+  return target?.value ?? "";
+}
+
+function buildFallbackHeroTags(specTable: any[]) {
+  const standard = getSpecValue(specTable, ["standard"]);
+  const thickness = getSpecValue(specTable, ["thickness", "thick"]);
+  const width = getSpecValue(specTable, ["width"]);
+  const method = getSpecValue(specTable, ["application method", "method"]);
+  const oem = getSpecValue(specTable, ["oem", "customization"]);
+  return [standard, thickness, width, method, oem]
+    .map((item) => String(item).trim())
+    .filter(Boolean)
+    .slice(0, 6);
+}
+
+export async function getStaticPaths() {
+  const products = await getCollection("products");
+  return products.map((entry) => ({
+    params: {
+      slug: (entry?.slug ?? entry?.id ?? "").replace(/\.mdx?$/, "").replace(/\/index$/, ""),
+    },
+    props: {
+      entry,
+    },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const data = (entry.data ?? {}) as Record<string, any>;
+
+const isFullWidthProduct = [
+  "sbs-bitumen-waterproofing-membrane-manufacturer",
+  "self-adhesive-bitumen-waterproofing-membrane-wholesale",
+  "asphalt-roofing-felt-manufacturer",
+  "epdm-waterproofing-membrane-wholesale",
+  "polyurethane-waterproof-coating-factory"
+].includes(entry.slug);
+
+const imageFitClass = isFullWidthProduct ? "object-cover" : "object-contain";
+
+const title = normalizeString(data.title, "Product Details");
+const productCategory = normalizeString(data.product_category ?? data.category, "Waterproofing Membrane");
+const mainImage = normalizeAsset(data.main_image);
+const gallery = normalizeGallery(data.gallery ?? []);
+const specTable = normalizeRows(data.spec_table ?? []);
+const quickFacts = normalizeCards(data.quick_facts ?? data.quickFacts ?? []);
+const features = normalizeCards(data.features ?? []);
+const applications = normalizeCards(data.applications ?? data.application ?? data.application_areas ?? data.where_to_use ?? []);
+const technicalData = normalizeRows(data.technical_data ?? data.technicalData ?? data.test_data ?? []);
+
+const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.standard && !row.requirement);
+
+const applicationGuide = normalizeApplicationGuide(data.application_guide ?? data.applicationGuide ?? data.installation_steps ?? data.installation ?? []);
+const packaging = normalizeCards(data.packaging ?? data.packaging_oem ?? data.oem_packaging ?? []);
+const loadingData = normalizeRows(data.loading_data ?? data.loadingData ?? data.container_loading ?? []);
+const downloads = normalizeDownloads(data.downloads ?? []);
+const relatedProducts = normalizeRelatedProducts(data.related_products ?? []);
+const faqs = normalizeFaqs(data.faqs ?? data.faq ?? []);
+
+const explicitHeroTags = normalizeTagList(data.hero_tags ?? []);
+const fallbackHeroTags = buildFallbackHeroTags(specTable);
+const heroTags = explicitHeroTags.length > 0 ? explicitHeroTags : fallbackHeroTags;
+
+const heroDescription = normalizeString(
+  data.hero_description ?? data.short_description ?? data.summary,
+  `Factory supplied ${title.toLowerCase()} for distributors, contractors, importers, and building material suppliers.`
+);
+
+const standardValue = getSpecValue(specTable, ["standard"]);
+const thicknessValue = getSpecValue(specTable, ["thickness", "thick"]);
+const widthValue = getSpecValue(specTable, ["width"]);
+const lengthValue = getSpecValue(specTable, ["length"]);
+const rollSizeValue = widthValue && lengthValue ? `${widthValue} × ${lengthValue}` : widthValue || lengthValue;
+
+const heroSpecCards = [
+  { label: "Standard", value: standardValue, icon: ShieldCheck },
+  { label: "Thickness", value: thicknessValue, icon: Layers },
+  { label: "Roll Size", value: rollSizeValue, icon: Ruler },
+].filter((item) => item.value);
+
+const rawBody = typeof entry.body === "string" ? entry.body : "";
+const hasBody = rawBody.trim().length > 0;
+const hasOverview = hasBody || quickFacts.length > 0;
+const primaryDownload = downloads.find((item) => item.href && item.title.toLowerCase().includes("tds")) ?? downloads.find((item) => item.href);
+const contactHref = normalizeString(data.inquiry_url, "/contact/");
+const whatsappHref = normalizeString(data.whatsapp_url, "https://wa.me/8615263640998");
+
+const isRealFile = (url: string) => url && url !== "#" && (url.startsWith("http") || url.startsWith("/assets/") || url.endsWith(".pdf"));
+
+const sectionKeys = [
+
+  ["specs", specTable.length > 0],
+  ["overview", hasOverview],
+  ["applications", applications.length > 0],
+  ["benefits", features.length > 0],
+  ["technical", technicalData.length > 0],
+  ["installation", applicationGuide.length > 0],
+  ["packaging", packaging.length > 0 || loadingData.length > 0],
+  ["downloads", downloads.length > 0],
+  ["related", relatedProducts.length > 0],
+  ["faq", faqs.length > 0],
+];
+
+const sectionIndex = Object.fromEntries(
+  sectionKeys.filter(([, visible]) => visible).map(([key], index) => [key, index + 1])
+);
+
+const quickFactIcons = [Layers, Droplets, Boxes, Package];
+const applicationIcons = [Factory, Box, Truck, Wrench, Droplets, ShieldCheck];
+const benefitIcons = [ShieldCheck, Ruler, Snowflake, Sun];
+const installationIcons = [Hammer, Droplets, Ruler, Flame, Package, ClipboardCheck];
+const packagingIcons = [Package, Truck, Box, Factory, FileText, FlaskConical];
+
+// --- SEO Structured Data (JSON-LD) ---
+const jsonLd = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": title,
+  "image": [mainImage, ...gallery.map(item => item.image)].filter(Boolean),
+  "description": heroDescription,
+  "sku": data.sku ?? (entry?.slug ?? entry?.id ?? "").replace(/\.mdx?$/, "").replace(/\/index$/, ""),
+  "mpn": data.mpn ?? standardValue,
+  "brand": {
+    "@type": "Brand",
+    "name": "Tianyuan Waterproof"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Weifang Tianyuan Waterproof Material Co., Ltd.",
+    "url": "https://www.tyuanwaterproof.com"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "offerCount": "1",
+    "lowPrice": "0",
+    "highPrice": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": Astro.url.href
+  },
+  "additionalProperty": specTable.map(row => ({
+    "@type": "PropertyValue",
+    "name": row.label,
+    "value": row.value
+  }))
+};
+
+const faqJsonLd = faqs.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+} : null;
+---
+
+<Layout title={title}>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+  {faqJsonLd && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqJsonLd)} />}
+  <main class="bg-slate-50 text-slate-950">
+    <section class="mx-auto w-full max-w-[1680px] px-4 py-6 sm:px-6 lg:px-8 lg:py-10">
+      <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
+        <div class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div>
+            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+              {
+                mainImage ? (
+                  <img src={mainImage} alt={title} loading="eager" class={`aspect-[4/3] h-full w-full ${imageFitClass}`} />
+                ) : (
+                  <div class="flex aspect-[4/3] h-full w-full items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 p-8 text-center text-sm font-semibold text-slate-500">
+                    <ImageIcon class="mr-2 h-5 w-5" /> Product image
+                  </div>
+                )
+              }
+            </div>
+            {
+              gallery.length > 0 && (
+                <div class="mt-4 grid gap-4 sm:grid-cols-3">
+                  {gallery.slice(0, 3).map((item) => (
+                    <div class="rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
+                      <img src={item.image} alt={item.title} loading="lazy" class="aspect-[4/3] w-full rounded-xl bg-slate-100 object-cover" />
+                      <p class="mt-3 text-center text-xs font-bold uppercase tracking-wide text-slate-700">{item.title}</p>
+                    </div>
+                  ))}
+                </div>
+              )
+            }
+          </div>
+
+          <div>
+            <p class="mb-3 text-sm font-bold uppercase tracking-[0.28em] text-blue-700">{productCategory}</p>
+            <h1 class="max-w-4xl text-3xl font-black tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">{title}</h1>
+            <p class="mt-5 max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">{heroDescription}</p>
+            {
+              heroTags.length > 0 && (
+                <div class="mt-6 flex flex-wrap gap-3">
+                  {heroTags.slice(0, 6).map((tag) => (
+                    <span class="rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-bold text-blue-800">{tag}</span>
+                  ))}
+                </div>
+              )
+            }
+            {
+              heroSpecCards.length > 0 && (
+                <div class="mt-6 grid gap-3 sm:grid-cols-3">
+                  {heroSpecCards.map((item) => {
+                    const Icon = item.icon;
+                    return (
+                      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                        <div class="mb-3 flex items-center gap-2 text-blue-700">
+                          <Icon class="h-5 w-5" />
+                          <p class="text-xs font-black uppercase tracking-wide">{item.label}</p>
+                        </div>
+                        <p class="text-sm font-bold leading-6 text-slate-950">{item.value}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+              )
+            }
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a href={contactHref} class="inline-flex items-center justify-center rounded-xl bg-blue-700 px-6 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:bg-blue-800">Request A Quote</a>
+              <a href={isRealFile(primaryDownload?.href) ? primaryDownload.href : contactHref} class="inline-flex items-center justify-center gap-2 rounded-xl border border-blue-200 bg-white px-6 py-3 text-sm font-black uppercase tracking-wide text-blue-800 transition hover:border-blue-400 hover:bg-blue-50">
+                <Download class="h-4 w-4" /> Download TDS
+              </a>
+              <a href={whatsappHref} class="inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50 px-6 py-3 text-sm font-black uppercase tracking-wide text-emerald-700 transition hover:border-emerald-300 hover:bg-emerald-100">
+                <MessageCircle class="h-4 w-4" /> Chat On WhatsApp
+              </a>
+            </div>
+            <p class="mt-4 text-sm leading-6 text-slate-500">Send thickness, surface material, quantity, and destination port for a fast quote.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {
+      specTable.length > 0 && (
+        <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
+          <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
+            <div class="mb-6 flex items-center gap-3">
+              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.specs}</span>
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Quick Specifications</h2>
+            </div>
+            <div class="grid overflow-hidden rounded-2xl border border-slate-200 lg:grid-cols-2">
+              {specTable.map((row) => (
+                <div class="grid grid-cols-[0.42fr_0.58fr] border-b border-slate-200 last:border-b-0 lg:[&:nth-last-child(-n+2)]:border-b-0">
+                  <div class="border-r border-slate-200 bg-slate-50 px-4 py-4 text-sm font-black text-slate-800">{row.label}</div>
+                  <div class="px-4 py-4 text-sm font-medium leading-7 text-slate-600">{row.value || "Contact us for details"}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    {
+      hasOverview && (
+        <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
+          <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
+            <div class="mb-6 flex items-center gap-3">
+              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.overview}</span>
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Product Overview</h2>
+            </div>
+            <div class="grid gap-8 lg:grid-cols-[1fr_0.75fr]">
+              {hasBody && (
+                <div class="max-w-4xl text-base leading-8 text-slate-600 [&>h1:first-child]:hidden [&>h1]:mb-4 [&>h1]:text-2xl [&>h1]:font-black [&>h1]:text-slate-950 [&>h2]:mb-4 [&>h2]:mt-8 [&>h2]:text-2xl [&>h2]:font-black [&>h2]:text-slate-950 [&>h3]:mb-3 [&>h3]:mt-6 [&>h3]:text-xl [&>h3]:font-black [&>h3]:text-slate-950 [&>p]:mb-5 [&>ul]:mb-5 [&>ul]:list-disc [&>ul]:pl-6 [&>ol]:mb-5 [&>ol]:list-decimal [&>ol]:pl-6 [&>li]:mb-2">
+                  <Content />
+                </div>
+              )}
+              {quickFacts.length > 0 && (
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4 sm:p-5">
+                  <h3 class="mb-4 text-lg font-black text-slate-950">Quick Facts</h3>
+                  <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
+                    {quickFacts.slice(0, 4).map((item, index) => {
+                      const Icon = quickFactIcons[index % quickFactIcons.length];
+                      return (
+                        <div class="rounded-2xl border border-slate-200 bg-white p-5">
+                          <Icon class="mb-4 h-8 w-8 text-blue-700" />
+                          <h4 class="text-base font-black text-slate-950">{item.title}</h4>
+                          {item.text && <p class="mt-3 text-sm font-medium leading-7 text-slate-600">{item.text}</p>}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    {
+      applications.length > 0 && (
+        <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
+          <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
+            <div class="mb-6 flex items-center gap-3">
+              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.applications}</span>
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Applications</h2>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+              {applications.slice(0, 6).map((item, index) => {
+                const Icon = applicationIcons[index % applicationIcons.length];
+                return (
+                  <article class="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-center">
+                    <div class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl border border-blue-100 bg-white text-blue-700">
+                      <Icon class="h-7 w-7" />
+                    </div>
+                    <h3 class="text-sm font-black leading-6 text-slate-950">{item.title}</h3>
+                    {item.text && <p class="mt-3 text-sm font-medium leading-6 text-slate-600">{item.text}</p>}
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    {
+      features.length > 0 && (
+        <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
+          <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
+            <div class="mb-6 flex items-center gap-3">
+              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.benefits}</span>
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Key Benefits</h2>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {features.slice(0, 4).map((feature, index) => {
+                const Icon = benefitIcons[index % benefitIcons.length];
+                return (
+                  <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <Icon class="mb-5 h-9 w-9 text-blue-700" />
+                    <h3 class="text-base font-black leading-6 text-slate-950">{feature.title}</h3>
+                    {feature.text && <p class="mt-3 text-sm font-medium leading-7 text-slate-600">{feature.text}</p>}
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    {
+      technicalData.length > 0 && (
+        <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
+          <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
+            <div class="mb-6 flex items-center gap-3">
+              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.technical}</span>
+              <FlaskConical class="h-7 w-7 text-blue-700" />
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Technical Data</h2>
+            </div>
+            <div class="overflow-x-auto rounded-2xl border border-slate-200">
+              <table class={`w-full ${isSimpleTechnicalTable ? "" : "min-w-[920px]"} border-collapse text-left text-sm`}>
+                <thead class="bg-slate-50 text-slate-950">
+                  <tr class="border-b border-slate-200">
+                    <th class="px-4 py-4 font-black">Test Item</th>
+                    {!isSimpleTechnicalTable && <th class="px-4 py-4 font-black">Unit</th>}
+                    {!isSimpleTechnicalTable && <th class="px-4 py-4 font-black">Test Method / Standard</th>}
+                    {!isSimpleTechnicalTable && <th class="px-4 py-4 font-black">Requirement / Class</th>}
+                    <th class="px-4 py-4 font-black">Result / Notes</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                  {technicalData.map((row) => (
+                    <tr class="transition hover:bg-blue-50/40">
+                      <td class="px-4 py-4 font-bold text-slate-800">{row.label || "—"}</td>
+                      {!isSimpleTechnicalTable && <td class="px-4 py-4 font-medium text-slate-600">{row.unit || "—"}</td>}
+                      {!isSimpleTechnicalTable && <td class="px-4 py-4 font-medium text-slate-600">{row.standard || "—"}</td>}
+                      {!isSimpleTechnicalTable && <td class="px-4 py-4 font-medium text-slate-600">{row.requirement || "—"}</td>}
+                      <td class="px-4 py-4 font-bold text-slate-800">{row.value || "Contact us for TDS"}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p class="mt-4 flex gap-2 text-sm leading-7 text-slate-500">
+              <FileText class="mt-1 h-4 w-4 shrink-0 text-blue-700" /> The above values are typical reference values from laboratory tests and do not constitute a warranty. Full TDS is available on request.
+            </p>
+          </div>
+        </section>
+      )
+    }
+
+    {
+      applicationGuide.length > 0 && (
+        <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
+          <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
+            <div class="mb-6 flex items-center gap-3">
+              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.installation}</span>
+              <Hammer class="h-7 w-7 text-blue-700" />
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Installation Guide</h2>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+              {applicationGuide.slice(0, 6).map((step, index) => {
+                const Icon = installationIcons[index % installationIcons.length];
+                return (
+                  <article class="relative rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                    <span class="absolute right-4 top-4 flex h-7 w-7 items-center justify-center rounded-full bg-blue-700 text-xs font-black text-white">{index + 1}</span>
+                    <div class="mb-5 flex h-20 w-full items-center justify-center rounded-2xl bg-white text-blue-700">
+                      <Icon class="h-10 w-10" />
+                    </div>
+                    <h3 class="text-sm font-black uppercase leading-6 text-slate-950">{step.title || `Step ${index + 1}`}</h3>
+                    {step.text && <p class="mt-3 text-sm font-medium leading-6 text-slate-600">{step.text}</p>}
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    {
+      (packaging.length > 0 || loadingData.length > 0) && (
+        <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
+          <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
+            <div class="mb-6 flex items-center gap-3">
+              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.packaging}</span>
+              <Package class="h-7 w-7 text-blue-700" />
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Packaging & OEM</h2>
+            </div>
+            <div class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+              {packaging.length > 0 && (
+                <div class="grid gap-4 sm:grid-cols-2">
+                  {packaging.slice(0, 6).map((item, index) => {
+                    const Icon = packagingIcons[index % packagingIcons.length];
+                    return (
+                      <article class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white text-blue-700">
+                          <Icon class="h-7 w-7" />
+                        </div>
+                        <h3 class="text-sm font-black uppercase leading-6 text-slate-950">{item.title}</h3>
+                        {item.text && <p class="mt-3 text-sm font-medium leading-6 text-slate-600">{item.text}</p>}
+                      </article>
+                    );
+                  })}
+                </div>
+              )}
+              {loadingData.length > 0 && (
+                <div class="overflow-hidden rounded-2xl border border-blue-200 bg-white">
+                  <div class="bg-blue-700 px-5 py-4 text-white">
+                    <div class="flex items-center gap-3">
+                      <Truck class="h-5 w-5" />
+                      <h3 class="text-sm font-black uppercase tracking-wide">Efficient Loading · Secure Packing · Global Delivery</h3>
+                    </div>
+                  </div>
+                  <div class="divide-y divide-slate-200">
+                    {loadingData.map((row) => (
+                      <div class="grid gap-2 px-5 py-4 sm:grid-cols-[0.36fr_0.64fr]">
+                        <div class="flex items-center gap-3 text-sm font-black text-blue-800">
+                          <Box class="h-5 w-5" /> {row.label}
+                        </div>
+                        <p class="text-sm font-medium leading-7 text-slate-600">{row.value || "Contact us for loading details"}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    {
+      (downloads.length > 0 || relatedProducts.length > 0) && (
+        <section class="mx-auto grid w-full max-w-[1680px] gap-4 px-4 py-4 sm:px-6 lg:grid-cols-[0.86fr_1.14fr] lg:px-8">
+          {downloads.length > 0 && (
+            <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
+              <div class="mb-6 flex items-center gap-3">
+                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.downloads}</span>
+                <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Downloads</h2>
+              </div>
+              <div class="overflow-hidden rounded-2xl border border-slate-200">
+                {downloads.map((item) => (
+                  <div class="grid gap-4 border-b border-slate-200 p-4 last:border-b-0 sm:grid-cols-[1fr_auto_auto] sm:items-center">
+                    <div class="flex gap-4">
+                      <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-red-50 text-red-600">
+                        <FileText class="h-6 w-6" />
+                      </div>
+                      <div>
+                        <h3 class="text-sm font-black text-slate-950">{item.title}</h3>
+                        {item.description && <p class="mt-1 text-sm font-medium leading-6 text-slate-500">{item.description}</p>}
+                      </div>
+                    </div>
+                    <p class="text-xs font-black uppercase tracking-wide text-slate-500">{item.type || "PDF"}</p>
+                    <a href={isRealFile(item.href) ? item.href : contactHref} class="inline-flex items-center justify-center gap-2 rounded-xl border border-blue-200 bg-white px-4 py-2 text-xs font-black uppercase tracking-wide text-blue-800 transition hover:border-blue-400 hover:bg-blue-50">
+                      <Download class="h-4 w-4" /> Download
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          {relatedProducts.length > 0 && (
+            <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
+              <div class="mb-6 flex items-center gap-3">
+                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.related}</span>
+                <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Related Products</h2>
+              </div>
+              <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                {relatedProducts.slice(0, 4).map((product) => {
+                  let displayImage = product.image || "";
+                  if (displayImage && !displayImage.toLowerCase().endsWith(".webp") && !displayImage.toLowerCase().endsWith(".jpg")) {
+                    displayImage = displayImage.replace(/\/$/, "") + ".webp";
+                  }
+                  
+                  return (
+                    <a href={product.href} class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                      {displayImage ? (
+                        <img src={displayImage} alt={product.title} loading="lazy" class="aspect-[4/3] w-full bg-slate-100 object-cover" />
+                      ) : (
+                        <div class="flex aspect-[4/3] w-full items-center justify-center bg-slate-100 p-5 text-center text-sm font-bold text-slate-500">
+                          <ImageIcon class="mr-2 h-5 w-5" /> Product image
+                        </div>
+                      )}
+                      <div class="p-4">
+                        <h3 class="text-sm font-black leading-6 text-slate-950 group-hover:text-blue-700">{product.title}</h3>
+                        {product.description && <p class="mt-2 text-sm font-medium leading-6 text-slate-500">{product.description}</p>}
+                        <p class="mt-4 inline-flex items-center gap-2 text-xs font-black uppercase tracking-wide text-blue-700">View Product <ArrowRight class="h-4 w-4" /></p>
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </section>
+      )
+    }
+
+    {
+      faqs.length > 0 && (
+        <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
+          <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
+            <div class="mb-6 flex items-center gap-3">
+              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.faq}</span>
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl">FAQ</h2>
+            </div>
+            <div class="space-y-3">
+              {faqs.map((item, index) => (
+                <details name="product-faq" open={index === 0} class="group rounded-2xl border border-slate-200 bg-slate-50 p-5 open:border-blue-200 open:bg-white">
+                  <summary class="flex cursor-pointer list-none items-center justify-between gap-6 text-sm font-black leading-6 text-slate-950 sm:text-base">
+                    <span>{item.question}</span>
+                    <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-blue-200 bg-white text-blue-700 transition group-open:rotate-180">
+                      <ChevronDown class="h-4 w-4" />
+                    </span>
+                  </summary>
+                  {item.answer && <p class="mt-4 max-w-5xl text-sm font-medium leading-7 text-slate-600">{item.answer}</p>}
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    <section class="mx-auto w-full max-w-[1680px] px-4 py-6 sm:px-6 lg:px-8 lg:pb-12">
+      <div class="overflow-hidden rounded-3xl border border-blue-200 bg-white shadow-sm">
+        <div class="grid gap-6 p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div class="flex gap-5">
+            <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-blue-50 text-blue-700">
+              <ShieldCheck class="h-9 w-9" />
+            </div>
+            <div>
+              <h2 class="text-2xl font-black tracking-tight text-slate-950 sm:text-3xl">Ready To Start Your Project?</h2>
+              <p class="mt-3 max-w-3xl text-sm font-medium leading-7 text-slate-600 sm:text-base">Contact our team for competitive quotations and technical support.</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 sm:flex-row">
+            <a href={contactHref} class="inline-flex items-center justify-center rounded-xl bg-blue-700 px-7 py-3 text-sm font-black tracking-wide text-white shadow-sm transition hover:bg-blue-800">Request a Quote</a>
+            <a href={whatsappHref} class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-7 py-3 text-sm font-black tracking-wide text-white shadow-sm transition hover:border-emerald-700">
+              <MessageCircle class="h-4 w-4" /> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

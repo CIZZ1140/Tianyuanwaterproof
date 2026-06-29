@@ -1,0 +1,816 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {
+  Factory,
+  Award,
+  Users,
+  ShieldCheck,
+  Globe2,
+  PackageCheck,
+  ClipboardCheck,
+  Truck,
+  Layers,
+  FlaskConical,
+  Ruler,
+  CheckCircle2,
+  ArrowRight,
+  Mail,
+  MessageCircle,
+  MapPin,
+  Boxes,
+  FileText,
+  BadgeCheck,
+  Hammer,
+  Building2,
+  Warehouse,
+  SearchCheck
+} from 'lucide-astro';
+
+const imgBase = 'https://img.tyuanwaterproof.com/';
+
+const stats = [
+  {
+    value: '30+',
+    label: 'Years Experience',
+    icon: Award
+  },
+  {
+    value: '5',
+    label: 'Production Lines',
+    icon: Factory
+  },
+  {
+    value: '50+',
+    label: 'Countries Exported',
+    icon: Globe2
+  },
+  {
+    value: 'OEM/ODM',
+    label: 'Service Available',
+    icon: PackageCheck
+  }
+];
+
+const strengths = [
+  {
+    title: 'Factory Manufacturing',
+    description: 'Stable supply capacity for waterproofing membranes, coatings and sealing materials.',
+    icon: Factory
+  },
+  {
+    title: 'Quality Inspection',
+    description: 'Thickness, weight, tensile performance and packaging condition are checked before delivery.',
+    icon: ShieldCheck
+  },
+  {
+    title: 'OEM & Export Support',
+    description: 'Private label packaging, roll size customization, pallet packing and container loading support.',
+    icon: PackageCheck
+  }
+];
+
+const productSystems = [
+  {
+    title: 'Bitumen Membranes',
+    description: 'SBS/APP modified bitumen membranes and self-adhesive bituminous membranes for roofing, basement and bridge waterproofing.',
+    image: `${imgBase}about/bitumen-membrane-production.webp`,
+    alt: 'Bitumen waterproofing membrane production',
+    icon: Layers,
+    items: ['SBS/APP Modified Bitumen Membrane', 'Self-Adhesive Bituminous Membrane', 'Torch-Applied Roofing Membrane']
+  },
+  {
+    title: 'Polymer Membranes',
+    description: 'High-polymer waterproofing membranes for roofing, tunnel, landfill and infrastructure waterproofing projects.',
+    image: `${imgBase}about/polymer-membrane-rolls.webp`,
+    alt: 'Polymer waterproofing membrane rolls',
+    icon: Ruler,
+    items: ['TPO Waterproof Membrane', 'PVC Waterproof Membrane', 'HDPE Waterproof Membrane']
+  },
+  {
+    title: 'Waterproof Coatings',
+    description: 'Liquid-applied waterproof coatings for bathrooms, basements, balconies and concrete structures.',
+    image: `${imgBase}about/waterproof-coating-packaging.webp`,
+    alt: 'Waterproof coating packaging',
+    icon: FlaskConical,
+    items: ['Polyurethane Waterproof Coating', 'Acrylic Waterproof Coating', 'Cementitious Waterproof Coating']
+  },
+  {
+    title: 'Waterproof Tapes',
+    description: 'Sealing tapes and flashing materials for joints, windows, doors, roofs and repair applications.',
+    image: `${imgBase}about/waterproof-tape-products.webp`,
+    alt: 'Waterproof sealing tape products',
+    icon: Hammer,
+    items: ['Butyl Waterproof Tape', 'Bitumen Waterproof Tape', 'Flashing Tape']
+  }
+];
+
+const factoryImages = [
+  {
+    src: `${imgBase}about/factory-exterior.webp`,
+    alt: 'Tianyuan Waterproof factory exterior'
+  },
+  {
+    src: `${imgBase}about/membrane-production-line.webp`,
+    alt: 'Waterproof membrane production line'
+  },
+  {
+    src: `${imgBase}about/coating-filling-line.webp`,
+    alt: 'Waterproof coating filling line'
+  },
+  {
+    src: `${imgBase}about/warehouse-pallets.webp`,
+    alt: 'Waterproofing materials warehouse and pallets'
+  }
+];
+
+const qualitySteps = [
+  {
+    title: 'Raw Material Inspection',
+    description: 'Key raw materials are checked before production to keep batch quality stable.'
+  },
+  {
+    title: 'Production Parameter Control',
+    description: 'Temperature, coating thickness and production speed are monitored during manufacturing.'
+  },
+  {
+    title: 'Thickness & Weight Testing',
+    description: 'Membrane thickness, roll weight and dimensional stability are checked before packing.'
+  },
+  {
+    title: 'Performance Testing',
+    description: 'Tensile strength, elongation, heat resistance and low-temperature flexibility can be tested according to product requirements.'
+  },
+  {
+    title: 'Final Packaging Inspection',
+    description: 'Labels, roll surface, pallet condition and container loading are checked before shipment.'
+  }
+];
+
+const documents = [
+  {
+    title: 'Technical Data Sheets',
+    description: 'Product specifications and technical data sheets are available for project evaluation.',
+    icon: FileText
+  },
+  {
+    title: 'Testing Support',
+    description: 'Testing documents can be prepared according to project, distributor or tender requirements.',
+    icon: ClipboardCheck
+  },
+  {
+    title: 'Quality Standards',
+    description: 'Production and inspection follow a stable internal quality control process.',
+    icon: BadgeCheck
+  },
+  {
+    title: 'Export Documents',
+    description: 'Packing lists, invoices, certificates and shipping documents can be supported.',
+    icon: Globe2
+  }
+];
+
+const exportSupport = [
+  'Private label packaging',
+  'Customized roll size and thickness',
+  'Pallet packing and container loading',
+  'Technical data sheet support',
+  'Fast quotation for project buyers',
+  'Shipping document support'
+];
+
+const applications = [
+  'Roof Waterproofing',
+  'Basement Waterproofing',
+  'Tunnel Waterproofing',
+  'Bridge Waterproofing',
+  'Bathroom Waterproofing',
+  'Window & Door Sealing'
+];
+
+const buyerTypes = [
+  'Construction Contractors',
+  'Roofing Companies',
+  'Waterproofing Distributors',
+  'Building Material Importers',
+  'Infrastructure Project Buyers'
+];
+---
+
+<Layout
+  title="About Tianyuan Waterproof | Waterproofing Materials Manufacturer"
+  description="Tianyuan Waterproof is a China waterproofing materials manufacturer supplying bitumen membranes, polymer membranes, waterproof coatings and sealing tapes for roofing, basement, tunnel and infrastructure projects."
+>
+  <main class="bg-slate-50 text-slate-900">
+    <section class="relative overflow-hidden bg-[#0E2A47]">
+      <div class="absolute inset-0">
+        <img
+          src={`${imgBase}about/about-hero-factory.webp`}
+          alt="Tianyuan Waterproof factory and waterproofing materials"
+          class="h-full w-full object-cover opacity-25"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0E2A47] via-[#0E2A47]/95 to-[#0E2A47]/70"></div>
+      </div>
+
+      <div class="container relative mx-auto px-4 py-20 md:py-24 lg:py-28 xl:py-32">
+        <header class="max-w-4xl">
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-extrabold uppercase tracking-[0.22em] text-[#F58A1F]">
+            About Tianyuan
+          </div>
+
+          <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
+            Waterproofing Materials Manufacturer for Global Construction Projects
+          </h1>
+
+          <p class="mt-6 max-w-3xl text-base leading-8 text-slate-200 md:text-lg">
+            Tianyuan Waterproof supplies bitumen membranes, polymer waterproofing membranes, waterproof coatings and sealing materials for roofing, basement, tunnel, bridge and infrastructure applications.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="/contact"
+              class="inline-flex items-center justify-center rounded-xl bg-[#F58A1F] px-6 py-4 text-sm font-extrabold text-white shadow-lg shadow-orange-500/20 transition-transform hover:scale-105"
+            >
+              Request a Quote
+              <ArrowRight class="ml-2 h-4 w-4" />
+            </a>
+
+            <a
+              href="/products"
+              class="inline-flex items-center justify-center rounded-xl border border-white/25 bg-white/10 px-6 py-4 text-sm font-extrabold text-white transition-transform hover:scale-105"
+            >
+              View Products
+            </a>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <section class="relative -mt-10">
+      <div class="container mx-auto px-4">
+        <div class="grid gap-4 rounded-3xl border border-slate-200 bg-white p-4 shadow-xl shadow-slate-200/70 sm:grid-cols-2 lg:grid-cols-4">
+          {stats.map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <article class="rounded-2xl border border-slate-100 bg-slate-50 p-6">
+                <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0E2A47]/5 text-[#F58A1F]">
+                  <Icon class="h-6 w-6" />
+                </div>
+
+                <div class="text-3xl font-extrabold tracking-tight text-[#0E2A47]">
+                  {item.value}
+                </div>
+
+                <div class="mt-1 text-xs font-extrabold uppercase tracking-[0.16em] text-slate-500">
+                  {item.label}
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-24">
+      <div class="container mx-auto px-4">
+        <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <article>
+            <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]">
+              <span class="h-px w-10 bg-[#F58A1F]"></span>
+              Company Overview
+            </div>
+
+            <h2 class="max-w-3xl text-3xl font-extrabold leading-tight tracking-tight text-[#0E2A47] md:text-4xl lg:text-5xl">
+              Reliable Waterproofing Manufacturer from China
+            </h2>
+
+            <div class="mt-6 space-y-5 text-base leading-8 text-slate-600">
+              <p>
+                Tianyuan Waterproof focuses on the manufacturing and export supply of waterproofing membranes, coatings and sealing materials for construction and infrastructure projects.
+              </p>
+
+              <p>
+                We serve construction contractors, roofing companies, waterproofing distributors, building material importers and project buyers who need stable product quality, technical data support, OEM packaging and fast quotation service.
+              </p>
+            </div>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+                <MapPin class="mb-4 h-6 w-6 text-[#F58A1F]" />
+                <h3 class="text-base font-extrabold text-[#0E2A47]">China Supply Base</h3>
+                <p class="mt-2 text-sm leading-6 text-slate-600">
+                  Located in Shandong Province, close to China’s waterproofing material supply chain.
+                </p>
+              </div>
+
+              <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+                <Users class="mb-4 h-6 w-6 text-[#F58A1F]" />
+                <h3 class="text-base font-extrabold text-[#0E2A47]">B2B Project Service</h3>
+                <p class="mt-2 text-sm leading-6 text-slate-600">
+                  Supporting contractors, distributors and importers with product selection and export supply.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <div class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-3 shadow-xl shadow-slate-200/80">
+            <img
+              src={`${imgBase}about/factory-overview.webp`}
+              alt="Tianyuan Waterproof factory overview"
+              class="h-[320px] w-full rounded-[1.5rem] object-cover md:h-[420px]"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20 md:py-24">
+      <div class="container mx-auto px-4">
+        <header class="mx-auto max-w-3xl text-center">
+          <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]">
+            <span class="h-px w-10 bg-[#F58A1F]"></span>
+            Core Strengths
+            <span class="h-px w-10 bg-[#F58A1F]"></span>
+          </div>
+
+          <h2 class="text-3xl font-extrabold tracking-tight text-[#0E2A47] md:text-4xl">
+            Built for Long-Term B2B Supply
+          </h2>
+
+          <p class="mt-5 text-base leading-8 text-slate-600">
+            We focus on stable manufacturing, practical quality control and export support for global waterproofing material buyers.
+          </p>
+        </header>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-3">
+          {strengths.map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <article class="rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm">
+                <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0E2A47] text-white">
+                  <Icon class="h-7 w-7" />
+                </div>
+
+                <h3 class="text-xl font-extrabold text-[#0E2A47]">
+                  {item.title}
+                </h3>
+
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                  {item.description}
+                </p>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-24">
+      <div class="container mx-auto px-4">
+        <header class="mx-auto max-w-3xl text-center">
+          <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]">
+            <span class="h-px w-10 bg-[#F58A1F]"></span>
+            Product Systems
+            <span class="h-px w-10 bg-[#F58A1F]"></span>
+          </div>
+
+          <h2 class="text-3xl font-extrabold tracking-tight text-[#0E2A47] md:text-4xl">
+            What We Manufacture
+          </h2>
+
+          <p class="mt-5 text-base leading-8 text-slate-600">
+            Our product range covers membrane waterproofing, liquid-applied waterproofing and sealing materials for different construction applications.
+          </p>
+        </header>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          {productSystems.map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+                <div class="relative overflow-hidden bg-slate-100">
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
+                  />
+
+                  <div class="absolute left-4 top-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-[#F58A1F] shadow-lg">
+                    <Icon class="h-5 w-5" />
+                  </div>
+                </div>
+
+                <div class="p-6">
+                  <h3 class="text-xl font-extrabold text-[#0E2A47]">
+                    {item.title}
+                  </h3>
+
+                  <p class="mt-3 text-sm leading-7 text-slate-600">
+                    {item.description}
+                  </p>
+
+                  <ul class="mt-5 space-y-2">
+                    {item.items.map((line) => (
+                      <li class="flex items-start gap-2 text-sm font-semibold leading-6 text-slate-700">
+                        <CheckCircle2 class="mt-1 h-4 w-4 shrink-0 text-[#F58A1F]" />
+                        <span>{line}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20 md:py-24">
+      <div class="container mx-auto px-4">
+        <div class="grid gap-12 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+          <article>
+            <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]">
+              <span class="h-px w-10 bg-[#F58A1F]"></span>
+              Factory Strength
+            </div>
+
+            <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-[#0E2A47] md:text-4xl lg:text-5xl">
+              Stable Manufacturing Capacity for Bulk Orders
+            </h2>
+
+            <p class="mt-6 text-base leading-8 text-slate-600">
+              From membrane production to coating packaging and warehouse loading, we focus on stable production, consistent quality and efficient export delivery for long-term cooperation.
+            </p>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <Factory class="mb-4 h-6 w-6 text-[#F58A1F]" />
+                <h3 class="font-extrabold text-[#0E2A47]">5 Production Lines</h3>
+                <p class="mt-2 text-sm leading-6 text-slate-600">
+                  Supporting membranes, coatings and sealing material production.
+                </p>
+              </div>
+
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <Boxes class="mb-4 h-6 w-6 text-[#F58A1F]" />
+                <h3 class="font-extrabold text-[#0E2A47]">Bulk Order Supply</h3>
+                <p class="mt-2 text-sm leading-6 text-slate-600">
+                  Stable capacity for distributors, contractors and project buyers.
+                </p>
+              </div>
+
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <Warehouse class="mb-4 h-6 w-6 text-[#F58A1F]" />
+                <h3 class="font-extrabold text-[#0E2A47]">Warehouse Packing</h3>
+                <p class="mt-2 text-sm leading-6 text-slate-600">
+                  Pallet packing and roll protection for international shipment.
+                </p>
+              </div>
+
+              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <Truck class="mb-4 h-6 w-6 text-[#F58A1F]" />
+                <h3 class="font-extrabold text-[#0E2A47]">Export Loading</h3>
+                <p class="mt-2 text-sm leading-6 text-slate-600">
+                  Container loading and shipping document support for overseas buyers.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <div class="grid grid-cols-2 gap-4">
+            {factoryImages.map((image, index) => (
+              <div class={`overflow-hidden rounded-3xl border border-slate-200 bg-white p-2 shadow-sm ${index === 0 ? 'col-span-2' : ''}`}>
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  class={`${index === 0 ? 'h-64 md:h-72' : 'h-40 md:h-48'} w-full rounded-2xl object-cover`}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#0E2A47] py-20 text-white md:py-24">
+      <div class="container mx-auto px-4">
+        <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+          <article>
+            <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]">
+              <span class="h-px w-10 bg-[#F58A1F]"></span>
+              Quality Control
+            </div>
+
+            <h2 class="text-3xl font-extrabold leading-tight tracking-tight md:text-4xl lg:text-5xl">
+              Inspection Process for Stable Product Quality
+            </h2>
+
+            <p class="mt-6 text-base leading-8 text-slate-200">
+              For waterproofing materials, stable thickness, weight, tensile strength and packaging condition are critical for project performance and long-term cooperation.
+            </p>
+          </article>
+
+          <div class="grid gap-4">
+            {qualitySteps.map((step, index) => (
+              <article class="rounded-3xl border border-white/10 bg-white/10 p-5">
+                <div class="flex gap-5">
+                  <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#F58A1F] text-lg font-extrabold text-white">
+                    {String(index + 1).padStart(2, '0')}
+                  </div>
+
+                  <div>
+                    <h3 class="text-lg font-extrabold text-white">
+                      {step.title}
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-7 text-slate-300">
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-24">
+      <div class="container mx-auto px-4">
+        <header class="mx-auto max-w-3xl text-center">
+          <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]">
+            <span class="h-px w-10 bg-[#F58A1F]"></span>
+            Documents
+            <span class="h-px w-10 bg-[#F58A1F]"></span>
+          </div>
+
+          <h2 class="text-3xl font-extrabold tracking-tight text-[#0E2A47] md:text-4xl">
+            Technical Documents for Project Evaluation
+          </h2>
+
+          <p class="mt-5 text-base leading-8 text-slate-600">
+            We provide practical documentation support for distributors, contractors and project buyers before purchasing.
+          </p>
+        </header>
+
+        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {documents.map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0E2A47]/5 text-[#F58A1F]">
+                  <Icon class="h-6 w-6" />
+                </div>
+
+                <h3 class="text-lg font-extrabold text-[#0E2A47]">
+                  {item.title}
+                </h3>
+
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                  {item.description}
+                </p>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20 md:py-24">
+      <div class="container mx-auto px-4">
+        <div class="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div class="overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 p-3 shadow-xl shadow-slate-200/70">
+            <img
+              src={`${imgBase}about/oem-export-packing.webp`}
+              alt="OEM packaging and export loading for waterproofing materials"
+              class="h-[320px] w-full rounded-[1.5rem] object-cover md:h-[460px]"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <article>
+            <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]">
+              <span class="h-px w-10 bg-[#F58A1F]"></span>
+              OEM & Export Support
+            </div>
+
+            <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-[#0E2A47] md:text-4xl lg:text-5xl">
+              More Than Products, We Support Your Supply Chain
+            </h2>
+
+            <p class="mt-6 text-base leading-8 text-slate-600">
+              We help overseas buyers reduce sourcing risk through product matching, packaging customization, technical document preparation and export delivery coordination.
+            </p>
+
+            <div class="mt-8 grid gap-3 sm:grid-cols-2">
+              {exportSupport.map((item) => (
+                <div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4">
+                  <CheckCircle2 class="h-5 w-5 shrink-0 text-[#F58A1F]" />
+                  <span class="text-sm font-bold text-slate-700">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <a
+              href="/contact"
+              class="mt-8 inline-flex items-center justify-center rounded-xl bg-[#0E2A47] px-6 py-4 text-sm font-extrabold text-white shadow-lg shadow-slate-400/30 transition-transform hover:scale-105"
+            >
+              Discuss OEM Requirements
+              <ArrowRight class="ml-2 h-4 w-4" />
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-24">
+      <div class="container mx-auto px-4">
+        <div class="grid gap-8 lg:grid-cols-2">
+          <article class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm md:p-10">
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0E2A47]/5 text-[#F58A1F]">
+              <Building2 class="h-7 w-7" />
+            </div>
+
+            <h2 class="text-3xl font-extrabold tracking-tight text-[#0E2A47]">
+              Applications We Support
+            </h2>
+
+            <p class="mt-4 text-base leading-8 text-slate-600">
+              Our waterproofing materials are used in different construction and infrastructure waterproofing scenarios.
+            </p>
+
+            <div class="mt-8 grid gap-3 sm:grid-cols-2">
+              {applications.map((item) => (
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm font-bold text-slate-700">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </article>
+
+          <article class="rounded-[2rem] border border-slate-200 bg-[#0E2A47] p-8 text-white shadow-sm md:p-10">
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-[#F58A1F]">
+              <Users class="h-7 w-7" />
+            </div>
+
+            <h2 class="text-3xl font-extrabold tracking-tight">
+              Buyers We Work With
+            </h2>
+
+            <p class="mt-4 text-base leading-8 text-slate-300">
+              We focus on long-term B2B cooperation with buyers who need reliable supply, clear specifications and practical project support.
+            </p>
+
+            <div class="mt-8 space-y-3">
+              {buyerTypes.map((item) => (
+                <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/10 px-4 py-4">
+                  <CheckCircle2 class="h-5 w-5 shrink-0 text-[#F58A1F]" />
+                  <span class="text-sm font-bold text-white">{item}</span>
+                </div>
+              ))}
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20 md:py-24">
+      <div class="container mx-auto px-4">
+        <div class="overflow-hidden rounded-[2rem] bg-[#0E2A47] shadow-2xl shadow-slate-300/70">
+          <div class="grid gap-10 p-6 md:p-8 lg:grid-cols-[0.95fr_1.05fr] lg:p-12 xl:p-16">
+            <article class="flex flex-col justify-center">
+              <div class="mb-5 inline-flex w-fit items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-extrabold uppercase tracking-[0.18em] text-white">
+                <SearchCheck class="h-4 w-4 text-[#F58A1F]" />
+                Ready to Help
+              </div>
+
+              <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-white md:text-4xl lg:text-5xl">
+                Looking for a Reliable Waterproofing Materials Supplier?
+              </h2>
+
+              <p class="mt-5 max-w-xl text-base leading-8 text-slate-300">
+                Send us your product type, thickness, quantity and application area. Our team will recommend suitable materials and provide a quotation.
+              </p>
+
+              <div class="mt-8 grid gap-4 sm:grid-cols-2">
+                <a
+                  href="https://wa.me/8615263640998"
+                  class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/10 p-4 text-white transition-transform hover:scale-105"
+                  aria-label="Contact Tianyuan Waterproof by WhatsApp"
+                >
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10">
+                    <MessageCircle class="h-6 w-6" />
+                  </span>
+
+                  <span>
+                    <span class="block text-xs font-extrabold uppercase tracking-[0.15em] text-slate-300">WhatsApp</span>
+                    <span class="mt-1 block text-sm font-extrabold">+86 15263640998</span>
+                  </span>
+                </a>
+
+                <a
+                  href="mailto:sales@tyuanwaterproof.com"
+                  class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/10 p-4 text-white transition-transform hover:scale-105"
+                  aria-label="Email Tianyuan Waterproof"
+                >
+                  <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10">
+                    <Mail class="h-6 w-6" />
+                  </span>
+
+                  <span>
+                    <span class="block text-xs font-extrabold uppercase tracking-[0.15em] text-slate-300">Email Inquiry</span>
+                    <span class="mt-1 block text-sm font-extrabold">sales@tyuanwaterproof.com</span>
+                  </span>
+                </a>
+              </div>
+            </article>
+
+            <form
+              action="https://formspree.io/f/your-form-id"
+              method="POST"
+              class="rounded-[1.6rem] bg-white p-6 shadow-xl md:p-8"
+            >
+              <div class="grid gap-5 sm:grid-cols-2">
+                <label class="block">
+                  <span class="text-xs font-extrabold uppercase tracking-[0.14em] text-slate-600">Full Name</span>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm outline-none transition placeholder:text-slate-400 focus:border-[#F58A1F] focus:bg-white"
+                  />
+                </label>
+
+                <label class="block">
+                  <span class="text-xs font-extrabold uppercase tracking-[0.14em] text-slate-600">Email Address</span>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="name@company.com"
+                    class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm outline-none transition placeholder:text-slate-400 focus:border-[#F58A1F] focus:bg-white"
+                  />
+                </label>
+              </div>
+
+              <label class="mt-5 block">
+                <span class="text-xs font-extrabold uppercase tracking-[0.14em] text-slate-600">Company</span>
+                <input
+                  type="text"
+                  name="company"
+                  placeholder="Company Name"
+                  class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm outline-none transition placeholder:text-slate-400 focus:border-[#F58A1F] focus:bg-white"
+                />
+              </label>
+
+              <label class="mt-5 block">
+                <span class="text-xs font-extrabold uppercase tracking-[0.14em] text-slate-600">Interested Product</span>
+                <select
+                  name="product"
+                  class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-600 outline-none transition focus:border-[#F58A1F] focus:bg-white"
+                >
+                  <option value="">Select product category...</option>
+                  <option value="Bitumen Membranes">Bitumen Membranes</option>
+                  <option value="Polymer Membranes">Polymer Membranes</option>
+                  <option value="Waterproof Coatings">Waterproof Coatings</option>
+                  <option value="Waterproof Tapes">Waterproof Tapes</option>
+                  <option value="Asphalt Shingles">Asphalt Shingles</option>
+                  <option value="Geosynthetics">Geosynthetics</option>
+                </select>
+              </label>
+
+              <label class="mt-5 block">
+                <span class="text-xs font-extrabold uppercase tracking-[0.14em] text-slate-600">Message</span>
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="How can we help you? Quantity, specifications, application area..."
+                  class="mt-2 w-full resize-none rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm outline-none transition placeholder:text-slate-400 focus:border-[#F58A1F] focus:bg-white"
+                ></textarea>
+              </label>
+
+              <button
+                type="submit"
+                class="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-[#F58A1F] px-6 py-4 text-sm font-extrabold text-white shadow-lg shadow-orange-500/20 transition-transform hover:scale-105"
+              >
+                Get Quotation
+                <ArrowRight class="ml-2 h-4 w-4" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

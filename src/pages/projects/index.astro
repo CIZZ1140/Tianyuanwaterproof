@@ -1,0 +1,15 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import CTA from '@/components/CTA.astro';
+---
+<Layout title="Projects | Waterproofing Materials">
+  <section class="bg-navy py-16 text-white"><div class="container-wrap"><p class="eyebrow">Projects</p><h1 class="mt-3 text-4xl font-black text-white md:text-5xl">Application cases</h1><p class="mt-5 max-w-3xl text-white/70">Tianyuan Waterproofing solutions have been successfully deployed in major commercial, residential, and industrial infrastructure projects across more than 50 countries.</p></div></section>
+  <section class="py-16"><div class="container-wrap grid gap-6 md:grid-cols-2 lg:grid-cols-4">{[
+    { title: 'Roofing Projects', desc: 'Successful waterproofing for large-scale industrial warehouses and flat roof commercial complexes.' },
+    { title: 'Basement Projects', desc: 'Foundation and underground retaining wall sealing for high-rise residential developments.' },
+    { title: 'Tunnel Projects', desc: 'Specialized high-polymer membranes used in subway systems and civil tunnel infrastructure.' },
+    { title: 'Industrial Building Projects', desc: 'Complete moisture barrier systems for chemical plants, refineries, and manufacturing facilities.' }
+  ].map((item) => <div class="card"><h2 class="text-xl font-bold">{item.title}</h2><p class="mt-3 text-sm leading-6 text-slate-600">{item.desc}</p></div>)}</div></section>
+  <CTA />
+</Layout>
+

@@ -1,0 +1,606 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import { site } from "../../data/site";
+
+const products = await getCollection("products");
+
+const categoryMap: Record<string, string> = {
+  "bitumen-membranes": "Bitumen Membranes",
+  "polymer-membranes": "Polymer Membranes",
+  "asphalt-shingles": "Asphalt Shingles",
+  "waterproof-tapes": "Waterproof Tapes",
+  "waterproof-coatings": "Waterproof Coatings",
+};
+
+const categoryOrder = [
+  "bitumen-membranes",
+  "polymer-membranes",
+  "asphalt-shingles",
+  "waterproof-tapes",
+  "waterproof-coatings",
+];
+
+const toTitleCase = (value: string) =>
+  String(value || "")
+    .split("-")
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
+const getData = (product: any) => product.data || {};
+
+const getProductTitle = (product: any) => {
+  const data = getData(product);
+  return data.title || data.name || toTitleCase(product.slug);
+};
+
+const getCategory = (product: any) => {
+  const data = getData(product);
+  return data.category || "uncategorized";
+};
+
+const getDocumentUrl = (product: any, keys: string[]) => {
+  const data = getData(product);
+
+  for (const key of keys) {
+    const value = data[key];
+
+    if (typeof value === "string" && value.trim().length > 0) {
+      return value;
+    }
+  }
+
+  return "";
+};
+
+const knownCategoryGroups = categoryOrder.map((categorySlug) => {
+  const items = products
+    .filter((product) => getCategory(product) === categorySlug)
+    .map((product) => ({
+      slug: product.slug,
+      title: getProductTitle(product),
+      tdsUrl: getDocumentUrl(product, ["tds_url", "tds"]),
+      msdsUrl: getDocumentUrl(product, ["msds_url", "msds"]),
+    }))
+    .sort((a, b) => a.title.localeCompare(b.title));
+
+  return {
+    categorySlug,
+    categoryName: categoryMap[categorySlug],
+    items,
+  };
+});
+
+const extraCategorySlugs = [
+  ...new Set(
+    products
+      .map((product) => getCategory(product))
+      .filter((category) => category && !categoryMap[category])
+  ),
+];
+
+const extraCategoryGroups = extraCategorySlugs.map((categorySlug) => {
+  const items = products
+    .filter((product) => getCategory(product) === categorySlug)
+    .map((product) => ({
+      slug: product.slug,
+      title: getProductTitle(product),
+      tdsUrl: getDocumentUrl(product, ["tds_url", "tds"]),
+      msdsUrl: getDocumentUrl(product, ["msds_url", "msds"]),
+    }))
+    .sort((a, b) => a.title.localeCompare(b.title));
+
+  return {
+    categorySlug,
+    categoryName: toTitleCase(categorySlug),
+    items,
+  };
+});
+
+const productGroups = [...knownCategoryGroups, ...extraCategoryGroups].filter(
+  (group) => group.items.length > 0
+);
+
+const totalDocumentProducts = productGroups.reduce(
+  (total, group) => total + group.items.length,
+  0
+);
+
+const toolboxCards = [
+  {
+    title: "Product Data Hub",
+    label: "TDS & MSDS",
+    description:
+      "Find technical datasheets, safety documents and product files by waterproofing category.",
+    points: ["Technical Datasheets", "MSDS Documents", "Product Documents"],
+  },
+  {
+    title: "Installation & Application Guides",
+    label: "Manuals",
+    description:
+      "Access standard installation methods, substrate preparation notes and project application guidance.",
+    points: ["Torch-applied Guide", "Self-adhesive Guide", "Detail Treatment"],
+  },
+  {
+    title: "Testing & Compliance",
+    label: "Reports",
+    description:
+      "Review product testing items, quality control indicators and compliance support for project bidding.",
+    points: ["Tensile Strength", "Low Temperature Flexibility", "Heat Resistance"],
+  },
+];
+
+const installationGuides = [
+  {
+    title: "Torch-applied Membrane",
+    description:
+      "For SBS / APP modified bitumen membranes installed by heating and bonding.",
+    steps: "Substrate preparation, primer, torch heating, overlap sealing and final inspection.",
+  },
+  {
+    title: "Self-adhesive Membrane",
+    description:
+      "For peel-and-stick membranes used on roofs, basements and underground structures.",
+    steps: "Clean substrate, remove release film, align membrane, press firmly and seal details.",
+  },
+  {
+    title: "TPO / PVC Welding",
+    description:
+      "For polymer membranes requiring hot-air welding and seam inspection.",
+    steps: "Layout, welding temperature control, seam rolling, testing and edge treatment.",
+  },
+  {
+    title: "Detail Waterproofing",
+    description:
+      "For pipe roots, corners, joints, drains, parapets and other critical waterproofing details.",
+    steps: "Reinforcement layer, detail sealing, overlap treatment and protection layer.",
+  },
+];
+
+const testingMetrics = [
+  {
+    metric: "Tensile Strength",
+    purpose: "Evaluates reinforcement strength and resistance to mechanical stress.",
+    relatedDocuments: "TDS / Third-party Test Report",
+  },
+  {
+    metric: "Low Temperature Flexibility",
+    purpose: "Checks flexibility and crack resistance under cold climate conditions.",
+    relatedDocuments: "TDS / Low Temperature Test",
+  },
+  {
+    metric: "Heat Resistance",
+    purpose: "Confirms membrane stability under high temperature and exposed roofing conditions.",
+    relatedDocuments: "TDS / Heat Resistance Report",
+  },
+  {
+    metric: "Water Impermeability",
+    purpose: "Verifies waterproofing performance under pressure or long-term moisture exposure.",
+    relatedDocuments: "TDS / Impermeability Test",
+  },
+  {
+    metric: "Aging Resistance",
+    purpose: "Assesses long-term performance under UV, weathering and environmental exposure.",
+    relatedDocuments: "TDS / Aging Test",
+  },
+  {
+    metric: "Thickness & Weight Control",
+    purpose: "Supports batch consistency, export inspection and project documentation.",
+    relatedDocuments: "QC Record / Product Sheet",
+  },
+];
+
+const technicalFaqs = [
+  {
+    question: "SBS vs APP: which membrane is better for your climate?",
+    answer:
+      "SBS membranes are usually preferred for cold regions and flexible structures, while APP membranes are suitable for hot climates and exposed roofing applications.",
+  },
+  {
+    question: "What documents can you provide for project bidding?",
+    answer:
+      "We can provide TDS, MSDS, product documents, installation guidance and testing support based on the product and project requirements.",
+  },
+  {
+    question: "Can you recommend a waterproofing system for my project?",
+    answer:
+      "Yes. Send us the application area, climate, substrate condition and project requirements. Our team can recommend a suitable waterproofing solution.",
+  },
+  {
+    question: "Do you provide installation guidance for membrane products?",
+    answer:
+      "Yes. We provide standard installation steps and application guidance for torch-applied, self-adhesive and polymer membrane systems.",
+  },
+];
+---
+
+<Layout
+  title="Technical Support & Product Documentation | Tianyuan Waterproof"
+  description="Access technical datasheets, MSDS, installation guides, testing information and engineering support for Tianyuan waterproofing products."
+>
+  <main class="relative bg-[#F5F7FA] text-[#102033]">
+    <section class="relative overflow-hidden bg-[#0E2A47]">
+      <div class="absolute inset-0 bg-[linear-gradient(120deg,rgba(14,42,71,0.95),rgba(14,42,71,0.86),rgba(245,138,31,0.18))]"></div>
+
+      <div class="relative mx-auto grid max-w-7xl gap-10 px-6 py-20 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:px-10 lg:py-24">
+        <div class="flex flex-col justify-center">
+          <p class="mb-4 inline-flex w-fit rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#F58A1F]">
+            Technical Support Center
+          </p>
+
+          <h1 class="max-w-3xl text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
+            Engineering Support & Product Documentation
+          </h1>
+
+          <p class="mt-6 max-w-2xl text-base leading-8 text-white/78 sm:text-lg">
+            Access technical datasheets, safety documents, installation guides and testing information for Tianyuan waterproofing systems.
+          </p>
+
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="/products/"
+              class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#F58A1F] px-6 py-4 text-sm font-bold text-white shadow-lg shadow-black/10 transition hover:-translate-y-0.5 hover:bg-[#e57710]"
+            >
+              Browse Product Documents
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+
+            <a
+              href="/contact/"
+              class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-6 py-4 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-white/15"
+            >
+              Contact Technical Support
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-[2rem] border border-white/15 bg-white/10 p-4 shadow-2xl shadow-black/20 backdrop-blur">
+            <div class="overflow-hidden rounded-[1.5rem] bg-[#102033]/40">
+              <img
+                src={site.heroImage}
+                alt="Waterproofing laboratory testing and engineering support"
+                class="h-[320px] w-full object-cover sm:h-[420px]"
+                loading="eager"
+              />
+            </div>
+
+            <div class="grid gap-3 pt-4 sm:grid-cols-3">
+              <div class="rounded-2xl bg-white/10 p-4">
+                <p class="text-2xl font-extrabold text-white">{totalDocumentProducts}</p>
+                <p class="mt-1 text-xs font-semibold uppercase tracking-wide text-white/65">Product Files</p>
+              </div>
+
+              <div class="rounded-2xl bg-white/10 p-4">
+                <p class="text-2xl font-extrabold text-white">TDS</p>
+                <p class="mt-1 text-xs font-semibold uppercase tracking-wide text-white/65">Technical Data</p>
+              </div>
+
+              <div class="rounded-2xl bg-white/10 p-4">
+                <p class="text-2xl font-extrabold text-white">MSDS</p>
+                <p class="mt-1 text-xs font-semibold uppercase tracking-wide text-white/65">Safety Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
+      <div class="mb-8 max-w-3xl">
+        <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">
+          The Engineer's Toolbox
+        </p>
+        <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-[#102033] sm:text-4xl">
+          Technical resources built for project buyers
+        </h2>
+        <p class="mt-4 text-base leading-7 text-[#102033]/70">
+          Find product documents, installation guidance and testing support without searching through unrelated company certificates.
+        </p>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-3">
+        {
+          toolboxCards.map((card) => (
+            <article class="rounded-[1.5rem] border border-[#dbe7f5] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+              <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0E2A47] text-white">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 2h9l5 5v15H6V2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                  <path d="M14 2v6h6M9 13h6M9 17h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+
+              <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#F58A1F]">{card.label}</p>
+              <h3 class="mt-2 text-xl font-extrabold text-[#102033]">{card.title}</h3>
+              <p class="mt-3 text-sm leading-6 text-[#102033]/70">{card.description}</p>
+
+              <ul class="mt-5 space-y-3">
+                {card.points.map((point) => (
+                  <li class="flex items-center gap-3 text-sm font-semibold text-[#102033]">
+                    <span class="flex h-5 w-5 items-center justify-center rounded-full bg-[#F58A1F]/10 text-[#F58A1F]">
+                      <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-6 pb-16 sm:px-8 lg:px-10">
+      <div class="rounded-[2rem] border border-[#dbe7f5] bg-white p-6 shadow-sm sm:p-8 lg:p-10">
+        <div class="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">
+              Product Data Hub
+            </p>
+            <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-[#102033] sm:text-4xl">
+              Resource Matrix
+            </h2>
+            <p class="mt-4 max-w-2xl text-base leading-7 text-[#102033]/70">
+              Product files are grouped dynamically from the products collection. Add or remove product Markdown files and this matrix will update automatically.
+            </p>
+          </div>
+
+          <a
+            href="/contact/"
+            class="inline-flex items-center justify-center rounded-xl bg-[#0E2A47] px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#163b61]"
+          >
+            Request Missing Document
+          </a>
+        </div>
+
+        {
+          productGroups.length > 0 ? (
+            <div class="space-y-8">
+              {productGroups.map((group) => (
+                <section class="rounded-[1.25rem] border border-[#dbe7f5] bg-[#F5F7FA] p-5">
+                  <div class="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                    <h3 class="text-xl font-extrabold text-[#102033]">{group.categoryName}</h3>
+                    <span class="w-fit rounded-full bg-white px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#102033]/60">
+                      {group.items.length} Products
+                    </span>
+                  </div>
+
+                  <div class="grid gap-3">
+                    {group.items.map((product) => (
+                      <div class="flex flex-col gap-4 rounded-2xl border border-[#dbe7f5] bg-white p-4 sm:flex-row sm:items-center sm:justify-between">
+                        <div>
+                          <a
+                            href={`/products/${product.slug}/`}
+                            class="text-base font-extrabold text-[#102033] transition hover:text-[#F58A1F]"
+                          >
+                            {product.title}
+                          </a>
+                          <p class="mt-1 text-xs text-[#102033]/55">
+                            Product documentation and technical support
+                          </p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                          {product.tdsUrl && (
+                            <a
+                              href={product.tdsUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="inline-flex items-center justify-center gap-2 rounded-lg bg-[#F58A1F] px-4 py-2 text-xs font-bold text-white transition hover:bg-[#e57710]"
+                            >
+                              TDS
+                              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </a>
+                          )}
+
+                          {product.msdsUrl && (
+                            <a
+                              href={product.msdsUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="inline-flex items-center justify-center gap-2 rounded-lg border border-[#0E2A47]/15 bg-white px-4 py-2 text-xs font-bold text-[#0E2A47] transition hover:border-[#0E2A47] hover:bg-[#0E2A47] hover:text-white"
+                            >
+                              MSDS
+                              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </a>
+                          )}
+
+                          {!product.tdsUrl && !product.msdsUrl && (
+                            <a
+                              href="/contact/"
+                              class="inline-flex items-center justify-center rounded-lg border border-[#dbe7f5] bg-[#F5F7FA] px-4 py-2 text-xs font-bold text-[#102033]/70 transition hover:border-[#F58A1F] hover:text-[#F58A1F]"
+                            >
+                              Request Document
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              ))}
+            </div>
+          ) : (
+            <div class="rounded-2xl border border-dashed border-[#dbe7f5] bg-[#F5F7FA] p-8 text-center">
+              <p class="text-base font-bold text-[#102033]">No product documents found.</p>
+              <p class="mt-2 text-sm text-[#102033]/65">
+                Add products to the products collection and set category, tds_url or msds_url in frontmatter.
+              </p>
+            </div>
+          )
+        }
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-6 pb-16 sm:px-8 lg:px-10">
+      <div class="mb-8 max-w-3xl">
+        <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">
+          Installation Guides
+        </p>
+        <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-[#102033] sm:text-4xl">
+          Standard application methods
+        </h2>
+        <p class="mt-4 text-base leading-7 text-[#102033]/70">
+          Help project buyers and contractors understand the correct installation route before they request a quotation.
+        </p>
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-2">
+        {
+          installationGuides.map((guide, index) => (
+            <article class="rounded-[1.5rem] border border-[#dbe7f5] bg-white p-6 shadow-sm">
+              <div class="flex items-start gap-4">
+                <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#F58A1F]/12 text-sm font-extrabold text-[#F58A1F]">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-extrabold text-[#102033]">{guide.title}</h3>
+                  <p class="mt-2 text-sm leading-6 text-[#102033]/70">{guide.description}</p>
+                  <p class="mt-4 rounded-xl bg-[#F5F7FA] p-4 text-sm leading-6 text-[#102033]/75">
+                    {guide.steps}
+                  </p>
+                </div>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-6 pb-16 sm:px-8 lg:px-10">
+      <div class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+        <div class="rounded-[2rem] bg-[#0E2A47] p-8 text-white lg:p-10">
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">
+            Testing & Compliance
+          </p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
+            Product-level testing support
+          </h2>
+          <p class="mt-5 text-base leading-8 text-white/75">
+            Technical support focuses on real product performance, not only company certificates. Use this section to guide buyers toward test reports, quality data and bidding documents.
+          </p>
+
+          <div class="mt-8 rounded-2xl border border-white/15 bg-white/10 p-5">
+            <p class="text-sm font-bold uppercase tracking-wide text-white/70">
+              Common document types
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full bg-white px-3 py-1 text-xs font-bold text-[#0E2A47]">TDS</span>
+              <span class="rounded-full bg-white px-3 py-1 text-xs font-bold text-[#0E2A47]">MSDS</span>
+              <span class="rounded-full bg-white px-3 py-1 text-xs font-bold text-[#0E2A47]">Test Report</span>
+              <span class="rounded-full bg-white px-3 py-1 text-xs font-bold text-[#0E2A47]">Installation Guide</span>
+              <span class="rounded-full bg-white px-3 py-1 text-xs font-bold text-[#0E2A47]">Certificate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-[2rem] border border-[#dbe7f5] bg-white shadow-sm">
+          <div class="overflow-x-auto">
+            <table class="w-full min-w-[680px] border-collapse text-left">
+              <thead class="bg-[#F5F7FA]">
+                <tr>
+                  <th class="px-5 py-4 text-sm font-extrabold text-[#102033]">Testing Item</th>
+                  <th class="px-5 py-4 text-sm font-extrabold text-[#102033]">Purpose</th>
+                  <th class="px-5 py-4 text-sm font-extrabold text-[#102033]">Related Documents</th>
+                </tr>
+              </thead>
+
+              <tbody class="divide-y divide-[#dbe7f5]">
+                {
+                  testingMetrics.map((item) => (
+                    <tr class="align-top">
+                      <td class="px-5 py-4 text-sm font-bold text-[#102033]">{item.metric}</td>
+                      <td class="px-5 py-4 text-sm leading-6 text-[#102033]/70">{item.purpose}</td>
+                      <td class="px-5 py-4 text-sm font-semibold text-[#0E2A47]">{item.relatedDocuments}</td>
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-6 pb-16 sm:px-8 lg:px-10">
+      <div class="rounded-[2rem] border border-[#dbe7f5] bg-white p-6 shadow-sm sm:p-8 lg:p-10">
+        <div class="mb-8 max-w-3xl">
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">
+            Technical FAQ
+          </p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-[#102033] sm:text-4xl">
+            Answers for technical buyers
+          </h2>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-2">
+          {
+            technicalFaqs.map((faq) => (
+              <details class="group rounded-2xl border border-[#dbe7f5] bg-[#F5F7FA] p-5">
+                <summary class="flex cursor-pointer list-none items-start justify-between gap-5 text-base font-extrabold text-[#102033]">
+                  {faq.question}
+                  <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-[#F58A1F] transition group-open:rotate-45">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </span>
+                </summary>
+
+                <p class="mt-4 text-sm leading-7 text-[#102033]/70">{faq.answer}</p>
+              </details>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-6 pb-20 sm:px-8 lg:px-10">
+      <div class="overflow-hidden rounded-[2rem] bg-[#0E2A47]">
+        <div class="grid gap-8 p-8 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">
+              Engineering Support
+            </p>
+            <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+              Need a technical document or project recommendation?
+            </h2>
+            <p class="mt-4 max-w-3xl text-base leading-7 text-white/72">
+              Send us your product type, application area and project requirements. Our technical team will help you choose the right waterproofing solution.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
+            <a
+              href="/contact/"
+              class="inline-flex items-center justify-center rounded-xl bg-[#F58A1F] px-6 py-4 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#e57710]"
+            >
+              Contact Technical Support
+            </a>
+
+            <a
+              href={`https://wa.me/${site.whatsapp}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white px-6 py-4 text-sm font-bold text-[#0E2A47] transition hover:-translate-y-0.5 hover:bg-[#F5F7FA]"
+            >
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
