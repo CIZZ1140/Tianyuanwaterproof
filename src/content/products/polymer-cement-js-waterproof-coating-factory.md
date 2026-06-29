@@ -1,6 +1,6 @@
 ---
 title: "Polymer Cement (JS) Waterproof Coating | Two-Component Flexible Slurry"
-category: "coatings"
+category: "waterproof-coatings"
 product_category: "JS Waterproof Coating"
 image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
