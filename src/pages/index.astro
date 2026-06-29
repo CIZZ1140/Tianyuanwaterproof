@@ -17,13 +17,30 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
   <section class="py-12" id="categories" aria-labelledby="cat-title">
     <div class="container mx-auto">
       <SectionHeader title="Product Categories" href="/products/" linkLabel="View All Products" id="cat-title" />
-      <div class="grid gap-6 lg:grid-cols-3">
-        {productCategories.slice(0,3).map((cat)=>(
-          <article class="card overflow-hidden p-6">
-            <a href={cat.href} class="block aspect-[16/9] rounded-xl bg-slate-50 p-4"><img src={cat.image} alt={cat.title} class="h-full w-full object-contain" /></a>
-            <h3 class="mt-5 text-xl font-extrabold uppercase text-navy"><a href={cat.href}>{cat.title}</a></h3>
-            <ul class="mt-3 space-y-2 text-sm text-slate-600">{cat.items.map((i)=><li>• <a href={i.href} class="hover:text-brand">{i.title}</a></li>)}</ul>
-            <a href={cat.href} class="mt-6 inline-flex text-sm font-bold text-brand">View All →</a>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {productCategories.map((cat)=>(
+          <article class="card overflow-hidden p-5 flex flex-col h-full">
+            <a href={cat.href} class="block aspect-[16/9] w-full rounded-xl bg-slate-50 overflow-hidden">
+              <img 
+                src={cat.image} 
+                alt={cat.title} 
+                class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" 
+                loading="lazy"
+              />
+            </a>
+            <div class="mt-5 flex flex-col flex-grow">
+              <h3 class="text-xl font-extrabold uppercase text-navy">
+                <a href={cat.href} class="hover:text-brand transition-colors">{cat.title}</a>
+              </h3>
+              <ul class="mt-3 space-y-1.5 text-sm text-slate-600 flex-grow">
+                {cat.items.map((i)=><li>• <a href={i.href} class="hover:text-brand">{i.title}</a></li>)}
+              </ul>
+              <div class="mt-6 pt-4 border-t border-slate-100">
+                <a href={cat.href} class="inline-flex items-center text-sm font-bold text-brand hover:translate-x-1 transition-transform">
+                  View All <span class="ml-1">→</span>
+                </a>
+              </div>
+            </div>
           </article>
         ))}
       </div>
