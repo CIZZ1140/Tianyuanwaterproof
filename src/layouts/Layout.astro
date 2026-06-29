@@ -23,7 +23,7 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<link 
 			rel="preload" 
 			as="image" 
-			href="/assets/images/optimized/banner-mobile.webp" 
+			href="https://img.tyuanwaterproof.com/banner-mobile.webp" 
 			media="(max-width: 768px)" 
 			type="image/webp"
 			fetchpriority="high"
@@ -31,17 +31,11 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<link 
 			rel="preload" 
 			as="image" 
-			href="/assets/images/optimized/banner.webp" 
+			href="https://img.tyuanwaterproof.com/banner.webp" 
 			media="(min-width: 769px)" 
 			type="image/webp"
 			fetchpriority="high"
 		/>
-
-		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content={description} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
 
 		<!-- Speed Optimizations -->
 		<link rel="preconnect" href="https://img.tyuanwaterproof.com" crossorigin />
@@ -70,13 +64,22 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 			</svg>
 		</a>
 
-		<!-- Scripts (Moved to bottom to avoid blocking) -->
+		{/* Scripts: Deferred to keep main thread free for LCP */}
 		<script is:inline>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'AW-18274384476');
+			// Delay non-critical analytics to prioritize LCP
+			window.addEventListener('load', () => {
+				setTimeout(() => {
+					const script = document.createElement('script');
+					script.src = "https://www.googletagmanager.com/gtag/js?id=AW-18274384476";
+					script.async = true;
+					document.body.appendChild(script);
+
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'AW-18274384476');
+				}, 2000); // 2 seconds delay
+			});
 		</script>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18274384476"></script>
 	</body>
 </html>
