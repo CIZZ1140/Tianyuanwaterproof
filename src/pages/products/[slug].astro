@@ -208,17 +208,9 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 const data = (entry.data ?? {}) as Record<string, any>;
 
-const isFullWidthProduct = [
-  "sbs-bitumen-waterproofing-membrane-manufacturer",
-  "self-adhesive-bitumen-waterproofing-membrane-wholesale",
-  "asphalt-roofing-felt-manufacturer",
-  "epdm-waterproofing-membrane-wholesale",
-  "polyurethane-waterproof-coating-factory"
-].includes(entry.slug);
-
-const imageFitClass = isFullWidthProduct ? "object-cover" : "object-contain";
-
 const title = normalizeString(data.title, "Product Details");
+const pageTitle = title.length > 50 ? title : `${title} | TY-SHIELD™`;
+
 const productCategory = normalizeString(data.product_category ?? data.category, "Waterproofing Membrane");
 const mainImage = normalizeAsset(data.main_image);
 const gallery = normalizeGallery(data.gallery ?? []);
@@ -337,10 +329,16 @@ const faqJsonLd = faqs.length > 0 ? {
     }
   }))
 } : null;
----
+const isFullWidthProduct = [
+  "sbs-bitumen-waterproofing-membrane-manufacturer",
+  "self-adhesive-bitumen-waterproofing-membrane-wholesale",
+  "asphalt-roofing-felt-manufacturer",
+  "epdm-waterproofing-membrane-wholesale",
+  "polyurethane-waterproof-coating-factory"
+].includes(entry.slug);
 
-const pageTitle = title.length > 50 ? title : `${title} | TY-SHIELD™`;
----
+const imageFitClass = isFullWidthProduct ? "object-cover" : "object-contain";
+
 
 <Layout title={pageTitle} description={heroDescription}>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
