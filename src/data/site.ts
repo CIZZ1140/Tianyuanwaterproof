@@ -51,7 +51,7 @@ export const productCategories = [
     title: 'Bitumen Membranes',
     slug: 'bitumen-membranes',
     href: '/categories/bitumen-membranes/',
-    image: '/assets/images/optimized/commercial-roof.webp',
+    image: 'https://img.tyuanwaterproof.com/cat-bitumen-membranes.webp',
     description: 'SBS/APP modified bitumen and self-adhesive waterproofing membranes for durable roofing and underground projects.',
     items: [
       { title: 'SBS Bitumen Membrane', href: '/products/sbs-bitumen-waterproofing-membrane-manufacturer/' },
@@ -62,7 +62,7 @@ export const productCategories = [
     title: 'Polymer Membranes',
     slug: 'polymer-membranes',
     href: '/categories/polymer-membranes/',
-    image: '/assets/images/optimized/tunnel.webp',
+    image: 'https://img.tyuanwaterproof.com/cat-polymer-membranes.webp',
     description: 'Advanced PVC, TPO, and HDPE membranes for high-end engineering.',
     items: [
       { title: 'TPO Membrane', href: '/products/tpo-waterproofing-membrane-manufacturer/' },
