@@ -71,39 +71,39 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: "â€?
+    unit: "?
     standard: "ASTM D226 / D4869"
     requirement: "Standard Conformity"
     value: "Passed"
   - label: "Breaking Strength (MD)"
     unit: "lbf/in"
     standard: "ASTM D226"
-    requirement: "15# â‰?30; 30# â‰?40"
+    requirement: "15# ?30; 30# ?40"
     value: "Qualified"
   - label: "Breaking Strength (CD)"
     unit: "lbf/in"
     standard: "ASTM D226"
-    requirement: "15# â‰?15; 30# â‰?20"
+    requirement: "15# ?15; 30# ?20"
     value: "Qualified"
-  - label: "Pliability (23Â°C)"
-    unit: "â€?
+  - label: "Pliability (23degC)"
+    unit: "?
     standard: "ASTM D226"
     requirement: "90Â° bend / 12.7mm radius"
     value: "No crack"
   - label: "Net Mass (15# Type)"
     unit: "g/mÂ²"
     standard: "ASTM D226"
-    requirement: "â‰?560"
+    requirement: "?560"
     value: "580+"
   - label: "Saturation by Weight"
     unit: "%"
     standard: "ASTM D226"
-    requirement: "â‰?120"
+    requirement: "?120"
     value: "135%+"
   - label: "Loss on Heating"
     unit: "%"
     standard: "ASTM D226"
-    requirement: "â‰?4.0"
+    requirement: "?4.0"
     value: "Passed"
 
 application_guide:
@@ -124,7 +124,7 @@ packaging:
   - title: "Roll Protection"
     text: "Each roll is wrapped in protective plastic film to prevent moisture absorption during transit."
   - title: "Vertical Storage"
-    text: "Store rolls in an upright position in a dry, ventilated area below 45Â°C."
+    text: "Store rolls in an upright position in a dry, ventilated area below 45degC."
   - title: "Custom OEM Supply"
     text: "Supports custom roll weights (15lb-60lb), lengths, and private label branding for distributors."
 

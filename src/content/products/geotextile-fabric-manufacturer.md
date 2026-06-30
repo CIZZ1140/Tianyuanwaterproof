@@ -9,9 +9,9 @@ hero_description: "Leading nonwoven geotextile manufacturer providing high-perfo
 
 hero_tags:
   - "PP / PET Material"
-  - "100g/m²�?00g/m²"
+  - "100g/m²?00g/m²"
   - "Filtration & Drainage"
-  - "1m�?m Seamless Width"
+  - "1m?m Seamless Width"
   - "Acid & Alkali Resistant"
   - "OEM Available"
 
@@ -31,9 +31,9 @@ spec_table:
   - label: "Weight Range (GSM)"
     value: "100g/m² to 800g/m² (Customizable)"
   - label: "Thickness"
-    value: "1.2mm �?4.5mm"
+    value: "1.2mm ?4.5mm"
   - label: "Width"
-    value: "1.0m �?8.0m (Seamless wide rolls available)"
+    value: "1.0m ?8.0m (Seamless wide rolls available)"
   - label: "Standard Colors"
     value: "White, Black, Grey, Green, Red"
   - label: "Primary Functions"
@@ -82,16 +82,16 @@ technical_data:
     unit: "g/m²"
     standard: "GB/T 17639 / ASTM D5261"
     requirement: "100 - 800"
-    value: "100 - 800 (±5%)"
+    value: "100 - 800 (+/-5%)"
   - label: "CBR Puncture Strength"
     unit: "KN"
     standard: "ASTM D6241"
-    requirement: "�?1.5 (for 300g)"
+    requirement: "?1.5 (for 300g)"
     value: "1.6 - 2.1"
   - label: "Grab Tensile Strength"
     unit: "N"
     standard: "ASTM D4632"
-    requirement: "�?800 (for 300g)"
+    requirement: "?800 (for 300g)"
     value: "900 - 1100"
   - label: "Apparent Opening Size"
     unit: "mm"
@@ -101,13 +101,13 @@ technical_data:
   - label: "Permeability Coefficient"
     unit: "cm/s"
     standard: "ASTM D4491"
-    requirement: "k × 10⁻�?to 10⁻�?
-    value: "1.0 - 9.0 × 10⁻�?
+    requirement: "k × 10⁻?to 10⁻?
+    value: "1.0 - 9.0 × 10⁻?
   - label: "UV Resistance (after 500h)"
     unit: "%"
     standard: "ASTM D4355"
-    requirement: "�?70"
-    value: "�?80"
+    requirement: "?70"
+    value: "?80"
 
 application_guide:
   - title: "Surface Preparation"
@@ -200,7 +200,7 @@ Tianyuan's nonwoven geotextiles provide four critical functions for your project
 As a dedicated manufacturer in China, Tianyuan offers high-performance geosynthetics for global projects:
 
 ### Seamless Large Widths
-我们提供宽度�?**8.0 �?* 的卷材。这能显著减少大面积工程中的重叠数量和材料损耗�?
+我们提供宽度?**8.0 ?* 的卷材。这能显著减少大面积工程中的重叠数量和材料损耗?
 
 ### High Puncture Resistance
 Our needle-punching technology ensures the fabric can withstand the rigors of heavy machinery and sharp-edged aggregates during construction.

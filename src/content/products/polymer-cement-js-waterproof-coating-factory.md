@@ -77,17 +77,17 @@ technical_data:
   - label: "Tensile Strength"
     unit: "MPa"
     standard: "GB/T 23445"
-    requirement: "Type I â‰?1.2 | Type II â‰?1.8"
+    requirement: "Type I ?1.2 | Type II ?1.8"
     value: "Type I: 1.5 | Type II: 2.2"
   - label: "Elongation at Break"
     unit: "%"
     standard: "GB/T 23445"
-    requirement: "Type I â‰?200 | Type II â‰?80"
+    requirement: "Type I ?200 | Type II ?80"
     value: "Type I: 230 | Type II: 110"
   - label: "Adhesive Strength (Wet Base)"
     unit: "MPa"
     standard: "GB/T 23445"
-    requirement: "Type I â‰?0.5 | Type II â‰?0.7"
+    requirement: "Type I ?0.5 | Type II ?0.7"
     value: "Type I: 0.8 | Type II: 1.1"
   - label: "Water Impermeability"
     unit: "0.3MPa / 30min"
@@ -95,9 +95,9 @@ technical_data:
     requirement: "No Leakage"
     value: "Passed"
   - label: "Low Temp Flexibility"
-    unit: "Â°C"
+    unit: "degC"
     standard: "GB/T 23445"
-    requirement: "Type I: -10 | Type II: â€?
+    requirement: "Type I: -10 | Type II: ?
     value: "Type I: -10 Passed"
 
 application_guide:

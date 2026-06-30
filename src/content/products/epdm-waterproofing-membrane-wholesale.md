@@ -12,7 +12,7 @@ hero_description: "Factory-supplied premium EPDM rubber waterproofing membrane f
 hero_tags:
   - "EPDM Rubber"
   - "GB/T 18173.1-2012"
-  - "1.0mmâ€?.0mm"
+  - "1.0mm?.0mm"
   - "20m/Roll"
   - "Aging Resistance"
   - "OEM Available"
@@ -49,9 +49,9 @@ quick_facts:
   - title: "50-Year Service Life"
     text: "Exceptional anti-aging performance, weather resistance, and ozone resistance for long-term protection."
   - title: "High Elongation"
-    text: "Superior elongation (â‰?50%) and tensile strength to accommodate significant structural movement."
+    text: "Superior elongation (?50%) and tensile strength to accommodate significant structural movement."
   - title: "Extreme Temp Range"
-    text: "Maintains flexibility at -40Â°C and stability under damp-heat conditions, suitable for all climates."
+    text: "Maintains flexibility at -40degC and stability under damp-heat conditions, suitable for all climates."
   - title: "Eco-Friendly Rubber"
     text: "Non-toxic, environmentally friendly, and safe for reservoirs, dams, and potable water projects."
 
@@ -77,29 +77,29 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: "â€?
+    unit: "?
     standard: "GB/T 18173.1-2012"
     requirement: "Standard Conformity"
     value: "Pass"
   - label: "Tensile Strength"
     unit: "MPa"
     standard: "GB/T 18173.1"
-    requirement: "Vulcanized â‰?7.5"
+    requirement: "Vulcanized ?7.5"
     value: "9.0+"
   - label: "Elongation at Break"
     unit: "%"
     standard: "GB/T 18173.1"
-    requirement: "Vulcanized â‰?450"
+    requirement: "Vulcanized ?450"
     value: "500% - 600%"
   - label: "Tear Strength"
     unit: "kN/m"
     standard: "GB/T 18173.1"
-    requirement: "Vulcanized â‰?25"
+    requirement: "Vulcanized ?25"
     value: "30+"
   - label: "Low Temp Bending"
-    unit: "Â°C"
+    unit: "degC"
     standard: "GB/T 18173.1"
-    requirement: "-40Â°C"
+    requirement: "-40degC"
     value: "No crack"
   - label: "Impervious To Water"
     unit: "MPa"
@@ -109,11 +109,11 @@ technical_data:
   - label: "Joint Peel Strength"
     unit: "N/mm"
     standard: "GB/T 18173.1"
-    requirement: "H type â‰?4.0"
+    requirement: "H type ?4.0"
     value: "Passed"
   - label: "Ozone Aging"
-    unit: "â€?
-    standard: "40Â°C, 500pphm"
+    unit: "?
+    standard: "40degC, 500pphm"
     requirement: "No cracking"
     value: "Passed"
 
@@ -129,19 +129,19 @@ application_guide:
   - title: "Pave & Roll"
     text: "Lay the membrane smoothly, exhausting air with a roller to ensure full bonding."
   - title: "Joint Sealing"
-    text: "Treat long-side (â‰?00mm) and short-side (â‰?50mm) laps with adhesive or professional seam tape."
+    text: "Treat long-side (?00mm) and short-side (?50mm) laps with adhesive or professional seam tape."
 
 packaging:
   - title: "Roll Packaging"
     text: "Supplied in heavy-duty rolls wrapped with protective end caps and woven bags."
   - title: "Safe Storage"
-    text: "Stack separately below 50Â°C in a ventilated area, away from direct sun and rain."
+    text: "Stack separately below 50degC in a ventilated area, away from direct sun and rain."
   - title: "OEM Labeling"
     text: "Custom roll labels with your logo, type, thickness, and batch number available."
 
 loading_data:
   - label: "20FT Container"
-    value: "Approx. 5,000â€?,000 mÂ² (Depending on thickness)"
+    value: "Approx. 5,000?,000 mÂ² (Depending on thickness)"
   - label: "Storage Period"
     value: "One year under standard conditions"
 
@@ -182,4 +182,4 @@ faqs:
 
 EPDM rubber waterproofing membrane is a premier synthetic polymer sheet made from ethylene-propylene diene monomer rubber. Renowned for its extreme longevity and anti-aging performance, it is the gold standard for high-demand civil and industrial waterproofing projects.
 
-As a specialist manufacturer, Tianyuan supplies both homogeneous (H) and fabric-backed (L) EPDM sheets. With high tensile strength and a temperature range from -40Â°C to 160Â°C, our EPDM membrane provides a reliable, eco-friendly barrier for everything from luxury roofing to complex hydraulic engineering like dams and subways.
+As a specialist manufacturer, Tianyuan supplies both homogeneous (H) and fabric-backed (L) EPDM sheets. With high tensile strength and a temperature range from -40degC to 160degC, our EPDM membrane provides a reliable, eco-friendly barrier for everything from luxury roofing to complex hydraulic engineering like dams and subways.

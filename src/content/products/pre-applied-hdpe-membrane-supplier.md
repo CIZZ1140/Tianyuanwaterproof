@@ -73,12 +73,12 @@ technical_data:
   - label: "Tensile Strength (L/T)"
     unit: "N/50mm"
     standard: "EN 12311-2"
-    requirement: "â‰?800"
+    requirement: "?800"
     value: "Pass (850+)"
   - label: "Elongation at Break (L/T)"
     unit: "%"
     standard: "EN 12311-2"
-    requirement: "â‰?500"
+    requirement: "?500"
     value: "550%+"
   - label: "Watertightness"
     unit: "kPa"
@@ -93,15 +93,15 @@ technical_data:
   - label: "Joint Peel Resistance"
     unit: "N/50mm"
     standard: "EN 12317-2"
-    requirement: "â‰?400"
+    requirement: "?400"
     value: "Qualified"
   - label: "Resistance To Alkali"
-    unit: "â€?
+    unit: "?
     standard: "EN 1847"
     requirement: "60kPa, 24h"
     value: "No Leakage"
   - label: "Visible Defects"
-    unit: "â€?
+    unit: "?
     standard: "EN 1848-2"
     requirement: "None"
     value: "No visible defects"
@@ -130,7 +130,7 @@ loading_data:
   - label: "Standard"
     value: "EN 13967 Certified"
   - label: "Container Load"
-    value: "Approx. 10,000â€?2,000 mÂ² per 20FT container"
+    value: "Approx. 10,000?2,000 mÂ² per 20FT container"
   - label: "Thickness Options"
     value: "1.2mm and 1.5mm standard"
 

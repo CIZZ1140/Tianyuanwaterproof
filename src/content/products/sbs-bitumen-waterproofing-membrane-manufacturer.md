@@ -37,7 +37,7 @@ spec_table:
   - label: "Lower Surface"
     value: "Burn-off PE Film"
   - label: "Low Temp Flex"
-    value: "SBS: -25°C; APP: -15°C"
+    value: "SBS: -25degC; APP: -15degC"
   - label: "Roll Size"
     value: "1m x 10m"
 
@@ -75,22 +75,22 @@ technical_data:
   - label: "Tensile Strength (L/T)"
     unit: "N/50mm"
     standard: "GB 18242"
-    requirement: "�?800"
+    requirement: "?800"
     value: "Qualified (900+)"
   - label: "Elongation at Break"
     unit: "%"
     standard: "GB 18242"
-    requirement: "�?30"
+    requirement: "?30"
     value: "40% - 50%"
   - label: "Heat Resistance"
-    unit: "°C"
+    unit: "degC"
     standard: "GB 18242"
-    requirement: "90°C / 105°C (2h)"
+    requirement: "90degC / 105degC (2h)"
     value: "No flow/drip"
   - label: "Low Temp Flexibility"
-    unit: "°C"
+    unit: "degC"
     standard: "GB 18242"
-    requirement: "-25°C / -15°C"
+    requirement: "-25degC / -15degC"
     value: "No crack"
   - label: "Watertightness"
     unit: "MPa"
@@ -98,7 +98,7 @@ technical_data:
     requirement: "0.3MPa (30min)"
     value: "Passed"
   - label: "Puncture Resistance"
-    unit: "�?
+    unit: "?
     standard: "GB 18242"
     requirement: "No Leakage"
     value: "Passed"
@@ -125,7 +125,7 @@ packaging:
 
 loading_data:
   - label: "20FT Container"
-    value: "Approx. 2,000�?,000 m² (Subject to thickness)"
+    value: "Approx. 2,000?,000 m² (Subject to thickness)"
   - label: "Pallet Quantity"
     value: "20-30 rolls per pallet"
 
@@ -155,7 +155,7 @@ related_products:
 
 faqs:
   - question: "Which should I choose, SBS or APP?"
-    answer: "Choose SBS (Styrene-Butadiene-Styrene) for cold climates due to its -25°C flexibility. Choose APP (Atactic Polypropylene) for hot regions as it offers superior heat resistance (up to 130°C)."
+    answer: "Choose SBS (Styrene-Butadiene-Styrene) for cold climates due to its -25degC flexibility. Choose APP (Atactic Polypropylene) for hot regions as it offers superior heat resistance (up to 130degC)."
   - question: "Can I install this on a wooden deck?"
     answer: "No, torch-on application is a fire hazard for wooden decks. We recommend using our Self-Adhesive Bitumen Membrane for such projects."
   - question: "What is the mineral granule surface for?"

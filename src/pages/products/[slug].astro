@@ -339,7 +339,10 @@ const faqJsonLd = faqs.length > 0 ? {
 } : null;
 ---
 
-<Layout title={`${title} | TY-SHIELD™`} description={heroDescription}>
+const pageTitle = title.length > 50 ? title : `${title} | TY-SHIELD™`;
+---
+
+<Layout title={pageTitle} description={heroDescription}>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
   {faqJsonLd && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqJsonLd)} />}
   <main class="bg-slate-50 text-slate-950">

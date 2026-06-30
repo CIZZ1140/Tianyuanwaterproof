@@ -33,13 +33,13 @@ spec_table:
   - label: "Packaging"
     value: "20kg / 25kg Metal Drum"
   - label: "Dosage (1mm)"
-    value: "Approx. 1.3 â€?1.5 kg/mÂ²"
+    value: "Approx. 1.3 ?1.5 kg/mÂ²"
   - label: "Elongation"
-    value: "â‰?450% (High Elasticity)"
+    value: "?450% (High Elasticity)"
   - label: "Drying Time"
-    value: "Surface Dry â‰?8h; Hard Dry â‰?24h"
+    value: "Surface Dry ?8h; Hard Dry ?24h"
   - label: "Storage"
-    value: "Dry shade below 40Â°C, 12 months shelf life"
+    value: "Dry shade below 40degC, 12 months shelf life"
 
 quick_facts:
   - title: "Seamless Protection"
@@ -65,7 +65,7 @@ features:
   - title: "Moisture-Cure Technology"
     text: "Single-component formula reacts with air moisture to cure, providing convenient on-site application."
   - title: "Extreme Cold Flex"
-    text: "Maintains flexibility at temperatures as low as -40Â°C, ensuring performance in harsh winter climates."
+    text: "Maintains flexibility at temperatures as low as -40degC, ensuring performance in harsh winter climates."
   - title: "Chemical Resistance"
     text: "Superior resistance to environmental pollutants, mild acids, and alkalis commonly found in soil."
   - title: "Color Customization"
@@ -73,29 +73,29 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: "â€?
+    unit: "?
     standard: "GB/T 19250-2013"
     requirement: "Standard Conformity"
     value: "Passed"
   - label: "Solid Content (Single)"
     unit: "%"
     standard: "GB/T 19250"
-    requirement: "â‰?92"
+    requirement: "?92"
     value: "94%"
   - label: "Tensile Strength"
     unit: "MPa"
     standard: "GB/T 19250"
-    requirement: "Type II â‰?2.45"
+    requirement: "Type II ?2.45"
     value: "3.0+"
   - label: "Breaking Elongation"
     unit: "%"
     standard: "GB/T 19250"
-    requirement: "â‰?450"
+    requirement: "?450"
     value: "550%+"
   - label: "Low Temp Flexibility"
-    unit: "Â°C"
+    unit: "degC"
     standard: "GB/T 19250"
-    requirement: "â‰?-35Â°C"
+    requirement: "?-35degC"
     value: "Passed"
   - label: "Impermeability"
     unit: "MPa"
@@ -105,7 +105,7 @@ technical_data:
   - label: "Wet Base Adhesion"
     unit: "MPa"
     standard: "GB/T 19250"
-    requirement: "â‰?1.0"
+    requirement: "?1.0"
     value: "1.2+"
 
 application_guide:
@@ -118,7 +118,7 @@ application_guide:
   - title: "Multi-layer Coating"
     text: "Apply in 2-3 layers. Each layer should be perpendicular to the previous one after it becomes tack-free."
   - title: "Thickness Control"
-    text: "Maintain a total thickness of 1.5mmâ€?.0mm for optimal performance in underground projects."
+    text: "Maintain a total thickness of 1.5mm?.0mm for optimal performance in underground projects."
   - title: "Protection"
     text: "Ensure proper ventilation. Protect the finished layer from physical damage until fully cured."
 
@@ -126,7 +126,7 @@ packaging:
   - title: "Industrial Drums"
     text: "Supplied in 20kg or 25kg airtight metal drums to ensure long-term chemical stability."
   - title: "Storage Condition"
-    text: "Keep in a cool, ventilated area below 40Â°C. Protect from direct sunlight and moisture."
+    text: "Keep in a cool, ventilated area below 40degC. Protect from direct sunlight and moisture."
   - title: "OEM Customization"
     text: "Full support for custom drum designs, private labels, and specific color formulations."
 
@@ -164,7 +164,7 @@ related_products:
 
 faqs:
   - question: "Can PU coating be applied on a damp substrate?"
-    answer: "Yes, our PU coating is designed with high adhesive strength (â‰?.0MPa) for damp base surfaces, provided there is no standing water."
+    answer: "Yes, our PU coating is designed with high adhesive strength (?.0MPa) for damp base surfaces, provided there is no standing water."
   - question: "Is single-component PU better than two-component?"
     answer: "Single-component is more convenient for small or complex areas as it's ready-to-use. Two-component is often preferred for large-scale industrial projects due to cost-efficiency and curing speed."
   - question: "Is this coating suitable for exposed roofs?"
