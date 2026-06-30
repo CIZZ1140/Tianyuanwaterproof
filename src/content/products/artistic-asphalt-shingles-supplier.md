@@ -111,7 +111,7 @@ packaging:
 
 loading_data:
   - label: "20FT Container"
-    value: "Approx. 2,200 - 2,600 m² based on specific pattern"
+    value: "Approx. 2,200 - 2,600 sqm based on specific pattern"
   - label: "Pallet Quantity"
     value: "48-52 bundles per standard pallet"
 
@@ -140,13 +140,13 @@ related_products:
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
 
 faqs:
-  - question: "Can these shingles be used on curved roofs or domes>="
+  - question: "Can these shingles be used on curved roofs or domes?"
     answer: "Yes, their high flexibility makes them the ideal choice for curved roofs, domes, and complex architectural shapes."
-  - question: "What is 'Full Back Adhesive'>="
+  - question: "What is 'Full Back Adhesive'?"
     answer: "It refers to a wider self-sealing strip that provides superior adhesion, ensuring the shingles stay fixed even on very steep slopes."
-  - question: "Do you offer different colors for the mosaic pattern>="
+  - question: "Do you offer different colors for the mosaic pattern?"
     answer: "We offer a wide range of colors, including variegated mixes that create a beautiful mosaic effect on the roof."
-  - question: "Are these shingles Class A fire rated>="
+  - question: "Are these shingles Class A fire rated?"
     answer: "Yes, our asphalt shingles achieve high fire resistance ratings to ensure the safety of the building."
 ---
 

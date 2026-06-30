@@ -31,7 +31,7 @@ spec_table:
   - label: "Thickness"
     value: "0.5mm, 0.8mm, 1.0mm, 1.2mm, 1.5mm"
   - label: "Weight"
-    value: "200g/m² to 1000g/m²"
+    value: "200g/sqm to 1000g/sqm"
   - label: "Width"
     value: "1m, 1.15m, 1.2m"
   - label: "Length"
@@ -99,7 +99,7 @@ technical_data:
     value: "No crack"
   - label: "Alkali Resistance (Tensile)"
     unit: "%"
-    standard: "10% Ca(OH)>=× 168h"
+    standard: "10% Ca(OH)2 x 168h"
     requirement: ">=80"
     value: "Qualified"
   - label: "Heating Shrinkage"
@@ -136,7 +136,7 @@ loading_data:
   - label: "Roll Length"
     value: "Up to 200m/roll for high efficiency"
   - label: "Container Load"
-    value: "Approx. 15,000>=0,000 m² per 20FT container"
+    value: "Approx. 15,000 - 20,000 sqm per 20FT container"
 
 downloads:
   - title: "PP Membrane Technical Data"
@@ -163,11 +163,11 @@ related_products:
     href: "/products/pre-applied-hdpe-membrane-supplier/"
 
 faqs:
-  - question: "Can PP membrane be applied on a damp substrate>="
+  - question: "Can PP membrane be applied on a damp substrate?"
     answer: "Yes, when used with suitable polymer cement adhesive, it can be applied directly on damp base courses."
-  - question: "Is this membrane safe for drinking water projects>="
+  - question: "Is this membrane safe for drinking water projects?"
     answer: "Absolutely. Our PP/PE composite is non-toxic, odorless, and suitable for potable water reservoirs."
-  - question: "Can I install tiles directly over this membrane>="
+  - question: "Can I install tiles directly over this membrane?"
     answer: "Yes, the non-woven fiber surface provides excellent mechanical keying for cement-based tile adhesives."
 ---
 

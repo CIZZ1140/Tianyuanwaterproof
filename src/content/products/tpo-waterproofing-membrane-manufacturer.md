@@ -182,11 +182,11 @@ related_products:
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
 
 faqs:
-  - question: "What is the primary use of TPO membrane>="
+  - question: "What is the primary use of TPO membrane?"
     answer: "TPO is primarily used for exposed roofing, planting roof systems, underground projects, and large venues where eco-friendly, heat-weldable solutions are required."
-  - question: "What thicknesses do you supply>="
+  - question: "What thicknesses do you supply?"
     answer: "Our standard thicknesses are 1.2mm, 1.5mm, 1.8mm, and 2.0mm, though custom thickness is available for OEM orders."
-  - question: "Is TPO recyclable>="
+  - question: "Is TPO recyclable?"
     answer: "Yes, our TPO membrane is nontoxic, environment-friendly, and 100% recyclable, contributing to energy-saving roof designs."
 ---
 

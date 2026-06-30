@@ -88,10 +88,10 @@ technical_data:
   - label: "Pliability (23degC)"
     unit: ">="
     standard: "ASTM D226"
-    requirement: "90° bend / 12.7mm radius"
+    requirement: "90deg bend / 12.7mm radius"
     value: "No crack"
   - label: "Net Mass (15# Type)"
-    unit: "g/m²"
+    unit: "g/sqm"
     standard: "ASTM D226"
     requirement: ">=560"
     value: "580+"
@@ -161,13 +161,13 @@ related_products:
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
 
 faqs:
-  - question: "Why is asphalt felt used under shingles>="
+  - question: "Why is asphalt felt used under shingles?"
     answer: "It acts as a secondary barrier that protects the wooden deck from wind-driven rain if shingles are damaged or blown off."
-  - question: "Is this felt suitable for flat roofs>="
+  - question: "Is this felt suitable for flat roofs?"
     answer: "No, this organic saturated felt is specifically designed for pitched roofs as an underlayment, not as a primary waterproof layer for flat roofs."
-  - question: "What is the difference between 15# and 30# felt>="
+  - question: "What is the difference between 15# and 30# felt?"
     answer: "30# felt is thicker, heavier, and provides superior tear resistance and durability compared to the lighter 15# felt."
-  - question: "Can it be left exposed to the sun>="
+  - question: "Can it be left exposed to the sun?"
     answer: "It provides temporary protection, but it should be covered by shingles or tiles within a few days to avoid UV degradation."
 ---
 

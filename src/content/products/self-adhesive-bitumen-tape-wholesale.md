@@ -158,11 +158,11 @@ related_products:
     href: "/products/polyurethane-waterproof-coating-factory/"
 
 faqs:
-  - question: "Can I use this tape on top of old bitumen felt>="
+  - question: "Can I use this tape on top of old bitumen felt?"
     answer: "Yes, it is specifically designed to bond to bitumen surfaces, making it perfect for repairing old asphalt roofs."
-  - question: "Is the aluminum foil surface paintable>="
+  - question: "Is the aluminum foil surface paintable?"
     answer: "While generally used as-is, the aluminum foil can be painted with compatible bitumen-friendly paints for aesthetic matching."
-  - question: "How long does the seal last>="
+  - question: "How long does the seal last?"
     answer: "When applied to a clean, dry surface, our SBS bitumen tape provides a reliable seal for 10-15 years in typical roofing conditions."
 ---
 

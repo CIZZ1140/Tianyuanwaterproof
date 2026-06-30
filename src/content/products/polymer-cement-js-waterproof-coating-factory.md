@@ -128,13 +128,13 @@ related_products:
     image: "https://img.tyuanwaterproof.com/products/geotextile-nonwoven.webp"
     href: "/products/geotextile-fabric-manufacturer/"
 faqs:
-  - question: "Is JS coating better than Polyurethane coating>="
+  - question: "Is JS coating better than Polyurethane coating?"
     answer: "It depends on the application. JS coating is breathable and excels on wet substrates (like new concrete), making it ideal for indoor wet areas and basements. Polyurethane offers higher elongation and is better for exposed roofing."
-  - question: "How much JS coating do I need per square meter>="
+  - question: "How much JS coating do I need per square meter?"
     answer: "Typically, for a 1.5mm thickness, you will need approximately 2.0kg to 2.5kg of the mixed slurry per square meter across 2-3 coats."
-  - question: "Can I add water to the mixture>="
+  - question: "Can I add water to the mixture?"
     answer: "Adding water is generally not recommended as it alters the polymer-to-cement ratio and can weaken the final waterproof film."
-  - question: "Can this be used for drinking water tanks>="
+  - question: "Can this be used for drinking water tanks?"
     answer: "Yes, our JS coating is non-toxic and environmentally friendly, meeting safety standards for use in drinking water reservoirs and aquaculture ponds."
 ---
 

@@ -141,7 +141,7 @@ packaging:
 
 loading_data:
   - label: "20FT Container"
-    value: "Approx. 5,000>=,000 m² (Depending on thickness)"
+    value: "Approx. 5,000 - 8,000 sqm (Depending on thickness)"
   - label: "Storage Period"
     value: "One year under standard conditions"
 
@@ -170,11 +170,11 @@ related_products:
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
 
 faqs:
-  - question: "Why is EPDM considered the longest-lasting membrane>="
+  - question: "Why is EPDM considered the longest-lasting membrane?"
     answer: "EPDM molecular structure provides unmatched resistance to UV, ozone, and thermal aging, with many systems lasting over 50 years."
-  - question: "Can EPDM be used for fish ponds or reservoirs>="
+  - question: "Can EPDM be used for fish ponds or reservoirs?"
     answer: "Yes, our high-quality EPDM is non-toxic and environmentally friendly, making it safe for aquaculture and cisterns."
-  - question: "What is the installation method for EPDM>="
+  - question: "What is the installation method for EPDM?"
     answer: "It is generally installed using a full adhesive bonding system or mechanical fastening, with joints sealed by seam tapes or adhesives."
 ---
 

@@ -130,7 +130,7 @@ packaging:
 
 loading_data:
   - label: "Dosage"
-    value: "Approx. 1.0 - 1.2 kg/m² per mm of thickness"
+    value: "Approx. 1.0 - 1.2 kg/sqm per mm of thickness"
   - label: "Shelf Life"
     value: "12 Months in original unopened packaging"
   - label: "MOQ"
@@ -158,11 +158,11 @@ related_products:
     href: "/products/epdm-waterproofing-membrane-wholesale/"
 
 faqs:
-  - question: "Is this epoxy safe for indoor use>="
+  - question: "Is this epoxy safe for indoor use?"
     answer: "Yes, our epoxy floor paint is high-solid and low-VOC, meeting strict environmental standards for playgrounds and offices."
-  - question: "How long until I can walk on the floor>="
+  - question: "How long until I can walk on the floor?"
     answer: "Typically, the floor is ready for light foot traffic within 12 to 16 hours at room temperature."
-  - question: "Can I customize the color>="
+  - question: "Can I customize the color?"
     answer: "Absolutely. We support color matching and color sand decorative effects based on your project requirements."
 ---
 

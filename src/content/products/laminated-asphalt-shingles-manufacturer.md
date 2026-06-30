@@ -116,7 +116,7 @@ packaging:
 
 loading_data:
   - label: "20FT Container"
-    value: "Approx. 1,800 - 2,100 m² (Palletized)"
+    value: "Approx. 1,800 - 2,100 sqm (Palletized)"
   - label: "Bundle Weight"
     value: "Approx. 30kg per bundle"
 
@@ -145,13 +145,13 @@ related_products:
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
 
 faqs:
-  - question: "What makes laminated shingles different from 3-tab>="
+  - question: "What makes laminated shingles different from 3-tab?"
     answer: "Laminated shingles are dual-layer, providing a thicker, 3D architectural appearance and superior wind resistance compared to flat 3-tab shingles."
-  - question: "Do these shingles offer a 3D architectural look>="
+  - question: "Do these shingles offer a 3D architectural look?"
     answer: "Yes, the layered construction and shadow bands create a deep texture that mimics natural wood shakes or slate."
-  - question: "Are they suitable for high-wind coastal areas>="
+  - question: "Are they suitable for high-wind coastal areas?"
     answer: "Absolutely. Due to their double-layer weight and advanced sealing strips, they are engineered for high-wind environments."
-  - question: "What is the expected lifespan of premium laminated shingles>="
+  - question: "What is the expected lifespan of premium laminated shingles?"
     answer: "With professional installation, these shingles typically provide a service life of 30 years or more."
 ---
 

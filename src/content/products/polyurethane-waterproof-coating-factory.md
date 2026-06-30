@@ -33,7 +33,7 @@ spec_table:
   - label: "Packaging"
     value: "20kg / 25kg Metal Drum"
   - label: "Dosage (1mm)"
-    value: "Approx. 1.3 >=1.5 kg/m²"
+    value: "Approx. 1.3 - 1.5 kg/sqm"
   - label: "Elongation"
     value: ">=450% (High Elasticity)"
   - label: "Drying Time"
@@ -163,11 +163,11 @@ related_products:
     href: "/products/epdm-waterproofing-membrane-wholesale/"
 
 faqs:
-  - question: "Can PU coating be applied on a damp substrate>="
+  - question: "Can PU coating be applied on a damp substrate?"
     answer: "Yes, our PU coating is designed with high adhesive strength (>=.0MPa) for damp base surfaces, provided there is no standing water."
-  - question: "Is single-component PU better than two-component>="
+  - question: "Is single-component PU better than two-component?"
     answer: "Single-component is more convenient for small or complex areas as it's ready-to-use. Two-component is often preferred for large-scale industrial projects due to cost-efficiency and curing speed."
-  - question: "Is this coating suitable for exposed roofs>="
+  - question: "Is this coating suitable for exposed roofs?"
     answer: "While highly resistant, we recommend a protective topcoat or non-exposed application for maximum service life under direct UV."
 ---
 

@@ -130,7 +130,7 @@ loading_data:
   - label: "Standard"
     value: "EN 13967 Certified"
   - label: "Container Load"
-    value: "Approx. 10,000>=2,000 m² per 20FT container"
+    value: "Approx. 10,000 - 12,000 sqm per 20FT container"
   - label: "Thickness Options"
     value: "1.2mm and 1.5mm standard"
 
@@ -159,11 +159,11 @@ related_products:
     href: "/products/pp-pe-composite-membrane-factory/"
 
 faqs:
-  - question: "How does pre-applied HDPE prevent water channeling>="
+  - question: "How does pre-applied HDPE prevent water channeling?"
     answer: "The reactive polymer layer chemical bonds with the liquid concrete as it cures, creating a monolithic seal that prevents water from traveling between layers."
-  - question: "Can I install reinforcement steel directly on the membrane>="
+  - question: "Can I install reinforcement steel directly on the membrane?"
     answer: "Yes, the HDPE substrate and its protective layer are designed to withstand the stress of rebar installation and concrete pouring."
-  - question: "What are the overlap methods for HDPE>="
+  - question: "What are the overlap methods for HDPE?"
     answer: "We offer both self-adhesive lap areas and hot-air welding options, depending on the specific underground environment and project requirements."
 ---
 

@@ -131,13 +131,13 @@ related_products:
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
 faqs:
-  - question: "Are 3-tab shingles suitable for high-wind areas>="
+  - question: "Are 3-tab shingles suitable for high-wind areas?"
     answer: "Yes, our 3-tab shingles feature high-strength fiberglass mats and thermal-activated sealant strips."
-  - question: "How many colors are available>="
+  - question: "How many colors are available?"
     answer: "We offer 12 plus standard colors and custom color matching for bulk orders."
-  - question: "Can they be installed over existing roofs>="
+  - question: "Can they be installed over existing roofs?"
     answer: "We recommend a clean deck for the best long-term performance."
-  - question: "What is the life expectancy of these shingles>="
+  - question: "What is the life expectancy of these shingles?"
     answer: "Typically, these premium shingles last 20 to 30 years."
 ---
 

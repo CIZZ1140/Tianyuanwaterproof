@@ -125,7 +125,7 @@ packaging:
 
 loading_data:
   - label: "20FT Container"
-    value: "Approx. 2,000>=,000 m² (Subject to thickness)"
+    value: "Approx. 2,000 - 4,000 sqm (Subject to thickness)"
   - label: "Pallet Quantity"
     value: "20-30 rolls per pallet"
 
@@ -154,11 +154,11 @@ related_products:
     href: "/products/self-adhesive-bitumen-tape-wholesale/"
 
 faqs:
-  - question: "Which should I choose, SBS or APP>="
+  - question: "Which should I choose, SBS or APP?"
     answer: "Choose SBS (Styrene-Butadiene-Styrene) for cold climates due to its -25degC flexibility. Choose APP (Atactic Polypropylene) for hot regions as it offers superior heat resistance (up to 130degC)."
-  - question: "Can I install this on a wooden deck>="
+  - question: "Can I install this on a wooden deck?"
     answer: "No, torch-on application is a fire hazard for wooden decks. We recommend using our Self-Adhesive Bitumen Membrane for such projects."
-  - question: "What is the mineral granule surface for>="
+  - question: "What is the mineral granule surface for?"
     answer: "It provides extra UV protection and a decorative finish for exposed roofing, eliminating the need for a protective gravel layer."
 ---
 

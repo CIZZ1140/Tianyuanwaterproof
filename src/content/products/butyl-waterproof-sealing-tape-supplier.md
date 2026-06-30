@@ -163,11 +163,11 @@ related_products:
     href: "/products/self-adhesive-bitumen-tape-wholesale/"
 
 faqs:
-  - question: "Is butyl tape permanent>="
+  - question: "Is butyl tape permanent?"
     answer: "Yes, our solvent-free butyl formula is engineered to remain permanently flexible and tacky for the life of the project."
-  - question: "Can I use butyl tape on a wet surface>="
+  - question: "Can I use butyl tape on a wet surface?"
     answer: "For maximum bond, the surface must be clean and dry. We do not recommend installation on active leaks or wet surfaces."
-  - question: "What is the construction temperature range>="
+  - question: "What is the construction temperature range?"
     answer: "Our standard butyl tape can be installed from -15degC to 45degC. For extreme climates, specialized formulas are available."
 ---
 

@@ -79,7 +79,7 @@ features:
 
 technical_data:
   - label: "Density"
-    unit: "g/cm³"
+    unit: "g/cm3"
     standard: "ASTM D1505"
     requirement: ">=0.940"
     value: "0.940 - 0.960"
@@ -174,15 +174,15 @@ related_products:
     href: "/products/pre-applied-hdpe-membrane-supplier/"
 
 faqs:
-  - question: "What is the difference between Smooth and Textured HDPE Geomembrane>="
+  - question: "What is the difference between Smooth and Textured HDPE Geomembrane?"
     answer: "Smooth geomembrane is the standard choice for flat containment. Textured geomembrane (single or double-sided) provides higher friction and is essential for steep slopes to prevent sliding of the cover soil or the liner itself."
-  - question: "How long does HDPE geomembrane last>="
+  - question: "How long does HDPE geomembrane last?"
     answer: "When properly installed and covered (protected from direct UV), HDPE geomembranes can have a service life exceeding 50-100 years. Our high-quality virgin resin ensure excellent long-term durability."
-  - question: "Is HDPE geomembrane safe for fish ponds>="
+  - question: "Is HDPE geomembrane safe for fish ponds?"
     answer: "Yes, our geomembranes are produced from 100% virgin high-density polyethylene resin without toxic additives, making them safe for aquaculture, fish ponds, and drinking water reservoirs."
-  - question: "What is the recommended thickness for a landfill liner>="
+  - question: "What is the recommended thickness for a landfill liner?"
     answer: "For municipal solid waste landfills, a thickness of 1.5mm or 2.0mm is typically the minimum requirement. For hazardous waste, thicker liners may be necessary. Always follow the local engineering design specifications."
-  - question: "Can I weld the geomembrane myself>="
+  - question: "Can I weld the geomembrane myself?"
     answer: "While small patches can be handled with specialized equipment, we recommend professional welding crews using dual-track hot wedge welders for large-scale projects to ensure seam integrity and safety."
 ---
 

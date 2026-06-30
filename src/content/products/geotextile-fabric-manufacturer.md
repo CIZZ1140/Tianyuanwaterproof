@@ -9,7 +9,7 @@ hero_description: "Leading nonwoven geotextile manufacturer providing high-perfo
 
 hero_tags:
   - "PP / PET Material"
-  - "100g/m²>=00g/m²"
+  - "100g/m2 to 800g/m2"
   - "Filtration & Drainage"
   - "1m>=m Seamless Width"
   - "Acid & Alkali Resistant"
@@ -29,7 +29,7 @@ spec_table:
   - label: "Material Composition"
     value: "100% Virgin Polypropylene (PP) or Polyester (PET)"
   - label: "Weight Range (GSM)"
-    value: "100g/m² to 800g/m² (Customizable)"
+    value: "100g/sqm to 800g/sqm (Customizable)"
   - label: "Thickness"
     value: "1.2mm >=4.5mm"
   - label: "Width"
@@ -79,7 +79,7 @@ features:
 
 technical_data:
   - label: "Mass per unit area"
-    unit: "g/m²"
+    unit: "g/sqm"
     standard: "GB/T 17639 / ASTM D5261"
     requirement: "100 - 800"
     value: "100 - 800 (+/-5%)"
@@ -101,8 +101,8 @@ technical_data:
   - label: "Permeability Coefficient"
     unit: "cm/s"
     standard: "ASTM D4491"
-    requirement: "k × 10⁻>=to 10⁻>=
-    value: "1.0 - 9.0 × 10⁻>=
+    requirement: "k × 10^-1 to 10^-3"
+    value: "1.0 - 9.0 x 10^-3"
   - label: "UV Resistance (after 500h)"
     unit: "%"
     standard: "ASTM D4355"
@@ -170,15 +170,15 @@ related_products:
     href: "/products/pp-pe-composite-membrane-factory/"
 
 faqs:
-  - question: "What is the difference between PET and PP nonwoven geotextile>="
+  - question: "What is the difference between PET and PP nonwoven geotextile?"
     answer: "PET (Polyester) has a higher melting point and better UV resistance, making it suitable for exposed or high-temperature environments. PP (Polypropylene) has superior chemical resistance, especially in highly alkaline soils, and is generally more cost-effective for underground drainage."
-  - question: "How do I choose the right weight (GSM) for my project>="
+  - question: "How do I choose the right weight (GSM) for my project?"
     answer: "The choice depends on the application. 100-200g is common for filtration and light separation; 300-500g is used for geomembrane protection and road subgrade; 600-800g is for heavy-duty hydraulic and landfill engineering."
-  - question: "Is this fabric UV resistant>="
+  - question: "Is this fabric UV resistant?"
     answer: "Yes, our geotextiles are treated with UV stabilizers to ensure they maintain their strength during the construction phase when exposed to sunlight. However, long-term performance is best achieved when covered by soil or a liner."
-  - question: "Can nonwoven geotextile be used for drainage>="
+  - question: "Can nonwoven geotextile be used for drainage?"
     answer: "Absolutely. Its needle-punched structure creates a three-dimensional pore network that allows water to flow freely while preventing fine soil particles from clogging the drainage system."
-  - question: "Does Tianyuan provide testing reports>="
+  - question: "Does Tianyuan provide testing reports?"
     answer: "Yes, every batch undergoes strict internal QC testing. We also provide test reports based on ASTM or ISO standards upon request for project compliance."
 ---
 

@@ -145,7 +145,7 @@ loading_data:
   - label: "Standard"
     value: "GB12952-2011 Certified"
   - label: "Container Load"
-    value: "Approx. 8,000>=2,000 m² (Subject to thickness)"
+    value: "Approx. 8,000 - 12,000 sqm (Subject to thickness)"
   - label: "Width Options"
     value: "2.05m large-format or 1.0m standard"
 
@@ -174,11 +174,11 @@ related_products:
     href: "/products/polyurethane-waterproof-coating-factory/"
 
 faqs:
-  - question: "Why choose PVC for green roof projects>="
+  - question: "Why choose PVC for green roof projects?"
     answer: "PVC is inherently resistant to root penetration, making it an ideal long-term barrier for planting roofs and rooftop gardens."
-  - question: "Can PVC be installed in cold weather>="
+  - question: "Can PVC be installed in cold weather?"
     answer: "Yes, PVC remains flexible at low temperatures (-25degC), allowing for year-round construction in various climates."
-  - question: "What is the expected service life for roofing>="
+  - question: "What is the expected service life for roofing?"
     answer: "When properly installed, roofing-grade PVC membranes provide reliable waterproofing for 20 to 25 years."
 ---
 

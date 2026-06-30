@@ -125,7 +125,7 @@ packaging:
 
 loading_data:
   - label: "20FT Container"
-    value: "Approx. 5,000 - 8,000 m² (Subject to thickness)"
+    value: "Approx. 5,000 - 8,000 sqm (Subject to thickness)"
   - label: "Standard Width"
     value: "1m (Standard)"
 
@@ -154,11 +154,11 @@ related_products:
     href: "/products/butyl-waterproof-sealing-tape-supplier/"
 
 faqs:
-  - question: "Is primer required for self-adhesive membranes>="
+  - question: "Is primer required for self-adhesive membranes?"
     answer: "While it can bond directly to clean metal, we strongly recommend using a cold bitumen primer on concrete to ensure maximum long-term adhesion."
-  - question: "Can it be installed in cold weather>="
+  - question: "Can it be installed in cold weather?"
     answer: "Bonding performance decreases below 5degC. For winter installation, we offer specialized cold-weather formulas with enhanced tackiness."
-  - question: "How long is the shelf life>="
+  - question: "How long is the shelf life?"
     answer: "When stored in a cool, dry place away from direct sunlight, the membrane has a shelf life of 12 to 18 months."
 ---
 
