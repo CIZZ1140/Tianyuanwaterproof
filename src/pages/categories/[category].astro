@@ -105,7 +105,18 @@ const products = await getCollection('products', ({ data }) => {
   <main class="bg-slate-50 min-h-screen">
     <!-- Category Hero Header -->
     <section class="relative py-28 bg-[#0B1E3B] text-white overflow-hidden border-b border-white/10">
-      <div class="absolute inset-0 bg-[url('/assets/images/grid.svg')] opacity-10"></div>
+      <div class="absolute inset-0 z-0">
+        <img 
+          src={cat.image} 
+          alt="" 
+          class="w-full h-full object-cover opacity-20 filter blur-[2px]" 
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0B1E3B] via-[#0B1E3B]/80 to-transparent"></div>
+      </div>
+      <div class="absolute inset-0 bg-[url('/assets/images/grid.svg')] opacity-10 mix-blend-overlay"></div>
+      
       <div class="relative z-10 max-w-7xl mx-auto px-6 text-center sm:text-left">
         <nav class="flex text-sm font-bold text-blue-200/90 gap-3 justify-center sm:justify-start items-center mb-6 uppercase tracking-wider">
           <a href="/" class="hover:text-white transition-colors">Home</a>

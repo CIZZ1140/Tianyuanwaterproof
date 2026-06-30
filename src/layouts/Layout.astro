@@ -8,12 +8,14 @@ interface Props {
 	title: string;
 	description?: string;
 	preloadImage?: string;
+	isHomePage?: boolean;
 }
 
 const { 
 	title, 
 	description = "Weifang Tianyuan Waterproof Material Co., Ltd. is a leading manufacturer of high-quality modified bitumen membranes, polymer membranes, and waterproof coatings for global construction projects.", 
-	preloadImage 
+	preloadImage,
+	isHomePage = false
 } = Astro.props;
 
 const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?text=Hi%2C%20I'm%20interested%20in%20your%20waterproofing%20materials.%20Could%20you%20please%20send%20me%20a%20catalog%20and%20price%20list%3F";
@@ -45,23 +47,27 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<link rel="dns-prefetch" href="https://img.tyuanwaterproof.com" />
 		<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 		
-		{/* Priority LCP Preload - Using fetchpriority="high" to boost loading */}
-		<link 
-			rel="preload" 
-			as="image" 
-			href="https://img.tyuanwaterproof.com/banner-mobile.webp" 
-			media="(max-width: 768px)" 
-			type="image/webp"
-			fetchpriority="high"
-		/>
-		<link 
-			rel="preload" 
-			as="image" 
-			href="https://img.tyuanwaterproof.com/banner.webp" 
-			media="(min-width: 769px)" 
-			type="image/webp"
-			fetchpriority="high"
-		/>
+		{/* Only preload homepage banners on the home page to avoid LCP competition on other pages */}
+		{isHomePage && (
+			<>
+				<link 
+					rel="preload" 
+					as="image" 
+					href="https://img.tyuanwaterproof.com/banner-mobile.webp" 
+					media="(max-width: 768px)" 
+					type="image/webp"
+					fetchpriority="high"
+				/>
+				<link 
+					rel="preload" 
+					as="image" 
+					href="https://img.tyuanwaterproof.com/banner.webp" 
+					media="(min-width: 769px)" 
+					type="image/webp"
+					fetchpriority="high"
+				/>
+			</>
+		)}
 	</head>
 	<body class="bg-[#F5F7FA] text-[#102033] antialiased font-sans">
 		<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-[200] focus:bg-white focus:p-4 focus:text-navy focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-brand">

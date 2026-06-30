@@ -18,9 +18,9 @@ hero_tags:
 gallery:
   - image: "/placeholder.webp"
     title: "Nonwoven Geotextile Roll Stock"
-  - image: "https://img.tyuanwaterproof.com/products/geotextile-nonwoven-colors.webp"
+  - image: "/placeholder.webp"
     title: "White, Black, and Grey Options"
-  - image: "https://img.tyuanwaterproof.com/products/geotextile-nonwoven-application.webp"
+  - image: "/placeholder.webp"
     title: "Road and Railway Subgrade Protection"
 
 spec_table:
