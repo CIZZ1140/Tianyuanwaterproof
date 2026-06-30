@@ -16,7 +16,7 @@ hero_tags:
   - "OEM Available"
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/geotextile-nonwoven-rolls.webp"
+  - image: "/placeholder.webp"
     title: "Nonwoven Geotextile Roll Stock"
   - image: "https://img.tyuanwaterproof.com/products/geotextile-nonwoven-colors.webp"
     title: "White, Black, and Grey Options"
@@ -166,7 +166,7 @@ related_products:
     href: "/products/hdpe-geomembrane-liner-manufacturer/"
   - title: "PP-PE Composite Membrane"
     description: "Multi-layer polymer waterproofing membrane for roofing and underground projects."
-    image: "https://img.tyuanwaterproof.com/products/pp-waterproof-membrane.webp"
+    image: "/placeholder.webp"
     href: "/products/pp-pe-composite-membrane-factory/"
 
 faqs:

@@ -18,7 +18,7 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/asphalt-felt.webp"
     title: "Asphalt Felt Roll"
-  - image: "https://img.tyuanwaterproof.com/factory/production-line.webp"
+  - image: "/placeholder.webp"
     title: "Production Line"
 
 spec_table:

@@ -20,7 +20,7 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/bitumen-tape.webp"
     title: "Bitumen Sealing Tape Roll"
-  - image: "https://img.tyuanwaterproof.com/factory/production-line.webp"
+  - image: "/placeholder.webp"
     title: "Production Line"
 
 spec_table:

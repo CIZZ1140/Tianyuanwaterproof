@@ -20,7 +20,7 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     title: "Self-Adhesive Roll"
-  - image: "https://img.tyuanwaterproof.com/home/factory.webp"
+  - image: "/placeholder.webp"
     title: "Production Line"
 
 spec_table:

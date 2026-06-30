@@ -18,9 +18,9 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
     title: "PU Coating Product"
-  - image: "https://img.tyuanwaterproof.com/home/factory.webp"
+  - image: "/placeholder.webp"
     title: "Factory View"
-  - image: "https://img.tyuanwaterproof.com/home/factory.webp"
+  - image: "/placeholder.webp"
     title: "Production Line"
 
 spec_table:

@@ -20,7 +20,7 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"
     title: "Butyl Tape Roll"
-  - image: "https://img.tyuanwaterproof.com/factory/production-line.webp"
+  - image: "/placeholder.webp"
     title: "Production Line"
 
 spec_table:

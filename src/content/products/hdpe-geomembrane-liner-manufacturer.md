@@ -16,11 +16,11 @@ hero_tags:
   - "OEM Available"
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/hdpe-geomembrane-roll.webp"
+  - image: "/placeholder.webp"
     title: "HDPE Geomembrane Roll Supply"
-  - image: "https://img.tyuanwaterproof.com/products/hdpe-geomembrane-surface.webp"
+  - image: "/placeholder.webp"
     title: "Smooth & Textured Surface Options"
-  - image: "https://img.tyuanwaterproof.com/products/hdpe-geomembrane-landfill.webp"
+  - image: "/placeholder.webp"
     title: "Landfill & Pond Liner Application"
 
 spec_table:
@@ -166,11 +166,11 @@ downloads:
 related_products:
   - title: "Non-woven Geotextile"
     description: "Filament or staple fiber geotextile used for geomembrane protection and filtration."
-    image: "https://img.tyuanwaterproof.com/products/geotextile.webp"
+    image: "/placeholder.webp"
     href: "/products/geotextile-fabric-manufacturer/"
   - title: "Pre-Applied HDPE Waterproof Membrane"
     description: "Self-adhesive pre-applied HDPE membrane for basement and underground structural waterproofing."
-    image: "https://img.tyuanwaterproof.com/products/pre-applied-hdpe-waterproof-membrane.webp"
+    image: "/placeholder.webp"
     href: "/products/pre-applied-hdpe-membrane-supplier/"
 
 faqs:

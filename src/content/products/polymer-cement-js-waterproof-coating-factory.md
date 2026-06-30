@@ -15,7 +15,7 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
     title: "Tianyuan JS Waterproof Coating Bucket"
-  - image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
+  - image: "/placeholder.webp"
     title: "Coating Product Line Display"
 spec_table:
   - label: "Standard"
@@ -121,7 +121,7 @@ downloads:
 related_products:
   - title: "Polyurethane Waterproof Coating"
     description: "Single-component liquid-applied PU membrane for high-performance roofing."
-    image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
+    image: "/placeholder.webp"
     href: "/products/polyurethane-waterproof-coating-factory/"
   - title: "Non-woven Geotextile"
     description: "Reinforcement fabric used as a carrier for liquid-applied waterproofing systems."

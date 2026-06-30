@@ -18,7 +18,7 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/epoxy-floor-paint.jpg"
     title: "Epoxy Paint Product"
-  - image: "https://img.tyuanwaterproof.com/home/factory.webp"
+  - image: "/placeholder.webp"
     title: "Production Facility"
 
 spec_table:

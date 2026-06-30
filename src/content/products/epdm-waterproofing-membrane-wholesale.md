@@ -20,7 +20,7 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
     title: "EPDM Membrane Roll"
-  - image: "https://img.tyuanwaterproof.com/home/factory.webp"
+  - image: "/placeholder.webp"
     title: "Production Line"
 
 spec_table:

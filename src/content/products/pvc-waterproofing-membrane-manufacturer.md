@@ -18,7 +18,7 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
     title: "PVC Membrane Roll"
-  - image: "https://img.tyuanwaterproof.com/factory/production-line.webp"
+  - image: "/placeholder.webp"
     title: "Production Line"
 
 spec_table:
