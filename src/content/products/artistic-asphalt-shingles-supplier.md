@@ -69,12 +69,12 @@ technical_data:
   - label: "Tensile Strength"
     unit: "N/50mm"
     standard: "GB/T 20474"
-    requirement: "?600"
+    requirement: ">=600"
     value: "Qualified (750+)"
   - label: "Tear Resistance"
     unit: "N"
     standard: "GB/T 20474"
-    requirement: "?10"
+    requirement: ">=10"
     value: "Passed"
   - label: "Heat Resistance"
     unit: "degC"
@@ -140,13 +140,13 @@ related_products:
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
 
 faqs:
-  - question: "Can these shingles be used on curved roofs or domes?"
+  - question: "Can these shingles be used on curved roofs or domes>="
     answer: "Yes, their high flexibility makes them the ideal choice for curved roofs, domes, and complex architectural shapes."
-  - question: "What is 'Full Back Adhesive'?"
+  - question: "What is 'Full Back Adhesive'>="
     answer: "It refers to a wider self-sealing strip that provides superior adhesion, ensuring the shingles stay fixed even on very steep slopes."
-  - question: "Do you offer different colors for the mosaic pattern?"
+  - question: "Do you offer different colors for the mosaic pattern>="
     answer: "We offer a wide range of colors, including variegated mixes that create a beautiful mosaic effect on the roof."
-  - question: "Are these shingles Class A fire rated?"
+  - question: "Are these shingles Class A fire rated>="
     answer: "Yes, our asphalt shingles achieve high fire resistance ratings to ensure the safety of the building."
 ---
 

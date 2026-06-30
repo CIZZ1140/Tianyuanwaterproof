@@ -73,12 +73,12 @@ technical_data:
   - label: "Tensile Strength (L/T)"
     unit: "N/50mm"
     standard: "EN 12311-2"
-    requirement: "?800"
+    requirement: ">=800"
     value: "Pass (850+)"
   - label: "Elongation at Break (L/T)"
     unit: "%"
     standard: "EN 12311-2"
-    requirement: "?500"
+    requirement: ">=500"
     value: "550%+"
   - label: "Watertightness"
     unit: "kPa"
@@ -93,15 +93,15 @@ technical_data:
   - label: "Joint Peel Resistance"
     unit: "N/50mm"
     standard: "EN 12317-2"
-    requirement: "?400"
+    requirement: ">=400"
     value: "Qualified"
   - label: "Resistance To Alkali"
-    unit: "?
+    unit: ">=
     standard: "EN 1847"
     requirement: "60kPa, 24h"
     value: "No Leakage"
   - label: "Visible Defects"
-    unit: "?
+    unit: ">=
     standard: "EN 1848-2"
     requirement: "None"
     value: "No visible defects"
@@ -130,7 +130,7 @@ loading_data:
   - label: "Standard"
     value: "EN 13967 Certified"
   - label: "Container Load"
-    value: "Approx. 10,000?2,000 m² per 20FT container"
+    value: "Approx. 10,000>=2,000 m² per 20FT container"
   - label: "Thickness Options"
     value: "1.2mm and 1.5mm standard"
 
@@ -159,11 +159,11 @@ related_products:
     href: "/products/pp-pe-composite-membrane-factory/"
 
 faqs:
-  - question: "How does pre-applied HDPE prevent water channeling?"
+  - question: "How does pre-applied HDPE prevent water channeling>="
     answer: "The reactive polymer layer chemical bonds with the liquid concrete as it cures, creating a monolithic seal that prevents water from traveling between layers."
-  - question: "Can I install reinforcement steel directly on the membrane?"
+  - question: "Can I install reinforcement steel directly on the membrane>="
     answer: "Yes, the HDPE substrate and its protective layer are designed to withstand the stress of rebar installation and concrete pouring."
-  - question: "What are the overlap methods for HDPE?"
+  - question: "What are the overlap methods for HDPE>="
     answer: "We offer both self-adhesive lap areas and hot-air welding options, depending on the specific underground environment and project requirements."
 ---
 

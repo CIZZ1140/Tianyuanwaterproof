@@ -9,9 +9,9 @@ hero_description: "Leading nonwoven geotextile manufacturer providing high-perfo
 
 hero_tags:
   - "PP / PET Material"
-  - "100g/m²?00g/m²"
+  - "100g/m²>=00g/m²"
   - "Filtration & Drainage"
-  - "1m?m Seamless Width"
+  - "1m>=m Seamless Width"
   - "Acid & Alkali Resistant"
   - "OEM Available"
 
@@ -31,9 +31,9 @@ spec_table:
   - label: "Weight Range (GSM)"
     value: "100g/m² to 800g/m² (Customizable)"
   - label: "Thickness"
-    value: "1.2mm ?4.5mm"
+    value: "1.2mm >=4.5mm"
   - label: "Width"
-    value: "1.0m ?8.0m (Seamless wide rolls available)"
+    value: "1.0m >=8.0m (Seamless wide rolls available)"
   - label: "Standard Colors"
     value: "White, Black, Grey, Green, Red"
   - label: "Primary Functions"
@@ -86,12 +86,12 @@ technical_data:
   - label: "CBR Puncture Strength"
     unit: "KN"
     standard: "ASTM D6241"
-    requirement: "?1.5 (for 300g)"
+    requirement: ">=1.5 (for 300g)"
     value: "1.6 - 2.1"
   - label: "Grab Tensile Strength"
     unit: "N"
     standard: "ASTM D4632"
-    requirement: "?800 (for 300g)"
+    requirement: ">=800 (for 300g)"
     value: "900 - 1100"
   - label: "Apparent Opening Size"
     unit: "mm"
@@ -101,13 +101,13 @@ technical_data:
   - label: "Permeability Coefficient"
     unit: "cm/s"
     standard: "ASTM D4491"
-    requirement: "k × 10⁻?to 10⁻?
-    value: "1.0 - 9.0 × 10⁻?
+    requirement: "k × 10⁻>=to 10⁻>=
+    value: "1.0 - 9.0 × 10⁻>=
   - label: "UV Resistance (after 500h)"
     unit: "%"
     standard: "ASTM D4355"
-    requirement: "?70"
-    value: "?80"
+    requirement: ">=70"
+    value: ">=80"
 
 application_guide:
   - title: "Surface Preparation"
@@ -170,15 +170,15 @@ related_products:
     href: "/products/pp-pe-composite-membrane-factory/"
 
 faqs:
-  - question: "What is the difference between PET and PP nonwoven geotextile?"
+  - question: "What is the difference between PET and PP nonwoven geotextile>="
     answer: "PET (Polyester) has a higher melting point and better UV resistance, making it suitable for exposed or high-temperature environments. PP (Polypropylene) has superior chemical resistance, especially in highly alkaline soils, and is generally more cost-effective for underground drainage."
-  - question: "How do I choose the right weight (GSM) for my project?"
+  - question: "How do I choose the right weight (GSM) for my project>="
     answer: "The choice depends on the application. 100-200g is common for filtration and light separation; 300-500g is used for geomembrane protection and road subgrade; 600-800g is for heavy-duty hydraulic and landfill engineering."
-  - question: "Is this fabric UV resistant?"
+  - question: "Is this fabric UV resistant>="
     answer: "Yes, our geotextiles are treated with UV stabilizers to ensure they maintain their strength during the construction phase when exposed to sunlight. However, long-term performance is best achieved when covered by soil or a liner."
-  - question: "Can nonwoven geotextile be used for drainage?"
+  - question: "Can nonwoven geotextile be used for drainage>="
     answer: "Absolutely. Its needle-punched structure creates a three-dimensional pore network that allows water to flow freely while preventing fine soil particles from clogging the drainage system."
-  - question: "Does Tianyuan provide testing reports?"
+  - question: "Does Tianyuan provide testing reports>="
     answer: "Yes, every batch undergoes strict internal QC testing. We also provide test reports based on ASTM or ISO standards upon request for project compliance."
 ---
 
@@ -195,12 +195,12 @@ Tianyuan's nonwoven geotextiles provide four critical functions for your project
 3.  **Drainage**: The fabric collects and transports excess water within its plane. This ensures effective relief of hydrostatic pressure.
 4.  **Protection**: It acts as a cushion to protect geomembranes and other liners from mechanical damage and puncture.
 
-## Why Choose Tianyuan Geotextile?
+## Why Choose Tianyuan Geotextile>=
 
 As a dedicated manufacturer in China, Tianyuan offers high-performance geosynthetics for global projects:
 
 ### Seamless Large Widths
-我们提供宽度?**8.0 ?* 的卷材。这能显著减少大面积工程中的重叠数量和材料损耗?
+我们提供宽度>=**8.0 >=* 的卷材。这能显著减少大面积工程中的重叠数量和材料损耗>=
 
 ### High Puncture Resistance
 Our needle-punching technology ensures the fabric can withstand the rigors of heavy machinery and sharp-edged aggregates during construction.

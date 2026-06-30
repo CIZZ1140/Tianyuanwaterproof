@@ -12,8 +12,8 @@ hero_description: "Professional cold-applied SBS rubberized bitumen sealing tape
 hero_tags:
   - "SBS Bitumen"
   - "Aluminum Foil"
-  - "1.0mm?.5mm"
-  - "5cm?0cm Width"
+  - "1.0mm>=.5mm"
+  - "5cm>=0cm Width"
   - "Instant Seal"
   - "OEM Available"
 
@@ -75,7 +75,7 @@ technical_data:
   - label: "Persistent Adhesivity"
     unit: "min"
     standard: "Reference Standard"
-    requirement: "?20"
+    requirement: ">=20"
     value: "Passed"
   - label: "Heat Resistance (80degC)"
     unit: "h"
@@ -90,17 +90,17 @@ technical_data:
   - label: "Shear Adhesion"
     unit: "MPa"
     standard: "Reference Standard"
-    requirement: "?2.0"
+    requirement: ">=2.0"
     value: "Qualified"
   - label: "Peel Strength (Metal)"
     unit: "N/mm"
     standard: "Reference Standard"
-    requirement: "?0.6"
+    requirement: ">=0.6"
     value: "High Bond"
   - label: "Overlap Minimum"
     unit: "cm"
     standard: "Installation Rule"
-    requirement: "?25"
+    requirement: ">=25"
     value: "Ensures Seal"
 
 application_guide:
@@ -158,11 +158,11 @@ related_products:
     href: "/products/polyurethane-waterproof-coating-factory/"
 
 faqs:
-  - question: "Can I use this tape on top of old bitumen felt?"
+  - question: "Can I use this tape on top of old bitumen felt>="
     answer: "Yes, it is specifically designed to bond to bitumen surfaces, making it perfect for repairing old asphalt roofs."
-  - question: "Is the aluminum foil surface paintable?"
+  - question: "Is the aluminum foil surface paintable>="
     answer: "While generally used as-is, the aluminum foil can be painted with compatible bitumen-friendly paints for aesthetic matching."
-  - question: "How long does the seal last?"
+  - question: "How long does the seal last>="
     answer: "When applied to a clean, dry surface, our SBS bitumen tape provides a reliable seal for 10-15 years in typical roofing conditions."
 ---
 

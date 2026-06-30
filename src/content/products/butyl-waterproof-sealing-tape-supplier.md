@@ -73,14 +73,14 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: "?
+    unit: ">=
     standard: "JC/T 942-2004"
     requirement: "Standard Conformity"
     value: "Passed"
   - label: "Persistent Adhesivity"
     unit: "min"
     standard: "JC/T 942-2004"
-    requirement: "?20"
+    requirement: ">=20"
     value: "20+"
   - label: "Heat Resistance (80degC)"
     unit: "h"
@@ -95,17 +95,17 @@ technical_data:
   - label: "Shear State Adhesion"
     unit: "MPa"
     standard: "JC/T 942-2004"
-    requirement: "?2.0"
+    requirement: ">=2.0"
     value: "Qualified"
   - label: "Peel Strength (Cement)"
     unit: "N/mm"
     standard: "JC/T 942-2004"
-    requirement: "?0.6"
+    requirement: ">=0.6"
     value: "0.8+"
   - label: "Alkaline Resistance"
     unit: "%"
-    standard: "Ca(OH)?retention"
-    requirement: "?80"
+    standard: "Ca(OH)>=retention"
+    requirement: ">=80"
     value: "Passed"
 
 application_guide:
@@ -163,11 +163,11 @@ related_products:
     href: "/products/self-adhesive-bitumen-tape-wholesale/"
 
 faqs:
-  - question: "Is butyl tape permanent?"
+  - question: "Is butyl tape permanent>="
     answer: "Yes, our solvent-free butyl formula is engineered to remain permanently flexible and tacky for the life of the project."
-  - question: "Can I use butyl tape on a wet surface?"
+  - question: "Can I use butyl tape on a wet surface>="
     answer: "For maximum bond, the surface must be clean and dry. We do not recommend installation on active leaks or wet surfaces."
-  - question: "What is the construction temperature range?"
+  - question: "What is the construction temperature range>="
     answer: "Our standard butyl tape can be installed from -15degC to 45degC. For extreme climates, specialized formulas are available."
 ---
 

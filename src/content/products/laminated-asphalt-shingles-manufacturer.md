@@ -74,12 +74,12 @@ technical_data:
   - label: "Tensile Strength"
     unit: "N/50mm"
     standard: "GB/T 20474"
-    requirement: "?800"
+    requirement: ">=800"
     value: "Qualified (1000+)"
   - label: "Tear Strength"
     unit: "N"
     standard: "ASTM D3462"
-    requirement: "?25"
+    requirement: ">=25"
     value: "Passed"
   - label: "Heat Resistance"
     unit: "degC"
@@ -87,7 +87,7 @@ technical_data:
     requirement: "100degC"
     value: "No flowing, no dripping"
   - label: "Fire Classification"
-    unit: "?
+    unit: ">=
     standard: "UL 790"
     requirement: "Class A"
     value: "Class A Fire Rated"
@@ -145,13 +145,13 @@ related_products:
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
 
 faqs:
-  - question: "What makes laminated shingles different from 3-tab?"
+  - question: "What makes laminated shingles different from 3-tab>="
     answer: "Laminated shingles are dual-layer, providing a thicker, 3D architectural appearance and superior wind resistance compared to flat 3-tab shingles."
-  - question: "Do these shingles offer a 3D architectural look?"
+  - question: "Do these shingles offer a 3D architectural look>="
     answer: "Yes, the layered construction and shadow bands create a deep texture that mimics natural wood shakes or slate."
-  - question: "Are they suitable for high-wind coastal areas?"
+  - question: "Are they suitable for high-wind coastal areas>="
     answer: "Absolutely. Due to their double-layer weight and advanced sealing strips, they are engineered for high-wind environments."
-  - question: "What is the expected lifespan of premium laminated shingles?"
+  - question: "What is the expected lifespan of premium laminated shingles>="
     answer: "With professional installation, these shingles typically provide a service life of 30 years or more."
 ---
 

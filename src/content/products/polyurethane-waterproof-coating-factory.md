@@ -33,11 +33,11 @@ spec_table:
   - label: "Packaging"
     value: "20kg / 25kg Metal Drum"
   - label: "Dosage (1mm)"
-    value: "Approx. 1.3 ?1.5 kg/m²"
+    value: "Approx. 1.3 >=1.5 kg/m²"
   - label: "Elongation"
-    value: "?450% (High Elasticity)"
+    value: ">=450% (High Elasticity)"
   - label: "Drying Time"
-    value: "Surface Dry ?8h; Hard Dry ?24h"
+    value: "Surface Dry >=8h; Hard Dry >=24h"
   - label: "Storage"
     value: "Dry shade below 40degC, 12 months shelf life"
 
@@ -73,29 +73,29 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: "?
+    unit: ">=
     standard: "GB/T 19250-2013"
     requirement: "Standard Conformity"
     value: "Passed"
   - label: "Solid Content (Single)"
     unit: "%"
     standard: "GB/T 19250"
-    requirement: "?92"
+    requirement: ">=92"
     value: "94%"
   - label: "Tensile Strength"
     unit: "MPa"
     standard: "GB/T 19250"
-    requirement: "Type II ?2.45"
+    requirement: "Type II >=2.45"
     value: "3.0+"
   - label: "Breaking Elongation"
     unit: "%"
     standard: "GB/T 19250"
-    requirement: "?450"
+    requirement: ">=450"
     value: "550%+"
   - label: "Low Temp Flexibility"
     unit: "degC"
     standard: "GB/T 19250"
-    requirement: "?-35degC"
+    requirement: ">=-35degC"
     value: "Passed"
   - label: "Impermeability"
     unit: "MPa"
@@ -105,7 +105,7 @@ technical_data:
   - label: "Wet Base Adhesion"
     unit: "MPa"
     standard: "GB/T 19250"
-    requirement: "?1.0"
+    requirement: ">=1.0"
     value: "1.2+"
 
 application_guide:
@@ -118,7 +118,7 @@ application_guide:
   - title: "Multi-layer Coating"
     text: "Apply in 2-3 layers. Each layer should be perpendicular to the previous one after it becomes tack-free."
   - title: "Thickness Control"
-    text: "Maintain a total thickness of 1.5mm?.0mm for optimal performance in underground projects."
+    text: "Maintain a total thickness of 1.5mm>=.0mm for optimal performance in underground projects."
   - title: "Protection"
     text: "Ensure proper ventilation. Protect the finished layer from physical damage until fully cured."
 
@@ -163,11 +163,11 @@ related_products:
     href: "/products/epdm-waterproofing-membrane-wholesale/"
 
 faqs:
-  - question: "Can PU coating be applied on a damp substrate?"
-    answer: "Yes, our PU coating is designed with high adhesive strength (?.0MPa) for damp base surfaces, provided there is no standing water."
-  - question: "Is single-component PU better than two-component?"
+  - question: "Can PU coating be applied on a damp substrate>="
+    answer: "Yes, our PU coating is designed with high adhesive strength (>=.0MPa) for damp base surfaces, provided there is no standing water."
+  - question: "Is single-component PU better than two-component>="
     answer: "Single-component is more convenient for small or complex areas as it's ready-to-use. Two-component is often preferred for large-scale industrial projects due to cost-efficiency and curing speed."
-  - question: "Is this coating suitable for exposed roofs?"
+  - question: "Is this coating suitable for exposed roofs>="
     answer: "While highly resistant, we recommend a protective topcoat or non-exposed application for maximum service life under direct UV."
 ---
 

@@ -71,39 +71,39 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: "?
+    unit: ">=
     standard: "ASTM D226 / D4869"
     requirement: "Standard Conformity"
     value: "Passed"
   - label: "Breaking Strength (MD)"
     unit: "lbf/in"
     standard: "ASTM D226"
-    requirement: "15# ?30; 30# ?40"
+    requirement: "15# >=30; 30# >=40"
     value: "Qualified"
   - label: "Breaking Strength (CD)"
     unit: "lbf/in"
     standard: "ASTM D226"
-    requirement: "15# ?15; 30# ?20"
+    requirement: "15# >=15; 30# >=20"
     value: "Qualified"
   - label: "Pliability (23degC)"
-    unit: "?
+    unit: ">=
     standard: "ASTM D226"
     requirement: "90° bend / 12.7mm radius"
     value: "No crack"
   - label: "Net Mass (15# Type)"
     unit: "g/m²"
     standard: "ASTM D226"
-    requirement: "?560"
+    requirement: ">=560"
     value: "580+"
   - label: "Saturation by Weight"
     unit: "%"
     standard: "ASTM D226"
-    requirement: "?120"
+    requirement: ">=120"
     value: "135%+"
   - label: "Loss on Heating"
     unit: "%"
     standard: "ASTM D226"
-    requirement: "?4.0"
+    requirement: ">=4.0"
     value: "Passed"
 
 application_guide:
@@ -161,13 +161,13 @@ related_products:
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
 
 faqs:
-  - question: "Why is asphalt felt used under shingles?"
+  - question: "Why is asphalt felt used under shingles>="
     answer: "It acts as a secondary barrier that protects the wooden deck from wind-driven rain if shingles are damaged or blown off."
-  - question: "Is this felt suitable for flat roofs?"
+  - question: "Is this felt suitable for flat roofs>="
     answer: "No, this organic saturated felt is specifically designed for pitched roofs as an underlayment, not as a primary waterproof layer for flat roofs."
-  - question: "What is the difference between 15# and 30# felt?"
+  - question: "What is the difference between 15# and 30# felt>="
     answer: "30# felt is thicker, heavier, and provides superior tear resistance and durability compared to the lighter 15# felt."
-  - question: "Can it be left exposed to the sun?"
+  - question: "Can it be left exposed to the sun>="
     answer: "It provides temporary protection, but it should be covered by shingles or tiles within a few days to avoid UV degradation."
 ---
 

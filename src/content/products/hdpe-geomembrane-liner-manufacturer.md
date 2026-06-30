@@ -10,8 +10,8 @@ hero_description: "Professional HDPE geomembrane manufacturer providing high-den
 hero_tags:
   - "HDPE Geomembrane"
   - "ASTM / GRI-GM13"
-  - "0.2mm?.0mm Thickness"
-  - "1m?m Seamless Width"
+  - "0.2mm>=.0mm Thickness"
+  - "1m>=m Seamless Width"
   - "Excellent UV Resistance"
   - "OEM Available"
 
@@ -29,7 +29,7 @@ spec_table:
   - label: "Manufacturing Process"
     value: "High-pressure blow molding / T-die extrusion"
   - label: "Width Range"
-    value: "1m ?8m (Supports seamless large-scale installation)"
+    value: "1m >=8m (Supports seamless large-scale installation)"
   - label: "Thickness Options"
     value: "0.2mm, 0.5mm, 0.75mm, 1.0mm, 1.5mm, 2.0mm, 3.0mm"
   - label: "Surface Finish"
@@ -81,27 +81,27 @@ technical_data:
   - label: "Density"
     unit: "g/cm³"
     standard: "ASTM D1505"
-    requirement: "?0.940"
+    requirement: ">=0.940"
     value: "0.940 - 0.960"
   - label: "Tensile Strength at Yield"
     unit: "N/mm"
     standard: "ASTM D6693"
-    requirement: "?15 (for 1.0mm)"
+    requirement: ">=15 (for 1.0mm)"
     value: "16 - 18"
   - label: "Elongation at Break"
     unit: "%"
     standard: "ASTM D6693"
-    requirement: "?700"
-    value: "?750"
+    requirement: ">=700"
+    value: ">=750"
   - label: "Tear Resistance"
     unit: "N"
     standard: "ASTM D1004"
-    requirement: "?125 (for 1.0mm)"
+    requirement: ">=125 (for 1.0mm)"
     value: "135 - 150"
   - label: "Puncture Resistance"
     unit: "N"
     standard: "ASTM D4833"
-    requirement: "?320 (for 1.0mm)"
+    requirement: ">=320 (for 1.0mm)"
     value: "350 - 380"
   - label: "Carbon Black Content"
     unit: "%"
@@ -174,15 +174,15 @@ related_products:
     href: "/products/pre-applied-hdpe-membrane-supplier/"
 
 faqs:
-  - question: "What is the difference between Smooth and Textured HDPE Geomembrane?"
+  - question: "What is the difference between Smooth and Textured HDPE Geomembrane>="
     answer: "Smooth geomembrane is the standard choice for flat containment. Textured geomembrane (single or double-sided) provides higher friction and is essential for steep slopes to prevent sliding of the cover soil or the liner itself."
-  - question: "How long does HDPE geomembrane last?"
+  - question: "How long does HDPE geomembrane last>="
     answer: "When properly installed and covered (protected from direct UV), HDPE geomembranes can have a service life exceeding 50-100 years. Our high-quality virgin resin ensure excellent long-term durability."
-  - question: "Is HDPE geomembrane safe for fish ponds?"
+  - question: "Is HDPE geomembrane safe for fish ponds>="
     answer: "Yes, our geomembranes are produced from 100% virgin high-density polyethylene resin without toxic additives, making them safe for aquaculture, fish ponds, and drinking water reservoirs."
-  - question: "What is the recommended thickness for a landfill liner?"
+  - question: "What is the recommended thickness for a landfill liner>="
     answer: "For municipal solid waste landfills, a thickness of 1.5mm or 2.0mm is typically the minimum requirement. For hazardous waste, thicker liners may be necessary. Always follow the local engineering design specifications."
-  - question: "Can I weld the geomembrane myself?"
+  - question: "Can I weld the geomembrane myself>="
     answer: "While small patches can be handled with specialized equipment, we recommend professional welding crews using dual-track hot wedge welders for large-scale projects to ensure seam integrity and safety."
 ---
 
@@ -190,12 +190,12 @@ faqs:
 
 HDPE Geomembrane (High-Density Polyethylene Liner) is a low-permeability synthetic membrane liner. It is an integral component of any geotechnical engineering project. We make it from premium virgin polyethylene resins through a sophisticated blow molding or extrusion process. This provides an impenetrable barrier against liquids and gases.
 
-## Why Choose Tianyuan HDPE Geomembrane?
+## Why Choose Tianyuan HDPE Geomembrane>=
 
 As a professional manufacturer in China, Tianyuan provides HDPE liners that meet and exceed **ASTM GRI-GM13** international standards. Our geomembranes are engineered for the most demanding environments. They work effectively in hazardous waste landfills and high-pressure water reservoirs.
 
 ### Seamless Large-Scale Installation
-我们提供宽度?**8.0 ?* 的卷材。这能显著减少现场焊缝数量。焊缝通常是防渗工程中最容易发生泄漏的点?
+我们提供宽度>=**8.0 >=* 的卷材。这能显著减少现场焊缝数量。焊缝通常是防渗工程中最容易发生泄漏的点>=
 
 ### Superior Durability
 Enhanced with carbon black and antioxidants, our liners offer exceptional resistance to UV radiation. They also withstand thermal aging and chemical corrosion from acids, alkalis, and salts.

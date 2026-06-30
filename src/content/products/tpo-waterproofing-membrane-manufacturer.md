@@ -12,7 +12,7 @@ hero_description: "Factory-supplied TPO waterproofing membrane for exposed roofi
 hero_tags:
   - "TPO Sheet"
   - "GB27789-2011"
-  - "1.2mm?.0mm"
+  - "1.2mm>=.0mm"
   - "Hot-Air Weldable"
   - "Exposed Roofing"
   - "OEM Available"
@@ -81,24 +81,24 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: "?
+    unit: ">=
     standard: "GB27789-2011"
     requirement: "Standard Conformity"
     value: "Pass"
   - label: "Max Tension (L/P)"
     unit: "N/cm"
     standard: "GB27789-2011"
-    requirement: "L?00; P?50"
+    requirement: "L>=00; P>=50"
     value: "L: 200; P: 250"
   - label: "Tensile Strength (H)"
     unit: "MPa"
     standard: "GB27789-2011"
-    requirement: "H type ?12.0"
+    requirement: "H type >=12.0"
     value: "12.0"
   - label: "Elongation at Break"
     unit: "%"
     standard: "GB27789-2011"
-    requirement: "H?00; L?50"
+    requirement: "H>=00; L>=50"
     value: "H: 500; L: 250"
   - label: "Low Temp Flexibility"
     unit: "degC"
@@ -113,7 +113,7 @@ technical_data:
   - label: "Trapezoid Tear (L/P)"
     unit: "N"
     standard: "GB27789-2011"
-    requirement: "L?50; P?50"
+    requirement: "L>=50; P>=50"
     value: "L: 250; P: 450"
   - label: "Weathering Resistance"
     unit: "h"
@@ -182,11 +182,11 @@ related_products:
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
 
 faqs:
-  - question: "What is the primary use of TPO membrane?"
+  - question: "What is the primary use of TPO membrane>="
     answer: "TPO is primarily used for exposed roofing, planting roof systems, underground projects, and large venues where eco-friendly, heat-weldable solutions are required."
-  - question: "What thicknesses do you supply?"
+  - question: "What thicknesses do you supply>="
     answer: "Our standard thicknesses are 1.2mm, 1.5mm, 1.8mm, and 2.0mm, though custom thickness is available for OEM orders."
-  - question: "Is TPO recyclable?"
+  - question: "Is TPO recyclable>="
     answer: "Yes, our TPO membrane is nontoxic, environment-friendly, and 100% recyclable, contributing to energy-saving roof designs."
 ---
 

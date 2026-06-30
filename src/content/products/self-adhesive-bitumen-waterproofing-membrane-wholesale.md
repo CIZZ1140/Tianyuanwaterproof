@@ -75,12 +75,12 @@ technical_data:
   - label: "Tensile Strength"
     unit: "N/50mm"
     standard: "GB 23441"
-    requirement: "?500"
+    requirement: ">=500"
     value: "Qualified (550+)"
   - label: "Elongation at Break"
     unit: "%"
     standard: "GB 23441"
-    requirement: "?30"
+    requirement: ">=30"
     value: "45%+"
   - label: "Low Temp Flexibility"
     unit: "degC"
@@ -100,7 +100,7 @@ technical_data:
   - label: "Peel Strength (Metal)"
     unit: "N/mm"
     standard: "GB 23441"
-    requirement: "?1.5"
+    requirement: ">=1.5"
     value: "Passed"
 
 application_guide:
@@ -154,11 +154,11 @@ related_products:
     href: "/products/butyl-waterproof-sealing-tape-supplier/"
 
 faqs:
-  - question: "Is primer required for self-adhesive membranes?"
+  - question: "Is primer required for self-adhesive membranes>="
     answer: "While it can bond directly to clean metal, we strongly recommend using a cold bitumen primer on concrete to ensure maximum long-term adhesion."
-  - question: "Can it be installed in cold weather?"
+  - question: "Can it be installed in cold weather>="
     answer: "Bonding performance decreases below 5degC. For winter installation, we offer specialized cold-weather formulas with enhanced tackiness."
-  - question: "How long is the shelf life?"
+  - question: "How long is the shelf life>="
     answer: "When stored in a cool, dry place away from direct sunlight, the membrane has a shelf life of 12 to 18 months."
 ---
 

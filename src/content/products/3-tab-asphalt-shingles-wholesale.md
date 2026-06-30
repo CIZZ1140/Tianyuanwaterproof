@@ -73,7 +73,7 @@ technical_data:
   - label: "Tensile Strength (Long.)"
     unit: "N/50mm"
     standard: "GB/T 20474"
-    requirement: "?600"
+    requirement: ">=600"
     value: "Qualified (700+)"
   - label: "Heat Resistance"
     unit: "degC"
@@ -91,7 +91,7 @@ technical_data:
     requirement: "Class F (110mph)"
     value: "Passed"
   - label: "Fire Resistance"
-    unit: "?
+    unit: ">=
     standard: "UL 790"
     requirement: "Class A"
     value: "Class A Fire Rated"
@@ -149,13 +149,13 @@ related_products:
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
 
 faqs:
-  - question: "Are 3-tab shingles suitable for high-wind areas?"
+  - question: "Are 3-tab shingles suitable for high-wind areas>="
     answer: "Yes, our 3-tab shingles feature high-strength fiberglass mats and thermal-activated sealant strips to meet international wind resistance standards."
-  - question: "How many colors are available?"
+  - question: "How many colors are available>="
     answer: "We offer 12+ standard colors, including charcoal grey, terracotta red, and desert tan. Custom color matching is available for bulk OEM orders."
-  - question: "Can they be installed over existing roofs?"
+  - question: "Can they be installed over existing roofs>="
     answer: "While it is possible to install over a single layer of old shingles, we recommend a clean deck for the best long-term performance and warranty."
-  - question: "What is the life expectancy of these shingles?"
+  - question: "What is the life expectancy of these shingles>="
     answer: "With proper installation and ventilation, our premium modified bitumen 3-tab shingles typically last 20 to 30 years."
 ---
 
