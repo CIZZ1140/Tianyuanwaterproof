@@ -79,7 +79,7 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: ">=
+    unit: ">="=
     standard: "GB12952-2011"
     requirement: "Standard Conformity"
     value: "Passed"

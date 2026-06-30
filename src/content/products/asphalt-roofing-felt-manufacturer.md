@@ -71,7 +71,7 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: ">=
+    unit: ">="=
     standard: "ASTM D226 / D4869"
     requirement: "Standard Conformity"
     value: "Passed"
@@ -86,7 +86,7 @@ technical_data:
     requirement: "15# >=15; 30# >=20"
     value: "Qualified"
   - label: "Pliability (23degC)"
-    unit: ">=
+    unit: ">="=
     standard: "ASTM D226"
     requirement: "90° bend / 12.7mm radius"
     value: "No crack"

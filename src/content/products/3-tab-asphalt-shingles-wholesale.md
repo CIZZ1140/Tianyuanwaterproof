@@ -91,7 +91,7 @@ technical_data:
     requirement: "Class F (110mph)"
     value: "Passed"
   - label: "Fire Resistance"
-    unit: ">=
+    unit: ">="
     standard: "UL 790"
     requirement: "Class A"
     value: "Class A Fire Rated"

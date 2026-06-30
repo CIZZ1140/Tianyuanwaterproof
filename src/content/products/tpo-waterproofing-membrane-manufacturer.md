@@ -81,7 +81,7 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: ">=
+    unit: ">="=
     standard: "GB27789-2011"
     requirement: "Standard Conformity"
     value: "Pass"
