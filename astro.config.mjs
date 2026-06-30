@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://tyuanwaterproof.com',
   base: '/',
+  trailingSlash: 'always',
   output: 'static',
   redirects: {
     '/categories/asphalt-membranes': '/categories/bitumen-membranes',

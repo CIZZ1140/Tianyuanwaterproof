@@ -21,7 +21,7 @@ export const nav = [
   { label: 'Home', href: '/' },
   { 
     label: 'Products', 
-    href: '/products',
+    href: '/products/',
     children: [
       { label: 'Bitumen Membranes', href: '/categories/bitumen-membranes/' },
       { label: 'Polymer Membranes', href: '/categories/polymer-membranes/' },
@@ -31,19 +31,19 @@ export const nav = [
       { label: 'Geosynthetics', href: '/categories/geosynthetics/' }
     ]
   },
-  { label: 'Solutions', href: '/applications' },
+  { label: 'Solutions', href: '/applications/' },
   { 
     label: 'Resources', 
-    href: '/technical',
+    href: '/technical/',
     children: [
-      { label: 'Technical Data', href: '/technical' },
-      { label: 'Case Studies', href: '/projects' },
-      { label: 'Selection Guides', href: '/technical/installation-guide' },
-      { label: 'FAQ', href: '/technical/faq' }
+      { label: 'Technical Data', href: '/technical/' },
+      { label: 'Case Studies', href: '/projects/' },
+      { label: 'Selection Guides', href: '/technical/installation-guide/' },
+      { label: 'FAQ', href: '/technical/faq/' }
     ]
   },
-  { label: 'About Us', href: '/about' },
-  { label: 'Contact', href: '/contact' }
+  { label: 'About Us', href: '/about/' },
+  { label: 'Contact', href: '/contact/' }
 ];
 
 export const productCategories = [

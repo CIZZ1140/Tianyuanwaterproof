@@ -1,4 +1,6 @@
 {
+  "trailingSlash": true,
+  "cleanUrls": true,
   "redirects": [
     { "source": "/products/epdm-waterproofing-membrane", "destination": "/products/epdm-waterproofing-membrane-wholesale", "permanent": true },
     { "source": "/products/pvc-waterproofing-membrane", "destination": "/products/pvc-waterproofing-membrane-manufacturer", "permanent": true },
