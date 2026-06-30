@@ -200,7 +200,7 @@ Tianyuan's nonwoven geotextiles provide four critical functions for your project
 As a dedicated manufacturer in China, Tianyuan offers high-performance geosynthetics for global projects:
 
 ### Seamless Large Widths
-我们提供宽度>=**8.0 >=* 的卷材。这能显著减少大面积工程中的重叠数量和材料损耗>=
+We provide geotextile rolls with a seamless width of up to **8.0 meters**. This significantly reduces the number of overlaps and material waste in large-scale engineering projects.
 
 ### High Puncture Resistance
 Our needle-punching technology ensures the fabric can withstand the rigors of heavy machinery and sharp-edged aggregates during construction.

@@ -154,8 +154,8 @@ const products = await getCollection('products', ({ data }) => {
                         src={displayImage} 
                         alt={p.data.title} 
                         class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" 
-                        loading={index < 3 ? "eager" : "lazy"}
-                        fetchpriority={index < 3 ? "high" : "auto"}
+                        loading="lazy"
+                        decoding="async"
                         onerror="this.src='/placeholder.webp'; this.onerror=null;"
                       />
                     ) : (
