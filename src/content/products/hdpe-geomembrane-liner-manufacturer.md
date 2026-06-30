@@ -186,23 +186,30 @@ faqs:
     answer: "While small patches can be handled with specialized equipment, we recommend professional welding crews using dual-track hot wedge welders for large-scale projects to ensure seam integrity and safety."
 ---
 
-# HDPE Geomembrane: The Ultimate Solution for Anti-Seepage and Containment
+# HDPE Geomembrane Anti-Seepage Solutions
 
-**HDPE Geomembrane (High-Density Polyethylene Liner)** is a low-permeability synthetic membrane liner used as an integral component of any geotechnical engineering project. Made from premium virgin polyethylene resins through a sophisticated blow molding or extrusion process, it provides an impenetrable barrier against liquids and gases.
+HDPE Geomembrane (High-Density Polyethylene Liner) is a low-permeability synthetic membrane liner. It is an integral component of any geotechnical engineering project. We make it from premium virgin polyethylene resins through a sophisticated blow molding or extrusion process. This provides an impenetrable barrier against liquids and gases.
 
-### Why Choose Tianyuan HDPE Geomembrane?
+## Why Choose Tianyuan HDPE Geomembrane?
 
-As a professional manufacturer in China, Tianyuan provides HDPE liners that meet and exceed **ASTM GRI-GM13** international standards. Our geomembranes are engineered for the most demanding environments, from hazardous waste landfills to high-pressure water reservoirs.
+As a professional manufacturer in China, Tianyuan provides HDPE liners that meet and exceed **ASTM GRI-GM13** international standards. Our geomembranes are engineered for the most demanding environments. They work effectively in hazardous waste landfills and high-pressure water reservoirs.
 
-*   **Seamless Large-Scale Installation**: With widths up to 8 meters, our rolls minimize the number of on-site welds, which are the most common points of leakage in containment projects.
-*   **Superior Durability**: Enhanced with carbon black and antioxidants, our liners offer exceptional resistance to UV radiation, thermal aging, and chemical corrosion from acids, alkalis, and salts.
-*   **Versatile Surface Options**: We offer smooth liners for standard applications and textured liners for steep-slope stability in mining and landfill projects.
+### Seamless Large-Scale Installation
+我们提供宽度达 **8.0 米** 的卷材。这能显著减少现场焊缝数量。焊缝通常是防渗工程中最容易发生泄漏的点。
 
-### Core Applications
+### Superior Durability
+Enhanced with carbon black and antioxidants, our liners offer exceptional resistance to UV radiation. They also withstand thermal aging and chemical corrosion from acids, alkalis, and salts.
+
+### Versatile Surface Options
+We offer smooth liners for standard applications. We also provide textured liners for steep-slope stability in mining and landfill projects.
+
+## Core Applications
+
+Tianyuan HDPE liners are widely used in critical infrastructure:
 
 *   **Environmental Protection**: Primary and secondary containment for landfills, sewage treatment ponds, and industrial waste sites.
 *   **Agriculture & Aquaculture**: High-grade liners for fish ponds, shrimp farming, and irrigation canals.
 *   **Mining Industry**: Reliable heap leach pads, tailing dams, and evaporation ponds for chemical processing.
 *   **Water Management**: Lining for artificial lakes, golf course ponds, and municipal water reservoirs.
 
-Tianyuan Waterproof supports contractors and engineering distributors worldwide with reliable product supply, technical documentation (TDS/MSDS), and OEM customization for specific project requirements.
+Tianyuan Waterproof supports contractors and engineering distributors worldwide. We provide reliable product supply and full technical documentation (TDS/MSDS). Custom OEM options are available for your specific project requirements.

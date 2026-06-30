@@ -182,25 +182,30 @@ faqs:
     answer: "Yes, every batch undergoes strict internal QC testing. We also provide test reports based on ASTM or ISO standards upon request for project compliance."
 ---
 
-# Nonwoven Geotextile: The Multi-Functional Engineering Fabric
+# Nonwoven Geotextile Fabric Solutions
 
-**Nonwoven Geotextile** is an essential synthetic material for modern civil, hydraulic, and environmental engineering. Produced through a needle-punching process from 100% virgin polyester (PET) or polypropylene (PP) fibers, it creates a robust, permeable fabric designed to solve soil stability and drainage challenges.
+Nonwoven Geotextile is an essential synthetic material for modern civil, hydraulic, and environmental engineering. We produce it using a needle-punching process from 100% virgin polyester (PET) or polypropylene (PP) fibers. This creates a robust, permeable fabric designed to solve soil stability and drainage challenges.
 
-### Key Engineering Functions
+## Key Engineering Functions
 
-Tianyuan's nonwoven geotextiles are engineered to provide four critical functions:
+Tianyuan's nonwoven geotextiles provide four critical functions for your projects:
 
-1.  **Filtration**: It allows water to pass through while retaining soil particles, preventing the internal erosion of soil structures.
-2.  **Separation**: Prevents the mixing of two different soil layers (e.g., subgrade and aggregate), maintaining the structural integrity of roads and railways.
-3.  **Drainage**: Collects and transports excess water within its plane, ensuring effective relief of hydrostatic pressure.
-4.  **Protection**: Acts as a cushion to protect geomembranes and other waterproof liners from mechanical damage and puncture.
+1.  **Filtration**: It allows water to pass through while retaining soil particles. This prevents the internal erosion of soil structures.
+2.  **Separation**: It prevents the mixing of different soil layers, such as subgrade and aggregate. This maintains the structural integrity of roads and railways.
+3.  **Drainage**: The fabric collects and transports excess water within its plane. This ensures effective relief of hydrostatic pressure.
+4.  **Protection**: It acts as a cushion to protect geomembranes and other liners from mechanical damage and puncture.
 
-### Why Choose Tianyuan Geotextile?
+## Why Choose Tianyuan Geotextile?
 
-As a dedicated manufacturer in China's waterproofing and geosynthetics capital, Tianyuan offers more than just fabric:
+As a dedicated manufacturer in China, Tianyuan offers high-performance geosynthetics for global projects:
 
-*   **Seamless Large Widths**: We supply rolls up to **8.0 meters wide**, significantly reducing the number of overlaps and wastage on large project sites.
-*   **High Puncture Resistance**: Our needle-punching technology ensures the fabric can withstand the rigors of heavy machinery and sharp-edged aggregates during construction.
-*   **Chemical & Biological Stability**: Our fabrics are resistant to naturally occurring soil chemicals, acids, and alkalis, ensuring a design life that matches the infrastructure it protects.
+### Seamless Large Widths
+我们提供宽度达 **8.0 米** 的卷材。这能显著减少大面积工程中的重叠数量和材料损耗。
 
-Tianyuan Waterproof is a trusted partner for international engineering firms, distributors, and municipal projects. We provide full technical support, including **TDS, MSDS, and ISO/CE certifications**, to ensure your project meets the highest quality standards.
+### High Puncture Resistance
+Our needle-punching technology ensures the fabric can withstand the rigors of heavy machinery and sharp-edged aggregates during construction.
+
+### Chemical & Biological Stability
+Our fabrics resist naturally occurring soil chemicals, acids, and alkalis. This ensures a design life that matches the infrastructure it protects.
+
+Tianyuan Waterproof is a trusted partner for international engineering firms and distributors. We provide full technical support, including **TDS, MSDS, and ISO/CE certifications**, to ensure your project meets the highest quality standards.
