@@ -75,12 +75,12 @@ technical_data:
   - label: "Tensile Strength (L/T)"
     unit: "N/50mm"
     standard: "GB 18242"
-    requirement: "â‰¥ 800"
+    requirement: "â‰?800"
     value: "Qualified (900+)"
   - label: "Elongation at Break"
     unit: "%"
     standard: "GB 18242"
-    requirement: "â‰¥ 30"
+    requirement: "â‰?30"
     value: "40% - 50%"
   - label: "Heat Resistance"
     unit: "Â°C"
@@ -98,7 +98,7 @@ technical_data:
     requirement: "0.3MPa (30min)"
     value: "Passed"
   - label: "Puncture Resistance"
-    unit: "â€”"
+    unit: "â€?
     standard: "GB 18242"
     requirement: "No Leakage"
     value: "Passed"
@@ -125,7 +125,7 @@ packaging:
 
 loading_data:
   - label: "20FT Container"
-    value: "Approx. 2,000â€“3,000 mÂ² (Subject to thickness)"
+    value: "Approx. 2,000â€?,000 mÂ² (Subject to thickness)"
   - label: "Pallet Quantity"
     value: "20-30 rolls per pallet"
 
@@ -162,7 +162,7 @@ faqs:
     answer: "It provides extra UV protection and a decorative finish for exposed roofing, eliminating the need for a protective gravel layer."
 ---
 
-# Heavy-Duty Bituminous Waterproofing Solution
+## Heavy-Duty Bituminous Waterproofing Solution
 
 SBS / APP Modified Bitumen Waterproofing Membrane is the industrial standard for extreme durability and reliable protection. By combining premium petroleum asphalt with specialized polymer modifiers and a high-strength polyester reinforcement, we create a membrane that provides an impenetrable shield for your project's most critical structures.
 

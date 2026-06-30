@@ -10,7 +10,7 @@ hero_description: "Factory-supplied multi-layer high-polymer PP/PE composite wat
 hero_tags:
   - "PP/PE Composite"
   - "GB18173.1-2012"
-  - "0.5mm–1.5mm"
+  - "0.5mm�?.5mm"
   - "Multi-layer Design"
   - "Cement-based Bonding"
   - "OEM Available"
@@ -75,17 +75,17 @@ technical_data:
   - label: "Tensile Strength (23°C)"
     unit: "N/cm"
     standard: "GB18173.1 / FS2"
-    requirement: "≥ 60"
+    requirement: "�?60"
     value: "Qualified (75+)"
   - label: "Tensile Strength (60°C)"
     unit: "N/cm"
     standard: "GB18173.1 / FS2"
-    requirement: "≥ 30"
+    requirement: "�?30"
     value: "Passed"
   - label: "Breaking Elongation (-20°C)"
     unit: "%"
     standard: "GB18173.1 / FS2"
-    requirement: "≥ 300"
+    requirement: "�?300"
     value: "350%+"
   - label: "Impermeability"
     unit: "MPa"
@@ -95,17 +95,17 @@ technical_data:
   - label: "Low Temp Bending"
     unit: "°C"
     standard: "GB18173.1 / FS2"
-    requirement: "≤ -20°C"
+    requirement: "�?-20°C"
     value: "No crack"
   - label: "Alkali Resistance (Tensile)"
     unit: "%"
-    standard: "10% Ca(OH)₂ × 168h"
-    requirement: "≥ 80"
+    standard: "10% Ca(OH)�?× 168h"
+    requirement: "�?80"
     value: "Qualified"
   - label: "Heating Shrinkage"
     unit: "mm"
     standard: "GB18173.1 / FS2"
-    requirement: "≤ 4"
+    requirement: "�?4"
     value: "Passed"
 
 application_guide:
@@ -136,7 +136,7 @@ loading_data:
   - label: "Roll Length"
     value: "Up to 200m/roll for high efficiency"
   - label: "Container Load"
-    value: "Approx. 15,000–20,000 m² per 20FT container"
+    value: "Approx. 15,000�?0,000 m² per 20FT container"
 
 downloads:
   - title: "PP Membrane Technical Data"
@@ -171,7 +171,7 @@ faqs:
     answer: "Yes, the non-woven fiber surface provides excellent mechanical keying for cement-based tile adhesives."
 ---
 
-# Multi-Layer Composite Waterproofing Solution
+## Multi-Layer Composite Waterproofing Solution
 
 Polyethylene Polypropylene (PP/PE) composite membrane is a high-polymer waterproofing material designed for professional anti-seepage projects. Its unique multi-layer structure, featuring a dense PE core film laminated between high-strength non-woven PP fleece, provides both professional-grade watertightness and superior bonding capabilities.
 

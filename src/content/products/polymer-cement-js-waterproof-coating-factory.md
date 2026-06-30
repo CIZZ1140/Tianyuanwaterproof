@@ -77,17 +77,17 @@ technical_data:
   - label: "Tensile Strength"
     unit: "MPa"
     standard: "GB/T 23445"
-    requirement: "Type I â‰¥ 1.2 | Type II â‰¥ 1.8"
+    requirement: "Type I â‰?1.2 | Type II â‰?1.8"
     value: "Type I: 1.5 | Type II: 2.2"
   - label: "Elongation at Break"
     unit: "%"
     standard: "GB/T 23445"
-    requirement: "Type I â‰¥ 200 | Type II â‰¥ 80"
+    requirement: "Type I â‰?200 | Type II â‰?80"
     value: "Type I: 230 | Type II: 110"
   - label: "Adhesive Strength (Wet Base)"
     unit: "MPa"
     standard: "GB/T 23445"
-    requirement: "Type I â‰¥ 0.5 | Type II â‰¥ 0.7"
+    requirement: "Type I â‰?0.5 | Type II â‰?0.7"
     value: "Type I: 0.8 | Type II: 1.1"
   - label: "Water Impermeability"
     unit: "0.3MPa / 30min"
@@ -97,7 +97,7 @@ technical_data:
   - label: "Low Temp Flexibility"
     unit: "Â°C"
     standard: "GB/T 23445"
-    requirement: "Type I: -10 | Type II: â€”"
+    requirement: "Type I: -10 | Type II: â€?
     value: "Type I: -10 Passed"
 
 application_guide:
@@ -155,7 +155,7 @@ faqs:
     answer: "Yes, our JS coating is non-toxic and environmentally friendly, meeting safety standards for use in drinking water reservoirs and aquaculture ponds."
 ---
 
-# Polymer Cement (JS) Waterproof Coating: The Flexible Shield for Modern Construction
+## Polymer Cement (JS) Waterproof Coating: The Flexible Shield for Modern Construction
 
 **Polymer Cement (JS) Waterproof Coating** is a high-performance, two-component waterproofing material that combines the high elasticity of synthetic polymers with the excellent durability of cementitious materials. By mixing our proprietary acrylic liquid (Component A) with specialized mineral powders (Component B), you create a flexible slurry that cures into a seamless, tenacious waterproof membrane.
 

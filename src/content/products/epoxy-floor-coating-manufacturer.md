@@ -73,27 +73,27 @@ technical_data:
   - label: "Solid Content"
     unit: "%"
     standard: "Reference Standard"
-    requirement: "â‰¥ 90"
+    requirement: "â‰?90"
     value: "95%"
   - label: "VOC Content"
     unit: "g/L"
     standard: "Eco Test"
-    requirement: "â‰¤ 120"
+    requirement: "â‰?120"
     value: "115"
   - label: "Pencil Hardness"
-    unit: "â€”"
+    unit: "â€?
     standard: "Scratch Test"
     requirement: "Reported Result"
     value: "HB"
   - label: "Drying Time (Surface)"
     unit: "h"
     standard: "23Â°C"
-    requirement: "â‰¤ 24"
+    requirement: "â‰?24"
     value: "12-16"
   - label: "Drying Time (Practical)"
     unit: "h"
     standard: "23Â°C"
-    requirement: "â‰¤ 72"
+    requirement: "â‰?72"
     value: "48-72"
   - label: "Water Resistance"
     unit: "h"
@@ -166,7 +166,7 @@ faqs:
     answer: "Absolutely. We support color matching and color sand decorative effects based on your project requirements."
 ---
 
-# Professional Epoxy Self-Leveling Floor Solution
+## Professional Epoxy Self-Leveling Floor Solution
 
 Epoxy color sand self-leveling floor coating is a premier two-component system engineered for high-durability decorative flooring. By combining a 95% solid content epoxy resin with specialized curing agents, it creates a hard, seamless, and mirror-like surface that transforms any interior space.
 

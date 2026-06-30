@@ -12,7 +12,7 @@ hero_description: "Factory-supplied TPO waterproofing membrane for exposed roofi
 hero_tags:
   - "TPO Sheet"
   - "GB27789-2011"
-  - "1.2mmâ€“2.0mm"
+  - "1.2mmâ€?.0mm"
   - "Hot-Air Weldable"
   - "Exposed Roofing"
   - "OEM Available"
@@ -81,24 +81,24 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: "â€”"
+    unit: "â€?
     standard: "GB27789-2011"
     requirement: "Standard Conformity"
     value: "Pass"
   - label: "Max Tension (L/P)"
     unit: "N/cm"
     standard: "GB27789-2011"
-    requirement: "Lâ‰¥200; Pâ‰¥250"
+    requirement: "Lâ‰?00; Pâ‰?50"
     value: "L: 200; P: 250"
   - label: "Tensile Strength (H)"
     unit: "MPa"
     standard: "GB27789-2011"
-    requirement: "H type â‰¥ 12.0"
+    requirement: "H type â‰?12.0"
     value: "12.0"
   - label: "Elongation at Break"
     unit: "%"
     standard: "GB27789-2011"
-    requirement: "Hâ‰¥500; Lâ‰¥250"
+    requirement: "Hâ‰?00; Lâ‰?50"
     value: "H: 500; L: 250"
   - label: "Low Temp Flexibility"
     unit: "Â°C"
@@ -113,7 +113,7 @@ technical_data:
   - label: "Trapezoid Tear (L/P)"
     unit: "N"
     standard: "GB27789-2011"
-    requirement: "Lâ‰¥250; Pâ‰¥450"
+    requirement: "Lâ‰?50; Pâ‰?50"
     value: "L: 250; P: 450"
   - label: "Weathering Resistance"
     unit: "h"
@@ -190,7 +190,7 @@ faqs:
     answer: "Yes, our TPO membrane is nontoxic, environment-friendly, and 100% recyclable, contributing to energy-saving roof designs."
 ---
 
-# High-Performance TPO Roofing Sheet
+## High-Performance TPO Roofing Sheet
 
 TPO waterproofing membrane, also known as thermoplastic polyolefin sheet, is a synthetic polymer waterproofing membrane made of ethylene and Î±-olefin polymer. It is a modern, eco-friendly material that combines the durability of rubber with the easy installation of plastic.
 

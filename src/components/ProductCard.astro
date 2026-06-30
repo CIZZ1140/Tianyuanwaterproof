@@ -14,7 +14,13 @@ const imageFitClass = isFullWidthProduct ? "object-cover p-0" : "object-contain 
 ---
 <a href={href} class="group card block overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all">
   <div class="aspect-[4/3] bg-slate-50">
-    <img src={image} alt={title} loading="lazy" class={`h-full w-full ${imageFitClass}`} />
+    <img 
+      src={image} 
+      alt={title} 
+      loading="lazy" 
+      class={`h-full w-full ${imageFitClass}`} 
+      onerror="this.src='/placeholder.webp'; this.onerror=null;"
+    />
   </div>
   <div class="p-5">
     <h3 class="text-base font-extrabold text-navy group-hover:text-brand">{title}</h3>

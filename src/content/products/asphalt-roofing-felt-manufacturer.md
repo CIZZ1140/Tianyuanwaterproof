@@ -71,39 +71,39 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: "â€”"
+    unit: "â€?
     standard: "ASTM D226 / D4869"
     requirement: "Standard Conformity"
     value: "Passed"
   - label: "Breaking Strength (MD)"
     unit: "lbf/in"
     standard: "ASTM D226"
-    requirement: "15# â‰¥ 30; 30# â‰¥ 40"
+    requirement: "15# â‰?30; 30# â‰?40"
     value: "Qualified"
   - label: "Breaking Strength (CD)"
     unit: "lbf/in"
     standard: "ASTM D226"
-    requirement: "15# â‰¥ 15; 30# â‰¥ 20"
+    requirement: "15# â‰?15; 30# â‰?20"
     value: "Qualified"
   - label: "Pliability (23Â°C)"
-    unit: "â€”"
+    unit: "â€?
     standard: "ASTM D226"
     requirement: "90Â° bend / 12.7mm radius"
     value: "No crack"
   - label: "Net Mass (15# Type)"
     unit: "g/mÂ²"
     standard: "ASTM D226"
-    requirement: "â‰¥ 560"
+    requirement: "â‰?560"
     value: "580+"
   - label: "Saturation by Weight"
     unit: "%"
     standard: "ASTM D226"
-    requirement: "â‰¥ 120"
+    requirement: "â‰?120"
     value: "135%+"
   - label: "Loss on Heating"
     unit: "%"
     standard: "ASTM D226"
-    requirement: "â‰¤ 4.0"
+    requirement: "â‰?4.0"
     value: "Passed"
 
 application_guide:
@@ -171,7 +171,7 @@ faqs:
     answer: "It provides temporary protection, but it should be covered by shingles or tiles within a few days to avoid UV degradation."
 ---
 
-# Essential Pitched Roof Underlayment
+## Essential Pitched Roof Underlayment
 
 Asphalt saturated organic felt, often referred to as roofing felt or tar paper, is a time-tested material used as an underlayment in pitched roofing systems. By saturating a high-quality organic fiber mat with premium petroleum asphalt, we create a durable moisture barrier that is both flexible and vapor-permeable.
 

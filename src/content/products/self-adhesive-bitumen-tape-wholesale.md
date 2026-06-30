@@ -12,8 +12,8 @@ hero_description: "Professional cold-applied SBS rubberized bitumen sealing tape
 hero_tags:
   - "SBS Bitumen"
   - "Aluminum Foil"
-  - "1.0mmâ€“1.5mm"
-  - "5cmâ€“30cm Width"
+  - "1.0mmâ€?.5mm"
+  - "5cmâ€?0cm Width"
   - "Instant Seal"
   - "OEM Available"
 
@@ -75,7 +75,7 @@ technical_data:
   - label: "Persistent Adhesivity"
     unit: "min"
     standard: "Reference Standard"
-    requirement: "â‰¥ 20"
+    requirement: "â‰?20"
     value: "Passed"
   - label: "Heat Resistance (80Â°C)"
     unit: "h"
@@ -90,17 +90,17 @@ technical_data:
   - label: "Shear Adhesion"
     unit: "MPa"
     standard: "Reference Standard"
-    requirement: "â‰¥ 2.0"
+    requirement: "â‰?2.0"
     value: "Qualified"
   - label: "Peel Strength (Metal)"
     unit: "N/mm"
     standard: "Reference Standard"
-    requirement: "â‰¥ 0.6"
+    requirement: "â‰?0.6"
     value: "High Bond"
   - label: "Overlap Minimum"
     unit: "cm"
     standard: "Installation Rule"
-    requirement: "â‰¥ 25"
+    requirement: "â‰?25"
     value: "Ensures Seal"
 
 application_guide:
@@ -166,7 +166,7 @@ faqs:
     answer: "When applied to a clean, dry surface, our SBS bitumen tape provides a reliable seal for 10-15 years in typical roofing conditions."
 ---
 
-# High-Performance Bitumen Sealing Solution
+## High-Performance Bitumen Sealing Solution
 
 Self-adhesive bitumen tape is a premier, cold-applied waterproofing material engineered for high-performance sealing and repair. Combining a flexible SBS-modified bitumen compound with a durable aluminum foil top layer, it provides an instant, airtight barrier against water ingress.
 

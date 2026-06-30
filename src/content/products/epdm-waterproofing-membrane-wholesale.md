@@ -12,7 +12,7 @@ hero_description: "Factory-supplied premium EPDM rubber waterproofing membrane f
 hero_tags:
   - "EPDM Rubber"
   - "GB/T 18173.1-2012"
-  - "1.0mmâ€“2.0mm"
+  - "1.0mmâ€?.0mm"
   - "20m/Roll"
   - "Aging Resistance"
   - "OEM Available"
@@ -49,7 +49,7 @@ quick_facts:
   - title: "50-Year Service Life"
     text: "Exceptional anti-aging performance, weather resistance, and ozone resistance for long-term protection."
   - title: "High Elongation"
-    text: "Superior elongation (â‰¥450%) and tensile strength to accommodate significant structural movement."
+    text: "Superior elongation (â‰?50%) and tensile strength to accommodate significant structural movement."
   - title: "Extreme Temp Range"
     text: "Maintains flexibility at -40Â°C and stability under damp-heat conditions, suitable for all climates."
   - title: "Eco-Friendly Rubber"
@@ -77,24 +77,24 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: "â€”"
+    unit: "â€?
     standard: "GB/T 18173.1-2012"
     requirement: "Standard Conformity"
     value: "Pass"
   - label: "Tensile Strength"
     unit: "MPa"
     standard: "GB/T 18173.1"
-    requirement: "Vulcanized â‰¥ 7.5"
+    requirement: "Vulcanized â‰?7.5"
     value: "9.0+"
   - label: "Elongation at Break"
     unit: "%"
     standard: "GB/T 18173.1"
-    requirement: "Vulcanized â‰¥ 450"
+    requirement: "Vulcanized â‰?450"
     value: "500% - 600%"
   - label: "Tear Strength"
     unit: "kN/m"
     standard: "GB/T 18173.1"
-    requirement: "Vulcanized â‰¥ 25"
+    requirement: "Vulcanized â‰?25"
     value: "30+"
   - label: "Low Temp Bending"
     unit: "Â°C"
@@ -109,10 +109,10 @@ technical_data:
   - label: "Joint Peel Strength"
     unit: "N/mm"
     standard: "GB/T 18173.1"
-    requirement: "H type â‰¥ 4.0"
+    requirement: "H type â‰?4.0"
     value: "Passed"
   - label: "Ozone Aging"
-    unit: "â€”"
+    unit: "â€?
     standard: "40Â°C, 500pphm"
     requirement: "No cracking"
     value: "Passed"
@@ -129,7 +129,7 @@ application_guide:
   - title: "Pave & Roll"
     text: "Lay the membrane smoothly, exhausting air with a roller to ensure full bonding."
   - title: "Joint Sealing"
-    text: "Treat long-side (â‰¥100mm) and short-side (â‰¥150mm) laps with adhesive or professional seam tape."
+    text: "Treat long-side (â‰?00mm) and short-side (â‰?50mm) laps with adhesive or professional seam tape."
 
 packaging:
   - title: "Roll Packaging"
@@ -141,7 +141,7 @@ packaging:
 
 loading_data:
   - label: "20FT Container"
-    value: "Approx. 5,000â€“8,000 mÂ² (Depending on thickness)"
+    value: "Approx. 5,000â€?,000 mÂ² (Depending on thickness)"
   - label: "Storage Period"
     value: "One year under standard conditions"
 
@@ -178,7 +178,7 @@ faqs:
     answer: "It is generally installed using a full adhesive bonding system or mechanical fastening, with joints sealed by seam tapes or adhesives."
 ---
 
-# High-Durability EPDM Rubber Waterproofing
+## High-Durability EPDM Rubber Waterproofing
 
 EPDM rubber waterproofing membrane is a premier synthetic polymer sheet made from ethylene-propylene diene monomer rubber. Renowned for its extreme longevity and anti-aging performance, it is the gold standard for high-demand civil and industrial waterproofing projects.
 

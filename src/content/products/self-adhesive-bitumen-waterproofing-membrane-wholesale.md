@@ -75,12 +75,12 @@ technical_data:
   - label: "Tensile Strength"
     unit: "N/50mm"
     standard: "GB 23441"
-    requirement: "â‰¥ 500"
+    requirement: "â‰?500"
     value: "Qualified (550+)"
   - label: "Elongation at Break"
     unit: "%"
     standard: "GB 23441"
-    requirement: "â‰¥ 30"
+    requirement: "â‰?30"
     value: "45%+"
   - label: "Low Temp Flexibility"
     unit: "Â°C"
@@ -100,7 +100,7 @@ technical_data:
   - label: "Peel Strength (Metal)"
     unit: "N/mm"
     standard: "GB 23441"
-    requirement: "â‰¥ 1.5"
+    requirement: "â‰?1.5"
     value: "Passed"
 
 application_guide:
@@ -162,7 +162,7 @@ faqs:
     answer: "When stored in a cool, dry place away from direct sunlight, the membrane has a shelf life of 12 to 18 months."
 ---
 
-# Secure Cold-Applied Waterproofing
+## Secure Cold-Applied Waterproofing
 
 Self-adhesive bituminous waterproofing membrane is the modern, safe alternative to traditional torch-on systems. By utilizing premium high-tack rubberized asphalt, it provides an impenetrable, flexible barrier that's exceptionally fast and easy to install.
 

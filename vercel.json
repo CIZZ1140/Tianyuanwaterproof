@@ -2,16 +2,65 @@
   "trailingSlash": true,
   "cleanUrls": true,
   "redirects": [
-    { "source": "/products/epdm-waterproofing-membrane", "destination": "/products/epdm-waterproofing-membrane-wholesale", "permanent": true },
-    { "source": "/products/pvc-waterproofing-membrane", "destination": "/products/pvc-waterproofing-membrane-manufacturer", "permanent": true },
-    { "source": "/products/pre-applied-hdpe-waterproofing-membrane", "destination": "/products/pre-applied-hdpe-membrane-supplier", "permanent": true },
-    { "source": "/products/pp-pe-composite-waterproofing-membrane", "destination": "/products/pp-pe-composite-membrane-factory", "permanent": true },
-    { "source": "/products/asphalt-roofing-felt", "destination": "/products/asphalt-roofing-felt-manufacturer", "permanent": true },
-    { "source": "/products/bitumen-tape", "destination": "/products/self-adhesive-bitumen-tape-wholesale", "permanent": true },
-    { "source": "/products/butyl-tape", "destination": "/products/butyl-waterproof-sealing-tape-supplier", "permanent": true },
-    { "source": "/products/asphalt-shingles-3-tab", "destination": "/products/3-tab-asphalt-shingles-wholesale", "permanent": true },
-    { "source": "/products/asphalt-shingles-laminated", "destination": "/products/laminated-asphalt-shingles-manufacturer", "permanent": true },
-    { "source": "/products/asphalt-shingles-artistic", "destination": "/products/artistic-asphalt-shingles-supplier", "permanent": true },
-    { "source": "/products/polyurethane-waterproof-coating", "destination": "/products/polyurethane-waterproof-coating-factory", "permanent": true }
+    {
+      "source": "/products/epdm-waterproofing-membrane",
+      "destination": "/products/epdm-waterproofing-membrane-wholesale",
+      "permanent": true
+    },
+    {
+      "source": "/products/pvc-waterproofing-membrane",
+      "destination": "/products/pvc-waterproofing-membrane-manufacturer",
+      "permanent": true
+    },
+    {
+      "source": "/products/pre-applied-hdpe-waterproofing-membrane",
+      "destination": "/products/pre-applied-hdpe-membrane-supplier",
+      "permanent": true
+    },
+    {
+      "source": "/products/pp-pe-composite-waterproofing-membrane",
+      "destination": "/products/pp-pe-composite-membrane-factory",
+      "permanent": true
+    },
+    {
+      "source": "/products/asphalt-roofing-felt",
+      "destination": "/products/asphalt-roofing-felt-manufacturer",
+      "permanent": true
+    },
+    {
+      "source": "/products/bitumen-tape",
+      "destination": "/products/self-adhesive-bitumen-tape-wholesale",
+      "permanent": true
+    },
+    {
+      "source": "/products/butyl-tape",
+      "destination": "/products/butyl-waterproof-sealing-tape-supplier",
+      "permanent": true
+    },
+    {
+      "source": "/products/asphalt-shingles-3-tab",
+      "destination": "/products/3-tab-asphalt-shingles-wholesale",
+      "permanent": true
+    },
+    {
+      "source": "/products/asphalt-shingles-laminated",
+      "destination": "/products/laminated-asphalt-shingles-manufacturer",
+      "permanent": true
+    },
+    {
+      "source": "/products/asphalt-shingles-artistic",
+      "destination": "/products/artistic-asphalt-shingles-supplier",
+      "permanent": true
+    },
+    {
+      "source": "/products/polyurethane-waterproof-coating",
+      "destination": "/products/polyurethane-waterproof-coating-factory",
+      "permanent": true
+    },
+    {
+      "source": "/products/butyl-rubber-waterproof-sealing-tape",
+      "destination": "/products/butyl-waterproof-sealing-tape-supplier",
+      "permanent": true
+    }
   ]
 }

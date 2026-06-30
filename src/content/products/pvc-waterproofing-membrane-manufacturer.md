@@ -10,7 +10,7 @@ hero_description: "Industrial-grade PVC single-ply waterproofing membrane for ro
 hero_tags:
   - "PVC Polymer"
   - "GB12952-2011"
-  - "1.2mmâ€“2.0mm"
+  - "1.2mmâ€?.0mm"
   - "Hot-Air Weldable"
   - "Root Resistant"
   - "OEM Available"
@@ -79,19 +79,19 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: "â€”"
+    unit: "â€?
     standard: "GB12952-2011"
     requirement: "Standard Conformity"
     value: "Passed"
   - label: "Tensile Strength (H/G)"
     unit: "MPa"
     standard: "GB12952-2011"
-    requirement: "â‰¥ 10"
+    requirement: "â‰?10"
     value: "Qualified (12+)"
   - label: "Breaking Elongation"
     unit: "%"
     standard: "GB12952-2011"
-    requirement: "H type â‰¥ 200"
+    requirement: "H type â‰?200"
     value: "250%+"
   - label: "Low Temp Flexibility"
     unit: "Â°C"
@@ -106,17 +106,17 @@ technical_data:
   - label: "Joint Peeling Strength"
     unit: "N/mm"
     standard: "GB12952-2011"
-    requirement: "P type â‰¥ 3.0"
+    requirement: "P type â‰?3.0"
     value: "Qualified"
   - label: "Dimensional Stability"
     unit: "%"
     standard: "GB12952-2011"
-    requirement: "P type â‰¤ 0.5"
+    requirement: "P type â‰?0.5"
     value: "Pass"
   - label: "Chemical Resistance"
     unit: "%"
     standard: "Tensile Retention"
-    requirement: "â‰¥ 85"
+    requirement: "â‰?85"
     value: "Passed"
 
 application_guide:
@@ -145,7 +145,7 @@ loading_data:
   - label: "Standard"
     value: "GB12952-2011 Certified"
   - label: "Container Load"
-    value: "Approx. 8,000â€“12,000 mÂ² (Subject to thickness)"
+    value: "Approx. 8,000â€?2,000 mÂ² (Subject to thickness)"
   - label: "Width Options"
     value: "2.05m large-format or 1.0m standard"
 
@@ -182,7 +182,7 @@ faqs:
     answer: "When properly installed, roofing-grade PVC membranes provide reliable waterproofing for 20 to 25 years."
 ---
 
-# High-Performance Polyvinyl Chloride Waterproofing
+## High-Performance Polyvinyl Chloride Waterproofing
 
 PVC waterproofing membrane is a premium polymer sheet manufactured from high-quality polyvinyl chloride resin mixed with UV stabilizers and plasticizers. Renowned for its versatility and security, it is the preferred solution for industrial roofing, reservoirs, and underground infrastructure.
 

@@ -69,12 +69,12 @@ technical_data:
   - label: "Tensile Strength"
     unit: "N/50mm"
     standard: "GB/T 20474"
-    requirement: "â‰¥ 600"
+    requirement: "â‰?600"
     value: "Qualified (750+)"
   - label: "Tear Resistance"
     unit: "N"
     standard: "GB/T 20474"
-    requirement: "â‰¥ 10"
+    requirement: "â‰?10"
     value: "Passed"
   - label: "Heat Resistance"
     unit: "Â°C"
@@ -150,7 +150,7 @@ faqs:
     answer: "Yes, our asphalt shingles achieve high fire resistance ratings to ensure the safety of the building."
 ---
 
-# Creative Roofing for Unique Designs
+## Creative Roofing for Unique Designs
 
 Artistic Hexagonal and Fish-Scale Shingles are designed for those who want their roof to stand out. Moving beyond the standard rectangle, these shapes offer a creative and high-end look for residential villas and boutique commercial buildings.
 

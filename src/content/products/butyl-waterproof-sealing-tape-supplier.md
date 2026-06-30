@@ -73,14 +73,14 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: "â€”"
+    unit: "â€?
     standard: "JC/T 942-2004"
     requirement: "Standard Conformity"
     value: "Passed"
   - label: "Persistent Adhesivity"
     unit: "min"
     standard: "JC/T 942-2004"
-    requirement: "â‰¥ 20"
+    requirement: "â‰?20"
     value: "20+"
   - label: "Heat Resistance (80Â°C)"
     unit: "h"
@@ -95,17 +95,17 @@ technical_data:
   - label: "Shear State Adhesion"
     unit: "MPa"
     standard: "JC/T 942-2004"
-    requirement: "â‰¥ 2.0"
+    requirement: "â‰?2.0"
     value: "Qualified"
   - label: "Peel Strength (Cement)"
     unit: "N/mm"
     standard: "JC/T 942-2004"
-    requirement: "â‰¥ 0.6"
+    requirement: "â‰?0.6"
     value: "0.8+"
   - label: "Alkaline Resistance"
     unit: "%"
-    standard: "Ca(OH)â‚‚ retention"
-    requirement: "â‰¥ 80"
+    standard: "Ca(OH)â‚?retention"
+    requirement: "â‰?80"
     value: "Passed"
 
 application_guide:
@@ -171,7 +171,7 @@ faqs:
     answer: "Our standard butyl tape can be installed from -15Â°C to 45Â°C. For extreme climates, specialized formulas are available."
 ---
 
-# Professional Butyl Sealing Solution
+## Professional Butyl Sealing Solution
 
 Butyl rubber waterproof sealing self-adhesive tape is a premier, solvent-free material designed for high-performance sealing in construction and industrial projects. Engineered from a blend of butyl rubber and high-polymer materials, it provides an impenetrable, flexible barrier for everything from residential roofing to subway tunnels.
 

@@ -142,6 +142,7 @@ const products = await getCollection('products', ({ data }) => {
                         class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" 
                         loading={index < 3 ? "eager" : "lazy"}
                         fetchpriority={index < 3 ? "high" : "auto"}
+                        onerror="this.src='/placeholder.webp'; this.onerror=null;"
                       />
                     ) : (
                       <div class="w-full h-full flex flex-col items-center justify-center text-slate-400 p-6 text-center select-none">

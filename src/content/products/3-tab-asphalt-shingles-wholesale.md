@@ -73,7 +73,7 @@ technical_data:
   - label: "Tensile Strength (Long.)"
     unit: "N/50mm"
     standard: "GB/T 20474"
-    requirement: "â‰¥ 600"
+    requirement: "â‰?600"
     value: "Qualified (700+)"
   - label: "Heat Resistance"
     unit: "Â°C"
@@ -91,7 +91,7 @@ technical_data:
     requirement: "Class F (110mph)"
     value: "Passed"
   - label: "Fire Resistance"
-    unit: "â€”"
+    unit: "â€?
     standard: "UL 790"
     requirement: "Class A"
     value: "Class A Fire Rated"
@@ -159,7 +159,7 @@ faqs:
     answer: "With proper installation and ventilation, our premium modified bitumen 3-tab shingles typically last 20 to 30 years."
 ---
 
-# Economic and Durable Roofing Solution
+## Economic and Durable Roofing Solution
 
 Asphalt roofing shingles are tile-shaped asphalt waterproofing sheets designed for exposed pitched roof waterproofing and decorative roof applications. The product uses fiberglass carrier dipped with qualified petroleum bitumen. One side is covered with colored mineral particles or metal foil, while the other side uses isolation material to support packaging, transportation, and installation.
 

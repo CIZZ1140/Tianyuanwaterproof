@@ -74,12 +74,12 @@ technical_data:
   - label: "Tensile Strength"
     unit: "N/50mm"
     standard: "GB/T 20474"
-    requirement: "â‰¥ 800"
+    requirement: "â‰?800"
     value: "Qualified (1000+)"
   - label: "Tear Strength"
     unit: "N"
     standard: "ASTM D3462"
-    requirement: "â‰¥ 25"
+    requirement: "â‰?25"
     value: "Passed"
   - label: "Heat Resistance"
     unit: "Â°C"
@@ -87,7 +87,7 @@ technical_data:
     requirement: "100Â°C"
     value: "No flowing, no dripping"
   - label: "Fire Classification"
-    unit: "â€”"
+    unit: "â€?
     standard: "UL 790"
     requirement: "Class A"
     value: "Class A Fire Rated"
@@ -155,7 +155,7 @@ faqs:
     answer: "With professional installation, these shingles typically provide a service life of 30 years or more."
 ---
 
-# Premium Architectural Roofing
+## Premium Architectural Roofing
 
 Laminated Architectural Shingles are the gold standard in residential roofing. By bonding two layers of asphalt-saturated fiberglass mats together, we create a shingle that is not only tougher and heavier but also significantly more beautiful than standard flat shingles.
 
