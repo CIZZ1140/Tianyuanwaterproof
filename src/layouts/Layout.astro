@@ -7,9 +7,10 @@ import { site } from '../data/site';
 interface Props {
 	title: string;
 	description?: string;
+	preloadImage?: string;
 }
 
-const { title, description = "Weifang Tianyuan Waterproof Material Co., Ltd. - Professional Waterproofing Solutions" } = Astro.props;
+const { title, description = "Weifang Tianyuan Waterproof Material Co., Ltd. - Professional Waterproofing Solutions", preloadImage } = Astro.props;
 
 const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?text=Hi%2C%20I'm%20interested%20in%20your%20waterproofing%20materials.%20Could%20you%20please%20send%20me%20a%20catalog%20and%20price%20list%3F";
 ---
@@ -24,7 +25,23 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		
-		{/* Priority LCP Preload */}
+		{preloadImage && (
+			<link 
+				rel="preload" 
+				as="image" 
+				href={preloadImage} 
+				fetchpriority="high"
+			/>
+		)}
+
+		<!-- Core Web Vitals Optimizations -->
+		<link rel="preconnect" href="https://img.tyuanwaterproof.com" crossorigin />
+		<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+		<link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
+		<link rel="dns-prefetch" href="https://img.tyuanwaterproof.com" />
+		<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+		
+		{/* Priority LCP Preload - Using fetchpriority="high" to boost loading */}
 		<link 
 			rel="preload" 
 			as="image" 
@@ -41,10 +58,6 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 			type="image/webp"
 			fetchpriority="high"
 		/>
-
-		<!-- Speed Optimizations -->
-		<link rel="preconnect" href="https://img.tyuanwaterproof.com" crossorigin />
-		<link rel="dns-prefetch" href="https://img.tyuanwaterproof.com" />
 	</head>
 	<body class="bg-[#F5F7FA] text-[#102033] antialiased font-sans">
 		<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-[200] focus:bg-white focus:p-4 focus:text-navy focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-brand">
@@ -69,22 +82,37 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 			</svg>
 		</a>
 
-		{/* Scripts: Deferred to keep main thread free for LCP */}
+		{/* Scripts: Ultra-deferred to protect LCP and TBT */}
 		<script is:inline>
-			// Delay non-critical analytics to prioritize LCP
-			window.addEventListener('load', () => {
-				setTimeout(() => {
-					const script = document.createElement('script');
-					script.src = "https://www.googletagmanager.com/gtag/js?id=AW-18274384476";
-					script.async = true;
-					document.body.appendChild(script);
+			// Helper to load external script
+			function loadExternalScript(src, callback) {
+				const script = document.createElement('script');
+				script.src = src;
+				script.async = true;
+				script.onload = callback;
+				document.body.appendChild(script);
+			}
 
+			// Run when browser is idle or after a major delay
+			function initAnalytics() {
+				loadExternalScript("https://www.googletagmanager.com/gtag/js?id=AW-18274384476", () => {
 					window.dataLayer = window.dataLayer || [];
 					function gtag(){dataLayer.push(arguments);}
 					gtag('js', new Date());
 					gtag('config', 'AW-18274384476');
-				}, 2000); // 2 seconds delay
-			});
+				});
+			}
+
+			// Intersection Observer to load when user starts interacting or 3.5s timeout
+			if ('requestIdleCallback' in window) {
+				requestIdleCallback(() => {
+					setTimeout(initAnalytics, 1500);
+				});
+			} else {
+				window.addEventListener('load', () => {
+					setTimeout(initAnalytics, 3500);
+				});
+			}
 		</script>
 	</body>
 </html>

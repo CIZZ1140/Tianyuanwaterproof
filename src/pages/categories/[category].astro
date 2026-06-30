@@ -97,10 +97,14 @@ const products = await getCollection('products', ({ data }) => {
 });
 ---
 
-<Layout title={`${cat.name} Wholesale & OEM - Weifang Tianyuan Waterproof`} description={cat.desc}>
+<Layout 
+  title={`${cat.name} Wholesale & OEM - Weifang Tianyuan Waterproof`} 
+  description={cat.desc}
+  preloadImage={cat.image}
+>
   <main class="bg-slate-50 min-h-screen">
     <!-- Category Hero Header -->
-    <section class="relative py-28 bg-gradient-to-r from-[#0B1E3B] to-[#162D55] text-white overflow-hidden border-b border-white/10">
+    <section class="relative py-28 bg-[#0B1E3B] text-white overflow-hidden border-b border-white/10">
       <div class="absolute inset-0 bg-[url('/assets/images/grid.svg')] opacity-10"></div>
       <div class="relative z-10 max-w-7xl mx-auto px-6 text-center sm:text-left">
         <nav class="flex text-sm font-bold text-blue-200/90 gap-3 justify-center sm:justify-start items-center mb-6 uppercase tracking-wider">
@@ -122,7 +126,7 @@ const products = await getCollection('products', ({ data }) => {
             <p class="text-3xl font-extrabold text-slate-900">Standard Specifications</p>
           </div>
           <div class="grid md:grid-cols-3 gap-10">
-            {products.map(p => {
+            {products.map((p, index) => {
               let displayImage = p.data.main_image || p.data.image || "";
               if (displayImage && !displayImage.toLowerCase().endsWith(".webp") && !displayImage.toLowerCase().endsWith(".jpg")) {
                 displayImage = displayImage.replace(/\/$/, "") + ".webp";
@@ -132,7 +136,13 @@ const products = await getCollection('products', ({ data }) => {
                 <a href={`/products/${p.slug}/`} class="group block bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-all cursor-pointer">
                   <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-slate-50 flex items-center justify-center">
                     {displayImage ? (
-                      <img src={displayImage} alt={p.data.title} class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                      <img 
+                        src={displayImage} 
+                        alt={p.data.title} 
+                        class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" 
+                        loading={index < 3 ? "eager" : "lazy"}
+                        fetchpriority={index < 3 ? "high" : "auto"}
+                      />
                     ) : (
                       <div class="w-full h-full flex flex-col items-center justify-center text-slate-400 p-6 text-center select-none">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mb-3 text-slate-300">
