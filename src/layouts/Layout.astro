@@ -31,6 +31,13 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		
+		<!-- Core Web Vitals Optimizations -->
+		<link rel="preconnect" href="https://img.tyuanwaterproof.com" crossorigin="anonymous" />
+		<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous" />
+		<link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" />
+		<link rel="dns-prefetch" href="https://img.tyuanwaterproof.com" />
+		
+		{/* Critical LCP Image Preloading */}
 		{preloadImage && (
 			<link 
 				rel="preload" 
@@ -40,34 +47,24 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 			/>
 		)}
 
-		<!-- Core Web Vitals Optimizations -->
-		<link rel="preconnect" href="https://img.tyuanwaterproof.com" crossorigin />
-		<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
-		<link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
-		<link rel="dns-prefetch" href="https://img.tyuanwaterproof.com" />
-		<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-		
-		{/* Only preload homepage banners on the home page to avoid LCP competition on other pages */}
 		{isHomePage && (
-			<>
-				<link 
-					rel="preload" 
-					as="image" 
-					href="https://img.tyuanwaterproof.com/banner-mobile.webp" 
-					media="(max-width: 768px)" 
-					type="image/webp"
-					fetchpriority="high"
-				/>
-				<link 
-					rel="preload" 
-					as="image" 
-					href="https://img.tyuanwaterproof.com/banner.webp" 
-					media="(min-width: 769px)" 
-					type="image/webp"
-					fetchpriority="high"
-				/>
-			</>
+			<link 
+				rel="preload" 
+				as="image" 
+				href="https://img.tyuanwaterproof.com/banner-mobile.webp" 
+				media="(max-width: 768px)" 
+				type="image/webp"
+				fetchpriority="high"
+			/>
 		)}
+
+		{/* Critical CSS Inline to prevent render-blocking */}
+		<style is:inline>
+			:root { --navy: #0B1E3B; --brand: #3B82F6; }
+			body { background-color: #F5F7FA; margin: 0; min-height: 100vh; }
+			.animate-fade-in { opacity: 0; animation: fadeIn 0.8s ease-out forwards; }
+			@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+		</style>
 	</head>
 	<body class="bg-[#F5F7FA] text-[#102033] antialiased font-sans">
 		<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-[200] focus:bg-white focus:p-4 focus:text-navy focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-brand">
