@@ -10,7 +10,11 @@ interface Props {
 	preloadImage?: string;
 }
 
-const { title, description = "Weifang Tianyuan Waterproof Material Co., Ltd. - Professional Waterproofing Solutions", preloadImage } = Astro.props;
+const { 
+	title, 
+	description = "Weifang Tianyuan Waterproof Material Co., Ltd. is a leading manufacturer of high-quality modified bitumen membranes, polymer membranes, and waterproof coatings for global construction projects.", 
+	preloadImage 
+} = Astro.props;
 
 const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?text=Hi%2C%20I'm%20interested%20in%20your%20waterproofing%20materials.%20Could%20you%20please%20send%20me%20a%20catalog%20and%20price%20list%3F";
 ---

@@ -339,7 +339,7 @@ const faqJsonLd = faqs.length > 0 ? {
 } : null;
 ---
 
-<Layout title={title}>
+<Layout title={`${title} | Weifang Tianyuan Waterproof`} description={heroDescription}>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
   {faqJsonLd && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqJsonLd)} />}
   <main class="bg-slate-50 text-slate-950">

@@ -10,7 +10,10 @@ import { applications, productCategories, site, stats } from '../data/site';
 const products = (await getCollection('products')).sort((a,b)=>a.data.order-b.data.order);
 const featured = products.filter((p)=>p.data.featured).slice(0,6);
 ---
-<Layout title="Waterproofing Membranes, Tapes & Coatings Manufacturer">
+<Layout 
+	title="Tianyuan Waterproof | Leading China Waterproofing Materials Manufacturer"
+	description="Weifang Tianyuan Waterproof (TY-SHIELD™) is a professional manufacturer of high-quality bitumen membranes, polymer membranes, and waterproof coatings with 30+ years of export experience."
+>
   <Hero />
   <h2 class="sr-only">Main Content</h2>
 

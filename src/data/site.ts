@@ -66,7 +66,7 @@ export const productCategories = [
     description: 'Advanced PVC, TPO, and HDPE membranes for high-end engineering.',
     items: [
       { title: 'TPO Membrane', href: '/products/tpo-waterproofing-membrane-manufacturer/' },
-      { title: 'PVC Membrane', href: '/products/pvc-waterproofing-membrane/' }
+      { title: 'PVC Membrane', href: '/products/pvc-waterproofing-membrane-manufacturer/' }
     ]
   },
   {
@@ -86,7 +86,7 @@ export const productCategories = [
     image: '/assets/images/optimized/window-door-application.webp',
     description: 'Butyl and bitumen self-adhesive tapes for joints and repairs.',
     items: [
-      { title: 'Butyl Tape', href: '/products/butyl-tape/' }
+      { title: 'Butyl Tape', href: '/products/butyl-waterproof-sealing-tape-supplier/' }
     ]
   },
   {
@@ -96,7 +96,7 @@ export const productCategories = [
     image: '/assets/images/optimized/banner.webp',
     description: 'Artistic and durable roofing shingles for residential buildings.',
     items: [
-      { title: 'Asphalt Shingles', href: '/products/asphalt-roofing-felt/' }
+      { title: 'Asphalt Shingles', href: '/products/asphalt-roofing-felt-manufacturer/' }
     ]
   },
   {

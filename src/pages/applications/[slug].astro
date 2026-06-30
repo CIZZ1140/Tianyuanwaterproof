@@ -5,7 +5,7 @@ import { applications } from '@/data/applications';
 export function getStaticPaths() { return applications.map((app) => ({ params: { slug: app.slug }, props: { app } })); }
 const { app } = Astro.props;
 ---
-<Layout title={`${app.title} | Waterproofing Application`} description={app.intro}>
+<Layout title={`${app.title} | Waterproofing Application Solutions`} description={`Professional waterproofing solutions for ${app.title.toLowerCase()}. Learn how Tianyuan Waterproof materials are applied in ${app.title.toLowerCase()} for long-term protection.`}>
   <section class="bg-[#0E2A47] py-20 text-white border-b border-white/5">
     <div class="container-wrap">
       <p class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 text-white/70 text-[10px] font-bold uppercase tracking-widest mb-6">Application Solution</p>
