@@ -4,8 +4,27 @@
 
 @layer base {
   html { scroll-behavior: smooth; }
-  body { @apply bg-slate-50 text-slate-700 antialiased; }
+  body { 
+    @apply bg-slate-50 text-slate-700 antialiased; 
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+  }
   h1, h2, h3, h4 { @apply text-slate-950; }
+  
+  /* Optimize LCP Element rendering */
+  p, h1 {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 24px;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
 }
 
 @layer components {

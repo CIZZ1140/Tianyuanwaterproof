@@ -86,37 +86,41 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 			</svg>
 		</a>
 
-		{/* Scripts: Ultra-deferred to protect LCP and TBT */}
+		{/* Scripts: Zero-TBT loading strategy - only load analytics after user interaction */}
 		<script is:inline>
-			// Helper to load external script
-			function loadExternalScript(src, callback) {
-				const script = document.createElement('script');
-				script.src = src;
-				script.async = true;
-				script.onload = callback;
-				document.body.appendChild(script);
-			}
+			(function() {
+				let analyticsLoaded = false;
+				function loadAnalytics() {
+					if (analyticsLoaded) return;
+					analyticsLoaded = true;
+					
+					const script = document.createElement('script');
+					script.src = "https://www.googletagmanager.com/gtag/js?id=AW-18274384476";
+					script.async = true;
+					script.onload = function() {
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+						gtag('config', 'AW-18274384476');
+					};
+					document.head.appendChild(script);
+					
+					// Cleanup listeners
+					['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(ev => {
+						window.removeEventListener(ev, loadAnalytics);
+					});
+				}
 
-			// Run when browser is idle or after a major delay
-			function initAnalytics() {
-				loadExternalScript("https://www.googletagmanager.com/gtag/js?id=AW-18274384476", () => {
-					window.dataLayer = window.dataLayer || [];
-					function gtag(){dataLayer.push(arguments);}
-					gtag('js', new Date());
-					gtag('config', 'AW-18274384476');
+				// Trigger loading only on interaction or major delay
+				['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(ev => {
+					window.addEventListener(ev, loadAnalytics, { passive: true });
 				});
-			}
 
-			// Intersection Observer to load when user starts interacting or 3.5s timeout
-			if ('requestIdleCallback' in window) {
-				requestIdleCallback(() => {
-					setTimeout(initAnalytics, 1500);
-				});
-			} else {
+				// Final safety timeout to ensure tracking eventually fires
 				window.addEventListener('load', () => {
-					setTimeout(initAnalytics, 3500);
+					setTimeout(loadAnalytics, 5000);
 				});
-			}
+			})();
 		</script>
 	</body>
 </html>
