@@ -87,7 +87,7 @@ technical_data:
     requirement: "100degC"
     value: "No flowing, no dripping"
   - label: "Fire Classification"
-    unit: ">="=
+    unit: ">="
     standard: "UL 790"
     requirement: "Class A"
     value: "Class A Fire Rated"

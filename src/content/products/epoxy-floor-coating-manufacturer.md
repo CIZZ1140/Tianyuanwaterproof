@@ -81,7 +81,7 @@ technical_data:
     requirement: ">=120"
     value: "115"
   - label: "Pencil Hardness"
-    unit: ">="=
+    unit: ">="
     standard: "Scratch Test"
     requirement: "Reported Result"
     value: "HB"

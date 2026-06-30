@@ -73,7 +73,7 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: ">="=
+    unit: ">="
     standard: "JC/T 942-2004"
     requirement: "Standard Conformity"
     value: "Passed"

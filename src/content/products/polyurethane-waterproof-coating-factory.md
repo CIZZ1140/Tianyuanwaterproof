@@ -73,7 +73,7 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: ">="=
+    unit: ">="
     standard: "GB/T 19250-2013"
     requirement: "Standard Conformity"
     value: "Passed"

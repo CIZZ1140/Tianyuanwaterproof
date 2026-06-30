@@ -77,7 +77,7 @@ features:
 
 technical_data:
   - label: "Applicable Standard"
-    unit: ">="=
+    unit: ">="
     standard: "GB/T 18173.1-2012"
     requirement: "Standard Conformity"
     value: "Pass"
@@ -112,7 +112,7 @@ technical_data:
     requirement: "H type >=4.0"
     value: "Passed"
   - label: "Ozone Aging"
-    unit: ">="=
+    unit: ">="
     standard: "40degC, 500pphm"
     requirement: "No cracking"
     value: "Passed"

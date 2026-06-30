@@ -96,12 +96,12 @@ technical_data:
     requirement: ">=400"
     value: "Qualified"
   - label: "Resistance To Alkali"
-    unit: ">="=
+    unit: ">="
     standard: "EN 1847"
     requirement: "60kPa, 24h"
     value: "No Leakage"
   - label: "Visible Defects"
-    unit: ">="=
+    unit: ">="
     standard: "EN 1848-2"
     requirement: "None"
     value: "No visible defects"

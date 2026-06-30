@@ -98,7 +98,7 @@ technical_data:
     requirement: "0.3MPa (30min)"
     value: "Passed"
   - label: "Puncture Resistance"
-    unit: ">="=
+    unit: ">="
     standard: "GB 18242"
     requirement: "No Leakage"
     value: "Passed"
