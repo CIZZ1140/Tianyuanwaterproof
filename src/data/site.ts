@@ -93,7 +93,7 @@ export const productCategories = [
     title: 'Asphalt Shingles',
     slug: 'asphalt-shingles',
     href: '/categories/asphalt-shingles/',
-    image: '/assets/images/optimized/banner.webp',
+    image: 'https://img.tyuanwaterproof.com/cat-asphalt-shingles.webp',
     description: 'Artistic and durable roofing shingles for residential buildings.',
     items: [
       { title: 'Asphalt Shingles', href: '/products/asphalt-roofing-felt-manufacturer/' }
