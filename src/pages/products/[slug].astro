@@ -329,6 +329,7 @@ const faqJsonLd = faqs.length > 0 ? {
     }
   }))
 } : null;
+
 const isFullWidthProduct = [
   "sbs-bitumen-waterproofing-membrane-manufacturer",
   "self-adhesive-bitumen-waterproofing-membrane-wholesale",
@@ -338,7 +339,7 @@ const isFullWidthProduct = [
 ].includes(entry.slug);
 
 const imageFitClass = isFullWidthProduct ? "object-cover" : "object-contain";
-
+---
 
 <Layout title={pageTitle} description={heroDescription}>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
