@@ -31,34 +31,41 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		
-		<!-- Core Web Vitals Optimizations -->
-		<link rel="preconnect" href="https://img.tyuanwaterproof.com" crossorigin="anonymous" />
-		<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous" />
-		<link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" />
+		<!-- Preconnect to image CDN -->
+		<link rel="preconnect" href="https://img.tyuanwaterproof.com" />
 		<link rel="dns-prefetch" href="https://img.tyuanwaterproof.com" />
 		
-		{/* Critical LCP Image Preloading */}
-		{preloadImage && (
-			<link 
-				rel="preload" 
-				as="image" 
-				href={preloadImage} 
-				fetchpriority="high"
-			/>
+		{/* Optimized Preloading Logic */}
+		{isHomePage ? (
+			<>
+				<link 
+					rel="preload" 
+					as="image" 
+					href="https://img.tyuanwaterproof.com/banner-mobile.webp" 
+					media="(max-width: 768px)" 
+					type="image/webp"
+					fetchpriority="high"
+				/>
+				<link 
+					rel="preload" 
+					as="image" 
+					href="https://img.tyuanwaterproof.com/banner.webp" 
+					media="(min-width: 769px)" 
+					type="image/webp"
+					fetchpriority="high"
+				/>
+			</>
+		) : (
+			preloadImage && (
+				<link 
+					rel="preload" 
+					as="image" 
+					href={preloadImage} 
+					fetchpriority="high"
+				/>
+			)
 		)}
 
-		{isHomePage && (
-			<link 
-				rel="preload" 
-				as="image" 
-				href="https://img.tyuanwaterproof.com/banner-mobile.webp" 
-				media="(max-width: 768px)" 
-				type="image/webp"
-				fetchpriority="high"
-			/>
-		)}
-
-		{/* Critical CSS Inline to prevent render-blocking */}
 		<style is:inline>
 			:root { --navy: #0B1E3B; --brand: #3B82F6; }
 			body { background-color: #F5F7FA; margin: 0; min-height: 100vh; }
