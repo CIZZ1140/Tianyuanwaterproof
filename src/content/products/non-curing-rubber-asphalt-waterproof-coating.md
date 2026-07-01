@@ -147,13 +147,21 @@ loading_data:
   - label: "Shipping Note"
     value: "Non-hazardous for sea transport"
 
+downloads:
+  - title: "Technical Data Sheet (TDS)"
+    description: "Non-curing asphalt creep property, self-healing, and stress relaxation data."
+    type: "PDF"
+    href: ""
+  - title: "Composite System Manual"
+    description: "Professional guide for the Coating + Membrane dual-layer waterproofing system."
+    type: "PDF"
+    href: ""
+
 related_products:
   - title: "SBS Bitumen Membrane"
-    description: "Premium torch-applied membrane designed for composite use with non-curing coatings."
-    image: "https://img.tyuanwaterproof.com/products/sbs-app-modified-bitumen-waterproofing-membrane.webp"
+    image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
   - title: "Spraying Quick-Setting Coating"
-    description: "Two-component spray system for instant-set infrastructure waterproofing."
     image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt-waterproof-coating.webp"
     href: "/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/"
 

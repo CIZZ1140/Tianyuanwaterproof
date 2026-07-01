@@ -142,14 +142,22 @@ loading_data:
   - label: "HS Code"
     value: "3920990000"
 
+downloads:
+  - title: "Technical Data Sheet (TDS)"
+    description: "TPE tape elasticity, chemical resistance, and hydrostatic pressure data."
+    type: "PDF"
+    href: ""
+  - title: "Detailing Guide"
+    description: "Installation instructions for pipe roots, expansion joints, and corner reinforcement."
+    type: "PDF"
+    href: ""
+
 related_products:
   - title: "Butyl Sealing Tape"
-    description: "Aluminum-faced self-adhesive tape for metal roof and flashing repair."
-    image: "https://img.tyuanwaterproof.com/products/butyl-rubber-waterproof-sealing-tape.webp"
+    image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"
     href: "/products/butyl-rubber-waterproof-sealing-tape-supplier/"
   - title: "JS Polymer Cement Coating"
-    description: "Flexible two-component coating designed to bond perfectly with TPE tapes."
-    image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating.webp"
+    image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating-factory.webp"
     href: "/products/polymer-cement-js-waterproof-coating-factory/"
 
 faqs:

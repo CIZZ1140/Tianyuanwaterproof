@@ -145,15 +145,23 @@ loading_data:
   - label: "HS Code"
     value: "2715000000"
 
+downloads:
+  - title: "Technical Data Sheet (TDS)"
+    description: "Detailed JC/T 2317-2015 parameters and 1000% elongation test data."
+    type: "PDF"
+    href: ""
+  - title: "Spray Equipment Guide"
+    description: "Maintenance and operation manual for two-component asphalt spraying machines."
+    type: "PDF"
+    href: ""
+
 related_products:
   - title: "Polymer Modified Asphalt Coating"
-    description: "Cold-applied asphalt coating for smaller areas and detail waterproofing."
     image: "https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-waterproof-coating.webp"
     href: "/products/polymer-modified-asphalt-waterproof-coating/"
   - title: "Polyurethane Waterproof Coating"
-    description: "Single-component elastic coating for premium roofing and foundation protection."
-    image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
-    href: "/products/polyurethane-waterproof-coating/"
+    image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
+    href: "/products/polyurethane-waterproof-coating-factory/"
 
 faqs:
   - question: "How fast can I start backfilling after spraying?"

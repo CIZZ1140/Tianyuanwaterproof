@@ -146,14 +146,22 @@ loading_data:
   - label: "HS Code"
     value: "3209100000"
 
+downloads:
+  - title: "Technical Data Sheet (TDS)"
+    description: "Acrylic coating physical properties, UV resistance, and thermal adaptation data."
+    type: "PDF"
+    href: ""
+  - title: "Metal Roof Repair Guide"
+    description: "Instructional guide for the 3-coat 1-fabric reinforcement system."
+    type: "PDF"
+    href: ""
+
 related_products:
   - title: "Butyl Sealing Tape"
-    description: "Self-adhesive tape for instant sealing of metal roof laps and joints."
-    image: "https://img.tyuanwaterproof.com/products/butyl-rubber-waterproof-sealing-tape.webp"
+    image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"
     href: "/products/butyl-rubber-waterproof-sealing-tape-supplier/"
   - title: "Polyurethane Waterproof Coating"
-    description: "High-elastic liquid membrane for heavy-duty industrial roofing."
-    image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
+    image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
     href: "/products/polyurethane-waterproof-coating-factory/"
 
 faqs:

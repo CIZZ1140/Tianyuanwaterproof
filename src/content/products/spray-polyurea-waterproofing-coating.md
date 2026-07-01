@@ -151,14 +151,22 @@ loading_data:
   - label: "Shipping Class"
     value: "Non-hazardous for sea freight (check MSDS for details)"
 
+downloads:
+  - title: "Technical Data Sheet (TDS)"
+    description: "100% Solid Pure Polyurea technical indexes and abrasion resistance data."
+    type: "PDF"
+    href: ""
+  - title: "Safety Data Sheet (MSDS)"
+    description: "Global standard material safety and handling information for Polyurea systems."
+    type: "PDF"
+    href: ""
+
 related_products:
   - title: "Quick-Setting Rubber Asphalt"
-    description: "Spray-applied asphalt for large-scale basement and bridge waterproofing."
     image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt-waterproof-coating.webp"
     href: "/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/"
   - title: "Polyurethane Coating"
-    description: "Single-component elastic coating for high-end civil architecture."
-    image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
+    image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
     href: "/products/polyurethane-waterproof-coating-factory/"
 
 faqs:

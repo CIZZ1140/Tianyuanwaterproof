@@ -144,14 +144,22 @@ loading_data:
   - label: "HS Code"
     value: "2715000000"
 
+downloads:
+  - title: "Technical Data Sheet (TDS)"
+    description: "Detailed TY-SHIELD™ polymer modified asphalt coating parameters and physical property data."
+    type: "PDF"
+    href: ""
+  - title: "Application Guide"
+    description: "Step-by-step construction procedure for cold-applied seamless asphalt membranes."
+    type: "PDF"
+    href: ""
+
 related_products:
   - title: "Polyurethane Waterproof Coating"
-    description: "Single-component elastic coating for high-end roofing and basement projects."
-    image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
-    href: "/products/polyurethane-waterproof-coating/"
+    image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
+    href: "/products/polyurethane-waterproof-coating-factory/"
   - title: "SBS Modified Bitumen Membrane"
-    description: "Premium torch-applied asphalt membrane for heavy-duty civil engineering."
-    image: "https://img.tyuanwaterproof.com/products/sbs-app-modified-bitumen-waterproofing-membrane.webp"
+    image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
 
 faqs:
