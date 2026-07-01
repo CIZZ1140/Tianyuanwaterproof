@@ -1,6 +1,6 @@
 ---
 title: "Polymer Modified Asphalt Waterproof Coating"
-category: "coatings"
+category: "waterproof-coatings"
 product_category: "Modified Asphalt Coating"
 image: "https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-waterproof-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-waterproof-coating.webp"
