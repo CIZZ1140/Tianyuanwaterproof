@@ -76,17 +76,19 @@ export const productCategories = [
     image: 'https://img.tyuanwaterproof.com/cat-waterproof-coatings-v2.webp',
     description: 'Polyurethane liquid-applied coatings for complex structures.',
     items: [
-      { title: 'Polyurethane Coating', href: '/products/polyurethane-waterproof-coating-factory/' }
+      { title: 'Polyurethane Coating', href: '/products/polyurethane-waterproof-coating-factory/' },
+      { title: 'JS Cementitious Coating', href: '/products/polymer-cement-js-waterproof-coating-factory/' }
     ]
   },
   {
     title: 'Waterproof Tapes',
     slug: 'waterproof-tapes',
     href: '/categories/waterproof-tapes/',
-    image: '/assets/images/optimized/window-door-application.webp',
+    image: 'https://img.tyuanwaterproof.com/cat-waterproof-tapes-v2.webp',
     description: 'Butyl and bitumen self-adhesive tapes for joints and repairs.',
     items: [
-      { title: 'Butyl Tape', href: '/products/butyl-waterproof-sealing-tape-supplier/' }
+      { title: 'Butyl Tape', href: '/products/butyl-waterproof-sealing-tape-supplier/' },
+      { title: 'Bitumen Tape', href: '/products/self-adhesive-bitumen-tape-wholesale/' }
     ]
   },
   {
@@ -96,7 +98,8 @@ export const productCategories = [
     image: 'https://img.tyuanwaterproof.com/cat-asphalt-shingles.webp',
     description: 'Artistic and durable roofing shingles for residential buildings.',
     items: [
-      { title: 'Asphalt Shingles', href: '/products/asphalt-roofing-felt-manufacturer/' }
+      { title: 'Laminated Asphalt Shingles', href: '/products/asphalt-roofing-felt-manufacturer/' },
+      { title: '3-Tab Asphalt Shingles', href: '/products/3-tab-asphalt-shingles-wholesale/' }
     ]
   },
   {
@@ -106,7 +109,8 @@ export const productCategories = [
     image: 'https://img.tyuanwaterproof.com/products/hdpe-geomembrane-liner-roll.webp',
     description: 'Geomembranes and geotextiles for environmental and infrastructure projects.',
     items: [
-      { title: 'Geomembrane', href: '/products/hdpe-geomembrane-liner-manufacturer/' }
+      { title: 'Geomembrane', href: '/products/hdpe-geomembrane-liner-manufacturer/' },
+      { title: 'Geotextile', href: '/products/geotextile-fabric-manufacturer/' }
     ]
   }
 ];
