@@ -14,7 +14,20 @@ const { app } = Astro.props;
     </div>
   </section>
   <section class="py-16"><div class="container-wrap grid gap-10 lg:grid-cols-[.9fr_1.1fr]">
-    <div class="card"><h2 class="text-2xl font-bold">Recommended products</h2><ul class="mt-5 space-y-3 text-sm">{app.recommended.map((item) => <li class="rounded-xl bg-slate-100 px-4 py-3 font-semibold">{item}</li>)}</ul></div>
+    <div class="card">
+      <h2 class="text-2xl font-bold text-[#0B1E3B]">Recommended products</h2>
+      <div class="mt-6 space-y-3">
+        {app.recommended.map((item) => (
+          <a 
+            href={item.href} 
+            class="flex items-center justify-between group rounded-2xl bg-slate-50 border border-slate-100 px-5 py-4 transition-all hover:bg-white hover:border-[#3B82F6] hover:shadow-md hover:-translate-y-0.5"
+          >
+            <span class="font-bold text-[#102033] group-hover:text-[#3B82F6] transition-colors">{item.title}</span>
+            <svg class="w-4 h-4 text-slate-300 group-hover:text-[#3B82F6] transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        ))}
+      </div>
+    </div>
     <div><h2 class="text-3xl font-bold">Solution notes</h2><div class="mt-6 grid gap-4">{app.points.map((point) => <div class="card"><p class="font-semibold">✓ {point}</p></div>)}</div></div>
   </div></section>
   <CTA />
