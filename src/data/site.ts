@@ -73,7 +73,7 @@ export const productCategories = [
     title: 'Waterproof Coatings',
     slug: 'waterproof-coatings',
     href: '/categories/waterproof-coatings/',
-    image: '/assets/images/optimized/bathroom-application.webp',
+    image: 'https://img.tyuanwaterproof.com/cat-waterproof-coatings-v2.webp',
     description: 'Polyurethane liquid-applied coatings for complex structures.',
     items: [
       { title: 'Polyurethane Coating', href: '/products/polyurethane-waterproof-coating-factory/' }
