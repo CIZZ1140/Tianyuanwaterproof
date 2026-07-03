@@ -284,14 +284,30 @@ const installationIcons = [Hammer, Droplets, Ruler, Flame, Package, ClipboardChe
 const packagingIcons = [Package, Truck, Box, Factory, FileText, FlaskConical];
 
 // --- SEO Structured Data (JSON-LD) ---
-const jsonLd = {
+const productSlug = (entry?.slug ?? entry?.id ?? "").replace(/\.mdx?$/, "").replace(/\/index$/, "");
+const productSku = data.sku ?? `TY-${productSlug.slice(0, 20).toUpperCase().replace(/-/g, "")}`;
+const productMpn = data.mpn ?? data.model ?? standardValue;
+const productGtin = data.gtin ?? data.upc ?? data.ean ?? null;
+
+const offer: Record<string, any> = {
+  "@type": "Offer",
+  "priceCurrency": data.price_currency ?? "USD",
+  "availability": data.availability ?? "https://schema.org/InStock",
+  "url": Astro.url.href,
+  "itemCondition": "https://schema.org/NewCondition",
+};
+
+if (data.price && data.price !== "0" && data.price !== 0) {
+  offer["price"] = String(data.price);
+}
+
+const jsonLd: Record<string, any> = {
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": title,
   "image": [mainImage, ...gallery.map(item => item.image)].filter(Boolean),
   "description": heroDescription,
-  "sku": data.sku ?? (entry?.slug ?? entry?.id ?? "").replace(/\.mdx?$/, "").replace(/\/index$/, ""),
-  "mpn": data.mpn ?? standardValue,
+  "sku": productSku,
   "brand": {
     "@type": "Brand",
     "name": "Tianyuan Waterproof"
@@ -301,21 +317,16 @@ const jsonLd = {
     "name": "Weifang Tianyuan Waterproof Material Co., Ltd.",
     "url": "https://www.tyuanwaterproof.com"
   },
-  "offers": {
-    "@type": "AggregateOffer",
-    "offerCount": "1",
-    "lowPrice": "0",
-    "highPrice": "0",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "url": Astro.url.href
-  },
+  "offers": offer,
   "additionalProperty": specTable.map(row => ({
     "@type": "PropertyValue",
     "name": row.label,
     "value": row.value
   }))
 };
+
+if (productMpn) jsonLd["mpn"] = productMpn;
+if (productGtin) jsonLd["gtin"] = productGtin;
 
 const faqJsonLd = faqs.length > 0 ? {
   "@context": "https://schema.org",
