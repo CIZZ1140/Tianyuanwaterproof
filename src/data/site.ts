@@ -73,20 +73,22 @@ export const productCategories = [
     title: 'Waterproof Coatings',
     slug: 'waterproof-coatings',
     href: '/categories/waterproof-coatings/',
-    image: '/assets/images/optimized/bathroom-application.webp',
+    image: 'https://img.tyuanwaterproof.com/cat-waterproof-coatings-v2.webp',
     description: 'Polyurethane liquid-applied coatings for complex structures.',
     items: [
-      { title: 'Polyurethane Coating', href: '/products/polyurethane-waterproof-coating-factory/' }
+      { title: 'Polyurethane Coating', href: '/products/polyurethane-waterproof-coating-factory/' },
+      { title: 'JS Cementitious Coating', href: '/products/polymer-cement-js-waterproof-coating-factory/' }
     ]
   },
   {
     title: 'Waterproof Tapes',
     slug: 'waterproof-tapes',
     href: '/categories/waterproof-tapes/',
-    image: '/assets/images/optimized/window-door-application.webp',
+    image: 'https://img.tyuanwaterproof.com/cat-waterproof-tapes-v2.webp',
     description: 'Butyl and bitumen self-adhesive tapes for joints and repairs.',
     items: [
-      { title: 'Butyl Tape', href: '/products/butyl-waterproof-sealing-tape-supplier/' }
+      { title: 'Butyl Tape', href: '/products/butyl-waterproof-sealing-tape-supplier/' },
+      { title: 'Bitumen Tape', href: '/products/self-adhesive-bitumen-tape-wholesale/' }
     ]
   },
   {
@@ -96,7 +98,8 @@ export const productCategories = [
     image: 'https://img.tyuanwaterproof.com/cat-asphalt-shingles.webp',
     description: 'Artistic and durable roofing shingles for residential buildings.',
     items: [
-      { title: 'Asphalt Shingles', href: '/products/asphalt-roofing-felt-manufacturer/' }
+      { title: 'Laminated Asphalt Shingles', href: '/products/asphalt-roofing-felt-manufacturer/' },
+      { title: '3-Tab Asphalt Shingles', href: '/products/3-tab-asphalt-shingles-wholesale/' }
     ]
   },
   {
@@ -106,7 +109,8 @@ export const productCategories = [
     image: 'https://img.tyuanwaterproof.com/products/hdpe-geomembrane-liner-roll.webp',
     description: 'Geomembranes and geotextiles for environmental and infrastructure projects.',
     items: [
-      { title: 'Geomembrane', href: '/products/hdpe-geomembrane-liner-manufacturer/' }
+      { title: 'Geomembrane', href: '/products/hdpe-geomembrane-liner-manufacturer/' },
+      { title: 'Geotextile', href: '/products/geotextile-fabric-manufacturer/' }
     ]
   }
 ];
@@ -120,39 +124,39 @@ export const applications = [
     products: ['SBS Modified Bitumen', 'TPO Membrane', 'PVC Membrane']
   },
   {
-    title: 'Basement Waterproofing',
-    slug: 'basement-waterproofing',
+    title: 'Underground Waterproofing',
+    slug: 'underground-waterproofing',
     image: '/assets/images/optimized/basement.webp',
-    summary: 'Heavy-duty protection for foundations and underground walls.',
+    summary: 'Heavy-duty protection for foundations, underground walls and basements.',
     products: ['Self-Adhesive Bitumen', 'Pre-applied HDPE', 'Polyurethane Coating']
-  },
-  {
-    title: 'Bathroom Waterproofing',
-    slug: 'bathroom-waterproofing',
-    image: '/assets/images/optimized/bathroom-application.webp',
-    summary: 'Liquid-applied solutions for wet areas and indoor floors.',
-    products: ['Polyurethane Coating', 'JS Coating', 'Self-Adhesive Tape']
   },
   {
     title: 'Tunnel Waterproofing',
     slug: 'tunnel-waterproofing',
     image: '/assets/images/optimized/tunnel.webp',
-    summary: 'High-pressure resistant membranes for infrastructure projects.',
+    summary: 'High-pressure resistant membranes for subway and infrastructure projects.',
     products: ['PVC Membrane', 'HDPE Membrane', 'SBS Membrane']
   },
   {
-    title: 'Joint Sealing',
-    slug: 'joint-sealing',
-    image: '/assets/images/optimized/basement-application.webp',
-    summary: 'Flexible tapes for expansion joints and structural cracks.',
-    products: ['Butyl Tape', 'Bitumen Tape']
+    title: 'Bridge & Infrastructure',
+    slug: 'bridge-infrastructure',
+    image: 'https://img.tyuanwaterproof.com/app-bridge-infrastructure.webp',
+    summary: 'Waterproofing systems for highway bridges, railways and municipal engineering.',
+    products: ['Bitumen Tape', 'Polyurethane Coating', 'SBS Membrane']
   },
   {
-    title: 'Window & Door Sealing',
-    slug: 'window-door-sealing',
-    image: '/assets/images/optimized/window-door-application.webp',
-    summary: 'Self-adhesive flashing tapes for perimeter sealing.',
-    products: ['Bitumen Tape', 'Butyl Tape']
+    title: 'Industrial Building',
+    slug: 'industrial-building',
+    image: 'https://img.tyuanwaterproof.com/app-industrial-building.webp',
+    summary: 'Comprehensive waterproofing for warehouses, logistics centers and steel structures.',
+    products: ['TPO Membrane', 'PVC Membrane', 'Self-Adhesive Tape']
+  },
+  {
+    title: 'Joint & Detail Sealing',
+    slug: 'joint-detail-sealing',
+    image: 'https://img.tyuanwaterproof.com/app-joint-detail-sealing.webp',
+    summary: 'Professional sealing for expansion joints, structural cracks and laps.',
+    products: ['Butyl Tape', 'Bitumen Tape', 'TPE Tape']
   }
 ];
 

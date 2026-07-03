@@ -58,11 +58,12 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
         {applications.map((app)=>{
           // Using stable public paths with optimized dimensions
           let displayImage = app.image;
-          if (app.slug === 'basement-waterproofing') displayImage = '/assets/images/optimized/basement-application.webp';
-          if (app.slug === 'bathroom-waterproofing') displayImage = '/assets/images/optimized/bathroom-application.webp';
-          if (app.slug === 'window-door-sealing') displayImage = '/assets/images/optimized/window-door-application.webp';
+          if (app.slug === 'underground-waterproofing') displayImage = '/assets/images/optimized/basement.webp';
+          if (app.slug === 'joint-detail-sealing') displayImage = 'https://img.tyuanwaterproof.com/app-joint-detail-sealing.webp';
           if (app.slug === 'tunnel-waterproofing') displayImage = '/assets/images/optimized/tunnel.webp';
           if (app.slug === 'roof-waterproofing') displayImage = '/assets/images/optimized/commercial-roof.webp';
+          if (app.slug === 'bridge-infrastructure') displayImage = 'https://img.tyuanwaterproof.com/app-bridge-infrastructure.webp';
+          if (app.slug === 'industrial-building') displayImage = 'https://img.tyuanwaterproof.com/app-industrial-building.webp';
           
           return (
             <a href={`/applications/${app.slug}/`} class="group relative min-h-44 overflow-hidden rounded-xl shadow-card">
