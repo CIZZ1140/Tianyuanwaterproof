@@ -43,10 +43,12 @@ const processedProducts = products.map(p => {
     "epdm-waterproofing-membrane-wholesale"
   ].includes(p.slug);
 
+  const isCoating = p.data.category === "waterproof-coatings";
+
   return {
     ...p,
     categoryLabel,
-    imageFitClass: isFullWidthProduct ? "object-cover" : "object-contain",
+    imageFitClass: isCoating ? "object-contain p-4" : (isFullWidthProduct ? "object-cover" : "object-contain"),
     href: `/products/${p.slug}/`
   };
 }).sort((a, b) => (b.data.order || 0) - (a.data.order || 0));

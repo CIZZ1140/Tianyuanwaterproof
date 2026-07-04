@@ -17,8 +17,6 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-coating.webp"
     title: "TY-SHIELD™ Packaging Design"
-  - image: "/placeholder.webp"
-    title: "Brush & Roller Application"
 
 spec_table:
   - label: "Material Base"
@@ -45,8 +43,6 @@ applications:
     text: "The standard choice for damp-proofing and waterproofing of external concrete surfaces below ground level."
   - title: "Roof Terrace Refurbishment"
     text: "Perfect for sealing existing flat roofs without the need for high-heat torching equipment."
-  - title: "Wet Room Protection"
-    text: "Provides a reliable moisture barrier for bathroom and kitchen floors under tiling."
 
 related_products:
   - title: "SBS Bitumen Membrane"
@@ -59,8 +55,6 @@ related_products:
 faqs:
   - question: "Does it require a primer?"
     answer: "On porous substrates, we recommend diluting the coating with 10% water to act as a primer for better penetration and bonding."
-  - question: "Can I apply it in the rain?"
-    answer: "No. As a water-based coating, it must be applied in dry weather and protected from rain until it has fully cured."
 ---
 
 # Polymer Modified Asphalt Waterproof Coating

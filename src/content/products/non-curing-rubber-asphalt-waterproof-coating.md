@@ -18,8 +18,6 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v2.webp"
     title: "TY-SHIELD™ Advanced Packaging Design"
-  - image: "/placeholder.webp"
-    title: "Heated Spray/Scraping Application"
 
 spec_table:
   - label: "Product Type"
@@ -93,9 +91,9 @@ related_products:
   - title: "SBS Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/sbs-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
-  - title: "Self-Adhesive Membrane"
-    image: "https://img.tyuanwaterproof.com/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
-    href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
+  - title: "JS Polymer Cement Coating"
+    image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating-factory.webp"
+    href: "/products/polymer-cement-js-waterproof-coating-factory/"
 
 faqs:
   - question: "Why is it called 'Non-Curing'?"

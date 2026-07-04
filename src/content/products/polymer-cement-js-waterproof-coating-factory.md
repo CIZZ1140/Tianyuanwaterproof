@@ -1,10 +1,12 @@
 ---
 title: "Polymer Cement (JS) Waterproof Coating | Two-Component Flexible Slurry"
 category: "waterproof-coatings"
-product_category: "JS Waterproof Coating"
-image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
-main_image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
+product_category: "Waterproof Coatings"
+image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating-factory.webp"
+main_image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating-factory.webp"
+
 hero_description: "High-performance two-component JS waterproof coating combining acrylic polymers and high-grade cement. Ideal for kitchens, bathrooms, and swimming pools with excellent wet-base adhesion."
+
 hero_tags:
   - "Two-Component JS Slurry"
   - "GB/T 23445-2009 Standard"
@@ -12,142 +14,48 @@ hero_tags:
   - "JS I & JS II Available"
   - "Eco-Friendly & Non-Toxic"
   - "OEM Support"
+
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
+  - image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating-factory.webp"
     title: "Tianyuan JS Waterproof Coating Bucket"
-  - image: "/placeholder.webp"
-    title: "Coating Product Line Display"
+
 spec_table:
   - label: "Standard"
     value: "GB/T 23445-2009"
-  - label: "Product Type"
-    value: "Polymer Modified Cementitious Waterproofing Slurry"
-  - label: "Grade Options"
-    value: "Type I (High Flexibility) / Type II (High Strength)"
-  - label: "Packing Set"
-    value: "20kg Liquid Drum + 30kg Powder Bag (50kg total)"
-  - label: "Mix Ratio (JS I)"
-    value: "Liquid : Powder = 1 : 1.2"
-  - label: "Mix Ratio (JS II)"
-    value: "Liquid : Powder = 1 : 1.5"
-  - label: "Curing Time"
-    value: "Surface dry: 4-8 hours; Full cure: 24-48 hours"
-  - label: "Shelf Life"
-    value: "12 months in sealed original packaging"
-quick_facts:
-  - title: "Wet Substrate Friendly"
-    text: "Can be applied directly onto damp or wet base layers, significantly speeding up project timelines."
-  - title: "Superior Bond Strength"
-    text: "Forms a powerful molecular bond with concrete, masonry, and mortar surfaces, preventing delamination."
-  - title: "Eco-Friendly Barrier"
-    text: "Water-based, non-toxic, and solvent-free. Safe for drinking water reservoirs and indoor residential use."
-  - title: "High Crack Bridging"
-    text: "Maintains a flexible membrane that can accommodate minor structural movements and hair-line cracks."
-applications:
-  - title: "Indoor Wet Areas"
-    text: "Primary waterproofing for bathrooms, kitchens, balconies, and laundry rooms before tiling."
-  - title: "Underground Infrastructure"
-    text: "Reliable protection for basements, elevator pits, foundation walls, and subway tunnels."
-  - title: "Water Retaining Structures"
-    text: "Used for lining swimming pools, fire-fighting water tanks, and drinking water reservoirs."
-  - title: "Roofing Systems"
-    text: "Suitable for non-exposed roofing projects and as a detail reinforcement for complex roof shapes."
-  - title: "Bridge & Civil Works"
-    text: "Applied on bridge decks, culverts, and municipal civil engineering projects requiring flexible protection."
-features:
-  - title: "High Vertical Stability"
-    text: "Specially formulated to ensure no-sagging on vertical walls, maintaining a consistent dry film thickness."
-  - title: "Excellent Breathability"
-    text: "Allows water vapor to escape from the substrate while remaining completely impermeable to liquid water."
-  - title: "Customizable Colors"
-    text: "Available in standard white/grey, or customizable with pigments for easy multi-coat application monitoring."
-  - title: "Versatile Substrate Link"
-    text: "Compatible with wood, glass, plasterboard, foam, and even aged asphalt or SBS membrane surfaces."
-  - title: "Long-Term Durability"
-    text: "Resistant to aging and weathering, ensuring the waterproof layer remains effective for the life of the building."
-technical_data:
+  - label: "Solid Content"
+    value: "≥ 70%"
   - label: "Tensile Strength"
-    unit: "MPa"
-    standard: "GB/T 23445"
-    requirement: "Type I >= 1.2 | Type II >= 1.8"
-    value: "Type I: 1.5 | Type II: 2.2"
-  - label: "Elongation at Break"
-    unit: "%"
-    standard: "GB/T 23445"
-    requirement: "Type I >= 200 | Type II >= 80"
-    value: "Type I: 230 | Type II: 110"
-  - label: "Adhesive Strength (Wet Base)"
-    unit: "MPa"
-    standard: "GB/T 23445"
-    requirement: "Type I >= 0.5 | Type II >= 0.7"
-    value: "Type I: 0.8 | Type II: 1.1"
-  - label: "Water Impermeability"
-    unit: "0.3MPa / 30min"
-    standard: "GB/T 23445"
-    requirement: "No Leakage"
-    value: "Passed"
-  - label: "Low Temp Flexibility"
-    unit: "degC"
-    standard: "GB/T 23445"
-    requirement: "Type I: -10 | Type II: No Crack"
-    value: "Type I: -10 Passed"
-application_guide:
-  - title: "Base Preparation"
-    text: "Clean the substrate from oil, dust, and loose debris. Pre-moisten dry concrete surfaces with water, but avoid standing water."
-  - title: "Mixing Instructions"
-    text: "Pour liquid into a mixing pail. Gradually add powder while stirring with an electric mixer for 3-5 minutes until lump-free."
-  - title: "Detailing Work"
-    text: "Apply a reinforced layer (with fiberglass mesh if needed) at corners, pipe penetrations, and joints before general coating."
-  - title: "Multi-Coat Application"
-    text: "Apply 2-3 coats using a brush or roller. Ensure the second coat is applied perpendicular to the first once it is touch-dry."
-  - title: "Curing & Protection"
-    text: "Allow at least 24 hours of air curing. Protect the surface from heavy rain or mechanical damage during the drying period."
-packaging:
-  - title: "Industrial Standard Set"
-    text: "Standard supply comes in a 50kg set: one 20kg plastic drum (Liquid) and one 30kg woven bag (Powder)."
-  - title: "OEM & Branding"
-    text: "We offer private labeling and custom bucket designs for distributors and project-based bulk orders."
-  - title: "Pallet Loading"
-    text: "Rolls and drums are palletized and shrink-wrapped for safe international maritime shipping."
-downloads:
-  - title: "JS Coating TDS"
-    description: "Full technical specifications for Type I and Type II polymer cement coatings."
-    type: "PDF"
-    href: "#"
-  - title: "Installation Method Statement"
-    description: "Detailed step-by-step guide for mixing and applying JS slurry on various substrates."
-    type: "PDF"
-    href: "#"
+    value: "≥ 1.8 MPa (Type II)"
+  - label: "Elongation"
+    value: "≥ 80% (Type II)"
+  - label: "Drying Time"
+    value: "Touch dry: 2-4h"
+
+quick_facts:
+  - title: "The Standard for Interior Spaces"
+    text: "Formulated specifically for residential wet-rooms, our JS coating is non-toxic and solvent-free, ensuring safe indoor air quality."
+  - title: "Direct-to-Wet Adhesion"
+    text: "Unlike solvent-based products, this cement-compatible slurry can be applied directly onto damp concrete without bubbling or peeling."
+  - title: "Durable Elasticity"
+    text: "Bridges hairline shrinkage cracks in concrete while maintaining the rigid strength required for tiling directly over the membrane."
+
+applications:
+  - title: "Kitchens & Bathrooms"
+    text: "The primary waterproof layer for residential interiors before tile installation."
+  - title: "Swimming Pools & Reservoirs"
+    text: "Type II JS provides the necessary water-head resistance for submerged structures."
+  - title: "Balconies & Terraces"
+    text: "A cost-effective, UV-stable solution for exterior floor waterproofing."
+
 related_products:
-  - title: "Polyurethane Waterproof Coating"
-    description: "Single-component liquid-applied PU membrane for high-performance roofing."
-    image: "/placeholder.webp"
+  - title: "Polyurethane Coating"
+    image: "https://img.tyuanwaterproof.com/products/polyurethane-coating.webp"
     href: "/products/polyurethane-waterproof-coating-factory/"
-  - title: "Non-woven Geotextile"
-    description: "Reinforcement fabric used as a carrier for liquid-applied waterproofing systems."
-    image: "https://img.tyuanwaterproof.com/products/geotextile-nonwoven.webp"
-    href: "/products/geotextile-fabric-manufacturer/"
-faqs:
-  - question: "Is JS coating better than Polyurethane coating?"
-    answer: "It depends on the application. JS coating is breathable and excels on wet substrates (like new concrete), making it ideal for indoor wet areas and basements. Polyurethane offers higher elongation and is better for exposed roofing."
-  - question: "How much JS coating do I need per square meter?"
-    answer: "Typically, for a 1.5mm thickness, you will need approximately 2.0kg to 2.5kg of the mixed slurry per square meter across 2-3 coats."
-  - question: "Can I add water to the mixture?"
-    answer: "Adding water is generally not recommended as it alters the polymer-to-cement ratio and can weaken the final waterproof film."
-  - question: "Can this be used for drinking water tanks?"
-    answer: "Yes, our JS coating is non-toxic and environmentally friendly, meeting safety standards for use in drinking water reservoirs and aquaculture ponds."
+  - title: "Self-Adhesive Membrane"
+    image: "https://img.tyuanwaterproof.com/products/self-adhesive-bitumen-waterproofing-membrane-wholesale.webp"
+    href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
 ---
 
-## Polymer Cement (JS) Waterproof Coating: The Flexible Shield for Modern Construction
+# Polymer Cement (JS) Waterproof Coating
 
-**Polymer Cement (JS) Waterproof Coating** is a high-performance, two-component waterproofing material that combines the high elasticity of synthetic polymers with the excellent durability of cementitious materials.
-
-### Engineering Advantages of Tianyuan JS Coating
-
-As a professional manufacturer in Shouguang, Tianyuan Waterproof has optimized this JS system for the most demanding project environments.
-
-### Core Applications
-
-*   **Residential Interiors**: The gold standard for waterproofing bathrooms, kitchens, balconies, and swimming pools before tile installation.
-*   **Infrastructure & Civil Works**: Permanent sealing for subway stations, tunnels, culverts, and highway bridge decks.
-*   **Environmental Barrier**: Non-toxic formulation makes it perfect for potable water tanks, wastewater treatment plants, and aquaculture ponds.
+**TY-SHIELD™ JS Series** is a multi-purpose, flexible waterproofing slurry. By blending advanced liquid polymers with hydraulic cement, it creates a composite layer that possesses both the elasticity of high-grade rubber and the durability of concrete. Trusted for millions of square meters of residential and commercial space.
