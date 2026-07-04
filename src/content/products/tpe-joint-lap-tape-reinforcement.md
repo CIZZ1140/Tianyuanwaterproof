@@ -2,8 +2,8 @@
 title: "TY-SHIELD™ TPE Joint & Expansion Sealing Tape"
 category: "waterproof-tapes"
 product_category: "Waterproof Tapes"
-image: "https://img.tyuanwaterproof.com/products/tpe-joint-lap-tape.webp"
-main_image: "https://img.tyuanwaterproof.com/products/tpe-joint-lap-tape.webp"
+image: "https://img.tyuanwaterproof.com/products/tpe-joint-expansion-tape.webp"
+main_image: "https://img.tyuanwaterproof.com/products/tpe-joint-expansion-tape.webp"
 
 hero_description: "Professional TY-SHIELD™ TPE expansion joint tape. Featuring a high-elasticity waterproof center and reinforced fabric edges, designed for seamless movement bridging in structural joints, pipe roots, and corners."
 
@@ -177,10 +177,6 @@ The genius of this design lies in its fabric-reinforced edges. Unlike plain rubb
 *   **500% Elasticity**: Perfectly bridges expansion joints and structural cracks.
 *   **Hybrid Sealing**: Combines TPE flexibility with fabric bonding strength.
 *   **Universal Detail Support**: Available in pre-formed internal/external corners and pipe sleeves.
-*   **Broad Chemical Resistance**: Resistant to soil acids, alkalis, and UV exposure.
-
-Tianyuan supports global distributors and contractors with **OEM private labeling and customized roll sizes**. Whether reinforcing a wet-room corner in North America or sealing a tunnel expansion joint in Southeast Asia, TY-SHIELD™ TPE tape is the professional's choice for zero-leakage detail treatment.
-pe sleeves.
 *   **Broad Chemical Resistance**: Resistant to soil acids, alkalis, and UV exposure.
 
 Tianyuan supports global distributors and contractors with **OEM private labeling and customized roll sizes**. Whether reinforcing a wet-room corner in North America or sealing a tunnel expansion joint in Southeast Asia, TY-SHIELD™ TPE tape is the professional's choice for zero-leakage detail treatment.
