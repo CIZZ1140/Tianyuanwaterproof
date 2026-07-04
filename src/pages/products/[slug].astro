@@ -259,24 +259,6 @@ const whatsappHref = normalizeString(data.whatsapp_url, "https://wa.me/861526364
 
 const isRealFile = (url: string) => url && url !== "#" && (url.startsWith("http") || url.startsWith("/assets/") || url.endsWith(".pdf"));
 
-const sectionKeys = [
-
-  ["specs", specTable.length > 0],
-  ["overview", hasOverview],
-  ["applications", applications.length > 0],
-  ["benefits", features.length > 0],
-  ["technical", technicalData.length > 0],
-  ["installation", applicationGuide.length > 0],
-  ["packaging", packaging.length > 0 || loadingData.length > 0],
-  ["downloads", downloads.length > 0],
-  ["related", relatedProducts.length > 0],
-  ["faq", faqs.length > 0],
-];
-
-const sectionIndex = Object.fromEntries(
-  sectionKeys.filter(([, visible]) => visible).map(([key], index) => [key, index + 1])
-);
-
 const quickFactIcons = [Layers, Droplets, Boxes, Package];
 const applicationIcons = [Factory, Box, Truck, Wrench, Droplets, ShieldCheck];
 const benefitIcons = [ShieldCheck, Ruler, Snowflake, Sun];
@@ -469,7 +451,6 @@ const breadcrumbItems = [
         <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
           <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
             <div class="mb-6 flex items-center gap-3">
-              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.specs}</span>
               <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Quick Specifications</h2>
             </div>
             <div class="grid overflow-hidden rounded-2xl border border-slate-200 lg:grid-cols-2">
@@ -490,7 +471,6 @@ const breadcrumbItems = [
         <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
           <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
             <div class="mb-6 flex items-center gap-3">
-              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.overview}</span>
               <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Product Overview</h2>
             </div>
             <div class="grid gap-8 lg:grid-cols-[1fr_0.75fr]">
@@ -526,9 +506,7 @@ const breadcrumbItems = [
       applications.length > 0 && (
         <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
           <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
-            <div class="mb-6 flex items-center gap-3">
-              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.applications}</span>
-              <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Applications</h2>
+            <div class="mb-6 flex items-center gap-3"><h2 class="text-xl font-black text-slate-950 sm:text-2xl">Applications</h2>
             </div>
             <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
               {applications.slice(0, 6).map((item, index) => {
@@ -553,9 +531,7 @@ const breadcrumbItems = [
       features.length > 0 && (
         <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
           <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
-            <div class="mb-6 flex items-center gap-3">
-              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.benefits}</span>
-              <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Key Benefits</h2>
+            <div class="mb-6 flex items-center gap-3"><h2 class="text-xl font-black text-slate-950 sm:text-2xl">Key Benefits</h2>
             </div>
             <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {features.slice(0, 4).map((feature, index) => {
@@ -578,9 +554,7 @@ const breadcrumbItems = [
       technicalData.length > 0 && (
         <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
           <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
-            <div class="mb-6 flex items-center gap-3">
-              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.technical}</span>
-              <FlaskConical class="h-7 w-7 text-blue-700" />
+            <div class="mb-6 flex items-center gap-3"><FlaskConical class="h-7 w-7 text-blue-700" />
               <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Technical Data</h2>
             </div>
             <div class="overflow-x-auto rounded-2xl border border-slate-200">
@@ -619,9 +593,7 @@ const breadcrumbItems = [
       applicationGuide.length > 0 && (
         <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
           <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
-            <div class="mb-6 flex items-center gap-3">
-              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.installation}</span>
-              <Hammer class="h-7 w-7 text-blue-700" />
+            <div class="mb-6 flex items-center gap-3"><Hammer class="h-7 w-7 text-blue-700" />
               <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Installation Guide</h2>
             </div>
             <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
@@ -648,9 +620,7 @@ const breadcrumbItems = [
       (packaging.length > 0 || loadingData.length > 0) && (
         <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
           <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
-            <div class="mb-6 flex items-center gap-3">
-              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.packaging}</span>
-              <Package class="h-7 w-7 text-blue-700" />
+            <div class="mb-6 flex items-center gap-3"><Package class="h-7 w-7 text-blue-700" />
               <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Packaging & OEM</h2>
             </div>
             <div class="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
@@ -701,9 +671,7 @@ const breadcrumbItems = [
         <section class="mx-auto grid w-full max-w-[1680px] gap-4 px-4 py-4 sm:px-6 lg:grid-cols-[0.86fr_1.14fr] lg:px-8">
           {downloads.length > 0 && (
             <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
-              <div class="mb-6 flex items-center gap-3">
-                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.downloads}</span>
-                <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Downloads</h2>
+              <div class="mb-6 flex items-center gap-3"><h2 class="text-xl font-black text-slate-950 sm:text-2xl">Downloads</h2>
               </div>
               <div class="overflow-hidden rounded-2xl border border-slate-200">
                 {downloads.map((item) => (
@@ -728,9 +696,7 @@ const breadcrumbItems = [
           )}
           {relatedProducts.length > 0 && (
             <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
-              <div class="mb-6 flex items-center gap-3">
-                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.related}</span>
-                <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Related Products</h2>
+              <div class="mb-6 flex items-center gap-3"><h2 class="text-xl font-black text-slate-950 sm:text-2xl">Related Products</h2>
               </div>
               <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
                 {relatedProducts.slice(0, 4).map((product) => {
@@ -767,9 +733,7 @@ const breadcrumbItems = [
       faqs.length > 0 && (
         <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
           <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
-            <div class="mb-6 flex items-center gap-3">
-              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-700 text-sm font-black text-white">{sectionIndex.faq}</span>
-              <h2 class="text-xl font-black text-slate-950 sm:text-2xl">FAQ</h2>
+            <div class="mb-6 flex items-center gap-3"><h2 class="text-xl font-black text-slate-950 sm:text-2xl">FAQ</h2>
             </div>
             <div class="space-y-3">
               {faqs.map((item, index) => (
