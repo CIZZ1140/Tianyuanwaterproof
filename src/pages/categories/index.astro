@@ -1,0 +1,38 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { productCategories, site } from "../../data/site";
+
+const pageTitle = `Product Categories | ${site.brand}`;
+const pageDescription = "Browse our professional range of waterproofing membranes, coatings, and specialized construction materials categorized by material and application.";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="bg-[#F5F7FA] min-h-screen pb-20">
+    <section class="bg-[#0B1E3B] text-white py-24 px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-black mb-6">Product Categories</h1>
+      <p class="text-slate-300 max-w-2xl mx-auto text-lg leading-relaxed">
+        High-performance solutions tailored for infrastructure, residential, and industrial waterproofing requirements.
+      </p>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 -mt-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {productCategories.map(cat => (
+          <a href={cat.href} class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col h-full">
+            <div class="aspect-video overflow-hidden bg-slate-100">
+              <img src={cat.image} alt={cat.title} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+            </div>
+            <div class="p-8 flex flex-col flex-1">
+              <h2 class="text-2xl font-bold text-[#102033] mb-4 group-hover:text-[#F58A1F] transition-colors">{cat.title}</h2>
+              <p class="text-[#5B6B7C] text-sm leading-relaxed mb-8 flex-1">{cat.description}</p>
+              <div class="flex items-center text-[#1F4E8C] font-bold text-sm">
+                View Products 
+                <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+</Layout>
