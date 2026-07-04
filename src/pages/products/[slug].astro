@@ -337,7 +337,6 @@ const breadcrumbItems = [
   { label: "Home", href: "/" },
   { label: "Products", href: "/products/" },
   { label: productCategory, href: `/categories/${entry.data.category}/` },
-  { label: title, href: null },
 ];
 ---
 
@@ -346,7 +345,7 @@ const breadcrumbItems = [
   {faqJsonLd && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqJsonLd)} />}
   <main class="bg-slate-50 text-slate-950">
     <!-- Breadcrumb -->
-    <nav class="mx-auto w-full max-w-[1680px] px-4 pt-4 sm:px-6 lg:px-8" aria-label="Breadcrumb">
+    <nav class="mx-auto w-full max-w-[1680px] px-4 pt-4 pb-2 sm:px-6 lg:px-8" aria-label="Breadcrumb">
       <ol class="flex flex-wrap items-center gap-1 text-sm">
         {breadcrumbItems.map((item, i) => (
           <li class="flex items-center gap-1">
