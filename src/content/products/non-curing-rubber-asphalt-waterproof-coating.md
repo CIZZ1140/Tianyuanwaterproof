@@ -1,9 +1,9 @@
 ---
 title: "TY-SHIELD™ Non-Curing Rubber Asphalt Waterproof Coating"
 category: "waterproof-coatings"
-product_category: "Non-Curing Coating"
-image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-waterproof-coating.webp"
-main_image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-waterproof-coating.webp"
+product_category: "Waterproof Coatings"
+image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v2.webp"
+main_image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v2.webp"
 
 hero_description: "TY-SHIELD™ Ever-Flex series: A specialized single-component, non-curing rubber asphalt coating. Engineered to remain permanently viscous, it provides extreme self-healing, anti-water channeling, and seamless composite protection for high-movement structures."
 
@@ -16,181 +16,103 @@ hero_tags:
   - "OEM/ODM Available"
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-waterproof-coating-bucket.webp"
-    title: "TY-SHIELD™ Industrial Packaging"
-  - image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-waterproof-coating-application.webp"
+  - image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v2.webp"
+    title: "TY-SHIELD™ Advanced Packaging Design"
+  - image: "/placeholder.webp"
     title: "Heated Spray/Scraping Application"
-  - image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-waterproof-coating-membrane-system.webp"
-    title: "Composite Coating & Membrane System"
 
 spec_table:
-  - label: "Product Standard"
+  - label: "Product Type"
+    value: "Single-Component Rubber Bitumen"
+  - label: "Standard"
     value: "JC/T 2428-2017"
-  - label: "Material State"
-    value: "Permanently Non-Curing Viscous Paste"
   - label: "Solid Content"
-    value: "≥ 98% (Solvent-Free)"
-  - label: "Application Method"
-    value: "Heated Scraping / Spraying"
-  - label: "Composite System"
-    value: "Ideal for 'Coating + Membrane' Dual Protection"
-  - label: "Self-Healing Ability"
-    value: "Excellent (Seals punctures automatically)"
-  - label: "Substrate Compatibility"
-    value: "Concrete, Metal, Damp Bases (No standing water)"
-  - label: "OEM Customization"
-    value: "Custom labels, net weights, and modified formulas"
+    value: "≥ 98%"
+  - label: "Heat Resistance"
+    value: "70°C, 2h (No sliding)"
+  - label: "Low Temp Flexibility"
+    value: "-20°C (No cracks)"
+  - label: "Self-Healing Property"
+    value: "Pass"
 
 quick_facts:
-  - title: "Permanent Creep Property"
-    text: "Remains in a viscous, paste-like state for its entire service life, allowing it to absorb structural stress and bridge cracks up to 15mm."
-  - title: "Active Self-Healing"
-    text: "The material flows automatically to seal punctures from fasteners or minor mechanical damage, maintaining a watertight seal."
-  - title: "Zero Water Channeling"
-    text: "Forms a continuous, pressure-sensitive bond with the substrate that prevents water from migrating between the layer and the concrete."
-  - title: "Flame-Free & Safe"
-    text: "Applied by heating and scraping/spraying, eliminating the need for open torches on the job site."
+  - title: "Permanent Flexibility"
+    text: "Unlike traditional coatings, it never cures or becomes brittle, maintaining a thick, viscous state that absorbs continuous structural vibrations and movement."
+  - title: "Smart Self-Healing"
+    text: "Automatically seals minor punctures and cracks caused by settlement, ensuring long-term watertight integrity without maintenance."
+  - title: "Anti-Water Channeling"
+    text: "Forms a powerful molecular bond with both the substrate and the top membrane, preventing water from traveling underneath the waterproof layer."
 
 applications:
-  - title: "Large Deformation Substrates"
-    text: "The primary choice for bridges, roof decks, and tunnels subject to constant vibration or thermal expansion."
   - title: "Composite Waterproofing"
-    text: "Used as a 'bonding layer' for SBS/APP membranes, creating a dual-layer system with zero-leakage risk."
-  - title: "Complex Geometries"
-    text: "Perfect for irregular roof sections, pipe penetrations, and expansion joints where sheet membranes struggle."
-  - title: "Below-Grade Foundations"
-    text: "Heavy-duty protection for basements and underground structures against pressurized groundwater."
-  - title: "Repair & Grouting"
-    text: "Highly effective for injection repair of leaking concrete cracks and refurbishment of old waterproof layers."
+    text: "Typically used as a sticky base layer for SBS or Self-Adhesive membranes to create a 'Skin-Type' redundant system."
+  - title: "Underground Infrastructure"
+    text: "Ideal for basements, subways, and tunnels where constant moisture and soil movement are present."
+  - title: "Complex Roof Details"
+    text: "Easily conforms to irregular shapes, pipe penetrations, and structural joints where pre-formed sheets often fail."
 
 features:
-  - title: "TY-SHIELD™ Ever-Flex Tech"
-    text: "Proprietary polymer modification ensures the asphalt never dries or cracks, even after 20+ years of exposure."
-  - title: "Exceptional Adhesion"
-    text: "Achieves 100% cohesive failure on both dry and damp concrete, meaning the bond is stronger than the material itself."
-  - title: "Temperature Resilience"
-    text: "Stays flexible and workable at -20°C and stable without sliding at 65°C, suitable for global climates."
-  - title: "Eco-Friendly System"
-    text: "High solid content (98%+) with near-zero VOC emissions. Non-toxic and safe for confined space application."
-  - title: "High Efficiency"
-    text: "Can be mechanically pumped and sprayed for rapid coverage of large commercial roof areas."
+  - title: "High-Solid Formulation"
+    text: "98% solid content means minimal shrinkage after application and no hazardous solvent evaporation."
+  - title: "Dual Application Modes"
+    text: "Can be applied via professional heating spray equipment for large areas or by scraping for detail reinforcement."
+  - title: "Extreme Temperature Stability"
+    text: "Stays viscous and sticky at low temperatures down to -20°C and remains stable at high temperatures up to 70°C."
 
 technical_data:
   - label: "Solid Content"
     unit: "%"
-    standard: "JC/T 2428-2017"
+    standard: "JC/T 2428"
     requirement: "≥ 98"
     value: "99.2"
-  - label: "Flash Point"
-    unit: "°C"
-    standard: "JC/T 2428-2017"
-    requirement: "≥ 180"
-    value: "210"
-  - label: "Extensibility"
-    unit: "mm"
-    standard: "JC/T 2428-2017"
-    requirement: "≥ 15"
-    value: "20+"
   - label: "Low Temp Flexibility"
     unit: "°C"
-    standard: "JC/T 2428-2017"
-    requirement: "-20°C, no cracks"
-    value: "Qualified (-25°C)"
-  - label: "Heat Resistance (65°C, 2h)"
-    unit: "—"
-    standard: "JC/T 2428-2017"
-    requirement: "No sliding/dripping"
+    standard: "JC/T 2428"
+    requirement: "-20°C"
     value: "Pass"
-  - label: "Adhesion (Dry/Damp)"
-    unit: "—"
-    standard: "JC/T 2428-2017"
-    requirement: "Cohesive failure"
-    value: "100% Cohesive"
-  - label: "Water Channeling Resistance"
+  - label: "Bond Strength"
     unit: "MPa"
-    standard: "JC/T 2428-2017"
-    requirement: "0.6, No flow"
-    value: "0.8"
-  - label: "Self-Healing (Puncture)"
+    standard: "JC/T 2428"
+    requirement: "≥ 0.01"
+    value: "0.05"
+  - label: "Water Impermeability"
     unit: "—"
-    standard: "Factory Test"
-    requirement: "No seepage"
-    value: "Passed"
+    standard: "0.3MPa, 30min"
+    requirement: "No Leakage"
+    value: "Pass"
 
 application_guide:
-  - title: "Substrate Preparation"
-    text: "Remove dust and loose debris. 基面可潮湿但无明水. Ensure details like pipe roots are pre-treated."
-  - title: "Heating & Melting"
-    text: "Heat the coating in a professional melting kettle to the required application temperature (typically 120°C - 150°C)."
-  - title: "Manual or Spray Application"
-    text: "Apply evenly by scraping with a notched trowel or using a professional asphalt pump sprayer."
-  - title: "Membrane Integration"
-    text: "If using a composite system, lay the waterproof membrane immediately while the coating is hot and tacky. Roll to ensure full contact."
-  - title: "Detail Treatment"
-    text: "Apply extra thickness around corners and drains. Ensure 100mm lap width for integrated membrane systems."
-
-packaging:
-  - title: "Wholesale Buckets"
-    text: "Supplied in 20kg plastic buckets or 50kg/200kg industrial metal drums."
-  - title: "Storage Condition"
-    text: "Keep in a cool, ventilated area away from direct heat and fire sources. Shelf life is 12 months."
-  - title: "OEM Services"
-    text: "We provide custom labels, private branding, and specialized net weights for international projects."
-
-loading_data:
-  - label: "Package Type"
-    value: "20kg Bucket / 50kg Drum"
-  - label: "20ft Container Load"
-    value: "Approx. 800 - 1000 buckets (depends on palletizing)"
-  - label: "HS Code"
-    value: "2715000000"
-  - label: "Shipping Note"
-    value: "Non-hazardous for sea transport"
-
-downloads:
-  - title: "Technical Data Sheet (TDS)"
-    description: "Non-curing asphalt creep property, self-healing, and stress relaxation data."
-    type: "PDF"
-    href: ""
-  - title: "Composite System Manual"
-    description: "Professional guide for the Coating + Membrane dual-layer waterproofing system."
-    type: "PDF"
-    href: ""
+  - title: "Heating Prep"
+    text: "Heat the material to approximately 120°C - 150°C using specialized melting equipment until it reaches a sprayable or spreadable consistency."
+  - title: "Surface Treatment"
+    text: "Ensure the concrete substrate is clean and free of standing water. Priming is recommended for dusty surfaces."
+  - title: "Spray/Spread"
+    text: "Apply the hot material evenly at a thickness of 1.5mm - 2.0mm. While still hot, embed the secondary membrane for maximum adhesion."
 
 related_products:
   - title: "SBS Bitumen Membrane"
-    image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
+    image: "https://img.tyuanwaterproof.com/products/sbs-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
-  - title: "Spraying Quick-Setting Coating"
-    image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt-waterproof-coating.webp"
-    href: "/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/"
+  - title: "Self-Adhesive Membrane"
+    image: "https://img.tyuanwaterproof.com/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
+    href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
 
 faqs:
-  - question: "Why is 'Non-Curing' better for buildings that move?"
-    answer: "Traditional coatings become brittle over time. Our TY-SHIELD™ Ever-Flex remains a viscous liquid, meaning it can stretch and flow to follow structural movements without ever breaking the waterproof seal."
-  - question: "Can it be applied on a damp roof?"
-    answer: "Yes, its unique polymer structure allows for high bonding strength even on damp substrates, provided there is no standing water, significantly speeding up construction schedules."
-  - question: "How does it stop water channeling?"
-    answer: "Because it never hardens, it maintains a permanent 'tacky' bond with the concrete. This eliminates the gap between the coating and the substrate where water typically travels in traditional systems."
+  - question: "Why is it called 'Non-Curing'?"
+    answer: "Because it remains in a permanent gel-like, viscous state for its entire service life. This allows it to 'flow' into new cracks and maintain a bond that rigid coatings cannot."
+  - question: "Does it need to be heated?"
+    answer: "Yes. For proper application, it must be melted to a liquid state. Once applied, it cools back to its permanent viscous state."
 ---
 
-# TY-SHIELD™ Ever-Flex Non-Curing Rubber Asphalt Coating
+# TY-SHIELD™ Non-Curing Rubber Asphalt Waterproof Coating
 
-**Non-Curing Rubber Asphalt Waterproof Coating** is a revolutionary single-component material that redefined B2B waterproofing standards. Unlike traditional coatings that cure into a solid film, our **TY-SHIELD™ Ever-Flex technology** ensures the material remains in a permanently viscous, gel-like state, providing lifelong protection for complex structures.
+**TY-SHIELD™ Non-Curing Rubber Asphalt Coating** is a revolutionary material designed for high-performance composite waterproofing systems. By combining the benefits of liquid coatings and solid membranes, it creates an unbreakable "skin" that protects buildings from the most aggressive water pressure.
 
-### Permanent Creep & Stress Absorption
-The hallmark of this coating is its "creep" property. It functions as a stress-absorbing interlayer that maintains a constant bond between the substrate and the top-layer membrane. Whether it's a bridge deck subject to vibration or a commercial roof experiencing thermal expansion, the non-curing layer flows to accommodate movement, effectively **bridging cracks up to 15mm**.
+### The Self-Healing Revolution
+Traditional waterproofing fails when the building settles and cracks. Our **Ever-Flex technology** ensures that the coating remains viscous. If a crack opens in the concrete, the material naturally flows into the gap, sealing it instantly. This "Living Membrane" approach is why it is preferred for critical infrastructure and luxury underground projects.
 
-### The Ultimate Self-Healing Barrier
-Engineered with high-molecular polymers and modified asphalt, the coating acts as a living shield. If the waterproof system is punctured by a fastener or construction debris, the material's viscous nature allows it to **flow into the damage site and reseal the breach**, preventing leaks that would cripple standard systems.
+### Eliminating Water Channeling
+The most common cause of basement leaks is water "traveling" between the concrete and the membrane. Because this coating is permanently sticky and non-curing, it forms a full-surface molecular bond that leaves no room for water to migrate, even if the outer membrane is punctured.
 
-### Seamless Composite Excellence
-While it can be used as a standalone layer, it is the industry gold standard for **Composite Waterproofing Systems (Dual-Layer)**. When paired with our SBS or APP modified bitumen membranes, it creates an impenetrable barrier with **zero water channeling**, ensuring that even if the top membrane is compromised, water cannot migrate underneath.
-
-### Key Industrial Advantages
-*   **98%+ Solid Content**: Solvent-free, VOC-compliant, and safe for confined space application.
-*   **Superior Adhesion**: Achieves 100% cohesive failure on concrete and metal.
-*   **All-Weather Reliability**: Maintains flexibility from -20°C up to 65°C.
-*   **Rapid Installation**: Applied by heating and scraping/spraying, allowing for immediate membrane paving.
-
-Tianyuan provides comprehensive **project-direct supply and OEM branding**, including specialized technical support for infrastructure, commercial roofing, and underground civil engineering.
+### Professional Application
+Whether applied via **hot-spray** for rapid large-scale coverage or **hand-scraping** for intricate corners, TY-SHIELD™ Non-Curing coating provides a seamless, joint-free barrier that integrates perfectly with SBS and self-adhesive sheets for a lifetime of protection.
