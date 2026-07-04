@@ -2,8 +2,8 @@
 title: "Polyurethane Waterproof Coating for Roof and Basement"
 category: "waterproof-coatings"
 product_category: "Waterproof Coatings"
-main_image: "https://img.tyuanwaterproof.com/products/polyurethane-coating.webp"
-image: "https://img.tyuanwaterproof.com/products/polyurethane-coating.webp"
+main_image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
+image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
 
 hero_description: "High-performance liquid-applied polyurethane waterproof coating. Forms a seamless, highly elastic rubber-like membrane for complex roofing, basements, and underground structures."
 
@@ -16,7 +16,7 @@ hero_tags:
   - "OEM Available"
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/polyurethane-coating.webp"
+  - image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
     title: "PU Coating Product Packaging"
 
 spec_table:
@@ -28,8 +28,6 @@ spec_table:
     value: "≥ 2.45 MPa"
   - label: "Solid Content"
     value: "≥ 92%"
-  - label: "Low Temp Flexibility"
-    value: "-35°C (Standard grade)"
 
 quick_facts:
   - title: "Exceptional Elasticity"
@@ -44,12 +42,10 @@ applications:
     text: "Ideal for flat roofs, exposed balconies, and complex architectural details where sheets cannot reach."
   - title: "Underground Infrastructure"
     text: "Superior protection for basements, subway stations, and tunnels against constant hydrostatic pressure."
-  - title: "Kitchens & Bathrooms"
-    text: "A rapid-application solution for interior wet-areas, ensuring zero-leakage under tiles."
 
 related_products:
   - title: "JS Polymer Coating"
-    image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating-factory.webp"
+    image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating.webp"
     href: "/products/polymer-cement-js-waterproof-coating-factory/"
   - title: "Polyurea Coating"
     image: "https://img.tyuanwaterproof.com/products/spray-polyurea-coating-v2.webp"

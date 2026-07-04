@@ -2,8 +2,8 @@
 title: "Polymer Cement (JS) Waterproof Coating | Two-Component Flexible Slurry"
 category: "waterproof-coatings"
 product_category: "Waterproof Coatings"
-image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating-factory.webp"
-main_image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating-factory.webp"
+image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating.webp"
+main_image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating.webp"
 
 hero_description: "High-performance two-component JS waterproof coating combining acrylic polymers and high-grade cement. Ideal for kitchens, bathrooms, and swimming pools with excellent wet-base adhesion."
 
@@ -16,7 +16,7 @@ hero_tags:
   - "OEM Support"
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating-factory.webp"
+  - image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating.webp"
     title: "Tianyuan JS Waterproof Coating Bucket"
 
 spec_table:
@@ -28,8 +28,6 @@ spec_table:
     value: "≥ 1.8 MPa (Type II)"
   - label: "Elongation"
     value: "≥ 80% (Type II)"
-  - label: "Drying Time"
-    value: "Touch dry: 2-4h"
 
 quick_facts:
   - title: "The Standard for Interior Spaces"
@@ -44,12 +42,10 @@ applications:
     text: "The primary waterproof layer for residential interiors before tile installation."
   - title: "Swimming Pools & Reservoirs"
     text: "Type II JS provides the necessary water-head resistance for submerged structures."
-  - title: "Balconies & Terraces"
-    text: "A cost-effective, UV-stable solution for exterior floor waterproofing."
 
 related_products:
   - title: "Polyurethane Coating"
-    image: "https://img.tyuanwaterproof.com/products/polyurethane-coating.webp"
+    image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
     href: "/products/polyurethane-waterproof-coating-factory/"
   - title: "Self-Adhesive Membrane"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-bitumen-waterproofing-membrane-wholesale.webp"
