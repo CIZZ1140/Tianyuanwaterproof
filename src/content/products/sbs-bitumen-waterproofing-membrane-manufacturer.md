@@ -1,59 +1,51 @@
 ---
-title: "SBS Modified Bitumen Waterproofing Membrane"
+title: "SBS Modified Bitumen Waterproofing Membrane | Factory Direct"
 category: "bitumen-membranes"
 featured: true
 order: 100
 product_category: "Bitumen Membranes"
-image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
-main_image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
+image: "https://sc02.alicdn.com/kf/A88232355035e4385a94d57ad6698250dB.png"
+main_image: "https://sc02.alicdn.com/kf/A88232355035e4385a94d57ad6698250dB.png"
 
-hero_description: "TY-SHIELD SBS Modified Bitumen Waterproofing Membrane is a torch-applied, reinforced waterproofing membrane for roofing, basement, foundation, and underground systems that require reliable low-temperature flexibility and resistance to normal substrate movement. Configure reinforcement, thickness, and surface finish to match the project specification."
+hero_description: "TY-SHIELD™ SBS Modified Bitumen Waterproofing Membrane is a torch-applied reinforced membrane for roofing, basement, foundation and underground waterproofing systems requiring reliable low-temperature flexibility and resistance to normal substrate movement. Available in selected reinforcement types, thicknesses and surface finishes with factory-direct supply, export packing and OEM private-label support."
 
 hero_tags:
   - "SBS Modified"
-  - "GB 18242-2008"
+  - "-25°C Flexibility"
   - "3mm / 4mm / 5mm"
+  - "PE Film / Fine Sand / Mineral Granules"
   - "Torch-Applied"
-  - "PE Film / Sand / Mineral Granules"
   - "OEM Available"
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
-    title: "SBS Membrane Surface"
-  - image: "/placeholder.webp"
-    title: "Production Line"
+  - image: "https://sc02.alicdn.com/kf/A88232355035e4385a94d57ad6698250dB.png"
+    title: "Product Overview"
+  - image: "https://sc04.alicdn.com/kf/He642c9591bb94d4da52c08478d4b0009s.jpg"
+    title: "Surface Options"
+  - image: "https://sc04.alicdn.com/kf/Hb17150a238ee4195b8bfd6c11e874261n.jpg"
+    title: "Material Detail"
+  - image: "https://sc04.alicdn.com/kf/H81ce7ba225a9423d8faa54289d1b5db52.jpg"
+    title: "Bulk Supply & Packing"
 
 spec_table:
   - label: "Product Type"
     value: "SBS Modified Bitumen Waterproofing Membrane"
   - label: "Standard"
     value: "GB 18242-2008"
-  - label: "Reinforcement"
-    value: "PY (Polyester), G (Glass Fiber), PYG (Glass Fiber Reinforced Polyester)"
-  - label: "Thickness"
-    value: "3mm, 4mm, 5mm"
-  - label: "Upper Surface"
-    value: "PE Film, Fine Sand, Mineral Granules"
-  - label: "Lower Surface"
-    value: "Burn-off PE Film"
-  - label: "Roll Size"
-    value: "1m x 10m"
+  - label: "Reinforcement Options"
+    value: "PY (Polyester) | G (Glass Fiber) | PYG (Glass Fiber Reinforced Polyester)"
+  - label: "Standard Roll Size"
+    value: "1m x 10m | Customizable available"
+  - label: "Typical Applications"
+    value: "Roofing | Basement | Foundation"
   - label: "Installation Method"
     value: "Torch-Applied"
   - label: "Low Temp Flexibility"
-    value: "-25degC (SBS grade)"
+    value: "-25°C"
+  - label: "Factory Service"
+    value: "OEM, Private Label, Export Packing"
 
 overview_image: "/placeholder.webp"
-
-quick_facts:
-  - title: "Low-Temperature Flexibility"
-    text: "SBS polymer modification keeps the membrane flexible in cold, temperature-variable conditions where standard bitumen membranes may become brittle."
-  - title: "Resistance to Substrate Movement"
-    text: "Reinforced membrane construction supports waterproofing systems exposed to normal movement and thermal cycling."
-  - title: "Reliable Waterproof Barrier"
-    text: "Torch-applied overlap bonding creates a continuous waterproofing layer across the main field area and treated details."
-  - title: "Multiple Configuration Options"
-    text: "Choose selected reinforcement, thickness, and surface-finish combinations for non-exposed, multi-layer, or mineral-finished roof systems."
 
 applications:
   - title: "Roof Waterproofing"
