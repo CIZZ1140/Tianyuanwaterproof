@@ -2,8 +2,8 @@
 title: "Polymer Cement (JS) Waterproof Coating | Two-Component Flexible Slurry"
 category: "waterproof-coatings"
 product_category: "Waterproof Coatings"
-image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating.webp"
-main_image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating.webp"
+image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
+main_image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
 
 hero_description: "High-performance two-component JS waterproof coating combining acrylic polymers and high-grade cement. Ideal for kitchens, bathrooms, and swimming pools with excellent wet-base adhesion."
 
@@ -16,7 +16,7 @@ hero_tags:
   - "OEM Support"
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating.webp"
+  - image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
     title: "Tianyuan JS Waterproof Coating Bucket"
 
 spec_table:
@@ -45,7 +45,7 @@ applications:
 
 related_products:
   - title: "Polyurethane Coating"
-    image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
+    image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
     href: "/products/polyurethane-waterproof-coating-factory/"
   - title: "Self-Adhesive Membrane"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-bitumen-waterproofing-membrane-wholesale.webp"

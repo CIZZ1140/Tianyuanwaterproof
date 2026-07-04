@@ -2,8 +2,8 @@
 title: "Polyurethane Waterproof Coating for Roof and Basement"
 category: "waterproof-coatings"
 product_category: "Waterproof Coatings"
-main_image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
-image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
+main_image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
+image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
 
 hero_description: "High-performance liquid-applied polyurethane waterproof coating. Forms a seamless, highly elastic rubber-like membrane for complex roofing, basements, and underground structures."
 
@@ -16,7 +16,7 @@ hero_tags:
   - "OEM Available"
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating.webp"
+  - image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
     title: "PU Coating Product Packaging"
 
 spec_table:
@@ -45,7 +45,7 @@ applications:
 
 related_products:
   - title: "JS Polymer Coating"
-    image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating.webp"
+    image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
     href: "/products/polymer-cement-js-waterproof-coating-factory/"
   - title: "Polyurea Coating"
     image: "https://img.tyuanwaterproof.com/products/spray-polyurea-coating-v2.webp"
