@@ -1,5 +1,5 @@
 ---
-title: "SBS / APP Modified Bitumen Waterproofing Membrane"
+title: "SBS Modified Bitumen Waterproofing Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 100
@@ -7,14 +7,14 @@ product_category: "Bitumen Membranes"
 image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
 
-hero_description: "Premium SBS/APP modified bitumen waterproofing membrane with polyester reinforcement. Torch-applied for maximum durability in roofing, basements, and bridge decks."
+hero_description: "TY-SHIELD SBS Modified Bitumen Waterproofing Membrane is a torch-applied, reinforced waterproofing membrane for roofing, basement, foundation, and underground systems that require reliable low-temperature flexibility and resistance to normal substrate movement. Configure reinforcement, thickness, and surface finish to match the project specification."
 
 hero_tags:
-  - "SBS / APP Modified"
+  - "SBS Modified"
   - "GB 18242-2008"
   - "3mm / 4mm / 5mm"
-  - "Torch Applied"
-  - "PE / Sand / Mineral"
+  - "Torch-Applied"
+  - "PE Film / Sand / Mineral Granules"
   - "OEM Available"
 
 gallery:
@@ -25,51 +25,55 @@ gallery:
 
 spec_table:
   - label: "Product Type"
-    value: "SBS / APP Modified Bitumen Membrane"
+    value: "SBS Modified Bitumen Waterproofing Membrane"
   - label: "Standard"
-    value: "GB 18242-2008 / GB 18243-2008"
+    value: "GB 18242-2008"
   - label: "Reinforcement"
-    value: "Polyester (PY), Glass Fiber (G), Glass Fiber Reinforced Polyester (PYG)"
+    value: "PY (Polyester), G (Glass Fiber), PYG (Glass Fiber Reinforced Polyester)"
   - label: "Thickness"
     value: "3mm, 4mm, 5mm"
   - label: "Upper Surface"
-    value: "PE Film, Fine Sand, Mineral Granules (Slate)"
+    value: "PE Film, Fine Sand, Mineral Granules"
   - label: "Lower Surface"
     value: "Burn-off PE Film"
-  - label: "Low Temp Flex"
-    value: "SBS: -25degC; APP: -15degC"
   - label: "Roll Size"
     value: "1m x 10m"
+  - label: "Installation Method"
+    value: "Torch-Applied"
+  - label: "Low Temp Flexibility"
+    value: "-25degC (SBS grade)"
+
+overview_image: "/placeholder.webp"
 
 quick_facts:
-  - title: "Extreme Durability"
-    text: "Engineered for high-stress environments, providing long-term waterproofing for heavy-duty industrial projects."
-  - title: "Torch-on Bonding"
-    text: "Fused installation creates a permanent, monolithic bond with the substrate, ensuring zero water migration."
-  - title: "Multi-Surface Finish"
-    text: "Available in diverse finishes including mineral granules for exposed roofs and PE film for multi-layer systems."
-  - title: "Climate Adaptive"
-    text: "SBS-modified for cold regions and APP-modified for high-temperature areas, ensuring global applicability."
+  - title: "Low-Temperature Flexibility"
+    text: "SBS polymer modification keeps the membrane flexible in cold, temperature-variable conditions where standard bitumen membranes may become brittle."
+  - title: "Resistance to Substrate Movement"
+    text: "Reinforced membrane construction supports waterproofing systems exposed to normal movement and thermal cycling."
+  - title: "Reliable Waterproof Barrier"
+    text: "Torch-applied overlap bonding creates a continuous waterproofing layer across the main field area and treated details."
+  - title: "Multiple Configuration Options"
+    text: "Choose selected reinforcement, thickness, and surface-finish combinations for non-exposed, multi-layer, or mineral-finished roof systems."
 
 applications:
-  - title: "Roofing Systems"
-    text: "Ideal for industrial, commercial, and residential flat or sloping roofs, especially for exposed mineral-finished roofs."
-  - title: "Underground Projects"
-    text: "Reliable protection for basements, foundations, subways, and civil air defense works."
-  - title: "Bridge & Road Works"
-    text: "Heavy-duty Grade II protection for bridge decks, highways, and municipal infrastructure."
-  - title: "Water Conservancy"
-    text: "Suitable for swimming pools, wastewater treatment plants, and irrigation canals."
+  - title: "Roof Waterproofing"
+    text: "Suitable for industrial, commercial, and residential roofing systems, including selected exposed mineral-finished roof applications."
+  - title: "Basement & Foundation"
+    text: "Suitable for below-grade waterproofing systems where a reinforced, torch-applied membrane is specified for constant soil contact."
+  - title: "Underground Waterproofing"
+    text: "Suitable for selected underground structures, retaining walls, and project-specific waterproofing assemblies."
+  - title: "Infrastructure Projects"
+    text: "Available for selected bridge, municipal, and water-conservancy waterproofing projects subject to technical confirmation."
 
 features:
-  - title: "High Tensile Strength"
-    text: "The polyester reinforcement provides excellent mechanical strength and resistance to tearing and puncture."
-  - title: "Heat & Cold Stability"
-    text: "Maintains its physical properties under extreme thermal cycling and UV exposure."
-  - title: "Reliable Barrier"
-    text: "Formulated with premium petroleum asphalt to provide an impenetrable moisture and water barrier."
-  - title: "Easy Quality Control"
-    text: "Visible flame melting during installation allows for immediate visual verification of a secure bond."
+  - title: "Low-Temperature Flexibility"
+    text: "SBS polymer modification helps the membrane remain flexible in cold and temperature-variable conditions, reducing the risk of cracking during seasonal thermal cycling."
+  - title: "Resistance to Substrate Movement"
+    text: "Reinforced membrane construction supports waterproofing systems exposed to normal structural movement, settlement, and thermal expansion."
+  - title: "Reliable Overlap Bonding"
+    text: "Torch-applied overlap bonding helps create a continuous waterproofing layer across the main field area and treated details."
+  - title: "Project-Specific Configurations"
+    text: "Select the appropriate reinforcement, thickness, and surface-finish combination for non-exposed, multi-layer, or mineral-finished roof systems."
 
 technical_data:
   - label: "Tensile Strength (L/T)"
@@ -90,7 +94,7 @@ technical_data:
   - label: "Low Temp Flexibility"
     unit: "degC"
     standard: "GB 18242"
-    requirement: "-25degC / -15degC"
+    requirement: "-25degC"
     value: "No crack"
   - label: "Watertightness"
     unit: "MPa"
@@ -104,66 +108,121 @@ technical_data:
     value: "Passed"
 
 application_guide:
-  - title: "Substrate Prep"
-    text: "Clean the surface and ensure it is smooth, dry, and primed with cold bitumen primer."
-  - title: "Alignment"
-    text: "Unroll the membrane for alignment and then roll it back up halfway for torching."
-  - title: "Torching"
-    text: "Heat the lower surface and the substrate evenly until the PE film melts and a bead of liquid asphalt appears."
-  - title: "Rolling & Bonding"
-    text: "Roll the membrane forward while pressing firmly to ensure 100% contact and air exclusion."
-  - title: "Seam Treatment"
-    text: "Ensure 100mm overlaps. Torch the seams carefully and smooth them with a heated trowel."
-  - title: "Detailing"
-    text: "Pay extra attention to corners, drains, and vents using reinforced flashing strips."
+  - title: "Prepare the Substrate"
+    text: "Ensure the substrate is smooth, dry, clean, and free from loose material, sharp projections, standing water, oil, and debris."
+  - title: "Apply Compatible Primer"
+    text: "Apply compatible bitumen primer where required and allow the primer to dry before membrane installation."
+  - title: "Pre-Lay and Align"
+    text: "Unroll the membrane for positioning, align overlaps and details, then roll back the membrane section for torch application."
+  - title: "Heat and Bond"
+    text: "Heat the burn-off PE film and substrate evenly until the bitumen layer is ready for bonding, then roll forward with controlled pressure."
+  - title: "Treat Overlaps and Details"
+    text: "Form specified overlaps (minimum 100mm), inspect seams, and reinforce corners, drains, parapets, and pipe penetrations."
+  - title: "Safety Notice"
+    text: "Torch-applied membrane installation must be completed by trained installers using suitable fire-safety controls. Do not torch on combustible substrates such as wooden decks."
 
 packaging:
   - title: "Export Roll Packing"
-    text: "Rolls are vertically palletized and secured with heavy-duty strapping for safe ocean transit."
+    text: "Rolls are vertically palletized and secured with heavy-duty strapping, stretch-film, and protective wrapping for safe ocean transit."
   - title: "Branding Support"
     text: "Custom wrapping films, private labels, and branded core sleeves available for wholesale partners."
+  - title: "OEM Labeling"
+    text: "Custom pallet labels, outer-package markings, and brand-specific core sleeves available."
+  - title: "Storage"
+    text: "Store horizontally in dry conditions between +5degC and +30degC in original packaging. Shelf life 12 months."
 
 loading_data:
   - label: "20FT Container"
-    value: "Approx. 2,000 - 4,000 sqm (Subject to thickness)"
+    value: "Approx. 2,000 - 4,000 sqm (Subject to thickness and pallet arrangement)"
   - label: "Pallet Quantity"
     value: "20-30 rolls per pallet"
 
 downloads:
   - title: "SBS Technical Data Sheet"
-    description: "Detailed GB 18242 parameters and physical property data sheet."
+    description: "Product-specific SBS membrane performance and specification data."
     type: "PDF"
     href: ""
-  - title: "Installation Manual"
-    description: "Step-by-step guide for professional torch-applied membrane systems."
+  - title: "Torch-Applied Installation Manual"
+    description: "Installation guidance for professional SBS membrane waterproofing systems."
+    type: "PDF"
+    href: ""
+  - title: "Safety Data Sheet"
+    description: "SDS information for the selected TY-SHIELD SBS membrane product."
+    type: "PDF"
+    href: ""
+  - title: "Test Report"
+    description: "Available test documentation for selected grades and configurations."
     type: "PDF"
     href: ""
 
 related_products:
+  - title: "APP Modified Bitumen Membrane"
+    image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
+    href: "/products/app-modified-bitumen-waterproofing-membrane-manufacturer/"
   - title: "Self-Adhesive Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
   - title: "TPO Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
-  - title: "EPDM Waterproofing Membrane"
-    image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
-    href: "/products/epdm-waterproofing-membrane-wholesale/"
   - title: "Bitumen Sealing Tape"
     image: "https://img.tyuanwaterproof.com/products/bitumen-tape.webp"
     href: "/products/self-adhesive-bitumen-tape-wholesale/"
 
 faqs:
-  - question: "Which should I choose, SBS or APP?"
-    answer: "Choose SBS (Styrene-Butadiene-Styrene) for cold climates due to its -25degC flexibility. Choose APP (Atactic Polypropylene) for hot regions as it offers superior heat resistance (up to 130degC)."
-  - question: "Can I install this on a wooden deck?"
-    answer: "No, torch-on application is a fire hazard for wooden decks. We recommend using our Self-Adhesive Bitumen Membrane for such projects."
-  - question: "What is the mineral granule surface for?"
-    answer: "It provides extra UV protection and a decorative finish for exposed roofing, eliminating the need for a protective gravel layer."
+  - question: "What is SBS modified bitumen waterproofing membrane?"
+    answer: "It is a reinforced bitumen waterproofing membrane modified with SBS (Styrene-Butadiene-Styrene) polymer, typically installed by torch application for roofing, basement, foundation, and underground waterproofing systems."
+  - question: "What do PY, G, and PYG reinforcement types mean?"
+    answer: "PY refers to polyester felt reinforcement (best tensile strength and elongation), G refers to glass fiber felt reinforcement (good dimensional stability), and PYG combines both for enhanced mechanical performance. The suitable reinforcement depends on the selected grade and project requirements."
+  - question: "Which surface finish is suitable for an exposed roof?"
+    answer: "Mineral granules (slate chips) are typically selected for exposed roof systems requiring UV protection and a decorative finish. PE Film is used for non-exposed layers, and Fine Sand is used when additional inter-layer bonding is needed."
+  - question: "Can SBS torch-applied membrane be installed on a wooden deck?"
+    answer: "No, torch application presents a fire risk on combustible substrates. Use our Self-Adhesive Bitumen Membrane for wooden decks or specify a torch-free installation method."
+  - question: "What information is needed for a factory quotation?"
+    answer: "Please provide the required thickness, reinforcement type, surface finish, application, estimated quantity, packaging requirement, and destination port."
+
+# --- New Sections: Template code not yet implemented ---
+
+configurations:
+  - reinforcement: "Polyester Felt (PY)"
+    thickness: ["3mm", "4mm", "5mm"]
+    surface: ["PE Film", "Fine Sand", "Mineral Granules"]
+    application: "Roof, Basement, Foundation, Underground Waterproofing"
+  - reinforcement: "Glass Fiber Felt (G)"
+    thickness: ["3mm", "4mm", "5mm"]
+    surface: ["PE Film", "Fine Sand"]
+    application: "Multi-Layer Roofing, Non-Exposed Waterproofing, Foundation"
+  - reinforcement: "Glass Fiber Reinforced Polyester (PYG)"
+    thickness: ["3mm", "4mm", "5mm"]
+    surface: ["PE Film", "Fine Sand", "Mineral Granules"]
+    application: "Roof, Underground, Project-Specific Applications"
+
+structure:
+  diagram: "/placeholder.webp"
+  layers:
+    - name: "Upper Surface Layer"
+      role: "PE Film, Fine Sand, or Mineral Granules selected according to system exposure and finish requirements."
+    - name: "SBS Modified Bitumen Coating"
+      role: "Provides the primary waterproofing and SBS polymer-modified bitumen performance layer."
+    - name: "Reinforcement Layer"
+      role: "PY, G, or PYG reinforcement provides tensile strength and dimensional stability."
+    - name: "SBS Modified Bitumen Coating"
+      role: "Forms the lower waterproofing layer around the reinforcement carrier."
+    - name: "Lower Surface Layer"
+      role: "Burn-off PE Film designed for torch-applied installation."
+  surface_finish_guidance:
+    - surface: "PE Film"
+      use: "Multi-layer and non-exposed waterproofing systems."
+    - surface: "Fine Sand"
+      use: "When additional inter-layer bonding or protection is required."
+    - surface: "Mineral Granules"
+      use: "Exposed roofing systems requiring UV protection and decorative finish."
 ---
 
-## Heavy-Duty Bituminous Waterproofing Solution
+## SBS Modified Bitumen Waterproofing Membrane
 
-SBS / APP Modified Bitumen Waterproofing Membrane is the industrial standard for extreme durability and reliable protection. By combining premium petroleum asphalt with specialized polymer modifiers and a high-strength polyester reinforcement, we create a membrane that provides an impenetrable shield for your project's most critical structures.
+SBS modified bitumen waterproofing membrane combines petroleum asphalt, SBS polymer modification, reinforcement, and selected surface finishes into a torch-applied waterproofing layer for demanding building-envelope applications.
 
-Designed for torch-on installation, this monolithic system ensures zero water migration and can withstand the toughest environmental challenges, from deep basements to high-altitude roofing. As a global manufacturing leader, Tianyuan supports your business with standardized high-performance membranes and full OEM customization services.
+Compared with standard bitumen membranes, the SBS-modified formulation is selected when projects require stronger low-temperature flexibility (down to -25degC) and improved adaptation to normal movement in roofing, basement, foundation, and underground waterproofing systems.
+
+TY-SHIELD supports project-specific membrane selection by reinforcement type, thickness, upper-surface finish, quantity, export packing method, and OEM private-label requirements. Contact our team with your project specification for a competitive factory quotation.
