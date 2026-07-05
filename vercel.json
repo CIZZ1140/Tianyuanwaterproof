@@ -21,6 +21,11 @@
       "destination": "/",
       "permanent": true
     },
+    {
+      "source": "/wp-:path*",
+      "destination": "/",
+      "permanent": true
+    },
     { "source": "/projects", "destination": "/projects/", "permanent": true },
     { "source": "/contact", "destination": "/contact/", "permanent": true },
     { "source": "/categories/bitumen-membranes", "destination": "/categories/bitumen-membranes/", "permanent": true },
