@@ -6,7 +6,21 @@
     { "source": "/products/sbs-bitumen-membrane", "destination": "/products/sbs-bitumen-waterproofing-membrane-manufacturer/", "permanent": true },
     { "source": "/products/self-adhesive-bitumen-membrane", "destination": "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/", "permanent": true },
     { "source": "/products/polymer-cement-js-waterproof-coating", "destination": "/products/polymer-cement-js-waterproof-coating-factory/", "permanent": true },
-    { "source": "/news", "destination": "/", "permanent": true },
+    {
+      "source": "/news",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/news/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/comments/feed/",
+      "destination": "/",
+      "permanent": true
+    },
     { "source": "/projects", "destination": "/projects/", "permanent": true },
     { "source": "/contact", "destination": "/contact/", "permanent": true },
     { "source": "/categories/bitumen-membranes", "destination": "/categories/bitumen-membranes/", "permanent": true },
