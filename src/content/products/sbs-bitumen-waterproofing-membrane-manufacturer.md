@@ -18,13 +18,13 @@ hero_tags:
   - "OEM Available"
 
 gallery:
-  - image: "https://sc02.alicdn.com/kf/A88232355035e4385a94d57ad6698250dB.png"
+  - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-main.webp"
     title: "Product Overview"
-  - image: "https://sc04.alicdn.com/kf/He642c9591bb94d4da52c08478d4b0009s.jpg"
+  - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-surface.webp"
     title: "Surface Options"
-  - image: "https://sc04.alicdn.com/kf/Hb17150a238ee4195b8bfd6c11e874261n.jpg"
+  - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-detail.webp"
     title: "Material Detail"
-  - image: "https://sc04.alicdn.com/kf/H81ce7ba225a9423d8faa54289d1b5db52.jpg"
+  - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-bulk.webp"
     title: "Bulk Supply & Packing"
 
 spec_table:
