@@ -1,0 +1,89 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { ArrowRight, CalendarDays } from 'lucide-astro';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+
+const categoryMeta = {
+  roofing: { label: 'Roofing', className: 'bg-blue-100 text-blue-700' },
+  basement: { label: 'Basement', className: 'bg-emerald-100 text-emerald-700' },
+  coatings: { label: 'Coatings', className: 'bg-orange-100 text-orange-700' },
+  installation: { label: 'Installation', className: 'bg-violet-100 text-violet-700' },
+  'industry-insights': { label: 'Industry Insights', className: 'bg-slate-200 text-slate-700' },
+  'product-guides': { label: 'Product Guides', className: 'bg-cyan-100 text-cyan-700' }
+} as const;
+
+const category = categoryMeta[post.data.category];
+const articleHref = `/blog/${post.slug}/`;
+
+const publishedDate = new Intl.DateTimeFormat('en-US', {
+  month: 'short',
+  day: 'numeric',
+  year: 'numeric'
+}).format(post.data.publishDate);
+
+const excerpt =
+  post.data.description.length > 120
+    ? `${post.data.description.slice(0, 120).trimEnd()}...`
+    : post.data.description;
+---
+
+<article class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-brand/50 hover:shadow-md">
+  <a
+    href={articleHref}
+    class="block overflow-hidden"
+    aria-label={`Read ${post.data.title}`}
+  >
+    {
+      post.data.coverImage ? (
+        <img
+          src={post.data.coverImage}
+          alt={post.data.coverAlt ?? post.data.title}
+          loading="lazy"
+          class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-105"
+        />
+      ) : (
+        <div class="flex aspect-[16/10] items-center justify-center bg-slate-200 text-sm font-bold text-slate-500">
+          Tianyuan Waterproof
+        </div>
+      )
+    }
+  </a>
+
+  <div class="flex flex-1 flex-col p-5">
+    <div class="flex items-center justify-between gap-3">
+      <span class={`rounded-full px-3 py-1 text-xs font-bold ${category.className}`}>
+        {category.label}
+      </span>
+      <time
+        datetime={post.data.publishDate.toISOString()}
+        class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500"
+      >
+        <CalendarDays size={14} strokeWidth={1.8} />
+        {publishedDate}
+      </time>
+    </div>
+
+    <h2 class="mt-4 text-xl font-black leading-snug text-[#102033]">
+      <a href={articleHref} class="transition hover:text-brand">
+        {post.data.title}
+      </a>
+    </h2>
+
+    <p class="mt-3 text-sm leading-6 text-slate-600">
+      {excerpt}
+    </p>
+
+    <a
+      href={articleHref}
+      class="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-bold text-brand transition hover:text-navy"
+    >
+      Read more
+      <ArrowRight size={17} strokeWidth={2} />
+    </a>
+  </div>
+</article>

@@ -1,0 +1,251 @@
+---
+import { getCollection, getEntryBySlug, render, type CollectionEntry } from 'astro:content';
+import { ArrowLeft, ArrowRight, CalendarDays, Clock3, UserRound } from 'lucide-astro';
+
+import Layout from '../../layouts/Layout.astro';
+import CTA from '../../components/CTA.astro';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('blog', ({ data }) => !data.draft);
+  return articles.map((article) => ({ params: { slug: article.slug } }));
+}
+
+const slug = Astro.params.slug;
+
+const allArticles = await getCollection('blog', ({ data }) => !data.draft);
+const visibleArticles = [...allArticles].sort(
+  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+);
+
+const article = slug ? await getEntryBySlug('blog', slug) : undefined;
+const validArticle = article && !article.data.draft ? article : undefined;
+
+if (!validArticle) {
+  Astro.response.status = 404;
+}
+
+const rendered = validArticle ? await render(validArticle) : undefined;
+const Content = rendered?.Content;
+
+const categoryMeta = {
+  roofing: { label: 'Roofing', className: 'bg-blue-100 text-blue-700' },
+  basement: { label: 'Basement', className: 'bg-emerald-100 text-emerald-700' },
+  coatings: { label: 'Coatings', className: 'bg-orange-100 text-orange-700' },
+  installation: { label: 'Installation', className: 'bg-violet-100 text-violet-700' },
+  'industry-insights': { label: 'Industry Insights', className: 'bg-slate-200 text-slate-700' },
+  'product-guides': { label: 'Product Guides', className: 'bg-cyan-100 text-cyan-700' }
+} as const;
+
+const siteUrl = (Astro.site ?? new URL('https://www.tyuanwaterproof.com')).toString().replace(/\/$/, '');
+const articleHref = validArticle ? `${siteUrl}/blog/${validArticle.slug}/` : `${siteUrl}/blog/`;
+
+const pageTitle = validArticle
+  ? `${validArticle.data.title} | Tianyuan Waterproof Blog`
+  : 'Article Not Found | Tianyuan Waterproof Blog';
+
+const pageDescription = validArticle
+  ? validArticle.data.description
+  : 'The requested Tianyuan Waterproof blog article could not be found.';
+
+const formatDate = (date: Date) =>
+  new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).format(date);
+
+const currentIndex = validArticle
+  ? visibleArticles.findIndex((item) => item.slug === validArticle.slug)
+  : -1;
+
+const newerArticle = currentIndex > 0 ? visibleArticles[currentIndex - 1] : undefined;
+const olderArticle =
+  currentIndex >= 0 && currentIndex < visibleArticles.length - 1
+    ? visibleArticles[currentIndex + 1]
+    : undefined;
+
+const relatedArticles = validArticle
+  ? visibleArticles
+      .filter((item) => item.slug !== validArticle.slug && item.data.category === validArticle.data.category)
+      .slice(0, 3)
+  : [];
+
+const fallbackRelatedArticles =
+  relatedArticles.length > 0
+    ? relatedArticles
+    : visibleArticles.filter((item) => item.slug !== validArticle?.slug).slice(0, 3);
+
+const articleJsonLd = validArticle
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      '@id': `${articleHref}#article`,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': articleHref },
+      headline: validArticle.data.title,
+      description: validArticle.data.description,
+      datePublished: validArticle.data.publishDate.toISOString(),
+      dateModified: (validArticle.data.updatedDate ?? validArticle.data.publishDate).toISOString(),
+      author: { '@type': 'Organization', name: validArticle.data.author },
+      publisher: { '@type': 'Organization', name: 'Tianyuan Waterproof', url: siteUrl },
+      image: validArticle.data.coverImage
+        ? [new URL(validArticle.data.coverImage, siteUrl).toString()]
+        : undefined
+    }
+  : undefined;
+---
+
+<Layout title={pageTitle} description={pageDescription} preloadImage={validArticle?.data.coverImage}>
+  {articleJsonLd && (
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(articleJsonLd)} />
+  )}
+
+  {
+    validArticle && Content ? (
+      <main class="bg-[#F5F7FA] text-[#102033]">
+        <section class="bg-[#0E2A47] px-4 py-8 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-[1680px]">
+            <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-sm font-medium text-slate-300">
+              <a href="/" class="transition hover:text-white">Home</a>
+              <span>/</span>
+              <a href="/blog/" class="transition hover:text-white">Blog</a>
+              <span>/</span>
+              <span class="max-w-[28rem] truncate text-white">{validArticle.data.title}</span>
+            </nav>
+          </div>
+        </section>
+
+        <section class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+          <div class="mx-auto max-w-[1680px]">
+            <div class="grid gap-10 xl:grid-cols-[minmax(0,1fr)_300px]">
+              <article class="mx-auto w-full max-w-3xl">
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-9 lg:p-12">
+                  <div class="flex flex-wrap items-center gap-3">
+                    <span class={`rounded-full px-3 py-1 text-xs font-bold ${categoryMeta[validArticle.data.category].className}`}>
+                      {categoryMeta[validArticle.data.category].label}
+                    </span>
+                    <time datetime={validArticle.data.publishDate.toISOString()} class="inline-flex items-center gap-1.5 text-sm font-medium text-slate-500">
+                      <CalendarDays size={16} strokeWidth={1.8} /> {formatDate(validArticle.data.publishDate)}
+                    </time>
+                    <span class="inline-flex items-center gap-1.5 text-sm font-medium text-slate-500">
+                      <UserRound size={16} strokeWidth={1.8} /> {validArticle.data.author}
+                    </span>
+                  </div>
+
+                  <h1 class="mt-6 text-4xl font-black leading-tight text-[#102033] sm:text-5xl">
+                    {validArticle.data.title}
+                  </h1>
+
+                  <p class="mt-6 text-lg leading-8 text-slate-600">
+                    {validArticle.data.description}
+                  </p>
+
+                  {
+                    validArticle.data.coverImage && (
+                      <figure class="mt-8 overflow-hidden rounded-2xl border border-slate-200">
+                        <img
+                          src={validArticle.data.coverImage}
+                          alt={validArticle.data.coverAlt ?? validArticle.data.title}
+                          loading="eager"
+                          class="aspect-[16/9] w-full object-cover"
+                        />
+                      </figure>
+                    )
+                  }
+
+                  <div
+                    data-article-content
+                    class="mt-10 text-base leading-8 text-slate-700 [&_a]:font-bold [&_a]:text-brand [&_a]:underline [&_a]:decoration-brand/40 [&_a]:underline-offset-4 hover:[&_a]:text-navy [&_blockquote]:my-8 [&_blockquote]:border-l-4 [&_blockquote]:border-[#F58A1F] [&_blockquote]:bg-orange-50 [&_blockquote]:px-5 [&_blockquote]:py-4 [&_blockquote]:text-slate-700 [&_code]:rounded [&_code]:bg-slate-100 [&_code]:px-1.5 [&_code]:py-1 [&_code]:text-sm [&_h2]:mt-12 [&_h2]:scroll-mt-28 [&_h2]:text-3xl [&_h2]:font-black [&_h2]:leading-tight [&_h2]:text-[#102033] [&_h3]:mt-9 [&_h3]:scroll-mt-28 [&_h3]:text-2xl [&_h3]:font-black [&_h3]:text-[#102033] [&_img]:my-8 [&_img]:rounded-2xl [&_img]:border [&_img]:border-slate-200 [&_img]:shadow-sm [&_li]:my-2 [&_ol]:my-6 [&_ol]:list-decimal [&_ol]:pl-6 [&_p]:mt-5 [&_strong]:font-black [&_table]:my-8 [&_table]:w-full [&_table]:border-collapse [&_td]:border [&_td]:border-slate-200 [&_td]:p-3 [&_th]:border [&_th]:border-slate-200 [&_th]:bg-slate-50 [&_th]:p-3 [&_th]:text-left [&_ul]:my-6 [&_ul]:list-disc [&_ul]:pl-6"
+                  >
+                    <Content />
+                  </div>
+
+                  <div class="mt-12 border-t border-slate-200 pt-8">
+                    <p class="text-sm font-bold uppercase tracking-[0.16em] text-brand">Need Technical Support?</p>
+                    <p class="mt-3 text-base leading-7 text-slate-600">
+                      Request product-specific technical data, waterproofing system guidance,
+                      export packing information or a factory quotation.
+                    </p>
+                    <a
+                      href="/contact/"
+                      class="mt-5 inline-flex items-center gap-2 rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white transition hover:bg-blue-600"
+                    >
+                      Request Project Support <ArrowRight size={17} strokeWidth={2} />
+                    </a>
+                  </div>
+                </div>
+
+                <nav aria-label="Article navigation" class="mt-8 grid gap-4 sm:grid-cols-2">
+                  {newerArticle ? (
+                    <a
+                      href={`/blog/${newerArticle.slug}/`}
+                      class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-brand hover:shadow-md"
+                    >
+                      <span class="inline-flex items-center gap-2 text-sm font-bold text-brand">
+                        <ArrowLeft size={16} strokeWidth={2} /> Newer Article
+                      </span>
+                      <span class="mt-3 block text-lg font-black leading-snug text-[#102033]">{newerArticle.data.title}</span>
+                    </a>
+                  ) : <div />}
+
+                  {olderArticle ? (
+                    <a
+                      href={`/blog/${olderArticle.slug}/`}
+                      class="rounded-2xl border border-slate-200 bg-white p-5 text-right shadow-sm transition hover:border-brand hover:shadow-md"
+                    >
+                      <span class="inline-flex items-center gap-2 text-sm font-bold text-brand">
+                        Older Article <ArrowRight size={16} strokeWidth={2} />
+                      </span>
+                      <span class="mt-3 block text-lg font-black leading-snug text-[#102033]">{olderArticle.data.title}</span>
+                    </a>
+                  ) : <div />}
+                </nav>
+              </article>
+
+              <aside class="xl:pt-2">
+                <div class="sticky top-28 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <p class="text-sm font-bold uppercase tracking-[0.16em] text-brand">Related Insights</p>
+                  <div class="mt-5 space-y-5">
+                    {fallbackRelatedArticles.map((ra) => (
+                      <a href={`/blog/${ra.slug}/`} class="group block border-b border-slate-100 pb-5 last:border-b-0 last:pb-0">
+                        <span class={`inline-flex rounded-full px-2.5 py-1 text-xs font-bold ${categoryMeta[ra.data.category].className}`}>
+                          {categoryMeta[ra.data.category].label}
+                        </span>
+                        <h2 class="mt-3 text-base font-black leading-snug text-[#102033] transition group-hover:text-brand">
+                          {ra.data.title}
+                        </h2>
+                        <span class="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-slate-500">
+                          <Clock3 size={14} strokeWidth={1.8} /> {formatDate(ra.data.publishDate)}
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                  <a href="/blog/" class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-brand transition hover:text-navy">
+                    View All Articles <ArrowRight size={16} strokeWidth={2} />
+                  </a>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section class="px-4 pb-8 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-[1680px]">
+            <CTA />
+          </div>
+        </section>
+      </main>
+    ) : (
+      <main class="flex min-h-[60vh] items-center bg-[#F5F7FA] px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-xl rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-sm">
+          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand">404</p>
+          <h1 class="mt-3 text-4xl font-black text-[#102033]">Article Not Found</h1>
+          <p class="mt-4 text-base leading-7 text-slate-600">
+            This article may have been removed, is still in draft status, or the link is incorrect.
+          </p>
+          <a
+            href="/blog/"
+            class="mt-7 inline-flex items-center gap-2 rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white transition hover:bg-blue-600"
+          >
+            Back to Blog <ArrowRight size={17} strokeWidth={2} />
+          </a>
+        </div>
+      </main>
+    )
+  }
+</Layout>
