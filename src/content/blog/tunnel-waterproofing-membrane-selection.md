@@ -92,24 +92,20 @@ A tunnel waterproofing assembly may follow one of two general structures dependi
 
 **Protected Membrane System (Cut-and-Cover / Underground Structures)**
 
-```text
-Concrete Substrate
-→ Primer or Bonding Layer
-→ Waterproofing Membrane (Bitumen / PVC / EVA)
-→ Overlap / Welded Joint Treatment
-→ Protection Layer
-→ Secondary Lining or Backfill
-```
+1. Concrete Substrate
+2. Primer or Bonding Layer
+3. Waterproofing Membrane (Bitumen / PVC / EVA)
+4. Overlap / Welded Joint Treatment
+5. Protection Layer
+6. Secondary Lining or Backfill
 
 **Pre-Applied System (Cast-in-Place Concrete)**
 
-```text
-Prepared Base
-→ HDPE Pre-Applied Waterproofing Membrane
-→ Overlap Treatment
-→ Reinforced Concrete
-→ Bonded Waterproofing Interface
-```
+1. Prepared Base
+2. HDPE Pre-Applied Waterproofing Membrane
+3. Overlap Treatment
+4. Reinforced Concrete
+5. Bonded Waterproofing Interface
 
 The final layer structure should be confirmed by the project designer, waterproofing contractor and technical supplier.
 
