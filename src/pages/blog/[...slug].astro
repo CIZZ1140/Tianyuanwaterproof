@@ -90,7 +90,7 @@ const articleJsonLd = validArticle
   : undefined;
 ---
 
-<Layout title={pageTitle} description={pageDescription} preloadImage={validArticle?.data.coverImage}>
+<Layout title={pageTitle} description={pageDescription} preloadImage={validArticle?.data.coverImage} ogImage={validArticle?.data.coverImage}>
   {articleJsonLd && (
     <script type="application/ld+json" is:inline set:html={JSON.stringify(articleJsonLd)} />
   )}

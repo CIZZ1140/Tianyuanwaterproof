@@ -343,7 +343,7 @@ const breadcrumbItems = [
 ];
 ---
 
-<Layout title={pageTitle} description={heroDescription}>
+<Layout title={pageTitle} description={heroDescription} ogImage={mainImage}>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
   {faqJsonLd && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqJsonLd)} />}
   <main class="bg-slate-50 text-slate-950">

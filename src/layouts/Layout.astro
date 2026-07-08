@@ -9,13 +9,15 @@ interface Props {
 	description?: string;
 	preloadImage?: string;
 	isHomePage?: boolean;
+	ogImage?: string;
 }
 
 const { 
 	title, 
 	description = "Weifang Tianyuan Waterproof Material Co., Ltd. is a leading manufacturer of high-quality modified bitumen membranes, polymer membranes, and waterproof coatings for global construction projects.", 
 	preloadImage,
-	isHomePage = false
+	isHomePage = false,
+	ogImage = "https://img.tyuanwaterproof.com/og-default.webp"
 } = Astro.props;
 
 // Canonical URL logic: ensure it always uses www and trailing slash
@@ -42,7 +44,7 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<meta property="og:url" content={canonicalURL} />
 		<meta property="og:type" content={isHomePage ? "website" : "article"} />
 		<meta property="og:site_name" content="Tianyuan Waterproof" />
-		<meta property="og:image" content="https://img.tyuanwaterproof.com/og-default.webp" />
+		<meta property="og:image" content={ogImage} />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
 		<meta property="og:locale" content="en_US" />
@@ -51,7 +53,7 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
-		<meta name="twitter:image" content="https://img.tyuanwaterproof.com/og-default.webp" />
+		<meta name="twitter:image" content={ogImage} />
 		
 		<!-- Preconnect to image CDN -->
 		<link rel="preconnect" href="https://img.tyuanwaterproof.com" />

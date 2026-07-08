@@ -134,7 +134,7 @@ export const applications = [
   {
     title: 'Tunnel Waterproofing',
     slug: 'tunnel-waterproofing',
-    image: '/assets/images/optimized/tunnel.webp',
+    image: 'https://img.tyuanwaterproof.com/app-tunnel-waterproofing.webp',
     summary: 'High-pressure resistant membranes for subway and infrastructure projects.',
     products: ['PVC Membrane', 'HDPE Membrane', 'SBS Membrane']
   },
@@ -168,3 +168,4 @@ export const stats = [
   { value: 'OEM/ODM', label: 'Service' },
   { value: '24/7', label: 'Quick Response' }
 ];
+;

@@ -56,19 +56,10 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
       <SectionHeader title="Applications" href="/applications/" linkLabel="View All Applications" id="app-title" />
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
         {applications.map((app)=>{
-          // Using stable public paths with optimized dimensions
-          let displayImage = app.image;
-          if (app.slug === 'underground-waterproofing') displayImage = '/assets/images/optimized/basement.webp';
-          if (app.slug === 'joint-detail-sealing') displayImage = 'https://img.tyuanwaterproof.com/app-joint-detail-sealing.webp';
-          if (app.slug === 'tunnel-waterproofing') displayImage = '/assets/images/optimized/tunnel.webp';
-          if (app.slug === 'roof-waterproofing') displayImage = '/assets/images/optimized/commercial-roof.webp';
-          if (app.slug === 'bridge-infrastructure') displayImage = 'https://img.tyuanwaterproof.com/app-bridge-infrastructure.webp';
-          if (app.slug === 'industrial-building') displayImage = 'https://img.tyuanwaterproof.com/app-industrial-building.webp';
-          
           return (
             <a href={`/applications/${app.slug}/`} class="group relative min-h-44 overflow-hidden rounded-xl shadow-card">
               <img 
-                src={displayImage} 
+                src={app.image} 
                 alt={app.title} 
                 loading="lazy" 
                 decoding="async"
@@ -235,6 +226,10 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
       </div>
     </div>
   </section>
+
+  <CTA />
+</Layout>
+n>
 
   <CTA />
 </Layout>
