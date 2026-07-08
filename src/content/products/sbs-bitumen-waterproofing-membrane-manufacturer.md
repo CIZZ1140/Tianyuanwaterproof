@@ -4,8 +4,8 @@ category: "bitumen-membranes"
 featured: true
 order: 100
 product_category: "Bitumen Membranes"
-image: "https://sc02.alicdn.com/kf/A88232355035e4385a94d57ad6698250dB.png"
-main_image: "https://sc02.alicdn.com/kf/A88232355035e4385a94d57ad6698250dB.png"
+image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-main.webp"
+main_image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-main.webp"
 
 hero_description: "TY-SHIELD SBS modified bitumen waterproofing membrane — factory direct from China manufacturer. Torch-applied reinforced membrane in 3mm, 4mm & 5mm thicknesses, polyester or fiberglass reinforcement, -25°C low-temperature flexibility. OEM private label, export packing and competitive factory pricing for global distributors and contractors."
 
