@@ -4,6 +4,8 @@ description: "Compare SBS and APP modified bitumen waterproofing membranes by cl
 category: "product-guides"
 publishDate: 2026-07-10
 updatedDate: 2026-07-10
+coverImage: "https://img.tyuanwaterproof.com/blog/sbs-vs-app-cover.webp"
+coverAlt: "Torch-applied SBS modified bitumen waterproofing membrane installation — flame bonding to substrate"
 author: "Tianyuan Waterproof Technical Team"
 draft: false
 tags:
