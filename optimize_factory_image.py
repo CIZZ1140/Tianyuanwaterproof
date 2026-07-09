@@ -45,7 +45,8 @@ def process_and_upload_factory_image(url, key):
     print(f"{key} uploaded successfully.")
 
 if __name__ == "__main__":
-    image_url = "https://sc04.alicdn.com/kf/He6d09d415ec241b5a3c31d0b3697ecaaw.jpg"
+    # Use the already-working banner image as source; the script will resize it
+    image_url = "https://img.tyuanwaterproof.com/banner.webp"
     target_key = "factory-main.webp"
     
     try:

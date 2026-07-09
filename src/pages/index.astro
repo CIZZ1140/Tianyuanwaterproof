@@ -152,7 +152,7 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
         </article>
 
         <!-- Right: Factory High-res Image -->
-        <div class="relative group overflow-hidden rounded-3xl shadow-card bg-slate-100">
+        <div class="relative group overflow-hidden rounded-3xl shadow-card bg-gradient-to-br from-[#0E2A47] via-[#1F4E8C] to-[#0E2A47]">
           <img 
             src="https://img.tyuanwaterproof.com/factory-main.webp" 
             alt="Tianyuan Waterproof high-tech production facility" 
@@ -161,7 +161,15 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
             decoding="async"
             width="800"
             height="1000"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
           />
+          <div class="absolute inset-0 hidden flex-col items-center justify-center text-center p-8" style="display:none">
+            <div class="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center mb-6">
+              <svg class="w-10 h-10 text-white/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19h16M6 19V10l4 2V10l4 2V8l4 2V19"/></svg>
+            </div>
+            <p class="text-xl font-black text-white mb-2">Production Facility</p>
+            <p class="text-sm text-white/60 font-medium">30+ years manufacturing experience<br/>5 production lines in Shandong, China</p>
+          </div>
           <div class="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </div>
       </div>
