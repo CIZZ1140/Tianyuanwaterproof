@@ -1,7 +1,7 @@
 ---
 title: "Epoxy Color Sand Self-Leveling Floor Coating"
-category: "other"
-product_category: "Other Waterproof Products"
+category: "waterproof-coatings"
+product_category: "Waterproof Coatings"
 main_image: "https://img.tyuanwaterproof.com/products/epoxy-floor-paint.jpg"
 image: "https://img.tyuanwaterproof.com/products/epoxy-floor-paint.jpg"
 

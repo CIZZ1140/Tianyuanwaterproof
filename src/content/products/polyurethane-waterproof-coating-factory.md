@@ -52,6 +52,6 @@ related_products:
     href: "/products/spray-polyurea-waterproofing-coating/"
 ---
 
-# Polyurethane Waterproof Coating
+## Polyurethane Waterproof Coating
 
 **TY-SHIELD™ Polyurethane Series** is the industry standard for high-performance liquid waterproofing. Engineered to provide a tough, flexible, and permanent seal, our PU coatings are trusted by contractors worldwide for critical infrastructure and luxury residential projects.

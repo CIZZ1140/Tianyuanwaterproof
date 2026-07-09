@@ -78,6 +78,6 @@ related_products:
     image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating-factory/"
 ---
 
-# Spray Polyurea Waterproofing Coating
+## Spray Polyurea Waterproofing Coating
 
 **TY-SHIELD™ Pure Polyurea** represents the pinnacle of coating technology. Engineered for projects where failure is not an option, our polyurea system provides a seamless, high-strength armor that protects critical infrastructure from the most aggressive environments.

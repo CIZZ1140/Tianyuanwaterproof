@@ -39,8 +39,12 @@ const categoryMeta = {
 const siteUrl = (Astro.site ?? new URL('https://www.tyuanwaterproof.com')).toString().replace(/\/$/, '');
 const articleHref = validArticle ? `${siteUrl}/blog/${validArticle.slug}/` : `${siteUrl}/blog/`;
 
+const blogTitle = validArticle?.data.title ?? '';
+const fullPageTitle = `${blogTitle} | Tianyuan Waterproof Blog`;
 const pageTitle = validArticle
-  ? `${validArticle.data.title} | Tianyuan Waterproof Blog`
+  ? (fullPageTitle.length > 65 
+    ? `${blogTitle.length > 50 ? blogTitle.slice(0, 50) + '...' : blogTitle} | Tianyuan Waterproof Blog`
+    : fullPageTitle)
   : 'Article Not Found | Tianyuan Waterproof Blog';
 
 const pageDescription = validArticle

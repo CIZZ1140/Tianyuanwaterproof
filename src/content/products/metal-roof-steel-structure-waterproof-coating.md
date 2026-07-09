@@ -80,6 +80,6 @@ related_products:
     href: "/products/spray-polyurea-waterproofing-coating/"
 ---
 
-# Metal Roof & Steel Structure Waterproof Coating
+## Metal Roof & Steel Structure Waterproof Coating
 
 **TY-SHIELD™ Metal Roof Coating** is an advanced elastomeric system designed to solve the unique challenges of steel structure maintenance. Unlike traditional bitumen products that crack under thermal stress, our acrylic-based formula moves with the roof, providing a durable, solar-reflective shield.

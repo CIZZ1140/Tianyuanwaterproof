@@ -57,6 +57,6 @@ faqs:
     answer: "On porous substrates, we recommend diluting the coating with 10% water to act as a primer for better penetration and bonding."
 ---
 
-# Polymer Modified Asphalt Waterproof Coating
+## Polymer Modified Asphalt Waterproof Coating
 
 **TY-SHIELD™ Polymer-Asphalt Series** offers a professional-grade barrier against water ingress. By infusing high-quality bitumen with synthetic elastomers, we have created a coating that is tough enough for civil engineering but safe and simple enough for residential maintenance.

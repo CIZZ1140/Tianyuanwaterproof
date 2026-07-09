@@ -88,6 +88,6 @@ faqs:
     answer: "When properly applied and protected, the seamless membrane provides a service life exceeding 50 years in underground environments."
 ---
 
-# Spraying Quick-Setting Rubber Asphalt Waterproof Coating
+## Spraying Quick-Setting Rubber Asphalt Waterproof Coating
 
 **TY-SHIELD™ Quick-Spray Series** is a high-performance, environmentally safe waterproofing solution designed for the modern construction industry. By combining the flexibility of rubber with the durability of asphalt, it provides an impenetrable, monolithic shield for critical infrastructure.

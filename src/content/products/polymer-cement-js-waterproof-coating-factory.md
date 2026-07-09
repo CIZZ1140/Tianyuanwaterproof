@@ -52,6 +52,6 @@ related_products:
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
 ---
 
-# Polymer Cement (JS) Waterproof Coating
+## Polymer Cement (JS) Waterproof Coating
 
 **TY-SHIELD™ JS Series** is a multi-purpose, flexible waterproofing slurry. By blending advanced liquid polymers with hydraulic cement, it creates a composite layer that possesses both the elasticity of high-grade rubber and the durability of concrete. Trusted for millions of square meters of residential and commercial space.

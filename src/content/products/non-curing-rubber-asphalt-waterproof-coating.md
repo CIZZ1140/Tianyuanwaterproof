@@ -102,7 +102,7 @@ faqs:
     answer: "Yes. For proper application, it must be melted to a liquid state. Once applied, it cools back to its permanent viscous state."
 ---
 
-# TY-SHIELD™ Non-Curing Rubber Asphalt Waterproof Coating
+## TY-SHIELD™ Non-Curing Rubber Asphalt Waterproof Coating
 
 **TY-SHIELD™ Non-Curing Rubber Asphalt Coating** is a revolutionary material designed for high-performance composite waterproofing systems. By combining the benefits of liquid coatings and solid membranes, it creates an unbreakable "skin" that protects buildings from the most aggressive water pressure.
 

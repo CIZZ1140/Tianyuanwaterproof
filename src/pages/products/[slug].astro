@@ -209,7 +209,7 @@ const { Content } = await entry.render();
 const data = (entry.data ?? {}) as Record<string, any>;
 
 const title = normalizeString(data.title, "Product Details");
-const pageTitle = title.length > 50 ? title : `${title} | TY-SHIELD™`;
+const pageTitle = title.length > 60 ? title : `${title} | TY-SHIELD™`;
 
 const productCategory = normalizeString(data.product_category ?? data.category, "Waterproofing Membrane");
 const mainImage = normalizeAsset(data.main_image);
@@ -476,6 +476,9 @@ const breadcrumbItems = [
               </a>
               <a href={isRealFile(primaryDownload?.href) ? primaryDownload.href : contactHref} class="inline-flex items-center justify-center gap-2 rounded-xl border border-blue-200 bg-blue-50 px-6 py-3 text-sm font-bold text-blue-800 transition hover:border-blue-300 hover:bg-blue-100">
                 <FileText class="h-4 w-4" /> Request TDS
+              </a>
+              <a href="/technical/download-center/" class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-bold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50">
+                <Download class="h-4 w-4" /> Download Center
               </a>
             </div>
             <p class="mt-4 text-sm leading-6 text-slate-500 font-medium italic">For a project-specific quote, send your membrane thickness, reinforcement, surface finish, application, and destination port.</p>

@@ -39,7 +39,13 @@ const defaultFooterGroups: FooterGroup[] = [
   },
   {
     title: "QUICK LINKS",
-    links: nav.slice(nav.length - 3).map(link => ({ label: link.label, href: link.href })),
+    links: [
+      { label: "About Us", href: "/about/" },
+      { label: "Contact", href: "/contact/" },
+      { label: "Technical Data", href: "/technical/" },
+      { label: "Download Center", href: "/technical/download-center/" },
+      { label: "Blog", href: "/blog/" },
+    ],
   },
 ];
 

@@ -149,7 +149,7 @@ downloads:
 related_products:
   - title: "Butyl Sealing Tape"
     image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"
-    href: "/products/butyl-rubber-waterproof-sealing-tape-supplier/"
+    href: "/products/butyl-waterproof-sealing-tape-supplier/"
   - title: "JS Polymer Cement Coating"
     image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating-factory.webp"
     href: "/products/polymer-cement-js-waterproof-coating-factory/"
@@ -163,7 +163,7 @@ faqs:
     answer: "It is compatible with most water-based (JS) and solvent-based (PU/Asphalt) coatings. We recommend a small patch test for specialized industrial coatings."
 ---
 
-# TY-SHIELD™ TPE Joint & Expansion Sealing Tape
+## TY-SHIELD™ TPE Joint & Expansion Sealing Tape
 
 **TY-SHIELD™ TPE Joint Sealing Tape** is a high-performance expansion joint accessory designed for the most demanding structural waterproofing projects. Engineered with a multi-layer hybrid structure, it features a chemically resistant Thermoplastic Elastomer (TPE) core and stitch-bonded fabric wings for ultimate integration with liquid-applied membranes.
 
