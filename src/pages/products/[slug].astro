@@ -275,17 +275,16 @@ const productSku = data.sku ?? `TY-${productSlug.slice(0, 20).toUpperCase().repl
 const productMpn = data.mpn ?? data.model ?? standardValue;
 const productGtin = data.gtin ?? data.upc ?? data.ean ?? null;
 
-const offer: Record<string, any> = {
+const hasPrice = data.price && data.price !== "0" && data.price !== 0;
+
+const offer = hasPrice ? {
   "@type": "Offer",
+  "price": String(data.price),
   "priceCurrency": data.price_currency ?? "USD",
   "availability": data.availability ?? "https://schema.org/InStock",
   "url": Astro.url.href,
   "itemCondition": "https://schema.org/NewCondition",
-};
-
-if (data.price && data.price !== "0" && data.price !== 0) {
-  offer["price"] = String(data.price);
-}
+} : undefined;
 
 const jsonLd: Record<string, any> = {
   "@context": "https://schema.org/",
@@ -303,13 +302,16 @@ const jsonLd: Record<string, any> = {
     "name": "Weifang Tianyuan Waterproof Material Co., Ltd.",
     "url": "https://www.tyuanwaterproof.com"
   },
-  "offers": offer,
   "additionalProperty": specTable.map(row => ({
     "@type": "PropertyValue",
     "name": row.label,
     "value": row.value
   }))
 };
+
+if (offer) {
+  jsonLd["offers"] = offer;
+}
 
 if (productMpn) jsonLd["mpn"] = productMpn;
 if (productGtin) jsonLd["gtin"] = productGtin;
