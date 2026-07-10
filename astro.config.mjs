@@ -11,7 +11,7 @@ export default defineConfig({
     '/categories/asphalt-membranes': '/categories/bitumen-membranes',
   },
   build: {
-    inlineStylesheets: 'always',
+    inlineStylesheets: 'auto',
   },
   integrations: [tailwind(), sitemap()]
 });

@@ -62,14 +62,13 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<link rel="preconnect" href="https://img.tyuanwaterproof.com" crossorigin />
 		<link rel="dns-prefetch" href="https://img.tyuanwaterproof.com" />
 		
-		{/* Optimized Preloading Logic */}
+		{/* Optimized Preloading — mobile banner always preloaded (54KB), desktop conditional */}
 		{isHomePage ? (
 			<>
 				<link 
 					rel="preload" 
 					as="image" 
 					href="https://img.tyuanwaterproof.com/banner-mobile.webp" 
-					media="(max-width: 768px)" 
 					type="image/webp"
 					fetchpriority="high"
 				/>
