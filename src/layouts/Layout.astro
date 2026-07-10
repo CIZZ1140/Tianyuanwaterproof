@@ -55,7 +55,10 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={ogImage} />
 		
-		<!-- Preconnect to image CDN -->
+		<!-- Early hints for critical resources -->
+		<link rel="dns-prefetch" href="//tyuanwaterproof.com" />		
+		<link rel="dns-prefetch" href="//www.tyuanwaterproof.com" />
+		<link rel="preconnect" href="https://www.tyuanwaterproof.com" />
 		<link rel="preconnect" href="https://img.tyuanwaterproof.com" crossorigin />
 		<link rel="dns-prefetch" href="https://img.tyuanwaterproof.com" />
 		
@@ -65,7 +68,7 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 				<link 
 					rel="preload" 
 					as="image" 
-					href="https://img.tyuanwaterproof.com/banner-mobile.webp" 
+					href="/images/banner-mobile.webp" 
 					media="(max-width: 768px)" 
 					type="image/webp"
 					fetchpriority="high"
@@ -73,7 +76,7 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 				<link 
 					rel="preload" 
 					as="image" 
-					href="https://img.tyuanwaterproof.com/banner.webp" 
+					href="/images/banner.webp" 
 					media="(min-width: 769px)" 
 					type="image/webp"
 					fetchpriority="high"
@@ -120,14 +123,14 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 			</svg>
 		</a>
 
-		{/* Scripts: Zero-TBT loading strategy - only load analytics after user interaction */}
+		{/* Scripts: idle-loading strategy — analytics deferred to browser idle time */}
 		<script is:inline>
 			(function() {
 				let analyticsLoaded = false;
 				function loadAnalytics() {
 					if (analyticsLoaded) return;
 					analyticsLoaded = true;
-					
+
 					const script = document.createElement('script');
 					script.src = "https://www.googletagmanager.com/gtag/js?id=AW-18274384476";
 					script.async = true;
@@ -138,21 +141,34 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 						gtag('config', 'AW-18274384476');
 					};
 					document.head.appendChild(script);
-					
+
 					// Cleanup listeners
 					['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(ev => {
-						window.removeEventListener(ev, loadAnalytics);
+						window.removeEventListener(ev, scheduleAnalytics);
 					});
 				}
 
-				// Trigger loading only on interaction or major delay
+				function scheduleAnalytics() {
+					// Defer actual script injection to idle time to avoid blocking LCP
+					if ('requestIdleCallback' in window) {
+						requestIdleCallback(loadAnalytics, { timeout: 2000 });
+					} else {
+						setTimeout(loadAnalytics, 1000);
+					}
+				}
+
+				// Trigger scheduling on interaction (not immediate load)
 				['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(ev => {
-					window.addEventListener(ev, loadAnalytics, { passive: true });
+					window.addEventListener(ev, scheduleAnalytics, { passive: true });
 				});
 
-				// Final safety timeout to ensure tracking eventually fires
+				// Safety: ensure tracking fires eventually, even if no interaction
 				window.addEventListener('load', () => {
-					setTimeout(loadAnalytics, 5000);
+					if ('requestIdleCallback' in window) {
+						requestIdleCallback(loadAnalytics, { timeout: 15000 });
+					} else {
+						setTimeout(loadAnalytics, 15000);
+					}
 				});
 			})();
 		</script>
