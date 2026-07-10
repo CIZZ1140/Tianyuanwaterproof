@@ -22,7 +22,13 @@ SBS (Styrene-Butadiene-Styrene) and APP (Atactic Polypropylene) are two types of
 
 The key structural difference: **SBS uses a rubber-based modifier** that gives the membrane elasticity and low-temperature flexibility. **APP uses a plastic-based modifier** that delivers high-temperature stability and UV resistance. Choosing the wrong type for your climate or application can lead to premature cracking, softening, or loss of waterproofing integrity.
 
-This guide walks you through the technical differences, climate-based selection logic, surface finish options, and what to specify when requesting a factory quotation.
+**Quick Summary (TL;DR):**
+- **Cold climate / high temperature variation** → Choose SBS (flexible to -25 deg C, handles freeze-thaw)
+- **Hot climate / exposed roof / high UV** → Choose APP (stable to 130 deg C, mineral granule finish)
+- **Underground / confined space** → Choose SBS self-adhesive (no open flame required)
+- Contact our technical team with project location, application type, and quantity for a tailored recommendation.
+
+Read on for the full technical comparison, climate logic, reinforcement guide, and real project scenarios.
 
 ## Technical Comparison at a Glance
 

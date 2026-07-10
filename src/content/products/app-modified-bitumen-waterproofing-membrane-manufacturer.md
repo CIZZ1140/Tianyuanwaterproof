@@ -7,7 +7,7 @@ product_category: "Bitumen Membranes"
 image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
 
-hero_description: "TY-SHIELD APP Modified Bitumen Waterproofing Membrane is a torch-applied, reinforced membrane for roofing and waterproofing systems that require strong heat resistance and dimensional stability in hot or high-solar-load conditions. Configure reinforcement, thickness, and surface finish to match the roof system, project environment, export packing requirement, or OEM private-label plan."
+hero_description: "TY-SHIELD APP Modified Bitumen Waterproofing Membrane — an Atactic Polypropylene modified, torch-applied, reinforced bitumen membrane designed for hot-climate roofing and waterproofing systems. Built for high-solar-load and exposed roof applications. Configure reinforcement, thickness, and surface finish to match your project environment, export packing needs, or OEM private-label plan."
 
 hero_tags:
   - "APP Modified"

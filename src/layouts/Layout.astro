@@ -95,6 +95,9 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<style is:inline>
 			:root { --navy: #0B1E3B; --brand: #3B82F6; }
 			body { background-color: #F5F7FA; margin: 0; min-height: 100vh; }
+			/* Critical anti-CLS: reserve space before full CSS loads */
+			header, [role="banner"], .sticky { min-height: 76px; background: #0E2A47; }
+			img:not([width]) { aspect-ratio: 4/3; }
 			.animate-fade-in { opacity: 0; animation: fadeIn 0.8s ease-out forwards; }
 			@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 		</style>

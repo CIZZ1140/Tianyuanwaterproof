@@ -24,6 +24,12 @@ Depending on the tunnel type, groundwater condition, construction method and str
 
 For B2B buyers, the key question is not only which membrane looks suitable, but which membrane system can meet the project's technical, installation and supply requirements.
 
+**Quick Summary:**
+- **Cut-and-cover tunnels** → SBS/APP bitumen membranes (protected system)
+- **Sprayed concrete-lined tunnels** → PVC/HDPE sheet membranes (welded joints)
+- **Pre-applied / cast-in-place** → HDPE pre-applied membrane (concrete bonding)
+- Always confirm: tunnel type, groundwater condition, installation method, and joint treatment before selecting a membrane.
+
 ## Why Tunnel Waterproofing Requires Careful Membrane Selection
 
 Tunnel waterproofing projects are different from standard roof or basement waterproofing. The membrane system may face long-term underground exposure, hydrostatic pressure, complex joints and limited repair access after installation. For a detailed overview of tunnel waterproofing applications and typical system configurations, see our [Tunnel Waterproofing Solutions](/applications/tunnel-waterproofing/) page.
