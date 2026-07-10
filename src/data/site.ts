@@ -85,7 +85,7 @@ export const productCategories = [
     title: 'Waterproof Tapes',
     slug: 'waterproof-tapes',
     href: '/categories/waterproof-tapes/',
-    image: 'https://img.tyuanwaterproof.com/cat-waterproof-tapes-v2.webp',
+    image: 'https://img.tyuanwaterproof.com/cat-waterproof-tapes-v2.webp?v=2',
     description: 'Butyl and bitumen self-adhesive tapes for joints and repairs.',
     items: [
       { title: 'Butyl Tape', href: '/products/butyl-waterproof-sealing-tape-supplier/' },
@@ -107,7 +107,7 @@ export const productCategories = [
     title: 'Geosynthetics',
     slug: 'geosynthetics',
     href: '/categories/geosynthetics/',
-    image: 'https://img.tyuanwaterproof.com/products/hdpe-geomembrane-liner-roll.webp',
+    image: 'https://img.tyuanwaterproof.com/products/hdpe-geomembrane-liner-roll.webp?v=2',
     description: 'Geomembranes and geotextiles for environmental and infrastructure projects.',
     items: [
       { title: 'Geomembrane', href: '/products/hdpe-geomembrane-liner-manufacturer/' },
