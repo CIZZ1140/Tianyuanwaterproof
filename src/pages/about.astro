@@ -121,6 +121,10 @@ const factoryImages = [
   {
     src: placeholder,
     alt: 'Waterproofing materials warehouse and pallets'
+  },
+  {
+    src: placeholder,
+    alt: 'Quality inspection and testing equipment'
   }
 ];
 
@@ -493,6 +497,8 @@ const buyerTypes = [
                   src={image.src}
                   alt={image.alt}
                   class={`${index === 0 ? 'h-64 md:h-72' : 'h-40 md:h-48'} w-full rounded-2xl object-cover`}
+                  width={index === 0 ? 1400 : 680}
+                  height={index === 0 ? 576 : 384}
                   loading="lazy"
                   decoding="async"
                 />
