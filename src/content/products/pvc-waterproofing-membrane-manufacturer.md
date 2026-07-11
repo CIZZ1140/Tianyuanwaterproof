@@ -1,16 +1,16 @@
 ---
-title: "PVC Waterproofing Membrane for Roofing and Underground Projects"
+title: "PVC Membrane for Tunnel & Underground Waterproofing | Factory Direct"
 category: "polymer-membranes"
 product_category: "Polymer Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
 image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
 
-hero_description: "Industrial-grade PVC single-ply waterproofing membrane for roofing, tunnels, and reservoirs. Features excellent weather resistance, root penetration resistance, and high-security heat-welded seams."
+hero_description: "Industrial-grade PVC single-ply waterproofing membrane optimized for tunnels, subways, and heavy-duty underground engineering. Features GB12952-2011 compliance, root resistance, and high-security heat-welded seams for maximum leak protection."
 
 hero_tags:
-  - "PVC Polymer"
+  - "Tunnel Solutions"
   - "GB12952-2011"
-  - "1.2mm>=.0mm"
+  - "1.2mm-2.0mm"
   - "Hot-Air Weldable"
   - "Root Resistant"
   - "OEM Available"

@@ -17,7 +17,7 @@ hero_tags:
 
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
-    title: "PU Coating Product Packaging"
+    title: "Wholesale Polyurethane Waterproof Coating - Factory Direct Price"
 
 spec_table:
   - label: "Material Type"

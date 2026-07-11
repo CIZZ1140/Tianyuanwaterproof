@@ -272,7 +272,7 @@ const packagingIcons = [Package, Truck, Box, Factory, FileText, FlaskConical];
 // --- SEO Structured Data (JSON-LD) ---
 const productSlug = (entry?.slug ?? entry?.id ?? "").replace(/\.mdx?$/, "").replace(/\/index$/, "");
 const productSku = data.sku ?? `TY-${productSlug.slice(0, 20).toUpperCase().replace(/-/g, "")}`;
-const productMpn = data.mpn ?? data.model ?? standardValue;
+const productMpn = data.mpn ?? data.model ?? getSpecValue(specTable, ["standard"]);
 const productGtin = data.gtin ?? data.upc ?? data.ean ?? null;
 
 const hasPrice = data.price && data.price !== "0" && data.price !== 0;

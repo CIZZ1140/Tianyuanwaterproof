@@ -1,5 +1,5 @@
 ---
-title: "Self-Adhesive Bituminous Waterproofing Membrane"
+title: "Self-Adhesive Bitumen Membrane | Wholesale Factory Direct"
 category: "bitumen-membranes"
 featured: true
 order: 95
@@ -7,7 +7,7 @@ product_category: "Bitumen Membranes"
 image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
 main_image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
 
-hero_description: "Cold-applied premium self-adhesive bitumen membrane. Features high-tack rubberized asphalt for fast, torch-free installation on roofs, basements, and critical foundations."
+hero_description: "Cold-applied premium self-adhesive bitumen membrane. Features high-tack rubberized asphalt for fast, torch-free installation on roofs, basements, and critical foundations. Factory-direct wholesale with full OEM support."
 
 hero_tags:
   - "Self-Adhesive"
@@ -19,9 +19,9 @@ hero_tags:
 
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
-    title: "Self-Adhesive Roll"
+    title: "Self-Adhesive Bituminous Waterproofing Membrane - Peel and Stick Roll"
   - image: "/placeholder.webp"
-    title: "Production Line"
+    title: "Manufacturing Line of Self-Adhesive Waterproofing Materials"
 
 spec_table:
   - label: "Product Type"
