@@ -230,7 +230,24 @@ const applicationGuide = normalizeApplicationGuide(data.application_guide ?? dat
 const packaging = normalizeCards(data.packaging ?? data.packaging_oem ?? data.oem_packaging ?? []);
 const loadingData = normalizeRows(data.loading_data ?? data.loadingData ?? data.container_loading ?? []);
 const downloads = normalizeDownloads(data.downloads ?? []);
-const relatedProducts = normalizeRelatedProducts(data.related_products ?? []);
+const allProducts = await getCollection("products");
+
+const relatedProducts = normalizeRelatedProducts(data.related_products ?? []).map((rp) => {
+  const slug = rp.href.replace(/^\/products\//, "").replace(/\/$/, "");
+  const matched = allProducts.find((p) => {
+    const pSlug = (p.slug ?? p.id ?? "").replace(/\.mdx?$/, "").replace(/\/index$/, "");
+    return pSlug === slug;
+  });
+
+  if (matched) {
+    return {
+      ...rp,
+      title: matched.data.displayName || matched.data.title || rp.title,
+      image: normalizeAsset(matched.data.main_image || matched.data.image || rp.image),
+    };
+  }
+  return rp;
+});
 const faqs = normalizeFaqs(data.faqs ?? data.faq ?? []);
 
 const explicitHeroTags = normalizeTagList(data.hero_tags ?? []);
@@ -751,29 +768,22 @@ const breadcrumbItems = [
               <div class="mb-6 flex items-center gap-3"><h2 class="text-xl font-black text-slate-950 sm:text-2xl">Related Products</h2>
               </div>
               <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-                {relatedProducts.slice(0, 4).map((product) => {
-                  let displayImage = product.image || "";
-                  if (displayImage && !displayImage.toLowerCase().endsWith(".webp") && !displayImage.toLowerCase().endsWith(".jpg")) {
-                    displayImage = displayImage.replace(/\/$/, "") + ".webp";
-                  }
-                  
-                  return (
-                    <a href={product.href} class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                      {displayImage ? (
-                        <img src={displayImage} alt={product.title} loading="lazy" class="aspect-[4/3] w-full bg-slate-100 object-cover" />
-                      ) : (
-                        <div class="flex aspect-[4/3] w-full items-center justify-center bg-slate-100 p-5 text-center text-sm font-bold text-slate-500">
-                          <ImageIcon class="mr-2 h-5 w-5" /> Product image
-                        </div>
-                      )}
-                      <div class="p-4">
-                        <h3 class="text-sm font-black leading-6 text-slate-950 group-hover:text-blue-700">{product.title}</h3>
-                        {product.description && <p class="mt-2 text-sm font-medium leading-6 text-slate-500">{product.description}</p>}
-                        <p class="mt-4 inline-flex items-center gap-2 text-xs font-black uppercase tracking-wide text-blue-700">View Product <ArrowRight class="h-4 w-4" /></p>
+                {relatedProducts.slice(0, 4).map((product) => (
+                  <a href={product.href} class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                    {product.image ? (
+                      <img src={product.image} alt={product.title} loading="lazy" class="aspect-[4/3] w-full bg-slate-100 object-cover" />
+                    ) : (
+                      <div class="flex aspect-[4/3] w-full items-center justify-center bg-slate-100 p-5 text-center text-sm font-bold text-slate-500">
+                        <ImageIcon class="mr-2 h-5 w-5" /> Product image
                       </div>
-                    </a>
-                  );
-                })}
+                    )}
+                    <div class="p-4">
+                      <h3 class="text-sm font-black leading-6 text-slate-950 group-hover:text-blue-700">{product.title}</h3>
+                      {product.description && <p class="mt-2 text-sm font-medium leading-6 text-slate-500">{product.description}</p>}
+                      <p class="mt-4 inline-flex items-center gap-2 text-xs font-black uppercase tracking-wide text-blue-700">View Product <ArrowRight class="h-4 w-4" /></p>
+                    </div>
+                  </a>
+                ))}
               </div>
             </div>
           )}
