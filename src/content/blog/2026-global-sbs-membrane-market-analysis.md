@@ -4,7 +4,7 @@ description: "A comprehensive 2026 B2B analysis of the SBS modified bitumen memb
 category: "industry-insights"
 publishDate: 2026-07-12
 updatedDate: 2026-07-12
-coverImage: "https://sc02.alicdn.com/kf/Aca7a92c259e74c2982984c0ae10f9588Y.png"
+coverImage: "https://img.tyuanwaterproof.com/factory-main.webp"
 coverAlt: "Large-scale infrastructure project showcasing SBS modified bitumen waterproofing membrane application"
 author: "Tianyuan Waterproof Technical Team"
 draft: false
