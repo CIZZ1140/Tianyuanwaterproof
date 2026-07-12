@@ -1,345 +1,368 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import {
-  Factory,
-  Award,
-  Users,
-  ShieldCheck,
-  Globe2,
-  PackageCheck,
-  ClipboardCheck,
-  Truck,
-  Layers,
-  FlaskConical,
-  Ruler,
-  CheckCircle2,
   ArrowRight,
-  Mail,
-  MessageCircle,
-  MapPin,
+  BookOpenCheck,
   Boxes,
-  FileText,
-  BadgeCheck,
-  Hammer,
   Building2,
-  Warehouse,
-  SearchCheck
+  CheckCircle2,
+  ClipboardCheck,
+  Factory,
+  FileCheck2,
+  FileText,
+  FlaskConical,
+  Activity,
+  Globe2,
+  Layers,
+  Mail,
+  MapPin,
+  PackageCheck,
+  PackageOpen,
+  Phone,
+  Ruler,
+  Send,
+  Settings2,
+  ShieldCheck,
+  Truck,
+  Users,
+  Warehouse
 } from 'lucide-astro';
 
-const stats = [
-  { value: '30+', label: 'Years Experience', icon: Award },
-  { value: '5', label: 'Production Lines', icon: Factory },
-  { value: '50+', label: 'Countries Exported', icon: Globe2 },
-  { value: 'OEM/ODM', label: 'Service Available', icon: PackageCheck }
-];
+const pageTitle = 'About Tianyuan Waterproof | Waterproofing Materials Manufacturer';
+const pageDescription = 'Learn about Tianyuan Waterproof’s manufacturing capability, waterproofing product systems, quality control, technical documentation, export packing and OEM support for global B2B buyers.';
 
-const strengths = [
-  {
-    title: 'Factory Manufacturing',
-    description: 'Stable supply capacity for waterproofing membranes, coatings and sealing materials.',
-    icon: Factory
-  },
-  {
-    title: 'Quality Inspection',
-    description: 'Thickness, weight, tensile performance and packaging condition are checked before delivery.',
-    icon: ShieldCheck
-  },
-  {
-    title: 'OEM & Export Support',
-    description: 'Private label packaging, roll size customization, pallet packing and container loading support.',
-    icon: PackageCheck
-  }
-];
+const hero = {
+  eyebrow: 'ABOUT TIANYUAN WATERPROOF',
+  title: 'Waterproofing Materials Manufacturer for Global B2B Supply',
+  description: 'Tianyuan Waterproof manufactures waterproofing membranes, coatings, tapes, asphalt shingles and related construction materials for distributors, contractors and project procurement teams.',
+  supportText: 'Based in Weifang, Shandong Province, China, we support product selection, technical documentation, export packing, OEM orders and factory quotation for global projects.',
+  image: 'https://img.tyuanwaterproof.com/factory-main.webp',
+  imageAlt: 'Tianyuan Waterproof manufacturing factory in Weifang, Shandong, China',
+  primaryCta: { label: 'View Our Products', href: '/products/' },
+  secondaryCta: { label: 'Contact Technical Sales', href: '/contact/' }
+};
+
+const stats = [
+  { value: '30+', label: 'Years Experience', description: 'Deep roots in waterproofing manufacturing since the 1990s.' },
+  { value: '5', label: 'Production Lines', description: 'Advanced automation for stable membrane and coating supply.' },
+  { value: '50+', label: 'Countries Exported', description: 'Trusted by B2B buyers across Southeast Asia, Middle East and Africa.' },
+  { value: 'OEM/ODM', label: 'Service Available', description: 'Professional private-label and customized export packing support.' }
+] as const;
+
+const companyOverview = {
+  eyebrow: 'COMPANY OVERVIEW',
+  title: 'A Manufacturing Partner Built Around Long-Term Supply',
+  paragraphs: [
+    'Tianyuan Waterproof is a specialized manufacturer and supplier of waterproofing materials for construction, infrastructure and industrial applications.',
+    'Our portfolio includes bitumen waterproofing membranes, polymer membranes, liquid coatings, sealing tapes and geosynthetic materials.',
+    'We work with regional distributors and project procurement teams that require stable production, clear technical specifications and practical logistics coordination.',
+    'B2B support covers product configuration, export documentation, OEM branding and destination-port quotation (CIF/FOB).'
+  ],
+  image: 'https://img.tyuanwaterproof.com/factory-main.webp?v=2',
+  imageAlt: 'Tianyuan Waterproof production facility and material warehouse'
+};
+
+const companyHighlights = [
+  { title: 'China Supply Base', description: 'Located in Shandong Province, at the heart of China’s waterproofing industrial cluster.', Icon: MapPin },
+  { title: 'B2B Project Service', description: 'Dedicated support for distributors, contractors and infrastructure project teams.', Icon: Users },
+  { title: 'Technical Coordination', description: 'In-depth specification review, TDS preparation and laboratory testing support.', Icon: FileCheck2 }
+] as const;
 
 const productSystems = [
   {
     title: 'Bitumen Membranes',
-    description: 'SBS/APP modified bitumen membranes and self-adhesive bituminous membranes for roofing, basement and bridge waterproofing.',
+    description: 'SBS, APP and self-adhesive bituminous membranes for roofing and basement systems.',
     image: 'https://img.tyuanwaterproof.com/cat-bitumen-membranes.webp',
-    alt: 'Bitumen waterproofing membrane production',
-    icon: Layers,
-    items: ['SBS/APP Modified Bitumen Membrane', 'Self-Adhesive Bituminous Membrane', 'Torch-Applied Roofing Membrane']
+    href: '/categories/bitumen-membranes/',
+    products: ['SBS Modified Bitumen', 'APP Modified Bitumen', 'Self-Adhesive Bitumen']
   },
   {
     title: 'Polymer Membranes',
-    description: 'High-polymer waterproofing membranes for roofing, tunnel, landfill and infrastructure waterproofing projects.',
-    image: 'https://img.tyuanwaterproof.com/cat-polymer-membranes.webp?v=2',
-    alt: 'Polymer waterproofing membrane rolls',
-    icon: Ruler,
-    items: ['TPO Waterproof Membrane', 'PVC Waterproof Membrane', 'HDPE Waterproof Membrane']
+    description: 'PVC, TPO and HDPE sheet membranes for exposed roofing, tunnels and infrastructure.',
+    image: 'https://img.tyuanwaterproof.com/cat-polymer-membranes.webp',
+    href: '/categories/polymer-membranes/',
+    products: ['TPO Roofing Membrane', 'PVC Tunnel Membrane', 'HDPE Pre-Applied']
   },
   {
     title: 'Waterproof Coatings',
-    description: 'Liquid-applied waterproof coatings for bathrooms, basements, balconies and concrete structures.',
+    description: 'Liquid-applied materials for basements, balconies and specialized concrete structures.',
     image: 'https://img.tyuanwaterproof.com/cat-waterproof-coatings-v2.webp',
-    alt: 'Waterproof coating packaging',
-    icon: FlaskConical,
-    items: ['Polyurethane Waterproof Coating', 'Acrylic Waterproof Coating', 'Cementitious Waterproof Coating']
-  },
-  {
-    title: 'Waterproof Tapes',
-    description: 'Sealing tapes and flashing materials for joints, windows, doors, roofs and repair applications.',
-    image: 'https://img.tyuanwaterproof.com/cat-waterproof-tapes-v2.webp',
-    alt: 'Waterproof sealing tape products',
-    icon: Hammer,
-    items: ['Butyl Waterproof Tape', 'Bitumen Waterproof Tape', 'Flashing Tape']
+    href: '/categories/waterproof-coatings/',
+    products: ['Polyurethane Coating', 'Acrylic Waterproofing', 'Cementitious Coating']
   }
-];
+] as const;
 
-const factoryImages = [
-  { src: 'https://img.tyuanwaterproof.com/factory-main.webp', alt: 'Production Facility' },
-  { src: '/placeholder.webp', alt: 'Production Line 1' },
-  { src: '/placeholder.webp', alt: 'Production Line 2' },
-  { src: '/placeholder.webp', alt: 'Warehouse' },
-  { src: '/placeholder.webp', alt: 'Testing Lab' }
-];
+const factoryCapabilities = [
+  { title: 'Production Line Coordination', description: 'Manufacturing arrangements for bulk orders of membranes, coatings and sealing materials.', Icon: Factory },
+  { title: 'Specification Control', description: 'Production based on confirmed thickness, reinforcement (PY/PYG) and surface requirements.', Icon: Activity },
+  { title: 'Bulk Order Management', description: 'Batch planning, warehouse coordination and repeat-order supply for project buyers.', Icon: Warehouse },
+  { title: 'Export Packing', description: 'Roll wrapping, palletization, strapping and container loading coordination for overseas shipment.', Icon: PackageCheck }
+] as const;
 
 const qualitySteps = [
-  { title: 'Raw Material Inspection', description: 'Key raw materials are checked before production to keep batch quality stable.' },
-  { title: 'Production Parameter Control', description: 'Temperature, coating thickness and production speed are monitored during manufacturing.' },
-  { title: 'Thickness & Weight Testing', description: 'Membrane thickness, roll weight and dimensional stability are checked before packing.' },
-  { title: 'Performance Testing', description: 'Tensile strength, elongation, heat resistance and low-temperature flexibility tested per batch.' },
-  { title: 'Final Packaging Inspection', description: 'Labels, roll surface, pallet condition and container loading checked before shipment.' }
-];
+  { number: '01', title: 'Raw Material Inspection', description: 'Bitumen modifiers, reinforcement carriers and surface materials are checked before production.', Icon: ClipboardCheck },
+  { number: '02', title: 'Parameter Control', description: 'Temperature, coating consistency and production speed are monitored continuously.', Icon: Settings2 },
+  { number: '03', title: 'Dimension Check', description: 'Membrane thickness, roll width, weight and surface condition are inspected strictly.', Icon: Ruler },
+  { number: '04', title: 'Performance Testing', description: 'Tensile, elongation and low-temperature flexibility tested in our standard laboratory.', Icon: FlaskConical },
+  { number: '05', title: 'Final Inspection', description: 'Labels, wrapping, pallet condition and shipment markings checked before dispatch.', Icon: PackageCheck }
+] as const;
 
-const documents = [
-  { title: 'Technical Data Sheets', description: 'Product specifications and technical data sheets are available for project evaluation.', icon: FileText },
-  { title: 'Testing Support', description: 'Testing documents can be prepared according to project, distributor or tender requirements.', icon: ClipboardCheck },
-  { title: 'Quality Standards', description: 'Production and inspection follow a stable internal quality control process.', icon: BadgeCheck },
-  { title: 'Export Documents', description: 'Packing lists, invoices, certificates and shipping documents can be supported.', icon: Globe2 }
-];
+const technicalDocuments = [
+  { title: 'Technical Data Sheets', description: 'Product-specific material structure and performance information for project evaluation.', actionLabel: 'Request TDS', Icon: FileText },
+  { title: 'Selected Test Reports', description: 'Available test documentation discussed according to product and project requirements.', actionLabel: 'Request Reports', Icon: ShieldCheck },
+  { title: 'Installation Guidance', description: 'Application and installation references for selected membrane and coating systems.', actionLabel: 'View Resources', Icon: BookOpenCheck },
+  { title: 'Export Documents', description: 'Support for packing lists, commercial invoices and relevant shipment documentation.', actionLabel: 'Discuss Docs', Icon: Truck }
+] as const;
 
-const exportSupport = [
-  'Private label packaging', 'Customized roll size and thickness', 'Pallet packing and container loading',
-  'Technical data sheet support', 'Fast quotation for project buyers', 'Shipping document support'
-];
+const siteOrigin = (Astro.site ?? new URL('https://www.tyuanwaterproof.com')).toString().replace(/\/$/, '');
+const aboutPageUrl = `${siteOrigin}/about/`;
 
-const applications = [
-  'Roof Waterproofing', 'Basement Waterproofing', 'Tunnel Waterproofing',
-  'Bridge Waterproofing', 'Bathroom Waterproofing', 'Window & Door Sealing'
-];
-
-const buyerTypes = [
-  'Construction Contractors', 'Roofing Companies', 'Waterproofing Distributors',
-  'Building Material Importers', 'Infrastructure Project Buyers'
-];
+const aboutPageSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'AboutPage',
+      '@id': `${aboutPageUrl}#webpage`,
+      url: aboutPageUrl,
+      name: pageTitle,
+      description: pageDescription,
+      inLanguage: 'en',
+      about: { '@id': `${siteOrigin}/#organization` }
+    }
+  ]
+};
 ---
 
-<Layout
-  title="About Tianyuan Waterproof | Leading Waterproofing Materials Manufacturer"
-  description="Learn about Weifang Tianyuan Waterproof (TY-SHIELD™), a professional factory with 30+ years of experience."
->
-  <main class="bg-slate-50 text-slate-900">
+<Layout title={pageTitle} description={pageDescription}>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(aboutPageSchema)} />
+
+  <main class="overflow-hidden bg-white text-slate-600 font-sans">
     <!-- 1. Hero -->
-    <section class="relative overflow-hidden bg-[#0E2A47]">
-      <div class="absolute inset-0">
-        <img src="https://img.tyuanwaterproof.com/factory-main.webp?v=2" alt="Facility" class="h-full w-full object-cover opacity-25" loading="eager" />
-        <div class="absolute inset-0 bg-gradient-to-r from-[#0E2A47] via-[#0E2A47]/95 to-[#0E2A47]/70"></div>
-      </div>
-      <div class="container relative mx-auto px-4 py-20 md:py-24 lg:py-28 xl:py-32">
-        <header class="max-w-4xl">
-          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-extrabold uppercase tracking-[0.22em] text-[#F58A1F]">About Tianyuan</div>
-          <h1 class="text-4xl font-extrabold leading-[1.1] tracking-tight text-white md:text-5xl lg:text-6xl">Waterproofing Materials Manufacturer for Global Projects</h1>
-          <p class="mt-6 max-w-3xl text-base leading-8 text-slate-200 md:text-lg">Reliable factory direct supply of bitumen membranes, polymer membranes, and high-performance coatings.</p>
-          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a href="/contact" class="inline-flex items-center justify-center rounded-xl bg-[#F58A1F] px-6 py-4 text-sm font-extrabold text-white shadow-lg shadow-orange-500/20 transition-transform hover:scale-105">Request a Quote <ArrowRight class="ml-2 h-4 w-4" /></a>
-            <a href="/products" class="inline-flex items-center justify-center rounded-xl border border-white/25 bg-white/10 px-6 py-4 text-sm font-extrabold text-white transition-transform hover:scale-105">View Products</a>
+    <section class="relative isolate min-h-[580px] overflow-hidden bg-[#0E2A47]">
+      <img
+        src={hero.image}
+        alt={hero.imageAlt}
+        width="1920"
+        height="1080"
+        loading="eager"
+        class="absolute inset-0 h-full w-full object-cover"
+      />
+      <div class="absolute inset-0 bg-[#07192B]/80"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#07192B] via-[#07192B]/85 to-transparent"></div>
+
+      <div class="relative mx-auto flex min-h-[580px] max-w-[1680px] flex-col px-4 pb-16 pt-7 sm:px-6 lg:px-8">
+        <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm font-medium text-white/60">
+          <a href="/" class="transition hover:text-white uppercase tracking-wider">Home</a>
+          <span aria-hidden="true">/</span>
+          <span class="text-white uppercase tracking-wider">About Us</span>
+        </nav>
+
+        <div class="my-auto max-w-5xl py-12 lg:py-16">
+          <div class="mb-6 flex items-center gap-3">
+            <span class="h-px w-12 bg-[#F58A1F]"></span>
+            <p class="text-sm font-bold uppercase tracking-[0.22em] text-[#F6A956]">{hero.eyebrow}</p>
           </div>
-        </header>
-      </div>
-    </section>
-
-    <!-- 2. Stats -->
-    <section class="relative -mt-10">
-      <div class="mx-auto max-w-[1680px] px-4">
-        <div class="grid gap-4 rounded-3xl border border-slate-200 bg-white p-4 shadow-xl shadow-slate-200/70 sm:grid-cols-2 lg:grid-cols-4">
-          {stats.map((item) => (
-            <article class="rounded-2xl border border-slate-100 bg-slate-50 p-6">
-              <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0E2A47]/5 text-[#F58A1F]"><item.icon class="h-6 w-6" /></div>
-              <div class="text-3xl font-extrabold tracking-tight text-[#0E2A47]">{item.value}</div>
-              <div class="mt-1 text-xs font-extrabold uppercase tracking-[0.16em] text-slate-500">{item.label}</div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- 3. Overview -->
-    <section class="py-20 md:py-24">
-      <div class="mx-auto max-w-[1680px] px-4">
-        <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-          <article>
-            <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]"><span class="h-px w-10 bg-[#F58A1F]"></span> Company Overview</div>
-            <h2 class="text-3xl font-extrabold leading-tight text-[#0E2A47] md:text-4xl lg:text-5xl">Reliable Waterproofing Manufacturer from China</h2>
-            <p class="mt-6 text-base leading-8 text-slate-600">Serving international distributors, contractors, and project buyers who need stable quality, technical support, and fast quotation service.</p>
-            <div class="mt-8 grid gap-4 sm:grid-cols-2">
-              <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                <MapPin class="mb-4 h-6 w-6 text-[#F58A1F]" />
-                <h3 class="text-base font-extrabold text-[#0E2A47]">China Supply Base</h3>
-                <p class="mt-2 text-sm text-slate-600">Located in Shandong, central to China's supply chain.</p>
-              </div>
-              <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                <Users class="mb-4 h-6 w-6 text-[#F58A1F]" />
-                <h3 class="text-base font-extrabold text-[#0E2A47]">B2B Project Service</h3>
-                <p class="mt-2 text-sm text-slate-600">Tailored support for distributors worldwide.</p>
-              </div>
-            </div>
-          </article>
-          <div class="overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-3 shadow-xl"><img src="https://img.tyuanwaterproof.com/factory-main.webp?v=2" alt="Factory" class="h-[320px] w-full rounded-[1.5rem] object-cover md:h-[420px]" /></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. Core Strengths (CLEAN) -->
-    <section class="bg-white py-20 md:py-24">
-      <div class="mx-auto max-w-[1680px] px-4">
-        <header class="mx-auto max-w-3xl text-center">
-          <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]"><span class="h-px w-10 bg-[#F58A1F]"></span> Core Strengths <span class="h-px w-10 bg-[#F58A1F]"></span></div>
-          <h2 class="text-3xl font-extrabold text-[#0E2A47] md:text-4xl">Built for Long-Term B2B Supply</h2>
-          <p class="mt-5 text-base text-slate-600">Stable manufacturing and practical quality control for global buyers.</p>
-        </header>
-        <div class="mt-12 grid gap-5 md:grid-cols-3">
-          {strengths.map((item) => (
-            <article class="rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm">
-              <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0E2A47] text-white"><item.icon class="h-7 w-7" /></div>
-              <h3 class="text-xl font-extrabold text-[#0E2A47]">{item.title}</h3>
-              <p class="mt-3 text-sm text-slate-600">{item.description}</p>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. Product Systems (CLEAN) -->
-    <section class="py-20 md:py-24">
-      <div class="mx-auto max-w-[1680px] px-4">
-        <header class="mx-auto max-w-3xl text-center">
-          <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]"><span class="h-px w-10 bg-[#F58A1F]"></span> Product Systems <span class="h-px w-10 bg-[#F58A1F]"></span></div>
-          <h2 class="text-3xl font-extrabold text-[#0E2A47] md:text-4xl">What We Manufacture</h2>
-          <p class="mt-5 text-base text-slate-600">Full range of membrane and liquid-applied waterproofing materials.</p>
-        </header>
-        <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {productSystems.map((item) => (
-            <article class="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-              <div class="relative overflow-hidden bg-slate-100">
-                <img src={item.image} alt={item.alt} class="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div class="absolute left-4 top-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-[#F58A1F] shadow-lg"><item.icon class="h-5 w-5" /></div>
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-extrabold text-[#0E2A47]">{item.title}</h3>
-                <p class="mt-3 text-sm text-slate-600">{item.description}</p>
-                <ul class="mt-5 space-y-2">
-                  {item.items.map((line) => (
-                    <li class="flex items-start gap-2 text-sm font-semibold text-slate-700"><CheckCircle2 class="mt-1 h-4 w-4 shrink-0 text-[#F58A1F]" /><span>{line}</span></li>
-                  ))}
-                </ul>
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. Factory Strength (RESTORED) -->
-    <section class="bg-white py-20 md:py-24">
-      <div class="mx-auto max-w-[1680px] px-4">
-        <div class="grid gap-12 lg:grid-cols-[1fr_0.9fr] lg:items-center">
-          <article>
-            <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]"><span class="h-px w-10 bg-[#F58A1F]"></span> Factory Strength</div>
-            <h2 class="text-3xl font-extrabold text-[#0E2A47] md:text-4xl">Stable Capacity for Bulk Orders</h2>
-            <div class="mt-8 grid gap-4 sm:grid-cols-2">
-              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5"><Factory class="mb-4 h-6 w-6 text-[#F58A1F]" /><h3 class="font-extrabold text-[#0E2A47]">5 Production Lines</h3><p class="mt-2 text-sm text-slate-600">Supporting membranes and coatings.</p></div>
-              <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5"><Boxes class="mb-4 h-6 w-6 text-[#F58A1F]" /><h3 class="font-extrabold text-[#0E2A47]">Bulk Order Supply</h3><p class="mt-2 text-sm text-slate-600">Consistent quality for project buyers.</p></div>
-            </div>
-          </article>
-          <div class="grid grid-cols-2 gap-4">
-            {factoryImages.map((image, index) => (<div class={`overflow-hidden rounded-3xl border border-slate-200 bg-white p-2 shadow-sm ${index === 0 ? 'col-span-2' : ''}`}><img src={image.src} alt={image.alt} class={`${index === 0 ? 'h-64' : 'h-40'} w-full rounded-2xl object-cover`} /></div>))}
+          <h1 style="line-height: 1.5;" class="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">{hero.title}</h1>
+          <p class="mt-7 max-w-3xl text-base leading-8 text-slate-200 sm:text-lg">{hero.description}</p>
+          <p class="mt-3 max-w-3xl text-base leading-8 text-slate-400">{hero.supportText}</p>
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a href={hero.primaryCta.href} class="inline-flex items-center justify-center gap-2 rounded-lg bg-[#F58A1F] px-8 py-4 text-sm font-bold text-white transition hover:bg-[#E77911] shadow-lg shadow-orange-950/20">
+              {hero.primaryCta.label} <ArrowRight size={18} strokeWidth={2} />
+            </a>
+            <a href={hero.secondaryCta.href} class="inline-flex items-center justify-center gap-2 rounded-lg border border-white/25 bg-white/5 px-8 py-4 text-sm font-bold text-white backdrop-blur-sm transition hover:bg-white/10">
+              <Mail size={18} strokeWidth={1.9} /> {hero.secondaryCta.label}
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 7. Quality Control (RESTORED & CLEAN) -->
-    <section class="bg-[#0E2A47] py-20 text-white md:py-24">
-      <div class="mx-auto max-w-[1680px] px-4">
-        <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
-          <article>
-            <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]"><span class="h-px w-10 bg-[#F58A1F]"></span> Quality Control</div>
-            <h2 class="text-3xl font-extrabold md:text-5xl">Strict Inspection Process</h2>
-            <p class="mt-6 text-slate-200 leading-8">Ensuring stable performance for every batch produced.</p>
-          </article>
-          <div class="grid gap-4">
-            {qualitySteps.map((step, index) => (
-              <article class="rounded-3xl border border-white/10 bg-white/10 p-5 flex gap-5">
-                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#F58A1F] text-lg font-extrabold text-white">{String(index + 1).padStart(2, '0')}</div>
-                <div><h3 class="text-lg font-extrabold text-white">{step.title}</h3><p class="mt-2 text-sm text-slate-300">{step.description}</p></div>
-              </article>
+    <!-- 2. Statistics -->
+    <section class="border-b border-slate-100 bg-white">
+      <div class="mx-auto max-w-[1680px] px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4">
+          {stats.map((stat, index) => (
+            <div class={`relative py-10 lg:px-8 ${index > 0 ? 'lg:border-l border-slate-100' : ''} ${index >= 2 ? 'border-t border-slate-100 lg:border-t-0' : ''}`}>
+              <p class="text-3xl font-black tracking-tight text-[#0E2A47] sm:text-4xl">{stat.value}</p>
+              <p class="mt-2 text-sm font-bold text-slate-800 uppercase tracking-wide">{stat.label}</p>
+              <p class="mt-2 text-xs leading-5 text-slate-500 max-w-[200px]">{stat.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Company Overview -->
+    <section class="bg-white px-4 py-20 lg:py-28">
+      <div class="mx-auto max-w-[1680px]">
+        <div class="grid gap-16 lg:grid-cols-2 lg:items-center">
+          <div class="relative order-2 lg:order-1">
+            <div class="overflow-hidden rounded-2xl bg-slate-100 shadow-2xl">
+              <img src={companyOverview.image} alt={companyOverview.imageAlt} width="1100" height="900" loading="lazy" class="aspect-[5/4] h-full w-full object-cover" />
+            </div>
+            <div class="mt-6 grid grid-cols-2 gap-4 sm:absolute sm:-bottom-6 sm:right-6 sm:mt-0 sm:w-[80%]">
+              <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-xl">
+                <Factory size={24} class="text-[#F58A1F]" />
+                <p class="mt-4 text-sm font-bold text-[#0E2A47]">Factory Production</p>
+                <p class="mt-1 text-xs text-slate-500">Stability & Coordination</p>
+              </div>
+              <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-xl">
+                <Globe2 size={24} class="text-[#F58A1F]" />
+                <p class="mt-4 text-sm font-bold text-[#0E2A47]">Export Excellence</p>
+                <p class="mt-1 text-xs text-slate-500">Global Supply Chain</p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:pl-8 order-1 lg:order-2">
+            <div class="flex items-center gap-3">
+              <span class="h-0.5 w-10 bg-[#F58A1F]"></span>
+              <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">{companyOverview.eyebrow}</p>
+            </div>
+            <h2 class="mt-5 text-3xl font-black text-[#0E2A47] sm:text-4xl lg:text-5xl">{companyOverview.title}</h2>
+            <div class="mt-8 space-y-5">
+              {companyOverview.paragraphs.map((p) => <p class="text-base leading-8 text-slate-600">{p}</p>)}
+            </div>
+            <div class="mt-10 divide-y divide-slate-100 border-y border-slate-100">
+              {companyHighlights.map(({ title, description, Icon }) => (
+                <div class="flex gap-5 py-6">
+                  <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-[#F58A1F]">
+                    <Icon size={20} strokeWidth={2} />
+                  </div>
+                  <div>
+                    <h3 class="text-base font-black text-[#0E2A47]">{title}</h3>
+                    <p class="mt-1 text-sm leading-6 text-slate-500">{description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Manufacturing Portfolio -->
+    <section class="bg-slate-50 px-4 py-20 lg:py-28">
+      <div class="mx-auto max-w-[1680px]">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="flex items-center justify-center gap-3">
+            <span class="h-0.5 w-8 bg-[#F58A1F]"></span>
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">MANUFACTURING SCOPE</p>
+            <span class="h-0.5 w-8 bg-[#F58A1F]"></span>
+          </div>
+          <h2 class="mt-5 text-3xl font-black text-[#0E2A47] sm:text-4xl lg:text-5xl">Professional Material Synthesis</h2>
+          <p class="mt-5 text-base leading-7 text-slate-600">Focusing on high-performance synthesis for global infrastructure projects.</p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-3">
+          {productSystems.map((system) => (
+            <article class="bg-white border border-slate-200 rounded-3xl overflow-hidden hover:shadow-2xl transition-shadow group">
+              <div class="aspect-[16/9] overflow-hidden">
+                <img src={system.image} alt={system.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-black text-[#0E2A47] uppercase tracking-tight">{system.title}</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-500">{system.description}</p>
+                <div class="mt-6 pt-6 border-t border-slate-50">
+                   <ul class="flex flex-wrap gap-2">
+                     {system.products.map(p => <li class="text-[11px] font-bold bg-slate-50 text-slate-600 px-2.5 py-1 rounded-full border border-slate-100">{p}</li>)}
+                   </ul>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+        <div class="mt-12 text-center">
+           <a href="/products/" class="inline-flex items-center gap-2 text-sm font-black text-[#0E2A47] border-b-2 border-[#F58A1F] pb-1 hover:text-[#F58A1F] transition-colors">
+             View Full Product Catalog <ArrowRight size={16} />
+           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Quality Control (FIXED READABILITY) -->
+    <section class="bg-[#0E2A47] py-20 text-white lg:py-28">
+      <div class="mx-auto max-w-[1680px] px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-16 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="h-0.5 w-10 bg-[#F58A1F]"></span>
+              <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">QUALITY CONTROL</p>
+            </div>
+            <h2 class="mt-5 text-3xl font-black text-white md:text-5xl leading-tight">Inspection Organized for Every Shipment</h2>
+            <p class="mt-7 text-lg text-slate-200 leading-relaxed">Stable thickness, weight, tensile performance and low-temperature flexibility are our non-negotiable standards.</p>
+            <div class="mt-10 p-8 rounded-2xl bg-white/5 border border-white/10">
+              <p class="text-sm font-bold text-[#F58A1F] uppercase tracking-widest">Laboratory Standard</p>
+              <p class="mt-3 text-sm text-slate-200 leading-7">We maintain an on-site laboratory for batch testing. All technical documents (TDS/MSDS) are generated based on actual performance data.</p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            {qualitySteps.map((step) => (
+              <div class="bg-white/5 border border-white/10 rounded-2xl p-6 flex gap-6 hover:bg-white/10 transition-colors">
+                <span class="text-2xl font-black text-[#F58A1F] opacity-80">{step.number}</span>
+                <div>
+                  <h3 class="text-lg font-black text-white">{step.title}</h3>
+                  <p class="mt-2 text-sm text-slate-300 leading-6">{step.description}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 8. Documents (CLEAN) -->
-    <section class="py-20 md:py-24">
-      <div class="mx-auto max-w-[1680px] px-4">
-        <header class="mx-auto max-w-3xl text-center">
-          <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]"><span class="h-px w-10 bg-[#F58A1F]"></span> Documents <span class="h-px w-10 bg-[#F58A1F]"></span></div>
-          <h2 class="text-3xl font-extrabold text-[#0E2A47] md:text-4xl">Technical Documents Support</h2>
-          <p class="mt-5 text-base text-slate-600">Practical support for distributors and project buyers before purchasing.</p>
-        </header>
-        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {documents.map((item) => (
-            <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm text-center">
-              <div class="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0E2A47]/5 text-[#F58A1F]"><item.icon class="h-6 w-6" /></div>
-              <h3 class="text-lg font-extrabold text-[#0E2A47]">{item.title}</h3>
-              <p class="mt-3 text-sm text-slate-600">{item.description}</p>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- 9. OEM & Export (RESTORED) -->
-    <section class="bg-white py-20 md:py-24">
-      <div class="mx-auto max-w-[1680px] px-4">
-        <div class="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-          <div class="overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 p-3 shadow-xl"><img src="https://img.tyuanwaterproof.com/factory-main.webp" alt="OEM" class="h-[320px] w-full rounded-[1.5rem] object-cover md:h-[460px]" /></div>
-          <article>
-            <div class="mb-4 inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.2em] text-[#F58A1F]"><span class="h-px w-10 bg-[#F58A1F]"></span> OEM & Export Support</div>
-            <h2 class="text-3xl font-extrabold text-[#0E2A47] md:text-4xl">Supporting Your Supply Chain</h2>
-            <div class="mt-8 grid gap-3 sm:grid-cols-2">
-              {exportSupport.map((item) => (<div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4"><CheckCircle2 class="h-5 w-5 shrink-0 text-[#F58A1F]" /><span class="text-sm font-bold text-slate-700">{item}</span></div>))}
+    <!-- 6. Technical Documents -->
+    <section class="bg-white px-4 py-20 lg:py-28">
+      <div class="mx-auto max-w-[1680px]">
+        <div class="flex flex-col lg:flex-row gap-12 lg:items-center">
+          <div class="lg:w-1/2">
+            <p class="text-sm font-bold text-[#F58A1F] uppercase tracking-[0.2em] mb-4">TECHNICAL SUPPORT</p>
+            <h2 class="text-3xl lg:text-5xl font-black text-[#0E2A47] leading-tight tracking-tight">Full Documentation for Project Evaluation</h2>
+            <p class="mt-6 text-base leading-8 text-slate-600">We coordinate all necessary technical, testing and shipment documents to help you reduce engineering approval time.</p>
+            <div class="mt-10 flex flex-wrap gap-4">
+               {['TDS Support', 'Test Reports', 'Export Documents', 'OEM Packing'].map(tag => <span class="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 text-xs font-bold rounded-lg">{tag}</span>)}
             </div>
-            <a href="/contact" class="mt-8 inline-flex items-center justify-center rounded-xl bg-[#0E2A47] px-6 py-4 text-sm font-extrabold text-white shadow-lg transition-transform hover:scale-105">Discuss OEM Requirements <ArrowRight class="ml-2 h-4 w-4" /></a>
-          </article>
+          </div>
+          <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {technicalDocuments.map(doc => (
+              <div class="p-6 border border-slate-100 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                <doc.Icon size={24} class="text-[#F58A1F]" />
+                <h3 class="mt-4 text-base font-black text-[#0E2A47]">{doc.title}</h3>
+                <p class="mt-2 text-xs leading-5 text-slate-500">{doc.description}</p>
+                <a href="/contact/" class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-[#F58A1F] uppercase tracking-wider">{doc.actionLabel} <ArrowRight size={14} /></a>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 10. Inquiry / Ready to Help (RESTORED) -->
-    <section class="bg-white py-20 md:py-24">
-      <div class="mx-auto max-w-[1680px] px-4">
-        <div class="overflow-hidden rounded-[2rem] bg-[#0E2A47] shadow-2xl">
-          <div class="grid gap-10 p-10 lg:grid-cols-[0.95fr_1.05fr] lg:p-16">
-            <article class="flex flex-col justify-center">
-              <div class="mb-5 inline-flex w-fit items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-extrabold uppercase text-white"><SearchCheck class="h-4 w-4 text-[#F58A1F]" /> Ready to Help</div>
-              <h2 class="text-3xl font-extrabold text-white md:text-5xl">Looking for a Reliable Supplier?</h2>
-              <p class="mt-5 text-slate-300 leading-8">Send us your project requirements. Our team will recommend suitable materials and provide a quotation.</p>
-              <div class="mt-8 space-y-4">
-                <a href="https://wa.me/8615263640998" class="flex items-center gap-4 rounded-2xl bg-white/10 p-4 text-white hover:scale-105 transition-transform"><MessageCircle class="h-6 w-6 text-[#F58A1F]" /><span><span class="block text-xs uppercase text-slate-300">WhatsApp</span><span class="font-extrabold">+86 15263640998</span></span></a>
+    <!-- 7. High-Impact CTA Banner (REPLACED FORM) -->
+    <section class="bg-white px-4 pb-20 lg:pb-28">
+      <div class="mx-auto max-w-[1680px]">
+        <div class="relative overflow-hidden rounded-[2.5rem] bg-[#0E2A47] px-8 py-16 text-center sm:px-16 sm:py-24">
+           <!-- Decorative Background Element -->
+           <div class="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl"></div>
+           <div class="absolute -left-24 -bottom-24 h-96 w-96 rounded-full bg-[#F58A1F]/10 blur-3xl"></div>
+           
+           <div class="relative z-10 mx-auto max-w-3xl">
+              <h2 class="text-3xl font-black text-white sm:text-5xl lg:text-6xl leading-[1.1]">Ready to Discuss Your Project?</h2>
+              <p class="mt-8 text-lg text-slate-300 leading-relaxed">
+                Our technical sales team is ready to provide suitable materials, technical data, and factory-direct quotations based on your specific project requirements.
+              </p>
+              <div class="mt-12 flex flex-col justify-center gap-5 sm:flex-row">
+                 <a href="/contact/" class="inline-flex items-center justify-center rounded-xl bg-[#F58A1F] px-10 py-5 text-base font-black text-white transition hover:bg-[#E77911] shadow-xl shadow-orange-950/40 group">
+                    Get a Factory Quote <ArrowRight class="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                 </a>
+                 <a href="https://wa.me/8615263640998" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/5 px-10 py-5 text-base font-black text-white backdrop-blur-md transition hover:bg-white/10">
+                    Quick WhatsApp <span class="ml-2 opacity-60">→</span>
+                 </a>
               </div>
-            </article>
-            <form action="#" class="rounded-[1.6rem] bg-white p-8 shadow-xl">
-              <div class="grid gap-5 sm:grid-cols-2">
-                <input type="text" placeholder="Full Name" class="w-full rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm focus:border-[#F58A1F] outline-none" />
-                <input type="email" placeholder="Email Address" class="w-full rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm focus:border-[#F58A1F] outline-none" />
+              <div class="mt-10 flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-xs font-bold text-slate-400 uppercase tracking-widest">
+                 <span class="flex items-center gap-2"><CheckCircle2 size={14} class="text-[#F58A1F]" /> 24h Response</span>
+                 <span class="flex items-center gap-2"><CheckCircle2 size={14} class="text-[#F58A1F]" /> TDS & MSDS Provided</span>
+                 <span class="flex items-center gap-2"><CheckCircle2 size={14} class="text-[#F58A1F]" /> OEM Available</span>
               </div>
-              <input type="text" placeholder="Company" class="mt-5 w-full rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm focus:border-[#F58A1F] outline-none" />
-              <textarea rows="4" placeholder="Message..." class="mt-5 w-full rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm focus:border-[#F58A1F] outline-none resize-none"></textarea>
-              <button type="submit" class="mt-5 w-full rounded-xl bg-[#C05800] p-4 text-sm font-extrabold text-white shadow-lg hover:scale-105 transition-transform">Get Quotation <ArrowRight class="ml-2 h-4 w-4 inline" /></button>
-            </form>
-          </div>
+           </div>
         </div>
       </div>
     </section>
