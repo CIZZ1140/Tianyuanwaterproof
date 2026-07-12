@@ -19,7 +19,6 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
     title: "Tianyuan JS Waterproof Coating Bucket"
-displayName: "JS Polymer Cement Coating"
 
 spec_table:
   - label: "Standard"
@@ -33,30 +32,23 @@ spec_table:
 
 quick_facts:
   - title: "The Standard for Interior Spaces"
-displayName: "JS Polymer Cement Coating"
     text: "Formulated specifically for residential wet-rooms, our JS coating is non-toxic and solvent-free, ensuring safe indoor air quality."
   - title: "Direct-to-Wet Adhesion"
-displayName: "JS Polymer Cement Coating"
     text: "Unlike solvent-based products, this cement-compatible slurry can be applied directly onto damp concrete without bubbling or peeling."
   - title: "Durable Elasticity"
-displayName: "JS Polymer Cement Coating"
     text: "Bridges hairline shrinkage cracks in concrete while maintaining the rigid strength required for tiling directly over the membrane."
 
 applications:
   - title: "Kitchens & Bathrooms"
-displayName: "JS Polymer Cement Coating"
     text: "The primary waterproof layer for residential interiors before tile installation."
   - title: "Swimming Pools & Reservoirs"
-displayName: "JS Polymer Cement Coating"
     text: "Type II JS provides the necessary water-head resistance for submerged structures."
 
 related_products:
   - title: "Polyurethane Coating"
-displayName: "JS Polymer Cement Coating"
     image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
     href: "/products/polyurethane-waterproof-coating-factory/"
   - title: "Self-Adhesive Membrane"
-displayName: "JS Polymer Cement Coating"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-bitumen-waterproofing-membrane-wholesale.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
 ---

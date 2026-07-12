@@ -19,10 +19,8 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/epoxy-floor-paint.jpg"
     title: "Epoxy Paint Product"
-displayName: "Epoxy Self-Leveling Coating"
   - image: "/placeholder.webp"
     title: "Production Facility"
-displayName: "Epoxy Self-Leveling Coating"
 
 spec_table:
   - label: "Product Type"
@@ -44,44 +42,32 @@ spec_table:
 
 quick_facts:
   - title: "Seamless Perfection"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Creates a perfectly level, joint-free surface that is easy to clean and maintains its glossy finish for years."
   - title: "High Mechanical Strength"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Exceptional resistance to impact, heavy foot traffic, and equipment movement in commercial spaces."
   - title: "Superior Adhesion"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Bonds permanently to concrete, wood, and ceramic tiles, preventing peeling even under high stress."
   - title: "Eco-Friendly & Safe"
-displayName: "Epoxy Self-Leveling Coating"
     text: "95% solid content with low VOC emissions and zero detected harmful heavy metals like lead or mercury."
 
 applications:
   - title: "Commercial Spaces"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Ideal for modern offices, lobbies, enterprise buildings, and high-end retail showrooms."
   - title: "Public Facilities"
-displayName: "Epoxy Self-Leveling Coating"
     text: "The top choice for indoor playgrounds, schools, and hospitals where hygiene and aesthetics are key."
   - title: "Industrial Interiors"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Suitable for cleanrooms, light manufacturing plants, and corridors requiring dust-free floors."
   - title: "Decorative Flooring"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Perfect for color sand systems and custom interior design projects requiring a high-gloss finish."
 
 features:
   - title: "Advanced Self-Leveling"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Specially formulated to flow into a smooth surface within 30 seconds, ensuring effortless application."
   - title: "Chemical & Stain Resistance"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Excellent resistance to mild acids, alkalis, oils, and common household/industrial stains."
   - title: "Anti-Slip Performance"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Surface can be modified with anti-slip additives while maintaining its decorative appeal and safety."
   - title: "Low Maintenance Cost"
-displayName: "Epoxy Self-Leveling Coating"
     text: "The hard, non-porous surface prevents dust accumulation and simplifies daily cleaning procedures."
 
 technical_data:
@@ -123,33 +109,24 @@ technical_data:
 
 application_guide:
   - title: "Ground Cleaning"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Ensure the substrate is firm, dry, and free from oil, dust, and loose cement slurry."
   - title: "Material Mixing"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Add the curing agent into the resin and stir thoroughly for 2-3 minutes with a mechanical mixer."
   - title: "Pouring"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Pour the mixed epoxy onto the floor and spread it evenly using a spiked roller or notched squeegee."
   - title: "Self-Leveling"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Allow the material to level naturally for 30 seconds. Do not disturb during the initial curing phase."
   - title: "Waiting Period"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Wait at least 12-16 hours before allowing light access. Protect from water for at least 7 days."
   - title: "Final Inspection"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Check for a smooth finish and monolithic bond before project handover."
 
 packaging:
   - title: "Industrial Grade Buckets"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Supplied in heavy-duty metal buckets with airtight seals for safe shipping and storage."
   - title: "Storage Notice"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Store in a cool, dry place. Keep buckets tightly closed to prevent moisture contamination."
   - title: "OEM Labeling"
-displayName: "Epoxy Self-Leveling Coating"
     text: "Full support for custom bucket designs, private labels, and custom color matching for large orders."
 
 loading_data:
@@ -162,27 +139,22 @@ loading_data:
 
 downloads:
   - title: "Epoxy Floor TDS"
-displayName: "Epoxy Self-Leveling Coating"
     description: "Detailed technical specifications, VOC reports, and hardness data."
     type: "PDF"
     href: ""
   - title: "Installation Guide"
-displayName: "Epoxy Self-Leveling Coating"
     description: "Step-by-step instructions for self-leveling floor application."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "Polyurethane Waterproof Coating"
-displayName: "Epoxy Self-Leveling Coating"
     image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
     href: "/products/polyurethane-waterproof-coating-factory/"
   - title: "TPO Waterproofing Membrane"
-displayName: "Epoxy Self-Leveling Coating"
     image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
   - title: "EPDM Waterproofing Membrane"
-displayName: "Epoxy Self-Leveling Coating"
     image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
     href: "/products/epdm-waterproofing-membrane-wholesale/"
 

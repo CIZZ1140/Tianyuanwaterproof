@@ -19,10 +19,8 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/polyethylene-propylene-waterproof-membrane.webp"
     title: "PP Membrane Roll"
-displayName: "PP-PE Composite Membrane"
   - image: "/placeholder.webp"
     title: "Production Line"
-displayName: "PP-PE Composite Membrane"
 
 spec_table:
   - label: "Product Type"
@@ -46,44 +44,32 @@ spec_table:
 
 quick_facts:
   - title: "Multi-layer Security"
-displayName: "PP-PE Composite Membrane"
     text: "Laminated PE core between high-strength PP fleece for dual waterproofing and mechanical protection."
   - title: "Wet-Base Friendly"
-displayName: "PP-PE Composite Membrane"
     text: "Can be applied directly on damp substrates using polymer cement adhesive, significantly shortening construction cycles."
   - title: "Superior Bonding"
-displayName: "PP-PE Composite Membrane"
     text: "Fiber-reinforced surface ensures full adhesion with cement mortar, eliminating water channeling risks."
   - title: "Non-Toxic & Green"
-displayName: "PP-PE Composite Membrane"
     text: "Odorless and pollution-free, making it perfectly safe for potable water reservoirs and eco-friendly projects."
 
 applications:
   - title: "Roofing & Damp-proofing"
-displayName: "PP-PE Composite Membrane"
     text: "Excellent for pitched roofs, tiled roof underlayment, and gas insulation projects."
   - title: "Indoor Wet Areas"
-displayName: "PP-PE Composite Membrane"
     text: "The preferred choice for bathrooms, kitchens, shower rooms, and indoor swimming pools."
   - title: "Infrastructure & Municipal"
-displayName: "PP-PE Composite Membrane"
     text: "Reliable anti-seepage for subways, bridges, culverts, tunnels, and underground civil works."
   - title: "Environmental Protection"
-displayName: "PP-PE Composite Membrane"
     text: "Used in refuse landfills, sewage farms, and industrial anti-pollution engineering."
 
 features:
   - title: "Full Adhesion Technology"
-displayName: "PP-PE Composite Membrane"
     text: "Forms a monolithic bond with polymer cement adhesive, filling substrate irregularities and holes."
   - title: "High Deformation Adaptability"
-displayName: "PP-PE Composite Membrane"
     text: "Two-surface non-woven fiber structure provides excellent elasticity and adaptability to base deformation."
   - title: "Anti-Puncture Performance"
-displayName: "PP-PE Composite Membrane"
     text: "Specifically designed to resist root penetration in green roof gardens and intensive landscaping."
   - title: "Breathable Protection"
-displayName: "PP-PE Composite Membrane"
     text: "Combines high watertightness with vapor permeability to prevent moisture buildup under the membrane."
 
 technical_data:
@@ -125,33 +111,24 @@ technical_data:
 
 application_guide:
   - title: "Base Preparation"
-displayName: "PP-PE Composite Membrane"
     text: "Clean the surface. Ensure it is firm and free from dust, oil stains, and standing water."
   - title: "Adhesive Mixing"
-displayName: "PP-PE Composite Membrane"
     text: "Prepare the polymer cement mortar or dry powder adhesive according to project requirements."
   - title: "Uniform Coating"
-displayName: "PP-PE Composite Membrane"
     text: "Apply the adhesive evenly to fill small holes and rough areas on the base course."
   - title: "Laying Membrane"
-displayName: "PP-PE Composite Membrane"
     text: "Pre-pave the PP membrane straight and flat, ensuring no wrinkles or air pockets."
   - title: "Compaction"
-displayName: "PP-PE Composite Membrane"
     text: "Press the membrane firmly to achieve full bonding with the adhesive layer and substrate."
   - title: "Sealing Joints"
-displayName: "PP-PE Composite Membrane"
     text: "Treat overlaps carefully with specialized sealing tapes or adhesive paste to prevent leaks."
 
 packaging:
   - title: "High-Capacity Rolls"
-displayName: "PP-PE Composite Membrane"
     text: "Supplied in long-format rolls (80m-200m) to minimize joints in large-scale projects."
   - title: "Color Options"
-displayName: "PP-PE Composite Membrane"
     text: "Available in Gray, White, Red, and Green; double-sided color customization is supported."
   - title: "OEM Labeling"
-displayName: "PP-PE Composite Membrane"
     text: "Private brand marks, custom labels, and specific roll weights (200g-1000g) available."
 
 loading_data:
@@ -164,31 +141,25 @@ loading_data:
 
 downloads:
   - title: "PP Membrane Technical Data"
-displayName: "PP-PE Composite Membrane"
     description: "Detailed GB18173.1 FS2 indexes and performance data sheet."
     type: "PDF"
     href: ""
   - title: "Installation Manual"
-displayName: "PP-PE Composite Membrane"
     description: "Full guide for polymer cement bonding and wet-base application."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "TPO Waterproofing Membrane"
-displayName: "PP-PE Composite Membrane"
     image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
   - title: "EPDM Waterproofing Membrane"
-displayName: "PP-PE Composite Membrane"
     image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
     href: "/products/epdm-waterproofing-membrane-wholesale/"
   - title: "PVC Waterproofing Membrane"
-displayName: "PP-PE Composite Membrane"
     image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
     href: "/products/pvc-waterproofing-membrane-manufacturer/"
   - title: "Pre-applied HDPE Membrane"
-displayName: "PP-PE Composite Membrane"
     image: "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp"
     href: "/products/pre-applied-hdpe-membrane-supplier/"
 

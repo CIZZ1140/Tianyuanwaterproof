@@ -15,10 +15,8 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/spray-polyurea-coating-v2.webp"
     title: "Polyurea Spray Application"
-displayName: "Spray Polyurea Coating"
   - image: "/placeholder.webp"
     title: "Heavy-Duty Protection"
-displayName: "Spray Polyurea Coating"
 
 spec_table:
   - label: "Material Base"
@@ -34,35 +32,26 @@ spec_table:
 
 quick_facts:
   - title: "Rapid Turnaround"
-displayName: "Spray Polyurea Coating"
     text: "Cures in seconds and can be walked on within minutes, allowing for immediate return to service for bridges, roofs, and parking decks."
   - title: "Extreme Durability"
-displayName: "Spray Polyurea Coating"
     text: "Highly resistant to abrasion, impact, and chemical exposure. Maintains flexibility and waterproofing integrity for over 50 years."
   - title: "Seamless Protection"
-displayName: "Spray Polyurea Coating"
     text: "Forms a monolithic, joint-free membrane that conforms to complex geometries and seals all penetrations perfectly."
 
 applications:
   - title: "High-Speed Rail & Bridges"
-displayName: "Spray Polyurea Coating"
     text: "The global standard for concrete deck protection against vibration, water, and salts."
   - title: "Wastewater Treatment"
-displayName: "Spray Polyurea Coating"
     text: "Excellent resistance to H2S and typical industrial chemicals in liners and secondary containment."
   - title: "Industrial Roofing"
-displayName: "Spray Polyurea Coating"
     text: "Heavy-duty protection for metal and concrete roofs in extreme environments."
 
 features:
   - title: "Zero VOC & Eco-Friendly"
-displayName: "Spray Polyurea Coating"
     text: "100% solid content, containing no solvents or hazardous air pollutants."
   - title: "Weather Resistance"
-displayName: "Spray Polyurea Coating"
     text: "Excellent stability under UV exposure and extreme temperature fluctuations (-40°C to +120°C)."
   - title: "High Build"
-displayName: "Spray Polyurea Coating"
     text: "Can be applied at any thickness in a single pass without sagging or running."
 
 technical_data:
@@ -84,11 +73,9 @@ technical_data:
 
 related_products:
   - title: "Liquid Rubber Coating"
-displayName: "Spray Polyurea Coating"
     image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt.webp"
     href: "/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/"
   - title: "Polyurethane Coating"
-displayName: "Spray Polyurea Coating"
     image: "https://img.tyuanwaterproof.com/products/polyurethane-waterproof-coating-factory/"
 ---
 

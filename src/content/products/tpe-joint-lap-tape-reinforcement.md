@@ -19,7 +19,6 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/tpe-joint-expansion-tape.webp"
     title: "TPE Joint Sealing Tape Roll"
-displayName: "TPE Joint Tape"
 
 spec_table:
   - label: "Material Composition"
@@ -41,50 +40,36 @@ spec_table:
 
 quick_facts:
   - title: "Expansion Joint Specialist"
-displayName: "TPE Joint Tape"
     text: "Specifically engineered for joints subject to significant displacement, maintaining a watertight seal during building movement."
   - title: "Triple-Layer Hybrid Design"
-displayName: "TPE Joint Tape"
     text: "Features a waterproof TPE core and breathable fabric side-strips that ensure maximum mechanical bonding with liquid coatings."
   - title: "500% Ultimate Elasticity"
-displayName: "TPE Joint Tape"
     text: "Bridges structural gaps and corners with ease, absorbing high stress without tearing or losing adhesion."
   - title: "Complete Detail System"
-displayName: "TPE Joint Tape"
     text: "Available in multiple pre-formed shapes including pipe sleeves, internal corners, and external corner caps for total system integrity."
 
 applications:
   - title: "Structural & Expansion Joints"
-displayName: "TPE Joint Tape"
     text: "The primary solution for sealing heavy-duty movement joints in concrete structures and factory floors."
   - title: "Wall-to-Floor Junctions"
-displayName: "TPE Joint Tape"
     text: "Critical reinforcement for corners in bathrooms, kitchens, and basements where leakage risk is highest."
   - title: "Pipe & Drain Penetrations"
-displayName: "TPE Joint Tape"
     text: "Provides a flexible, airtight seal around plumbing and electrical conduits passing through slabs."
   - title: "Internal & External Corners"
-displayName: "TPE Joint Tape"
     text: "Pre-treated reinforcement for corners, eliminating the common failure point of traditional 'hand-folded' membranes."
   - title: "Composite Coating Systems"
-displayName: "TPE Joint Tape"
     text: "Essential accessory for JS Cementitious, Polyurethane, and Asphalt-based liquid waterproofing systems."
 
 features:
   - title: "TY-SHIELD™ Ever-Seal Bond"
-displayName: "TPE Joint Tape"
     text: "The fabric-reinforced edges 'lock' into the liquid coating, creating a high-strength composite that prevents peeling."
   - title: "Seamless Movement Adaptation"
-displayName: "TPE Joint Tape"
     text: "The non-reinforced TPE center allows the tape to expand and contract freely as the structural gap changes width."
   - title: "Chemical & Aging Resistance"
-displayName: "TPE Joint Tape"
     text: "Resistant to acids, alkalis, and industrial wastewater, ensuring long-term underground and industrial durability."
   - title: "High-Speed Installation"
-displayName: "TPE Joint Tape"
     text: "Easy to cut, fit, and press into wet coatings. Significantly faster than traditional bitumen tape for detail areas."
   - title: "Safe & Solvent-Free"
-displayName: "TPE Joint Tape"
     text: "Environmentally safe TPE material with no harmful odors, suitable for indoor and potable water-adjacent projects."
 
 technical_data:
@@ -126,30 +111,22 @@ technical_data:
 
 application_guide:
   - title: "Substrate Prep"
-displayName: "TPE Joint Tape"
     text: "Ensure the substrate around the joint or corner is clean, dry, and firm. Remove all loose debris and dust."
   - title: "Base Coating Application"
-displayName: "TPE Joint Tape"
     text: "Apply a generous first coat of your selected liquid waterproof coating (JS, PU, or Asphalt) along the joint line."
   - title: "Tape Integration"
-displayName: "TPE Joint Tape"
     text: "Place the TY-SHIELD™ TPE tape into the wet coating. Ensure the fabric edges are fully submerged in the coating."
   - title: "Press & Smooth"
-displayName: "TPE Joint Tape"
     text: "Use a trowel or roller to press the tape firmly, removing any air pockets or wrinkles from the fabric edges."
   - title: "Over-Coating"
-displayName: "TPE Joint Tape"
     text: "Apply the second coat of waterproofing over the entire tape, ensuring the fabric edges are completely encapsulated and the TPE center is protected."
 
 packaging:
   - title: "Standard Rolls"
-displayName: "TPE Joint Tape"
     text: "Supplied in 120mm x 50m or 10m rolls. Custom widths available for large expansion joints."
   - title: "Accessory Range"
-displayName: "TPE Joint Tape"
     text: "Pre-formed Internal Corners, External Corners, and Pipe Sleeves (S, M, L sizes) available."
   - title: "OEM Services"
-displayName: "TPE Joint Tape"
     text: "We provide private labeling, custom roll lengths, and localized packaging for distributors."
 
 loading_data:
@@ -162,23 +139,19 @@ loading_data:
 
 downloads:
   - title: "Technical Data Sheet (TDS)"
-displayName: "TPE Joint Tape"
     description: "TPE tape elasticity, chemical resistance, and hydrostatic pressure data."
     type: "PDF"
     href: ""
   - title: "Detailing Guide"
-displayName: "TPE Joint Tape"
     description: "Installation instructions for pipe roots, expansion joints, and corner reinforcement."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "Butyl Sealing Tape"
-displayName: "TPE Joint Tape"
     image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"
     href: "/products/butyl-waterproof-sealing-tape-supplier/"
   - title: "JS Polymer Cement Coating"
-displayName: "TPE Joint Tape"
     image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating-factory.webp"
     href: "/products/polymer-cement-js-waterproof-coating-factory/"
 

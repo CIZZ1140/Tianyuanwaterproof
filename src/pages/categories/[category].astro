@@ -168,7 +168,7 @@ const products = await getCollection('products', ({ data }) => {
                     )}
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   </div>
-                  <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2" title={p.data.title}>{p.data.title}</h3>
+                  <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2" title={p.data.displayName || p.data.title}>{p.data.displayName || p.data.title}</h3>
                   <p class="text-slate-500 mb-6 text-sm leading-relaxed line-clamp-3">{p.data.description}</p>
                   <span class="inline-flex items-center gap-2 font-bold text-blue-600 text-sm">Learn More <span class="text-xl leading-none">›</span></span>
                 </a>

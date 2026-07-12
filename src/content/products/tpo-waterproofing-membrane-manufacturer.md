@@ -21,10 +21,8 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
     title: "TPO Roll"
-displayName: "TPO Waterproofing Membrane"
   - image: "/placeholder.webp"
     title: "Production Line"
-displayName: "TPO Waterproofing Membrane"
 
 spec_table:
   - label: "Product Type"
@@ -52,47 +50,34 @@ spec_table:
 
 quick_facts:
   - title: "Exposed Roof Use"
-displayName: "TPO Waterproofing Membrane"
     text: "TPO membrane can be used in exposed monolayer roof waterproofing projects."
   - title: "Multiple Sheet Types"
-displayName: "TPO Waterproofing Membrane"
     text: "Available as reinforced, fabric-backed, or homogeneous TPO waterproofing sheets."
   - title: "Hot-Air Weldable"
-displayName: "TPO Waterproofing Membrane"
     text: "TPO sheets are weldable at joints and can be connected with other polymer materials."
   - title: "Factory Supply"
-displayName: "TPO Waterproofing Membrane"
     text: "Thickness, width, roll length, color, and OEM service can be arranged for project supply."
 
 applications:
   - title: "Exposed Roofing"
-displayName: "TPO Waterproofing Membrane"
     text: "Suitable for exposed monolayer roof waterproofing systems."
   - title: "Planting Roof Systems"
-displayName: "TPO Waterproofing Membrane"
     text: "Used in planting roof waterproofing and roof garden projects."
   - title: "Large Venues & Airports"
-displayName: "TPO Waterproofing Membrane"
     text: "Applicable for large venues, airports, and large-scale roof waterproofing projects."
   - title: "Underground & Municipal"
-displayName: "TPO Waterproofing Membrane"
     text: "Used for building underground layers, tunnels, subways, and bridges."
   - title: "Hydraulic Engineering"
-displayName: "TPO Waterproofing Membrane"
     text: "Suitable for dams, landfills, reservoirs, and grain depots."
 
 features:
   - title: "Eco-Friendly Roofing"
-displayName: "TPO Waterproofing Membrane"
     text: "The TPO membrane is eco-friendly, recyclable, and reusable, suitable for sustainable projects."
   - title: "High Elasticity & Weldability"
-displayName: "TPO Waterproofing Membrane"
     text: "Provides high elasticity at room temperature with excellent mechanical and welding performance."
   - title: "Extreme Resistance"
-displayName: "TPO Waterproofing Membrane"
     text: "Offers superior aging, heat, cold, abrasion, and puncture resistance."
   - title: "Energy-Saving Support"
-displayName: "TPO Waterproofing Membrane"
     text: "Rational design for light steel structures helps reduce roof weight and supports energy efficiency."
 
 technical_data:
@@ -139,36 +124,26 @@ technical_data:
 
 application_guide:
   - title: "Base Course Clean"
-displayName: "TPO Waterproofing Membrane"
     text: "Ensure the base is smooth, dry, clean, and free from cracks or debris."
   - title: "Mark & Pre-Lay"
-displayName: "TPO Waterproofing Membrane"
     text: "Make layout lines and pre-pave the TPO membrane smoothly and straight."
   - title: "Fasten Membrane"
-displayName: "TPO Waterproofing Membrane"
     text: "Secure the membrane beneath overlapping areas using mechanical fastening components."
   - title: "Weld Seams"
-displayName: "TPO Waterproofing Membrane"
     text: "Weld the joints with proper equipment to form continuous waterproof seams."
   - title: "Inspect Details"
-displayName: "TPO Waterproofing Membrane"
     text: "Inspect joints and treat parapets, drains, and pipe roots carefully."
   - title: "Protect Finish"
-displayName: "TPO Waterproofing Membrane"
     text: "Protect the completed layer from damage by follow-up construction or sharp objects."
 
 packaging:
   - title: "Secure Roll Packing"
-displayName: "TPO Waterproofing Membrane"
     text: "Supplied in rolls with protective end caps for easy handling and storage."
   - title: "Export Pallets"
-displayName: "TPO Waterproofing Membrane"
     text: "Rolls are palletized and strapped for safe international transit."
   - title: "OEM Identification"
-displayName: "TPO Waterproofing Membrane"
     text: "Custom roll labels with logo, type, thickness, and batch number available."
   - title: "Sample Supply"
-displayName: "TPO Waterproofing Membrane"
     text: "Samples provided for project evaluation, color checking, and approval."
 
 loading_data:
@@ -185,31 +160,25 @@ loading_data:
 
 downloads:
   - title: "TPO Technical Data (TDS)"
-displayName: "TPO Waterproofing Membrane"
     description: "Detailed GB27789-2011 technical index and performance data."
     type: "PDF"
     href: ""
   - title: "Product Catalog"
-displayName: "TPO Waterproofing Membrane"
     description: "Full overview of TPO types, colors, and synthetic roofing solutions."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "PVC Waterproofing Membrane"
-displayName: "TPO Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
     href: "/products/pvc-waterproofing-membrane-manufacturer/"
   - title: "EPDM Waterproofing Membrane"
-displayName: "TPO Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
     href: "/products/epdm-waterproofing-membrane-wholesale/"
   - title: "Pre-applied HDPE Membrane"
-displayName: "TPO Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp"
     href: "/products/pre-applied-hdpe-membrane-supplier/"
   - title: "SBS Modified Bitumen Membrane"
-displayName: "TPO Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
 

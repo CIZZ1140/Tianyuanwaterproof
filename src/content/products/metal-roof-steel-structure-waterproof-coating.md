@@ -16,10 +16,8 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/metal-roof-acrylic-coating.webp"
     title: "Acrylic Waterproof Coating"
-displayName: "Metal Roof Waterproof Coating"
   - image: "/placeholder.webp"
     title: "Rust-Resistant Topcoat"
-displayName: "Metal Roof Waterproof Coating"
 
 spec_table:
   - label: "Material Base"
@@ -35,35 +33,26 @@ spec_table:
 
 quick_facts:
   - title: "Rust & Leak Protection"
-displayName: "Metal Roof Waterproof Coating"
     text: "Provides a seamless, rubber-like membrane that seals fasteners, laps, and joints while preventing rust formation on metal surfaces."
   - title: "Energy Efficient"
-displayName: "Metal Roof Waterproof Coating"
     text: "Reflects up to 85% of solar radiation, significantly reducing the surface temperature of the roof and lowering indoor cooling costs."
   - title: "Superior Adhesion"
-displayName: "Metal Roof Waterproof Coating"
     text: "Bonding strength exceeds 1.5 MPa on aluminum, galvanized steel, and rusted metal (when treated with primer)."
 
 applications:
   - title: "Steel Structure Roofs"
-displayName: "Metal Roof Waterproof Coating"
     text: "The ideal solution for factories, warehouses, and logistics centers with corrugated metal roofing."
   - title: "Metal Gutters & Flashing"
-displayName: "Metal Roof Waterproof Coating"
     text: "Seals complex detail areas where traditional membranes are difficult to install."
   - title: "Rust Prevention"
-displayName: "Metal Roof Waterproof Coating"
     text: "Functions as a protective topcoat to stop oxidation and maintain the structural integrity of the steel."
 
 features:
   - title: "Water-Based & Eco-Friendly"
-displayName: "Metal Roof Waterproof Coating"
     text: "Non-toxic, low VOC, and safe for applicators and the environment."
   - title: "Long-Term Elasticity"
-displayName: "Metal Roof Waterproof Coating"
     text: "Remains flexible through extreme thermal expansion and contraction cycles of metal roofs."
   - title: "Easy Application"
-displayName: "Metal Roof Waterproof Coating"
     text: "Can be applied by brush, roller, or airless spray for high-speed project completion."
 
 technical_data:
@@ -85,11 +74,9 @@ technical_data:
 
 related_products:
   - title: "Butyl Sealing Tape"
-displayName: "Metal Roof Waterproof Coating"
     image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"
     href: "/products/butyl-waterproof-sealing-tape-supplier/"
   - title: "Polyurea Coating"
-displayName: "Metal Roof Waterproof Coating"
     image: "https://img.tyuanwaterproof.com/products/spray-polyurea-coating-v2.webp"
     href: "/products/spray-polyurea-waterproofing-coating/"
 ---

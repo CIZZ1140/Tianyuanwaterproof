@@ -1,6 +1,6 @@
 ---
-title: "SBS Bitumen Membrane | 2026 Market-Leading Factory Direct Wholesale"
-displayName: "SBS Modified Bitumen Membrane"
+title: "Wholesale SBS Modified Bituminous Waterproofing Membrane for Tunnel & Foundation | 2026 Factory Price"
+displayName: "SBS Modified Bituminous Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 100
@@ -8,7 +8,7 @@ product_category: "Bitumen Membranes"
 image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-main.webp"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-main.webp"
 
-hero_description: "TY-SHIELD™ SBS Modified Bitumen Waterproofing Membrane, fully compliant with the latest GB/T 18242-2025 standards. The premier choice for the global market in roofing, basement, and foundation projects requiring elite low-temperature flexibility (-25°C) and durable factory-direct supply."
+hero_description: "TY-SHIELD™ SBS Modified Bituminous Waterproofing Membrane, fully compliant with the latest GB/T 18242-2025 standards. The premier solution for tunnel, roofing, and foundation projects requiring elite low-temperature flexibility (-25°C) and factory-direct wholesale supply."
 
 hero_tags:
   - "SBS Modified"
@@ -21,16 +21,12 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-main.webp"
     title: "Product Overview"
-displayName: "SBS Modified Bitumen Membrane"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-surface.webp"
     title: "Surface Options"
-displayName: "SBS Modified Bitumen Membrane"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-detail.webp"
     title: "Material Detail"
-displayName: "SBS Modified Bitumen Membrane"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-bulk.webp"
     title: "Bulk Supply & Packing"
-displayName: "SBS Modified Bitumen Membrane"
 
 spec_table:
   - label: "Product Type"
@@ -53,31 +49,25 @@ spec_table:
 overview_image: "/placeholder.webp"
 
 applications:
+  - title: "Tunnel & Infrastructure"
+    text: "Engineered for high-pressure underground environments. Provides superior sealing for tunnels, subways, and culverts with high puncture and hydrostatic resistance."
   - title: "Roof Waterproofing"
-displayName: "SBS Modified Bitumen Membrane"
     text: "Suitable for industrial, commercial, and residential roofing systems, including selected exposed mineral-finished roof applications."
   - title: "Basement & Foundation"
-displayName: "SBS Modified Bitumen Membrane"
     text: "Suitable for below-grade waterproofing systems where a reinforced, torch-applied membrane is specified for constant soil contact."
   - title: "Underground Waterproofing"
-displayName: "SBS Modified Bitumen Membrane"
     text: "Suitable for selected underground structures, retaining walls, and project-specific waterproofing assemblies."
   - title: "Infrastructure Projects"
-displayName: "SBS Modified Bitumen Membrane"
     text: "Available for selected bridge, municipal, and water-conservancy waterproofing projects subject to technical confirmation."
 
 features:
   - title: "Low-Temperature Flexibility"
-displayName: "SBS Modified Bitumen Membrane"
     text: "SBS polymer modification helps the membrane remain flexible in cold and temperature-variable conditions, reducing the risk of cracking during seasonal thermal cycling."
   - title: "Resistance to Substrate Movement"
-displayName: "SBS Modified Bitumen Membrane"
     text: "Reinforced membrane construction supports waterproofing systems exposed to normal structural movement, settlement, and thermal expansion."
   - title: "Reliable Overlap Bonding"
-displayName: "SBS Modified Bitumen Membrane"
     text: "Torch-applied overlap bonding helps create a continuous waterproofing layer across the main field area and treated details."
   - title: "Project-Specific Configurations"
-displayName: "SBS Modified Bitumen Membrane"
     text: "Select the appropriate reinforcement, thickness, and surface-finish combination for non-exposed, multi-layer, or mineral-finished roof systems."
 
 technical_data:
@@ -114,16 +104,12 @@ technical_data:
 
 application_guide:
   - title: "Substrate Prep"
-displayName: "SBS Modified Bitumen Membrane"
     text: "Ensure the surface is level, dry, and primed with bitumen primer to enhance adhesion."
   - title: "Initial Layout"
-displayName: "SBS Modified Bitumen Membrane"
     text: "Dry-roll the membrane to check for proper alignment and overlap positioning before torching."
   - title: "Torch Application"
-displayName: "SBS Modified Bitumen Membrane"
     text: "Use a propane torch to evenly heat the lower surface until the bitumen melts, then unroll firmly."
   - title: "Seam Rolling"
-displayName: "SBS Modified Bitumen Membrane"
     text: "Apply pressure to all lap joints to ensure a continuous monolithic seal and squeeze out excess bitumen."
 
 loading_data:
@@ -134,31 +120,28 @@ loading_data:
 
 downloads:
   - title: "SBS Product TDS"
-displayName: "SBS Modified Bitumen Membrane"
     description: "Detailed technical specifications and performance index sheet."
     type: "PDF"
     href: ""
   - title: "Installation Manual"
-displayName: "SBS Modified Bitumen Membrane"
     description: "Torch-on application guide for modified bitumen systems."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "APP Modified Bitumen Membrane"
-displayName: "SBS Modified Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/app-waterproof-membrane.webp"
     href: "/products/app-modified-bitumen-waterproofing-membrane-manufacturer/"
   - title: "Self-Adhesive Bitumen Membrane"
-displayName: "SBS Modified Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
   - title: "Liquid Polyurethane Coating"
-displayName: "SBS Modified Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
     href: "/products/polyurethane-waterproof-coating-factory/"
 
 faqs:
+  - question: "Is this membrane suitable for high-pressure tunnel projects?"
+    answer: "Yes. Our 4mm and 5mm polyester-reinforced (PY) SBS membranes are specifically designed for infrastructure like tunnels and subways, offering high puncture resistance and stability under constant hydrostatic pressure."
   - question: "What is the difference between SBS and APP membranes?"
     answer: "SBS is modified with rubber (styrene-butadiene-styrene), offering superior cold flexibility (-25degC). APP is modified with plastic (atactic polypropylene), providing better high-temperature resistance."
   - question: "How many layers are required for flat roofing?"
@@ -169,6 +152,6 @@ faqs:
 
 ## Industrial-Strength Waterproofing
 
-SBS (Styrene-Butadiene-Styrene) modified bitumen waterproofing membrane is the heavy-duty standard for extreme climates. By blending high-quality bitumen with synthetic rubber, we create a membrane that remains flexible in freezing temperatures while maintaining robust puncture resistance for high-traffic underground structures.
+SBS (Styrene-Butadiene-Styrene) modified bituminous waterproofing membrane is the heavy-duty standard for extreme climates. By blending high-quality bitumen with synthetic rubber, we create a membrane that remains flexible in freezing temperatures while maintaining robust puncture resistance for high-traffic underground structures and critical **tunnel waterproofing** projects.
 
-As a specialized manufacturer, Weifang Tianyuan offers a comprehensive range of TY-SHIELD™ SBS membranes with various reinforcement and surface options (PE, sand, mineral) to suit specific project demands. Our 2026 production line focuses on the latest GB/T 18242-2025 benchmarks, ensuring every roll provides a long-term, maintenance-free seal for foundations, basements, and complex roofing systems.
+As a specialized manufacturer, Weifang Tianyuan offers a comprehensive range of TY-SHIELD™ SBS membranes with various reinforcement and surface options (PE, sand, mineral) to suit specific project demands. Our 2026 production line focuses on the latest GB/T 18242-2025 benchmarks, ensuring every roll provides a long-term, maintenance-free seal for **tunnels**, foundations, basements, and complex roofing systems.

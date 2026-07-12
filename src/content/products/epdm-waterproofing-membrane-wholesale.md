@@ -21,10 +21,8 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
     title: "EPDM Membrane Roll"
-displayName: "EPDM Waterproofing Membrane"
   - image: "/placeholder.webp"
     title: "Production Line"
-displayName: "EPDM Waterproofing Membrane"
 
 spec_table:
   - label: "Product Type"
@@ -50,44 +48,32 @@ spec_table:
 
 quick_facts:
   - title: "50-Year Service Life"
-displayName: "EPDM Waterproofing Membrane"
     text: "Exceptional anti-aging performance, weather resistance, and ozone resistance for long-term protection."
   - title: "High Elongation"
-displayName: "EPDM Waterproofing Membrane"
     text: "Superior elongation (>=50%) and tensile strength to accommodate significant structural movement."
   - title: "Extreme Temp Range"
-displayName: "EPDM Waterproofing Membrane"
     text: "Maintains flexibility at -40degC and stability under damp-heat conditions, suitable for all climates."
   - title: "Eco-Friendly Rubber"
-displayName: "EPDM Waterproofing Membrane"
     text: "Non-toxic, environmentally friendly, and safe for reservoirs, dams, and potable water projects."
 
 applications:
   - title: "Civil & Industrial Roofing"
-displayName: "EPDM Waterproofing Membrane"
     text: "The preferred solution for high-durability roof waterproofing in residential and commercial buildings."
   - title: "Underground Engineering"
-displayName: "EPDM Waterproofing Membrane"
     text: "Reliable barrier for basements, subways, and underground municipal structures."
   - title: "Hydraulic Engineering"
-displayName: "EPDM Waterproofing Membrane"
     text: "Suitable for cisterns, dams, pools, and reservoirs requiring high chemical resistance."
   - title: "Bridge & Road Works"
-displayName: "EPDM Waterproofing Membrane"
     text: "Used for bridge deck waterproofing and motorways to prevent water ingress and corrosion."
 
 features:
   - title: "Unmatched Aging Resistance"
-displayName: "EPDM Waterproofing Membrane"
     text: "EPDM molecular structure provides the best aging resistance among all polymer waterproofing materials."
   - title: "Chemical & Heat Stability"
-displayName: "EPDM Waterproofing Membrane"
     text: "Resistant to oil, solvents, and chemical corrosion with excellent performance under heat treatment."
   - title: "Reliable Joint Bonding"
-displayName: "EPDM Waterproofing Membrane"
     text: "Solid lap joint treatment using professional adhesives or seam tapes ensures a monolithic seal."
   - title: "Perforation Resistance"
-displayName: "EPDM Waterproofing Membrane"
     text: "High mechanical strength and puncture resistance protect the membrane during and after construction."
 
 technical_data:
@@ -134,33 +120,24 @@ technical_data:
 
 application_guide:
   - title: "Substrate Prep"
-displayName: "EPDM Waterproofing Membrane"
     text: "Ensure the base course is flat, solid, dry, and free from cracks, oil stains, or dust."
   - title: "Primer Treatment"
-displayName: "EPDM Waterproofing Membrane"
     text: "Apply compatible primer evenly on the base and allow it to dry properly before paving."
   - title: "Pre-Lay Membrane"
-displayName: "EPDM Waterproofing Membrane"
     text: "Unroll the EPDM membrane along layout lines and allow it to relax for 30 minutes."
   - title: "Adhesive Bonding"
-displayName: "EPDM Waterproofing Membrane"
     text: "Apply adhesive on both the substrate and membrane underside, avoiding overlap areas."
   - title: "Pave & Roll"
-displayName: "EPDM Waterproofing Membrane"
     text: "Lay the membrane smoothly, exhausting air with a roller to ensure full bonding."
   - title: "Joint Sealing"
-displayName: "EPDM Waterproofing Membrane"
     text: "Treat long-side (>=00mm) and short-side (>=50mm) laps with adhesive or professional seam tape."
 
 packaging:
   - title: "Roll Packaging"
-displayName: "EPDM Waterproofing Membrane"
     text: "Supplied in heavy-duty rolls wrapped with protective end caps and woven bags."
   - title: "Safe Storage"
-displayName: "EPDM Waterproofing Membrane"
     text: "Stack separately below 50degC in a ventilated area, away from direct sun and rain."
   - title: "OEM Labeling"
-displayName: "EPDM Waterproofing Membrane"
     text: "Custom roll labels with your logo, type, thickness, and batch number available."
 
 loading_data:
@@ -171,31 +148,25 @@ loading_data:
 
 downloads:
   - title: "EPDM Technical Data Sheet"
-displayName: "EPDM Waterproofing Membrane"
     description: "Detailed GB/T 18173.1 specifications and performance benchmarks."
     type: "PDF"
     href: ""
   - title: "Installation Guide"
-displayName: "EPDM Waterproofing Membrane"
     description: "Full construction guidance for adhesive bonding and detail treatment."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "TPO Waterproofing Membrane"
-displayName: "EPDM Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
   - title: "PVC Waterproofing Membrane"
-displayName: "EPDM Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
     href: "/products/pvc-waterproofing-membrane-manufacturer/"
   - title: "Pre-applied HDPE Membrane"
-displayName: "EPDM Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp"
     href: "/products/pre-applied-hdpe-membrane-supplier/"
   - title: "SBS Modified Bitumen Membrane"
-displayName: "EPDM Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
 

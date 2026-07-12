@@ -196,7 +196,7 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
     <div class="container mx-auto">
       <SectionHeader title="Featured Products" href="/products/" linkLabel="View All Products" id="feat-title" />
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-6">
-        {featured.map((p)=><ProductCard title={p.data.shortTitle || p.data.title} href={`/products/${p.slug}/`} image={p.data.image} />)}
+        {featured.map((p)=><ProductCard title={p.data.displayName || p.data.shortTitle || p.data.title} href={`/products/${p.slug}/`} image={p.data.image} />)}
       </div>
     </div>
   </section>

@@ -32,7 +32,7 @@ const getData = (product: any) => product.data || {};
 
 const getProductTitle = (product: any) => {
   const data = getData(product);
-  return data.title || data.name || toTitleCase(product.slug);
+  return data.displayName || data.title || data.name || toTitleCase(product.slug);
 };
 
 const getCategory = (product: any) => {

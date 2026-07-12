@@ -1,6 +1,6 @@
 ---
-title: "Self-Adhesive Bitumen Membrane | Wholesale Factory Direct"
-displayName: "Self-Adhesive Bitumen Membrane"
+title: "Wholesale 3.0mm Self-Adhesive Bituminous Waterproofing Membrane | Factory Direct Price"
+displayName: "Self-Adhesive Bituminous Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 95
@@ -8,12 +8,12 @@ product_category: "Bitumen Membranes"
 image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
 main_image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
 
-hero_description: "Cold-applied premium self-adhesive bitumen membrane. Features high-tack rubberized asphalt for fast, torch-free installation on roofs, basements, and critical foundations. Factory-direct wholesale with full OEM support."
+hero_description: "Wholesale 3.0mm self-adhesive bituminous waterproofing membrane for torch-free installation. Features high-tack rubberized asphalt for fast sealing on tunnel, roof, and basement projects. Factory-direct supply with full OEM support."
 
 hero_tags:
   - "Self-Adhesive"
   - "Rubberized Bitumen"
-  - "1.2mm / 1.5mm / 2.0mm"
+  - "1.5mm / 2.0mm / 3.0mm"
   - "Cold Applied"
   - "High Strength"
   - "OEM Available"
@@ -21,10 +21,8 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     title: "Self-Adhesive Bituminous Waterproofing Membrane - Peel and Stick Roll"
-displayName: "Self-Adhesive Bitumen Membrane"
   - image: "/placeholder.webp"
     title: "Manufacturing Line of Self-Adhesive Waterproofing Materials"
-displayName: "Self-Adhesive Bitumen Membrane"
 
 spec_table:
   - label: "Product Type"
@@ -46,44 +44,32 @@ spec_table:
 
 quick_facts:
   - title: "Safe & Torch-free"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Eliminates the need for open flames on the job site, making it perfect for wooden structures and high-risk environments."
   - title: "High-Tack Bonding"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Engineered with specialized tackifying resins for an immediate, high-strength bond to concrete and metal substrates."
   - title: "Self-Healing Ability"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "The rubberized asphalt core automatically seals around punctures from nails or fasteners, ensuring continuous protection."
   - title: "Fast Construction"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Simple 'Peel & Stick' application significantly reduces labor time and construction costs compared to traditional methods."
 
 applications:
   - title: "Basement Waterproofing"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Ideal for foundations, retaining walls, and underground structures where torching is restricted."
   - title: "Pitched Roofs"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Excellent as a secondary barrier or underlayment for residential shingle and tile roofing systems."
   - title: "Bridge & Culvert"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Used for waterproofing bridge decks, highways, and tunnels due to its high elongation and tracking resistance."
   - title: "Repair & Patching"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Fast, reliable solution for immediate leak repair on existing bitumen and concrete surfaces."
 
 features:
   - title: "Dual-Layer Security"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Combines a tough waterproof carrier with a thick layer of modified bitumen for maximum leak protection."
   - title: "Dimensional Stability"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Resists sagging and movement under high temperatures, maintaining its integrity across the full service life."
   - title: "Chemical Resistance"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Highly resistant to soil acids, alkalis, and environmental pollutants commonly found in underground environments."
   - title: "Vapor Barrier Support"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Acts as a powerful moisture and vapor barrier, preventing dampness and mold in interior structures."
 
 technical_data:
@@ -120,30 +106,22 @@ technical_data:
 
 application_guide:
   - title: "Surface Prep"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Ensure the substrate is clean, dry, and free of oil. Apply cold bitumen primer for best results."
   - title: "Positioning"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Unroll the membrane and align it properly. Start from the lowest point for horizontal applications."
   - title: "Peel & Pave"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Peel back the release film while simultaneously unrolling the membrane onto the primed surface."
   - title: "Compaction"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Apply firm pressure using a heavy hand roller to remove all air pockets and ensure 100% adhesion."
   - title: "Seam Treatment"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Ensure a minimum 100mm overlap. Use a roller on all joints to create a watertight monolithic seal."
   - title: "Protection"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Install protective boards or drainage mats before backfilling in underground projects."
 
 packaging:
   - title: "Industrial Roll Packing"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Rolls are wrapped in protective core sleeves and stacked on pallets for safe international transit."
   - title: "Label Customization"
-displayName: "Self-Adhesive Bitumen Membrane"
     text: "Support for custom roll labels, barcodes, and private brand marks for wholesale building material partners."
 
 loading_data:
@@ -154,31 +132,25 @@ loading_data:
 
 downloads:
   - title: "Self-Adhesive TDS"
-displayName: "Self-Adhesive Bitumen Membrane"
     description: "Detailed performance benchmarks and technical index data sheet."
     type: "PDF"
     href: ""
   - title: "Construction Manual"
-displayName: "Self-Adhesive Bitumen Membrane"
     description: "Step-by-step guide for cold-applied self-adhesive membrane systems."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "SBS Modified Bitumen Membrane"
-displayName: "Self-Adhesive Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
   - title: "TPO Waterproofing Membrane"
-displayName: "Self-Adhesive Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
   - title: "EPDM Waterproofing Membrane"
-displayName: "Self-Adhesive Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
     href: "/products/epdm-waterproofing-membrane-wholesale/"
   - title: "Butyl Sealing Tape"
-displayName: "Self-Adhesive Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"
     href: "/products/butyl-waterproof-sealing-tape-supplier/"
 
