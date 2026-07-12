@@ -1,7 +1,7 @@
 ---
 title: "2026 Global SBS Waterproofing Membrane Market: Trends, Cost Drivers, and Supplier Selection Guide"
 description: "A comprehensive 2026 B2B analysis of the SBS modified bitumen membrane market. Explore regional growth in Middle East/Asia, crude oil pricing impact, and expert sourcing strategies for international buyers."
-category: "market-insights"
+category: "industry-insights"
 publishDate: 2026-07-12
 updatedDate: 2026-07-12
 coverImage: "https://img.tyuanwaterproof.com/blog/sbs-market-trends-2026.webp"
