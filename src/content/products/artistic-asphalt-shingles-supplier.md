@@ -1,5 +1,6 @@
 ---
 title: "Artistic Hexagonal & Fish-Scale Shingles"
+displayName: "Artistic Asphalt Shingles"
 category: "asphalt-shingles"
 product_category: "Asphalt Shingles"
 main_image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-artistic.webp"
@@ -16,8 +17,10 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-artistic.webp"
     title: "Artistic Pattern"
+displayName: "Artistic Asphalt Shingles"
   - image: "/placeholder.webp"
     title: "Production Line"
+displayName: "Artistic Asphalt Shingles"
 
 spec_table:
   - label: "Product Type"
@@ -37,32 +40,44 @@ spec_table:
 
 quick_facts:
   - title: "Architectural Beauty"
+displayName: "Artistic Asphalt Shingles"
     text: "Distinctive geometric patterns create a unique and elegant roof appearance."
   - title: "Superior Flexibility"
+displayName: "Artistic Asphalt Shingles"
     text: "Perfect for domes, sharp slopes, and complex architectural roof shapes."
   - title: "Wind Safety"
+displayName: "Artistic Asphalt Shingles"
     text: "Features extra-wide adhesive strips for maximum stability in strong winds."
   - title: "Durable Surface"
+displayName: "Artistic Asphalt Shingles"
     text: "High-grade mineral granules ensure long-lasting color and UV protection."
 
 applications:
   - title: "Luxury Villas"
+displayName: "Artistic Asphalt Shingles"
     text: "The preferred choice for residential villas requiring a high-end look."
   - title: "Complex Slopes"
+displayName: "Artistic Asphalt Shingles"
     text: "Ideal for roofs with steep angles or curved surfaces like domes."
   - title: "Themed Resorts"
+displayName: "Artistic Asphalt Shingles"
     text: "Used in hotels and resorts to match specific architectural themes."
   - title: "Garden Buildings"
+displayName: "Artistic Asphalt Shingles"
     text: "Decorative and functional roofing for gazebos and premium garden structures."
 
 features:
   - title: "Unique Visual Impact"
+displayName: "Artistic Asphalt Shingles"
     text: "Moving beyond standard shapes to provide a sophisticated mosaic effect."
   - title: "Strong Adhesion"
+displayName: "Artistic Asphalt Shingles"
     text: "The full-back adhesive technology ensures a monolithic bond once exposed to heat."
   - title: "Corrosion Resistant"
+displayName: "Artistic Asphalt Shingles"
     text: "Inert mineral surface protects against acid rain and industrial pollutants."
   - title: "Low Maintenance"
+displayName: "Artistic Asphalt Shingles"
     text: "Self-cleaning granules and durable bitumen layers require minimal upkeep."
 
 technical_data:
@@ -89,24 +104,33 @@ technical_data:
 
 application_guide:
   - title: "Surface Preparation"
+displayName: "Artistic Asphalt Shingles"
     text: "Roof deck must be smooth, dry, and clean. Install waterproof underlayment first."
   - title: "Pattern Mapping"
+displayName: "Artistic Asphalt Shingles"
     text: "Draw vertical and horizontal chalk lines to ensure the geometric pattern is aligned."
   - title: "Starter Strip"
+displayName: "Artistic Asphalt Shingles"
     text: "Apply the starter course at the eaves for a watertight foundation."
   - title: "Cold Installation"
+displayName: "Artistic Asphalt Shingles"
     text: "Fix shingles with proper nails and engage the self-adhesive strips firmly."
   - title: "Detail Treatment"
+displayName: "Artistic Asphalt Shingles"
     text: "Carefully trim shingles at valleys and ridges to maintain the artistic pattern."
   - title: "Final Inspection"
+displayName: "Artistic Asphalt Shingles"
     text: "Verify all seams are sealed and nails are flush with the shingle surface."
 
 packaging:
   - title: "Bundle Protection"
+displayName: "Artistic Asphalt Shingles"
     text: "Shrink-wrapped bundles to prevent moisture ingress during storage."
   - title: "Export Pallets"
+displayName: "Artistic Asphalt Shingles"
     text: "Palletized with heavy-duty straps for safe international logistics."
   - title: "Custom Marking"
+displayName: "Artistic Asphalt Shingles"
     text: "OEM label support including your logo and product specifications."
 
 loading_data:
@@ -117,25 +141,31 @@ loading_data:
 
 downloads:
   - title: "Artistic Shingles TDS"
+displayName: "Artistic Asphalt Shingles"
     description: "Technical parameters for hexagonal and fish-scale types."
     type: "PDF"
     href: ""
   - title: "Design Inspiration"
+displayName: "Artistic Asphalt Shingles"
     description: "Showcase of different artistic shingle roofing projects."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "SBS Modified Bitumen Membrane"
+displayName: "Artistic Asphalt Shingles"
     image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
   - title: "Self-Adhesive Bitumen Membrane"
+displayName: "Artistic Asphalt Shingles"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
   - title: "PVC Waterproofing Membrane"
+displayName: "Artistic Asphalt Shingles"
     image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
     href: "/products/pvc-waterproofing-membrane-manufacturer/"
   - title: "TPO Waterproofing Membrane"
+displayName: "Artistic Asphalt Shingles"
     image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
 

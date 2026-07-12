@@ -1,5 +1,6 @@
 ---
 title: "Butyl Rubber Waterproof Sealing Self-Adhesive Tape"
+displayName: "Butyl Rubber Sealing Tape"
 category: "waterproof-tapes"
 featured: true
 order: 80
@@ -20,8 +21,10 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"
     title: "Butyl Tape Roll"
+displayName: "Butyl Rubber Sealing Tape"
   - image: "/placeholder.webp"
     title: "Production Line"
+displayName: "Butyl Rubber Sealing Tape"
 
 spec_table:
   - label: "Product Type"
@@ -43,32 +46,44 @@ spec_table:
 
 quick_facts:
   - title: "Permanent Sealing"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Solvent-free material that never hardens, providing lifelong sealing and tracking resistance."
   - title: "High Adhesion"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Exceptional bonding strength to cement, metal, wood, and polymer membranes without primers."
   - title: "Extreme Weatherability"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Remains flexible from -40degC up to 80degC, resisting ozone, UV radiation, and thermal aging."
   - title: "Eco-Friendly Formula"
+displayName: "Butyl Rubber Sealing Tape"
     text: "100% non-toxic and solvent-free, making it safe for indoor and environmental protection projects."
 
 applications:
   - title: "Roofing & Construction"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Used for roofing joints, expansion joints, and lap sealing of polymer waterproofing membranes."
   - title: "Metal & Steel Structures"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Perfect for sealing color steel plates, aluminum sheets, and steel structure connections."
   - title: "Infrastructure Projects"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Reliable sealing for subway tunnel joints, culverts, and municipal civil engineering."
   - title: "Industrial & Auto"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Used in automobile assembly, specialized manufacturing, and heavy-duty repair sealing."
 
 features:
   - title: "High Mechanical Strength"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Outstanding tensile strength and elongation to accommodate interface deformation and cracking."
   - title: "Stable Chemical Properties"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Superior resistance to acids, alkalis, and salts; excellent durability in harsh environments."
   - title: "Cold-Applied Installation"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Simple, fast, and safe installation without the need for torching or specialized heating."
   - title: "Puncture & Tear Resistant"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Tough butyl rubber core provides excellent resistance to mechanical damage and soil pressure."
 
 technical_data:
@@ -110,24 +125,33 @@ technical_data:
 
 application_guide:
   - title: "Substrate Cleaning"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Ensure the surface is clean, dry, and free from oil, dust, and water vapor before use."
   - title: "Tape Selection"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Choose the correct width and thickness according to the specific joint or sealing gap."
   - title: "Application"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Unroll the tape and press it firmly into place. Ensure 100% contact with the substrate."
   - title: "Joint Treatment"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Maintain a continuous seal. Do not stretch the tape excessively during installation."
   - title: "Curing Time"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Do not tear or peel the tape within 24 hours after application for maximum bond."
   - title: "Avoid Solvents"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Do not use in conjunction with materials containing benzene, toluene, or silicons."
 
 packaging:
   - title: "Roll & Box Supply"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Rolls are packed in heavy-duty boxes for safe transit and warehouse storage."
   - title: "Stacking Safety"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Store boxes 10cm above ground. Do not stack more than 5 boxes high."
   - title: "OEM Labeling"
+displayName: "Butyl Rubber Sealing Tape"
     text: "Custom roll sizes, barcodes, and private label support for B2B distributors."
 
 loading_data:
@@ -140,25 +164,31 @@ loading_data:
 
 downloads:
   - title: "Butyl Tape Technical Data"
+displayName: "Butyl Rubber Sealing Tape"
     description: "Detailed JC/T standard test results and physical properties."
     type: "PDF"
     href: ""
   - title: "Product Catalog"
+displayName: "Butyl Rubber Sealing Tape"
     description: "Full range of butyl and bitumen sealing tape solutions."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "Self-Adhesive Bitumen Membrane"
+displayName: "Butyl Rubber Sealing Tape"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
   - title: "SBS Modified Bitumen Membrane"
+displayName: "Butyl Rubber Sealing Tape"
     image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
   - title: "EPDM Waterproofing Membrane"
+displayName: "Butyl Rubber Sealing Tape"
     image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
     href: "/products/epdm-waterproofing-membrane-wholesale/"
   - title: "Bitumen Sealing Tape"
+displayName: "Butyl Rubber Sealing Tape"
     image: "https://img.tyuanwaterproof.com/products/bitumen-tape.webp"
     href: "/products/self-adhesive-bitumen-tape-wholesale/"
 

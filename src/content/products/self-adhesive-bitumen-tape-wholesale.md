@@ -1,5 +1,6 @@
 ---
 title: "Self-Adhesive Bitumen Sealing Tape for Flashing & Repair"
+displayName: "Bitumen Flashing Tape"
 category: "waterproof-tapes"
 featured: true
 order: 75
@@ -20,8 +21,10 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/bitumen-tape.webp"
     title: "Bitumen Sealing Tape Roll"
+displayName: "Bitumen Flashing Tape"
   - image: "/placeholder.webp"
     title: "Production Line"
+displayName: "Bitumen Flashing Tape"
 
 spec_table:
   - label: "Product Type"
@@ -43,32 +46,44 @@ spec_table:
 
 quick_facts:
   - title: "Instant Adhesion"
+displayName: "Bitumen Flashing Tape"
     text: "Provides an immediate, high-strength waterproof seal upon application with no specialized tools required."
   - title: "SBS Performance"
+displayName: "Bitumen Flashing Tape"
     text: "Modified with SBS rubber for superior flexibility at low temperatures and excellent tracking resistance."
   - title: "UV Protection"
+displayName: "Bitumen Flashing Tape"
     text: "High-quality aluminum foil surface reflects sunlight and protects the bitumen layer from long-term aging."
   - title: "Versatile Repair"
+displayName: "Bitumen Flashing Tape"
     text: "Bonds effectively to concrete, metal, wood, brick, and most plastics for diverse construction needs."
 
 applications:
   - title: "Roof Flashing"
+displayName: "Bitumen Flashing Tape"
     text: "Ideal for sealing parapets, roof skirtings, skylights, and conservatories where traditional flashing is difficult."
   - title: "Emergency Repair"
+displayName: "Bitumen Flashing Tape"
     text: "Excellent as a repair bandage for leaking gutters, downpipes, and worn-out asphalt roofing felts."
   - title: "Window & Door Sealing"
+displayName: "Bitumen Flashing Tape"
     text: "Used for airtight and watertight sealing around windowsills, door frames, and glazing bars."
   - title: "Industrial Sealing"
+displayName: "Bitumen Flashing Tape"
     text: "Reliable sealing for color steel plates, storage tanks, vents, and heavy-duty automobile assembly."
 
 features:
   - title: "Cold-Applied Safety"
+displayName: "Bitumen Flashing Tape"
     text: "100% self-adhesive installation requires no torching, eliminating fire risks on residential job sites."
   - title: "Stable Chemical Bond"
+displayName: "Bitumen Flashing Tape"
     text: "Maintains its sealing performance when exposed to acids, alkalis, and salts in harsh environments."
   - title: "Good Workability"
+displayName: "Bitumen Flashing Tape"
     text: "Flexible and pliable; can be easily trimmed and shaped to fit complex architectural details."
   - title: "Cost-Effective"
+displayName: "Bitumen Flashing Tape"
     text: "Low-cost, high-performance maintenance solution that extends the life of existing roofing systems."
 
 technical_data:
@@ -105,24 +120,33 @@ technical_data:
 
 application_guide:
   - title: "Surface Prep"
+displayName: "Bitumen Flashing Tape"
     text: "Ensure the substrate is clean, firm, and dry. Remove all dust, rust, and standing water."
   - title: "Sizing"
+displayName: "Bitumen Flashing Tape"
     text: "Trim the tape to the required shape and length using a utility knife or scissors."
   - title: "Positioning"
+displayName: "Bitumen Flashing Tape"
     text: "Peel back the release film and position the tape. Start from the lowest point for stepped flashing."
   - title: "Compression"
+displayName: "Bitumen Flashing Tape"
     text: "Apply even pressure using a hand roller or cloth to remove all air pockets and ensure 100% contact."
   - title: "Cold Weather Tip"
+displayName: "Bitumen Flashing Tape"
     text: "In very cold conditions, gentle indirect warming of the tape will significantly improve initial tack."
   - title: "Safety"
+displayName: "Bitumen Flashing Tape"
     text: "Do not stretch the tape excessively; avoid puncturing the aluminum foil protective layer."
 
 packaging:
   - title: "Retail & Industrial Rolls"
+displayName: "Bitumen Flashing Tape"
     text: "Available in individual retail rolls or bulk industrial boxes for wholesale distribution."
   - title: "Storage Condition"
+displayName: "Bitumen Flashing Tape"
     text: "Store horizontally in dry conditions between +5degC and +25degC in original packaging."
   - title: "OEM Labeling"
+displayName: "Bitumen Flashing Tape"
     text: "Custom roll sizes, private brand logos, and customized box designs available for B2B partners."
 
 loading_data:
@@ -135,25 +159,31 @@ loading_data:
 
 downloads:
   - title: "Bitumen Tape Technical Data"
+displayName: "Bitumen Flashing Tape"
     description: "Detailed specifications and material property data sheet."
     type: "PDF"
     href: ""
   - title: "Sealing Guide"
+displayName: "Bitumen Flashing Tape"
     description: "Full application instructions for roof repair and flashing."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "Butyl Rubber Sealing Tape"
+displayName: "Bitumen Flashing Tape"
     image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"
     href: "/products/butyl-waterproof-sealing-tape-supplier/"
   - title: "SBS Modified Bitumen Membrane"
+displayName: "Bitumen Flashing Tape"
     image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
   - title: "Self-Adhesive Bitumen Membrane"
+displayName: "Bitumen Flashing Tape"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
   - title: "Polyurethane Coating"
+displayName: "Bitumen Flashing Tape"
     image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
     href: "/products/polyurethane-waterproof-coating-factory/"
 

@@ -1,5 +1,6 @@
 ---
 title: "TY-SHIELD™ Non-Curing Rubber Asphalt Waterproof Coating"
+displayName: "Non-Curing Rubber Coating"
 category: "waterproof-coatings"
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v2.webp"
@@ -18,6 +19,7 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v2.webp"
     title: "TY-SHIELD™ Advanced Packaging Design"
+displayName: "Non-Curing Rubber Coating"
 
 spec_table:
   - label: "Product Type"
@@ -35,26 +37,35 @@ spec_table:
 
 quick_facts:
   - title: "Permanent Flexibility"
+displayName: "Non-Curing Rubber Coating"
     text: "Unlike traditional coatings, it never cures or becomes brittle, maintaining a thick, viscous state that absorbs continuous structural vibrations and movement."
   - title: "Smart Self-Healing"
+displayName: "Non-Curing Rubber Coating"
     text: "Automatically seals minor punctures and cracks caused by settlement, ensuring long-term watertight integrity without maintenance."
   - title: "Anti-Water Channeling"
+displayName: "Non-Curing Rubber Coating"
     text: "Forms a powerful molecular bond with both the substrate and the top membrane, preventing water from traveling underneath the waterproof layer."
 
 applications:
   - title: "Composite Waterproofing"
+displayName: "Non-Curing Rubber Coating"
     text: "Typically used as a sticky base layer for SBS or Self-Adhesive membranes to create a 'Skin-Type' redundant system."
   - title: "Underground Infrastructure"
+displayName: "Non-Curing Rubber Coating"
     text: "Ideal for basements, subways, and tunnels where constant moisture and soil movement are present."
   - title: "Complex Roof Details"
+displayName: "Non-Curing Rubber Coating"
     text: "Easily conforms to irregular shapes, pipe penetrations, and structural joints where pre-formed sheets often fail."
 
 features:
   - title: "High-Solid Formulation"
+displayName: "Non-Curing Rubber Coating"
     text: "98% solid content means minimal shrinkage after application and no hazardous solvent evaporation."
   - title: "Dual Application Modes"
+displayName: "Non-Curing Rubber Coating"
     text: "Can be applied via professional heating spray equipment for large areas or by scraping for detail reinforcement."
   - title: "Extreme Temperature Stability"
+displayName: "Non-Curing Rubber Coating"
     text: "Stays viscous and sticky at low temperatures down to -20°C and remains stable at high temperatures up to 70°C."
 
 technical_data:
@@ -81,17 +92,22 @@ technical_data:
 
 application_guide:
   - title: "Heating Prep"
+displayName: "Non-Curing Rubber Coating"
     text: "Heat the material to approximately 120°C - 150°C using specialized melting equipment until it reaches a sprayable or spreadable consistency."
   - title: "Surface Treatment"
+displayName: "Non-Curing Rubber Coating"
     text: "Ensure the concrete substrate is clean and free of standing water. Priming is recommended for dusty surfaces."
   - title: "Spray/Spread"
+displayName: "Non-Curing Rubber Coating"
     text: "Apply the hot material evenly at a thickness of 1.5mm - 2.0mm. While still hot, embed the secondary membrane for maximum adhesion."
 
 related_products:
   - title: "SBS Bitumen Membrane"
+displayName: "Non-Curing Rubber Coating"
     image: "https://img.tyuanwaterproof.com/products/sbs-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
   - title: "JS Polymer Cement Coating"
+displayName: "Non-Curing Rubber Coating"
     image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating-factory.webp"
     href: "/products/polymer-cement-js-waterproof-coating-factory/"
 

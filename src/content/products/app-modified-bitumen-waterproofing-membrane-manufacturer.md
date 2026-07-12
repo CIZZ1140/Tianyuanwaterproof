@@ -1,5 +1,6 @@
 ---
 title: "APP Modified Bitumen Waterproofing Membrane"
+displayName: "APP Modified Bitumen Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 95
@@ -20,8 +21,10 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     title: "APP Membrane Surface"
+displayName: "APP Modified Bitumen Membrane"
   - image: "/placeholder.webp"
     title: "Production Line"
+displayName: "APP Modified Bitumen Membrane"
 
 spec_table:
   - label: "Product Type"
@@ -47,32 +50,44 @@ overview_image: "/placeholder.webp"
 
 quick_facts:
   - title: "Heat Resistance"
+displayName: "APP Modified Bitumen Membrane"
     text: "APP polymer modification supports membrane stability in elevated temperature and high-solar-load roofing environments."
   - title: "Dimensional Stability"
+displayName: "APP Modified Bitumen Membrane"
     text: "Reinforced membrane construction helps maintain the intended membrane geometry during installation and normal service conditions."
   - title: "Suitable for Hot-Climate Roofing"
+displayName: "APP Modified Bitumen Membrane"
     text: "APP membrane configurations are commonly specified for projects in hot climates and selected exposed roof systems."
   - title: "Multiple Configuration Options"
+displayName: "APP Modified Bitumen Membrane"
     text: "Choose selected reinforcement, thickness, and surface-finish combinations for non-exposed, multi-layer, or mineral-finished roof systems."
 
 applications:
   - title: "Roof Waterproofing"
+displayName: "APP Modified Bitumen Membrane"
     text: "Suitable for industrial, commercial, and residential roofing systems, especially where heat resistance and high-temperature stability are key requirements."
   - title: "Basement & Foundation"
+displayName: "APP Modified Bitumen Membrane"
     text: "Suitable for selected below-grade waterproofing assemblies where an APP modified torch-applied membrane is specified by the project system."
   - title: "Underground Waterproofing"
+displayName: "APP Modified Bitumen Membrane"
     text: "Suitable for selected underground structures, retaining walls, and project-specific waterproofing assemblies subject to approved system design."
   - title: "Infrastructure Projects"
+displayName: "APP Modified Bitumen Membrane"
     text: "Available for selected bridge, municipal, and water-conservancy projects subject to model-specific technical confirmation."
 
 features:
   - title: "Heat Resistance"
+displayName: "APP Modified Bitumen Membrane"
     text: "APP polymer modification supports membrane stability in elevated temperature and high-solar-load roofing environments, maintaining integrity where standard membranes may soften."
   - title: "Dimensional Stability"
+displayName: "APP Modified Bitumen Membrane"
     text: "Reinforced membrane construction helps maintain the intended membrane geometry during installation and under normal thermal cycling in service."
   - title: "Suitable for Exposed Roofing"
+displayName: "APP Modified Bitumen Membrane"
     text: "APP membrane configurations with mineral granule surfaces are commonly specified for exposed hot-climate roof systems requiring UV resistance."
   - title: "Project-Specific Configurations"
+displayName: "APP Modified Bitumen Membrane"
     text: "Select the appropriate reinforcement, thickness, and surface-finish combination for non-exposed, multi-layer, or mineral-finished roof systems."
 
 technical_data:
@@ -109,26 +124,36 @@ technical_data:
 
 application_guide:
   - title: "Prepare the Substrate"
+displayName: "APP Modified Bitumen Membrane"
     text: "Ensure the substrate is smooth, dry, clean, and free from loose material, sharp projections, standing water, oil, and debris."
   - title: "Apply Compatible Primer"
+displayName: "APP Modified Bitumen Membrane"
     text: "Apply compatible bitumen primer where required and allow the primer to dry before membrane installation."
   - title: "Pre-Lay and Align"
+displayName: "APP Modified Bitumen Membrane"
     text: "Unroll the membrane for positioning, align overlaps and details, then roll back the membrane section for torch application."
   - title: "Heat and Bond"
+displayName: "APP Modified Bitumen Membrane"
     text: "Heat the burn-off PE film and substrate evenly until the bitumen layer is ready for bonding, then roll forward with controlled pressure."
   - title: "Treat Overlaps and Details"
+displayName: "APP Modified Bitumen Membrane"
     text: "Form specified overlaps (minimum 100mm), inspect seams, and reinforce corners, drains, parapets, and pipe penetrations."
   - title: "Safety Notice"
+displayName: "APP Modified Bitumen Membrane"
     text: "Torch-applied membrane installation must be completed by trained installers using suitable fire-safety controls. Do not torch on combustible substrates such as wooden decks."
 
 packaging:
   - title: "Export Roll Packing"
+displayName: "APP Modified Bitumen Membrane"
     text: "Rolls are vertically palletized and secured with heavy-duty strapping, stretch-film, and protective wrapping for safe ocean transit."
   - title: "Branding Support"
+displayName: "APP Modified Bitumen Membrane"
     text: "Custom wrapping films, private labels, and branded core sleeves available for wholesale partners."
   - title: "OEM Labeling"
+displayName: "APP Modified Bitumen Membrane"
     text: "Custom pallet labels, outer-package markings, and brand-specific core sleeves available."
   - title: "Storage"
+displayName: "APP Modified Bitumen Membrane"
     text: "Store horizontally in dry conditions between +5degC and +30degC in original packaging. Shelf life 12 months."
 
 loading_data:
@@ -139,33 +164,41 @@ loading_data:
 
 downloads:
   - title: "APP Technical Data Sheet"
+displayName: "APP Modified Bitumen Membrane"
     description: "Product-specific APP membrane performance and specification data."
     type: "PDF"
     href: ""
   - title: "Torch-Applied Installation Manual"
+displayName: "APP Modified Bitumen Membrane"
     description: "Installation guidance for professional APP membrane waterproofing systems."
     type: "PDF"
     href: ""
   - title: "Safety Data Sheet"
+displayName: "APP Modified Bitumen Membrane"
     description: "SDS information for the selected TY-SHIELD APP membrane product."
     type: "PDF"
     href: ""
   - title: "Test Report"
+displayName: "APP Modified Bitumen Membrane"
     description: "Available test documentation for selected grades and configurations."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "SBS Modified Bitumen Membrane"
+displayName: "APP Modified Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
   - title: "Self-Adhesive Bitumen Membrane"
+displayName: "APP Modified Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
   - title: "TPO Waterproofing Membrane"
+displayName: "APP Modified Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
   - title: "Bitumen Sealing Tape"
+displayName: "APP Modified Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/bitumen-tape.webp"
     href: "/products/self-adhesive-bitumen-tape-wholesale/"
 

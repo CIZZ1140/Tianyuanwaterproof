@@ -1,5 +1,6 @@
 ---
 title: "Polymer Modified Asphalt Waterproof Coating"
+displayName: "Polymer Modified Asphalt Coating"
 category: "waterproof-coatings"
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-coating.webp"
@@ -17,6 +18,7 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-coating.webp"
     title: "TY-SHIELD™ Packaging Design"
+displayName: "Polymer Modified Asphalt Coating"
 
 spec_table:
   - label: "Material Base"
@@ -32,23 +34,30 @@ spec_table:
 
 quick_facts:
   - title: "Cost-Effective Waterproofing"
+displayName: "Polymer Modified Asphalt Coating"
     text: "Provides a robust, thick-build membrane that outperforms traditional roofing felt at a lower total installed cost."
   - title: "Environmentally Friendly"
+displayName: "Polymer Modified Asphalt Coating"
     text: "Water-based formula with low odor and no harmful fumes, making it ideal for schools, hospitals, and confined residential areas."
   - title: "Universal Adhesion"
+displayName: "Polymer Modified Asphalt Coating"
     text: "Bonds strongly to concrete, masonry, metal, and wood, allowing for versatile use across different project types."
 
 applications:
   - title: "Retaining Walls & Foundations"
+displayName: "Polymer Modified Asphalt Coating"
     text: "The standard choice for damp-proofing and waterproofing of external concrete surfaces below ground level."
   - title: "Roof Terrace Refurbishment"
+displayName: "Polymer Modified Asphalt Coating"
     text: "Perfect for sealing existing flat roofs without the need for high-heat torching equipment."
 
 related_products:
   - title: "SBS Bitumen Membrane"
+displayName: "Polymer Modified Asphalt Coating"
     image: "https://img.tyuanwaterproof.com/products/sbs-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
   - title: "Non-Curing Coating"
+displayName: "Polymer Modified Asphalt Coating"
     image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v2.webp"
     href: "/products/non-curing-rubber-asphalt-waterproof-coating/"
 

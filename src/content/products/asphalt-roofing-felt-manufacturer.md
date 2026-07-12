@@ -1,5 +1,6 @@
 ---
 title: "Traditional Organic Asphalt Saturated Roofing Felt"
+displayName: "Asphalt Saturated Organic Felt"
 category: "bitumen-membranes"
 product_category: "Bitumen Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/asphalt-felt.webp"
@@ -18,8 +19,10 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/asphalt-felt.webp"
     title: "Asphalt Felt Roll"
+displayName: "Asphalt Saturated Organic Felt"
   - image: "/placeholder.webp"
     title: "Production Line"
+displayName: "Asphalt Saturated Organic Felt"
 
 spec_table:
   - label: "Product Type"
@@ -41,32 +44,44 @@ spec_table:
 
 quick_facts:
   - title: "Reliable Underlayment"
+displayName: "Asphalt Saturated Organic Felt"
     text: "The critical secondary defense layer installed over the roof deck before applying final roofing materials."
   - title: "High Saturation"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Thick organic fiber base is fully saturated with asphalt for superior water and moisture resistance."
   - title: "Vapor Permeable"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Allows internal moisture vapor to escape while blocking liquid water ingress from the outside."
   - title: "Versatile Protection"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Protects the roof deck from rain and weather during construction and throughout the roof's life."
 
 applications:
   - title: "Residential Shingle Roofs"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Mandatory secondary barrier for shingle roofing systems to protect against wind-driven rain."
   - title: "Industrial & Civil Roofing"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Used in industrial plants and civil buildings as a cost-effective waterproofing underlay."
   - title: "Temporary Protection"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Provides immediate, short-term weather protection for the roof deck before final tiles are installed."
   - title: "Auxiliary Waterproofing"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Suitable for underground damp-proofing, tunnels, and pools as a supplementary moisture barrier."
 
 features:
   - title: "Moisture Barrier Support"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Significantly reduces the risk of water damage caused by ice damming and severe weather events."
   - title: "Easy Construction"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Lightweight and flexible rolls are easy to handle, cut, and mechanically fasten to wooden decks."
   - title: "Proven Performance"
+displayName: "Asphalt Saturated Organic Felt"
     text: "A time-tested material used globally for decades in diverse climatic conditions."
   - title: "Cost-Effective"
+displayName: "Asphalt Saturated Organic Felt"
     text: "The most economical choice for ensuring long-term roof deck integrity in pitched roof systems."
 
 technical_data:
@@ -108,24 +123,33 @@ technical_data:
 
 application_guide:
   - title: "Substrate Prep"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Ensure the roof deck is clean, dry, and secure. Remove all loose debris and sharp objects."
   - title: "Primer Application"
+displayName: "Asphalt Saturated Organic Felt"
     text: "If applying over concrete, use a cold primer and wait for it to dry before paving the felt."
   - title: "Horizontal Paving"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Install horizontally starting from the low point of the pitched roof (eaves) moving upwards."
   - title: "Overlap Layout"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Maintain a minimum 150mm overlap at roll ends and 100mm at side overlaps."
   - title: "Mechanical Fixing"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Secure the felt using galvanized roofing nails or heavy-duty staples to the wooden deck."
   - title: "Final Protection"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Install the primary roof covering (shingles/tiles) as soon as possible after underlayment application."
 
 packaging:
   - title: "Roll Protection"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Each roll is wrapped in protective plastic film to prevent moisture absorption during transit."
   - title: "Vertical Storage"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Store rolls in an upright position in a dry, ventilated area below 45degC."
   - title: "Custom OEM Supply"
+displayName: "Asphalt Saturated Organic Felt"
     text: "Supports custom roll weights (15lb-60lb), lengths, and private label branding for distributors."
 
 loading_data:
@@ -138,25 +162,31 @@ loading_data:
 
 downloads:
   - title: "Asphalt Felt Technical Data"
+displayName: "Asphalt Saturated Organic Felt"
     description: "Detailed ASTM D226/D4869 performance indexes and test data."
     type: "PDF"
     href: ""
   - title: "Underlayment Installation"
+displayName: "Asphalt Saturated Organic Felt"
     description: "Best practices for installing organic felt on pitched roofs."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "Asphalt Roofing Shingles"
+displayName: "Asphalt Saturated Organic Felt"
     image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-3-tab.webp"
     href: "/products/3-tab-asphalt-shingles-wholesale/"
   - title: "SBS Modified Bitumen Membrane"
+displayName: "Asphalt Saturated Organic Felt"
     image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
   - title: "Self-Adhesive Bitumen Membrane"
+displayName: "Asphalt Saturated Organic Felt"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
   - title: "TPO Waterproofing Membrane"
+displayName: "Asphalt Saturated Organic Felt"
     image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
 

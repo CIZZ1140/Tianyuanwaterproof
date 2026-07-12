@@ -121,7 +121,7 @@ const categories = [
                   </div>
                   <div class="p-6">
                     <p class="text-xs font-bold text-[#F58A1F] uppercase tracking-wider mb-2">{p.categoryLabel}</p>
-                    <h3 class="text-lg font-black text-[#102033] mb-3 leading-tight min-h-[3.5rem] flex items-center">{p.data.title}</h3>
+                    <h3 class="text-lg font-black text-[#102033] mb-3 leading-tight min-h-[3.5rem] flex items-center">{p.data.displayName || p.data.title}</h3>
                     <p class="text-sm text-[#5B6B7C] leading-relaxed line-clamp-3 mb-6">{p.data.description}</p>
                     <span class="text-sm font-bold text-[#1F4E8C] inline-flex items-center gap-2 group-hover:text-[#F58A1F] transition-colors">
                       Product Specs 

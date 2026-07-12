@@ -1,5 +1,6 @@
 ---
 title: "Spraying Quick-Setting Rubber Asphalt Waterproof Coating"
+displayName: "Quick-Setting Rubber Coating"
 category: "waterproof-coatings"
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt.webp"
@@ -17,8 +18,10 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt.webp"
     title: "Industrial Packaging Design"
+displayName: "Quick-Setting Rubber Coating"
   - image: "/placeholder.webp"
     title: "High-Speed Spray Application"
+displayName: "Quick-Setting Rubber Coating"
 
 spec_table:
   - label: "Product Type"
@@ -34,18 +37,24 @@ spec_table:
 
 quick_facts:
   - title: "The Speed of Protection"
+displayName: "Quick-Setting Rubber Coating"
     text: "Cures instantly upon contact with the substrate, forming a joint-free rubber membrane that can be immediately backfilled or covered."
   - title: "Superior Elasticity"
+displayName: "Quick-Setting Rubber Coating"
     text: "With over 1000% elongation, this 'liquid rubber' can bridge significant structural cracks and withstand constant building movement."
   - title: "Redundant Safety"
+displayName: "Quick-Setting Rubber Coating"
     text: "The high bonding strength to concrete prevents water tracking, ensuring that any localized puncture remains isolated and easy to repair."
 
 applications:
   - title: "Underground Infrastructure"
+displayName: "Quick-Setting Rubber Coating"
     text: "The premier choice for subway tunnels, utility corridors, and deep basement waterproofing."
   - title: "Large-Scale Civil Works"
+displayName: "Quick-Setting Rubber Coating"
     text: "Extensively used for dams, reservoirs, and bridge deck protection where high speed and durability are required."
   - title: "Green Roofs & Gardens"
+displayName: "Quick-Setting Rubber Coating"
     text: "Provides excellent root penetration resistance and a completely seamless barrier for planted surfaces."
 
 technical_data:
@@ -67,17 +76,22 @@ technical_data:
 
 application_guide:
   - title: "Equipment Setup"
+displayName: "Quick-Setting Rubber Coating"
     text: "Must be applied using specialized dual-component airless spray equipment that mixes the coating and coagulant at the nozzle tip."
   - title: "Surface Prep"
+displayName: "Quick-Setting Rubber Coating"
     text: "The substrate must be structurally sound, clean, and free of oily residues. Minor dampness is acceptable but standing water must be removed."
   - title: "Uniform Spraying"
+displayName: "Quick-Setting Rubber Coating"
     text: "Maintain a steady distance and speed during spraying to achieve the target thickness (typically 2.0mm - 3.0mm)."
 
 related_products:
   - title: "Non-Curing Coating"
+displayName: "Quick-Setting Rubber Coating"
     image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v2.webp"
     href: "/products/non-curing-rubber-asphalt-waterproof-coating/"
   - title: "Polyurethane Coating"
+displayName: "Quick-Setting Rubber Coating"
     image: "https://img.tyuanwaterproof.com/products/polyurethane-coating.webp"
     href: "/products/polyurethane-waterproof-coating-factory/"
 

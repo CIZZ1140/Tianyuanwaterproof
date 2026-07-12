@@ -1,5 +1,6 @@
 ---
 title: "Premium Laminated Architectural Shingles"
+displayName: "Laminated Asphalt Shingles"
 category: "asphalt-shingles"
 product_category: "Asphalt Shingles"
 main_image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-laminated.webp"
@@ -16,8 +17,10 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-laminated.webp"
     title: "Laminated 3D Effect"
+displayName: "Laminated Asphalt Shingles"
   - image: "/placeholder.webp"
     title: "Production Line"
+displayName: "Laminated Asphalt Shingles"
 
 spec_table:
   - label: "Product Type"
@@ -37,32 +40,44 @@ spec_table:
 
 quick_facts:
   - title: "Dimensional Look"
+displayName: "Laminated Asphalt Shingles"
     text: "Dual-layer structure and shadow lines create a deep, architectural 3D appearance."
   - title: "Enhanced Strength"
+displayName: "Laminated Asphalt Shingles"
     text: "Nearly double the thickness of standard shingles for superior puncture resistance."
   - title: "High Wind Safety"
+displayName: "Laminated Asphalt Shingles"
     text: "Heavier weight and reinforced nailing zones provide extreme stability in storms."
   - title: "Architectural Grade"
+displayName: "Laminated Asphalt Shingles"
     text: "Designed to mimic the look of natural wood shakes or slate roofing."
 
 applications:
   - title: "Luxury Villas"
+displayName: "Laminated Asphalt Shingles"
     text: "The ultimate roofing solution for high-end residential estates and villas."
   - title: "Steep-Sloped Roofs"
+displayName: "Laminated Asphalt Shingles"
     text: "Maximum visual impact on highly visible architectural roof slopes."
   - title: "Harsh Environments"
+displayName: "Laminated Asphalt Shingles"
     text: "Built to perform in areas with heavy snow or high tropical winds."
   - title: "Resorts & Hotels"
+displayName: "Laminated Asphalt Shingles"
     text: "Premium aesthetic appeal for upscale hospitality developments."
 
 features:
   - title: "Multi-Layer Protection"
+displayName: "Laminated Asphalt Shingles"
     text: "Double-layer construction provides an extra barrier against moisture and leaks."
   - title: "Textured Aesthetic"
+displayName: "Laminated Asphalt Shingles"
     text: "Random shadow bands provide a rich, multi-dimensional texture to the roof."
   - title: "UV & Algae Resistance"
+displayName: "Laminated Asphalt Shingles"
     text: "Treated ceramic granules protect against sun damage and algae streaks."
   - title: "Long-Term Value"
+displayName: "Laminated Asphalt Shingles"
     text: "Increases property curb appeal and provides long-lasting roof integrity."
 
 technical_data:
@@ -94,24 +109,33 @@ technical_data:
 
 application_guide:
   - title: "Underlayment"
+displayName: "Laminated Asphalt Shingles"
     text: "Install premium self-adhesive underlayment over the clean roof deck."
   - title: "Starter Strip"
+displayName: "Laminated Asphalt Shingles"
     text: "Ensure the starter course is installed correctly at the eaves for proper sealing."
   - title: "Nailing Pattern"
+displayName: "Laminated Asphalt Shingles"
     text: "Apply 6 nails per shingle in high-wind zones, strictly within the nailing line."
   - title: "Staggered Layout"
+displayName: "Laminated Asphalt Shingles"
     text: "Stagger the joints by 1/2 or 1/3 tab to ensure the 3D effect is maximized."
   - title: "Hip & Ridge"
+displayName: "Laminated Asphalt Shingles"
     text: "Use matching hip and ridge caps to complete the architectural look."
   - title: "Inspection"
+displayName: "Laminated Asphalt Shingles"
     text: "Check all details around chimneys and valleys for proper flashing treatment."
 
 packaging:
   - title: "Premium Bundle"
+displayName: "Laminated Asphalt Shingles"
     text: "Heavy-duty wrap with 16 pieces per bundle, ensuring safe handling."
   - title: "Reinforced Pallets"
+displayName: "Laminated Asphalt Shingles"
     text: "Palletized with corner guards for secure international container shipping."
   - title: "OEM Branding"
+displayName: "Laminated Asphalt Shingles"
     text: "Private label support and custom printed wrappers for wholesale partners."
 
 loading_data:
@@ -122,25 +146,31 @@ loading_data:
 
 downloads:
   - title: "Laminated Shingles TDS"
+displayName: "Laminated Asphalt Shingles"
     description: "Premium architectural shingle technical performance data."
     type: "PDF"
     href: ""
   - title: "Architectural Gallery"
+displayName: "Laminated Asphalt Shingles"
     description: "Lookbook of residential projects using laminated shingles."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "SBS Modified Bitumen Membrane"
+displayName: "Laminated Asphalt Shingles"
     image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
   - title: "Self-Adhesive Bitumen Membrane"
+displayName: "Laminated Asphalt Shingles"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
   - title: "PVC Waterproofing Membrane"
+displayName: "Laminated Asphalt Shingles"
     image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
     href: "/products/pvc-waterproofing-membrane-manufacturer/"
   - title: "TPO Waterproofing Membrane"
+displayName: "Laminated Asphalt Shingles"
     image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
 

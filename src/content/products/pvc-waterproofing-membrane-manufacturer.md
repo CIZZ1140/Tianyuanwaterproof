@@ -1,5 +1,6 @@
 ---
 title: "PVC Membrane for Tunnel & Underground Waterproofing | Factory Direct"
+displayName: "PVC Waterproofing Membrane"
 category: "polymer-membranes"
 product_category: "Polymer Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
@@ -18,8 +19,10 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
     title: "PVC Membrane Roll"
+displayName: "PVC Waterproofing Membrane"
   - image: "/placeholder.webp"
     title: "Production Line"
+displayName: "PVC Waterproofing Membrane"
 
 spec_table:
   - label: "Product Type"
@@ -43,38 +46,53 @@ spec_table:
 
 quick_facts:
   - title: "50-Year Durability"
+displayName: "PVC Waterproofing Membrane"
     text: "Engineered for long-term protection, with a service life of 20+ years for roofing and up to 50 years for underground use."
   - title: "Monolithic Seams"
+displayName: "PVC Waterproofing Membrane"
     text: "Hot-air welded lap joints create a permanent, homogenous bond that is stronger than the membrane itself."
   - title: "Root Barrier"
+displayName: "PVC Waterproofing Membrane"
     text: "Excellent resistance to root penetration, making it the top choice for intensive and extensive green roof gardens."
   - title: "Eco-Friendly Polymer"
+displayName: "PVC Waterproofing Membrane"
     text: "Flame-retardant and highly recyclable, conforming to modern environmental standards for sustainable construction."
 
 applications:
   - title: "Commercial Roofing"
+displayName: "PVC Waterproofing Membrane"
     text: "Ideal for industrial flat roofs, sloping roofs, and complex roofing systems with direct weather exposure."
   - title: "Green Roof Systems"
+displayName: "PVC Waterproofing Membrane"
     text: "Proven performance as a root barrier for rooftop gardens and planting roof waterproofing."
   - title: "Hydraulic Engineering"
+displayName: "PVC Waterproofing Membrane"
     text: "Trusted barrier for reservoirs, artificial lakes, ponds, canals, and water conservancy projects."
   - title: "Underground Infrastructure"
+displayName: "PVC Waterproofing Membrane"
     text: "Reliable anti-seepage for basements, subway stations, tunnels, and underground municipal works."
   - title: "Environmental Protection"
+displayName: "PVC Waterproofing Membrane"
     text: "Suitable for landfill liners, sewage treatment plants, and industrial anti-pollution engineering."
   - title: "Transport & Civil Works"
+displayName: "PVC Waterproofing Membrane"
     text: "Used for bridge deck waterproofing and railway structures to ensure high-durability protection."
 
 features:
   - title: "High Mechanical Strength"
+displayName: "PVC Waterproofing Membrane"
     text: "Superior tensile strength and high elongation allow the membrane to adapt to structural deformations."
   - title: "Excellent Weatherability"
+displayName: "PVC Waterproofing Membrane"
     text: "Stable performance under extreme UV, ozone, and temperature variations (-25degC to 80degC)."
   - title: "Chemical & Oil Resistance"
+displayName: "PVC Waterproofing Membrane"
     text: "Strong resistance to a wide range of chemicals, making it adaptable to special industrial waterproofing situations."
   - title: "Easy Detail Handling"
+displayName: "PVC Waterproofing Membrane"
     text: "High plasticity ensures fast and secure treatment of corners, edges, and complex architectural penetrations."
   - title: "Low Maintenance Cost"
+displayName: "PVC Waterproofing Membrane"
     text: "Smooth surface and durable structure ensure easy cleaning and minimal maintenance over decades."
 
 technical_data:
@@ -121,24 +139,33 @@ technical_data:
 
 application_guide:
   - title: "Base Cleaning"
+displayName: "PVC Waterproofing Membrane"
     text: "Ensure the substrate is smooth, dry, and free from sharp debris, oil, or standing water."
   - title: "Layout & Spreading"
+displayName: "PVC Waterproofing Membrane"
     text: "Unroll the PVC membrane smoothly according to the project layout, avoiding wrinkles or tension."
   - title: "Mechanical Fastening"
+displayName: "PVC Waterproofing Membrane"
     text: "For roofing, secure the membrane using specialized fasteners and plates along the overlap edge."
   - title: "Hot-Air Welding"
+displayName: "PVC Waterproofing Membrane"
     text: "Weld the lap joints using automatic welding equipment at 350degC-500degC for a monolithic seal."
   - title: "Detail Treatment"
+displayName: "PVC Waterproofing Membrane"
     text: "Use prefabricated PVC accessories or hand-welding for corners, pipe roots, and drains."
   - title: "Seam Inspection"
+displayName: "PVC Waterproofing Membrane"
     text: "Conduct a probe test on all cooled seams to verify continuous watertightness after installation."
 
 packaging:
   - title: "Secure Roll Packing"
+displayName: "PVC Waterproofing Membrane"
     text: "Supplied in protective rolls with identification labels and core sleeves for easy handling."
   - title: "Vertical Stacking"
+displayName: "PVC Waterproofing Membrane"
     text: "Stack rolls vertically or horizontally (up to 5 layers) in a cool, ventilated warehouse below 45degC."
   - title: "OEM Labeling"
+displayName: "PVC Waterproofing Membrane"
     text: "Custom roll labels with your brand, type, and technical specifications available for wholesale."
 
 loading_data:
@@ -151,25 +178,31 @@ loading_data:
 
 downloads:
   - title: "PVC Technical Data (TDS)"
+displayName: "PVC Waterproofing Membrane"
     description: "Detailed performance benchmarks and GB/T standard test results."
     type: "PDF"
     href: ""
   - title: "Installation Manual"
+displayName: "PVC Waterproofing Membrane"
     description: "Comprehensive guide for mechanical fastening and hot-air welding systems."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "TPO Waterproofing Membrane"
+displayName: "PVC Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
   - title: "EPDM Waterproofing Membrane"
+displayName: "PVC Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
     href: "/products/epdm-waterproofing-membrane-wholesale/"
   - title: "Pre-applied HDPE Membrane"
+displayName: "PVC Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp"
     href: "/products/pre-applied-hdpe-membrane-supplier/"
   - title: "Polyurethane Coating"
+displayName: "PVC Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
     href: "/products/polyurethane-waterproof-coating-factory/"
 

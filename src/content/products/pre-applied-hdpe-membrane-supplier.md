@@ -1,5 +1,6 @@
 ---
 title: "Self-Adhesive Pre-Applied HDPE Waterproof Membrane"
+displayName: "Pre-applied HDPE Membrane"
 category: "polymer-membranes"
 product_category: "Polymer Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp"
@@ -18,8 +19,10 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp"
     title: "HDPE Membrane Surface"
+displayName: "Pre-applied HDPE Membrane"
   - image: "/placeholder.webp"
     title: "Production Line"
+displayName: "Pre-applied HDPE Membrane"
 
 spec_table:
   - label: "Product Type"
@@ -41,32 +44,44 @@ spec_table:
 
 quick_facts:
   - title: "Pre-Applied Bonding"
+displayName: "Pre-applied HDPE Membrane"
     text: "Designed to be installed before concrete pouring, forming a gap-free bond with the structural concrete."
   - title: "Anti-Water Channeling"
+displayName: "Pre-applied HDPE Membrane"
     text: "Eliminates lateral water migration between the membrane and the concrete structure, ensuring zero leak risk."
   - title: "Self-Healing Layer"
+displayName: "Pre-applied HDPE Membrane"
     text: "The polymer self-adhesive layer provides self-healing properties for small punctures during construction."
   - title: "Heavy-Duty HDPE"
+displayName: "Pre-applied HDPE Membrane"
     text: "Uses high-density thermoplastic polyethylene as the core substrate for maximum puncture and chemical resistance."
 
 applications:
   - title: "Underground Foundation"
+displayName: "Pre-applied HDPE Membrane"
     text: "Perfect for basement slabs, pile heads, and heavy-duty foundation waterproofing."
   - title: "Blind-Side Walls"
+displayName: "Pre-applied HDPE Membrane"
     text: "Ideal for retaining walls and subway stations where one-sided waterproofing is required."
   - title: "Tunnels & Culverts"
+displayName: "Pre-applied HDPE Membrane"
     text: "Provides a reliable anti-seepage barrier for cut-and-cover tunnels and municipal works."
   - title: "High-Water-Table Areas"
+displayName: "Pre-applied HDPE Membrane"
     text: "Recommended for projects in regions with high groundwater levels requiring extreme bonding reliability."
 
 features:
   - title: "Permanent Chemical Bond"
+displayName: "Pre-applied HDPE Membrane"
     text: "Reactive bonding layer cross-links with the concrete slurry to create a monolithic waterproofing system."
   - title: "Excellent Dimensional Stability"
+displayName: "Pre-applied HDPE Membrane"
     text: "Maintains its shape and performance under extreme soil pressure and thermal fluctuations."
   - title: "Safe & Fast Construction"
+displayName: "Pre-applied HDPE Membrane"
     text: "Cold-applied installation with easy self-adhesive overlaps, requiring no specialized heating equipment."
   - title: "Corrosion Resistance"
+displayName: "Pre-applied HDPE Membrane"
     text: "Superior resistance to acids, alkalis, and salts commonly found in underground environments."
 
 technical_data:
@@ -108,22 +123,29 @@ technical_data:
 
 application_guide:
   - title: "Base Preparation"
+displayName: "Pre-applied HDPE Membrane"
     text: "Prepare a smooth, dense surface. Remove any sharp protrusions or standing water."
   - title: "Membrane Positioning"
+displayName: "Pre-applied HDPE Membrane"
     text: "Unroll the HDPE membrane with the self-adhesive layer facing the concrete pour direction."
   - label: "Layout & Lap"
     text: "Provide 70mm overlaps using the reserved adhesive edge or specialized tapes."
   - title: "Seam Sealing"
+displayName: "Pre-applied HDPE Membrane"
     text: "Press overlaps firmly using a roller to ensure a continuous and watertight seal."
   - title: "Rebar Installation"
+displayName: "Pre-applied HDPE Membrane"
     text: "Install steel bars directly over the protected membrane after inspection."
   - title: "Concrete Pouring"
+displayName: "Pre-applied HDPE Membrane"
     text: "Pour the concrete structural layer; ensure it fully contacts the adhesive surface."
 
 packaging:
   - title: "Protective Roll Packing"
+displayName: "Pre-applied HDPE Membrane"
     text: "Supplied in heavy-duty rolls with core sleeves to prevent deformation during transit."
   - title: "Branding Support"
+displayName: "Pre-applied HDPE Membrane"
     text: "Custom roll labels with your brand logo, batch numbers, and specifications available."
 
 loading_data:
@@ -136,25 +158,31 @@ loading_data:
 
 downloads:
   - title: "HDPE Technical Data (TDS)"
+displayName: "Pre-applied HDPE Membrane"
     description: "Detailed performance benchmarks and EN test result data."
     type: "PDF"
     href: ""
   - title: "Installation Guide"
+displayName: "Pre-applied HDPE Membrane"
     description: "Full guide for pre-applied and blind-side waterproofing systems."
     type: "PDF"
     href: ""
 
 related_products:
   - title: "TPO Waterproofing Membrane"
+displayName: "Pre-applied HDPE Membrane"
     image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
   - title: "EPDM Waterproofing Membrane"
+displayName: "Pre-applied HDPE Membrane"
     image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
     href: "/products/epdm-waterproofing-membrane-wholesale/"
   - title: "PVC Waterproofing Membrane"
+displayName: "Pre-applied HDPE Membrane"
     image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
     href: "/products/pvc-waterproofing-membrane-manufacturer/"
   - title: "PP Waterproof Membrane"
+displayName: "Pre-applied HDPE Membrane"
     image: "https://img.tyuanwaterproof.com/products/polyethylene-propylene-waterproof-membrane.webp"
     href: "/products/pp-pe-composite-membrane-factory/"
 

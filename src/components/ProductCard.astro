@@ -1,6 +1,8 @@
 ---
-interface Props { title: string; href: string; image: string; excerpt?: string; }
-const { title, href, image, excerpt } = Astro.props;
+interface Props { title: string; displayName?: string; href: string; image: string; excerpt?: string; }
+const { title, displayName, href, image, excerpt } = Astro.props;
+
+const displayTitle = displayName || title;
 
 const imageFitClass = "object-contain p-4";
 ---
@@ -15,7 +17,7 @@ const imageFitClass = "object-contain p-4";
     />
   </div>
   <div class="p-5">
-    <h3 class="text-base font-extrabold text-navy group-hover:text-brand">{title}</h3>
+    <h3 class="text-base font-extrabold text-navy group-hover:text-brand">{displayTitle}</h3>
     {excerpt && <p class="mt-2 line-clamp-2 text-sm leading-6 text-slate-600">{excerpt}</p>}
     <span class="mt-4 inline-flex text-sm font-bold text-brand">View Details →</span>
   </div>
