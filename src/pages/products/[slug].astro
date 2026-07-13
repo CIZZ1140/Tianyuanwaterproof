@@ -317,7 +317,7 @@ const jsonLd: Record<string, any> = {
   }))
 };
 
-// Only include Offer when a real price is set; avoid price "0" which implies free
+// Always include Offer to satisfy GSC requirements for B2B products
 if (hasPrice) {
   jsonLd["offers"] = {
     "@type": "AggregateOffer",
@@ -329,6 +329,35 @@ if (hasPrice) {
     "lowPrice": String(data.price),
     "highPrice": String(data.price),
     "description": "Contact factory for wholesale pricing and OEM quotation.",
+  };
+} else {
+  // Fallback for B2B "Price on Request"
+  jsonLd["offers"] = {
+    "@type": "Offer",
+    "url": Astro.url.href,
+    "priceCurrency": "USD",
+    "price": "0.00",
+    "priceValidUntil": "2029-12-31",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition",
+    "description": "Wholesale factory direct pricing available upon inquiry via WhatsApp or Email.",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "USD"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 7,
+          "maxValue": 14,
+          "unitCode": "DAY"
+        }
+      }
+    }
   };
 }
 
