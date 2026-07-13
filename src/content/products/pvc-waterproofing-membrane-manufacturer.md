@@ -23,6 +23,8 @@ gallery:
     title: "Membrane Type Options"
   - image: "https://img.tyuanwaterproof.com/products/pvc-hot-air-welded-seam.jpg"
     title: "Hot-Air Welded Seam"
+  - image: "https://img.tyuanwaterproof.com/products/pvc-bulk-supply-packing.jpg"
+    title: "Bulk Supply & Packing"
 
 spec_table:
   - label: "Product Type"
