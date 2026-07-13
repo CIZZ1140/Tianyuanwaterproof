@@ -17,10 +17,12 @@ hero_tags:
   - "OEM Available"
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
+  - image: "https://img.tyuanwaterproof.com/products/pvc-membrane-roll.jpg"
     title: "PVC Membrane Roll"
-  - image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
-    title: "PVC Production Line"
+  - image: "https://img.tyuanwaterproof.com/products/pvc-membrane-type-options.jpg"
+    title: "Membrane Type Options"
+  - image: "https://img.tyuanwaterproof.com/products/pvc-hot-air-welded-seam.jpg"
+    title: "Hot-Air Welded Seam"
 
 spec_table:
   - label: "Product Type"
