@@ -4,7 +4,7 @@ description: "Compare self-adhesive and torch-on modified bitumen membranes. A d
 category: "industry-insights"
 publishDate: 2026-07-14
 updatedDate: 2026-07-14
-coverImage: "https://sc04.alicdn.com/kf/A0f4b2a692c814fdbac90fab696ea71deF.jpg"
+coverImage: "https://img.tyuanwaterproof.com/blog/self-adhesive-bitumen-overview.webp"
 coverAlt: "Premium self-adhesive modified bitumen waterproofing membrane with aluminum foil surface"
 author: "Tianyuan Waterproof Technical Team"
 draft: false
@@ -30,7 +30,7 @@ These membranes feature a thick layer of modified bitumen that is melted using a
 ### Self-Adhesive (Peel-and-Stick) Systems
 Manufactured with specialized pressure-sensitive adhesives (often highly modified SBS or SIS polymers), these membranes bond instantly upon contact with a primed substrate.
 
-![Multi-layer structure of self-adhesive bitumen membrane](https://sc04.alicdn.com/kf/A4f4ad486adae4a6e92f6cb6c868bc47ad.jpg)
+![Multi-layer structure of self-adhesive bitumen membrane](https://img.tyuanwaterproof.com/blog/self-adhesive-structure.webp)
 *Figure 1: High-quality material structure featuring high-density aluminum foil and a premium self-adhesive bitumen layer.*
 
 *   **Best for:** Confined spaces (tunnels/basements), wooden structures, and projects with strict \"No Open Flame\" fire policies.
@@ -41,7 +41,7 @@ Manufactured with specialized pressure-sensitive adhesives (often highly modifie
 
 B2B buyers often notice that self-adhesive membranes carry a 15-25% higher material price tag. However, the **Total Installed Cost** tells a different story.
 
-![Real-world application of peel-and-stick waterproofing membrane](https://sc04.alicdn.com/kf/A1e90cb48643a401f97e6ae01381ac697A.jpg)
+![Real-world application of peel-and-stick waterproofing membrane](https://img.tyuanwaterproof.com/blog/self-adhesive-installation.webp)
 *Figure 2: Real-world installation showcasing the speed and simplicity of the peel-and-stick method.*
 
 | Metric | Torch-Applied System | Self-Adhesive System |
@@ -56,7 +56,7 @@ B2B buyers often notice that self-adhesive membranes carry a 15-25% higher mater
 
 ---
 
-## 3. Safety and Compliance: The "No-Flame" Mandate
+## 3. Safety and Compliance: The \"No-Flame\" Mandate
 
 In 2026, global safety standards for infrastructure (especially in the US, EU, and Middle East) are becoming more stringent.
 
@@ -69,7 +69,7 @@ In 2026, global safety standards for infrastructure (especially in the US, EU, a
 
 While self-adhesive technology has improved, climate still plays a role in selection:
 
-1.  **High-Heat Environments:** Self-adhesive membranes from [Tianyuan Waterproof](/about/) are formulated with high-softening point additives to prevent "sliding" in tropical climates.
+1.  **High-Heat Environments:** Self-adhesive membranes from [Tianyuan Waterproof](/about/) are formulated with high-softening point additives to prevent \"sliding\" in tropical climates.
 2.  **Arctic Conditions:** In temperatures below -5°C, torch-applied membranes are generally preferred as the flame ensures a reliable bond that cold-adhesives struggle to achieve without specialized heating equipment.
 
 ---
@@ -78,7 +78,7 @@ While self-adhesive technology has improved, climate still plays a role in selec
 
 When sourcing from a manufacturer, ensure your **Technical Data Sheet (TDS)** covers these 2026 benchmarks:
 
-![Close-up of self-adhesive membrane bonding and overlap](https://sc04.alicdn.com/kf/A1eb21533b14041c5afca20a86ab4e995C.jpg)
+![Close-up of self-adhesive membrane bonding and overlap](https://img.tyuanwaterproof.com/blog/self-adhesive-bonding-detail.webp)
 *Figure 3: Superior bonding performance and overlap detail of our premium self-adhesive system.*
 
 *   **Peel Adhesion:** Look for $\geq 1.5$ N/mm for self-adhesive systems.
