@@ -4,7 +4,7 @@ description: "Compare self-adhesive and torch-on modified bitumen membranes. A d
 category: "industry-insights"
 publishDate: 2026-07-14
 updatedDate: 2026-07-14
-coverImage: "https://img.tyuanwaterproof.com/factory-main.webp"
+coverImage: "/placeholder.webp"
 coverAlt: "Technical comparison between self-adhesive and torch-applied waterproofing membranes"
 author: "Tianyuan Waterproof Technical Team"
 draft: false
@@ -30,9 +30,6 @@ These membranes feature a thick layer of modified bitumen that is melted using a
 ### Self-Adhesive (Peel-and-Stick) Systems
 Manufactured with specialized pressure-sensitive adhesives (often highly modified SBS or SIS polymers), these membranes bond instantly upon contact with a primed substrate.
 
-![Self-adhesive bitumen membrane structure and aluminum foil layers](https://sc04.alicdn.com/kf/A4f4ad486adae4a6e92f6cb6c868bc47ad.jpg)
-*Figure 1: High-quality material structure featuring high-density aluminum foil and a premium self-adhesive bitumen layer.*
-
 *   **Best for:** Confined spaces (tunnels/basements), wooden structures, and projects with strict \"No Open Flame\" fire policies.
 
 ---
@@ -40,9 +37,6 @@ Manufactured with specialized pressure-sensitive adhesives (often highly modifie
 ## 2. The Efficiency Equation: Labor vs. Material Cost
 
 B2B buyers often notice that self-adhesive membranes carry a 15-25% higher material price tag. However, the **Total Installed Cost** tells a different story.
-
-![Peel and stick waterproofing membrane installation process](https://sc04.alicdn.com/kf/A1e90cb48643a401f97e6ae01381ac697A.jpg)
-*Figure 2: Real-world installation showcasing the speed and simplicity of the peel-and-stick method.*
 
 | Metric | Torch-Applied System | Self-Adhesive System |
 | :--- | :--- | :--- |
@@ -78,9 +72,6 @@ While self-adhesive technology has improved, climate still plays a role in selec
 
 When sourcing from a manufacturer, ensure your **Technical Data Sheet (TDS)** covers these 2026 benchmarks:
 
-![Self-adhesive membrane edge and bonding detail](https://sc04.alicdn.com/kf/A1eb21533b14041c5afca20a86ab4e995C.jpg)
-*Figure 3: Superior bonding performance and overlap detail of Tianyuan's self-adhesive membrane.*
-
 *   **Peel Adhesion:** Look for $\geq 1.5$ N/mm for self-adhesive systems.
 *   **Low-Temperature Flexibility:** Premium SBS-modified variants should pass the mandrel bend test at **-25°C**.
 *   **Reinforcement Weight:** For high-traffic areas, specify **180g/m² Polyester** to prevent puncture during backfilling.
@@ -88,9 +79,6 @@ When sourcing from a manufacturer, ensure your **Technical Data Sheet (TDS)** co
 ---
 
 ## Conclusion: Which Should You Choose?
-
-![Tianyuan self-adhesive waterproof membrane roll](https://sc04.alicdn.com/kf/A7b9820ed36e44deaac24ad7486125c46D.jpg)
-*Figure 4: Ready-to-ship premium self-adhesive rolls with protective surface film.*
 
 *   **Choose Self-Adhesive if:** You are working on a residential project, a basement with poor ventilation, or a site with high labor costs and strict fire safety rules. Explore our [Self-Adhesive Bitumen Membrane range](/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/).
 *   **Choose Torch-Applied if:** You are waterproofing a massive industrial roof in a cold climate and have access to highly skilled torching technicians. Check our [SBS Modified Membrane specifications](/products/sbs-bitumen-waterproofing-membrane-manufacturer/).
