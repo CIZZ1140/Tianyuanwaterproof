@@ -294,18 +294,6 @@ const productGtin = data.gtin ?? data.upc ?? data.ean ?? null;
 
 const hasPrice = data.price && data.price !== "0" && data.price !== 0;
 
-const offer = {
-  "@type": "AggregateOffer",
-  "priceCurrency": data.price_currency ?? "USD",
-  "availability": data.availability ?? "https://schema.org/InStock",
-  "url": Astro.url.href,
-  "itemCondition": "https://schema.org/NewCondition",
-  "offerCount": "1",
-  "lowPrice": data.price && data.price !== "0" && data.price !== 0 ? String(data.price) : "0",
-  "highPrice": data.price && data.price !== "0" && data.price !== 0 ? String(data.price) : "0",
-  "description": "Contact factory for wholesale pricing and OEM quotation.",
-};
-
 const jsonLd: Record<string, any> = {
   "@context": "https://schema.org/",
   "@type": "Product",
@@ -329,7 +317,20 @@ const jsonLd: Record<string, any> = {
   }))
 };
 
-jsonLd["offers"] = offer;
+// Only include Offer when a real price is set; avoid price "0" which implies free
+if (hasPrice) {
+  jsonLd["offers"] = {
+    "@type": "AggregateOffer",
+    "priceCurrency": data.price_currency ?? "USD",
+    "availability": data.availability ?? "https://schema.org/InStock",
+    "url": Astro.url.href,
+    "itemCondition": "https://schema.org/NewCondition",
+    "offerCount": "1",
+    "lowPrice": String(data.price),
+    "highPrice": String(data.price),
+    "description": "Contact factory for wholesale pricing and OEM quotation.",
+  };
+}
 
 if (productMpn) jsonLd["mpn"] = productMpn;
 if (productGtin) jsonLd["gtin"] = productGtin;

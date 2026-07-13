@@ -9,11 +9,11 @@ image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
 hero_description: "Industrial-grade PVC waterproofing membrane manufactured to GB12952-2011 standards, available in 1.2mm to 2.0mm thickness with hot-air weldable seams. Trusted by contractors worldwide for roofing, tunnels, underground structures, and waterproofing systems. Factory direct supply with OEM private label options and full technical specifications."
 
 hero_tags:
-  - "Tunnel Solutions"
-  - "GB12952-2011"
-  - "1.2mm-2.0mm"
   - "Hot-Air Weldable"
-  - "Root Resistant"
+  - "1.2mm-2.0mm"
+  - "H/P/L/G Options"
+  - "Roofing / Tunnel / Underground"
+  - "GB 12952-2011"
   - "OEM Available"
 
 gallery:
@@ -26,7 +26,7 @@ spec_table:
   - label: "Product Type"
     value: "Polyvinyl Chloride (PVC) Waterproofing Membrane"
   - label: "Standard"
-    value: "GB12952-2011 / CE Certified"
+    value: "GB 12952-2011 for selected product grades"
   - label: "Material"
     value: "High-grade PVC resin with UV absorbers and stabilizers"
   - label: "Type Options"
@@ -43,14 +43,14 @@ spec_table:
     value: "Industrial roofing, underground, ponds, tunnels"
 
 quick_facts:
-  - title: "50-Year Durability"
-    text: "Engineered for long-term protection, with a service life of 20+ years for roofing and up to 50 years for underground use."
+  - title: "Long-Term Performance"
+    text: "Expected service life varies by membrane type and exposure. Roofing-grade PVC membranes typically deliver 20-25 years; protected underground applications may exceed 50 years under proper system design."
   - title: "Monolithic Seams"
     text: "Hot-air welded lap joints create a permanent, homogenous bond that is stronger than the membrane itself."
-  - title: "Root Barrier"
-    text: "Excellent resistance to root penetration, making it the top choice for intensive and extensive green roof gardens."
-  - title: "Eco-Friendly Polymer"
-    text: "Flame-retardant and highly recyclable, conforming to modern environmental standards for sustainable construction."
+  - title: "Root-Resistant Grades"
+    text: "Root-resistant PVC membrane grades are available for selected green roof systems, subject to applicable test documentation."
+  - title: "Flexible Configurations"
+    text: "Available in homogeneous (H), reinforced (P), fabric-backed (L), and glass-fiber stabilized (G) types with custom thickness and width options."
 
 applications:
   - title: "Commercial Roofing"
@@ -128,7 +128,7 @@ application_guide:
   - title: "Mechanical Fastening"
     text: "For roofing, secure the membrane using specialized fasteners and plates along the overlap edge."
   - title: "Hot-Air Welding"
-    text: "Weld the lap joints using automatic welding equipment at 350degC-500degC for a monolithic seal."
+    text: "Weld the lap joints using automatic welding equipment. Adjust temperature and machine speed according to membrane type, equipment, and jobsite conditions. Complete trial welds before formal installation."
   - title: "Detail Treatment"
     text: "Use prefabricated PVC accessories or hand-welding for corners, pipe roots, and drains."
   - title: "Seam Inspection"
@@ -144,7 +144,7 @@ packaging:
 
 loading_data:
   - label: "Standard"
-    value: "GB12952-2011 Certified"
+    value: "GB 12952-2011 for applicable grades"
   - label: "Container Load"
     value: "Approx. 8,000 - 12,000 sqm (Subject to thickness)"
   - label: "Width Options"
@@ -189,13 +189,23 @@ faqs:
     answer: "PVC offers the best balance of weldability, chemical resistance, and cost-effectiveness. TPO provides higher reflectivity for cool roofing and better environmental profile. EPDM excels in extreme temperature flexibility and is the premium choice for exposed roofing. PVC is the most versatile option, suitable for roofing, underground, and hydraulic engineering applications at a competitive price point."
   - question: "Do you offer OEM and private label for PVC waterproofing membrane?"
     answer: "Yes, as a factory-direct manufacturer, we supply OEM private label PVC membranes with your brand name, logo, and technical specifications printed on roll packaging. Minimum order quantity applies for custom labeling. Contact our sales team with your label design and target market requirements for a quotation."
+  - question: "What is the difference between H, P, L and G PVC membrane types?"
+    answer: "H type is a homogeneous membrane without reinforcement, ideal for tunnel and underground applications. P type contains internal polyester fabric reinforcement for enhanced tear resistance, designed for mechanically fastened roofing. L type has a fabric or fleece backing that improves adhesive compatibility for fully adhered systems. G type includes glass-fiber scrim for superior dimensional stability under temperature changes. Selection depends on installation method, substrate, and exposure conditions."
+  - question: "Does PVC membrane require a separation layer over bitumen or polystyrene insulation?"
+    answer: "Yes, direct contact between PVC membrane and bitumen, polystyrene insulation, tar, oils, or certain solvents should be avoided. These materials can extract plasticizers from PVC, causing embrittlement. An approved separation layer, typically a compatible geotextile or synthetic sheet, must be installed between the PVC membrane and incompatible substrates. Consult our technical team for project-specific compatibility guidance."
+  - question: "Can PVC waterproofing membrane be used in mechanically fastened roofing systems?"
+    answer: "Yes, P-type reinforced PVC membrane is specifically designed for mechanically fastened roofing systems. The membrane is secured with approved fasteners and plates along the overlap edge, and adjacent sheets are joined by hot-air welding to create continuous watertight seams. This combination of mechanical attachment and heat-welded seam technology is the standard installation method for PVC roofing."
 ---
 
-## High-Performance Polyvinyl Chloride Waterproofing
+## What Is a PVC Waterproofing Membrane?
 
-PVC waterproofing membrane is a premium polymer sheet manufactured from high-quality polyvinyl chloride resin mixed with UV stabilizers and plasticizers. Renowned for its versatility and security, it is the preferred solution for industrial roofing, reservoirs, and underground infrastructure.
+A PVC waterproofing membrane is a flexible thermoplastic sheet manufactured primarily from polyvinyl chloride resin and selected additives, including UV stabilizers and plasticizers. Adjacent sheets are commonly joined by hot-air welding to form continuous waterproof seams — a method that creates a monolithic bond stronger than the membrane itself.
 
-As a specialist factory, Tianyuan supplies multiple PVC types including homogeneous (H), fabric-backed (L), and reinforced (P) sheets. With monolithic heat-welded seams and high resistance to environmental stress, our PVC membrane ensures long-term leak protection for global B2B construction projects.
+PVC membranes are available with different internal structures: homogeneous (H), internally reinforced (P), fabric or fleece-backed (L), and glass-fiber stabilized (G). These variants are used in mechanically fastened roofing, fully adhered roofing, tunnel lining, and protected underground waterproofing systems.
+
+The appropriate membrane type depends on the installation method, substrate condition, exposure environment, project specification, and compatibility with adjacent materials.
+
+As a specialist factory, Tianyuan supplies all four PVC types with full traceability from raw resin to finished roll, ensuring consistent quality for global B2B construction projects.
 
 ## PVC Waterproofing Membrane Specifications
 
@@ -209,11 +219,34 @@ Our PVC membranes are manufactured under strict GB12952-2011 quality control wit
 
 For the full technical data sheet including tensile strength, elongation, low-temperature flexibility, and chemical resistance test results, refer to the [Technical Specifications section](#technical-data) below or request our complete TDS PDF.
 
+## How to Choose H, P, L and G PVC Membrane Types
+
+Selecting the correct membrane type is critical to system performance. The table below summarizes the general selection direction for each type:
+
+| Type | Structure | Typical Application |
+|---|---|---|
+| **H Type** | Homogeneous PVC membrane | Tunnel lining, underground waterproofing, and detail applications requiring uniform material properties |
+| **P Type** | Internally reinforced with polyester fabric | Mechanically fastened exposed roofing systems requiring high tear resistance |
+| **L Type** | Fabric or fleece-backed PVC | Fully adhered roofing and selected renovation systems where backing improves bond compatibility |
+| **G Type** | Glass-fiber scrim stabilized | Systems requiring enhanced dimensional stability under temperature fluctuations |
+
+Final membrane type selection should be confirmed against the product-specific TDS, applicable project specification, and waterproofing system design. Contact our technical team for project-specific recommendations.
+
+## PVC Membrane Compatibility and Separation Layers
+
+PVC membrane compatibility should be confirmed before direct contact with bitumen, tar, oils, solvents, polystyrene insulation, or other plasticized materials. Certain substances can extract plasticizers from PVC, leading to premature embrittlement and loss of flexibility.
+
+An approved separation layer (typically a geotextile or compatible synthetic sheet) may be required between the PVC membrane and incompatible substrates, existing bitumen roofing, or specific insulation materials. The final assembly should follow the approved system design, product-specific technical documentation, and local building code requirements.
+
+For projects involving substrate compatibility concerns, request our technical team's guidance before specification.
+
 ## PVC Roof Waterproofing Systems
 
-PVC membranes are a proven waterproofing system for industrial and commercial roofing applications. The hot-air welded seam technology creates a monolithic, watertight barrier across the entire roof surface — unlike mechanically fastened single-layer alternatives that rely on overlapping without fusion bonding.
+PVC membranes are a proven waterproofing solution for industrial and commercial roofing. In mechanically fastened systems, the membrane is secured to the roof assembly using approved fasteners and plates along the overlap edge. Adjacent sheets are then joined by hot-air welding to create continuous watertight seams — mechanical fastening describes how the membrane is attached to the substrate, while hot-air welding describes how adjacent sheets are joined. These are complementary components of a complete roofing system, not alternative methods.
 
-For roof waterproofing, our reinforced P-type and L-type PVC membranes provide superior puncture resistance against foot traffic during maintenance, while the UV-stabilized formulation prevents degradation under direct sunlight exposure. Combined with mechanical fastening along seam overlaps, the PVC roofing system delivers 20-25 years of reliable service with minimal maintenance.
+For fully adhered roofing systems, a compatible adhesive bonds the membrane to the prepared substrate or approved insulation layer, with sheet overlaps remaining hot-air welded.
+
+Our reinforced P-type and L-type PVC membranes provide superior puncture resistance against foot traffic during maintenance, while the UV-stabilized formulation prevents degradation under direct sunlight exposure. Both system types deliver 20-25 years of reliable service with proper installation and maintenance.
 
 Ideal roofing applications include: flat industrial roofs, low-slope commercial buildings, warehouse roofing, and factory plant roof waterproofing where long-term weather resistance is critical.
 
