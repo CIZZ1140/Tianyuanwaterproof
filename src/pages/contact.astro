@@ -173,6 +173,7 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
                   <input type="hidden" name="Full Phone" id="full-phone" />
                   <input type="hidden" name="Selected Code" id="selected-code" value="" />
                 </div>
+                <p id="code-hint" class="mt-1.5 text-xs text-red-500/80 hidden">Please select your country code</p>
               </div>
 
               <div>
@@ -278,8 +279,21 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
         const code = item.getAttribute('data-code') || '';
         if (currentCodeDisplay) currentCodeDisplay.innerText = code;
         if (selectedCodeInput) selectedCodeInput.value = code;
+        document.getElementById('code-hint')?.classList.add('hidden');
         dropdown?.classList.add('hidden');
       });
+    });
+
+    // Form validation — require country code
+    const form = selector?.closest('form');
+    const phoneContainer = selector?.closest('.flex');
+    form?.addEventListener('submit', (e) => {
+      if (!selectedCodeInput?.value) {
+        e.preventDefault();
+        document.getElementById('code-hint')?.classList.remove('hidden');
+        phoneContainer?.classList.add('!border-red-400');
+        selector?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
     });
   </script>
 </Layout>
