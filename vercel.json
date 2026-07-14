@@ -26,16 +26,6 @@
     { "source": "/products/self-adhesive-bitumen-membrane", "destination": "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/", "permanent": true },
     { "source": "/products/polymer-cement-js-waterproof-coating", "destination": "/products/polymer-cement-js-waterproof-coating-factory/", "permanent": true },
     {
-      "source": "/news",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/news/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/comments/feed/",
       "destination": "/",
       "permanent": true
