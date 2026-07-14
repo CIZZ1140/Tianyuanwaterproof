@@ -105,7 +105,7 @@ The reliability of a PVC membrane starts from within. Our **Type P (Reinforced)*
 *   **UV-Resistant Top Layer**: Specifically formulated to reflect solar heat (Cool Roof effect) and resist degradation from long-term UV exposure.
 *   **Durable Bottom Layer**: Optimizes adhesion to various substrates while maintaining overall sheet flexibility.
 
-![PVC Internal Structure Schematic](https://img.tyuanwaterproof.com/products/pvc-structure.png)
+![PVC Internal Structure Schematic](https://img.tyuanwaterproof.com/products/pvc-structure.png?v=1)
 
 ---
 
@@ -117,7 +117,7 @@ The weakest point of any waterproofing system is usually the joint. PVC solves t
 *   **Automatic Welding**: Our membranes are designed for high-speed automatic welding machines (like Leister), ensuring consistent quality across large-scale projects.
 *   **100% Watertight**: Once cooled, the seam is monolithic, meaning it will never delaminate or leak even under standing water.
 
-![PVC Hot-Air Welding Process](https://img.tyuanwaterproof.com/products/pvc-welding.png)
+![PVC Hot-Air Welding Process](https://img.tyuanwaterproof.com/products/pvc-welding.png?v=1)
 
 ---
 
@@ -129,7 +129,7 @@ A professional project requires more than just a roll of membrane. Tianyuan offe
 *   **Mechanical Fasteners**: Specialized screws and stress plates for wind-resistant steel roof systems.
 *   **Roof Drains & Vents**: PVC-compatible outlets that weld directly to the main membrane for a zero-leak connection.
 
-![PVC Waterproofing System Accessories](https://img.tyuanwaterproof.com/products/pvc-accessories.png)
+![PVC Waterproofing System Accessories](https://img.tyuanwaterproof.com/products/pvc-accessories.png?v=1)
 
 ---
 
@@ -141,7 +141,7 @@ From 50,000 sqm industrial plants to complex metro tunnel linings, our PVC membr
 *   **Tunnel & Subway**: Our H-type (homogeneous) membranes provide reliable anti-seepage for high-pressure underground environments.
 *   **Green Roofs**: Inherent root resistance makes PVC the primary choice for sustainable rooftop gardens.
 
-![Industrial PVC Roofing Project Overview](https://img.tyuanwaterproof.com/products/pvc-roof-project.png)
+![Industrial PVC Roofing Project Overview](https://img.tyuanwaterproof.com/products/pvc-roof-project.png?v=1)
 
 ---
 
