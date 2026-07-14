@@ -36,14 +36,13 @@ spec_table:
   - label: "Life Expectancy"
     value: "25+ Years (Roofing) / 50+ Years (Underground)"
 
-# Move quick facts here so they appear at the bottom of the overview section automatically via the template
 quick_facts:
   - title: "Reinforced Durability"
-    text: "P-type membranes contain internal polyester mesh for superior tensile strength and puncture resistance."
+    text: "P-type membranes contain internal polyester mesh that provides superior tensile strength and puncture resistance."
   - title: "Monolithic Seam Technology"
     text: "Hot-air welded lap joints fuse adjacent sheets into a single, continuous barrier stronger than the material itself."
   - title: "Extreme Weatherability"
-    text: "Formulated with advanced UV stabilizers to prevent embrittlement even at -25°C to 80°C."
+    text: "Formulated with advanced UV stabilizers to prevent embrittlement under intense sun cycles (-25°C to 80°C)."
   - title: "Total System Supply"
     text: "We provide the full ecosystem: prefabricated corners, fasteners, and welding technical support."
 
@@ -106,7 +105,7 @@ The reliability of a PVC membrane starts from within. Our **Type P (Reinforced)*
 *   **UV-Resistant Top Layer**: Specifically formulated to reflect solar heat (Cool Roof effect) and resist degradation from long-term UV exposure.
 *   **Durable Bottom Layer**: Optimizes adhesion to various substrates while maintaining overall sheet flexibility.
 
-![PVC Internal Structure Schematic](https://sc04.alicdn.com/kf/A0e6e21c7a5044e9b987e41e0658014cdA.jpg)
+![PVC Internal Structure Schematic](https://img.tyuanwaterproof.com/products/pvc-structure.png)
 
 ---
 
@@ -118,7 +117,7 @@ The weakest point of any waterproofing system is usually the joint. PVC solves t
 *   **Automatic Welding**: Our membranes are designed for high-speed automatic welding machines (like Leister), ensuring consistent quality across large-scale projects.
 *   **100% Watertight**: Once cooled, the seam is monolithic, meaning it will never delaminate or leak even under standing water.
 
-![PVC Hot-Air Welding Process](https://sc04.alicdn.com/kf/Abbeebfbeb70743758e03bafa693a4997X.jpg)
+![PVC Hot-Air Welding Process](https://img.tyuanwaterproof.com/products/pvc-welding.png)
 
 ---
 
@@ -130,7 +129,7 @@ A professional project requires more than just a roll of membrane. Tianyuan offe
 *   **Mechanical Fasteners**: Specialized screws and stress plates for wind-resistant steel roof systems.
 *   **Roof Drains & Vents**: PVC-compatible outlets that weld directly to the main membrane for a zero-leak connection.
 
-![PVC Waterproofing System Accessories](https://sc04.alicdn.com/kf/A90e0fdd7f6a343978aad221dc6be1208L.jpg)
+![PVC Waterproofing System Accessories](https://img.tyuanwaterproof.com/products/pvc-accessories.png)
 
 ---
 
@@ -142,7 +141,7 @@ From 50,000 sqm industrial plants to complex metro tunnel linings, our PVC membr
 *   **Tunnel & Subway**: Our H-type (homogeneous) membranes provide reliable anti-seepage for high-pressure underground environments.
 *   **Green Roofs**: Inherent root resistance makes PVC the primary choice for sustainable rooftop gardens.
 
-![Industrial PVC Roofing Project Overview](https://sc04.alicdn.com/kf/A0feb1c56888e4987a468452ad88e5b7at.jpg)
+![Industrial PVC Roofing Project Overview](https://img.tyuanwaterproof.com/products/pvc-roof-project.png)
 
 ---
 
