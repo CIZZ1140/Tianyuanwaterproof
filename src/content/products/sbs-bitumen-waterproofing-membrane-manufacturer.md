@@ -139,6 +139,14 @@ related_products:
     image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
     href: "/products/polyurethane-waterproof-coating-factory/"
 
+installation_essentials:
+  - title: "Professional Long-Handle Roofing Torch"
+    image: "https://sc02.alicdn.com/kf/A3626840249bf4eb7a8360d74dc3fd43ac.png"
+    text: "Engineered for heavy-duty construction. The long-reach handle and safety stand make it ideal for station-position torching on large SBS roofing and tunnel projects."
+  - title: "TIANYUAN™ Bitumen Primer"
+    image: "https://sc04.alicdn.com/kf/Ac435e6b1b37e45f28f3ef8aa6b2f22b1X.jpg"
+    text: "High-penetration asphalt primer. Essential for preparing concrete surfaces to achieve the maximum peel strength and watertight integrity of the SBS membrane."
+
 faqs:
   - question: "Is this membrane suitable for high-pressure tunnel projects?"
     answer: "Yes. Our 4mm and 5mm polyester-reinforced (PY) SBS membranes are specifically designed for infrastructure like tunnels and subways, offering high puncture resistance and stability under constant hydrostatic pressure."

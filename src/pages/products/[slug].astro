@@ -269,6 +269,7 @@ const supplyInfo = normalizeCards(data.supply_info ?? data.supplyInfo ?? []);
 const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.standard && !row.requirement);
 
 const applicationGuide = normalizeApplicationGuide(data.application_guide ?? data.applicationGuide ?? data.installation_steps ?? data.installation ?? []);
+const installationEssentials = Array.isArray(data.installation_essentials) ? data.installation_essentials : [];
 const packaging = normalizeCards(data.packaging ?? data.packaging_oem ?? data.oem_packaging ?? []);
 const loadingData = normalizeRows(data.loading_data ?? data.loadingData ?? data.container_loading ?? []);
 const downloads = normalizeDownloads(data.downloads ?? []);
@@ -390,14 +391,7 @@ const faqJsonLd = faqs.length > 0 ? {
   }))
 } : null;
 
-const isFullWidthProduct = [
-  "self-adhesive-bitumen-waterproofing-membrane-wholesale",
-  "asphalt-roofing-felt-manufacturer",
-  "epdm-waterproofing-membrane-wholesale",
-  "polyurethane-waterproof-coating-factory"
-].includes(entry.slug);
-
-const imageFitClass = isFullWidthProduct ? "object-cover" : "object-contain";
+const imageFitClass = data.image_fit === 'cover' ? "object-cover" : "object-contain";
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
@@ -459,7 +453,7 @@ const breadcrumbItems = [
                         src={item.image} 
                         alt={item.title} 
                         loading="lazy" 
-                        class="aspect-[4/3] w-full rounded-t-xl bg-white object-cover" 
+                        class="aspect-[4/3] w-full rounded-t-xl bg-white object-contain p-2" 
                         onerror="this.src='/placeholder.webp'; this.onerror=null;"
                       />
                       <p class="px-1.5 py-2 text-center text-[11px] font-bold leading-tight text-slate-700 sm:text-xs line-clamp-2 group-[.active]:text-blue-700">{item.title}</p>
@@ -798,6 +792,42 @@ const breadcrumbItems = [
     }
 
     {
+      installationEssentials.length > 0 && (
+        <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
+          <div class="rounded-3xl border border-blue-100 bg-blue-50/20 p-4 shadow-sm sm:p-6 lg:p-8">
+            <div class="mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+              <div>
+                <div class="mb-3 flex items-center gap-3 text-blue-700">
+                  <Wrench class="h-7 w-7" />
+                  <h2 class="text-xl font-black text-slate-950 sm:text-2xl tracking-tight uppercase">Installation Essentials</h2>
+                </div>
+                <p class="max-w-2xl text-sm font-medium leading-7 text-slate-600">To ensure a 100% watertight seal and professional finish, we recommend the following professional tools and substrate treatment for this membrane system.</p>
+              </div>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2">
+              {installationEssentials.map((item: any) => (
+                <div class="group flex flex-col sm:flex-row gap-6 rounded-2xl border border-slate-200 bg-white p-6 transition hover:border-blue-300 hover:shadow-md">
+                  <div class="aspect-square w-full sm:w-32 shrink-0 overflow-hidden rounded-xl border border-slate-100 bg-slate-50 p-2 flex items-center justify-center">
+                    <img src={item.image} alt={item.title} class="h-full w-full object-contain transition group-hover:scale-110" />
+                  </div>
+                  <div class="flex flex-col justify-center">
+                    <h3 class="text-lg font-black text-slate-950">{item.title}</h3>
+                    <p class="mt-2 text-sm font-medium leading-6 text-slate-600">{item.text}</p>
+                    <div class="mt-4 flex items-center gap-2 text-xs font-black uppercase tracking-widest text-blue-700">
+                      <span>Professional Grade</span>
+                      <span class="h-1 w-1 rounded-full bg-blue-300"></span>
+                      <span>Factory Direct</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    {
       (packaging.length > 0 || loadingData.length > 0) && (
         <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
           <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-8">
@@ -879,8 +909,8 @@ const breadcrumbItems = [
                 <g transform="translate(545,35)">
                   <rect x="0" y="0" width="80" height="90" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
                   <circle cx="40" cy="40" r="22" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/>
-                  <text x="40" y="37" text-anchor="middle" fill="#1e40af" font-size="14" font-weight="900">🌍</text>
-                  <text x="40" y="56" text-anchor="middle" fill="#3b82f6" font-size="7" font-weight="700">WORLDWIDE</text>
+                  <text x="40" y="34" text-anchor="middle" fill="#1e40af" font-size="14" font-weight="900">🌍</text>
+                  <text x="40" y="52" text-anchor="middle" fill="#3b82f6" font-size="6" font-weight="800">WORLDWIDE</text>
                   <text x="40" y="100" text-anchor="middle" fill="#64748b" font-size="11" font-weight="700">Delivery</text>
                 </g>
               </svg>
@@ -937,11 +967,11 @@ const breadcrumbItems = [
               <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Supply & Quality Assurance</h2>
             </div>
             <div class="grid gap-6 lg:grid-cols-[1fr_1fr]">
-              <div class="overflow-hidden rounded-2xl border border-slate-200">
-                <img src="/assets/images/app-factory-floor.webp" alt="Tianyuan Waterproof Factory" loading="lazy" class="aspect-[4/3] w-full object-cover" onerror="this.src='/placeholder.webp'; this.onerror=null;" />
+              <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                <img src="/assets/images/app-factory-floor.webp" alt="Tianyuan Waterproof Factory" loading="lazy" class="aspect-[4/3] w-full object-contain" onerror="this.src='/placeholder.webp'; this.onerror=null;" />
               </div>
-              <div class="overflow-hidden rounded-2xl border border-slate-200">
-                <img src="/assets/images/app-production-line.webp" alt="Production Line" loading="lazy" class="aspect-[4/3] w-full object-cover" onerror="this.src='/placeholder.webp'; this.onerror=null;" />
+              <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                <img src="/assets/images/app-production-line.webp" alt="Production Line" loading="lazy" class="aspect-[4/3] w-full object-contain" onerror="this.src='/placeholder.webp'; this.onerror=null;" />
               </div>
             </div>
             <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

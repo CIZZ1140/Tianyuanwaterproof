@@ -5,6 +5,7 @@ category: "bitumen-membranes"
 featured: true
 order: 95
 product_category: "Bitumen Membranes"
+image_fit: "contain"
 image: "/assets/images/app-hero-product.webp"
 main_image: "/assets/images/app-hero-product.webp"
 
@@ -140,7 +141,7 @@ loading_data:
   - label: "Payment Terms"
     value: "T/T 30% advance, 70% against B/L copy (L/C available for established partners)"
   - label: "Port of Loading"
-    value: "Qingdao / Shanghai, China"
+    value: "Qingdao, China"
 
 supply_info:
   - title: "MOQ"
@@ -184,7 +185,14 @@ related_products:
     image: "https://img.tyuanwaterproof.com/products/bitumen-tape.webp"
     href: "/products/self-adhesive-bitumen-tape-wholesale/"
 
-faqs:
+installation_essentials:
+  - title: "Professional Long-Handle Roofing Torch"
+    image: "https://sc02.alicdn.com/kf/A3626840249bf4eb7a8360d74dc3fd43ac.png"
+    text: "Heavy-duty 650mm long-reach handle with safety stand and ergonomic trigger. Designed for high-efficiency torching, ensuring optimal bonding for APP and SBS systems."
+  - title: "TIANYUAN™ Bitumen Primer"
+    image: "https://sc04.alicdn.com/kf/Ac435e6b1b37e45f28f3ef8aa6b2f22b1X.jpg"
+    text: "Tianyuan factory-brand high-adhesion primer. Seals concrete pores and creates an optimal bonding surface for a 100% watertight torch-on connection."
+---
   - question: "What is your MOQ for APP membrane orders?"
     answer: "Standard MOQ is 1,000 sqm per specification. We accept mixed container loading — combine APP with SBS, TPO, or self-adhesive membranes in one shipment. Smaller trial orders negotiable for new partners."
   - question: "How long does delivery take for a container order?"
