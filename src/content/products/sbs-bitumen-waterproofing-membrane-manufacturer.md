@@ -130,9 +130,9 @@ loading_data:
 
 downloads:
   - title: "SBS Product TDS"
-    href: "#"
+    href: "/docs/sbs-waterproofing-membrane-tds.pdf"
   - title: "Installation Manual"
-    href: "#"
+    href: "/docs/sbs-membrane-installation-manual.pdf"
 
 related_products:
   - title: "APP Modified Bitumen Membrane"
