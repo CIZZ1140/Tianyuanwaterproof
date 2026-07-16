@@ -1,30 +1,30 @@
 ---
-title: "Wholesale SBS Modified Bituminous Waterproofing Membrane for Tunnel & Foundation | 2026 Factory Price"
-displayName: "SBS Modified Bituminous Membrane"
+title: "SBS Waterproofing Membrane Manufacturer | 3mm, 4mm & 5mm Options"
+displayName: "SBS Waterproofing Membrane"
 category: "bitumen-membranes"
 product_category: "Bitumen Membranes"
-main_image: "https://img.tyuanwaterproof.com/products/sbs-torch-applied-membrane.webp"
-image: "https://img.tyuanwaterproof.com/products/sbs-torch-applied-membrane.webp"
+main_image: "https://sc04.alicdn.com/kf/A9101beb355814deda9ca338d93ecdedef.jpg"
+image: "https://sc04.alicdn.com/kf/A9101beb355814deda9ca338d93ecdedef.jpg"
 
-hero_description: "TY-SHIELD™ SBS Modified Bituminous Waterproofing Membrane, fully compliant with the latest GB/T 18242-2025 standards. The premier solution for tunnel, roofing, and foundation projects requiring elite low-temperature flexibility (-25°C) and factory-direct wholesale supply."
+hero_description: "Factory-supplied SBS modified bitumen waterproofing membrane in 3mm, 4mm and 5mm options. Available with PY, G and PYG reinforcement, custom surfaces, OEM labels and export packing."
 
 hero_tags:
-  - "SBS Modified"
-  - "-25°C Flexibility"
-  - "GB/T 18242-2025"
   - "3mm / 4mm / 5mm"
   - "PY / G / PYG"
-  - "OEM Available"
+  - "Selected Grades"
+  - "Custom Surfaces"
+  - "OEM Labeling"
+  - "Export Packing"
 
 gallery:
   - image: "https://sc04.alicdn.com/kf/A9101beb355814deda9ca338d93ecdedef.jpg"
     title: "Product Overview"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-surface.webp"
-    title: "Surface Options"
+    title: "Reinforcement Options"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-detail.webp"
-    title: "Material Detail"
+    title: "Surface Selection"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-bulk.webp"
-    title: "Bulk Supply & Packing"
+    title: "Supply & Packing"
 
 spec_table:
   - label: "Product Type"
@@ -143,10 +143,14 @@ related_products:
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
 ---
 
-### High-Performance Elastomeric Waterproofing System
-
-Tianyuan’s **SBS Modified Membrane** is an industrial-grade rubber-modified system engineered for high-movement structures and elite durability.
-
-*   **Extreme Resilience**: Retains rubber-like elasticity at **-25°C**, ensuring zero brittle cracking in arctic or high-altitude engineering projects.
-*   **Crack-Bridging Logic**: Designed for civil infrastructure (metro, tunnels, bridges) subject to constant vibration and substrate settlement stress.
-*   **Supply Assurance**: Direct factory wholesale fully compliant with the latest **GB/T 18242-2025** benchmarks. Available in custom PY/PYG reinforcement to match specific project RFQs.
+### Industrial-Grade Elastomeric Waterproofing
+ 
+Tianyuan’s **SBS Modified Membrane** is a rubber-modified bitumen system engineered for structures subject to high thermal movement and structural expansion.
+ 
+*   **Engineered Resilience**: Retains elastomeric properties in cold climates (available in selected grades to meet project requirements), ensuring reliable sealing for high-altitude or seasonal-temperature infrastructure.
+*   **Structural Compatibility**: Designed for civil engineering (metro, tunnels, foundations) where substrate movement and crack-bridging performance are critical.
+*   **Technical Compliance**: Factory-direct supply produced under GB/T 18242-2025 benchmarks. Available in customizable PY/G/PYG reinforcement options to match project-specific tensile strength requirements.
+ 
+#### Selection Guide: SBS vs. APP
+*   **Choose SBS**: For projects in colder regions or structures with frequent thermal movement/vibration. Its rubber-modified bitumen provides superior fatigue resistance.
+*   **Choose APP**: For high-temperature environments or exposed roofing in tropical climates (see our [APP Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/) for details).
