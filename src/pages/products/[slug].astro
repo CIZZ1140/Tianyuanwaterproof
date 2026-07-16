@@ -78,6 +78,22 @@ function getCardIcon(item: any, fallbackIcons: any[], index: number) {
   return fallbackIcons[index % fallbackIcons.length];
 }
 
+function normalizeGallery(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value.map(item => ({
+    image: normalizeAsset(typeof item === 'string' ? item : (item.image || item.src)),
+    title: item.title || "Product Detail"
+  })).filter(i => i.image);
+}
+
+function getSpecValue(rows: any[], keywords: string[]) {
+  const target = rows.find((row) => {
+    const label = String(row?.label ?? "").toLowerCase();
+    return keywords.some((keyword) => label.includes(keyword.toLowerCase()));
+  });
+  return target?.value ?? "";
+}
+
 export async function getStaticPaths() {
   const products = await getCollection("products");
   return products.map((entry) => ({
@@ -93,6 +109,9 @@ const data = entry.data as any;
 const title = normalizeString(data.displayName || data.title, "Product Detail");
 const productCategory = normalizeString(data.product_category || data.category, "Waterproofing");
 const mainImage = normalizeAsset(data.main_image || data.image);
+const gallery = normalizeGallery(data.gallery || []);
+const initialImage = gallery.length > 0 ? gallery[0].image : mainImage;
+
 const heroTags = data.hero_tags || [];
 const heroDesc = normalizeString(data.hero_description, `Industrial grade ${title} for global B2B supply.`);
 
@@ -111,7 +130,11 @@ const relatedProducts = allProducts
   .filter(p => p.slug !== entry.slug && p.data.category === entry.data.category)
   .slice(0, 4);
 
-const isSbsOrApp = ["sbs-bitumen-waterproofing-membrane-manufacturer", "app-modified-bitumen-waterproofing-membrane-manufacturer"].includes(entry.slug);
+const heroSpecCards = [
+  { label: "Reinforcement Options", value: getSpecValue(specTable, ["reinforcement options"]), icon: Boxes },
+  { label: "Typical Applications", value: getSpecValue(specTable, ["typical applications"]), icon: Factory },
+  { label: "Standard Roll Size", value: getSpecValue(specTable, ["standard roll size"]), icon: Ruler },
+].filter((item) => item.value);
 
 const applicationIcons = [Factory, Box, Truck, Wrench, Droplets, ShieldCheck];
 const benefitIcons = [ShieldCheck, Ruler, Snowflake, Sun];
@@ -120,10 +143,29 @@ const packagingIcons = [Package, Truck, Box, Factory, FileText, FlaskConical];
 
 const hasBody = entry.body && entry.body.replace(/---[\s\S]*?---/, "").trim().length > 0;
 const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.standard && !row.requirement);
+const isSbsOrApp = ["sbs-bitumen-waterproofing-membrane-manufacturer", "app-modified-bitumen-waterproofing-membrane-manufacturer"].includes(entry.slug);
+
+// B2B Schema
+const productJsonLd = {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": title,
+  "image": [mainImage],
+  "description": heroDesc,
+  "brand": { "@type": "Brand", "name": "Tianyuan Waterproof" },
+  "sku": `TY-${entry.slug.toUpperCase()}`,
+  "additionalProperty": specTable.map(row => ({
+    "@type": "PropertyValue",
+    "name": row.label,
+    "value": row.value
+  }))
+};
 ---
 
-<Layout title={`${title} | Tianyuan Waterproof`} description={heroDesc}>
+<Layout title={`${title} | Tianyuan Waterproof`} description={heroDesc} ogImage={mainImage}>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(productJsonLd)} />
   <main class="bg-slate-50 text-slate-950 pb-12">
+    
     <!-- 1. Breadcrumb -->
     <nav class="mx-auto w-full max-w-[1680px] px-4 pt-4 pb-2 sm:px-6 lg:px-8" aria-label="Breadcrumb">
       <ol class="flex flex-wrap items-center gap-1 text-sm font-medium text-slate-500">
@@ -131,34 +173,75 @@ const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.stan
         <li class="mx-1">/</li>
         <li><a href="/products/" class="hover:text-blue-700 transition">Products</a></li>
         <li class="mx-1">/</li>
-        <li class="font-bold text-slate-900">{title}</li>
+        <li><a href={`/categories/${entry.data.category}/`} class="hover:text-blue-700 transition">{productCategory}</a></li>
       </ol>
     </nav>
 
-    <!-- 2. Hero Card -->
+    <!-- 2. Hero Card (100% Layout Match) -->
     <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8 lg:py-8">
       <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-10">
         <div class="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-center">
-          <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 flex items-center justify-center">
-             <img src={mainImage} alt={title} class="max-h-[440px] w-full object-contain" />
-          </div>
+          <!-- Left: Gallery -->
           <div>
-            <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-blue-700">Factory Direct Supply</p>
+            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 flex items-center justify-center relative">
+              <img id="main-product-image" src={initialImage} alt={title} class="max-h-[440px] w-full object-contain transition-opacity duration-300" />
+            </div>
+            {gallery.length > 0 && (
+              <div class="mt-4 grid gap-2 grid-cols-4">
+                {gallery.slice(0, 4).map((item) => (
+                  <button class="gallery-thumb group rounded-2xl border-2 border-slate-200 bg-white shadow-sm transition hover:border-blue-400 overflow-hidden" data-full={item.image}>
+                    <img src={item.image} alt={item.title} class="aspect-[4/3] w-full object-cover" />
+                    <p class="px-1 py-1.5 text-center text-[10px] font-bold text-slate-600 line-clamp-1 group-[.active]:text-blue-700 group-[.active]:bg-blue-50 transition-colors">{item.title}</p>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+          <!-- Right: Text & Actions -->
+          <div>
+            <p class="mb-4 text-[10px] font-black uppercase tracking-[0.3em] text-blue-700">Factory Direct Supply</p>
             <h1 class="text-3xl font-black text-slate-950 sm:text-4xl lg:text-5xl tracking-tight leading-tight">{title}</h1>
             <p class="mt-6 text-base leading-8 text-slate-600 sm:text-lg">{heroDesc}</p>
+            
             <div class="mt-6 flex flex-wrap gap-3">
-              {heroTags.map((tag: string) => <span class="rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-sm font-bold text-blue-800">{tag}</span>)}
+              {heroTags.map((tag: string) => <span class="rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-bold text-blue-800">{tag}</span>)}
             </div>
+
+            {heroSpecCards.length > 0 && (
+              <div class="mt-8 grid gap-4 sm:grid-cols-3">
+                {heroSpecCards.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <div class="rounded-2xl border border-slate-100 bg-slate-50/50 p-4">
+                      <div class="mb-3 flex items-center gap-2 text-blue-700">
+                        <Icon class="h-4 w-4" /><p class="text-[9px] font-black uppercase tracking-widest opacity-60">{item.label}</p>
+                      </div>
+                      <p class="text-sm font-bold text-slate-950 leading-relaxed">{item.value}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
             <div class="mt-10 flex flex-col items-center gap-3 sm:flex-row">
               <a href="/contact/" class="inline-flex w-full items-center justify-center rounded-xl bg-blue-700 px-10 py-3.5 text-sm font-black text-white shadow-xl shadow-blue-700/20 transition hover:bg-blue-800 sm:w-auto">Get Factory Quote</a>
-              <a href="https://wa.me/8615263640998" target="_blank" class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-emerald-100 bg-emerald-50 px-8 py-3.5 text-sm font-black text-emerald-700 transition hover:bg-emerald-100 sm:w-auto">Chat on WhatsApp</a>
+              <a href="https://wa.me/8615263640998" target="_blank" class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-emerald-100 bg-emerald-50 px-8 py-3.5 text-sm font-black text-emerald-700 transition hover:bg-emerald-100 sm:w-auto"><MessageCircle class="h-4 w-4" /> Chat on WhatsApp</a>
+              <a href="/contact/" class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-blue-100 bg-blue-50 px-8 py-3.5 text-sm font-black text-blue-700 transition hover:bg-blue-100 sm:w-auto"><FileText class="h-4 w-4" /> Request TDS</a>
+            </div>
+            
+            <p class="mt-4 text-[11px] font-medium text-slate-400 italic">For a project-specific quote, send your membrane thickness, reinforcement, surface finish, application, and destination port.</p>
+
+            <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-[10px] font-black uppercase tracking-widest text-slate-400 border-t border-slate-100 pt-6">
+              <span class="flex items-center gap-2"><Factory class="h-3.5 w-3.5" /> Factory Direct Supply</span>
+              <span class="flex items-center gap-2"><ShieldCheck class="h-3.5 w-3.5" /> OEM Private Label</span>
+              <span class="flex items-center gap-2"><FileText class="h-3.5 w-3.5" /> Technical Document Support</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3. Full Width Sections -->
+    <!-- 3. Modular Sections (Full Width) -->
     <div class="mx-auto w-full max-w-[1680px] space-y-4 px-4 sm:px-6 lg:px-8">
       
       <!-- Applications -->
@@ -171,8 +254,8 @@ const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.stan
               return (
                 <article class="rounded-2xl border border-slate-100 bg-slate-50/50 p-6 transition hover:shadow-md">
                   <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-white text-blue-700 shadow-sm border border-blue-50"><Icon class="h-6 w-6" /></div>
-                  <h3 class="text-sm font-black text-slate-950 mb-2">{item.title}</h3>
-                  <p class="text-xs font-medium leading-relaxed text-slate-500">{item.text}</p>
+                  <h3 class="text-sm font-black text-slate-950 mb-2 leading-snug">{item.title}</h3>
+                  <p class="text-[11px] font-medium leading-relaxed text-slate-500">{item.text}</p>
                 </article>
               );
             })}
@@ -190,7 +273,7 @@ const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.stan
               return (
                 <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm border-l-4 border-l-blue-600">
                   <Icon class="mb-5 h-8 w-8 text-blue-700" />
-                  <h3 class="text-base font-black text-slate-950 mb-3">{item.title}</h3>
+                  <h3 class="text-base font-black text-slate-950 mb-3 leading-snug">{item.title}</h3>
                   <p class="text-sm font-medium leading-7 text-slate-600">{item.text}</p>
                 </article>
               );
@@ -203,7 +286,7 @@ const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.stan
       {technicalData.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 flex items-center gap-3"><FlaskConical class="text-blue-600" /> Technical Specifications</h2>
-          <div class="overflow-x-auto rounded-2xl border border-slate-200">
+          <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
             <table class="w-full text-left text-sm border-collapse">
               <thead class="bg-slate-50">
                 <tr class="border-b border-slate-200">
@@ -216,17 +299,18 @@ const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.stan
               </thead>
               <tbody class="divide-y divide-slate-100">
                 {technicalData.map(row => (
-                  <tr class="hover:bg-blue-50/30 transition-colors">
+                  <tr class="hover:bg-blue-50/20 transition-colors">
                     <td class="px-6 py-4 font-bold text-slate-800">{row.label}</td>
-                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600">{row.unit}</td>}
-                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600">{row.standard}</td>}
-                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600">{row.requirement}</td>}
-                    <td class="px-6 py-4 font-bold text-slate-900">{row.value}</td>
+                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.unit || "—"}</td>}
+                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.standard || "—"}</td>}
+                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.requirement || "—"}</td>}
+                    <td class="px-6 py-4 font-bold text-slate-900">{row.value || "Passed"}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+          <p class="mt-4 flex gap-2 text-[11px] font-medium text-slate-400"><FileText class="h-3.5 w-3.5 text-blue-600" /> The above values are typical reference values from laboratory tests and do not constitute a warranty. Full TDS is available on request.</p>
         </section>
       )}
 
@@ -240,8 +324,8 @@ const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.stan
               return (
                 <article class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
                   <Icon class="mb-5 h-8 w-8 text-blue-700" />
-                  <h3 class="text-sm font-black uppercase text-slate-950 mb-3">{item.title}</h3>
-                  <p class="text-sm font-medium leading-relaxed text-slate-600">{item.text}</p>
+                  <h3 class="text-sm font-black uppercase text-slate-950 mb-3 leading-snug">{item.title}</h3>
+                  <p class="text-xs font-medium leading-relaxed text-slate-600">{item.text}</p>
                 </article>
               );
             })}
@@ -260,21 +344,21 @@ const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.stan
                 return (
                   <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
                     <Icon class="mb-4 h-6 w-6 text-blue-700" />
-                    <h3 class="text-xs font-black uppercase text-slate-950 mb-2">{item.title}</h3>
+                    <h3 class="text-[10px] font-black uppercase text-slate-950 mb-2 tracking-wide">{item.title}</h3>
                     <p class="text-[11px] font-medium leading-relaxed text-slate-500">{item.text}</p>
                   </div>
                 );
               })}
             </div>
             {loadingData.length > 0 && (
-              <div class="overflow-hidden rounded-2xl border border-blue-200 bg-white">
+              <div class="overflow-hidden rounded-2xl border border-blue-200 bg-white shadow-sm">
                 <div class="bg-blue-700 px-6 py-4 text-white flex items-center gap-3">
                   <Truck class="h-5 w-5" />
-                  <span class="text-sm font-black uppercase tracking-widest">Export Loading Reference</span>
+                  <span class="text-xs font-black uppercase tracking-[0.2em]">Export Loading Reference</span>
                 </div>
                 <div class="divide-y divide-slate-100">
                   {loadingData.map(row => (
-                    <div class="grid grid-cols-[0.4fr_0.6fr] px-6 py-4 text-sm">
+                    <div class="grid grid-cols-[0.4fr_0.6fr] px-6 py-4 text-sm transition hover:bg-blue-50/30">
                       <div class="font-black text-blue-800">{row.label}</div>
                       <div class="font-medium text-slate-600">{row.value}</div>
                     </div>
@@ -304,30 +388,33 @@ const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.stan
 
       <!-- Bottom Split: Downloads & Related -->
       <div class="grid gap-4 lg:grid-cols-2">
-        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 mb-6 uppercase">Downloads</h2>
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 mb-8 uppercase tracking-tight">Technical Downloads</h2>
           <div class="space-y-3">
             {downloads.map((doc: any) => (
-              <div class="flex items-center justify-between p-4 rounded-2xl border border-slate-100 bg-slate-50/50">
+              <div class="flex items-center justify-between p-5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-md transition-all">
                 <div class="flex items-center gap-4">
-                  <div class="h-10 w-10 flex items-center justify-center rounded-xl bg-red-50 text-red-600"><FileText size={20} /></div>
-                  <h3 class="text-sm font-black text-slate-900">{doc.title}</h3>
+                  <div class="h-10 w-10 flex items-center justify-center rounded-xl bg-red-50 text-red-600 shadow-inner"><FileText size={20} /></div>
+                  <div>
+                    <h3 class="text-sm font-black text-slate-900 leading-tight">{doc.title}</h3>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Ready for PDF Request</p>
+                  </div>
                 </div>
-                <a href="/contact/" class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:bg-slate-50 transition">Request</a>
+                <a href="/contact/" class="px-5 py-2 rounded-xl bg-white border border-slate-200 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:border-blue-300 hover:text-blue-700 transition shadow-sm">Request</a>
               </div>
             ))}
           </div>
         </section>
 
-        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 mb-6 uppercase">Related Products</h2>
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 mb-8 uppercase tracking-tight">Related Systems</h2>
           <div class="grid grid-cols-2 gap-4">
             {relatedProducts.map(rp => (
               <a href={`/products/${rp.slug}/`} class="group flex flex-col gap-3">
-                <div class="aspect-video overflow-hidden rounded-xl bg-slate-100 border border-slate-200">
-                  <img src={normalizeAsset(rp.data.main_image || rp.data.image)} class="h-full w-full object-cover transition group-hover:scale-105" alt={rp.data.title} />
+                <div class="aspect-video overflow-hidden rounded-2xl bg-slate-100 border border-slate-200">
+                  <img src={normalizeAsset(rp.data.main_image || rp.data.image)} class="h-full w-full object-cover transition duration-500 group-hover:scale-110" alt={rp.data.title} />
                 </div>
-                <h4 class="text-xs font-black text-slate-900 line-clamp-1 group-hover:text-blue-700">{rp.data.displayName || rp.data.title}</h4>
+                <h4 class="text-xs font-black text-slate-900 line-clamp-1 group-hover:text-blue-700 transition-colors">{rp.data.displayName || rp.data.title}</h4>
               </a>
             ))}
           </div>
@@ -339,5 +426,35 @@ const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.stan
     <div class="mt-12">
       <CTA />
     </div>
+
+    <!-- Gallery Switcher Script -->
+    <script>
+      const mainImg = document.getElementById('main-product-image') as HTMLImageElement;
+      const thumbs = document.querySelectorAll('.gallery-thumb');
+
+      if (mainImg && thumbs.length > 0) {
+        thumbs[0].classList.add('active');
+        
+        thumbs.forEach(thumb => {
+          const handleSwitch = () => {
+            const newSrc = thumb.getAttribute('data-full');
+            if (newSrc && mainImg.src !== newSrc) {
+              thumbs.forEach(t => t.classList.remove('active'));
+              thumb.classList.add('active');
+              mainImg.style.opacity = '0';
+              setTimeout(() => {
+                mainImg.src = newSrc;
+                mainImg.style.opacity = '1';
+              }, 200);
+            }
+          };
+          thumb.addEventListener('click', handleSwitch);
+          thumb.addEventListener('mouseenter', handleSwitch);
+        });
+      }
+    </script>
+    <style>
+      .gallery-thumb.active { border-color: #3b82f6; background-color: #eff6ff; }
+    </script>
   </main>
 </Layout>
