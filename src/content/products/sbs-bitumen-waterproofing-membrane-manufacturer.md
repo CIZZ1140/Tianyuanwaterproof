@@ -17,7 +17,7 @@ hero_tags:
   - "Export Packing"
 
 gallery:
-  - image: "https://sc04.alicdn.com/kf/A9101beb355814deda9ca338d93ecdedef.jpg"
+  - image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.jpg"
     title: "Product Overview"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-surface.webp"
     title: "Reinforcement Options"
@@ -154,3 +154,4 @@ Tianyuan’s **SBS Modified Membrane** is a rubber-modified bitumen system engin
 #### Selection Guide: SBS vs. APP
 *   **Choose SBS**: For projects in colder regions or structures with frequent thermal movement/vibration. Its rubber-modified bitumen provides superior fatigue resistance.
 *   **Choose APP**: For high-temperature environments or exposed roofing in tropical climates (see our [APP Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/) for details).
+).
