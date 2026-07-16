@@ -30,6 +30,7 @@ import {
   Waves,
   Wrench,
   Snowflake,
+  Clock3,
 } from "lucide-astro";
 
 function normalizeAsset(value: any) {
@@ -193,7 +194,7 @@ const productJsonLd = {
                     <div class="aspect-[4/3] w-full bg-slate-50 p-1 flex items-center justify-center border-b border-slate-100">
                       <img src={item.image} alt={item.title} class="h-full w-full object-contain transition group-hover:scale-105" />
                     </div>
-                    <div class="flex items-center justify-center px-1.5 py-2.5 min-h-[48px] bg-white group-[.active]:bg-blue-50/50">
+                    <div class="flex items-center justify-center px-1.5 py-2.5 min-height-[48px] bg-white group-[.active]:bg-blue-50/50">
                       <p class="text-center text-[11px] font-black leading-tight text-slate-700 group-[.active]:text-blue-700 transition-colors uppercase tracking-tight">{item.title}</p>
                     </div>
                   </button>
@@ -248,7 +249,7 @@ const productJsonLd = {
     <!-- 3. Full Width Modular Blocks -->
     <div class="mx-auto w-full max-w-[1680px] space-y-4 px-4 sm:px-6 lg:px-8">
       
-      <!-- MOVED UP: Product Overview Content -->
+      <!-- Product Overview Content -->
       {hasBody && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-12 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-10 uppercase tracking-tight">Product Overview</h2>
@@ -271,10 +272,10 @@ const productJsonLd = {
             {applications.slice(0, 5).map((item, index) => {
               const Icon = getCardIcon(item, applicationIcons, index);
               return (
-                <article class="rounded-2xl border border-slate-100 bg-slate-50/50 p-6">
+                <article class="rounded-2xl border border-slate-100 bg-slate-50/50 p-6 transition hover:shadow-md">
                   <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-white text-blue-700 shadow-sm border border-blue-50"><Icon class="h-6 w-6" /></div>
                   <h3 class="text-sm font-black text-slate-950 mb-2">{item.title}</h3>
-                  <p class="text-[11px] font-medium leading-relaxed text-slate-500">{item.text}</p>
+                  <p class="text-sm font-medium leading-relaxed text-slate-600">{item.text}</p>
                 </article>
               );
             })}
@@ -339,8 +340,8 @@ const productJsonLd = {
               return (
                 <article class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
                   <Icon class="mb-5 h-8 w-8 text-blue-700" />
-                  <h3 class="text-sm font-black uppercase text-slate-950 mb-3 leading-snug">{item.title}</h3>
-                  <p class="text-xs font-medium leading-relaxed text-slate-600">{item.text}</p>
+                  <h3 class="text-sm font-black uppercase text-slate-950 mb-3">{item.title}</h3>
+                  <p class="text-sm font-medium leading-relaxed text-slate-600">{item.text}</p>
                 </article>
               );
             })}
@@ -359,8 +360,8 @@ const productJsonLd = {
                   return (
                     <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 transition hover:bg-white hover:shadow-md">
                       <Icon class="mb-4 h-6 w-6 text-blue-700" />
-                      <h3 class="text-[10px] font-black uppercase text-slate-950 mb-2 tracking-wide">{item.title}</h3>
-                      <p class="text-[11px] font-medium leading-relaxed text-slate-500">{item.text}</p>
+                      <h3 class="text-[10px] font-black uppercase text-slate-950 mb-2">{item.title}</h3>
+                      <p class="text-sm font-medium leading-relaxed text-slate-600">{item.text}</p>
                     </div>
                   );
                 })}
@@ -399,7 +400,7 @@ const productJsonLd = {
                     <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Ready for PDF Request</p>
                   </div>
                 </div>
-                <a href="/contact/" class="px-5 py-2 rounded-xl bg-white border border-slate-200 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:text-blue-700 transition shadow-sm">Request</a>
+                <a href="/contact/" class="px-5 py-2 rounded-xl bg-white border border-slate-200 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:border-blue-300 hover:text-blue-700 transition shadow-sm">Request</a>
               </div>
             ))}
           </div>
