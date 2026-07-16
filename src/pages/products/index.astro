@@ -1,6 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-const { getCollection } = await import("astro:content");
+import { getCollection } from "astro:content";
 
 function normalizeAsset(value: any) {
   if (!value) return "";
