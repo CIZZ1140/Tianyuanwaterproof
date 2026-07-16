@@ -3,8 +3,8 @@ title: "SBS Waterproofing Membrane Manufacturer | 3mm, 4mm & 5mm Options"
 displayName: "SBS Waterproofing Membrane"
 category: "bitumen-membranes"
 product_category: "Bitumen Membranes"
-main_image: "https://sc04.alicdn.com/kf/A9101beb355814deda9ca338d93ecdedef.jpg"
-image: "https://sc04.alicdn.com/kf/A9101beb355814deda9ca338d93ecdedef.jpg"
+main_image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
+image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 
 hero_description: "Factory-supplied SBS modified bitumen waterproofing membrane in 3mm, 4mm and 5mm options. Available with PY, G and PYG reinforcement, custom surfaces, OEM labels and export packing."
 
@@ -17,7 +17,7 @@ hero_tags:
   - "Export Packing"
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.jpg"
+  - image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
     title: "Product Overview"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-surface.webp"
     title: "Reinforcement Options"
@@ -154,4 +154,3 @@ Tianyuan’s **SBS Modified Membrane** is a rubber-modified bitumen system engin
 #### Selection Guide: SBS vs. APP
 *   **Choose SBS**: For projects in colder regions or structures with frequent thermal movement/vibration. Its rubber-modified bitumen provides superior fatigue resistance.
 *   **Choose APP**: For high-temperature environments or exposed roofing in tropical climates (see our [APP Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/) for details).
-).
