@@ -121,7 +121,7 @@ const features = normalizeCards(data.features || data.key_benefits || []);
 const applications = normalizeCards(data.applications || []);
 const technicalData = normalizeRows(data.technical_data || []);
 const applicationGuide = normalizeCards(data.application_guide || []);
-const packaging = normalizeCards(data.packaging || []);
+const packaging = normalizeCards(data.packaging || data.packaging_oem || data.oem_packaging || []);
 const loadingData = normalizeRows(data.loading_data || []);
 const downloads = (data.downloads || []).filter((d: any) => d.title);
 
@@ -193,7 +193,7 @@ const productJsonLd = {
                     <div class="aspect-[4/3] w-full bg-slate-50 p-1 flex items-center justify-center border-b border-slate-100">
                       <img src={item.image} alt={item.title} class="h-full w-full object-contain transition group-hover:scale-105" />
                     </div>
-                    <div class="flex items-center justify-center px-1.5 py-2.5 min-height-[48px] bg-white group-[.active]:bg-blue-50/50">
+                    <div class="flex items-center justify-center px-1.5 py-2.5 min-h-[48px] bg-white group-[.active]:bg-blue-50/50">
                       <p class="text-center text-[11px] font-black leading-tight text-slate-700 group-[.active]:text-blue-700 transition-colors uppercase tracking-tight">{item.title}</p>
                     </div>
                   </button>
@@ -351,19 +351,21 @@ const productJsonLd = {
       {(packaging.length > 0 || loadingData.length > 0) && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Packaging & OEM</h2>
-          <div class="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
-            <div class="grid gap-4 sm:grid-cols-2">
-              {packaging.slice(0, 4).map((item, index) => {
-                const Icon = packagingIcons[index % packagingIcons.length];
-                return (
-                  <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
-                    <Icon class="mb-4 h-6 w-6 text-blue-700" />
-                    <h3 class="text-[10px] font-black uppercase text-slate-950 mb-2">{item.title}</h3>
-                    <p class="text-[11px] font-medium leading-relaxed text-slate-500">{item.text}</p>
-                  </div>
-                );
-              })}
-            </div>
+          <div class={packaging.length > 0 ? "grid gap-8 lg:grid-cols-[0.8fr_1.2fr]" : "block"}>
+            {packaging.length > 0 && (
+              <div class="grid gap-4 sm:grid-cols-2">
+                {packaging.slice(0, 4).map((item, index) => {
+                  const Icon = packagingIcons[index % packagingIcons.length];
+                  return (
+                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 transition hover:bg-white hover:shadow-md">
+                      <Icon class="mb-4 h-6 w-6 text-blue-700" />
+                      <h3 class="text-[10px] font-black uppercase text-slate-950 mb-2 tracking-wide">{item.title}</h3>
+                      <p class="text-[11px] font-medium leading-relaxed text-slate-500">{item.text}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
             {loadingData.length > 0 && (
               <div class="overflow-hidden rounded-2xl border border-blue-200 bg-white shadow-sm">
                 <div class="bg-blue-700 px-6 py-4 text-white flex items-center gap-3">
@@ -407,8 +409,8 @@ const productJsonLd = {
           <div class="grid grid-cols-2 gap-4">
             {relatedProducts.map(rp => (
               <a href={`/products/${rp.slug}/`} class="group flex flex-col gap-3">
-                <div class="aspect-video overflow-hidden rounded-xl bg-slate-100 border border-slate-200">
-                  <img src={normalizeAsset(rp.data.main_image || rp.data.image)} class="h-full w-full object-cover transition group-hover:scale-105" alt={rp.data.title} />
+                <div class="aspect-video overflow-hidden rounded-2xl bg-slate-100 border border-slate-200">
+                  <img src={normalizeAsset(rp.data.main_image || rp.data.image)} class="h-full w-full object-cover transition duration-500 group-hover:scale-105" alt={rp.data.title} />
                 </div>
                 <h4 class="text-xs font-black text-slate-900 line-clamp-1 group-hover:text-blue-700 transition-colors">{rp.data.displayName || rp.data.title}</h4>
               </a>
