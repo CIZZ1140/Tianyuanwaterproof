@@ -19,11 +19,11 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/sbs-torch-applied-membrane.webp"
     title: "Product Overview"
-  - image: "https://img.tyuanwaterproof.com/products/bitumen-membrane-surface.webp"
+  - image: "https://img.tyuanwaterproof.com/products/bitumen-membrane-surface.jpg"
     title: "Surface Options"
-  - image: "https://img.tyuanwaterproof.com/products/sbs-membrane-material.webp"
+  - image: "https://img.tyuanwaterproof.com/products/sbs-membrane-material.jpg"
     title: "Material Detail"
-  - image: "https://img.tyuanwaterproof.com/products/bitumen-membrane-loading.webp"
+  - image: "https://img.tyuanwaterproof.com/products/bitumen-membrane-loading.jpg"
     title: "Bulk Supply & Packing"
 
 spec_table:
