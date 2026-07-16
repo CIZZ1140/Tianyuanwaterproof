@@ -30,44 +30,90 @@ import {
   Waves,
   Wrench,
   Snowflake,
-  Clock3,
 } from "lucide-astro";
 
 function normalizeAsset(value: any) {
   if (!value) return "";
   if (typeof value === "string") return value;
-  return value?.src || value?.url || "";
+  if (typeof value?.src === "string") return value.src;
+  if (typeof value?.url === "string") return value.url;
+  return "";
 }
 
 function normalizeString(value: any, fallback = "") {
-  return (typeof value === "string" && value.trim()) ? value.trim() : fallback;
+  if (typeof value === "string" && value.trim()) return value.trim();
+  if (typeof value === "number") return String(value);
+  return fallback;
+}
+
+function normalizeTagList(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (!item) return "";
+      if (typeof item === "string") return item;
+      return item.title ?? item.label ?? item.name ?? item.value ?? "";
+    })
+    .map((item) => String(item).trim())
+    .filter(Boolean);
 }
 
 function normalizeRows(value: any) {
   if (!Array.isArray(value)) return [];
-  return value.map(item => ({
-    label: item?.label || item?.name || "",
-    value: item?.value || item?.result || "",
-    unit: item?.unit || ""
-  })).filter(i => i.label);
+  return value
+    .map((item) => {
+      if (!item) return null;
+      if (typeof item === "string") return { label: item, value: "", unit: "", standard: "", requirement: "" };
+      return {
+        label: item.label ?? item.name ?? item.item ?? item.title ?? item.test_item ?? "",
+        value: item.value ?? item.result ?? item.notes ?? item.detail ?? item.text ?? "",
+        unit: item.unit ?? "",
+        standard: item.standard ?? item.test_standard ?? item.testMethod ?? item.test_method ?? item.method ?? "",
+        requirement: item.requirement ?? item.class ?? item.requirement_class ?? item.requirement_or_class ?? "",
+      };
+    })
+    .filter((item) => item && (item.label || item.value));
 }
 
 function normalizeCards(value: any) {
   if (!Array.isArray(value)) return [];
-  return value.map(item => ({
-    title: item?.title || item?.label || "",
-    text: item?.text || item?.description || "",
-    image: normalizeAsset(item?.image),
-    icon: item?.icon || ""
-  })).filter(i => i.title || i.text);
+  return value
+    .map((item) => {
+      if (!item) return null;
+      if (typeof item === "string") return { title: item, text: "", image: "", href: "" };
+      return {
+        title: item.title ?? item.label ?? item.name ?? "",
+        text: item.text ?? item.description ?? item.value ?? item.detail ?? "",
+        image: normalizeAsset(item.image ?? item.main_image ?? item.img),
+        icon: item.icon ?? "",
+        href: item.href ?? item.url ?? item.link ?? "",
+      };
+    })
+    .filter((item) => item && (item.title || item.text || item.image));
 }
 
 const ICON_MAP: Record<string, any> = {
-  box: Box, boxes: Boxes, building: Building2, clipboard: ClipboardCheck,
-  droplets: Droplets, factory: Factory, flame: Flame, flask: FlaskConical,
-  hammer: Hammer, layers: Layers, leaf: Leaf, package: Package,
-  ruler: Ruler, shield: ShieldCheck, sun: Sun, snowflake: Snowflake,
-  traintrack: TrainTrack, truck: Truck, warehouse: Warehouse, waves: Waves, wrench: Wrench,
+  box: Box,
+  boxes: Boxes,
+  building: Building2,
+  clipboard: ClipboardCheck,
+  droplets: Droplets,
+  factory: Factory,
+  flame: Flame,
+  flask: FlaskConical,
+  hammer: Hammer,
+  layers: Layers,
+  leaf: Leaf,
+  package: Package,
+  ruler: Ruler,
+  shield: ShieldCheck,
+  sun: Sun,
+  snowflake: Snowflake,
+  traintrack: TrainTrack,
+  truck: Truck,
+  warehouse: Warehouse,
+  waves: Waves,
+  wrench: Wrench,
 };
 
 function getCardIcon(item: any, fallbackIcons: any[], index: number) {
@@ -77,73 +123,165 @@ function getCardIcon(item: any, fallbackIcons: any[], index: number) {
   return fallbackIcons[index % fallbackIcons.length];
 }
 
+function normalizeApplicationGuide(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item, index) => {
+      if (!item) return null;
+      if (typeof item === "string") {
+        return { title: `Step ${index + 1}`, text: item, image: "", href: "" };
+      }
+      return {
+        title: item.title ?? item.label ?? item.name ?? `Step ${index + 1}`,
+        text: item.text ?? item.description ?? item.value ?? item.detail ?? "",
+        image: normalizeAsset(item.image ?? item.main_image ?? item.img),
+        href: item.href ?? item.url ?? item.link ?? "",
+      };
+    })
+    .filter((item) => item && (item.title || item.text));
+}
+
+function normalizeGallery(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (!item) return null;
+      if (typeof item === "string") return { image: item, title: "Product Detail" };
+      return {
+        image: normalizeAsset(item.image ?? item.src ?? item.url),
+        title: item.title ?? item.label ?? item.name ?? "Product Detail",
+      };
+    })
+    .filter((item) => item && item.image);
+}
+
+function normalizeDownloads(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (!item) return null;
+      if (typeof item === "string") return { title: item, description: "", type: "PDF", href: "" };
+      return {
+        title: item.title ?? item.label ?? item.name ?? "Technical Document",
+        description: item.description ?? item.text ?? item.detail ?? "",
+        type: item.type ?? item.format ?? "PDF",
+        href: item.href ?? item.url ?? item.file ?? "",
+      };
+    })
+    .filter((item) => item && item.title);
+}
+
+function normalizeRelatedProducts(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (!item) return null;
+      return {
+        title: item.title ?? item.name ?? "",
+        description: item.description ?? item.text ?? item.summary ?? "",
+        image: normalizeAsset(item.image ?? item.main_image ?? item.img),
+        href: item.href ?? item.url ?? item.link ?? "#",
+      };
+    })
+    .filter((item) => item && item.title);
+}
+
+function normalizeFaqs(value: any) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (!item) return null;
+      return {
+        question: item.question ?? item.title ?? item.q ?? "",
+        answer: item.answer ?? item.text ?? item.a ?? "",
+      };
+    })
+    .filter((item) => item && item.question);
+}
+
+function getSpecValue(rows: any[], keywords: string[]) {
+  const target = rows.find((row) => {
+    const label = String(row?.label ?? "").toLowerCase();
+    return keywords.some((keyword) => label.includes(keyword.toLowerCase()));
+  });
+  return target?.value ?? "";
+}
+
+function buildFallbackHeroTags(specTable: any[]) {
+  return [
+    getSpecValue(specTable, ["standard"]),
+    getSpecValue(specTable, ["thickness", "thick"]),
+    getSpecValue(specTable, ["width"]),
+    getSpecValue(specTable, ["application method", "method"])
+  ].map(i => String(i).trim()).filter(Boolean).slice(0, 6);
+}
+
 export async function getStaticPaths() {
   const products = await getCollection("products");
   return products.map((entry) => ({
-    params: { slug: (entry.slug || entry.id).replace(/\.mdx?$/, "") },
+    params: { slug: (entry?.slug ?? entry?.id ?? "").replace(/\.mdx?$/, "").replace(/\/index$/, "") },
     props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
-const data = entry.data as any;
+const data = (entry.data ?? {}) as Record<string, any>;
 
-const title = normalizeString(data.displayName || data.title, "Product Detail");
-const productCategory = normalizeString(data.product_category || data.category, "Waterproofing");
-const specTable = normalizeRows(data.spec_table || []);
-const quickFacts = normalizeCards(data.quick_facts || []);
-const applications = normalizeCards(data.applications || []);
-const downloads = (data.downloads || []).filter((d: any) => d.title);
-const mainImage = normalizeAsset(data.main_image || data.image);
-const heroTags = data.hero_tags || [];
-const heroDesc = normalizeString(data.hero_description, `Industrial grade ${title} for global B2B supply.`);
+const title = normalizeString(data.title, "Product Details");
+const pageTitle = title.length > 60 ? title : `${title} | TY-SHIELD™`;
+const productCategory = normalizeString(data.product_category ?? data.category, "Waterproofing Membrane");
+const mainImage = normalizeAsset(data.main_image);
+const gallery = normalizeGallery(data.gallery ?? []);
+const initialImage = gallery.length > 0 ? gallery[0].image : mainImage;
+const specTable = normalizeRows(data.spec_table ?? []);
+const quickFacts = normalizeCards(data.quick_facts ?? data.quickFacts ?? []);
+const features = normalizeCards(data.features ?? []);
+const applications = normalizeCards(data.applications ?? data.application ?? data.application_areas ?? []);
+const technicalData = normalizeRows(data.technical_data ?? data.technicalData ?? []);
+const packaging = normalizeCards(data.packaging ?? []);
+const loadingData = normalizeRows(data.loading_data ?? []);
+const downloads = normalizeDownloads(data.downloads ?? []);
+
+const heroTags = normalizeTagList(data.hero_tags ?? []).length > 0 ? normalizeTagList(data.hero_tags ?? []) : buildFallbackHeroTags(specTable);
+const heroDescription = normalizeString(data.hero_description ?? data.short_description, `Factory supplied ${title.toLowerCase()} for B2B global supply.`);
 const contactHref = "/contact/";
 const whatsappHref = "https://wa.me/8615263640998";
-
-// SEO & Meta Enhancement
-const seoTitle = data.seo_title || `${title} | Professional B2B Supply | Tianyuan Waterproof`;
-const seoDesc = data.meta_description || heroDesc;
-
-// Sidebar Logic
-const allProducts = await getCollection("products");
-const relatedProducts = allProducts
-  .filter(p => p.slug !== entry.slug && p.data.category === entry.data.category)
-  .slice(0, 4);
-
-const isSbsOrApp = ["sbs-bitumen-waterproofing-membrane-manufacturer", "app-modified-bitumen-waterproofing-membrane-manufacturer"].includes(entry.slug);
-const applicationIcons = [Factory, Box, Truck, Wrench, Droplets, ShieldCheck];
-const packaging = normalizeCards(data.packaging || []);
-const loadingData = normalizeRows(data.loading_data || []);
-const packagingIcons = [Package, Truck, Box, Factory, FileText, FlaskConical];
-
-const hasOverview = (entry.body && entry.body.trim().length > 0) || quickFacts.length > 0;
 const isRealFile = (url: string) => url && url !== "#" && (url.startsWith("http") || url.startsWith("/assets/") || url.endsWith(".pdf"));
 
-// --- B2B SEO / GEO ENGINE INJECTION ---
+const heroSpecCards = [
+  { label: "Reinforcement Options", value: getSpecValue(specTable, ["reinforcement options"]), icon: Boxes },
+  { label: "Typical Applications", value: getSpecValue(specTable, ["typical applications"]), icon: Factory },
+  { label: "Standard Roll Size", value: getSpecValue(specTable, ["standard roll size"]), icon: Ruler },
+].filter((item) => item.value);
 
-// 1. Enhanced Product JSON-LD
+const rawBody = typeof entry.body === "string" ? entry.body : "";
+const hasBody = rawBody.trim().length > 0;
+const hasOverview = hasBody || quickFacts.length > 0;
+const primaryDownload = downloads.find((item) => item.href && item.title.toLowerCase().includes("tds")) ?? downloads.find((item) => item.href);
+
+const applicationIcons = [Factory, Box, Truck, Wrench, Droplets, ShieldCheck];
+const benefitIcons = [ShieldCheck, Ruler, Snowflake, Sun];
+const installationIcons = [Hammer, Droplets, Ruler, Flame, Package, ClipboardCheck];
+const packagingIcons = [Package, Truck, Box, Factory, FileText, FlaskConical];
+
+const isSbsOrApp = ["sbs-bitumen-waterproofing-membrane-manufacturer", "app-modified-bitumen-waterproofing-membrane-manufacturer"].includes(entry.slug);
+
+// --- B2B SEO / GEO ENGINE INJECTION (Hidden) ---
 const productJsonLd = {
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": title,
   "image": [mainImage],
-  "description": seoDesc,
+  "description": heroDescription,
   "brand": { "@type": "Brand", "name": "Tianyuan Waterproof" },
   "sku": `TY-${entry.slug.toUpperCase()}`,
-  "manufacturer": {
-    "@type": "Organization",
-    "name": "Weifang Tianyuan Waterproof Material Co., Ltd.",
-    "url": "https://www.tyuanwaterproof.com"
-  },
   "additionalProperty": specTable.map(row => ({
     "@type": "PropertyValue",
     "name": row.label,
     "value": row.value
   }))
 };
-
-// 2. FAQ Schema Logic
 const faqs = Array.isArray(data.faqs) ? data.faqs : [];
 const faqJsonLd = faqs.length > 0 ? {
   "@context": "https://schema.org",
@@ -156,146 +294,128 @@ const faqJsonLd = faqs.length > 0 ? {
 } : null;
 ---
 
-<Layout title={seoTitle} description={seoDesc} ogImage={mainImage}>
+<Layout title={pageTitle} description={heroDescription} ogImage={mainImage}>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(productJsonLd)} />
   {faqJsonLd && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqJsonLd)} />}
 
-  <main class="bg-[#F8FAFC]">
-    <!-- Hero Header -->
-    <section class="bg-[#0E2A47] pt-12 pb-16 text-white border-b border-white/5">
-      <div class="mx-auto max-w-[1680px] px-4 sm:px-6 lg:px-8">
-        <nav class="mb-8 flex items-center gap-2 text-sm font-medium text-slate-400">
-          <a href="/" class="hover:text-white transition">Home</a>
-          <span>/</span>
-          <a href="/products/" class="hover:text-white transition">Products</a>
-          <span>/</span>
-          <span class="text-white">{title}</span>
-        </nav>
+  <main class="bg-slate-50 text-slate-950 pb-12">
+    <!-- 1. Breadcrumb -->
+    <nav class="mx-auto w-full max-w-[1680px] px-4 pt-4 pb-2 sm:px-6 lg:px-8" aria-label="Breadcrumb">
+      <ol class="flex flex-wrap items-center gap-1 text-sm font-medium text-slate-500">
+        <li><a href="/" class="hover:text-blue-700 transition">Home</a></li>
+        <li class="mx-1">/</li>
+        <li><a href="/products/" class="hover:text-blue-700 transition">Products</a></li>
+        <li class="mx-1">/</li>
+        <li class="font-bold text-slate-900">{title}</li>
+      </ol>
+    </nav>
 
-        <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
-          <div class="aspect-square overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-2 backdrop-blur-sm relative group">
-              <img src={mainImage} alt={title} class="h-full w-full object-cover rounded-2xl shadow-2xl transition duration-500 group-hover:scale-105" />
-          </div>
+    <!-- 2. Hero Card (White Background Design) -->
+    <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8 lg:py-8">
+      <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-10">
+        <div class="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-center">
           <div>
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-6">Factory Direct Supply</div>
-            <h1 class="text-4xl font-black md:text-5xl lg:text-6xl tracking-tight leading-[1.1]">{title}</h1>
-            <p class="mt-8 text-lg text-slate-300 max-w-2xl font-medium">{heroDesc}</p>
-            <div class="mt-8 flex flex-wrap gap-3">
-              {heroTags.map((tag: string) => (
-                <span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm font-bold text-slate-200">{tag}</span>
-              ))}
+            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 flex items-center justify-center relative">
+              <img id="main-product-image" src={initialImage} alt={title} class="max-h-[440px] w-full object-contain transition-opacity duration-300" />
             </div>
-            <div class="mt-10 flex flex-col sm:flex-row gap-4">
-              <a href={contactHref} class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-blue-600 text-white font-black hover:bg-blue-700 transition shadow-lg">Get Factory Quote <ArrowRight size={18} /></a>
-              <a href={whatsappHref} target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-white/5 border border-white/10 text-white font-black hover:bg-white/10 transition">Chat on WhatsApp</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Main Layout -->
-    <section class="mx-auto max-w-[1680px] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="grid gap-12 lg:grid-cols-[1fr_360px]">
-        <div class="space-y-12">
-          {specTable.length > 0 && (
-            <div class="rounded-[2.5rem] border border-slate-200 bg-white p-8 md:p-12 shadow-sm">
-              <h2 class="text-2xl font-black text-[#102033] mb-8 flex items-center gap-3"><ClipboardCheck class="text-blue-600" /> Technical Specifications</h2>
-              <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {specTable.map(row => (
-                  <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 transition hover:border-blue-200">
-                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">{row.label}</p>
-                    <p class="text-lg font-black text-[#102033]">{row.value} <span class="text-sm font-medium text-slate-500">{row.unit}</span></p>
-                  </div>
+            {gallery.length > 0 && (
+              <div class="mt-4 grid gap-2 sm:grid-cols-4">
+                {gallery.slice(0, 4).map((item) => (
+                  <button class="gallery-thumb group rounded-2xl border-2 border-slate-200 bg-white shadow-sm transition hover:border-blue-400" data-full={item.image}>
+                    <img src={item.image} alt={item.title} class="aspect-[4/3] w-full rounded-xl bg-white object-cover" />
+                    <p class="px-1.5 py-2 text-center text-[10px] font-bold text-slate-700 line-clamp-2">{item.title}</p>
+                  </button>
                 ))}
-              </div>
-            </div>
-          )}
-
-          {isSbsOrApp && (
-            <div class="rounded-[2.5rem] border border-amber-200 bg-amber-50/30 p-8 md:p-12 shadow-sm relative overflow-hidden">
-              <div class="absolute top-0 right-0 p-8 opacity-10"><Sun size={120} /></div>
-              <h2 class="text-2xl font-black text-[#102033] mb-8 flex items-center gap-3 relative z-10">Comparison Guide: SBS vs APP</h2>
-              <div class="overflow-x-auto rounded-3xl border border-slate-200 bg-white relative z-10">
-                <table class="w-full text-left text-sm border-collapse">
-                  <thead class="bg-slate-50 border-b border-slate-200">
-                    <tr><th class="px-6 py-5 font-black text-slate-900">Property</th><th class="px-6 py-5 font-black text-amber-700 bg-amber-50/50">APP (Plastomeric)</th><th class="px-6 py-5 font-black text-blue-700 bg-blue-50/50">SBS (Elastomeric)</th></tr>
-                  </thead>
-                  <tbody class="divide-y divide-slate-100">
-                    <tr><td class="px-6 py-4 font-bold text-slate-700">Best Climate</td><td class="px-6 py-4">Hot, high solar load</td><td class="px-6 py-4">Cold, wide temp swings</td></tr>
-                    <tr><td class="px-6 py-4 font-bold text-slate-700">Heat Resistance</td><td class="px-6 py-4 font-bold text-amber-700">Up to 130°C</td><td class="px-6 py-4">Up to 105°C</td></tr>
-                    <tr><td class="px-6 py-4 font-bold text-slate-700">Low Temp</td><td class="px-6 py-4">-15°C</td><td class="px-6 py-4 font-bold text-blue-700">-25°C</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          )}
-
-          <div class="rounded-[2.5rem] border border-slate-200 bg-white p-8 md:p-12 shadow-sm">
-            <h2 class="text-2xl font-black text-[#102033] mb-10 uppercase tracking-tight">Product Overview & Engineering Analysis</h2>
-            <div class="prose prose-slate max-w-none 
-              prose-headings:font-black prose-headings:text-[#102033]
-              prose-p:text-slate-600 prose-p:leading-8 prose-p:text-lg
-              prose-strong:font-black prose-strong:text-[#102033]
-              prose-img:rounded-3xl prose-img:border prose-img:border-slate-200 prose-img:shadow-xl prose-img:my-12
-              prose-table:rounded-2xl prose-table:overflow-hidden prose-table:border prose-table:border-slate-200
-              prose-th:bg-slate-50 prose-th:px-4 prose-th:py-4 prose-th:font-black
-              prose-td:px-4 prose-td:py-4 prose-td:border-t prose-td:border-slate-100
-              prose-hr:my-16 prose-hr:border-slate-100">
-              <Content />
-            </div>
-          </div>
-
-          {downloads.length > 0 && (
-            <div class="rounded-[2.5rem] border border-blue-200 bg-blue-50/20 p-8 md:p-12 shadow-sm">
-              <h2 class="text-2xl font-black text-[#102033] mb-8 flex items-center gap-3"><FileText class="text-blue-600" /> Technical Document Hub</h2>
-              <div class="grid gap-6 sm:grid-cols-2">
-                {downloads.map((doc: any) => (
-                  <div class="flex items-center justify-between p-6 rounded-3xl border border-white bg-white/60 shadow-sm transition hover:shadow-md hover:-translate-y-1">
-                    <div class="flex items-center gap-4">
-                      <div class="h-12 w-12 flex items-center justify-center rounded-2xl bg-blue-100 text-blue-700 shadow-inner"><FileText size={24} strokeWidth={2.5} /></div>
-                      <div><h3 class="font-black text-[#102033] leading-tight text-sm">{doc.title}</h3><p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Ready for Request</p></div>
-                    </div>
-                    <a href={contactHref} class="px-5 py-2.5 rounded-xl bg-[#0E2A47] text-white text-[11px] font-black uppercase tracking-widest hover:bg-blue-900 transition shadow-lg shadow-navy/10">Request TDS</a>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-
-        <!-- Sidebar -->
-        <aside class="space-y-8">
-          <div class="sticky top-28 space-y-8">
-            <div class="rounded-3xl bg-[#0E2A47] p-8 text-white shadow-2xl relative overflow-hidden group">
-              <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:rotate-12 transition-transform duration-500"><MessageCircle size={100} /></div>
-              <h3 class="text-xl font-black relative z-10">B2B Sourcing Support</h3>
-              <p class="mt-4 text-slate-300 text-sm leading-relaxed relative z-10">Direct factory pricing, custom specifications, and global logistics support for large-scale projects.</p>
-              <a href={contactHref} class="mt-8 flex w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 py-4 font-black hover:bg-blue-700 transition relative z-10">Contact Sales <ArrowRight size={18} /></a>
-            </div>
-
-            {relatedProducts.length > 0 && (
-              <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                <h3 class="text-lg font-black text-[#102033] mb-6 flex items-center gap-2"><Boxes size={20} class="text-blue-600" /> Related Products</h3>
-                <div class="space-y-6">
-                  {relatedProducts.map(rp => (
-                    <a href={`/products/${rp.slug}/`} class="group flex gap-4 items-center">
-                      <div class="h-16 w-16 shrink-0 overflow-hidden rounded-xl border border-slate-100 bg-slate-50">
-                        <img src={normalizeAsset(rp.data?.main_image || rp.data?.image)} class="h-full w-full object-cover transition duration-500 group-hover:scale-110" alt={rp.data?.title} onerror="this.src='/placeholder.webp'; this.onerror=null;" />
-                      </div>
-                      <div class="min-w-0">
-                        <h4 class="text-sm font-black text-[#102033] line-clamp-2 group-hover:text-blue-600 transition">{rp.data?.displayName || rp.data?.title}</h4>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">{productCategory}</p>
-                      </div>
-                    </a>
-                  ))}
-                </div>
               </div>
             )}
           </div>
-        </aside>
+          <div>
+            <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-blue-700">{productCategory}</p>
+            <h1 class="text-3xl font-black text-slate-950 sm:text-4xl lg:text-5xl tracking-tight leading-tight">{title}</h1>
+            <p class="mt-6 text-base leading-8 text-slate-600 sm:text-lg">{heroDescription}</p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              {heroTags.map(tag => <span class="rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-sm font-bold text-blue-800">{tag}</span>)}
+            </div>
+
+            {heroSpecCards.length > 0 && (
+              <div class="mt-8 grid gap-4 sm:grid-cols-3">
+                {heroSpecCards.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <div class="rounded-2xl border border-slate-100 bg-slate-50/80 p-4">
+                      <div class="mb-3 flex items-center gap-2 text-blue-700">
+                        <Icon class="h-4 w-4" /><p class="text-[10px] font-black uppercase tracking-widest">{item.label}</p>
+                      </div>
+                      <p class="text-sm font-bold text-slate-950 leading-6">{item.value}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
+            <div class="mt-10 flex flex-col items-center gap-3 sm:flex-row">
+              <a href={contactHref} class="inline-flex w-full items-center justify-center rounded-xl bg-blue-700 px-10 py-3.5 text-sm font-black text-white shadow-xl shadow-blue-700/20 transition hover:bg-blue-800 sm:w-auto">Get Factory Quote</a>
+              <a href={whatsappHref} target="_blank" class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-emerald-100 bg-emerald-50 px-8 py-3.5 text-sm font-black text-emerald-700 transition hover:bg-emerald-100 sm:w-auto">Chat on WhatsApp</a>
+              <a href={isRealFile(primaryDownload?.href) ? primaryDownload.href : contactHref} class="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-blue-200 bg-white px-8 py-3.5 text-sm font-black text-blue-800 transition hover:bg-blue-50 sm:w-auto">Request TDS</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- 3. Specifications & Analysis -->
+    <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+        <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase">Quick Specifications</h2>
+        <div class="grid overflow-hidden rounded-2xl border border-slate-200 lg:grid-cols-2">
+          {specTable.map(row => (
+            <div class="grid grid-cols-[0.4fr_0.6fr] border-b border-slate-200 last:border-b-0 lg:[&:nth-last-child(-n+2)]:border-b-0">
+              <div class="bg-slate-50 p-4 text-sm font-black text-slate-800 border-r border-slate-200 flex items-center justify-center text-center">{row.label}</div>
+              <div class="p-4 text-sm font-medium text-slate-600 leading-relaxed flex items-center">{row.value}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {isSbsOrApp && (
+      <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl border border-l-amber-200 bg-white p-6 sm:p-10 shadow-sm">
+          <div class="flex items-center gap-3 mb-8">
+            <Sun class="h-7 w-7 text-amber-600" /><Snowflake class="h-7 w-7 text-blue-600" />
+            <h2 class="text-xl font-black text-slate-950 sm:text-2xl">APP vs SBS Selection Guide</h2>
+          </div>
+          <div class="overflow-x-auto rounded-2xl border border-slate-200">
+            <table class="w-full text-left text-sm border-collapse">
+              <thead class="bg-slate-50">
+                <tr class="border-b border-slate-200">
+                  <th class="px-5 py-4 font-black">Property</th>
+                  <th class="px-5 py-4 font-black bg-amber-50 text-amber-700">APP (Plastomeric)</th>
+                  <th class="px-5 py-4 font-black bg-blue-50 text-blue-700">SBS (Elastomeric)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr><td class="px-5 py-4 font-bold text-slate-800">Best Climate</td><td class="px-5 py-4">Hot, high solar load</td><td class="px-5 py-4">Cold, wide swings</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-slate-800">Heat Resistance</td><td class="px-5 py-4 font-bold text-amber-700">Up to 130degC</td><td class="px-5 py-4">Up to 105degC</td></tr>
+                <tr><td class="px-5 py-4 font-bold text-slate-800">Low Temp</td><td class="px-5 py-4">-15degC</td><td class="px-5 py-4 font-bold text-blue-700">-25degC</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    )}
+
+    {hasOverview && (
+      <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-10 uppercase tracking-tight">Product Overview</h2>
+          <div class="prose prose-slate max-w-none prose-p:leading-8 prose-p:text-slate-600 prose-headings:font-black prose-img:rounded-3xl prose-img:shadow-lg">
+            <Content />
+          </div>
+        </div>
+      </section>
+    )}
 
     <CTA />
   </main>
@@ -308,9 +428,11 @@ const faqJsonLd = faqs.length > 0 ? {
     thumb.addEventListener('click', () => {
       const src = thumb.getAttribute('data-full');
       if (src && mainImg) {
-        mainImg.style.opacity = '0.5';
-        mainImg.src = src;
-        setTimeout(() => mainImg.style.opacity = '1', 100);
+        mainImg.style.opacity = '0';
+        setTimeout(() => {
+          mainImg.src = src;
+          mainImg.style.opacity = '1';
+        }, 200);
       }
     });
   });
