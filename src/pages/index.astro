@@ -6,6 +6,8 @@ import SectionHeader from '../components/SectionHeader.astro';
 import CTA from '../components/CTA.astro';
 const { getCollection } = await import('astro:content');
 
+import { applications, productCategories, site, stats } from '../data/site';
+
 function normalizeAsset(value: any) {
   if (!value) return "";
   if (typeof value === "string") return value;
