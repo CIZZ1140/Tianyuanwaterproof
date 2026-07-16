@@ -134,7 +134,7 @@ packaging:
 
 loading_data:
   - label: "20FT Container"
-    value: "Approx. 2,000 - 4,000 sqm (Subject to thickness and pallet arrangement)"
+    value: "Approx. 6,000 - 8,000 sqm (Subject to thickness and pallet arrangement)"
   - label: "Pallet Quantity"
     value: "20-30 rolls per pallet"
 

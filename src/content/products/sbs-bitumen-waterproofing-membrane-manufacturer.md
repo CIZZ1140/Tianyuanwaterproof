@@ -116,7 +116,7 @@ loading_data:
   - label: "Standard Thickness"
     value: "3mm / 4mm / 5mm"
   - label: "20FT Container"
-    value: "Approx. 2,000 - 3,500 sqm (Depending on thickness)"
+    value: "Approx. 6,000 - 8,000 sqm (Depending on thickness)"
 
 downloads:
   - title: "SBS Product TDS"
