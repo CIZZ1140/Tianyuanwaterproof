@@ -35,85 +35,40 @@ import {
 function normalizeAsset(value: any) {
   if (!value) return "";
   if (typeof value === "string") return value;
-  if (typeof value?.src === "string") return value.src;
-  if (typeof value?.url === "string") return value.url;
-  return "";
+  return value?.src || value?.url || "";
 }
 
 function normalizeString(value: any, fallback = "") {
-  if (typeof value === "string" && value.trim()) return value.trim();
-  if (typeof value === "number") return String(value);
-  return fallback;
-}
-
-function normalizeTagList(value: any) {
-  if (!Array.isArray(value)) return [];
-  return value
-    .map((item) => {
-      if (!item) return "";
-      if (typeof item === "string") return item;
-      return item.title ?? item.label ?? item.name ?? item.value ?? "";
-    })
-    .map((item) => String(item).trim())
-    .filter(Boolean);
+  return (typeof value === "string" && value.trim()) ? value.trim() : fallback;
 }
 
 function normalizeRows(value: any) {
   if (!Array.isArray(value)) return [];
-  return value
-    .map((item) => {
-      if (!item) return null;
-      if (typeof item === "string") return { label: item, value: "", unit: "", standard: "", requirement: "" };
-      return {
-        label: item.label ?? item.name ?? item.item ?? item.title ?? item.test_item ?? "",
-        value: item.value ?? item.result ?? item.notes ?? item.detail ?? item.text ?? "",
-        unit: item.unit ?? "",
-        standard: item.standard ?? item.test_standard ?? item.testMethod ?? item.test_method ?? item.method ?? "",
-        requirement: item.requirement ?? item.class ?? item.requirement_class ?? item.requirement_or_class ?? "",
-      };
-    })
-    .filter((item) => item && (item.label || item.value));
+  return value.map(item => ({
+    label: item?.label || item?.name || item?.item || "",
+    value: item?.value || item?.result || item?.detail || "",
+    unit: item?.unit || "",
+    standard: item?.standard || item?.test_method || "",
+    requirement: item?.requirement || item?.class || ""
+  })).filter(i => i.label || i.value);
 }
 
 function normalizeCards(value: any) {
   if (!Array.isArray(value)) return [];
-  return value
-    .map((item) => {
-      if (!item) return null;
-      if (typeof item === "string") return { title: item, text: "", image: "", href: "" };
-      return {
-        title: item.title ?? item.label ?? item.name ?? "",
-        text: item.text ?? item.description ?? item.value ?? item.detail ?? "",
-        image: normalizeAsset(item.image ?? item.main_image ?? item.img),
-        icon: item.icon ?? "",
-        href: item.href ?? item.url ?? item.link ?? "",
-      };
-    })
-    .filter((item) => item && (item.title || item.text || item.image));
+  return value.map(item => ({
+    title: item?.title || item?.label || "",
+    text: item?.text || item?.description || "",
+    image: normalizeAsset(item?.image),
+    icon: item?.icon || ""
+  })).filter(i => i.title || i.text);
 }
 
 const ICON_MAP: Record<string, any> = {
-  box: Box,
-  boxes: Boxes,
-  building: Building2,
-  clipboard: ClipboardCheck,
-  droplets: Droplets,
-  factory: Factory,
-  flame: Flame,
-  flask: FlaskConical,
-  hammer: Hammer,
-  layers: Layers,
-  leaf: Leaf,
-  package: Package,
-  ruler: Ruler,
-  shield: ShieldCheck,
-  sun: Sun,
-  snowflake: Snowflake,
-  traintrack: TrainTrack,
-  truck: Truck,
-  warehouse: Warehouse,
-  waves: Waves,
-  wrench: Wrench,
+  box: Box, boxes: Boxes, building: Building2, clipboard: ClipboardCheck,
+  droplets: Droplets, factory: Factory, flame: Flame, flask: FlaskConical,
+  hammer: Hammer, layers: Layers, leaf: Leaf, package: Package,
+  ruler: Ruler, shield: ShieldCheck, sun: Sun, snowflake: Snowflake,
+  traintrack: TrainTrack, truck: Truck, warehouse: Warehouse, waves: Waves, wrench: Wrench,
 };
 
 function getCardIcon(item: any, fallbackIcons: any[], index: number) {
@@ -123,181 +78,51 @@ function getCardIcon(item: any, fallbackIcons: any[], index: number) {
   return fallbackIcons[index % fallbackIcons.length];
 }
 
-function normalizeApplicationGuide(value: any) {
-  if (!Array.isArray(value)) return [];
-  return value
-    .map((item, index) => {
-      if (!item) return null;
-      if (typeof item === "string") {
-        return { title: `Step ${index + 1}`, text: item, image: "", href: "" };
-      }
-      return {
-        title: item.title ?? item.label ?? item.name ?? `Step ${index + 1}`,
-        text: item.text ?? item.description ?? item.value ?? item.detail ?? "",
-        image: normalizeAsset(item.image ?? item.main_image ?? item.img),
-        href: item.href ?? item.url ?? item.link ?? "",
-      };
-    })
-    .filter((item) => item && (item.title || item.text));
-}
-
-function normalizeGallery(value: any) {
-  if (!Array.isArray(value)) return [];
-  return value
-    .map((item) => {
-      if (!item) return null;
-      if (typeof item === "string") return { image: item, title: "Product Detail" };
-      return {
-        image: normalizeAsset(item.image ?? item.src ?? item.url),
-        title: item.title ?? item.label ?? item.name ?? "Product Detail",
-      };
-    })
-    .filter((item) => item && item.image);
-}
-
-function normalizeDownloads(value: any) {
-  if (!Array.isArray(value)) return [];
-  return value
-    .map((item) => {
-      if (!item) return null;
-      if (typeof item === "string") return { title: item, description: "", type: "PDF", href: "" };
-      return {
-        title: item.title ?? item.label ?? item.name ?? "Technical Document",
-        description: item.description ?? item.text ?? item.detail ?? "",
-        type: item.type ?? item.format ?? "PDF",
-        href: item.href ?? item.url ?? item.file ?? "",
-      };
-    })
-    .filter((item) => item && item.title);
-}
-
-function normalizeRelatedProducts(value: any) {
-  if (!Array.isArray(value)) return [];
-  return value
-    .map((item) => {
-      if (!item) return null;
-      return {
-        title: item.title ?? item.name ?? "",
-        description: item.description ?? item.text ?? item.summary ?? "",
-        image: normalizeAsset(item.image ?? item.main_image ?? item.img),
-        href: item.href ?? item.url ?? item.link ?? "#",
-      };
-    })
-    .filter((item) => item && item.title);
-}
-
-function normalizeFaqs(value: any) {
-  if (!Array.isArray(value)) return [];
-  return value
-    .map((item) => {
-      if (!item) return null;
-      return {
-        question: item.question ?? item.title ?? item.q ?? "",
-        answer: item.answer ?? item.text ?? item.a ?? "",
-      };
-    })
-    .filter((item) => item && item.question);
-}
-
-function getSpecValue(rows: any[], keywords: string[]) {
-  const target = rows.find((row) => {
-    const label = String(row?.label ?? "").toLowerCase();
-    return keywords.some((keyword) => label.includes(keyword.toLowerCase()));
-  });
-  return target?.value ?? "";
-}
-
-function buildFallbackHeroTags(specTable: any[]) {
-  return [
-    getSpecValue(specTable, ["standard"]),
-    getSpecValue(specTable, ["thickness", "thick"]),
-    getSpecValue(specTable, ["width"]),
-    getSpecValue(specTable, ["application method", "method"])
-  ].map(i => String(i).trim()).filter(Boolean).slice(0, 6);
-}
-
 export async function getStaticPaths() {
   const products = await getCollection("products");
   return products.map((entry) => ({
-    params: { slug: (entry?.slug ?? entry?.id ?? "").replace(/\.mdx?$/, "").replace(/\/index$/, "") },
+    params: { slug: (entry.slug || entry.id).replace(/\.mdx?$/, "") },
     props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
-const data = (entry.data ?? {}) as Record<string, any>;
+const data = entry.data as any;
 
-const title = normalizeString(data.title, "Product Details");
-const pageTitle = title.length > 60 ? title : `${title} | TY-SHIELD™`;
-const productCategory = normalizeString(data.product_category ?? data.category, "Waterproofing Membrane");
-const mainImage = normalizeAsset(data.main_image);
-const gallery = normalizeGallery(data.gallery ?? []);
-const initialImage = gallery.length > 0 ? gallery[0].image : mainImage;
-const specTable = normalizeRows(data.spec_table ?? []);
-const quickFacts = normalizeCards(data.quick_facts ?? data.quickFacts ?? []);
-const features = normalizeCards(data.features ?? []);
-const applications = normalizeCards(data.applications ?? data.application ?? data.application_areas ?? []);
-const technicalData = normalizeRows(data.technical_data ?? data.technicalData ?? []);
-const packaging = normalizeCards(data.packaging ?? []);
-const loadingData = normalizeRows(data.loading_data ?? []);
-const downloads = normalizeDownloads(data.downloads ?? []);
+const title = normalizeString(data.displayName || data.title, "Product Detail");
+const productCategory = normalizeString(data.product_category || data.category, "Waterproofing");
+const mainImage = normalizeAsset(data.main_image || data.image);
+const heroTags = data.hero_tags || [];
+const heroDesc = normalizeString(data.hero_description, `Industrial grade ${title} for global B2B supply.`);
 
-const heroTags = normalizeTagList(data.hero_tags ?? []).length > 0 ? normalizeTagList(data.hero_tags ?? []) : buildFallbackHeroTags(specTable);
-const heroDescription = normalizeString(data.hero_description ?? data.short_description, `Factory supplied ${title.toLowerCase()} for B2B global supply.`);
-const contactHref = "/contact/";
-const whatsappHref = "https://wa.me/8615263640998";
-const isRealFile = (url: string) => url && url !== "#" && (url.startsWith("http") || url.startsWith("/assets/") || url.endsWith(".pdf"));
+const specTable = normalizeRows(data.spec_table || []);
+const quickFacts = normalizeCards(data.quick_facts || []);
+const features = normalizeCards(data.features || data.key_benefits || []);
+const applications = normalizeCards(data.applications || []);
+const technicalData = normalizeRows(data.technical_data || []);
+const applicationGuide = normalizeCards(data.application_guide || []);
+const packaging = normalizeCards(data.packaging || []);
+const loadingData = normalizeRows(data.loading_data || []);
+const downloads = (data.downloads || []).filter((d: any) => d.title);
 
-const heroSpecCards = [
-  { label: "Reinforcement Options", value: getSpecValue(specTable, ["reinforcement options"]), icon: Boxes },
-  { label: "Typical Applications", value: getSpecValue(specTable, ["typical applications"]), icon: Factory },
-  { label: "Standard Roll Size", value: getSpecValue(specTable, ["standard roll size"]), icon: Ruler },
-].filter((item) => item.value);
+const allProducts = await getCollection("products");
+const relatedProducts = allProducts
+  .filter(p => p.slug !== entry.slug && p.data.category === entry.data.category)
+  .slice(0, 4);
 
-const rawBody = typeof entry.body === "string" ? entry.body : "";
-const hasBody = rawBody.trim().length > 0;
-const hasOverview = hasBody || quickFacts.length > 0;
-const primaryDownload = downloads.find((item) => item.href && item.title.toLowerCase().includes("tds")) ?? downloads.find((item) => item.href);
+const isSbsOrApp = ["sbs-bitumen-waterproofing-membrane-manufacturer", "app-modified-bitumen-waterproofing-membrane-manufacturer"].includes(entry.slug);
 
 const applicationIcons = [Factory, Box, Truck, Wrench, Droplets, ShieldCheck];
 const benefitIcons = [ShieldCheck, Ruler, Snowflake, Sun];
 const installationIcons = [Hammer, Droplets, Ruler, Flame, Package, ClipboardCheck];
 const packagingIcons = [Package, Truck, Box, Factory, FileText, FlaskConical];
 
-const isSbsOrApp = ["sbs-bitumen-waterproofing-membrane-manufacturer", "app-modified-bitumen-waterproofing-membrane-manufacturer"].includes(entry.slug);
-
-// --- B2B SEO / GEO ENGINE INJECTION (Hidden) ---
-const productJsonLd = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": title,
-  "image": [mainImage],
-  "description": heroDescription,
-  "brand": { "@type": "Brand", "name": "Tianyuan Waterproof" },
-  "sku": `TY-${entry.slug.toUpperCase()}`,
-  "additionalProperty": specTable.map(row => ({
-    "@type": "PropertyValue",
-    "name": row.label,
-    "value": row.value
-  }))
-};
-const faqs = Array.isArray(data.faqs) ? data.faqs : [];
-const faqJsonLd = faqs.length > 0 ? {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": faqs.map((f: any) => ({
-    "@type": "Question",
-    "name": f.question,
-    "acceptedAnswer": { "@type": "Answer", "text": f.answer }
-  }))
-} : null;
+const hasBody = entry.body && entry.body.replace(/---[\s\S]*?---/, "").trim().length > 0;
+const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.standard && !row.requirement);
 ---
 
-<Layout title={pageTitle} description={heroDescription} ogImage={mainImage}>
-  <script type="application/ld+json" is:inline set:html={JSON.stringify(productJsonLd)} />
-  {faqJsonLd && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqJsonLd)} />}
-
+<Layout title={`${title} | Tianyuan Waterproof`} description={heroDesc}>
   <main class="bg-slate-50 text-slate-950 pb-12">
     <!-- 1. Breadcrumb -->
     <nav class="mx-auto w-full max-w-[1680px] px-4 pt-4 pb-2 sm:px-6 lg:px-8" aria-label="Breadcrumb">
@@ -310,130 +135,209 @@ const faqJsonLd = faqs.length > 0 ? {
       </ol>
     </nav>
 
-    <!-- 2. Hero Card (White Background Design) -->
+    <!-- 2. Hero Card -->
     <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8 lg:py-8">
       <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-10">
         <div class="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-center">
-          <div>
-            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 flex items-center justify-center relative">
-              <img id="main-product-image" src={initialImage} alt={title} class="max-h-[440px] w-full object-contain transition-opacity duration-300" />
-            </div>
-            {gallery.length > 0 && (
-              <div class="mt-4 grid gap-2 sm:grid-cols-4">
-                {gallery.slice(0, 4).map((item) => (
-                  <button class="gallery-thumb group rounded-2xl border-2 border-slate-200 bg-white shadow-sm transition hover:border-blue-400" data-full={item.image}>
-                    <img src={item.image} alt={item.title} class="aspect-[4/3] w-full rounded-xl bg-white object-cover" />
-                    <p class="px-1.5 py-2 text-center text-[10px] font-bold text-slate-700 line-clamp-2">{item.title}</p>
-                  </button>
-                ))}
-              </div>
-            )}
+          <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 flex items-center justify-center">
+             <img src={mainImage} alt={title} class="max-h-[440px] w-full object-contain" />
           </div>
           <div>
-            <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-blue-700">{productCategory}</p>
+            <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-blue-700">Factory Direct Supply</p>
             <h1 class="text-3xl font-black text-slate-950 sm:text-4xl lg:text-5xl tracking-tight leading-tight">{title}</h1>
-            <p class="mt-6 text-base leading-8 text-slate-600 sm:text-lg">{heroDescription}</p>
-
+            <p class="mt-6 text-base leading-8 text-slate-600 sm:text-lg">{heroDesc}</p>
             <div class="mt-6 flex flex-wrap gap-3">
-              {heroTags.map(tag => <span class="rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-sm font-bold text-blue-800">{tag}</span>)}
+              {heroTags.map((tag: string) => <span class="rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-sm font-bold text-blue-800">{tag}</span>)}
             </div>
-
-            {heroSpecCards.length > 0 && (
-              <div class="mt-8 grid gap-4 sm:grid-cols-3">
-                {heroSpecCards.map((item) => {
-                  const Icon = item.icon;
-                  return (
-                    <div class="rounded-2xl border border-slate-100 bg-slate-50/80 p-4">
-                      <div class="mb-3 flex items-center gap-2 text-blue-700">
-                        <Icon class="h-4 w-4" /><p class="text-[10px] font-black uppercase tracking-widest">{item.label}</p>
-                      </div>
-                      <p class="text-sm font-bold text-slate-950 leading-6">{item.value}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            )}
-
             <div class="mt-10 flex flex-col items-center gap-3 sm:flex-row">
-              <a href={contactHref} class="inline-flex w-full items-center justify-center rounded-xl bg-blue-700 px-10 py-3.5 text-sm font-black text-white shadow-xl shadow-blue-700/20 transition hover:bg-blue-800 sm:w-auto">Get Factory Quote</a>
-              <a href={whatsappHref} target="_blank" class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-emerald-100 bg-emerald-50 px-8 py-3.5 text-sm font-black text-emerald-700 transition hover:bg-emerald-100 sm:w-auto">Chat on WhatsApp</a>
-              <a href={isRealFile(primaryDownload?.href) ? primaryDownload.href : contactHref} class="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-blue-200 bg-white px-8 py-3.5 text-sm font-black text-blue-800 transition hover:bg-blue-50 sm:w-auto">Request TDS</a>
+              <a href="/contact/" class="inline-flex w-full items-center justify-center rounded-xl bg-blue-700 px-10 py-3.5 text-sm font-black text-white shadow-xl shadow-blue-700/20 transition hover:bg-blue-800 sm:w-auto">Get Factory Quote</a>
+              <a href="https://wa.me/8615263640998" target="_blank" class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-emerald-100 bg-emerald-50 px-8 py-3.5 text-sm font-black text-emerald-700 transition hover:bg-emerald-100 sm:w-auto">Chat on WhatsApp</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3. Specifications & Analysis -->
-    <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
-      <div class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-        <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase">Quick Specifications</h2>
-        <div class="grid overflow-hidden rounded-2xl border border-slate-200 lg:grid-cols-2">
-          {specTable.map(row => (
-            <div class="grid grid-cols-[0.4fr_0.6fr] border-b border-slate-200 last:border-b-0 lg:[&:nth-last-child(-n+2)]:border-b-0">
-              <div class="bg-slate-50 p-4 text-sm font-black text-slate-800 border-r border-slate-200 flex items-center justify-center text-center">{row.label}</div>
-              <div class="p-4 text-sm font-medium text-slate-600 leading-relaxed flex items-center">{row.value}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    {isSbsOrApp && (
-      <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
-        <div class="rounded-3xl border border-l-amber-200 bg-white p-6 sm:p-10 shadow-sm">
-          <div class="flex items-center gap-3 mb-8">
-            <Sun class="h-7 w-7 text-amber-600" /><Snowflake class="h-7 w-7 text-blue-600" />
-            <h2 class="text-xl font-black text-slate-950 sm:text-2xl">APP vs SBS Selection Guide</h2>
+    <!-- 3. Full Width Sections -->
+    <div class="mx-auto w-full max-w-[1680px] space-y-4 px-4 sm:px-6 lg:px-8">
+      
+      <!-- Applications -->
+      {applications.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Applications</h2>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+            {applications.slice(0, 5).map((item, index) => {
+              const Icon = getCardIcon(item, applicationIcons, index);
+              return (
+                <article class="rounded-2xl border border-slate-100 bg-slate-50/50 p-6 transition hover:shadow-md">
+                  <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-white text-blue-700 shadow-sm border border-blue-50"><Icon class="h-6 w-6" /></div>
+                  <h3 class="text-sm font-black text-slate-950 mb-2">{item.title}</h3>
+                  <p class="text-xs font-medium leading-relaxed text-slate-500">{item.text}</p>
+                </article>
+              );
+            })}
           </div>
+        </section>
+      )}
+
+      <!-- Key Benefits -->
+      {features.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Key Benefits</h2>
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {features.slice(0, 4).map((item, index) => {
+              const Icon = getCardIcon(item, benefitIcons, index);
+              return (
+                <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm border-l-4 border-l-blue-600">
+                  <Icon class="mb-5 h-8 w-8 text-blue-700" />
+                  <h3 class="text-base font-black text-slate-950 mb-3">{item.title}</h3>
+                  <p class="text-sm font-medium leading-7 text-slate-600">{item.text}</p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      <!-- Technical Specifications Table -->
+      {technicalData.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 flex items-center gap-3"><FlaskConical class="text-blue-600" /> Technical Specifications</h2>
           <div class="overflow-x-auto rounded-2xl border border-slate-200">
             <table class="w-full text-left text-sm border-collapse">
               <thead class="bg-slate-50">
                 <tr class="border-b border-slate-200">
-                  <th class="px-5 py-4 font-black">Property</th>
-                  <th class="px-5 py-4 font-black bg-amber-50 text-amber-700">APP (Plastomeric)</th>
-                  <th class="px-5 py-4 font-black bg-blue-50 text-blue-700">SBS (Elastomeric)</th>
+                  <th class="px-6 py-4 font-black">Test Item</th>
+                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black">Unit</th>}
+                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black">Test Method / Standard</th>}
+                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black">Requirement / Class</th>}
+                  <th class="px-6 py-4 font-black">Result / Notes</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-100">
-                <tr><td class="px-5 py-4 font-bold text-slate-800">Best Climate</td><td class="px-5 py-4">Hot, high solar load</td><td class="px-5 py-4">Cold, wide swings</td></tr>
-                <tr><td class="px-5 py-4 font-bold text-slate-800">Heat Resistance</td><td class="px-5 py-4 font-bold text-amber-700">Up to 130degC</td><td class="px-5 py-4">Up to 105degC</td></tr>
-                <tr><td class="px-5 py-4 font-bold text-slate-800">Low Temp</td><td class="px-5 py-4">-15degC</td><td class="px-5 py-4 font-bold text-blue-700">-25degC</td></tr>
+                {technicalData.map(row => (
+                  <tr class="hover:bg-blue-50/30 transition-colors">
+                    <td class="px-6 py-4 font-bold text-slate-800">{row.label}</td>
+                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600">{row.unit}</td>}
+                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600">{row.standard}</td>}
+                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600">{row.requirement}</td>}
+                    <td class="px-6 py-4 font-bold text-slate-900">{row.value}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
-        </div>
-      </section>
-    )}
+        </section>
+      )}
 
-    {hasOverview && (
-      <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8">
-        <div class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+      <!-- Installation Guide -->
+      {applicationGuide.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 flex items-center gap-3"><Hammer class="text-blue-600" /> Installation Guide</h2>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {applicationGuide.slice(0, 4).map((item, index) => {
+              const Icon = installationIcons[index % installationIcons.length];
+              return (
+                <article class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                  <Icon class="mb-5 h-8 w-8 text-blue-700" />
+                  <h3 class="text-sm font-black uppercase text-slate-950 mb-3">{item.title}</h3>
+                  <p class="text-sm font-medium leading-relaxed text-slate-600">{item.text}</p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      <!-- Packaging & Loading -->
+      {(packaging.length > 0 || loadingData.length > 0) && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Packaging & OEM</h2>
+          <div class="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+            <div class="grid gap-4 sm:grid-cols-2">
+              {packaging.slice(0, 4).map((item, index) => {
+                const Icon = packagingIcons[index % packagingIcons.length];
+                return (
+                  <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+                    <Icon class="mb-4 h-6 w-6 text-blue-700" />
+                    <h3 class="text-xs font-black uppercase text-slate-950 mb-2">{item.title}</h3>
+                    <p class="text-[11px] font-medium leading-relaxed text-slate-500">{item.text}</p>
+                  </div>
+                );
+              })}
+            </div>
+            {loadingData.length > 0 && (
+              <div class="overflow-hidden rounded-2xl border border-blue-200 bg-white">
+                <div class="bg-blue-700 px-6 py-4 text-white flex items-center gap-3">
+                  <Truck class="h-5 w-5" />
+                  <span class="text-sm font-black uppercase tracking-widest">Export Loading Reference</span>
+                </div>
+                <div class="divide-y divide-slate-100">
+                  {loadingData.map(row => (
+                    <div class="grid grid-cols-[0.4fr_0.6fr] px-6 py-4 text-sm">
+                      <div class="font-black text-blue-800">{row.label}</div>
+                      <div class="font-medium text-slate-600">{row.value}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
+      <!-- Product Overview Content -->
+      {hasBody && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-12 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-10 uppercase tracking-tight">Product Overview</h2>
-          <div class="prose prose-slate max-w-none prose-p:leading-8 prose-p:text-slate-600 prose-headings:font-black prose-img:rounded-3xl prose-img:shadow-lg">
+          <div class="prose prose-slate max-w-none 
+            prose-headings:font-black prose-headings:text-slate-950
+            prose-p:text-slate-600 prose-p:leading-8 prose-p:text-lg
+            prose-img:rounded-3xl prose-img:shadow-xl prose-img:my-10
+            prose-table:rounded-xl prose-table:overflow-hidden prose-table:border prose-table:border-slate-100
+            prose-th:bg-slate-50 prose-th:font-black
+            prose-hr:my-12 prose-hr:border-slate-100">
             <Content />
           </div>
-        </div>
-      </section>
-    )}
+        </section>
+      )}
 
-    <CTA />
+      <!-- Bottom Split: Downloads & Related -->
+      <div class="grid gap-4 lg:grid-cols-2">
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 mb-6 uppercase">Downloads</h2>
+          <div class="space-y-3">
+            {downloads.map((doc: any) => (
+              <div class="flex items-center justify-between p-4 rounded-2xl border border-slate-100 bg-slate-50/50">
+                <div class="flex items-center gap-4">
+                  <div class="h-10 w-10 flex items-center justify-center rounded-xl bg-red-50 text-red-600"><FileText size={20} /></div>
+                  <h3 class="text-sm font-black text-slate-900">{doc.title}</h3>
+                </div>
+                <a href="/contact/" class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:bg-slate-50 transition">Request</a>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 mb-6 uppercase">Related Products</h2>
+          <div class="grid grid-cols-2 gap-4">
+            {relatedProducts.map(rp => (
+              <a href={`/products/${rp.slug}/`} class="group flex flex-col gap-3">
+                <div class="aspect-video overflow-hidden rounded-xl bg-slate-100 border border-slate-200">
+                  <img src={normalizeAsset(rp.data.main_image || rp.data.image)} class="h-full w-full object-cover transition group-hover:scale-105" alt={rp.data.title} />
+                </div>
+                <h4 class="text-xs font-black text-slate-900 line-clamp-1 group-hover:text-blue-700">{rp.data.displayName || rp.data.title}</h4>
+              </a>
+            ))}
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="mt-12">
+      <CTA />
+    </div>
   </main>
 </Layout>
-
-<script>
-  const mainImg = document.getElementById('main-product-image') as HTMLImageElement;
-  const thumbs = document.querySelectorAll('.gallery-thumb');
-  thumbs.forEach(thumb => {
-    thumb.addEventListener('click', () => {
-      const src = thumb.getAttribute('data-full');
-      if (src && mainImg) {
-        mainImg.style.opacity = '0';
-        setTimeout(() => {
-          mainImg.src = src;
-          mainImg.style.opacity = '1';
-        }, 200);
-      }
-    });
-  });
-</script>
