@@ -150,14 +150,14 @@ const products = await getCollection('products', ({ data }) => {
                 <a href={`/products/${p.slug}/`} class="group block bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-all cursor-pointer">
                   <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-slate-50 flex items-center justify-center">
                     {displayImage ? (
-                      <img 
-                        src={displayImage} 
-                        alt={p.data.title} 
-                        class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" 
-                        loading="lazy"
-                        decoding="async"
-                        onerror="this.src='/placeholder.webp'; this.onerror=null;"
-                      />
+                    <img 
+                      src={displayImage} 
+                      alt={p.data.title} 
+                      class={`${cat.id === 'waterproof-coatings' ? 'object-contain p-4' : 'object-cover'} w-full h-full group-hover:scale-105 transition-transform duration-500`} 
+                      loading="lazy"
+                      decoding="async"
+                      onerror="this.src='/placeholder.webp'; this.onerror=null;"
+                    />
                     ) : (
                       <div class="w-full h-full flex flex-col items-center justify-center text-slate-400 p-6 text-center select-none">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mb-3 text-slate-300">
