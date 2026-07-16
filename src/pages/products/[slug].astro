@@ -399,7 +399,13 @@ const productJsonLd = {
                     <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Ready for PDF Request</p>
                   </div>
                 </div>
-                <a href="/contact/" class="px-5 py-2 rounded-xl bg-white border border-slate-200 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:border-blue-300 hover:text-blue-700 transition shadow-sm">Request</a>
+                <a 
+                  href={doc.href && doc.href !== "#" ? doc.href : "/contact/"} 
+                  target={doc.href && doc.href !== "#" ? "_blank" : "_self"}
+                  class="px-5 py-2 rounded-xl bg-white border border-slate-200 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:border-blue-300 hover:text-blue-700 transition shadow-sm"
+                >
+                  {doc.href && doc.href !== "#" ? "Download" : "Request"}
+                </a>
               </div>
             ))}
           </div>
