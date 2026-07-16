@@ -193,7 +193,7 @@ const productJsonLd = {
                     <div class="aspect-[4/3] w-full bg-slate-50 p-1 flex items-center justify-center border-b border-slate-100">
                       <img src={item.image} alt={item.title} class="h-full w-full object-contain transition group-hover:scale-105" />
                     </div>
-                    <div class="flex items-center justify-center px-1.5 py-2.5 min-h-[48px] bg-white group-[.active]:bg-blue-50/50">
+                    <div class="flex items-center justify-center px-1.5 py-2.5 min-height-[48px] bg-white group-[.active]:bg-blue-50/50">
                       <p class="text-center text-[11px] font-black leading-tight text-slate-700 group-[.active]:text-blue-700 transition-colors uppercase tracking-tight">{item.title}</p>
                     </div>
                   </button>
@@ -248,6 +248,22 @@ const productJsonLd = {
     <!-- 3. Full Width Modular Blocks -->
     <div class="mx-auto w-full max-w-[1680px] space-y-4 px-4 sm:px-6 lg:px-8">
       
+      <!-- MOVED UP: Product Overview Content -->
+      {hasBody && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-12 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-10 uppercase tracking-tight">Product Overview</h2>
+          <div class="prose prose-slate max-w-none 
+            prose-headings:font-black prose-headings:text-slate-950
+            prose-p:text-slate-600 prose-p:leading-8
+            prose-img:rounded-3xl prose-img:shadow-xl
+            prose-table:rounded-xl prose-table:overflow-hidden prose-table:border prose-table:border-slate-100
+            prose-th:bg-slate-50 prose-th:font-black
+            prose-hr:my-12 prose-hr:border-slate-100">
+            <Content />
+          </div>
+        </section>
+      )}
+
       {applications.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Applications</h2>
@@ -368,21 +384,6 @@ const productJsonLd = {
         </section>
       )}
 
-      {hasBody && (
-        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-12 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-10 uppercase tracking-tight">Product Overview</h2>
-          <div class="prose prose-slate max-w-none 
-            prose-headings:font-black prose-headings:text-slate-950
-            prose-p:text-slate-600 prose-p:leading-8
-            prose-img:rounded-3xl prose-img:shadow-xl
-            prose-table:rounded-xl prose-table:overflow-hidden prose-table:border prose-table:border-slate-100
-            prose-th:bg-slate-50 prose-th:font-black
-            prose-hr:my-12 prose-hr:border-slate-100">
-            <Content />
-          </div>
-        </section>
-      )}
-
       <div class="grid gap-4 lg:grid-cols-2">
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 mb-8 uppercase tracking-tight">Technical Downloads</h2>
@@ -396,7 +397,7 @@ const productJsonLd = {
                     <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Ready for PDF Request</p>
                   </div>
                 </div>
-                <a href="/contact/" class="px-5 py-2 rounded-xl bg-white border border-slate-200 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:border-blue-300 hover:text-blue-700 transition shadow-sm">Request</a>
+                <a href="/contact/" class="px-5 py-2 rounded-xl bg-white border border-slate-200 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:text-blue-700 transition shadow-sm">Request</a>
               </div>
             ))}
           </div>
@@ -406,7 +407,7 @@ const productJsonLd = {
           <div class="grid grid-cols-2 gap-4">
             {relatedProducts.map(rp => (
               <a href={`/products/${rp.slug}/`} class="group flex flex-col gap-3">
-                <div class="aspect-video overflow-hidden rounded-2xl bg-slate-100 border border-slate-200">
+                <div class="aspect-video overflow-hidden rounded-xl bg-slate-100 border border-slate-200">
                   <img src={normalizeAsset(rp.data.main_image || rp.data.image)} class="h-full w-full object-cover transition group-hover:scale-105" alt={rp.data.title} />
                 </div>
                 <h4 class="text-xs font-black text-slate-900 line-clamp-1 group-hover:text-blue-700 transition-colors">{rp.data.displayName || rp.data.title}</h4>
