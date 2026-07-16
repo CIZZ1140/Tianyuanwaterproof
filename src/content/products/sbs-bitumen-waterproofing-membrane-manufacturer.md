@@ -17,7 +17,7 @@ hero_tags:
   - "OEM Available"
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/sbs-torch-applied-membrane.webp"
+  - image: "https://sc04.alicdn.com/kf/A9101beb355814deda9ca338d93ecdedef.jpg"
     title: "Product Overview"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-surface.webp"
     title: "Surface Options"
