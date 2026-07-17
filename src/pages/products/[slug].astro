@@ -107,6 +107,9 @@ const { Content } = await entry.render();
 const data = entry.data as any;
 
 const title = normalizeString(data.displayName || data.title, "Product Detail");
+// SEO title: use frontmatter title when explicitly different from displayName (custom crafted), otherwise fallback to "displayName | Brand"
+const hasCustomSeoTitle = data.displayName && data.title && data.title.trim() !== data.displayName.trim();
+const seoTitle = hasCustomSeoTitle ? data.title.trim() : `${title} | Tianyuan Waterproof`;
 const productCategory = normalizeString(data.product_category || data.category, "Waterproofing");
 const mainImage = normalizeAsset(data.main_image || data.image);
 const gallery = normalizeGallery(data.gallery || []);
@@ -162,7 +165,7 @@ const productJsonLd = {
 };
 ---
 
-<Layout title={`${title} | Tianyuan Waterproof`} description={heroDesc} ogImage={mainImage}>
+<Layout title={seoTitle} description={heroDesc} ogImage={mainImage}>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(productJsonLd)} />
   <main class="bg-slate-50 text-slate-950 pb-12">
     

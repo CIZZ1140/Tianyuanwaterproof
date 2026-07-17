@@ -1,5 +1,5 @@
 ---
-title: "SBS Waterproofing Membrane Manufacturer | 3mm, 4mm & 5mm Options"
+title: "SBS Waterproofing Membrane Manufacturer | 3mm, 4mm & 5mm"
 displayName: "SBS Waterproofing Membrane"
 category: "bitumen-membranes"
 product_category: "Bitumen Membranes"
