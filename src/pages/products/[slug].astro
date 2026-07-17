@@ -151,6 +151,7 @@ const packagingIcons = [Package, Truck, Box, Factory, FileText, FlaskConical];
 const hasBody = entry.body && entry.body.replace(/---[\s\S]*?---/, "").trim().length > 0;
 const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.standard && !row.requirement);
 const isSbsOrApp = ["sbs-bitumen-waterproofing-membrane-manufacturer", "app-modified-bitumen-waterproofing-membrane-manufacturer"].includes(entry.slug);
+const isSbs = entry.slug === "sbs-bitumen-waterproofing-membrane-manufacturer";
 
 // B2B Schema — inquiry-based; no price/offers/rating fabricated
 const productJsonLd = {
@@ -258,19 +259,57 @@ const productJsonLd = {
     <!-- 3. Full Width Modular Blocks -->
     <div class="mx-auto w-full max-w-[1680px] space-y-4 px-4 sm:px-6 lg:px-8">
       
-      <!-- MOVED UP: Product Overview Content -->
+       <!-- MOVED UP: Product Overview Content -->
       {hasBody && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-12 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-10 uppercase tracking-tight">Product Overview</h2>
-          <div class="prose prose-slate max-w-none 
-            prose-headings:font-black prose-headings:text-slate-950
-            prose-p:text-slate-600 prose-p:leading-8
-            prose-img:rounded-3xl prose-img:shadow-xl
-            prose-table:rounded-xl prose-table:overflow-hidden prose-table:border prose-table:border-slate-100
-            prose-th:bg-slate-50 prose-th:font-black
-            prose-hr:my-12 prose-hr:border-slate-100">
-            <Content />
-          </div>
+          {isSbs && features.length > 0 ? (
+            <div class="grid lg:grid-cols-[1fr_0.9fr] gap-10">
+              <div>
+                <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Product Overview</h2>
+                <div class="prose prose-slate max-w-none 
+                  prose-headings:font-black prose-headings:text-slate-950
+                  prose-p:text-slate-600 prose-p:leading-8
+                  prose-img:rounded-3xl prose-img:shadow-xl
+                  prose-table:rounded-xl prose-table:overflow-hidden prose-table:border prose-table:border-slate-100
+                  prose-th:bg-slate-50 prose-th:font-black
+                  prose-hr:my-12 prose-hr:border-slate-100">
+                  <Content />
+                </div>
+              </div>
+              <div>
+                <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Key Benefits</h2>
+                <div class="grid grid-cols-2 gap-4">
+                  {features.slice(0, 4).map((item, index) => {
+                    const Icon = getCardIcon(item, benefitIcons, index);
+                    return (
+                      <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm border-l-4 border-l-blue-600">
+                        <div class="flex items-start gap-4">
+                          <Icon class="mt-0.5 h-6 w-6 shrink-0 text-blue-700" />
+                          <div>
+                            <h3 class="text-sm font-black text-slate-950 mb-1">{item.title}</h3>
+                            <p class="text-sm font-medium leading-6 text-slate-600">{item.text}</p>
+                          </div>
+                        </div>
+                      </article>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <>
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-10 uppercase tracking-tight">Product Overview</h2>
+              <div class="prose prose-slate max-w-none 
+                prose-headings:font-black prose-headings:text-slate-950
+                prose-p:text-slate-600 prose-p:leading-8
+                prose-img:rounded-3xl prose-img:shadow-xl
+                prose-table:rounded-xl prose-table:overflow-hidden prose-table:border prose-table:border-slate-100
+                prose-th:bg-slate-50 prose-th:font-black
+                prose-hr:my-12 prose-hr:border-slate-100">
+                <Content />
+              </div>
+            </>
+          )}
         </section>
       )}
 
@@ -324,7 +363,7 @@ const productJsonLd = {
         </section>
       )}
 
-      {features.length > 0 && (
+      {!isSbs && features.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Key Benefits</h2>
           <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
