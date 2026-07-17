@@ -149,7 +149,7 @@ const hasBody = entry.body && entry.body.replace(/---[\s\S]*?---/, "").trim().le
 const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.standard && !row.requirement);
 const isSbsOrApp = ["sbs-bitumen-waterproofing-membrane-manufacturer", "app-modified-bitumen-waterproofing-membrane-manufacturer"].includes(entry.slug);
 
-// B2B Schema
+// B2B Schema — inquiry-based; no price/offers/rating fabricated
 const productJsonLd = {
   "@context": "https://schema.org/",
   "@type": "Product",
@@ -157,6 +157,9 @@ const productJsonLd = {
   "image": [mainImage],
   "description": heroDesc,
   "brand": { "@type": "Brand", "name": "Tianyuan Waterproof" },
+  "manufacturer": { "@type": "Organization", "name": "Weifang Tianyuan Waterproof Material Co., Ltd." },
+  "material": data.product_category || data.category || "Modified Bitumen",
+  "category": productCategory,
   "sku": `TY-${entry.slug.toUpperCase()}`,
   "additionalProperty": specTable.map(row => ({
     "@type": "PropertyValue",
