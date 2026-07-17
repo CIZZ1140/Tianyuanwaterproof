@@ -2,6 +2,7 @@
 title: "SBS Waterproofing Membrane Manufacturer | 3mm, 4mm & 5mm"
 displayName: "SBS Waterproofing Membrane"
 category: "bitumen-membranes"
+meta_description: "SBS modified bitumen waterproofing membrane manufacturer. 3mm, 4mm and 5mm torch-applied membranes with PY, G and PYG reinforcement. OEM packaging, TDS and bulk supply for roofing, basement and underground projects."
 product_category: "Bitumen Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"

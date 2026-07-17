@@ -171,7 +171,7 @@ const productJsonLd = {
 };
 ---
 
-<Layout title={seoTitle} description={heroDesc} ogImage={mainImage}>
+<Layout title={seoTitle} description={data.meta_description || heroDesc} ogImage={mainImage}>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(productJsonLd)} />
   <main class="bg-slate-50 text-slate-950 pb-12">
     
