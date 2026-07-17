@@ -128,6 +128,7 @@ const packaging = normalizeCards(data.packaging || data.packaging_oem || data.oe
 const loadingData = normalizeRows(data.loading_data || []);
 const downloads = (data.downloads || []).filter((d: any) => d.title);
 const configurations = Array.isArray(data.configurations) ? data.configurations : [];
+const supplyInfo = normalizeCards(data.supply_info ?? []);
 
 const allProducts = await getCollection("products");
 const relatedProducts = allProducts
@@ -423,6 +424,26 @@ const productJsonLd = {
                 </div>
               </div>
             )}
+          </div>
+        </section>
+      )}
+
+      {supplyInfo.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Ordering Information</h2>
+          <div class="overflow-hidden rounded-2xl border border-blue-200 bg-white shadow-sm">
+            <div class="bg-blue-700 px-6 py-4 text-white flex items-center gap-3">
+              <Truck class="h-5 w-5" />
+              <span class="text-xs font-black uppercase tracking-widest">Export Supply Reference</span>
+            </div>
+            <div class="divide-y divide-slate-100">
+              {supplyInfo.map(row => (
+                <div class="grid grid-cols-[0.3fr_0.7fr] px-6 py-4 text-sm transition hover:bg-blue-50/30">
+                  <div class="font-black text-blue-800 pl-4">{row.title}</div>
+                  <div class="font-medium text-slate-600">{row.text}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       )}

@@ -137,33 +137,37 @@ loading_data:
   - label: "Note"
     value: "Final loading quantity depends on roll weight, reinforcement type, surface finish, pallet configuration and destination-country weight limits."
 
-configurations:
-  - code: "SBS PY PE"
-    reinforcement: "Polyester Felt (PY)"
-    thickness: ["3mm", "4mm", "5mm"]
-    surface: "PE Film"
-    use: "Basement, foundation, protected roofing"
-  - code: "SBS PY Mineral"
-    reinforcement: "Polyester Felt (PY)"
-    thickness: ["4mm", "5mm"]
-    surface: "Mineral Granules"
-    use: "Exposed roofing cap sheet"
-  - code: "SBS G PE"
-    reinforcement: "Fiberglass Felt (G)"
-    thickness: ["3mm", "4mm"]
-    surface: "PE Film"
-    use: "Dimensionally stable multi-layer roof systems"
-  - code: "SBS PYG"
-    reinforcement: "Composite (PYG)"
-    thickness: ["4mm", "5mm"]
-    surface: "PE Film / Sand"
-    use: "Infrastructure, tunnels, project-specific systems"
+supply_info:
+  - title: "MOQ"
+    text: "1 × 20FT container per specification. Mixed container loading available."
+  - title: "Sample"
+    text: "Free A4-size samples for quality evaluation. Customer covers freight."
+  - title: "Production Lead Time"
+    text: "15–25 days after deposit confirmation."
+  - title: "Payment Terms"
+    text: "T/T 30% advance, 70% against B/L copy."
+  - title: "Loading Port"
+    text: "Qingdao, China"
+  - title: "Documents"
+    text: "TDS, MSDS, Packing List, Certificate of Origin"
+  - title: "Inspection"
+    text: "Factory QC + third-party inspection available on request"
+  - title: "OEM Service"
+    text: "Custom roll printing, branded wrapper, private-label pallet marking"
 
 downloads:
-  - title: "SBS Product TDS"
+  - title: "SBS Waterproofing Membrane TDS"
+    model: "TY-SBS-PY-II-4-PE"
+    version: "2026.01"
+    pages: "4"
+    size: "380 KB"
     href: "/docs/sbs-waterproofing-membrane-tds.pdf"
-  - title: "Installation Manual"
-    href: "/docs/sbs-membrane-installation-manual.pdf"
+  - title: "SBS Membrane Installation Manual"
+    model: "All SBS torch-applied configurations"
+    version: "2026.01"
+    pages: "3"
+    size: "720 KB"
+    href: ""
 
 related_products:
   - title: "APP Modified Bitumen Membrane"
