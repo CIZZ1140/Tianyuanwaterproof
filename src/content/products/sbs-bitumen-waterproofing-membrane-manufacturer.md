@@ -77,7 +77,7 @@ technical_data:
 applications:
   - title: "Tunnel & Infrastructure"
     icon: "traintrack"
-    text: "Engineered for high-pressure underground environments. Provides superior sealing for tunnels, subways, and culverts."
+    text: "Suitable for use as part of a specified multi-layer waterproofing system for tunnels, subways and underground structures, subject to project design and technical confirmation."
   - title: "Roof Waterproofing"
     icon: "warehouse"
     text: "Suitable for industrial, commercial, and residential roofing systems, including mineral-finished roof applications."
