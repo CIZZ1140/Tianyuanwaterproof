@@ -127,6 +127,7 @@ const applicationGuide = normalizeCards(data.application_guide || []);
 const packaging = normalizeCards(data.packaging || data.packaging_oem || data.oem_packaging || []);
 const loadingData = normalizeRows(data.loading_data || []);
 const downloads = (data.downloads || []).filter((d: any) => d.title);
+const configurations = Array.isArray(data.configurations) ? data.configurations : [];
 
 const allProducts = await getCollection("products");
 const relatedProducts = allProducts
@@ -264,6 +265,38 @@ const productJsonLd = {
             prose-hr:my-12 prose-hr:border-slate-100">
             <Content />
           </div>
+        </section>
+      )}
+
+      {configurations.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Available Configurations</h2>
+          <p class="mb-6 max-w-3xl text-sm font-medium leading-7 text-slate-600">Select the reinforcement, thickness and surface finish to match your project requirements. Contact us with your specification for a tailored quotation.</p>
+          <div class="overflow-x-auto rounded-2xl border border-slate-200">
+            <table class="w-full min-w-[700px] border-collapse text-left text-sm">
+              <thead class="bg-slate-50 text-slate-950">
+                <tr class="border-b border-slate-200">
+                  <th class="px-4 py-4 font-black">Configuration</th>
+                  <th class="px-4 py-4 font-black">Reinforcement</th>
+                  <th class="px-4 py-4 font-black">Thickness</th>
+                  <th class="px-4 py-4 font-black">Surface</th>
+                  <th class="px-4 py-4 font-black">Recommended Use</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200">
+                {configurations.map((config: any) => (
+                  <tr class="transition hover:bg-blue-50/40">
+                    <td class="px-4 py-4 font-bold text-slate-800">{config.code || "—"}</td>
+                    <td class="px-4 py-4 font-medium text-slate-600">{config.reinforcement || "—"}</td>
+                    <td class="px-4 py-4 font-medium text-slate-600">{Array.isArray(config.thickness) ? config.thickness.join(" / ") : (config.thickness || "—")}</td>
+                    <td class="px-4 py-4 font-medium text-slate-600">{config.surface || "—"}</td>
+                    <td class="px-4 py-4 text-sm leading-6 text-slate-600">{config.use || "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4 text-sm font-medium text-slate-400">Final configuration should be selected according to climate, substrate, waterproofing system design, exposure condition and local project specifications.</p>
         </section>
       )}
 
