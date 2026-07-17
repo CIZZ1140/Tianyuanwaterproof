@@ -169,6 +169,14 @@ downloads:
     size: "720 KB"
     href: ""
 
+project_references:
+  - title: "Flat Roof Waterproofing Project, Thailand"
+    config: "SBS PY Mineral, 4mm, Mineral Granules"
+    quantity: "10,000 sqm"
+    year: 2026
+    application: "Torch-applied exposed flat roof waterproofing system"
+    image: "https://sc02.alicdn.com/kf/H63f2f29f06b94671a6af4a56bae4fff41.jpg"
+
 related_products:
   - title: "APP Modified Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/app-bitumen-membrane.webp"
