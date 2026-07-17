@@ -21,8 +21,10 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     title: "APP Membrane Surface"
+    alt: "APP modified bitumen waterproofing membrane mineral granule surface torch-applied roofing"
   - image: "/placeholder.webp"
     title: "Production Line"
+    alt: "APP bitumen waterproof membrane factory production line manufacturing"
 
 spec_table:
   - label: "Product Type"

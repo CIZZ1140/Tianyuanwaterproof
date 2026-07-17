@@ -23,12 +23,16 @@ technical_disclaimer: "Values shown apply to the stated product configuration. O
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
     title: "Product Overview"
+    alt: "SBS modified bitumen waterproof membrane rolls on export pallet warehouse"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-surface.webp"
     title: "Reinforcement Options"
+    alt: "SBS waterproof membrane polyester fiberglass glass-fiber reinforcement close-up"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-detail.webp"
     title: "Surface Selection"
+    alt: "SBS bitumen waterproofing membrane PE film sand mineral granule surface finishes"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-bulk.webp"
     title: "Supply & Packing"
+    alt: "SBS waterproof membrane bulk export packaging wooden pallet ocean freight"
 
 spec_table:
   - label: "Product Type"
@@ -188,13 +192,11 @@ related_products:
 ---
 
 ### Industrial-Grade Elastomeric Waterproofing
- 
-Tianyuan’s **SBS Modified Membrane** is a rubber-modified bitumen system engineered for structures subject to high thermal movement and structural expansion.
- 
-*   **Engineered Resilience**: Retains elastomeric properties in cold climates (available in selected grades to meet project requirements), ensuring reliable sealing for high-altitude or seasonal-temperature infrastructure.
-*   **Structural Compatibility**: Designed for civil engineering (metro, tunnels, foundations) where substrate movement and crack-bridging performance are critical.
-*   **Technical Compliance**: Manufactured with reference to the technical requirements of GB/T 18242-2025. Confirm the applicable product class and test documentation with our technical team. Available in customizable PY/G/PYG reinforcement options to match project-specific tensile strength requirements.
- 
-#### Selection Guide: SBS vs. APP
-*   **Choose SBS**: For projects in colder regions or structures with frequent thermal movement/vibration. Its rubber-modified bitumen provides superior fatigue resistance.
-*   **Choose APP**: For high-temperature environments or exposed roofing in tropical climates (see our [APP Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/) for details).
+
+Tianyuan's **SBS Modified Membrane** is a rubber-modified bitumen system engineered for structures subject to high thermal movement and structural expansion, including metro tunnels, foundations and cold-region roofing. Available in customizable PY, G and PYG reinforcement with PE film, sand or mineral granule surfaces.
+
+- **Engineered Resilience** — Retains elastomeric properties down to -25°C, ensuring reliable sealing in cold climates and high-altitude infrastructure.
+- **Structural Compatibility** — Designed for civil engineering where substrate movement and crack-bridging performance are critical to long-term waterproofing integrity.
+- **Technical Compliance** — Manufactured with reference to GB/T 18242-2025 technical requirements. Confirm the applicable product class and test documentation with our technical team before specification.
+
+For hot-climate or exposed roofing applications, see our [APP Modified Bitumen Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/).

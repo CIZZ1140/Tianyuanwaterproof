@@ -82,7 +82,8 @@ function normalizeGallery(value: any) {
   if (!Array.isArray(value)) return [];
   return value.map(item => ({
     image: normalizeAsset(typeof item === 'string' ? item : (item.image || item.src)),
-    title: item.title || "Product Detail"
+    title: item.title || "Product Detail",
+    alt: item.alt || item.title || ""
   })).filter(i => i.image);
 }
 
@@ -156,7 +157,7 @@ const productJsonLd = {
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": title,
-  "image": [mainImage],
+  "image": gallery.length > 0 ? gallery.map(item => item.image) : [mainImage],
   "description": heroDesc,
   "brand": { "@type": "Brand", "name": "Tianyuan Waterproof" },
   "manufacturer": { "@type": "Organization", "name": "Weifang Tianyuan Waterproof Material Co., Ltd." },
@@ -200,7 +201,7 @@ const productJsonLd = {
                 {gallery.slice(0, 4).map((item) => (
                   <button class="gallery-thumb group flex flex-col rounded-2xl border-2 border-slate-200 bg-white shadow-sm transition hover:border-blue-400 overflow-hidden" data-full={item.image}>
                     <div class="aspect-[4/3] w-full bg-slate-50 p-1 flex items-center justify-center border-b border-slate-100">
-                      <img src={item.image} alt={item.title} class="h-full w-full object-contain transition group-hover:scale-105" />
+                      <img src={item.image} alt={item.alt || item.title} class="h-full w-full object-contain transition group-hover:scale-105" />
                     </div>
                     <div class="flex items-center justify-center px-1.5 py-2.5 min-h-[48px] bg-white group-[.active]:bg-blue-50/50">
                       <p class="text-center text-[11px] font-black leading-tight text-slate-700 group-[.active]:text-blue-700 transition-colors uppercase tracking-tight">{item.title}</p>
@@ -539,6 +540,10 @@ const productJsonLd = {
     </script>
     <style is:global>
       .gallery-thumb.active { border-color: #3b82f6 !important; background-color: #eff6ff !important; }
+    </style>
+  </main>
+</Layout>
+nt; }
     </style>
   </main>
 </Layout>
