@@ -126,10 +126,16 @@ packaging_oem:
     text: "We support private label production including custom-printed wrapping film and branded core sleeves for project distributors."
 
 loading_data:
-  - label: "Standard Thickness"
-    value: "3mm / 4mm / 5mm"
-  - label: "20FT Container"
-    value: "Approx. 6,000 - 8,000 sqm (Depending on thickness)"
+  - label: "Roll Size"
+    value: "1m × 10m (standard)"
+  - label: "3mm / 20FT"
+    value: "Approx. 4,000 – 5,000 sqm"
+  - label: "4mm / 20FT"
+    value: "Approx. 3,000 – 4,000 sqm"
+  - label: "5mm / 20FT"
+    value: "Approx. 2,500 – 3,500 sqm"
+  - label: "Note"
+    value: "Final loading quantity depends on roll weight, reinforcement type, surface finish, pallet configuration and destination-country weight limits."
 
 configurations:
   - code: "SBS PY PE"
@@ -174,7 +180,7 @@ Tianyuan’s **SBS Modified Membrane** is a rubber-modified bitumen system engin
  
 *   **Engineered Resilience**: Retains elastomeric properties in cold climates (available in selected grades to meet project requirements), ensuring reliable sealing for high-altitude or seasonal-temperature infrastructure.
 *   **Structural Compatibility**: Designed for civil engineering (metro, tunnels, foundations) where substrate movement and crack-bridging performance are critical.
-*   **Technical Compliance**: Factory-direct supply produced under GB/T 18242-2025 benchmarks. Available in customizable PY/G/PYG reinforcement options to match project-specific tensile strength requirements.
+*   **Technical Compliance**: Manufactured with reference to the technical requirements of GB/T 18242-2025. Confirm the applicable product class and test documentation with our technical team. Available in customizable PY/G/PYG reinforcement options to match project-specific tensile strength requirements.
  
 #### Selection Guide: SBS vs. APP
 *   **Choose SBS**: For projects in colder regions or structures with frequent thermal movement/vibration. Its rubber-modified bitumen provides superior fatigue resistance.
