@@ -1,32 +1,30 @@
 ---
-title: "Wholesale SBS Modified Bituminous Waterproofing Membrane for Tunnel & Foundation | 2026 Factory Price"
-displayName: "SBS Modified Bituminous Membrane"
+title: "SBS Waterproofing Membrane Manufacturer | 3mm, 4mm & 5mm Options"
+displayName: "SBS Waterproofing Membrane"
 category: "bitumen-membranes"
-featured: true
-order: 100
 product_category: "Bitumen Membranes"
-image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-main.webp"
-main_image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-main.webp"
+main_image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
+image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 
-hero_description: "TY-SHIELD™ SBS Modified Bituminous Waterproofing Membrane, fully compliant with the latest GB/T 18242-2025 standards. The premier solution for tunnel, roofing, and foundation projects requiring elite low-temperature flexibility (-25°C) and factory-direct wholesale supply."
+hero_description: "Factory-supplied SBS modified bitumen waterproofing membrane in 3mm, 4mm and 5mm options. Available with PY, G and PYG reinforcement, custom surfaces, OEM labels and export packing."
 
 hero_tags:
-  - "SBS Modified"
-  - "-25°C Flexibility"
-  - "GB/T 18242-2025"
   - "3mm / 4mm / 5mm"
   - "PY / G / PYG"
-  - "OEM Available"
+  - "Selected Grades"
+  - "Custom Surfaces"
+  - "OEM Labeling"
+  - "Export Packing"
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-main.webp"
+  - image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
     title: "Product Overview"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-surface.webp"
-    title: "Surface Options"
+    title: "Reinforcement Options"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-detail.webp"
-    title: "Material Detail"
+    title: "Surface Selection"
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-bulk.webp"
-    title: "Bulk Supply & Packing"
+    title: "Supply & Packing"
 
 spec_table:
   - label: "Product Type"
@@ -45,30 +43,6 @@ spec_table:
     value: "-25°C"
   - label: "Factory Service"
     value: "OEM, Private Label, Export Packing"
-
-overview_image: "/placeholder.webp"
-
-applications:
-  - title: "Tunnel & Infrastructure"
-    text: "Engineered for high-pressure underground environments. Provides superior sealing for tunnels, subways, and culverts with high puncture and hydrostatic resistance."
-  - title: "Roof Waterproofing"
-    text: "Suitable for industrial, commercial, and residential roofing systems, including selected exposed mineral-finished roof applications."
-  - title: "Basement & Foundation"
-    text: "Suitable for below-grade waterproofing systems where a reinforced, torch-applied membrane is specified for constant soil contact."
-  - title: "Underground Waterproofing"
-    text: "Suitable for selected underground structures, retaining walls, and project-specific waterproofing assemblies."
-  - title: "Infrastructure Projects"
-    text: "Available for selected bridge, municipal, and water-conservancy waterproofing projects subject to technical confirmation."
-
-features:
-  - title: "Low-Temperature Flexibility"
-    text: "SBS polymer modification helps the membrane remain flexible in cold and temperature-variable conditions, reducing the risk of cracking during seasonal thermal cycling."
-  - title: "Resistance to Substrate Movement"
-    text: "Reinforced membrane construction supports waterproofing systems exposed to normal structural movement, settlement, and thermal expansion."
-  - title: "Reliable Overlap Bonding"
-    text: "Torch-applied overlap bonding helps create a continuous waterproofing layer across the main field area and treated details."
-  - title: "Project-Specific Configurations"
-    text: "Select the appropriate reinforcement, thickness, and surface-finish combination for non-exposed, multi-layer, or mineral-finished roof systems."
 
 technical_data:
   - label: "Tensile Strength (L/T)"
@@ -96,70 +70,87 @@ technical_data:
     standard: "GB/T 18242-2025"
     requirement: "0.3MPa (30min)"
     value: "Passed"
-  - label: "Puncture Resistance"
-    unit: ">="
-    standard: "GB/T 18242-2025"
-    requirement: "No Leakage"
-    value: "Passed"
+
+applications:
+  - title: "Tunnel & Infrastructure"
+    icon: "traintrack"
+    text: "Engineered for high-pressure underground environments. Provides superior sealing for tunnels, subways, and culverts."
+  - title: "Roof Waterproofing"
+    icon: "warehouse"
+    text: "Suitable for industrial, commercial, and residential roofing systems, including mineral-finished roof applications."
+  - title: "Basement & Foundation"
+    icon: "building"
+    text: "Suitable for below-grade waterproofing systems where a reinforced, torch-applied membrane is specified."
+  - title: "Underground Waterproofing"
+    icon: "wrench"
+    text: "Suitable for selected underground structures, retaining walls, and project-specific waterproofing assemblies."
+  - title: "Infrastructure Projects"
+    icon: "droplets"
+    text: "Available for selected bridge, municipal, and water-conservancy waterproofing projects subject to technical confirmation."
+
+key_benefits:
+  - title: "Low-Temperature Flexibility"
+    icon: "snowflake"
+    text: "SBS polymer modification helps the membrane remain flexible in cold and temperature-variable conditions, reducing the risk of cracking."
+  - title: "Resistance to Substrate Movement"
+    icon: "ruler"
+    text: "Reinforced membrane construction supports waterproofing systems exposed to normal structural movement and thermal expansion."
+  - title: "Reliable Overlap Bonding"
+    icon: "flame"
+    text: "Torch-applied overlap bonding helps create a continuous waterproofing layer across the main field area and treated details."
+  - title: "Project-Specific Configurations"
+    icon: "package"
+    text: "Select the appropriate reinforcement, thickness, and surface-finish combination for non-exposed, multi-layer, or mineral-finished roof systems."
 
 application_guide:
-  - title: "Substrate Prep"
+  - title: "SUBSTRATE PREP"
+    icon: "hammer"
     text: "Ensure the surface is level, dry, and primed with bitumen primer to enhance adhesion."
-  - title: "Initial Layout"
+  - title: "INITIAL LAYOUT"
+    icon: "droplets"
     text: "Dry-roll the membrane to check for proper alignment and overlap positioning before torching."
-  - title: "Torch Application"
+  - title: "TORCH APPLICATION"
+    icon: "flame"
     text: "Use a propane torch to evenly heat the lower surface until the bitumen melts, then unroll firmly."
-  - title: "Seam Rolling"
+  - title: "SEAM ROLLING"
+    icon: "package"
     text: "Apply pressure to all lap joints to ensure a continuous monolithic seal and squeeze out excess bitumen."
+
+packaging_oem:
+  - title: "Export Standard Packing"
+    text: "Rolls are secured with vertical standing on wooden pallets, wrapped in high-density polyethylene film for global ocean freight."
+  - title: "Custom OEM Labeling"
+    text: "We support private label production including custom-printed wrapping film and branded core sleeves for project distributors."
 
 loading_data:
   - label: "Standard Thickness"
     value: "3mm / 4mm / 5mm"
   - label: "20FT Container"
-    value: "Approx. 2,000 - 3,500 sqm (Depending on thickness)"
+    value: "Approx. 6,000 - 8,000 sqm (Depending on thickness)"
 
 downloads:
   - title: "SBS Product TDS"
-    description: "Detailed technical specifications and performance index sheet."
-    type: "PDF"
-    href: ""
+    href: "/docs/sbs-waterproofing-membrane-tds.pdf"
   - title: "Installation Manual"
-    description: "Torch-on application guide for modified bitumen systems."
-    type: "PDF"
-    href: ""
+    href: "/docs/sbs-membrane-installation-manual.pdf"
 
 related_products:
   - title: "APP Modified Bitumen Membrane"
-    image: "https://img.tyuanwaterproof.com/products/app-waterproof-membrane.webp"
+    image: "https://img.tyuanwaterproof.com/products/app-bitumen-membrane.webp"
     href: "/products/app-modified-bitumen-waterproofing-membrane-manufacturer/"
-  - title: "Self-Adhesive Bitumen Membrane"
+  - title: "Self-Adhesive Bituminous Membrane"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
-  - title: "Liquid Polyurethane Coating"
-    image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
-    href: "/products/polyurethane-waterproof-coating-factory/"
-
-installation_essentials:
-  - title: "Professional Long-Handle Roofing Torch"
-    image: "https://sc02.alicdn.com/kf/A3626840249bf4eb7a8360d74dc3fd43ac.png"
-    text: "Engineered for heavy-duty construction. The long-reach handle and safety stand make it ideal for station-position torching on large SBS roofing and tunnel projects."
-  - title: "TIANYUAN™ Bitumen Primer"
-    image: "https://sc04.alicdn.com/kf/Ac435e6b1b37e45f28f3ef8aa6b2f22b1X.jpg"
-    text: "High-penetration asphalt primer. Essential for preparing concrete surfaces to achieve the maximum peel strength and watertight integrity of the SBS membrane."
-
-faqs:
-  - question: "Is this membrane suitable for high-pressure tunnel projects?"
-    answer: "Yes. Our 4mm and 5mm polyester-reinforced (PY) SBS membranes are specifically designed for infrastructure like tunnels and subways, offering high puncture resistance and stability under constant hydrostatic pressure."
-  - question: "What is the difference between SBS and APP membranes?"
-    answer: "SBS is modified with rubber (styrene-butadiene-styrene), offering superior cold flexibility (-25degC). APP is modified with plastic (atactic polypropylene), providing better high-temperature resistance."
-  - question: "How many layers are required for flat roofing?"
-    answer: "For premium protection, a two-layer system (e.g., 3mm + 4mm) is standard. For temporary or economy projects, a single 4mm layer may be used."
-  - question: "Can SBS be applied in wet conditions?"
-    answer: "No. The substrate must be dry to ensure proper torch-on adhesion. Applying over moisture will lead to blistering and seam failure."
 ---
 
-## Industrial-Strength Waterproofing
-
-SBS (Styrene-Butadiene-Styrene) modified bituminous waterproofing membrane is the heavy-duty standard for extreme climates. By blending high-quality bitumen with synthetic rubber, we create a membrane that remains flexible in freezing temperatures while maintaining robust puncture resistance for high-traffic underground structures and critical **tunnel waterproofing** projects.
-
-As a specialized manufacturer, Weifang Tianyuan offers a comprehensive range of TY-SHIELD™ SBS membranes with various reinforcement and surface options (PE, sand, mineral) to suit specific project demands. Our 2026 production line focuses on the latest GB/T 18242-2025 benchmarks, ensuring every roll provides a long-term, maintenance-free seal for **tunnels**, foundations, basements, and complex roofing systems.
+### Industrial-Grade Elastomeric Waterproofing
+ 
+Tianyuan’s **SBS Modified Membrane** is a rubber-modified bitumen system engineered for structures subject to high thermal movement and structural expansion.
+ 
+*   **Engineered Resilience**: Retains elastomeric properties in cold climates (available in selected grades to meet project requirements), ensuring reliable sealing for high-altitude or seasonal-temperature infrastructure.
+*   **Structural Compatibility**: Designed for civil engineering (metro, tunnels, foundations) where substrate movement and crack-bridging performance are critical.
+*   **Technical Compliance**: Factory-direct supply produced under GB/T 18242-2025 benchmarks. Available in customizable PY/G/PYG reinforcement options to match project-specific tensile strength requirements.
+ 
+#### Selection Guide: SBS vs. APP
+*   **Choose SBS**: For projects in colder regions or structures with frequent thermal movement/vibration. Its rubber-modified bitumen provides superior fatigue resistance.
+*   **Choose APP**: For high-temperature environments or exposed roofing in tropical climates (see our [APP Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/) for details).

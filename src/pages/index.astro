@@ -7,6 +7,12 @@ import CTA from '../components/CTA.astro';
 import { getCollection } from 'astro:content';
 import { applications, productCategories, site, stats } from '../data/site';
 
+function normalizeAsset(value: any) {
+  if (!value) return "";
+  if (typeof value === "string") return value;
+  return value?.src || value?.url || "";
+}
+
 const products = (await getCollection('products')).sort((a,b)=>a.data.order-b.data.order);
 const featured = products.filter((p)=>p.data.featured).slice(0,6);
 ---
@@ -234,10 +240,6 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
       </div>
     </div>
   </section>
-
-  <CTA />
-</Layout>
-n>
 
   <CTA />
 </Layout>

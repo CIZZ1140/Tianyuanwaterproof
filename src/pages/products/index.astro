@@ -2,6 +2,12 @@
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
+function normalizeAsset(value: any) {
+  if (!value) return "";
+  if (typeof value === "string") return value;
+  return value?.src || value?.url || "";
+}
+
 const pageTitle = "B2B Waterproofing Materials Catalog | Weifang Tianyuan Waterproof";
 const pageDescription = "Explore our full catalog of high-quality modified bitumen membranes, high-polymer PVC/TPO/EPDM membranes, and waterproof coatings for industrial sourcing.";
 
