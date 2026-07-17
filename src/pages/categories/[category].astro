@@ -146,6 +146,8 @@ const products = await getCollection('products', ({ data }) => {
                 displayImage = displayImage.replace(/\/$/, "") + ".webp";
               }
               
+              const fitClass = p.data.image_fit === 'cover' ? 'object-cover' : 'object-contain';
+
               return (
                 <a href={`/products/${p.slug}/`} class="group block bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-all cursor-pointer">
                   <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-slate-50 flex items-center justify-center">
@@ -153,7 +155,7 @@ const products = await getCollection('products', ({ data }) => {
                     <img 
                       src={displayImage} 
                       alt={p.data.title} 
-                      class={`${cat.id === 'waterproof-coatings' ? 'object-contain p-4' : 'object-cover'} w-full h-full group-hover:scale-105 transition-transform duration-500`} 
+                      class={`${fitClass} w-full h-full group-hover:scale-105 transition-transform duration-500`} 
                       loading="lazy"
                       decoding="async"
                       onerror="this.src='/placeholder.webp'; this.onerror=null;"

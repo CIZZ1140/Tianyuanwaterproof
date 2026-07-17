@@ -16,6 +16,9 @@ hero_tags:
   - "OEM Labeling"
   - "Export Packing"
 
+technical_scope: "SBS PY II, 4mm, PE Film Surface"
+technical_disclaimer: "Values shown apply to the stated product configuration. Other reinforcement, thickness and surface combinations may have different performance values. Request the corresponding TDS and batch test report before specification or procurement."
+
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
     title: "Product Overview"
