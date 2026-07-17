@@ -180,7 +180,7 @@ project_references:
     quantity: "10,000 sqm"
     year: 2026
     application: "Torch-applied exposed flat roof waterproofing system"
-    image: "https://sc02.alicdn.com/kf/H63f2f29f06b94671a6af4a56bae4fff41.jpg"
+    image: "https://img.tyuanwaterproof.com/projects/thailand-flat-roof-sbs-waterproofing.webp"
 
 related_products:
   - title: "APP Modified Bitumen Membrane"
