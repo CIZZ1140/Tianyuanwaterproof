@@ -6,7 +6,7 @@ product_category: "Bitumen Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 
-hero_description: "Factory-supplied SBS modified bitumen waterproofing membrane in 3mm, 4mm and 5mm options. Available with PY, G and PYG reinforcement, custom surfaces, OEM labels and export packing."
+hero_description: "TY-SHIELD™ SBS modified bitumen waterproofing membrane is a torch-applied sheet membrane designed for roofing, basement, foundation and underground waterproofing projects. Available in 3mm, 4mm and 5mm thicknesses with polyester, fiberglass or composite reinforcement, PE film, sand or mineral surfaces, and OEM packaging for bulk export orders."
 
 hero_tags:
   - "3mm / 4mm / 5mm"
