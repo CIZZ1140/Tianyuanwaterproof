@@ -168,17 +168,17 @@ configurations:
     use: "Basement, foundation, protected roofing"
   - code: "SBS PY Mineral"
     reinforcement: "Polyester Felt (PY)"
-    thickness: ["4mm", "5mm"]
+    thickness: ["3mm", "4mm", "5mm"]
     surface: "Mineral Granules"
     use: "Exposed roofing cap sheet"
   - code: "SBS G PE"
     reinforcement: "Fiberglass Felt (G)"
-    thickness: ["3mm", "4mm"]
+    thickness: ["3mm", "4mm", "5mm"]
     surface: "PE Film"
     use: "Dimensionally stable multi-layer roof systems"
   - code: "SBS PYG"
     reinforcement: "Composite (PYG)"
-    thickness: ["4mm", "5mm"]
+    thickness: ["3mm", "4mm", "5mm"]
     surface: "PE Film / Sand"
     use: "Infrastructure, tunnels, project-specific systems"
 
