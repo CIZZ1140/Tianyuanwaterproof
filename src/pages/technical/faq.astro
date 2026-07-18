@@ -1,10 +1,152 @@
 ---
 import Layout from '@/layouts/Layout.astro';
+
+const faqs = [
+  {
+    category: "Products & Customization",
+    questions: [
+      {
+        q: "What international standards do your waterproofing membranes meet?",
+        a: "Our products, including SBS, PVC, and TPO membranes, comply with international standards such as ASTM (American Society for Testing and Materials) and ISO 9001. We provide Technical Data Sheets (TDS) and MSDS for every batch to ensure compliance with global engineering requirements."
+      },
+      {
+        q: "Do you support OEM and private label packaging?",
+        a: "Yes. As a direct factory, we offer full OEM services. We can customize the roll length, thickness, and width, and print your company logo or private label on the product surface and packaging film according to your brand identity."
+      },
+      {
+        q: "Can I request a free sample for quality testing?",
+        a: "Absolutely. We provide free A4-sized or small roll samples for our global customers. You only need to cover the international courier cost, which will be deducted from your first official bulk order."
+      }
+    ]
+  },
+  {
+    category: "Ordering & Logistics",
+    questions: [
+      {
+        q: "What is your Minimum Order Quantity (MOQ)?",
+        a: "For standard products, our MOQ is typically one 20ft container (approx. 2000-4000 sqm depending on thickness). However, for trial orders or specific stock items, we can negotiate a smaller quantity to support your market testing."
+      },
+      {
+        q: "What is the typical lead time for an export order?",
+        a: "Standard orders are usually ready for shipment within 7-15 days after receiving the deposit. For large OEM orders with custom packaging, the lead time is approximately 20 days."
+      },
+      {
+        q: "Which ports do you usually ship from?",
+        a: "Our factory is located in Weifang, Shandong. We primarily ship from Qingdao Port, which is one of the largest and most efficient ports in China, ensuring fast transit times to the Middle East, Southeast Asia, and Africa."
+      }
+    ]
+  },
+  {
+    category: "Technical & Installation",
+    questions: [
+      {
+        q: "Do you provide technical support for site installation?",
+        a: "Yes, we provide detailed installation guides, video tutorials, and remote technical consultations. For large-scale infrastructure projects, we can provide professional engineering advice on material selection and joint sealing details."
+      },
+      {
+        q: "What is the service life of your waterproofing membranes?",
+        a: "Our premium SBS and TPO membranes are designed for a service life of 20-30 years in exposed roofing applications and even longer for buried underground projects, provided they are installed according to professional standards."
+      }
+    ]
+  }
+];
+
+// Generate JSON-LD for SEO
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.flatMap(cat => cat.questions).map(faq => ({
+    "@type": "Question",
+    "name": faq.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.a
+    }
+  }))
+};
 ---
 <Layout 
-  title="FAQ | Waterproofing Materials"
-  description="Common questions about Bitumen Membranes, EPDM, TPO, and installation. Find expert answers for your construction waterproofing projects."
+  title="FAQ | Waterproofing Materials Factory Direct Support"
+  description="Find expert answers to common questions about Bitumen Membranes, PVC, TPO, OEM services, MOQ, and international waterproofing standards (ASTM/ISO)."
 >
-  <section class="bg-navy py-16 text-white"><div class="container-wrap"><p class="eyebrow">FAQ</p><h1 class="mt-3 text-4xl font-black text-white md:text-5xl">Frequently asked questions</h1></div></section>
-  <section class="py-16"><div class="container-wrap grid gap-5">{['Can you provide OEM packaging?','Can you provide TDS and MSDS?','What specifications can be customized?','What information is needed for quotation?'].map((q) => <div class="card"><h2 class="text-xl font-bold">{q}</h2><p class="mt-3 text-sm leading-6 text-slate-600">Yes. Please send product type, thickness, width, length, quantity, packaging requirement and destination port.</p></div>)}</div></section>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <!-- Hero Section -->
+  <section class="bg-[#0B1E3B] py-20 text-white border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <nav class="flex text-sm font-bold text-blue-200/90 gap-3 items-center mb-6 uppercase tracking-wider">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span class="text-blue-400/50">/</span>
+        <span class="text-white">FAQ</span>
+      </nav>
+      <h1 class="text-4xl md:text-6xl font-black text-white uppercase leading-tight">
+        Frequently Asked <span class="text-blue-500">Questions</span>
+      </h1>
+      <p class="mt-6 text-slate-300 max-w-2xl text-lg leading-relaxed">
+        Expert answers for construction contractors, importers, and project buyers about waterproofing material sourcing and application.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-[300px_1fr] gap-12">
+        <!-- Sidebar Navigation -->
+        <aside class="hidden lg:block">
+          <div class="sticky top-24 space-y-4">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-6">Topic Categories</h2>
+            {faqs.map((cat) => (
+              <a 
+                href={`#${cat.category.toLowerCase().replace(/\s+/g, '-')}`} 
+                class="block text-sm font-bold text-navy hover:text-blue-600 transition-colors py-2 border-b border-slate-200"
+              >
+                {cat.category}
+              </a>
+            ))}
+            <div class="mt-12 p-6 bg-navy rounded-2xl text-white">
+              <p class="text-xs font-bold uppercase mb-2">Need more help?</p>
+              <p class="text-sm text-slate-300 mb-6 leading-relaxed">Can't find the answer you're looking for?</p>
+              <a href="/contact/" class="inline-block bg-blue-600 text-white text-xs font-bold px-6 py-3 rounded-xl hover:bg-blue-700 transition-all">Contact Expert</a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- FAQ Content -->
+        <div class="space-y-16">
+          {faqs.map((cat) => (
+            <div id={cat.category.toLowerCase().replace(/\s+/g, '-')} class="scroll-mt-24">
+              <h2 class="text-2xl font-black text-navy uppercase mb-8 flex items-center gap-4">
+                <span class="h-1 w-12 bg-blue-600 rounded-full"></span>
+                {cat.category}
+              </h2>
+              <div class="grid gap-6">
+                {cat.questions.map((faq) => (
+                  <div class="group bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all hover:border-blue-200">
+                    <h3 class="text-lg font-bold text-navy mb-4 group-hover:text-blue-600 transition-colors">
+                      {faq.q}
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base">
+                      {faq.a}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-black text-navy uppercase mb-6">Discuss Your Project with Our Technical Team</h2>
+      <p class="text-slate-600 mb-10 max-w-2xl mx-auto">Get custom quotations, technical datasheets, and professional advice for your specific waterproofing project.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/contact/" class="bg-blue-600 text-white font-bold px-10 py-4 rounded-xl hover:bg-navy transition-all shadow-lg shadow-blue-600/20">Send Inquiry</a>
+        <a href="https://wa.me/8615263640998" class="bg-green-500 text-white font-bold px-10 py-4 rounded-xl hover:bg-green-600 transition-all shadow-lg shadow-green-500/20">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
 </Layout>

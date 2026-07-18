@@ -120,14 +120,14 @@ export const applications = [
   {
     title: 'Roof Waterproofing',
     slug: 'roof-waterproofing',
-    image: '/assets/images/optimized/commercial-roof.webp',
+    image: 'https://img.tyuanwaterproof.com/app-roof-waterproofing.webp',
     summary: 'Solutions for flat, pitched, industrial and civil roofs.',
     products: ['SBS Modified Bitumen', 'TPO Membrane', 'PVC Membrane']
   },
   {
     title: 'Underground Waterproofing',
     slug: 'underground-waterproofing',
-    image: '/assets/images/optimized/basement.webp',
+    image: 'https://img.tyuanwaterproof.com/app-underground-waterproofing.webp',
     summary: 'Heavy-duty protection for foundations, underground walls and basements.',
     products: ['Self-Adhesive Bitumen', 'Pre-applied HDPE', 'Polyurethane Coating']
   },
@@ -163,7 +163,7 @@ export const applications = [
 
 export const stats = [
   { value: '30+', label: 'Years Experience' },
-  { value: '3', label: 'Product Lines' },
+  { value: '5', label: 'Production Lines' },
   { value: '50+', label: 'Countries Exported' },
   { value: 'OEM/ODM', label: 'Service' },
   { value: '24/7', label: 'Quick Response' }

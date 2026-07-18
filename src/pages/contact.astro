@@ -59,24 +59,102 @@ const contactCards = [
 ];
 
 const countries = [
-  { code: '+1', name: 'USA' },
+  { code: '+1', name: 'USA/Canada' },
   { code: '+966', name: 'Saudi Arabia' },
   { code: '+971', name: 'UAE' },
   { code: '+84', name: 'Vietnam' },
-  { code: '+234', name: 'Nigeria' },
-  { code: '+27', name: 'South Africa' },
   { code: '+63', name: 'Philippines' },
   { code: '+60', name: 'Malaysia' },
   { code: '+62', name: 'Indonesia' },
   { code: '+66', name: 'Thailand' },
-  { code: '+44', name: 'UK' },
-  { code: '+86', name: 'China' },
+  { code: '+65', name: 'Singapore' },
+  { code: '+234', name: 'Nigeria' },
+  { code: '+27', name: 'South Africa' },
   { code: '+20', name: 'Egypt' },
-  { code: '+92', name: 'Pakistan' },
+  { code: '+212', name: 'Morocco' },
+  { code: '+213', name: 'Algeria' },
+  { code: '+254', name: 'Kenya' },
+  { code: '+251', name: 'Ethiopia' },
+  { code: '+233', name: 'Ghana' },
   { code: '+90', name: 'Turkey' },
-  { code: '+7', name: 'Russia' },
-  { code: '+55', name: 'Brazil' },
+  { code: '+92', name: 'Pakistan' },
   { code: '+91', name: 'India' },
+  { code: '+880', name: 'Bangladesh' },
+  { code: '+94', name: 'Sri Lanka' },
+  { code: '+974', name: 'Qatar' },
+  { code: '+965', name: 'Kuwait' },
+  { code: '+968', name: 'Oman' },
+  { code: '+973', name: 'Bahrain' },
+  { code: '+962', name: 'Jordan' },
+  { code: '+964', name: 'Iraq' },
+  { code: '+961', name: 'Lebanon' },
+  { code: '+7', name: 'Russia/Kazakhstan' },
+  { code: '+998', name: 'Uzbekistan' },
+  { code: '+44', name: 'UK' },
+  { code: '+49', name: 'Germany' },
+  { code: '+33', name: 'France' },
+  { code: '+34', name: 'Spain' },
+  { code: '+39', name: 'Italy' },
+  { code: '+48', name: 'Poland' },
+  { code: '+31', name: 'Netherlands' },
+  { code: '+32', name: 'Belgium' },
+  { code: '+41', name: 'Switzerland' },
+  { code: '+43', name: 'Austria' },
+  { code: '+46', name: 'Sweden' },
+  { code: '+47', name: 'Norway' },
+  { code: '+52', name: 'Mexico' },
+  { code: '+55', name: 'Brazil' },
+  { code: '+54', name: 'Argentina' },
+  { code: '+56', name: 'Chile' },
+  { code: '+51', name: 'Peru' },
+  { code: '+57', name: 'Colombia' },
+  { code: '+58', name: 'Venezuela' },
+  { code: '+507', name: 'Panama' },
+  { code: '+61', name: 'Australia' },
+  { code: '+64', name: 'New Zealand' },
+  { code: '+86', name: 'China' },
+  { code: '+852', name: 'Hong Kong' },
+  { code: '+886', name: 'Taiwan' },
+  { code: '+82', name: 'South Korea' },
+  { code: '+81', name: 'Japan' },
+  { code: '+855', name: 'Cambodia' },
+  { code: '+856', name: 'Laos' },
+  { code: '+95', name: 'Myanmar' },
+  { code: '+351', name: 'Portugal' },
+  { code: '+30', name: 'Greece' },
+  { code: '+40', name: 'Romania' },
+  { code: '+36', name: 'Hungary' },
+  { code: '+420', name: 'Czech Republic' },
+  { code: '+353', name: 'Ireland' },
+  { code: '+216', name: 'Tunisia' },
+  { code: '+218', name: 'Libya' },
+  { code: '+249', name: 'Sudan' },
+  { code: '+255', name: 'Tanzania' },
+  { code: '+256', name: 'Uganda' },
+  { code: '+263', name: 'Zimbabwe' },
+  { code: '+260', name: 'Zambia' },
+  { code: '+244', name: 'Angola' },
+  { code: '+225', name: 'Ivory Coast' },
+  { code: '+221', name: 'Senegal' },
+  { code: '+972', name: 'Israel' },
+  { code: '+994', name: 'Azerbaijan' },
+  { code: '+995', name: 'Georgia' },
+  { code: '+380', name: 'Ukraine' },
+  { code: '+506', name: 'Costa Rica' },
+  { code: '+593', name: 'Ecuador' },
+  { code: '+591', name: 'Bolivia' },
+  { code: '+595', name: 'Paraguay' },
+  { code: '+598', name: 'Uruguay' },
+  { code: '+502', name: 'Guatemala' },
+  { code: '+503', name: 'El Salvador' },
+  { code: '+504', name: 'Honduras' },
+  { code: '+505', name: 'Nicaragua' },
+  { code: '+1809', name: 'Dominican Republic' },
+  { code: '+1876', name: 'Jamaica' },
+  { code: '+1242', name: 'Bahamas' },
+  { code: '+1868', name: 'Trinidad and Tobago' },
+  { code: '+679', name: 'Fiji' },
+  { code: '+675', name: 'Papua New Guinea' },
 ];
 
 const labelClass = 'mb-2 block text-sm font-bold tracking-wide text-[#4A453E]';
@@ -87,6 +165,22 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
   title="Contact Us | Tianyuan Waterproof"
   description="Get in touch with Tianyuan Waterproof for factory-direct quotes and technical support."
 >
+  <style is:global>
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
   <main class="min-h-screen bg-[#F9F7F2] py-16 sm:py-24 font-sans">
     <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
       <!-- Header -->
@@ -159,7 +253,7 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
                           <input type="text" id="country-search" placeholder="Search country..." class="w-full pl-9 pr-4 py-2 text-xs border border-slate-200 rounded-lg outline-none focus:border-[#A87835]" />
                         </div>
                       </div>
-                      <div class="max-h-60 overflow-y-auto" id="country-list">
+                      <div class="max-h-60 overflow-y-auto custom-scrollbar" id="country-list">
                         {countries.map(c => (
                           <div class="country-item px-4 py-3 text-sm text-slate-600 hover:bg-slate-50 hover:text-[#A87835] cursor-pointer flex justify-between items-center transition-colors" data-code={c.code} data-name={c.name}>
                             <span class="font-medium">{c.code}</span>
@@ -262,6 +356,9 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
 
     // Close on outside click
     document.addEventListener('click', () => dropdown?.classList.add('hidden'));
+
+    // Prevent closing when clicking inside dropdown (search input, list etc.)
+    dropdown?.addEventListener('click', (e) => e.stopPropagation());
 
     // Search Logic
     searchInput?.addEventListener('input', (e) => {

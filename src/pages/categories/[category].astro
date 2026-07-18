@@ -34,7 +34,7 @@ export async function getStaticPaths() {
       id: "waterproof-tapes",
       name: "Waterproof Tapes",
       desc: "High-adhesion butyl sealant tapes, aluminum flashing tapes, and self-adhesive sealing bands for metal roofs, flashing repairs, and window joints.",
-      image: "/placeholder.webp",
+      image: "https://img.tyuanwaterproof.com/placeholder.webp",
       capabilities: [
         "Double-sided & Single-sided Aluminum Butyl Tapes",
         "Super Adhesion UV-Resistant Roof Sealing Tape",
@@ -118,7 +118,7 @@ const products = await getCollection('products', ({ data }) => {
         />
         <div class="absolute inset-0 bg-gradient-to-r from-[#0B1E3B] via-[#0B1E3B]/80 to-transparent"></div>
       </div>
-      <div class="absolute inset-0 bg-[url('/assets/images/grid.svg')] opacity-10 mix-blend-overlay"></div>
+      <div class="absolute inset-0 bg-[url('https://img.tyuanwaterproof.com/grid.svg')] opacity-10 mix-blend-overlay"></div>
       
       <div class="relative z-10 max-w-7xl mx-auto px-6 text-center sm:text-left">
         <nav class="flex text-sm font-bold text-blue-200/90 gap-3 justify-center sm:justify-start items-center mb-6 uppercase tracking-wider">
@@ -158,7 +158,7 @@ const products = await getCollection('products', ({ data }) => {
                       class={`${fitClass} w-full h-full group-hover:scale-105 transition-transform duration-500`} 
                       loading="lazy"
                       decoding="async"
-                      onerror="this.src='/placeholder.webp'; this.onerror=null;"
+                      onerror="this.src='https://img.tyuanwaterproof.com/placeholder.webp'; this.onerror=null;"
                     />
                     ) : (
                       <div class="w-full h-full flex flex-col items-center justify-center text-slate-400 p-6 text-center select-none">
