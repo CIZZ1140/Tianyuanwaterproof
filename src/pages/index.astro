@@ -219,7 +219,14 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
       
       <div class="grid gap-8 md:grid-cols-2">
         <div class="group relative overflow-hidden rounded-3xl bg-navy aspect-[16/10]">
-          <img src="https://img.tyuanwaterproof.com/projects/tunnel-project.webp" alt="Metro tunnel waterproofing project" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" width="800" height="500" />
+          <img 
+            src="https://img.tyuanwaterproof.com/projects/tunnel-interior.webp" 
+            alt="Metro tunnel waterproofing project" 
+            class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" 
+            width="800" 
+            height="500" 
+            onerror="this.src='https://img.tyuanwaterproof.com/placeholder.webp'; this.onerror=null;"
+          />
           <div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"></div>
           <div class="absolute bottom-8 left-8 right-8">
             <span class="bg-brand text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full mb-3 inline-block">Infrastructure</span>
@@ -229,7 +236,14 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
         </div>
         
         <div class="group relative overflow-hidden rounded-3xl bg-navy aspect-[16/10]">
-          <img src="https://img.tyuanwaterproof.com/projects/industrial-factory-aerial.webp" alt="Industrial factory waterproofing project" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" width="800" height="500" />
+          <img 
+            src="https://img.tyuanwaterproof.com/projects/industrial-factory-aerial.webp" 
+            alt="Industrial factory waterproofing project" 
+            class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" 
+            width="800" 
+            height="500" 
+            onerror="this.src='https://img.tyuanwaterproof.com/placeholder.webp'; this.onerror=null;"
+          />
           <div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"></div>
           <div class="absolute bottom-8 left-8 right-8">
             <span class="bg-brand text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full mb-3 inline-block">Industrial</span>
