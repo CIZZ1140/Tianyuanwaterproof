@@ -88,44 +88,64 @@ const jsonLd = {
     </div>
   </section>
 
-  <section class="py-20 bg-slate-50">
+  <section class="py-20 bg-[#F5F7FA]">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="grid lg:grid-cols-[300px_1fr] gap-12">
-        <!-- Sidebar Navigation -->
+      <div class="grid lg:grid-cols-[340px_1fr] gap-16">
+        <!-- REDESIGNED Sidebar Navigation -->
         <aside class="hidden lg:block">
-          <div class="sticky top-24 space-y-2">
-            <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-6">Topic Categories</h2>
-            {faqs.map((cat) => (
-              <a 
-                href={`#${cat.category.toLowerCase().replace(/\s+/g, '-')}`} 
-                class="block text-sm font-medium text-slate-700 hover:text-blue-600 hover:bg-blue-50 px-4 py-3 rounded-xl transition-all border-b border-slate-100 last:border-0"
-              >
-                {cat.category}
-              </a>
-            ))}
-            <div class="mt-12 p-6 bg-navy rounded-2xl text-white">
-              <p class="text-xs font-bold uppercase mb-2">Need more help?</p>
-              <p class="text-sm text-slate-300 mb-6 leading-relaxed">Can't find the answer you're looking for?</p>
-              <a href="/contact/" class="inline-block bg-blue-600 text-white text-xs font-bold px-6 py-3 rounded-xl hover:bg-blue-700 transition-all">Contact Expert</a>
+          <div class="sticky top-24">
+            <div class="bg-[#0B1E3B] rounded-[2rem] p-8 shadow-2xl border border-white/10 overflow-hidden relative">
+              <!-- Decorative element -->
+              <div class="absolute -top-12 -right-12 w-32 h-32 bg-blue-600/20 rounded-full blur-3xl"></div>
+              
+              <h2 class="text-[13px] font-black uppercase tracking-[0.2em] text-blue-400 mb-10">Topic Categories</h2>
+              
+              <nav class="flex flex-col gap-3">
+                {faqs.map((cat) => (
+                  <a 
+                    href={`#${cat.category.toLowerCase().replace(/\s+/g, '-')}`} 
+                    class="group flex items-center justify-between px-6 py-5 rounded-2xl bg-white/5 border border-white/5 text-white hover:bg-blue-600 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1"
+                  >
+                    <span class="text-lg font-bold tracking-tight">{cat.category}</span>
+                    <svg class="w-5 h-5 text-white/30 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                  </a>
+                ))}
+              </nav>
+
+              <div class="mt-12 pt-10 border-t border-white/10">
+                <h3 class="text-white font-black text-xl mb-3">Still Need Help?</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-8">Can't find the specific technical answer? Our engineers are ready to assist you.</p>
+                <a href="/contact/" class="flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-500 text-white font-black text-sm uppercase tracking-widest py-4 px-6 rounded-2xl transition-all shadow-xl shadow-blue-900/20 group">
+                  Contact Expert
+                  <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7-7 7"></path></svg>
+                </a>
+              </div>
             </div>
           </div>
         </aside>
 
         <!-- FAQ Content -->
-        <div class="space-y-16">
+        <div class="space-y-24">
           {faqs.map((cat) => (
             <div id={cat.category.toLowerCase().replace(/\s+/g, '-')} class="scroll-mt-24">
-              <h2 class="text-2xl font-black text-navy uppercase mb-8 flex items-center gap-4">
-                <span class="h-1 w-12 bg-blue-600 rounded-full"></span>
+              <div class="inline-flex items-center gap-3 bg-blue-600/10 px-4 py-1.5 rounded-full mb-6">
+                <span class="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
+                <span class="text-xs font-black text-blue-700 uppercase tracking-widest">{cat.category}</span>
+              </div>
+              
+              <h2 class="text-3xl md:text-4xl font-black text-[#0B1E3B] uppercase mb-10 tracking-tight leading-none">
                 {cat.category}
               </h2>
-              <div class="grid gap-6">
+
+              <div class="grid gap-8">
                 {cat.questions.map((faq) => (
-                  <div class="group bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all hover:border-blue-200">
-                    <h3 class="text-lg font-bold text-navy mb-4 group-hover:text-blue-600 transition-colors">
+                  <div class="group bg-white rounded-[2rem] p-10 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-500 hover:border-blue-200 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-2 h-0 bg-blue-600 group-hover:h-full transition-all duration-500"></div>
+                    <h3 class="text-xl md:text-2xl font-black text-[#0B1E3B] mb-6 leading-tight group-hover:text-blue-600 transition-colors">
                       {faq.q}
                     </h3>
-                    <p class="text-slate-600 leading-relaxed text-sm md:text-base">
+                    <div class="h-0.5 w-12 bg-slate-100 mb-6 group-hover:w-24 group-hover:bg-blue-200 transition-all duration-500"></div>
+                    <p class="text-slate-600 leading-relaxed text-base md:text-lg">
                       {faq.a}
                     </p>
                   </div>
@@ -139,13 +159,14 @@ const jsonLd = {
   </section>
 
   <!-- CTA Section -->
-  <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-black text-navy uppercase mb-6">Discuss Your Project with Our Technical Team</h2>
-      <p class="text-slate-600 mb-10 max-w-2xl mx-auto">Get custom quotations, technical datasheets, and professional advice for your specific waterproofing project.</p>
-      <div class="flex flex-wrap justify-center gap-4">
-        <a href="/contact/" class="bg-blue-600 text-white font-bold px-10 py-4 rounded-xl hover:bg-navy transition-all shadow-lg shadow-blue-600/20">Send Inquiry</a>
-        <a href="https://wa.me/8615263640998" class="bg-green-500 text-white font-bold px-10 py-4 rounded-xl hover:bg-green-600 transition-all shadow-lg shadow-green-500/20">WhatsApp Us</a>
+  <section class="py-32 bg-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://img.tyuanwaterproof.com/grid.svg')] opacity-[0.03]"></div>
+    <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+      <h2 class="text-4xl md:text-5xl font-black text-[#0B1E3B] uppercase mb-8 leading-tight">Discuss Your Project with Our <span class="text-blue-600 underline underline-offset-8 decoration-8 decoration-blue-100">Technical Team</span></h2>
+      <p class="text-slate-500 mb-12 max-w-2xl mx-auto text-lg leading-relaxed font-medium">Get custom quotations, technical datasheets, and professional advice for your specific waterproofing project.</p>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="/contact/" class="bg-[#0B1E3B] text-white font-black text-sm uppercase tracking-[0.2em] px-12 py-5 rounded-2xl hover:bg-blue-600 transition-all shadow-2xl shadow-navy/20">Send Inquiry</a>
+        <a href="https://wa.me/8615263640998" class="bg-[#25D366] text-white font-black text-sm uppercase tracking-[0.2em] px-12 py-5 rounded-2xl hover:scale-105 transition-all shadow-2xl shadow-green-500/20">WhatsApp Us</a>
       </div>
     </div>
   </section>
