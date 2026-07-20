@@ -20,13 +20,13 @@ hero_tags:
 
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
-    title: "Self-Adhesive Bituminous Waterproofing Membrane - Peel and Stick Roll"
+    title: "Peel &amp; Stick Roll"
   - image: "https://img.tyuanwaterproof.com/products/sa-gallery/sa-surface-types.webp"
-    title: "Surface Layer Options — PE Film, Sand, Aluminum Foil &amp; Slate Chips"
+    title: "Surface Layer Options"
   - image: "https://img.tyuanwaterproof.com/products/sa-gallery/sa-application.webp"
-    title: "Cold Peel-and-Stick Application on Concrete Surface"
+    title: "Cold Application on Site"
   - image: "https://img.tyuanwaterproof.com/products/sa-gallery/sa-heat-compare.webp"
-    title: "Heat Reflection Performance — 42.8\u00b0C vs 26.0\u00b0C"
+    title: "Heat Reflection 42.8\u00b0C vs 26.0\u00b0C"
 
 spec_table:
   - label: "Product Type"
