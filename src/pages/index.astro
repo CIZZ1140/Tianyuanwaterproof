@@ -198,11 +198,71 @@ const featured = products.filter((p)=>p.data.featured).slice(0,6);
     </div>
   </section>
 
+  <section class="bg-white border-y border-slate-100 py-12" aria-labelledby="cert-title">
+    <div class="container mx-auto">
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <span class="inline-block rounded-full border border-brand/20 bg-brand/5 px-3 py-0.5 text-[10px] font-bold text-brand uppercase tracking-[0.12em] mb-2">Certified</span>
+          <h3 class="text-xl font-black text-navy uppercase tracking-tight" id="cert-title">International Certifications</h3>
+        </div>
+        <a href="/about/#certifications" class="shrink-0 text-sm font-bold text-brand hover:underline whitespace-nowrap">View All →</a>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div class="group rounded-xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-[#F8F9FA] p-3">
+            <img src="https://sc02.alicdn.com/kf/Hd52f7d79611f4932b1eb4758f9f46dbem.jpg" alt="CE RoHS Membrane" width="1200" height="848" loading="lazy" class="w-full object-contain aspect-[3/4] group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="px-3 py-2.5 text-center border-t border-slate-50">
+            <p class="text-xs font-extrabold text-navy">CE RoHS</p>
+            <p class="text-[10px] text-slate-400">Membrane</p>
+          </div>
+        </div>
+        <div class="group rounded-xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-[#F8F9FA] p-3">
+            <img src="https://sc02.alicdn.com/kf/H12cbac410e914fa98d17c9cd95a0cf55B.jpg" alt="CE RoHS Coating" width="1200" height="848" loading="lazy" class="w-full object-contain aspect-[3/4] group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="px-3 py-2.5 text-center border-t border-slate-50">
+            <p class="text-xs font-extrabold text-navy">CE RoHS</p>
+            <p class="text-[10px] text-slate-400">Coating</p>
+          </div>
+        </div>
+        <div class="group rounded-xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-[#F8F9FA] p-3">
+            <img src="/certs/iso-9001-2015-en.jpg" alt="ISO 9001:2015" width="748" height="956" loading="lazy" class="w-full object-contain aspect-[3/4] group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="px-3 py-2.5 text-center border-t border-slate-50">
+            <p class="text-xs font-extrabold text-navy">ISO 9001:2015</p>
+            <p class="text-[10px] text-slate-400">Quality Management</p>
+          </div>
+        </div>
+        <div class="group rounded-xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-[#F8F9FA] p-3">
+            <img src="/certs/iso-14001-2015.jpg" alt="ISO 14001:2015" width="748" height="956" loading="lazy" class="w-full object-contain aspect-[3/4] group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="px-3 py-2.5 text-center border-t border-slate-50">
+            <p class="text-xs font-extrabold text-navy">ISO 14001:2015</p>
+            <p class="text-[10px] text-slate-400">Environmental</p>
+          </div>
+        </div>
+        <div class="group rounded-xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-[#F8F9FA] p-3">
+            <img src="/certs/iso-45001-2018.jpg" alt="ISO 45001:2018" width="748" height="956" loading="lazy" class="w-full object-contain aspect-[3/4] group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="px-3 py-2.5 text-center border-t border-slate-50">
+            <p class="text-xs font-extrabold text-navy">ISO 45001:2018</p>
+            <p class="text-[10px] text-slate-400">Health &amp; Safety</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="bg-slate-50 py-12" aria-labelledby="feat-title">
     <div class="container mx-auto">
       <SectionHeader title="Featured Products" href="/products/" linkLabel="View All Products" id="feat-title" />
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-6">
-        {featured.map((p)=><ProductCard title={p.data.displayName || p.data.shortTitle || p.data.title} href={`/products/${p.slug}/`} image={p.data.image} />)}
+        {featured.map((p)=><ProductCard title={p.slug === 'epdm-waterproofing-membrane-wholesale' ? 'SBS Bitumen Waterproof Membrane' : (p.data.displayName || p.data.shortTitle || p.data.title)} href={p.slug === 'epdm-waterproofing-membrane-wholesale' ? '/products/sbs-bitumen-waterproofing-membrane-manufacturer/' : `/products/${p.slug}/`} image={p.slug === 'epdm-waterproofing-membrane-wholesale' ? 'https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp' : p.data.image} />)}
       </div>
     </div>
   </section>
