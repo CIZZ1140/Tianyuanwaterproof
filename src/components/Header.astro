@@ -28,7 +28,7 @@ const {
 } = Astro.props as HeaderProps;
 ---
 
-<header class="sticky top-0 w-full bg-[#0E2A47] text-white shadow-sm border-b border-white/5 z-50">
+<header role="banner" class="sticky top-0 w-full bg-[#0E2A47] text-white shadow-sm border-b border-white/5 z-50">
   <div class="mx-auto grid min-h-[76px] max-w-[1680px] grid-cols-[auto_auto] items-center gap-4 px-6 md:px-10 lg:grid-cols-[300px_minmax(0,1fr)_320px] lg:px-10 xl:px-16">
     <!-- Logo -->
     <a href="/" class="flex shrink-0 items-center gap-3">
@@ -57,7 +57,7 @@ const {
           >
             {item.label}
             {item.children && (
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             )}
           </a>
 
@@ -95,9 +95,12 @@ const {
 
     <!-- Mobile Menu Button -->
     <details class="group relative justify-self-end lg:hidden">
-      <summary class="flex cursor-pointer list-none items-center gap-2 rounded-lg border border-white/20 px-3 py-2 text-sm font-bold text-white [&::-webkit-details-marker]:hidden">
+      <summary 
+        class="flex cursor-pointer list-none items-center gap-2 rounded-lg border border-white/20 px-3 py-2 text-sm font-bold text-white [&::-webkit-details-marker]:hidden"
+        aria-label="Toggle Navigation Menu"
+      >
         Menu
-        <span class="text-white/70 transition group-open:rotate-180">⌄</span>
+        <span class="text-white/70 transition group-open:rotate-180" aria-hidden="true">⌄</span>
       </summary>
 
       <nav
