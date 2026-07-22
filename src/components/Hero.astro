@@ -51,13 +51,13 @@ const stats: HeroStat[] = [
 <section class="relative w-full overflow-hidden bg-[#0E2A47] text-white">
   <div class="relative min-h-[600px] md:min-h-[720px] flex items-center">
     <!-- Background Image -->
-    <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 z-0 bg-[#0E2A47]">
       <picture>
         <source srcset={mobileImageSrc} media="(max-width: 768px)" width="768" height="1024" />
         <img
           src={imageSrc}
           alt={imageAlt}
-          class="absolute inset-0 h-full w-full object-cover object-center lg:object-[center_right]"
+          class="absolute inset-0 h-full w-full object-cover object-center lg:object-[center_right] aspect-[3/4] md:aspect-auto"
           loading="eager"
           fetchpriority="high"
           decoding="sync"
@@ -83,7 +83,7 @@ const stats: HeroStat[] = [
           {title}
         </h1>
 
-        <p class="text-lg md:text-xl leading-relaxed text-slate-200 max-w-[620px] mb-12 font-medium opacity-90">
+        <p class="text-lg md:text-xl leading-relaxed text-white max-w-[620px] mb-12 font-medium">
           {description}
         </p>
 
@@ -118,7 +118,7 @@ const stats: HeroStat[] = [
           <dd class="text-[32px] lg:text-[42px] font-black text-white leading-none mb-3 tracking-tighter">
             {item.value}
           </dd>
-          <dt class="text-[10px] lg:text-[11px] font-black uppercase tracking-[0.2em] text-blue-200/60 group-hover:text-blue-200 transition-colors">
+          <dt class="text-[10px] lg:text-[11px] font-black uppercase tracking-[0.2em] text-blue-100 group-hover:text-white transition-colors">
             {item.label}
           </dt>
         </div>

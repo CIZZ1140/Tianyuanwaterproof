@@ -103,7 +103,7 @@ const {
       <ul class="mt-6 space-y-6">
         {contactItems.map((item) => (
           <li class="text-[15px] leading-relaxed">
-            <span class="block text-white/50 uppercase tracking-wider font-bold text-xs mb-1">{item.label}</span>
+            <span class="block text-white/75 uppercase tracking-wider font-bold text-xs mb-1">{item.label}</span>
             {item.href ? (
               <a
                 href={item.href}
@@ -121,14 +121,14 @@ const {
   </div>
 
   <div class="border-t border-white/5 bg-[#051124]">
-    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-[11px] text-white/60 font-bold uppercase tracking-widest md:flex-row md:items-center md:justify-between md:px-6 lg:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-[11px] text-white/85 font-bold uppercase tracking-widest md:flex-row md:items-center md:justify-between md:px-6 lg:px-8">
       <p>{copyright}</p>
 
       <nav class="flex flex-wrap gap-8" aria-label="Legal navigation">
         {legalLinks.map((link) => (
           <a
             href={link.href}
-            class="transition hover:text-[#F58A1F] text-white/70"
+            class="transition hover:text-[#F58A1F] text-white/80"
           >
             {link.label}
           </a>
