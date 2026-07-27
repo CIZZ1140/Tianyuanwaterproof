@@ -24,7 +24,6 @@ const categoryMapping = {
   "waterproof-tapes": "Waterproof Tapes",
   "waterproof-coatings": "Waterproof Coatings",
   "geosynthetics": "Geosynthetics",
-  "other": "Other Waterproof Products",
 };
 
 const categoryOrder = [
@@ -34,13 +33,12 @@ const categoryOrder = [
   "Waterproof Tapes",
   "Waterproof Coatings",
   "Geosynthetics",
-  "Other Waterproof Products",
 ];
 
 // 3. Process Products for UI
 const processedProducts = products.map(p => {
   const categoryId = p.data.category || "bitumen-membranes";
-  const categoryLabel = categoryMapping[categoryId] || "Other Waterproof Products";
+  const categoryLabel = categoryMapping[categoryId] || "Bitumen Membranes";
   
   const isFullWidthProduct = [
     "sbs-bitumen-waterproofing-membrane-manufacturer",

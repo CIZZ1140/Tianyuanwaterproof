@@ -63,6 +63,21 @@
       "permanent": true
     },
     {
+      "source": "/comments/feed",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/feed/(.*)",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/feed",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/technical/download-center/(.*)",
       "destination": "/technical/",
       "permanent": true
