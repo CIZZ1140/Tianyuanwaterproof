@@ -96,7 +96,6 @@ For engineering approval, request the product-specific technical data sheet, ins
 
 For NATM (New Austrian Tunneling Method) tunnels and subway infrastructure, a professional waterproofing assembly typically follows a multi-layer composite design to ensure long-term durability against hydrostatic pressure.
 
-```widget tunnel_waterproofing_layers
 <svg width="100%" viewBox="0 0 680 340" role="img" aria-labelledby="tunnel-title">
   <title id="tunnel-title">Tunnel Waterproofing System Cross-section</title>
   <desc>Diagram showing the layered structure of a professional tunnel waterproofing system including primary lining, geotextile, membrane, and secondary lining.</desc>
@@ -111,7 +110,7 @@ For NATM (New Austrian Tunneling Method) tunnels and subway infrastructure, a pr
   <text x="340" y="96" font-size="12" font-weight="500" fill="#065F46" text-anchor="middle">2. Non-woven Geotextile Buffer Layer (300-500g/m²)</text>
   <rect x="160" y="110" width="360" height="120" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="3" />
   <text x="340" y="126" font-size="13" font-weight="500" fill="#1E40AF" text-anchor="middle">3. TY-SHIELD™ Waterproofing Membrane (PVC/LDPE/EVA)</text>
-  <rect x="200" y="140" width="280" height="60" rx="4" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1" />
+  <rect x="200" y="140" width="280" height="60" rx="4" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
   <text x="340" y="175" font-size="13" font-weight="500" fill="#111827" text-anchor="middle">4. Secondary Lining (Final Concrete)</text>
   <line x1="160" y1="170" x2="100" y2="170" stroke="#3B82F6" stroke-width="2" />
   <circle cx="160" cy="170" r="4" fill="#3B82F6" />
@@ -128,7 +127,6 @@ For NATM (New Austrian Tunneling Method) tunnels and subway infrastructure, a pr
     <text x="300" y="10" font-size="11" fill="#4B5563">Concrete Lining</text>
   </g>
 </svg>
-```
 
 ### Critical Detailing for Leakage Control
 
