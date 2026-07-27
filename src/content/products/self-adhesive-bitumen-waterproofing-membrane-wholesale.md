@@ -1,5 +1,5 @@
 ---
-title: "Wholesale 3.0mm Self-Adhesive Bituminous Waterproofing Membrane | Factory Direct Price"
+title: "Self-Adhesive Bitumen Membrane | Factory Direct | Tianyuan"
 displayName: "Self-Adhesive Bituminous Membrane"
 category: "bitumen-membranes"
 featured: true
@@ -52,7 +52,7 @@ quick_facts:
   - title: "High-Tack Bonding"
     text: "Engineered with specialized tackifying resins for an immediate, high-strength bond to concrete and metal substrates."
   - title: "Self-Healing Ability"
-    text: "The rubberized asphalt core automatically seals around punctures from nails or fasteners, ensuring continuous protection."
+    text: "The rubberized asphalt compound may seal around selected fasteners or minor penetrations, subject to product design and installation conditions."
   - title: "Fast Construction"
     text: "Simple 'Peel & Stick' application significantly reduces labor time and construction costs compared to traditional methods."
 
@@ -68,9 +68,9 @@ applications:
 
 features:
   - title: "Dual-Layer Security"
-    text: "Combines a tough waterproof carrier with a thick layer of modified bitumen for maximum leak protection."
+    text: "Combines a tough waterproof carrier with a thick layer of modified bitumen for reliable waterproofing performance."
   - title: "Dimensional Stability"
-    text: "Resists sagging and movement under high temperatures, maintaining its integrity across the full service life."
+    text: "Resists sagging and movement under high temperatures under suitable design, installation and service conditions."
   - title: "Chemical Resistance"
     text: "Highly resistant to soil acids, alkalis, and environmental pollutants commonly found in underground environments."
   - title: "Vapor Barrier Support"
@@ -116,7 +116,7 @@ application_guide:
   - title: "Peel & Pave"
     text: "Peel back the release film while simultaneously unrolling the membrane onto the primed surface."
   - title: "Compaction"
-    text: "Apply firm pressure using a heavy hand roller to remove all air pockets and ensure 100% adhesion."
+    text: "Apply firm pressure using a heavy hand roller to remove all air pockets and ensure firm and continuous contact with the substrate."
   - title: "Seam Treatment"
     text: "Ensure a minimum 100mm overlap. Use a roller on all joints to create a watertight monolithic seal."
   - title: "Protection"
@@ -138,7 +138,7 @@ downloads:
   - title: "Self-Adhesive TDS"
     description: "Detailed performance benchmarks and technical index data sheet."
     type: "PDF"
-    href: ""
+    href: "/docs/self-adhesive-bitumen-membrane-tds.pdf"
   - title: "Construction Manual"
     description: "Step-by-step guide for cold-applied self-adhesive membrane systems."
     type: "PDF"
@@ -169,6 +169,6 @@ faqs:
 
 ## Secure Cold-Applied Waterproofing
 
-Self-adhesive bituminous waterproofing membrane is the modern, safe alternative to traditional torch-on systems. By utilizing premium high-tack rubberized asphalt, it provides an impenetrable, flexible barrier that's exceptionally fast and easy to install.
+Self-adhesive bituminous waterproofing membrane is the modern, safe alternative to traditional torch-on systems. By utilizing premium high-tack rubberized asphalt, it provides a continuous waterproofing layer that's fast and simple to install.
 
-Perfect for foundations, retaining walls, and residential roofing, this 'Peel & Stick' system creates a permanent bond that prevents lateral water migration and self-heals around small construction punctures. As a direct manufacturer, Weifang Tianyuan provides high-performance self-adhesive membranes with full OEM support for international building material importers.
+Perfect for foundations, retaining walls, and residential roofing, this 'Peel & Stick' system creates continuous adhesion when applied to a properly prepared substrate and can help limit lateral water migration. The adhesive compound may seal around selected fasteners or minor penetrations, subject to product design and installation conditions. As a direct manufacturer, Weifang Tianyuan provides high-performance self-adhesive membranes with full OEM support for international building material importers.
