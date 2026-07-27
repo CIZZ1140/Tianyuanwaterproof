@@ -425,6 +425,59 @@ const productJsonLd = {
         </section>
       )}
 
+      {data.standards_mapping && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4 border-b border-slate-100 pb-6">
+            <div>
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-1 uppercase tracking-tight">Global Standard Alignment</h2>
+              <p class="text-sm font-medium text-slate-500">Cross-reference for engineering specifications & global procurement</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span class="text-[10px] font-black uppercase tracking-widest text-emerald-600">Compliance Verified</span>
+            </div>
+          </div>
+          
+          <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-slate-50">
+            <table class="w-full text-left text-sm border-collapse">
+              <thead>
+                <tr class="bg-slate-100/50">
+                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Property</th>
+                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">China (GB)</th>
+                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">USA (ASTM)</th>
+                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Europe (EN)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200 bg-white">
+                {data.standards_mapping.map((item: any) => (
+                  <tr class="hover:bg-blue-50/20 transition-colors">
+                    <td class="px-6 py-4 font-bold text-slate-800">{item.property}</td>
+                    <td class="px-6 py-4 font-medium text-slate-600">
+                      {item.gb === 'FULL MATCH' || item.gb === 'GB/T 18242' ? (
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-emerald-100 text-emerald-700 border border-emerald-200 uppercase tracking-tighter">{item.gb}</span>
+                      ) : item.gb}
+                    </td>
+                    <td class="px-6 py-4 font-medium text-slate-600">
+                      {item.astm === 'Equivalent' ? (
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-blue-100 text-blue-700 border border-blue-200 uppercase tracking-tighter">{item.astm}</span>
+                      ) : item.astm}
+                    </td>
+                    <td class="px-6 py-4 font-medium text-slate-600">
+                      {item.en === 'Equivalent' ? (
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-blue-100 text-blue-700 border border-blue-200 uppercase tracking-tighter">{item.en}</span>
+                      ) : item.en}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-6 text-[11px] font-medium text-slate-400 italic bg-slate-50 p-4 rounded-xl border border-slate-100">
+            * Technical Note: TY-SHIELD™ SBS modified bitumen membranes are engineered to meet or exceed core mechanical requirements of ASTM D6164 and EN 13707. Independent laboratory test reports (SGS/Intertek) available for project specification review.
+          </p>
+        </section>
+      )}
+
       {applicationGuide.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 flex items-center gap-3"><Hammer class="text-blue-600" /> Installation Guide</h2>

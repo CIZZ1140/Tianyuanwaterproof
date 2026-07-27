@@ -96,6 +96,23 @@ applications:
     icon: "droplets"
     text: "Available for selected bridge, municipal, and water-conservancy waterproofing projects subject to technical confirmation."
 
+standards_mapping:
+  - property: "Tensile Strength"
+    gb: "≥ 800 N/50mm"
+    astm: "ASTM D6164"
+    en: "EN 12311-1"
+  - property: "Low Temp Flex"
+    gb: "-25°C"
+    astm: "-20°C (Pass)"
+    en: "-25°C (Pass)"
+  - property: "Heat Resistance"
+    gb: "90°C / 105°C"
+    astm: "ASTM D5147"
+    en: "EN 1110"
+  - property: "Compliance Status"
+    gb: "GB/T 18242"
+    astm: "Equivalent"
+    en: "Equivalent"
 key_benefits:
   - title: "Low-Temperature Flexibility"
     icon: "snowflake"
