@@ -22,6 +22,34 @@ SBS (Styrene-Butadiene-Styrene) and APP (Atactic Polypropylene) are two types of
 
 The key structural difference: **SBS uses a rubber-based modifier** that gives the membrane elasticity and low-temperature flexibility. **APP uses a plastic-based modifier** that delivers high-temperature stability and UV resistance. Choosing the wrong type for your climate or application can lead to premature cracking, softening, or loss of waterproofing integrity.
 
+<div style="background:#f8fafc; border:2px solid #3b82f6; border-radius:16px; padding:24px; margin:32px 0; font-family:sans-serif; text-align:center;">
+  <h3 style="margin-top:0; color:#1e3a8a;">🌍 Quick Climate Check: Which One Do You Need?</h3>
+  <p style="font-size:14px; color:#64748b; margin-bottom:24px;">Different environments require specific polymer modifiers. Select your region below:</p>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px;">
+    <button onclick="document.getElementById('vs-cold').style.display='block';document.getElementById('vs-hot').style.display='none';document.getElementById('vs-sea').style.display='none';" style="background:white; border:1px solid #e2e8f0; border-radius:12px; padding:16px; cursor:pointer;">
+      <span style="font-size:24px; display:block; margin-bottom:8px;">❄️</span>
+      <span style="font-size:12px; font-weight:700; color:#0f172a;">Cold / Variable<br>(Russia / Europe)</span>
+    </button>
+    <button onclick="document.getElementById('vs-hot').style.display='block';document.getElementById('vs-cold').style.display='none';document.getElementById('vs-sea').style.display='none';" style="background:white; border:1px solid #e2e8f0; border-radius:12px; padding:16px; cursor:pointer;">
+      <span style="font-size:24px; display:block; margin-bottom:8px;">☀️</span>
+      <span style="font-size:12px; font-weight:700; color:#0f172a;">High Heat<br>(Middle East / Africa)</span>
+    </button>
+    <button onclick="document.getElementById('vs-sea').style.display='block';document.getElementById('vs-cold').style.display='none';document.getElementById('vs-hot').style.display='none';" style="background:white; border:1px solid #e2e8f0; border-radius:12px; padding:16px; cursor:pointer;">
+      <span style="font-size:24px; display:block; margin-bottom:8px;">🌴</span>
+      <span style="font-size:12px; font-weight:700; color:#0f172a;">SE Asia / Tropical<br>(Economic Value)</span>
+    </button>
+  </div>
+  <div id="vs-cold" style="display:none; margin-top:20px; padding:16px; background:#eff6ff; border-radius:12px; border-left:4px solid #3b82f6; text-align:left; font-size:14px; line-height:1.6; color:#1e40af;">
+    <strong>Recommended: SBS Modified Bitumen.</strong> Rubber modification ensures it won't become brittle at -25°C. Essential for high-altitude or northern projects.
+  </div>
+  <div id="vs-hot" style="display:none; margin-top:20px; padding:16px; background:#fff7ed; border-radius:12px; border-left:4px solid #f59e0b; text-align:left; font-size:14px; line-height:1.6; color:#9a3412;">
+    <strong>Recommended: APP Modified Bitumen.</strong> Its high softening point (130°C) is mandatory for roofs under intense, direct equatorial sun.
+  </div>
+  <div id="vs-sea" style="display:none; margin-top:20px; padding:16px; background:#f0fdf4; border-radius:12px; border-left:4px solid #22c55e; text-align:left; font-size:14px; line-height:1.6; color:#166534;">
+    <strong>Recommended: Mineral APP or Self-Adhesive SBS.</strong> Use Mineral APP for UV protection on exposed roofs, or Self-Adhesive for rapid installation between rain showers. Great value for money.
+  </div>
+</div>
+
 **Quick Summary (TL;DR):**
 - **Cold climate / high temperature variation** → Choose SBS (flexible to -25 deg C, handles freeze-thaw)
 - **Hot climate / exposed roof / high UV** → Choose APP (stable to 130 deg C, mineral granule finish)
