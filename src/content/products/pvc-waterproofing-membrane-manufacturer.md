@@ -1,7 +1,8 @@
 ---
-title: "Industrial PVC Waterproofing Membrane Manufacturer | System Solutions & Accessories"
+title: "PVC Waterproofing Membrane Manufacturer | Factory Price & CE Certified"
 displayName: "PVC Waterproofing Membrane"
 category: "polymer-membranes"
+meta_description: "Premium PVC waterproofing sheets for roofing & tunnel projects. UV resistant & high tensile strength. Direct factory supply with 30-year track record. Request a price list!"
 product_category: "Polymer Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
 image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"

@@ -1,8 +1,8 @@
 ---
-title: "SBS Waterproofing Membrane Manufacturer | 3mm, 4mm & 5mm"
+title: "SBS Bitumen Membrane Manufacturer | Wholesale Price & Free Sample"
 displayName: "SBS Waterproofing Membrane"
 category: "bitumen-membranes"
-meta_description: "SBS modified bitumen waterproofing membrane manufacturer. 3mm, 4mm and 5mm torch-applied membranes with PY, G and PYG reinforcement. OEM packaging, TDS and bulk supply for roofing, basement and underground projects."
+meta_description: "Buy SBS modified bitumen waterproofing membrane direct from China factory. 30+ years experience, ASTM/ISO certified. Fast shipping & OEM support. Get a quote today!"
 product_category: "Bitumen Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
