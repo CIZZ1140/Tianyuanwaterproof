@@ -290,7 +290,7 @@ const productJsonLd = {
               </div>
               <div>
                 <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Key Benefits</h2>
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {features.slice(0, 4).map((item, index) => {
                     const Icon = getCardIcon(item, benefitIcons, index);
                     return (
@@ -607,7 +607,7 @@ const productJsonLd = {
         </section>
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 mb-8 uppercase tracking-tight">RELATED PRODUCT</h2>
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {relatedProducts.map(rp => (
               <a href={`/products/${rp.slug}/`} class="group flex flex-col gap-3">
                 <div class="aspect-[4/3] overflow-hidden rounded-2xl bg-slate-100 border border-slate-200">
