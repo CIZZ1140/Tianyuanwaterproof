@@ -138,7 +138,7 @@ downloads:
   - title: "Self-Adhesive TDS"
     description: "Detailed performance benchmarks and technical index data sheet."
     type: "PDF"
-    href: ""
+    href: "/docs/self-adhesive-bitumen-membrane-tds.pdf"
   - title: "Construction Manual"
     description: "Step-by-step guide for cold-applied self-adhesive membrane systems."
     type: "PDF"
