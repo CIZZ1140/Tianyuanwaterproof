@@ -203,21 +203,18 @@ const productJsonLd = {
     <!-- 2. Hero Card -->
     <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8 lg:py-8">
       <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-10">
-        <div class="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-center">
+        <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <!-- Left: Gallery Switcher -->
           <div>
             <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 flex items-center justify-center relative shadow-inner">
-              <img id="main-product-image" src={initialImage} alt={title} class="max-h-[460px] w-full object-contain transition-all duration-300" />
+              <img id="main-product-image" src={initialImage} alt={title} class="max-h-[480px] w-full object-contain transition-all duration-300" />
             </div>
             {gallery.length > 0 && (
               <div class="mt-4 grid gap-3 grid-cols-4">
                 {gallery.slice(0, 4).map((item) => (
-                  <button class="gallery-thumb group flex flex-col rounded-2xl border-2 border-slate-200 bg-white shadow-sm transition hover:border-blue-400 overflow-hidden" data-full={item.image}>
-                    <div class="aspect-[4/3] w-full bg-slate-50 p-1 flex items-center justify-center border-b border-slate-100">
+                  <button class="gallery-thumb group flex rounded-2xl border-2 border-slate-200 bg-white shadow-sm transition hover:border-blue-400 overflow-hidden" data-full={item.image}>
+                    <div class="aspect-[4/3] w-full bg-slate-50 p-1 flex items-center justify-center">
                       <img src={item.image} alt={item.alt || item.title} class="h-full w-full object-contain transition group-hover:scale-105" />
-                    </div>
-                    <div class="flex items-center justify-center px-1.5 py-2.5 min-h-[48px] bg-white group-[.active]:bg-blue-50/50">
-                      <p class="text-center text-[11px] font-black leading-tight text-slate-700 group-[.active]:text-blue-700 transition-colors uppercase tracking-tight">{item.title}</p>
                     </div>
                   </button>
                 ))}

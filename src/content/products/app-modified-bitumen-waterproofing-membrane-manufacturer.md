@@ -1,22 +1,28 @@
 ---
-title: "APP Modified Bitumen Waterproofing Membrane"
+title: "APP Bitumen Membrane Manufacturer | Torch Applied Hot-Climate Roofing | Wholesale"
 displayName: "APP Modified Bitumen Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 95
+meta_description: "Factory-direct APP (atactic polypropylene) modified bitumen waterproofing membrane. GB 18243-2008 certified, torch-applied, 130°C heat resistance for hot-climate roofing. PE, sand, mineral, aluminum surfaces. 3-5mm. OEM & free sample. Get a quote!"
 product_category: "Bitumen Membranes"
 image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
 
-hero_description: "TY-SHIELD APP Modified Bitumen Waterproofing Membrane — an Atactic Polypropylene modified, torch-applied, reinforced bitumen membrane designed for hot-climate roofing and waterproofing systems. Built for high-solar-load and exposed roof applications. Configure reinforcement, thickness, and surface finish to match your project environment, export packing needs, or OEM private-label plan."
+hero_description: "TY-SHIELD™ APP (Atactic Polypropylene) modified bitumen waterproofing membrane — a torch-applied, reinforced sheet membrane engineered for hot-climate roofing and high-temperature waterproofing systems. Available with polyester (PY), glass fiber (G), or glass-reinforced polyester (PYG) reinforcement, in PE film, fine sand, mineral granules, or aluminum foil surface finishes across 3mm, 4mm, and 5mm thicknesses. Compliant with GB 18243-2008. Factory-direct supply with full OEM and private-label support for international building material importers and wholesalers."
 
 hero_tags:
-  - "APP Modified"
+  - "APP (Atactic Polypropylene)"
   - "GB 18243-2008"
   - "3mm / 4mm / 5mm"
   - "Torch-Applied"
-  - "PE Film / Sand / Mineral Granules"
+  - "130°C Heat Resistance"
+  - "PY / G / PYG"
+  - "PE / Sand / Mineral / ALU"
   - "OEM Available"
+
+technical_scope: "APP Modified Bitumen, PY / Mineral Surface / Type II / 4mm (Representative Configuration)"
+technical_disclaimer: "Values shown apply to the stated product configuration. Other reinforcement types (PY / G / PYG), surface materials (PE / S / M / ALU), and performance grades (Type I / II) may have different performance values. Request the corresponding TDS and batch test report before specification or procurement."
 
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
@@ -28,133 +34,153 @@ gallery:
 
 spec_table:
   - label: "Product Type"
-    value: "APP Modified Bitumen Waterproofing Membrane"
+    value: "APP (Atactic Polypropylene) Modified Bitumen Waterproofing Membrane"
   - label: "Standard"
     value: "GB 18243-2008"
-  - label: "Reinforcement"
-    value: "PY (Polyester), G (Glass Fiber), PYG (Glass Fiber Reinforced Polyester)"
+  - label: "Reinforcement Options"
+    value: "PY (Polyester) | G (Glass Fiber) | PYG (Glass Fiber Reinforced Polyester)"
+  - label: "Performance Grade"
+    value: "Type I (105°C) / Type II (130°C)"
   - label: "Thickness"
-    value: "3mm, 4mm, 5mm"
+    value: "3mm / 4mm / 5mm"
   - label: "Upper Surface"
-    value: "PE Film, Fine Sand, Mineral Granules"
+    value: "PE Film / Fine Sand (S) / Mineral Granules (M) / Aluminum Foil (ALU)"
   - label: "Lower Surface"
-    value: "Burn-off PE Film"
+    value: "PE Film / PE Film + Fine Sand"
   - label: "Roll Size"
-    value: "1m x 10m"
+    value: "1m × 10m = 10m²; 1m × 7.5m = 7.5m²"
   - label: "Installation Method"
-    value: "Torch-Applied"
+    value: "Torch-Applied (hot-melt) — cold-bonding option also available"
   - label: "Low Temp Flexibility"
-    value: "-15degC (APP grade)"
+    value: "-5°C (Type I) / -15°C (Type II)"
 
 overview_image: "/placeholder.webp"
 
 quick_facts:
-  - title: "Heat Resistance"
-    text: "APP polymer modification supports membrane stability in elevated temperature and high-solar-load roofing environments."
-  - title: "Dimensional Stability"
-    text: "Reinforced membrane construction helps maintain the intended membrane geometry during installation and normal service conditions."
-  - title: "Suitable for Hot-Climate Roofing"
-    text: "APP membrane configurations are commonly specified for projects in hot climates and selected exposed roof systems."
-  - title: "Multiple Configuration Options"
-    text: "Choose selected reinforcement, thickness, and surface-finish combinations for non-exposed, multi-layer, or mineral-finished roof systems."
+  - title: "130°C Heat Resistance"
+    text: "APP (Atactic Polypropylene) is a plastomeric modifier that gives the membrane outstanding thermal stability. Type II grades withstand 130°C for 2 hours without flowing or dripping — the preferred specification for hot-climate regions across the Middle East, Africa, Southeast Asia, and South Asia."
+  - title: "Hot-Climate Proven"
+    text: "Unlike SBS (rubber-modified) membranes that prioritize low-temperature flexibility, APP membranes are engineered for high-solar-load environments. The plastomeric modification prevents softening and deformation on exposed roofs where surface temperatures regularly exceed 70°C."
+  - title: "Mineral Surface — UV Ready"
+    text: "Mineral granule (slate chip) surface finishes provide built-in UV protection, allowing direct exposure without additional coatings. This eliminates the need for reflective paint or separate UV barrier layers on exposed roof systems."
+  - title: "Flexible Reinforcement Choice"
+    text: "Choose PY (polyester) for high tensile strength and puncture resistance, G (glass fiber) for dimensional stability, or PYG (glass-reinforced polyester) for the best balance of both — matched to your project's structural and climate requirements."
 
 applications:
-  - title: "Roof Waterproofing"
-    text: "Suitable for industrial, commercial, and residential roofing systems, especially where heat resistance and high-temperature stability are key requirements."
+  - title: "Exposed Hot-Climate Roofing"
+    text: "The primary application — mineral-finished APP membranes are specified for exposed flat and low-slope roofs in regions with intense solar radiation, where surface temperatures may exceed 80°C."
+  - title: "Commercial & Industrial Roofing"
+    text: "Used in multi-layer built-up roofing systems for factories, warehouses, shopping centers, and airport terminals. Typically installed as the cap sheet with mineral granule surface."
   - title: "Basement & Foundation"
-    text: "Suitable for selected below-grade waterproofing assemblies where an APP modified torch-applied membrane is specified by the project system."
-  - title: "Underground Waterproofing"
-    text: "Suitable for selected underground structures, retaining walls, and project-specific waterproofing assemblies subject to approved system design."
-  - title: "Infrastructure Projects"
-    text: "Available for selected bridge, municipal, and water-conservancy projects subject to model-specific technical confirmation."
+    text: "Suitable for below-grade waterproofing assemblies where a torch-applied APP membrane is specified. PY reinforcement provides the puncture resistance needed for backfill protection."
+  - title: "Bridge & Infrastructure"
+    text: "Specified for bridge deck waterproofing, tunnel linings, and water-conservancy projects where high-temperature stability and dimensional reliability are engineering requirements."
 
 features:
-  - title: "Heat Resistance"
-    text: "APP polymer modification supports membrane stability in elevated temperature and high-solar-load roofing environments, maintaining integrity where standard membranes may soften."
-  - title: "Dimensional Stability"
-    text: "Reinforced membrane construction helps maintain the intended membrane geometry during installation and under normal thermal cycling in service."
-  - title: "Suitable for Exposed Roofing"
-    text: "APP membrane configurations with mineral granule surfaces are commonly specified for exposed hot-climate roof systems requiring UV resistance."
-  - title: "Project-Specific Configurations"
-    text: "Select the appropriate reinforcement, thickness, and surface-finish combination for non-exposed, multi-layer, or mineral-finished roof systems."
+  - title: "Multi-Layer Composite Structure"
+    text: "Built with a 5-layer cross-section: upper surface finish, APP-modified bitumen coating, reinforcement carrier (PY/G/PYG), lower APP-modified bitumen coating, and burn-off PE film for torch application."
+  - title: "Chemical & Corrosion Resistance"
+    text: "The plastomeric bitumen compound demonstrates strong resistance to acid, alkali, and salt exposure — suitable for industrial environments and chemically aggressive soil conditions in buried applications."
+  - title: "Dual Installation Method"
+    text: "Primarily installed by torch application (hot-melt), but compatible with cold-bonding adhesives where open-flame work is restricted — flexibility that adapts to site safety requirements."
+  - title: "Dimensional Stability Under Heat"
+    text: "The combination of APP plastomeric modification and internal reinforcement minimizes thermal expansion and contraction, reducing the risk of seam failure and membrane wrinkling during temperature cycling."
 
 technical_data:
-  - label: "Tensile Strength (L/T)"
+  - label: "Soluble Content (4mm, PY)"
+    unit: "g/m²"
+    standard: "GB 18243"
+    requirement: "≥ 2,900"
+    value: "≥ 2,900 (qualified)"
+  - label: "Tensile Strength (L/T, PY)"
     unit: "N/50mm"
     standard: "GB 18243"
-    requirement: ">=800"
-    value: "Qualified (900+)"
-  - label: "Elongation at Break"
+    requirement: "≥ 800"
+    value: "900+ (qualified)"
+  - label: "Elongation at Break (PY)"
     unit: "%"
     standard: "GB 18243"
-    requirement: ">=30"
-    value: "40% - 50%"
-  - label: "Heat Resistance"
-    unit: "degC"
+    requirement: "≥ 30 (I) / ≥ 40 (II)"
+    value: "40%–50% (Type II)"
+  - label: "Heat Resistance (Type II)"
+    unit: "°C / 2h"
     standard: "GB 18243"
-    requirement: "105degC / 130degC (2h)"
-    value: "No flow/drip"
-  - label: "Low Temp Flexibility"
-    unit: "degC"
+    requirement: "130°C"
+    value: "No flow, drip, or slip"
+  - label: "Heat Resistance (Type I)"
+    unit: "°C / 2h"
     standard: "GB 18243"
-    requirement: "-15degC"
+    requirement: "105°C"
+    value: "No flow, drip, or slip"
+  - label: "Low Temp Flexibility (Type II)"
+    unit: "°C"
+    standard: "GB 18243"
+    requirement: "-15°C"
     value: "No crack"
   - label: "Watertightness"
-    unit: "MPa"
+    unit: "MPa / min"
     standard: "GB 18243"
-    requirement: "0.3MPa (30min)"
-    value: "Passed"
-  - label: "Puncture Resistance"
-    unit: ">="
+    requirement: "0.3MPa, 30min"
+    value: "Impermeable — passed"
+  - label: "Nail Shank Tear Strength"
+    unit: "N"
     standard: "GB 18243"
-    requirement: "No Leakage"
+    requirement: "≥ 300"
+    value: "Qualified"
+  - label: "Thermal Aging — Dimensional Change"
+    unit: "%"
+    standard: "GB 18243"
+    requirement: "≤ 1.0"
+    value: "≤ 1.0 (passed)"
+  - label: "Mineral Granule Adhesion"
+    unit: "g"
+    standard: "GB 18243"
+    requirement: "≤ 2.0 (loss)"
     value: "Passed"
 
 application_guide:
   - title: "Prepare the Substrate"
-    text: "Ensure the substrate is smooth, dry, clean, and free from loose material, sharp projections, standing water, oil, and debris."
-  - title: "Apply Compatible Primer"
-    text: "Apply compatible bitumen primer where required and allow the primer to dry before membrane installation."
+    text: "Ensure the substrate is smooth, dry, clean, and free from loose material, sharp projections, standing water, oil, and debris. Apply compatible bitumen primer and allow it to dry fully before membrane installation."
   - title: "Pre-Lay and Align"
-    text: "Unroll the membrane for positioning, align overlaps and details, then roll back the membrane section for torch application."
-  - title: "Heat and Bond"
-    text: "Heat the burn-off PE film and substrate evenly until the bitumen layer is ready for bonding, then roll forward with controlled pressure."
-  - title: "Treat Overlaps and Details"
-    text: "Form specified overlaps (minimum 100mm), inspect seams, and reinforce corners, drains, parapets, and pipe penetrations."
+    text: "Unroll the membrane for positioning. Align overlaps (minimum 100mm side, 150mm end) and mark reference lines. Stagger end laps between adjacent rows by at least 300mm."
+  - title: "Torch Application"
+    text: "Using a propane torch, evenly heat the burn-off PE film and the substrate ahead of the roll. Move the torch in a controlled arc pattern. The bitumen coating is ready when it develops a uniform glossy melt across the full width."
+  - title: "Roll and Bond"
+    text: "As the bitumen melts, roll the membrane forward with steady, even pressure. A small bead of molten bitumen should squeeze out from the leading edge — this confirms full-width bonding. Use a roller on all seams."
+  - title: "Detail Treatment"
+    text: "Reinforce corners, drains, parapets, expansion joints, and pipe penetrations with additional membrane patches or prefabricated flashing pieces. Apply extra heat and pressure at all detailing points."
   - title: "Safety Notice"
-    text: "Torch-applied membrane installation must be completed by trained installers using suitable fire-safety controls. Do not torch on combustible substrates such as wooden decks."
+    text: "Torch-applied membrane installation must be completed by trained installers using suitable fire-safety controls. Do not torch on combustible substrates such as wooden decks — use our Self-Adhesive Bitumen Membrane or cold-bonding method instead."
 
 packaging:
-  - title: "Export Roll Packing"
-    text: "Rolls are vertically palletized and secured with heavy-duty strapping, stretch-film, and protective wrapping for safe ocean transit."
-  - title: "Branding Support"
-    text: "Custom wrapping films, private labels, and branded core sleeves available for wholesale partners."
-  - title: "OEM Labeling"
-    text: "Custom pallet labels, outer-package markings, and brand-specific core sleeves available."
-  - title: "Storage"
-    text: "Store horizontally in dry conditions between +5degC and +30degC in original packaging. Shelf life 12 months."
+  - title: "Export-Ready Pallet Packing"
+    text: "Rolls are stacked vertically on fumigated wooden pallets, secured with heavy-duty strapping, corner protectors, and weather-resistant stretch film for safe ocean freight transit."
+  - title: "Private Label & OEM"
+    text: "Full support for custom roll labels, barcodes, brand-name printing, and bespoke packaging design. We supply your market with your brand — minimum order quantities vary by specification."
+  - title: "Storage Recommendations"
+    text: "Store rolls vertically in original packaging, in a cool, dry, covered area away from direct sunlight. Recommended temperature: +5°C to +30°C. Shelf life: 12 months from production date."
 
 loading_data:
-  - label: "20FT Container"
-    value: "Approx. 6,000 - 8,000 sqm (Subject to thickness and pallet arrangement)"
-  - label: "Pallet Quantity"
-    value: "20-30 rolls per pallet"
+  - label: "20FT Container (4mm PY)"
+    value: "Approx. 5,500–7,500 m² (varies by thickness and pallet arrangement)"
+  - label: "40FT HQ Container (4mm PY)"
+    value: "Approx. 13,000–17,000 m² (varies by thickness and pallet arrangement)"
+  - label: "Standard Width"
+    value: "1,000 mm"
+  - label: "Roll Area Options"
+    value: "10 m² / 7.5 m² per roll (custom sizes available on request)"
 
 downloads:
-  - title: "APP Technical Data Sheet"
-    description: "Product-specific APP membrane performance and specification data."
+  - title: "APP Membrane TDS"
+    description: "Complete technical data sheet with GB 18243-2008 performance indices, classification tables, and reinforcement-specific properties."
     type: "PDF"
     href: ""
   - title: "Torch-Applied Installation Manual"
-    description: "Installation guidance for professional APP membrane waterproofing systems."
+    description: "Step-by-step professional installation guide covering substrate preparation, torch technique, overlap detailing, and safety protocols."
     type: "PDF"
     href: ""
   - title: "Safety Data Sheet"
-    description: "SDS information for the selected TY-SHIELD APP membrane product."
-    type: "PDF"
-    href: ""
-  - title: "Test Report"
-    description: "Available test documentation for selected grades and configurations."
+    description: "SDS documentation for TY-SHIELD™ APP modified bitumen membrane products."
     type: "PDF"
     href: ""
 
@@ -168,21 +194,27 @@ related_products:
   - title: "TPO Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
     href: "/products/tpo-waterproofing-membrane-manufacturer/"
-  - title: "Bitumen Sealing Tape"
-    image: "https://img.tyuanwaterproof.com/products/bitumen-tape.webp"
-    href: "/products/self-adhesive-bitumen-tape-wholesale/"
+  - title: "EPDM Waterproofing Membrane"
+    image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
+    href: "/products/epdm-waterproofing-membrane-wholesale/"
 
 faqs:
   - question: "What is APP modified bitumen waterproofing membrane?"
-    answer: "It is a reinforced bitumen waterproofing membrane modified with APP (Atactic Polypropylene) polymer, typically installed by torch application for roofing, foundation, and selected waterproofing systems where heat resistance is important."
+    answer: "APP (Atactic Polypropylene) modified bitumen membrane is a reinforced waterproofing sheet where the bitumen is modified with a plastomeric polymer. This modification gives the membrane superior heat resistance — up to 130°C for Type II grades — making it the product of choice for hot-climate roofing and exposed roof systems. It is typically installed by torch application (hot-melt), though cold-bonding methods are also compatible."
   - question: "When should I choose APP instead of SBS membrane?"
-    answer: "APP membrane is commonly selected when a project places greater emphasis on heat resistance (up to 130degC) and dimensional stability in hot-climate or high-solar-load roofing conditions. SBS is preferred for cold-climate flexibility (-25degC). Confirm the final selection against the project specification."
-  - question: "Which APP surface finish is suitable for an exposed roof?"
-    answer: "Mineral granules (slate chips) are typically selected for exposed roof systems requiring UV protection and a decorative finish. PE Film is used for non-exposed layers, and Fine Sand is used when additional inter-layer bonding is needed."
+    answer: "APP is the preferred specification for hot-climate regions (Middle East, Africa, South Asia, Southeast Asia) where roof surface temperatures regularly exceed 70°C. APP's plastomeric modification provides dimensional stability at high temperatures that SBS (rubber-modified) cannot match. Conversely, SBS excels in cold climates with low-temperature flexibility down to -25°C. If your project is in a hot region with high solar exposure, APP is the right choice."
+  - question: "Which surface finish should I choose — PE, Sand, Mineral, or Aluminum Foil?"
+    answer: "PE Film is the standard for non-exposed layers in multi-layer systems. Fine Sand is selected when additional inter-layer bonding or protection is needed between membrane courses. Mineral Granules (slate chips) provide built-in UV protection and a decorative finish, allowing direct roof exposure without additional coatings. Aluminum Foil provides the highest reflectivity — ideal where solar heat gain reduction and vapor barrier properties are priorities alongside waterproofing."
+  - question: "What is PYG reinforcement and when should I use it?"
+    answer: "PYG (Glass Fiber Reinforced Polyester) combines a polyester mat with embedded glass fiber strands. It delivers the high tensile strength and elongation of PY with the superior dimensional stability of G — the best of both. PYG is recommended for large-area commercial roofing, high-wind zones, and infrastructure projects where thermal movement is significant and dimensional stability is critical."
+  - question: "Can APP membrane be installed without a torch?"
+    answer: "Yes, APP membrane is compatible with cold-bonding adhesives where open-flame work is restricted — for example, on refurbishment projects over occupied buildings, near flammable materials, or in confined spaces. However, torch application remains the standard and most reliable method for achieving a fully bonded monolithic membrane system."
   - question: "Can APP torch-applied membrane be installed on a wooden deck?"
-    answer: "No, torch application presents a fire risk on combustible substrates. Use our Self-Adhesive Bitumen Membrane for wooden decks or specify a torch-free installation method."
+    answer: "No. Torch application presents a direct fire risk on combustible substrates such as wooden decks. For wood-substrate projects, use our Self-Adhesive Bitumen Membrane (cold-applied, no flame required) or specify a cold-bonding adhesive method for the APP membrane."
   - question: "What information is needed for a factory quotation?"
-    answer: "Please provide the required thickness, reinforcement type, surface finish, application, estimated quantity, packaging requirement, and destination port."
+    answer: "Please provide: required thickness (3/4/5mm), reinforcement type (PY/G/PYG), surface finish (PE/S/M/ALU), project application, estimated quantity (sqm or containers), packaging preference, and destination port. Our export team will respond with a competitive quotation, lead time, and free sample arrangement."
+  - question: "What is the difference between Type I and Type II APP membrane?"
+    answer: "Type I is the standard performance grade with 105°C heat resistance and -5°C low-temperature flexibility — suitable for most general roofing applications in moderate climates. Type II is the high-performance grade offering 130°C heat resistance, -15°C low-temperature flexibility, and higher tensile and elongation values — the recommended specification for demanding hot-climate projects, exposed roofs, and infrastructure applications."
 
 # --- New Sections: Template code not yet implemented ---
 
@@ -204,28 +236,104 @@ structure:
   diagram: "/placeholder.webp"
   layers:
     - name: "Upper Surface Layer"
-      role: "PE Film, Fine Sand, or Mineral Granules selected according to system exposure and finish requirements."
+      role: "PE Film, Fine Sand, Mineral Granules, or Aluminum Foil — selected according to system exposure, climate, and finish requirements."
     - name: "APP Modified Bitumen Coating"
-      role: "Provides the primary waterproofing and APP polymer-modified bitumen performance layer."
+      role: "Provides the primary waterproofing and APP polymer-modified bitumen performance layer with plastomeric heat resistance."
     - name: "Reinforcement Layer"
-      role: "PY, G, or PYG reinforcement provides tensile strength and dimensional stability."
+      role: "PY, G, or PYG reinforcement provides tensile strength, puncture resistance, and dimensional stability."
     - name: "APP Modified Bitumen Coating"
       role: "Forms the lower waterproofing layer around the reinforcement carrier."
     - name: "Lower Surface Layer"
-      role: "Burn-off PE Film designed for torch-applied installation."
+      role: "Burn-off PE Film designed for torch-applied installation — melts evenly under controlled flame for full-surface bonding."
   surface_finish_guidance:
     - surface: "PE Film"
       use: "Multi-layer and non-exposed waterproofing systems."
     - surface: "Fine Sand"
-      use: "When additional inter-layer bonding or protection is required."
+      use: "When additional inter-layer bonding or mechanical protection is required."
     - surface: "Mineral Granules"
       use: "Exposed hot-climate roof systems requiring UV protection and decorative finish."
+    - surface: "Aluminum Foil"
+      use: "High-reflectivity applications — solar heat reduction and enhanced vapor barrier performance."
 ---
 
-## APP Modified Bitumen Waterproofing Membrane
+## Hot-Climate Roofing Engineered for Extreme Heat
 
-APP modified bitumen waterproofing membrane combines petroleum asphalt, APP (Atactic Polypropylene) polymer modification, reinforcement, and selected surface finishes into a torch-applied membrane system for roofing and waterproofing applications.
+APP (Atactic Polypropylene) modified bitumen waterproofing membrane is the industry standard for roofing systems in hot-climate regions. Unlike SBS which uses rubber modification for cold-weather flexibility, APP uses a plastomeric polymer that fundamentally changes how the bitumen behaves under heat — resisting softening, flowing, and deformation even when roof surface temperatures exceed 80°C under direct solar radiation.
 
-APP-modified membranes are commonly selected for projects where heat resistance (up to 130degC), dimensional stability, and durability under elevated roof temperatures are important selection criteria. This makes APP the preferred choice for hot-climate regions, high-solar-load roofing, and exposed mineral-finished roof systems.
+TY-SHIELD™ APP membranes are manufactured with petroleum asphalt, APP polymer modifier, and a choice of three internal reinforcement carriers (PY, G, PYG), finished with PE film, fine sand, mineral granules, or aluminum foil surfaces. All products comply with **GB 18243-2008**, the national standard for plastomeric modified asphalt waterproofing membranes.
 
-TY-SHIELD supports project-specific APP membrane supply by reinforcement type, thickness, upper-surface finish, quantity, export packing method, and OEM private-label requirements. Contact our team with your project specification for a competitive factory quotation.
+As a direct manufacturer, Weifang Tianyuan supplies international importers, roofing contractors, and wholesale distributors with consistent batch-tested APP membranes, export-ready packaging, and complete OEM flexibility for hot-climate markets worldwide.
+
+### APP vs SBS — Choosing the Right Bitumen Membrane for Your Climate
+
+One of the most frequent questions from international buyers is whether to specify APP or SBS. The answer depends primarily on your project's climate zone.
+
+<table style="width:100%; border-collapse: collapse; margin: 20px 0; font-size: 13px;">
+  <thead>
+    <tr style="background: var(--color-background-tertiary, #334155);">
+      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Property</th>
+      <th style="padding: 10px 12px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">APP (Plastomeric)</th>
+      <th style="padding: 10px 12px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">SBS (Elastomeric)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Polymer Type</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">APP — Atactic Polypropylene (plastic)</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">SBS — Styrene-Butadiene-Styrene (rubber)</td>
+    </tr>
+    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Best Climate</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-status-error-text, #C94A38); font-weight: 500;">Hot — Middle East, Africa, South Asia, SE Asia</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-1-ink, #3D6F94); font-weight: 500;">Cold — Northern Europe, Russia, North America, high-altitude</td>
+    </tr>
+    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Heat Resistance</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);"><strong>130°C</strong> (Type II)</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">105°C</td>
+    </tr>
+    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Low-Temp Flexibility</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">-15°C (Type II)</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);"><strong>-25°C to -30°C</strong></td>
+    </tr>
+    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Dimensional Stability (Heat)</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-status-error-text, #C94A38); font-weight: 500;">Excellent</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">Good</td>
+    </tr>
+    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Installation Method</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">Torch-applied (cold-bonding compatible)</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">Torch-applied (cold-bonding compatible)</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Primary Applications</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">Exposed hot-climate roofs, industrial roofing, bridge decks</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">Cold-climate roofs, basement waterproofing, tunnels</td>
+    </tr>
+  </tbody>
+</table>
+
+If your project is in a hot region where roof surface temperatures regularly exceed 60°C, APP is the technically correct specification. If your project spans both hot and cold extremes, we can supply both product types and advise on the optimal specification for each building area.
+
+### Reinforcement Selection Guide
+
+Select the reinforcement carrier based on your project's structural and performance requirements:
+
+| Reinforcement | Key Strength | Best For |
+|---|---|---|
+| **PY (Polyester Felt)** | High tensile strength and elongation — handles structural movement | Exposed roofing, large-area waterproofing, below-grade with backfill |
+| **G (Glass Fiber Felt)** | Superior dimensional stability — minimal thermal movement | Multi-layer non-exposed systems, areas with stable substrates |
+| **PYG (Glass Fiber Reinforced Polyester)** | Best balance — PY's strength + G's stability | Large commercial roofs, high-wind zones, infrastructure, bridges |
+
+### Built for the Global Hot-Climate Supply Chain
+
+Whether you are importing container loads for roofing distribution across the Middle East, Africa, or South Asia, or sourcing for a specific infrastructure project in a high-temperature environment, our APP membrane is engineered for the thermal realities of your market:
+
+- **Three reinforcement grades** — PY, G, and PYG cover every project from standard commercial roofing to heavy civil infrastructure.
+- **Four surface finishes** — PE, Sand, Mineral, and Aluminum Foil accommodate every exposure condition from fully buried to directly exposed.
+- **Consistent batch quality** — every production lot is tested against GB 18243-2008. Batch test reports are available on request for project specification review.
+- **Export-optimized packaging** — fumigated pallets, protective corner boards, weather-resistant wrapping, and custom labeling ensure your product arrives in factory-fresh condition at any global port.
+
+Contact our export team with your target specification (reinforcement type, surface material, thickness, and performance grade) for a detailed quotation, lead time estimate, and free sample arrangement.
