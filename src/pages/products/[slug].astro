@@ -395,7 +395,7 @@ const productJsonLd = {
 
       {technicalData.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4 flex items-center gap-3"><FlaskConical class="text-blue-600" /> Technical Specifications</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4">Technical Specifications</h2>
           {data.technical_scope && <p class="mb-6 text-sm font-medium text-slate-500">{data.technical_scope}</p>}
           <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
             <table class="w-full text-left text-sm border-collapse">
@@ -480,7 +480,7 @@ const productJsonLd = {
 
       {applicationGuide.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 flex items-center gap-3"><Hammer class="text-blue-600" /> Installation Guide</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8">Installation Guide</h2>
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {applicationGuide.slice(0, 4).map((item, index) => {
               const Icon = installationIcons[index % installationIcons.length];
