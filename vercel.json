@@ -88,6 +88,16 @@
       "permanent": true
     },
     {
+      "source": "/news/(.*)",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/news",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
       "source": "/wp-:path*",
       "destination": "/",
       "permanent": true
