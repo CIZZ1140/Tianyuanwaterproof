@@ -39,6 +39,27 @@ related_products:
     href: "/products/pvc-waterproofing-membrane-manufacturer/"
 ---
 
-## The Gold Standard in Rubberized Waterproofing
+## The Gold Standard in Synthetic Polymer Waterproofing
 
 EPDM rubber waterproofing membrane is the longest-serving synthetic polymer waterproofing material in the construction industry, with documented installations exceeding 50 years of continuous service. Its secret is chemistry: EPDM's saturated molecular backbone contains no reactive double bonds, giving it unmatched resistance to UV radiation, ozone, thermal oxidation, and environmental aging.
+
+### Vulcanized vs Non-Vulcanized — Selecting the Right EPDM Type
+
+<table style="width:100%; border-collapse: separate; border-spacing: 10px; margin: 16px 0; font-size: 13px;">
+  <tr>
+    <td style="width:50%; padding: 18px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
+      <p style="margin: 0 0 8px; font-weight: 700; font-size: 15px; color: var(--color-viz-2-ink, #C56443);">JL1 Vulcanized</p>
+      <p style="margin: 0 0 12px; color: var(--color-text-secondary, #475569); font-size: 11px;">Cured — cross-linked polymer chains</p>
+      <p style="margin: 0; color: var(--color-text-primary, #0f172a); line-height: 1.7;">Superior mechanical properties for exposed and heavy-duty applications.<br/><br/><strong>Tensile (23°C):</strong> ≥ 7.5 MPa<br/><strong>Elongation:</strong> ≥ 450%<br/><strong>Tear:</strong> ≥ 25 kN/m<br/><strong>Low-temp:</strong> -40°C<br/><strong>Hot air aging:</strong> ≥ 80% retention</p>
+    </td>
+    <td style="width:50%; padding: 18px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
+      <p style="margin: 0 0 8px; font-weight: 700; font-size: 15px; color: var(--color-viz-3-ink, #6F8854);">JL1 Non-Vulcanized</p>
+      <p style="margin: 0 0 12px; color: var(--color-text-secondary, #475569); font-size: 11px;">Uncured — easier bonding, excellent aging</p>
+      <p style="margin: 0; color: var(--color-text-primary, #0f172a); line-height: 1.7;">Optimized for adhesive compatibility and ease of installation.<br/><br/><strong>Tensile (23°C):</strong> ≥ 4.0 MPa<br/><strong>Elongation:</strong> ≥ 400%<br/><strong>Tear:</strong> ≥ 18 kN/m<br/><strong>Low-temp:</strong> -30°C<br/><strong>Hot air aging:</strong> ≥ 90% retention</p>
+    </td>
+  </tr>
+</table>
+
+### Engineered for the Most Demanding Environments
+
+EPDM's performance advantages are not marketing claims — they are the direct result of its molecular architecture. The saturated polymer backbone means there are no vulnerable double bonds for UV, ozone, or oxygen to attack. This is the same chemistry that makes EPDM the material of choice for automotive weather seals.

@@ -39,6 +39,59 @@ related_products:
     href: "/products/epdm-waterproofing-membrane-wholesale/"
 ---
 
-## Sustainable High-Performance Roofing
+## High-Performance Thermoplastic Polyolefin Roofing Membrane
 
-TPO (Thermoplastic Polyolefin) membranes represent the fastest-growing segment of the commercial roofing industry. By combining the heat-weldable properties of PVC with the long-term weatherability of EPDM rubber, TPO provides a versatile, cost-effective solution for modern building envelopes.
+TPO (Thermoplastic Polyolefin) waterproofing membrane is a single-ply polymer sheet that has become the fastest-growing segment in the global commercial roofing market. It combines the flexibility and weather resistance of rubber with the heat-weldability and installation efficiency of thermoplastics — without the chlorine, plasticizers, or environmental concerns associated with some traditional polymer membranes.
+
+TY-SHIELD™ TPO membranes are engineered from ethylene and α-olefin polymers using advanced polymerization technology. The result is a lightweight, highly reflective, fully recyclable sheet that forms continuous, monolithic waterproofing envelopes when joined with hot-air welding equipment. All products comply with **GB27789-2011**, the national standard for TPO waterproofing membranes.
+
+### TPO Type Selection Guide — H, L, or P?
+
+Selecting the right TPO type is the most important specification decision. Each type serves a distinct application profile:
+
+<div class="rwd-cards-3col">
+<table style="width:100%; border-collapse: separate; border-spacing: 10px; margin: 16px 0; font-size: 13px;">
+  <tr>
+    <td style="width:33.33%; padding: 18px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
+      <p style="margin: 0 0 8px; font-weight: 700; font-size: 15px; color: var(--color-viz-2-ink, #C56443);">Type H — Homogeneous</p>
+      <p style="margin: 0 0 12px; color: var(--color-text-secondary, #475569); font-size: 11px;">No reinforcement — uniform material throughout</p>
+      <p style="margin: 0; color: var(--color-text-primary, #0f172a); line-height: 1.7;">Single-layer TPO sheet without internal reinforcement. Best for general waterproofing, fabrication work, and applications where uniform material properties and high elongation are priorities.<br/><br/><strong>Tensile:</strong> ≥ 12.0 MPa<br/><strong>Elongation:</strong> ≥ 500%<br/><strong>Tear:</strong> Right angle ≥ 60 N/mm</p>
+    </td>
+    <td style="width:33.33%; padding: 18px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
+      <p style="margin: 0 0 8px; font-weight: 700; font-size: 15px; color: var(--color-viz-2-ink, #C56443);">Type L — Fabric-Backed</p>
+      <p style="margin: 0 0 12px; color: var(--color-text-secondary, #475569); font-size: 11px;">Textile backing for direct bonding</p>
+      <p style="margin: 0; color: var(--color-text-primary, #0f172a); line-height: 1.7;">TPO sheet with a laminated textile backing designed for full adhesion to substrates. Ideal for roof recovery over existing membranes, concrete decks, and applications where mechanical fastening through the membrane is not desired.<br/><br/><strong>Max Tension:</strong> ≥ 200 N/cm<br/><strong>Elongation:</strong> ≥ 250%<br/><strong>Low-temp:</strong> -40°C no crack</p>
+    </td>
+    <td style="width:33.33%; padding: 18px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
+      <p style="margin: 0 0 8px; font-weight: 700; font-size: 15px; color: var(--color-viz-2-ink, #C56443);">Type P — Reinforced</p>
+      <p style="margin: 0 0 12px; color: var(--color-text-secondary, #475569); font-size: 11px;">Polyester scrim — dimensional stability</p>
+      <p style="margin: 0; color: var(--color-text-primary, #0f172a); line-height: 1.7;">Internal polyester reinforcement for the highest mechanical performance. The standard choice for mechanically fastened exposed roofing systems. Provides superior wind uplift resistance and dimensional stability.<br/><br/><strong>Max Tension:</strong> ≥ 250 N/cm<br/><strong>Dim. Change:</strong> ≤ 0.5%<br/><strong>Tear:</strong> Trapezoid ≥ 450 N</p>
+    </td>
+  </tr>
+</table>
+</div>
+
+### How to Specify TPO for Your Project — A B2B Buyer's Checklist
+
+International procurement of TPO membrane requires clarity on multiple variables. Use this checklist when preparing your inquiry:
+
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<table style="width:100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; min-width:500px;">
+  <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+    <td style="padding: 12px 16px; font-weight: 700; width: 28%; color: var(--color-text-primary, #0f172a); vertical-align: top;">Sheet type</td>
+    <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">H (Homogeneous)<br/>L (Fabric-Backed)<br/>P (Reinforced)</td>
+  </tr>
+  <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0); background: var(--color-background-secondary, #f8fafc);">
+    <td style="padding: 12px 16px; font-weight: 700; color: var(--color-text-primary, #0f172a); vertical-align: top;">Thickness</td>
+    <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">1.2mm &emsp; 1.5mm &emsp; 1.8mm &emsp; 2.0mm</td>
+  </tr>
+  <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+    <td style="padding: 12px 16px; font-weight: 700; color: var(--color-text-primary, #0f172a); vertical-align: top;">Width</td>
+    <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">1m &emsp; 1.2m &emsp; 1.95m &emsp; 2.0m &emsp; 2.05m &emsp; 2.5m</td>
+  </tr>
+  <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0); background: var(--color-background-secondary, #f8fafc);">
+    <td style="padding: 12px 16px; font-weight: 700; color: var(--color-text-primary, #0f172a); vertical-align: top;">Color</td>
+    <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">White &emsp; Light Gray &emsp; Dark Gray &emsp; Red &emsp; Green &emsp; Custom</td>
+  </tr>
+</table>
+</div>
