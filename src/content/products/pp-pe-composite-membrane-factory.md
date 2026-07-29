@@ -8,27 +8,82 @@ meta_description: "Damp-substrate compatible PP/PE composite waterproofing membr
 main_image: "https://img.tyuanwaterproof.com/products/polyethylene-propylene-waterproof-membrane.webp"
 image: "https://img.tyuanwaterproof.com/products/polyethylene-propylene-waterproof-membrane.webp"
 
-hero_description: "TY-SHIELD™ PP/PE (Polyethylene Polypropylene) composite waterproof membrane — a high-performance multi-layer sheet designed specifically for cement-based bonding on damp concrete substrates. Ideal for indoor wet areas and infrastructure projects where traditional torch or solvent application is restricted."
+hero_description: "TY-SHIELD™ PP/PE (Polyethylene Polypropylene) composite waterproof membrane — a high-performance multi-layer sheet designed specifically for cement-based bonding on damp concrete substrates. Ideal for indoor wet areas where tile or screed integration is required."
+
+hero_tags:
+  - "Damp-Substrate Bond"
+  - "Tile Ready"
+  - "Non-Toxic"
+  - "Multi-Layer"
+
+spec_table:
+  - label: "Standard"
+    value: "GB 18173.1-2012 (FS2)"
+  - label: "Core Material"
+    value: "PE (Polyethylene) Film"
+  - label: "Surface"
+    value: "PP (Polypropylene) Non-woven"
+  - label: "Thickness"
+    value: "0.5mm - 1.5mm"
+  - label: "Weight"
+    value: "200g - 1000g/m²"
 
 quick_facts:
   - title: "Damp-Substrate Direct Bond"
-    text: "Engineered for direct application onto damp concrete surfaces using polymer cement mortar. This eliminates the costly downtime required for substrates to dry, significantly shortening the overall construction cycle in wet environments."
+    text: "Engineered for direct application onto damp concrete surfaces using polymer cement mortar. This eliminates the costly downtime required for substrates to dry, shortening construction cycles."
   - title: "Multi-Layer Composite Matrix"
-    text: "Features a high-strength 5-layer structure: PP non-woven fabric on both surfaces, a dense PE core film, and EVA adhesive interlayers. This matrix provides the perfect balance of mechanical strength and permanent watertightness."
+    text: "Features a high-strength 5-layer structure: PP fabric on both surfaces, a dense PE core film, and EVA adhesive layers. This provides the perfect balance of strength and watertightness."
   - title: "Mechanical Keying for Finishes"
-    text: "The porous PP non-woven surface provides an ideal interface for cement-based tile adhesives and screeds. It enables direct finishes to be applied over the waterproofing layer without additional bonding agents or primers."
+    text: "The porous PP non-woven surface provides an ideal interface for cement-based tile adhesives and screeds. Tiles can be applied directly over the membrane without additional primers."
   - title: "Environmentally Inert & Safe"
-    text: "Manufactured without plasticizers or volatile organic compounds (VOCs). Our PP/PE composite is odorless and non-toxic, making it suitable for potable water reservoirs and indoor wet areas with strict air quality standards."
+    text: "Manufactured without plasticizers or volatile organic compounds (VOCs). Our PP/PE composite is odorless and non-toxic, making it suitable for potable water reservoirs."
 
-features:
-  - title: "Zero Lateral Water Migration"
-    text: "The full-surface mechanical bond created by the polymer cement adhesive ensures there is no gap between the membrane and the substrate. This prevents water from traveling behind the membrane in the event of a local breach."
-  - title: "Simplified Tile Integration"
-    text: "The preferred choice for bathrooms and commercial kitchens. Its cement-friendly surface allows for a seamless transition from waterproofing to tiling, ensuring a robust, long-term bond for high-traffic wet areas."
-  - title: "High-Elongation Pliability"
-    text: "Despite its multi-layer construction, the membrane remains highly pliable, easily conforming to complex corners and penetrations. It absorbs substrate micro-cracks while maintaining its 0.3 MPa watertight integrity."
-  - title: "Infrastructure Versatility"
-    text: "Equally effective in infrastructure projects like utility tunnels and culverts. Its resistance to alkaline environments and soil-borne chemicals ensures stable performance in varied underground burial conditions."
+technical_data:
+  - label: "Tensile Strength"
+    unit: "N/cm"
+    standard: "GB 18173.1"
+    requirement: "≥ 60"
+    value: "75+"
+  - label: "Elongation at Break"
+    unit: "%"
+    standard: "GB 18173.1"
+    requirement: "≥ 400"
+    value: "450%+"
+  - label: "Watertightness"
+    unit: "MPa"
+    standard: "GB 18173.1"
+    requirement: "0.3 MPa, 30min"
+    value: "No Leakage"
+  - label: "Low Temp Bending"
+    unit: "°C"
+    standard: "GB 18173.1"
+    requirement: "-20°C No crack"
+    value: "Passed"
+  - label: "Peel Strength"
+    unit: "N"
+    standard: "GB 18173.1"
+    requirement: "≥ 50"
+    value: "60+"
+
+application_guide:
+  - title: "Substrate Preparation"
+    text: "Ensure the surface is firm and clean. Minor surface irregularities are acceptable as the cement adhesive will fill them."
+  - title: "Adhesive Mixing"
+    text: "Prepare polymer cement waterproof adhesive. Mix thoroughly to a uniform consistency suitable for trowel application."
+  - title: "Membrane Laying"
+    text: "Lay the PP/PE membrane smoothly onto the wet adhesive. Maintain a minimum 100mm side overlap."
+  - title: "Compaction & Air Removal"
+    text: "Press the membrane firmly using a rubber roller, working from the center outward to expel trapped air."
+  - title: "Joint Sealing"
+    text: "Treat all lap joints with compatible sealing tape or additional adhesive paste. Pay special attention to corners."
+
+faqs:
+  - question: "Can I install tiles directly over this membrane?"
+    answer: "Yes, the non-woven surface provides excellent mechanical keying for cement-based tile adhesives, making it ideal for bathrooms."
+  - question: "Is it safe for drinking water?"
+    answer: "Yes. Our PP/PE membrane contains no VOCs or toxic additives, making it safe for potable water reservoirs and ponds."
+  - question: "What weight should I choose?"
+    answer: "200-300g is suitable for bathrooms; 800-1000g is specified for tunnels and heavy-duty infrastructure."
 
 related_products:
   - title: "TPO Waterproofing Membrane"
@@ -37,16 +92,26 @@ related_products:
   - title: "EPDM Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
     href: "/products/epdm-waterproofing-membrane-wholesale/"
+
+downloads:
+  - title: "PP/PE Composite TDS"
+    description: "Physical property test reports and weight grade comparison."
+    type: "PDF"
+    href: "#"
+  - title: "Indoor Waterproofing Guide"
+    description: "System design for bathrooms and kitchens."
+    type: "PDF"
+    href: "#"
 ---
 
 ## Cement-Bonded Composite Waterproofing for Every Surface
 
-PP/PE (Polyethylene Polypropylene) composite waterproof membrane is a multi-layer high-polymer waterproofing system that bonds directly to substrates using cement-based adhesive — no torches, no solvents, no specialized equipment. This fundamental difference from bitumen and single-ply polymer membranes makes it the product of choice for indoor wet areas, damp-substrate applications, and any project where tiles or screeds are the final surface finish.
+PP/PE (Polyethylene Polypropylene) composite waterproof membrane is a multi-layer high-polymer system that bonds directly to substrates using cement-based adhesive.
 
 ### Five Engineering Advantages of PP/PE Composite
 
-1. **Polymer Fiber-Reinforced Adhesion** — The PP non-woven fiber surface forms a full mechanical bond with polymer cement waterproof adhesive, creating a monolithic waterproofing system where the membrane, adhesive, and substrate work as one.
-2. **Cavity-Filling & Channel-Sealing** — During application, the cement-based adhesive fills small holes, cracks, and rough areas in the substrate, preventing water from channeling beneath the membrane.
-3. **Full Adhesion on Damp Substrates** — The cement hydration process allows the adhesive to cure and bond even on damp concrete, eliminating drying delays.
-4. **Direct Finish Compatibility** — The non-woven fiber surface accepts tiles, cement screeds, and plaster directly — no separate bonding primers required.
-5. **Root Penetration Resistance** — High puncture resistance and dense composite structure provide effective barrier performance against plant roots.
+1. **Polymer Fiber-Reinforced Adhesion** — The non-woven surface forms a full mechanical bond with polymer cement, creating a monolithic system.
+2. **Cavity-Filling & Channel-Sealing** — The adhesive fills substrate irregularities, preventing water from channeling beneath the membrane.
+3. **Full Adhesion on Damp Substrates** — The cement hydration process allows bonding even on damp concrete, accelerating construction.
+4. **Direct Finish Compatibility** — The fiber surface accepts tiles directly, eliminating the need for bonding primers.
+5. **Root Penetration Resistance** — High puncture resistance provides an effective barrier against plant roots for green roofs.
