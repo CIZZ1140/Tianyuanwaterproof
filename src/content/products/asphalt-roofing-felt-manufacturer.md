@@ -308,11 +308,29 @@ Asphalt felt is categorized by weight per roll, which directly correlates with t
 
 ### Built for the Global Roofing Supply Chain
 
-Whether you are importing container loads for roofing distribution across North America, Europe, the Middle East, or Africa, or sourcing for a specific residential or commercial project, our asphalt felt is manufactured for consistent international quality:
+Whether you are importing container loads for roofing distribution across North America, Europe, the Middle East, or Africa, or sourcing for a specific residential or commercial project, our asphalt felt is manufactured for consistent international quality.
 
-- **Dual ASTM compliance** — D226 and D4869 ensure acceptance across North American and international building code jurisdictions.
-- **Full weight grade range** — 15# through 60# in lb/roll or 4kg through 30kg in kg/roll covers every project specification from economy residential to heavy commercial.
-- **Consistent batch quality** — every production run is tested for net mass, saturation ratio, breaking strength, pliability, tear strength, and loss on heating.
-- **Export-optimized packaging** — plastic-wrapped rolls stacked on fumigated pallets with protective corner boards and strapping for safe ocean freight delivery to any global port.
+<table style="width:100%; border-collapse: separate; border-spacing: 12px; margin: 20px 0; font-size: 13px;">
+  <tr>
+    <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
+      <p style="margin: 0 0 8px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Dual ASTM Compliance</p>
+      <p style="margin: 0; color: var(--color-text-secondary, #475569); line-height: 1.7;">Conforms to both <strong>ASTM D226</strong> and <strong>ASTM D4869</strong> — accepted across North American and international building code jurisdictions without additional certification.</p>
+    </td>
+    <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
+      <p style="margin: 0 0 8px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Full Weight Grade Range</p>
+      <p style="margin: 0; color: var(--color-text-secondary, #475569); line-height: 1.7;">From <strong>15# through 60#</strong> in lb/roll or <strong>4kg through 30kg</strong> in kg/roll — every project covered, from economy residential to heavy commercial.</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
+      <p style="margin: 0 0 8px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Batch-Tested Quality Control</p>
+      <p style="margin: 0; color: var(--color-text-secondary, #475569); line-height: 1.7;">Every production run tested for <strong>net mass, saturation ratio, breaking strength (MD/CD), pliability, tear strength, and loss on heating</strong> — documented and traceable.</p>
+    </td>
+    <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
+      <p style="margin: 0 0 8px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Export-Optimized Packaging</p>
+      <p style="margin: 0; color: var(--color-text-secondary, #475569); line-height: 1.7;">Plastic-wrapped rolls on fumigated pallets with protective corner boards and heavy-duty strapping — engineered for safe ocean freight to any global port.</p>
+    </td>
+  </tr>
+</table>
 
 Contact our export team with your target ASTM standard, weight grade, roll dimensions, and destination port for a competitive factory quotation and free sample.
