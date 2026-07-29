@@ -142,16 +142,16 @@ downloads:
 
 related_products:
   - title: "Asphalt Roofing Shingles"
-    image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-3-tab.webp"
+    image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
     href: "/products/3-tab-asphalt-shingles-wholesale/"
   - title: "SBS Modified Bitumen Membrane"
-    image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
+    image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
   - title: "Self-Adhesive Bitumen Membrane"
-    image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
+    image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
   - title: "APP Modified Bitumen Membrane"
-    image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
+    image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
     href: "/products/app-modified-bitumen-waterproofing-membrane-manufacturer/"
 
 faqs:
