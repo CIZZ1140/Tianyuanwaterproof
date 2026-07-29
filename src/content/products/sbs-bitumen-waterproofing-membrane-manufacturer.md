@@ -4,7 +4,7 @@ displayName: "SBS Waterproofing Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 100
-meta_description: "Factory-direct SBS modified bitumen waterproofing membrane. GB/T 18242-2008 certified, -25°C low-temp flexibility. Torch-applied, PY/G/PYG reinforcement, PE/sand/mineral/ALU surfaces. 3-5mm. 30+ years experience. OEM & free sample. Get a quote!"
+meta_description: "Premium SBS elastomeric bitumen membrane for cold-climate regions. Engineered for -25°C flexibility and superior crack-bridging in tunnels, metro systems, and deep foundations. GB/T 18242-2008 certified factory supply. Request a free sample today!"
 product_category: "Bitumen Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"

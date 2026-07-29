@@ -4,7 +4,7 @@ displayName: "Self-Adhesive Bituminous Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 95
-meta_description: "Factory-direct self-adhesive bitumen waterproofing membrane. GB 23441-2009 certified, torch-free cold applied peel & stick. PE, PET, aluminum, sand surfaces. 1.2mm–4.0mm thickness. OEM & free sample. Get a quote!"
+meta_description: "Safe and efficient self-adhesive 'Peel & Stick' bitumen membrane. No-torch cold application for fast job-site productivity. Superior self-healing properties and instant bond to concrete and metal. OEM branding and private label support."
 product_category: "Bitumen Membranes"
 image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
 main_image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"

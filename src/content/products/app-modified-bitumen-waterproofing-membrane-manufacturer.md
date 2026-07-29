@@ -4,7 +4,7 @@ displayName: "APP Modified Bitumen Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 95
-meta_description: "Factory-direct APP (atactic polypropylene) modified bitumen waterproofing membrane. GB 18243-2008 certified, torch-applied, 130°C heat resistance for hot-climate roofing. PE, sand, mineral, aluminum surfaces. 3-5mm. OEM & free sample. Get a quote!"
+meta_description: "High-performance APP plastomeric bitumen membrane designed for hot-climate roofing. Withstands up to 130°C heat without flow or drip. Ideal for tropical regions, Middle East projects, and exposed roofs. Direct manufacturer wholesale prices."
 product_category: "Bitumen Membranes"
 image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
