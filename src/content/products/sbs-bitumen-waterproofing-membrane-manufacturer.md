@@ -300,66 +300,14 @@ faqs:
 
 ---
 
-### The Industry-Standard Elastomeric Waterproofing System
+### Industrial-Grade Elastomeric Waterproofing for Global Infrastructure
 
-SBS (Styrene-Butadiene-Styrene) modified bitumen waterproofing membrane is the most versatile and widely specified elastomeric waterproofing system in the world. The SBS polymer modifier — a synthetic rubber — gives the bitumen true elastomeric properties: it stretches, recovers, and flexes with the building. This fundamental material behavior is what makes SBS the first choice for tunnels, foundations, cold-climate roofing, and any structure where thermal movement, settlement, or vibration pose a risk to waterproofing integrity.
+Tianyuan's **SBS Modified Bitumen Membrane** is a rubber-modified bitumen system engineered for structures subject to high thermal movement and structural expansion — including metro tunnels, foundations, and cold-region roofing. Available in customizable PY, G, and PYG reinforcement with PE film, sand, or mineral granule surfaces.
 
-TY-SHIELD™ SBS membranes combine petroleum asphalt, SBS thermoplastic elastomer, and an internal reinforcement carrier (PY, G, or PYG) into a torch-applied sheet system that forms a continuous, monolithic waterproofing layer. All products comply with **GB/T 18242-2008** with performance cross-referenced to ASTM D6164 and EN 12311-1.
+- **Engineered Resilience** — Retains elastomeric properties down to -25°C, ensuring reliable sealing in cold climates and high-altitude infrastructure.
+- **Structural Compatibility** — Designed for civil engineering projects where substrate movement and crack-bridging performance are critical to long-term waterproofing integrity.
+- **Technical Compliance** — Manufactured with reference to GB/T 18242-2008 technical requirements. Confirm the applicable product class and test documentation with our technical team before specification.
 
-As a direct manufacturer with over 30 years of bitumen processing expertise, Weifang Tianyuan supplies international importers, engineering contractors, and project procurement teams with consistent batch-tested quality, complete OEM flexibility, and export-ready packaging.
-
-### Reinforcement Selection Guide
-
-| Reinforcement | Tensile (Type II) | Best For |
-|---|---|---|
-| **PY (Polyester)** | ≥ 800 N/50mm | Tunnels, basements, foundations — high elongation for structural movement |
-| **G (Glass Fiber)** | ≥ 500 N/50mm | Multi-layer roofing, stable substrates — superior dimensional stability |
-| **PYG (Composite)** | ≥ 900 N/50mm | Bridges, infrastructure, heavy civil — best balance of strength + stability |
-
-### Specification Matrix — All Available Configurations
-
-<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
-<table style="width:100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; min-width:500px;">
-  <thead>
-    <tr style="background: var(--color-background-tertiary, #334155);">
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Thickness</th>
-      <th style="padding: 10px 12px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Base Material</th>
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Upper Surface</th>
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Lower Surface</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">3mm</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">PY, G</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">PE / Sand / Mineral / ALU</td>
-      <td style="padding: 10px 12px; color: var(--color-text-secondary, #475569);">PE / PE+Sand</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0); background: var(--color-background-secondary, #f8fafc);">
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">4mm</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">PY, G</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">PE / Sand / Mineral / ALU</td>
-      <td style="padding: 10px 12px; color: var(--color-text-secondary, #475569);">PE / PE+Sand</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">5mm</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">PY, PYG</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">PE / Sand / Mineral / ALU</td>
-      <td style="padding: 10px 12px; color: var(--color-text-secondary, #475569);">PE / PE+Sand</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-### Built for Global Infrastructure Supply
-
-SBS modified bitumen membranes are not a commodity product — they are an engineered waterproofing system. We supply international projects with the same manufacturing discipline that has made SBS the standard for metro tunnels, bridge decks, and critical infrastructure across climate zones:
-
-- **GB/T 18242-2008 certified** — every batch tested for soluble content, tensile strength, elongation, heat resistance, low-temperature flexibility, watertightness, and seam peeling strength.
-- **Global standard alignment** — performance cross-referenced to ASTM D6164 (USA) and EN 12311-1 (Europe) for international specification acceptance.
-- **Three reinforcement grades, four surface finishes, two performance grades** — one supplier covers your entire project specification range from standard residential roofing to heavy civil infrastructure.
-- **Export-optimized pallet packing** — fumigated pallets, protective corner boards, heavy-duty strapping, and weather-resistant wrapping for safe delivery to any global port.
-
-For hot-climate or exposed roofing applications where heat resistance is the priority, see our [APP Modified Bitumen Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/). For torch-free, cold-applied installations, see our [Self-Adhesive Bituminous Membrane](/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/).
+For hot-climate or exposed roofing applications, see our [APP Modified Bitumen Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/). For torch-free, cold-applied installations, see our [Self-Adhesive Bituminous Membrane](/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/).
 
 Contact our export team with your target reinforcement type, thickness, surface finish, and performance grade for a competitive factory quotation, lead time estimate, and free sample arrangement.
