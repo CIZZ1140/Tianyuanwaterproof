@@ -299,16 +299,12 @@ Different international markets reference different ASTM standards and weight gr
 
 ### Weight Grade Selection Guide
 
-Asphalt felt is categorized by weight per roll, which directly correlates with thickness and durability:
+Asphalt felt is categorized by weight per roll, which directly correlates with thickness and durability. Heavier grades provide proportionally higher tear resistance, longer temporary weather exposure tolerance, and better durability under foot traffic during construction.
 
-| Weight Grade | Metric Equivalent | Thickness | Best For |
-|---|---|---|---|
-| **15#** | ~4–6 kg/roll | 0.5mm | Standard residential roofing, moderate climates, budget-sensitive projects |
-| **30#** | ~7–10 kg/roll | 0.8mm | Commercial roofing, high-wind zones, heavy tile/metal coverings |
-| **40#** | ~12–14 kg/roll | 0.8mm+ | Industrial buildings, extreme weather regions, premium residential |
-| **50#–60#** | ~15–30 kg/roll | 0.8mm+ | Infrastructure projects, extended construction timelines, heavy-duty applications |
-
-Heavier grades provide proportionally higher tear resistance, longer temporary weather exposure tolerance, and better durability under foot traffic during construction.
+- **15#** (0.5mm / ~4–6 kg/roll) — Standard residential roofing in moderate climates. The most economical choice for budget-sensitive projects.
+- **30#** (0.8mm / ~7–10 kg/roll) — Commercial roofing, high-wind zones, and heavy tile or metal roof coverings. The industry workhorse.
+- **40#** (0.8mm+ / ~12–14 kg/roll) — Industrial buildings, extreme weather regions, and premium residential applications requiring maximum durability.
+- **50#–60#** (0.8mm+ / ~15–30 kg/roll) — Infrastructure projects, extended construction timelines, and heavy-duty commercial applications.
 
 ### Built for the Global Roofing Supply Chain
 
