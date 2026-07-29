@@ -268,7 +268,8 @@ As a direct manufacturer, Weifang Tianyuan supplies international importers, roo
 
 One of the most frequent questions from international buyers is whether to specify APP or SBS. The answer depends primarily on your project's climate zone.
 
-<table style="width:100%; border-collapse: collapse; margin: 20px 0; font-size: 13px;">
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<table style="width:100%; border-collapse: collapse; margin: 20px 0; font-size: 13px; min-width:600px;">
   <thead>
     <tr style="background: var(--color-background-tertiary, #334155);">
       <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Property</th>
@@ -314,6 +315,7 @@ One of the most frequent questions from international buyers is whether to speci
     </tr>
   </tbody>
 </table>
+</div>
 
 If your project is in a hot region where roof surface temperatures regularly exceed 60°C, APP is the technically correct specification. If your project spans both hot and cold extremes, we can supply both product types and advise on the optimal specification for each building area.
 

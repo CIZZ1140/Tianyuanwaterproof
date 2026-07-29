@@ -101,6 +101,11 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 			img:not([width]) { aspect-ratio: 4/3; }
 			.animate-fade-in { opacity: 0; animation: fadeIn 0.8s ease-out forwards; }
 			@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+			@media (max-width: 640px) {
+				.rwd-cards-3col table, .rwd-cards-3col tbody, .rwd-cards-3col tr, .rwd-cards-3col td,
+				.rwd-cards-2col table, .rwd-cards-2col tbody, .rwd-cards-2col tr, .rwd-cards-2col td { display:block; width:100% !important; box-sizing:border-box; }
+				.rwd-cards-3col td, .rwd-cards-2col td { margin-bottom:10px; }
+			}
 		</style>
 	</head>
 	<body class="bg-[#F5F7FA] text-[#102033] antialiased font-sans">

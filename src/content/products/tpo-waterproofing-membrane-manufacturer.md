@@ -240,6 +240,7 @@ As a direct manufacturer, Weifang Tianyuan supplies international importers, roo
 
 Selecting the right TPO type is the most important specification decision. Each type serves a distinct application profile:
 
+<div class="rwd-cards-3col">
 <table style="width:100%; border-collapse: separate; border-spacing: 10px; margin: 16px 0; font-size: 13px;">
   <tr>
     <td style="width:33.33%; padding: 18px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
@@ -259,12 +260,14 @@ Selecting the right TPO type is the most important specification decision. Each 
     </td>
   </tr>
 </table>
+</div>
 
 ### How to Specify TPO for Your Project — A B2B Buyer's Checklist
 
 International procurement of TPO membrane requires clarity on multiple variables. Use this checklist when preparing your inquiry:
 
-<table style="width:100%; border-collapse: collapse; margin: 16px 0; font-size: 13px;">
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<table style="width:100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; min-width:500px;">
   <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
     <td style="padding: 12px 16px; font-weight: 700; width: 28%; color: var(--color-text-primary, #0f172a); vertical-align: top;">Sheet type</td>
     <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">H (Homogeneous)<br/>L (Fabric-Backed)<br/>P (Reinforced)</td>
@@ -302,6 +305,7 @@ International procurement of TPO membrane requires clarity on multiple variables
     <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">Standard export pallets<br/>OEM private-label branding</td>
   </tr>
 </table>
+</div>
 
 Contact our export team with the answers to these questions for an accurate, competitive quotation within 24 hours.
 
@@ -309,6 +313,7 @@ Contact our export team with the answers to these questions for an accurate, com
 
 Whether you are importing container loads of TPO membrane for roofing distribution or sourcing for a specific airport, stadium, or infrastructure project, our manufacturing is engineered for consistent international quality.
 
+<div class="rwd-cards-2col">
 <table style="width:100%; border-collapse: separate; border-spacing: 12px; margin: 20px 0; font-size: 13px;">
   <tr>
     <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
@@ -331,5 +336,6 @@ Whether you are importing container loads of TPO membrane for roofing distributi
     </td>
   </tr>
 </table>
+</div>
 
 Contact our export team with your target TPO type, thickness, width, color, and destination port for a competitive factory quotation and free sample.

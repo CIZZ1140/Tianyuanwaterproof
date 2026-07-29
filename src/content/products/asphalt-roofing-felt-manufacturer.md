@@ -231,7 +231,8 @@ TY-SHIELD™ asphalt felt is manufactured to ASTM D226 and ASTM D4869 specificat
 
 Different international markets reference different ASTM standards and weight grades. The table below helps you select the correct specification for your project or distribution channel.
 
-<table style="width:100%; border-collapse: collapse; margin: 20px 0; font-size: 12px;">
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<table style="width:100%; border-collapse: collapse; margin: 20px 0; font-size: 12px; min-width:600px;">
   <thead>
     <tr style="background: var(--color-background-tertiary, #334155);">
       <th style="padding: 8px 10px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Property</th>
@@ -296,6 +297,7 @@ Different international markets reference different ASTM standards and weight gr
     </tr>
   </tbody>
 </table>
+</div>
 
 ### Weight Grade Selection Guide
 
@@ -310,6 +312,7 @@ Asphalt felt is categorized by weight per roll, which directly correlates with t
 
 Whether you are importing container loads for roofing distribution across North America, Europe, the Middle East, or Africa, or sourcing for a specific residential or commercial project, our asphalt felt is manufactured for consistent international quality.
 
+<div class="rwd-cards-2col">
 <table style="width:100%; border-collapse: separate; border-spacing: 12px; margin: 20px 0; font-size: 13px;">
   <tr>
     <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
@@ -332,5 +335,6 @@ Whether you are importing container loads for roofing distribution across North 
     </td>
   </tr>
 </table>
+</div>
 
 Contact our export team with your target ASTM standard, weight grade, roll dimensions, and destination port for a competitive factory quotation and free sample.
