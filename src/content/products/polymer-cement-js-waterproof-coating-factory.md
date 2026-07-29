@@ -36,7 +36,7 @@ spec_table:
   - label: "Product Type"
     value: "JS Polymer Cement (Two-Component) Waterproof Coating — 'J'=Polymer + 'S'=Cement"
   - label: "Standard"
-    value: "GB/T 23445-2009"
+    value: "GB/T 23445-2009 → GB/T 23445-2025 (new standard valid from July 2026)"
   - label: "Material"
     value: "Liquid: polymer emulsion + additives / Powder: cement + quartz sand + mineral fillers"
   - label: "Types"
@@ -179,7 +179,7 @@ loading_data:
   - label: "Packaging"
     value: "Liquid: sealed plastic bucket / Powder: woven bag or paper bag"
   - label: "Standard"
-    value: "GB/T 23445-2009"
+    value: "GB/T 23445-2009 → GB/T 23445-2025 (new standard valid from July 2026)"
   - label: "Types Available"
     value: "Type I (flexible) / Type II (balanced) / Type III (rigid)"
 
@@ -220,6 +220,8 @@ faqs:
     answer: "Yes — the cement component in JS provides natural compatibility with cement-based tile adhesives, screeds, and plasters. No additional bonding primer is required. This eliminates material layers and labor steps, making JS the standard waterproofing choice for bathrooms, kitchens, and wet areas before tiling."
   - question: "How does the self-healing property work?"
     answer: "When water contacts a minor crack or pinhole in the cured JS coating, residual unhydrated cement particles undergo secondary hydration — swelling to physically seal the gap. Simultaneously, the polymer matrix provides elastic recovery. This combined physical-chemical mechanism passively repairs minor coating defects during service, extending the effective waterproofing life."
+  - question: "The JS standard GB/T 23445 was updated in 2025 — does Tianyuan comply with the new standard?"
+    answer: "Yes. GB/T 23445-2025 was issued on December 2, 2025 and takes effect on July 1, 2026, replacing GB/T 23445-2009. The new standard is significantly more comprehensive (14,000 words vs 6,000) and introduces water resistance testing, accelerated aging tests, and environmental compliance requirements (VOC, formaldehyde, benzene limits aligned with HJ 457-2009). Our production is already transitioning to the 2025 standard requirements. For projects requiring compliance with the new standard before the July 2026 effective date, please contact our technical team to confirm the applicable product grade."
   - question: "Do you offer OEM / private label for JS coating?"
     answer: "Yes. Full OEM and private-label programs available — including custom bucket and bag labels, product branding, performance indicator customization (tensile strength, elongation, adhesion tailored to your market requirements), and packaging configurations. Minimum order quantities vary by specification. Contact our export team with your requirements for a tailored quotation and sample arrangement."
 
@@ -234,6 +236,27 @@ TY-SHIELD™ JS coating is supplied as a two-component system: a liquid polymer 
 Three performance grades — Type I (high elongation, flexible), Type II (balanced strength-elongation), and Type III (high rigidity) — cover the full range of applications from movement-active roof decks to stable structural walls. All products comply with **GB/T 23445-2009**, the national standard for polymer-modified cement waterproof coatings.
 
 As a direct manufacturer, Weifang Tianyuan supplies international construction-chemical distributors, waterproofing contractors, and project procurement teams with consistent batch-tested quality, complete OEM flexibility, and custom performance formulations for specific market requirements.
+
+### The Science of Polymer-Cement Hybrid Curing
+
+JS coating's dual-cure mechanism is what separates it from both pure cementitious and pure polymer coatings. When the mixed slurry is applied, two processes run simultaneously:
+
+- **Cement hydration** — the cement component reacts with water, forming calcium silicate hydrate (C-S-H) gels that provide compressive strength and chemical bonding to concrete substrates
+- **Polymer film formation** — as water evaporates and is consumed by cement hydration, polymer particles in the emulsion coalesce into a continuous film driven by capillary forces, filling the micropores that would otherwise remain in pure cement paste
+
+The polymer-to-cement (P/C) ratio is the dominant formulation variable — higher polymer fraction increases crack-bridging capacity but raises cost. The polymer emulsion must have sufficient ionic stability to resist coagulation from the calcium and hydroxide ions released during cement hydration. The glass transition temperature (Tg) of the polymer determines whether the cured coating behaves as a plastic body (volatile-cure JS, ≥65% solids, -10°C flexibility) or an elastomer (reactive-cure JS, ≥98% solids, -30°C flexibility).
+
+This technology traces its origins to Japan, where JS waterproof coating was first commercialized. China began domestic R&D in 1991, achieving industrial-scale production by 1994, with annual capacity reaching 12,000 tons and over 4 million square meters of applied area in the initial ramp-up.
+
+### Standard Evolution — GB/T 23445: 2009 → 2025
+
+The governing national standard was updated on December 2, 2025 and takes legal effect on **July 1, 2026**. GB/T 23445-2025 (14,000 words, a 2.3× expansion from the 6,000-word 2009 version) introduces three critical additions absent from the 2009 standard:
+
+- **Functional durability tests** — water resistance and accelerated aging resistance, addressing the long-standing gap that the 2009 standard did not evaluate long-term performance under sustained wet conditions
+- **Environmental compliance requirements** — limits for volatile organic compounds (VOC), free formaldehyde, and benzene compounds, aligning with HJ 457-2009 and GB 55030-2022
+- **Refined test methods** — specified number of coating passes, controlled cooling after curing, and defined stirring speed to improve inter-laboratory reproducibility
+
+For international markets, equivalent test standards include **EN 14891** (European standard for liquid-applied water-impermeable products beneath ceramic tiling) and **ASTM C836** (North American standard for flexible cold liquid-applied elastomeric waterproofing membranes).
 
 ### Four Engineering Advantages
 
