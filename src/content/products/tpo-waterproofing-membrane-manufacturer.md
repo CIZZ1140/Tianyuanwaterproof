@@ -264,17 +264,44 @@ Selecting the right TPO type is the most important specification decision. Each 
 
 International procurement of TPO membrane requires clarity on multiple variables. Use this checklist when preparing your inquiry:
 
-| Specification | Options |
-|---|---|
-| **Sheet type** | H (Homogeneous) / L (Fabric-Backed) / P (Reinforced) |
-| **Thickness** | 1.2mm / 1.5mm / 1.8mm / 2.0mm |
-| **Width** | 1m / 1.2m / 1.95m / 2.0m / 2.05m / 2.5m |
-| **Color** | White / Light Gray / Dark Gray / Red / Green / Custom |
-| **Application** | Exposed roofing / Underground / Tunnel / Water containment / Planting roof |
-| **Installation** | Mechanical fastening / Full adhesion / Self-adhesive |
-| **Quantity** | Square meters (m²) or container loads (20FT / 40FT HQ) |
-| **Documentation** | GB test reports / Third-party lab reports / CE certification |
-| **Packaging** | Standard export pallets / OEM private-label branding |
+<table style="width:100%; border-collapse: collapse; margin: 16px 0; font-size: 13px;">
+  <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+    <td style="padding: 12px 16px; font-weight: 700; width: 28%; color: var(--color-text-primary, #0f172a); vertical-align: top;">Sheet type</td>
+    <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">H (Homogeneous)<br/>L (Fabric-Backed)<br/>P (Reinforced)</td>
+  </tr>
+  <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0); background: var(--color-background-secondary, #f8fafc);">
+    <td style="padding: 12px 16px; font-weight: 700; color: var(--color-text-primary, #0f172a); vertical-align: top;">Thickness</td>
+    <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">1.2mm &emsp; 1.5mm &emsp; 1.8mm &emsp; 2.0mm</td>
+  </tr>
+  <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+    <td style="padding: 12px 16px; font-weight: 700; color: var(--color-text-primary, #0f172a); vertical-align: top;">Width</td>
+    <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">1m &emsp; 1.2m &emsp; 1.95m &emsp; 2.0m &emsp; 2.05m &emsp; 2.5m</td>
+  </tr>
+  <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0); background: var(--color-background-secondary, #f8fafc);">
+    <td style="padding: 12px 16px; font-weight: 700; color: var(--color-text-primary, #0f172a); vertical-align: top;">Color</td>
+    <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">White &emsp; Light Gray &emsp; Dark Gray &emsp; Red &emsp; Green &emsp; Custom</td>
+  </tr>
+  <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+    <td style="padding: 12px 16px; font-weight: 700; color: var(--color-text-primary, #0f172a); vertical-align: top;">Application</td>
+    <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">Exposed roofing<br/>Underground & tunnel<br/>Water containment<br/>Planting roof</td>
+  </tr>
+  <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0); background: var(--color-background-secondary, #f8fafc);">
+    <td style="padding: 12px 16px; font-weight: 700; color: var(--color-text-primary, #0f172a); vertical-align: top;">Installation</td>
+    <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">Mechanical fastening<br/>Full adhesion<br/>Self-adhesive</td>
+  </tr>
+  <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+    <td style="padding: 12px 16px; font-weight: 700; color: var(--color-text-primary, #0f172a); vertical-align: top;">Quantity</td>
+    <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">Square meters (m²)<br/>Container loads (20FT / 40FT HQ)</td>
+  </tr>
+  <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0); background: var(--color-background-secondary, #f8fafc);">
+    <td style="padding: 12px 16px; font-weight: 700; color: var(--color-text-primary, #0f172a); vertical-align: top;">Documentation</td>
+    <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">GB test reports<br/>Third-party lab reports<br/>CE certification</td>
+  </tr>
+  <tr>
+    <td style="padding: 12px 16px; font-weight: 700; color: var(--color-text-primary, #0f172a); vertical-align: top;">Packaging</td>
+    <td style="padding: 12px 16px; color: var(--color-text-secondary, #475569); line-height: 1.8;">Standard export pallets<br/>OEM private-label branding</td>
+  </tr>
+</table>
 
 Contact our export team with the answers to these questions for an accurate, competitive quotation within 24 hours.
 
