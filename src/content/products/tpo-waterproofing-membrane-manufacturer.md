@@ -264,25 +264,45 @@ Selecting the right TPO type is the most important specification decision. Each 
 
 International procurement of TPO membrane requires clarity on multiple variables. Use this checklist when preparing your inquiry:
 
-1. **Sheet type** — H (Homogeneous), L (Fabric-Backed), or P (Reinforced)?
-2. **Thickness** — 1.2mm / 1.5mm / 1.8mm / 2.0mm?
-3. **Width** — 1m / 1.2m / 1.95m / 2.0m / 2.05m / 2.5m?
-4. **Color** — White, light gray, dark gray, red, green, or custom?
-5. **Application** — Exposed roofing, underground, tunnel, water containment, planting roof?
-6. **Installation method** — Mechanical fastening, full adhesion, or self-adhesive?
-7. **Quantity** — Square meters or container loads?
-8. **Documentation** — GB test reports, third-party lab reports, CE certification required?
-9. **Packaging & labeling** — Standard export pallets or OEM private-label branding?
+| Specification | Options |
+|---|---|
+| **Sheet type** | H (Homogeneous) / L (Fabric-Backed) / P (Reinforced) |
+| **Thickness** | 1.2mm / 1.5mm / 1.8mm / 2.0mm |
+| **Width** | 1m / 1.2m / 1.95m / 2.0m / 2.05m / 2.5m |
+| **Color** | White / Light Gray / Dark Gray / Red / Green / Custom |
+| **Application** | Exposed roofing / Underground / Tunnel / Water containment / Planting roof |
+| **Installation** | Mechanical fastening / Full adhesion / Self-adhesive |
+| **Quantity** | Square meters (m²) or container loads (20FT / 40FT HQ) |
+| **Documentation** | GB test reports / Third-party lab reports / CE certification |
+| **Packaging** | Standard export pallets / OEM private-label branding |
 
 Contact our export team with the answers to these questions for an accurate, competitive quotation within 24 hours.
 
 ### Built for the Global Single-Ply Roofing Market
 
-Whether you are importing container loads of TPO membrane for roofing distribution or sourcing for a specific airport, stadium, or infrastructure project, our manufacturing is engineered for consistent international quality:
+Whether you are importing container loads of TPO membrane for roofing distribution or sourcing for a specific airport, stadium, or infrastructure project, our manufacturing is engineered for consistent international quality.
 
-- **GB27789-2011 certified** — each production batch tested for tensile strength, elongation, dimensional stability, low-temperature flexibility, watertightness, tear strength, joint peeling, and artificial weathering.
-- **Six standard widths** — from 1m to 2.5m, reducing on-site seam work and labor costs for large-area roofing installations.
-- **100% recyclable** — supports LEED certification, green building programs, and increasing regulatory requirements for sustainable construction materials across global markets.
-- **Export-optimized packaging** — rolls on fumigated pallets with protective wrapping, corner boards, and heavy-duty strapping for safe delivery to any major port worldwide.
+<table style="width:100%; border-collapse: separate; border-spacing: 12px; margin: 20px 0; font-size: 13px;">
+  <tr>
+    <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
+      <p style="margin: 0 0 8px; font-weight: 700; color: var(--color-text-primary, #0f172a);">GB27789-2011 Certified</p>
+      <p style="margin: 0; color: var(--color-text-secondary, #475569); line-height: 1.7;">Each production batch tested for <strong>tensile strength, elongation, dimensional stability, low-temp flexibility, watertightness, tear strength, joint peeling, and artificial weathering</strong> — full traceability documentation available.</p>
+    </td>
+    <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
+      <p style="margin: 0 0 8px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Six Standard Widths</p>
+      <p style="margin: 0; color: var(--color-text-secondary, #475569); line-height: 1.7;">From <strong>1m up to 2.5m</strong> — wider rolls reduce on-site seam work and labor costs for large-area roofing installations.</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
+      <p style="margin: 0 0 8px; font-weight: 700; color: var(--color-text-primary, #0f172a);">100% Recyclable & Sustainable</p>
+      <p style="margin: 0; color: var(--color-text-secondary, #475569); line-height: 1.7;">Supports <strong>LEED certification</strong> and green building programs. No chlorine, no plasticizers — fully recyclable at end of service life.</p>
+    </td>
+    <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
+      <p style="margin: 0 0 8px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Export-Optimized Packaging</p>
+      <p style="margin: 0; color: var(--color-text-secondary, #475569); line-height: 1.7;">Rolls on fumigated pallets with protective wrapping, corner boards, and heavy-duty strapping — engineered for safe ocean freight to any major global port.</p>
+    </td>
+  </tr>
+</table>
 
 Contact our export team with your target TPO type, thickness, width, color, and destination port for a competitive factory quotation and free sample.
