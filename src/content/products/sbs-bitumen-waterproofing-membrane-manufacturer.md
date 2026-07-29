@@ -1,24 +1,28 @@
 ---
-title: "SBS Bitumen Membrane Manufacturer | Wholesale Price & Free Sample"
+title: "SBS Bitumen Membrane Manufacturer | Torch Applied Cold-Climate Roofing | Wholesale"
 displayName: "SBS Waterproofing Membrane"
 category: "bitumen-membranes"
-meta_description: "Buy SBS modified bitumen waterproofing membrane direct from China factory. 30+ years experience, ASTM/ISO certified. Fast shipping & OEM support. Get a quote today!"
+featured: true
+order: 100
+meta_description: "Factory-direct SBS modified bitumen waterproofing membrane. GB/T 18242-2008 certified, -25°C low-temp flexibility. Torch-applied, PY/G/PYG reinforcement, PE/sand/mineral/ALU surfaces. 3-5mm. 30+ years experience. OEM & free sample. Get a quote!"
 product_category: "Bitumen Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 
-hero_description: "TY-SHIELD™ SBS modified bitumen waterproofing membrane is a torch-applied sheet membrane designed for roofing, basement, foundation and underground waterproofing projects. Available in 3mm, 4mm and 5mm thicknesses with polyester, fiberglass or composite reinforcement, PE film, sand or mineral surfaces, and OEM packaging for bulk export orders."
+hero_description: "TY-SHIELD™ SBS (Styrene-Butadiene-Styrene) modified bitumen waterproofing membrane — a torch-applied, rubber-modified sheet membrane engineered for cold-climate roofing, basement, foundation, tunnel, and infrastructure waterproofing. Available in polyester (PY), glass fiber (G), and glass-reinforced polyester (PYG) reinforcement, with PE film, fine sand, mineral granules, or aluminum foil surfaces across 3mm, 4mm, and 5mm thicknesses. Compliant with GB/T 18242-2008. Factory-direct supply with full OEM, private-label, and export packaging support."
 
 hero_tags:
+  - "SBS Elastomeric"
+  - "GB/T 18242-2008"
   - "3mm / 4mm / 5mm"
   - "PY / G / PYG"
-  - "Selected Grades"
-  - "Custom Surfaces"
-  - "OEM Labeling"
-  - "Export Packing"
+  - "Torch-Applied"
+  - "-25°C Flexibility"
+  - "PE / Sand / Mineral / ALU"
+  - "OEM Available"
 
-technical_scope: "SBS PY II, 4mm, PE Film Surface"
-technical_disclaimer: "Values shown apply to the stated product configuration. Other reinforcement, thickness and surface combinations may have different performance values. Request the corresponding TDS and batch test report before specification or procurement."
+technical_scope: "SBS PY II, 4mm, PE Film Surface (Representative Configuration)"
+technical_disclaimer: "Values shown apply to the stated product configuration. Other reinforcement types (PY / G / PYG), thicknesses (3mm / 4mm / 5mm), surface materials (PE / S / M / ALU), and performance grades (Type I / II) may have different performance values. Request the corresponding TDS and batch test report before specification or procurement."
 
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
@@ -36,72 +40,160 @@ gallery:
 
 spec_table:
   - label: "Product Type"
-    value: "SBS Modified Bitumen Waterproofing Membrane"
+    value: "SBS (Styrene-Butadiene-Styrene) Modified Bitumen Waterproofing Membrane"
   - label: "Standard"
-    value: "GB/T 18242-2025"
+    value: "GB/T 18242-2008"
   - label: "Reinforcement Options"
     value: "PY (Polyester) | G (Glass Fiber) | PYG (Glass Fiber Reinforced Polyester)"
+  - label: "Performance Grade"
+    value: "Type I (90°C) / Type II (105°C)"
+  - label: "Thickness"
+    value: "3mm / 4mm / 5mm"
+  - label: "Upper Surface"
+    value: "PE Film / Fine Sand (S) / Mineral Granules (M) / Aluminum Foil (ALU)"
+  - label: "Lower Surface"
+    value: "PE Film / PE + Fine Sand"
   - label: "Standard Roll Size"
-    value: "1m x 10m | Customizable available"
-  - label: "Typical Applications"
-    value: "Roofing | Basement | Foundation"
+    value: "1m × 10m | Customizable available"
   - label: "Installation Method"
-    value: "Torch-Applied"
+    value: "Torch-Applied (hot-melt) — cold-bonding also compatible"
   - label: "Low Temp Flexibility"
-    value: "-25°C"
-  - label: "Factory Service"
-    value: "OEM, Private Label, Export Packing"
+    value: "-20°C (Type I) / -25°C (Type II)"
 
-technical_data:
-  - label: "Tensile Strength (L/T)"
-    unit: "N/50mm"
-    standard: "GB/T 18242-2025"
-    requirement: ">=800"
-    value: "Qualified (900+)"
-  - label: "Elongation at Break"
-    unit: "%"
-    standard: "GB/T 18242-2025"
-    requirement: ">=30"
-    value: "40% - 50%"
-  - label: "Heat Resistance"
-    unit: "degC"
-    standard: "GB/T 18242-2025"
-    requirement: "90degC / 105degC (2h)"
-    value: "No flow/drip"
-  - label: "Low Temp Flexibility"
-    unit: "degC"
-    standard: "GB/T 18242-2025"
-    requirement: "-25degC"
-    value: "No crack"
-  - label: "Watertightness"
-    unit: "MPa"
-    standard: "GB/T 18242-2025"
-    requirement: "0.3MPa (30min)"
-    value: "Passed"
+quick_facts:
+  - title: "Elastomeric Cold-Climate Performance"
+    text: "SBS is a rubber-based thermoplastic elastomer modifier that gives the membrane true elastomeric behavior — it stretches and recovers like rubber. This makes SBS the preferred choice for cold-climate regions, high-altitude infrastructure, and structures subject to significant thermal movement where membrane cracking is a critical risk."
+  - title: "Multi-Reinforcement Options"
+    text: "Choose PY (polyester) for high tensile strength and elongation — ideal for substrates with structural movement. G (glass fiber) for dimensional stability on stable substrates. PYG (glass-reinforced polyester) combines both properties — the recommended choice for tunnels, bridges, and civil infrastructure."
+  - title: "Torch-Applied Monolithic Bonding"
+    text: "Torch application creates a fully bonded, continuous waterproofing layer. The controlled flame melts the lower PE film and bitumen coating, forming a molten bond to the primed substrate that cools into a single monolithic membrane system."
+  - title: "Proven in Infrastructure Projects"
+    text: "SBS modified bitumen membranes have been specified for metro systems, tunnels, foundations, and major civil engineering projects worldwide for over 30 years — backed by extensive field performance data and recognized by building codes across all climate zones."
 
 applications:
-  - title: "Tunnel & Infrastructure"
-    icon: "traintrack"
-    text: "Suitable for use as part of a specified multi-layer waterproofing system for tunnels, subways and underground structures, subject to project design and technical confirmation."
-  - title: "Roof Waterproofing"
-    icon: "warehouse"
-    text: "Suitable for industrial, commercial, and residential roofing systems, including mineral-finished roof applications."
-  - title: "Basement & Foundation"
-    icon: "building"
-    text: "Suitable for below-grade waterproofing systems where a reinforced, torch-applied membrane is specified."
-  - title: "Underground Waterproofing"
-    icon: "wrench"
-    text: "Suitable for selected underground structures, retaining walls, and project-specific waterproofing assemblies."
-  - title: "Infrastructure Projects"
-    icon: "droplets"
-    text: "Available for selected bridge, municipal, and water-conservancy waterproofing projects subject to technical confirmation."
+  - title: "Tunnel & Metro Waterproofing"
+    text: "SBS is the standard specification for tunnel linings, metro stations, and underground transportation infrastructure where elastomeric crack-bridging performance is a fundamental engineering requirement."
+  - title: "Cold-Climate Roof Waterproofing"
+    text: "The primary choice for industrial, commercial, and residential roofing systems in cold and temperature-variable regions — mineral-finished cap sheets provide UV protection for exposed applications."
+  - title: "Basement & Foundation Systems"
+    text: "PY-reinforced SBS membranes provide the puncture resistance and elongation needed for below-grade waterproofing under backfill conditions and hydrostatic pressure."
+  - title: "Bridge Deck & Infrastructure"
+    text: "Specified for bridge decks, concrete pavements, and municipal structures where dynamic loading and thermal cycling demand a waterproofing system with proven fatigue resistance."
+  - title: "Water Conservancy & Environmental"
+    text: "Used in canals, reservoirs, sewage treatment plants, landfills, and swimming pools where long-term water containment and chemical resistance are essential."
+
+features:
+  - title: "High Tensile Strength & Elongation"
+    text: "Achieves ≥800 N/50mm tensile strength (Type II PY) with ≥40% elongation at peak tension. The elastomeric SBS modification allows the membrane to absorb structural deformation, thermal expansion, and substrate cracking without losing waterproof integrity."
+  - title: "Hot & Cold Climate Resistance"
+    text: "Maintains flexibility at -25°C (Type II) and resists flowing or dripping at 105°C. Engineered for regions with extreme temperature swings — from northern winters to desert summers — making SBS the most versatile bitumen membrane across climate zones."
+  - title: "Acid, Alkali & Weather Resistance"
+    text: "Demonstrates strong resistance to acid, alkali, and chemical corrosion. Mass gain after water immersion is controlled to ≤1.0% (PE/S surfaces) or ≤2.0% (mineral surfaces), ensuring long-term stability in aggressive environments."
+  - title: "Dual Installation Compatibility"
+    text: "Optimized for torch application (hot-melt), but fully compatible with cold-bonding adhesives where open-flame work is restricted. Available in full-adhesion, strip-adhesion, and spot-adhesion methods to suit substrate conditions and project specifications."
+
+technical_data:
+  - label: "Soluble Content (3mm)"
+    unit: "g/m²"
+    standard: "GB/T 18242"
+    requirement: "≥ 2,100"
+    value: "≥ 2,100"
+  - label: "Soluble Content (4mm)"
+    unit: "g/m²"
+    standard: "GB/T 18242"
+    requirement: "≥ 2,900"
+    value: "≥ 2,900"
+  - label: "Soluble Content (5mm)"
+    unit: "g/m²"
+    standard: "GB/T 18242"
+    requirement: "≥ 3,500"
+    value: "≥ 3,500"
+  - label: "Tensile Strength — Peak (PY Type II)"
+    unit: "N/50mm"
+    standard: "GB/T 18242"
+    requirement: "≥ 800"
+    value: "900+"
+  - label: "Tensile Strength — Peak (PYG Type II)"
+    unit: "N/50mm"
+    standard: "GB/T 18242"
+    requirement: "≥ 900"
+    value: "Qualified"
+  - label: "Elongation at Peak (PY Type II)"
+    unit: "%"
+    standard: "GB/T 18242"
+    requirement: "≥ 40"
+    value: "40–50%"
+  - label: "Heat Resistance (Type I)"
+    unit: "°C / 2h"
+    standard: "GB/T 18242"
+    requirement: "90°C, ≤ 2mm slip"
+    value: "No flow or drip"
+  - label: "Heat Resistance (Type II)"
+    unit: "°C / 2h"
+    standard: "GB/T 18242"
+    requirement: "105°C, ≤ 2mm slip"
+    value: "No flow or drip"
+  - label: "Low Temp Flexibility (Type II)"
+    unit: "°C"
+    standard: "GB/T 18242"
+    requirement: "-25°C — No crack"
+    value: "No crack"
+  - label: "Watertightness (PY)"
+    unit: "MPa / min"
+    standard: "GB/T 18242"
+    requirement: "0.3MPa, 30min"
+    value: "Impermeable"
+  - label: "Seam Peeling Strength"
+    unit: "N/mm"
+    standard: "GB/T 18242"
+    requirement: "≥ 1.5"
+    value: "≥ 1.5"
+  - label: "Mass Gain After Water Immersion (PE/S)"
+    unit: "%"
+    standard: "GB/T 18242"
+    requirement: "≤ 1.0"
+    value: "Passed"
+
+application_guide:
+  - title: "Surface Preparation"
+    text: "Ensure the substrate is dry, clean, smooth, and free from dust, oil, and loose particles. Fill cracks and surface irregularities with polymer mortar. Concrete surfaces should be fully cured."
+  - title: "Priming"
+    text: "Apply bitumen primer evenly and completely over all surfaces to be waterproofed. Allow the primer to dry fully before membrane installation — this ensures maximum adhesion between the substrate and the torch-applied membrane."
+  - title: "Membrane Laying"
+    text: "Use the torch application (hot-melt) method: heat the lower PE film and bitumen coating with a controlled propane flame until the bitumen melts uniformly. Roll the membrane forward with steady pressure. For projects where open flame is restricted, cold-bonding adhesives are fully compatible."
+  - title: "Seam & Detail Treatment"
+    text: "Maintain a minimum 100mm longitudinal lap and 150mm end lap. Roll all seams firmly to squeeze out a small bead of molten bitumen — this confirms a continuous, monolithic seal. On vertical surfaces, fix with metal battens and seal with compatible sealant."
+  - title: "Adhesion Methods"
+    text: "Select from full-adhesion (entire surface bonded), strip-adhesion (adhesive strips + mechanical fixing), or spot-adhesion based on substrate condition, wind uplift requirements, and project specification."
+  - title: "Protection Layer"
+    text: "After membrane installation is complete, construct the protection and isolation layer according to the waterproofing system design — typically cement mortar screed, protection boards, or drainage mats before backfilling or final surfacing."
+
+packaging:
+  - title: "Export Standard Packing"
+    text: "Rolls are secured vertically on fumigated wooden pallets, wrapped in high-density polyethylene film with corner protectors and heavy-duty strapping for safe ocean freight transit."
+  - title: "Custom OEM Labeling"
+    text: "Full private label support including custom-printed wrapping film, branded core sleeves, pallet labels, and outer-package markings for wholesale and distribution partners."
+  - title: "Storage Recommendations"
+    text: "Store rolls vertically in original packaging in a dry, ventilated area below 50°C. Avoid direct sunlight and rain exposure. Shelf life: 12 months under standard conditions."
+
+loading_data:
+  - label: "Roll Size"
+    value: "1m × 10m (standard)"
+  - label: "3mm — 20FT Container"
+    value: "Approx. 4,000–5,000 m²"
+  - label: "4mm — 20FT Container"
+    value: "Approx. 3,000–4,000 m²"
+  - label: "5mm — 20FT Container"
+    value: "Approx. 2,500–3,500 m²"
+  - label: "Note"
+    value: "Final loading depends on roll weight, reinforcement type, surface finish, pallet configuration, and destination-country weight limits."
 
 standards_mapping:
   - property: "Tensile Strength"
     gb: "≥ 800 N/50mm"
     astm: "ASTM D6164"
     en: "EN 12311-1"
-  - property: "Low Temp Flex"
+  - property: "Low Temp Flexibility"
     gb: "-25°C"
     astm: "-20°C (Pass)"
     en: "-25°C (Pass)"
@@ -113,51 +205,6 @@ standards_mapping:
     gb: "GB/T 18242"
     astm: "Equivalent"
     en: "Equivalent"
-key_benefits:
-  - title: "Low-Temperature Flexibility"
-    icon: "snowflake"
-    text: "SBS polymer modification helps the membrane remain flexible in cold and temperature-variable conditions, reducing the risk of cracking."
-  - title: "Resistance to Substrate Movement"
-    icon: "ruler"
-    text: "Reinforced membrane construction supports waterproofing systems exposed to normal structural movement and thermal expansion."
-  - title: "Reliable Overlap Bonding"
-    icon: "flame"
-    text: "Torch-applied overlap bonding helps create a continuous waterproofing layer across the main field area and treated details."
-  - title: "Project-Specific Configurations"
-    icon: "package"
-    text: "Select the appropriate reinforcement, thickness, and surface-finish combination for non-exposed, multi-layer, or mineral-finished roof systems."
-
-application_guide:
-  - title: "SUBSTRATE PREP"
-    icon: "hammer"
-    text: "Ensure the surface is level, dry, and primed with bitumen primer to enhance adhesion."
-  - title: "INITIAL LAYOUT"
-    icon: "droplets"
-    text: "Dry-roll the membrane to check for proper alignment and overlap positioning before torching."
-  - title: "TORCH APPLICATION"
-    icon: "flame"
-    text: "Use a propane torch to evenly heat the lower surface until the bitumen melts, then unroll firmly."
-  - title: "SEAM ROLLING"
-    icon: "package"
-    text: "Apply pressure to all lap joints to ensure a continuous monolithic seal and squeeze out excess bitumen."
-
-packaging_oem:
-  - title: "Export Standard Packing"
-    text: "Rolls are secured with vertical standing on wooden pallets, wrapped in high-density polyethylene film for global ocean freight."
-  - title: "Custom OEM Labeling"
-    text: "We support private label production including custom-printed wrapping film and branded core sleeves for project distributors."
-
-loading_data:
-  - label: "Roll Size"
-    value: "1m × 10m (standard)"
-  - label: "3mm / 20FT"
-    value: "Approx. 4,000 – 5,000 sqm"
-  - label: "4mm / 20FT"
-    value: "Approx. 3,000 – 4,000 sqm"
-  - label: "5mm / 20FT"
-    value: "Approx. 2,500 – 3,500 sqm"
-  - label: "Note"
-    value: "Final loading quantity depends on roll weight, reinforcement type, surface finish, pallet configuration and destination-country weight limits."
 
 supply_info:
   - title: "MOQ"
@@ -193,11 +240,19 @@ configurations:
     thickness: ["3mm", "4mm", "5mm"]
     surface: "PE Film"
     use: "Dimensionally stable multi-layer roof systems"
-  - code: "SBS PYG"
+  - code: "SBS PYG PE"
     reinforcement: "Composite (PYG)"
     thickness: ["3mm", "4mm", "5mm"]
     surface: "PE Film / Sand"
     use: "Infrastructure, tunnels, project-specific systems"
+
+project_references:
+  - title: "Flat Roof Waterproofing Project, Thailand"
+    config: "SBS PY Mineral, 4mm, Mineral Granules"
+    quantity: "10,000 sqm"
+    year: 2026
+    application: "Torch-applied exposed flat roof waterproofing system"
+    image: "https://img.tyuanwaterproof.com/projects/thailand-flat-roof-sbs-waterproofing.webp"
 
 downloads:
   - title: "SBS Waterproofing Membrane TDS"
@@ -213,14 +268,6 @@ downloads:
     size: "720 KB"
     href: ""
 
-project_references:
-  - title: "Flat Roof Waterproofing Project, Thailand"
-    config: "SBS PY Mineral, 4mm, Mineral Granules"
-    quantity: "10,000 sqm"
-    year: 2026
-    application: "Torch-applied exposed flat roof waterproofing system"
-    image: "https://img.tyuanwaterproof.com/projects/thailand-flat-roof-sbs-waterproofing.webp"
-
 related_products:
   - title: "APP Modified Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/app-bitumen-membrane.webp"
@@ -228,14 +275,91 @@ related_products:
   - title: "Self-Adhesive Bituminous Membrane"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
+  - title: "TPO Waterproofing Membrane"
+    image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
+    href: "/products/tpo-waterproofing-membrane-manufacturer/"
+  - title: "EPDM Waterproofing Membrane"
+    image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
+    href: "/products/epdm-waterproofing-membrane-wholesale/"
+
+faqs:
+  - question: "What is SBS modified bitumen waterproofing membrane?"
+    answer: "SBS (Styrene-Butadiene-Styrene) modified bitumen membrane is a reinforced waterproofing sheet where the bitumen is modified with a rubber-based thermoplastic elastomer. This modification gives the membrane true elastomeric properties — it stretches and recovers like rubber — making it ideal for structures subject to thermal movement, structural settlement, and cold-climate conditions. It is typically installed by torch application (hot-melt), though cold-bonding methods are also compatible."
+  - question: "When should I choose SBS instead of APP membrane?"
+    answer: "SBS is the preferred choice for cold-climate regions and structures subject to significant thermal movement. Its rubber modification provides low-temperature flexibility down to -25°C (Type II) — far superior to APP's -15°C. Choose SBS for tunnels, basements, foundations, and roofing in temperature-variable regions. Choose APP for hot-climate exposed roofing where heat resistance (130°C) is the priority. Both can be torch-applied and are compatible with cold-bonding."
+  - question: "What is the difference between PY, G, and PYG reinforcement?"
+    answer: "PY (Polyester Felt) offers the highest tensile strength (≥800 N/50mm Type II) and elongation — the best choice for substrates with structural movement, tunnels, and below-grade waterproofing. G (Glass Fiber Felt) provides superior dimensional stability — ideal for stable substrates and multi-layer roof systems where thermal movement is minimal. PYG (Glass Fiber Reinforced Polyester) combines both — a polyester mat with embedded glass strands for the best balance of strength and stability, recommended for heavy civil infrastructure and bridge decks."
+  - question: "Which surface finish should I choose?"
+    answer: "PE Film is the standard for non-exposed layers in multi-layer systems and below-grade applications. Fine Sand (S) provides additional inter-layer bonding for multi-course roof systems and is specified for underground engineering. Mineral Granules (M) — slate chips — provide built-in UV protection for exposed roofing cap sheets. Aluminum Foil (ALU) provides the highest reflectivity and vapor barrier properties. Our spec table lists all compatible combinations by thickness."
+  - question: "What is the difference between Type I and Type II SBS membrane?"
+    answer: "Type I is the standard performance grade: 90°C heat resistance, -20°C low-temperature flexibility, lower tensile strength (≥500 N/50mm PY). Suitable for general waterproofing in moderate climates. Type II is the high-performance grade: 105°C heat resistance, -25°C low-temperature flexibility, higher tensile strength (≥800 N/50mm PY / ≥900 PYG), and higher elongation (≥40%). Recommended for demanding civil engineering, cold-climate infrastructure, and projects requiring extended warranty coverage."
+  - question: "Can SBS membrane be cold-applied?"
+    answer: "Yes. While torch application is the standard and most reliable method, SBS membrane is fully compatible with cold-bonding adhesives. This is useful for projects where open-flame work is restricted — for example, over occupied buildings, near flammable materials, or in confined spaces. Select from full-adhesion, strip-adhesion, or spot-adhesion methods based on your substrate conditions and wind uplift requirements."
+  - question: "Do you offer OEM / private label for SBS membrane?"
+    answer: "Yes. We provide full OEM and private-label programs — including custom roll printing, branded wrapper film, private-label pallet marking, and custom specifications (thickness, reinforcement, surface, roll dimensions). MOQ: 1 × 20FT container per specification, mixed loading available. Contact our export team with your market requirements for a tailored quotation and free sample arrangement."
+
 ---
 
-### Industrial-Grade Elastomeric Waterproofing
+### The Industry-Standard Elastomeric Waterproofing System
 
-Tianyuan's **SBS Modified Membrane** is a rubber-modified bitumen system engineered for structures subject to high thermal movement and structural expansion, including metro tunnels, foundations and cold-region roofing. Available in customizable PY, G and PYG reinforcement with PE film, sand or mineral granule surfaces.
+SBS (Styrene-Butadiene-Styrene) modified bitumen waterproofing membrane is the most versatile and widely specified elastomeric waterproofing system in the world. The SBS polymer modifier — a synthetic rubber — gives the bitumen true elastomeric properties: it stretches, recovers, and flexes with the building. This fundamental material behavior is what makes SBS the first choice for tunnels, foundations, cold-climate roofing, and any structure where thermal movement, settlement, or vibration pose a risk to waterproofing integrity.
 
-- **Engineered Resilience** — Retains elastomeric properties down to -25°C, ensuring reliable sealing in cold climates and high-altitude infrastructure.
-- **Structural Compatibility** — Designed for civil engineering where substrate movement and crack-bridging performance are critical to long-term waterproofing integrity.
-- **Technical Compliance** — Manufactured with reference to GB/T 18242-2025 technical requirements. Confirm the applicable product class and test documentation with our technical team before specification.
+TY-SHIELD™ SBS membranes combine petroleum asphalt, SBS thermoplastic elastomer, and an internal reinforcement carrier (PY, G, or PYG) into a torch-applied sheet system that forms a continuous, monolithic waterproofing layer. All products comply with **GB/T 18242-2008** with performance cross-referenced to ASTM D6164 and EN 12311-1.
 
-For hot-climate or exposed roofing applications, see our [APP Modified Bitumen Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/).
+As a direct manufacturer with over 30 years of bitumen processing expertise, Weifang Tianyuan supplies international importers, engineering contractors, and project procurement teams with consistent batch-tested quality, complete OEM flexibility, and export-ready packaging.
+
+### Reinforcement Selection Guide
+
+| Reinforcement | Tensile (Type II) | Best For |
+|---|---|---|
+| **PY (Polyester)** | ≥ 800 N/50mm | Tunnels, basements, foundations — high elongation for structural movement |
+| **G (Glass Fiber)** | ≥ 500 N/50mm | Multi-layer roofing, stable substrates — superior dimensional stability |
+| **PYG (Composite)** | ≥ 900 N/50mm | Bridges, infrastructure, heavy civil — best balance of strength + stability |
+
+### Specification Matrix — All Available Configurations
+
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<table style="width:100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; min-width:500px;">
+  <thead>
+    <tr style="background: var(--color-background-tertiary, #334155);">
+      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Thickness</th>
+      <th style="padding: 10px 12px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Base Material</th>
+      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Upper Surface</th>
+      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Lower Surface</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">3mm</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">PY, G</td>
+      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">PE / Sand / Mineral / ALU</td>
+      <td style="padding: 10px 12px; color: var(--color-text-secondary, #475569);">PE / PE+Sand</td>
+    </tr>
+    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0); background: var(--color-background-secondary, #f8fafc);">
+      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">4mm</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">PY, G</td>
+      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">PE / Sand / Mineral / ALU</td>
+      <td style="padding: 10px 12px; color: var(--color-text-secondary, #475569);">PE / PE+Sand</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">5mm</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">PY, PYG</td>
+      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">PE / Sand / Mineral / ALU</td>
+      <td style="padding: 10px 12px; color: var(--color-text-secondary, #475569);">PE / PE+Sand</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+### Built for Global Infrastructure Supply
+
+SBS modified bitumen membranes are not a commodity product — they are an engineered waterproofing system. We supply international projects with the same manufacturing discipline that has made SBS the standard for metro tunnels, bridge decks, and critical infrastructure across climate zones:
+
+- **GB/T 18242-2008 certified** — every batch tested for soluble content, tensile strength, elongation, heat resistance, low-temperature flexibility, watertightness, and seam peeling strength.
+- **Global standard alignment** — performance cross-referenced to ASTM D6164 (USA) and EN 12311-1 (Europe) for international specification acceptance.
+- **Three reinforcement grades, four surface finishes, two performance grades** — one supplier covers your entire project specification range from standard residential roofing to heavy civil infrastructure.
+- **Export-optimized pallet packing** — fumigated pallets, protective corner boards, heavy-duty strapping, and weather-resistant wrapping for safe delivery to any global port.
+
+For hot-climate or exposed roofing applications where heat resistance is the priority, see our [APP Modified Bitumen Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/). For torch-free, cold-applied installations, see our [Self-Adhesive Bituminous Membrane](/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/).
+
+Contact our export team with your target reinforcement type, thickness, surface finish, and performance grade for a competitive factory quotation, lead time estimate, and free sample arrangement.
