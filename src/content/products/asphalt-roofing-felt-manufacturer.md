@@ -5,6 +5,10 @@ category: "bitumen-membranes"
 featured: true
 order: 80
 meta_description: "ASTM D226 & D4869 asphalt saturated organic roofing felt. The essential secondary moisture barrier for pitched roofs under asphalt shingles. High saturation ratio for reliable protection. Available in 15# and 30# grades. Export-optimized packaging."
+main_image: "https://img.tyuanwaterproof.com/products/asphalt-felt.webp"
+image: "https://img.tyuanwaterproof.com/products/asphalt-felt.webp"
+
+hero_description: "TY-SHIELD™ asphalt saturated organic roofing felt — the professional-grade secondary moisture barrier for ASTM D226 and D4869 compliant roofing systems. Manufactured by saturating high-quality organic fiber base with premium petroleum asphalt, providing reliable protection against wind-driven rain and ice damming beneath asphalt shingles and tile roofs."
 
 quick_facts:
   - title: "Essential Secondary Barrier"
@@ -142,16 +146,16 @@ downloads:
 
 related_products:
   - title: "Asphalt Roofing Shingles"
-    image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
+    image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-3-tab.webp"
     href: "/products/3-tab-asphalt-shingles-wholesale/"
   - title: "SBS Modified Bitumen Membrane"
-    image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
+    image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
     href: "/products/sbs-bitumen-waterproofing-membrane-manufacturer/"
   - title: "Self-Adhesive Bitumen Membrane"
-    image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
+    image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
   - title: "APP Modified Bitumen Membrane"
-    image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
+    image: "https://img.tyuanwaterproof.com/products/app-bitumen-membrane.webp"
     href: "/products/app-modified-bitumen-waterproofing-membrane-manufacturer/"
 
 faqs:
@@ -173,120 +177,8 @@ faqs:
 
 ## The Industry-Standard Pitched Roof Underlayment
 
-Asphalt saturated organic roofing felt — commonly known as tar paper or roofing felt — is the most widely used secondary moisture barrier in residential and commercial pitched roof construction. It is manufactured by saturating a high-quality organic fiber base sheet (made from recycled rag, waste paper, and in premium grades, animal hair and mineral wool) with molten petroleum asphalt under controlled heat and pressure.
+Asphalt saturated organic roofing felt — commonly known as tar paper or roofing felt — is the most widely used secondary moisture barrier in residential and commercial pitched roof construction. It is manufactured by saturating a high-quality organic fiber base sheet with molten petroleum asphalt under controlled heat and pressure.
 
 The saturation process is key: the original paper is passed through a bath of hot asphalt, then through heated rollers that force the bitumen deep into every fiber of the paper layer while extruding excess material. The result is a dense, pliable, water-resistant sheet that has served as the foundation layer of pitched roofing systems for over a century.
 
 TY-SHIELD™ asphalt felt is manufactured to ASTM D226 and ASTM D4869 specifications, supplying international roofing distributors, construction material importers, and wholesale buyers with consistent, batch-tested quality and complete OEM flexibility for their local markets.
-
-### ASTM Standard Type Comparison — Choose the Right Grade for Your Market
-
-Different international markets reference different ASTM standards and weight grades. The table below helps you select the correct specification for your project or distribution channel.
-
-<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
-<table style="width:100%; border-collapse: collapse; margin: 20px 0; font-size: 12px; min-width:600px;">
-  <thead>
-    <tr style="background: var(--color-background-tertiary, #334155);">
-      <th style="padding: 8px 10px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Property</th>
-      <th style="padding: 8px 10px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">ASTM D226<br/>Type I (15#)</th>
-      <th style="padding: 8px 10px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">ASTM D226<br/>Type II (30#)</th>
-      <th style="padding: 8px 10px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">ASTM D4869<br/>Type I (15#)</th>
-      <th style="padding: 8px 10px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">ASTM D4869<br/>Type II (30#)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 8px 10px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Net Mass (min)</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">560 g/m²</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">1,270 g/m²</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">400 g/m²</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">660 g/m²</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 8px 10px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Saturation (min % by wt)</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">120%</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">150%</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">100%</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">120%</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 8px 10px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Breaking Strength MD (min)</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">30 lbf/in</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">40 lbf/in</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">30 lbf/in</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">40 lbf/in</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 8px 10px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Breaking Strength CD (min)</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">15 lbf/in</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">20 lbf/in</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">15 lbf/in</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">20 lbf/in</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 8px 10px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Tear Strength (min)</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);" colspan="4">≥ 2.5 N (all types)</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 8px 10px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Pliability (23°C, 90° bend)</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);" colspan="4">12.7mm radius — no crack (all types)</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 8px 10px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Loss on Heating (max)</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);" colspan="2">≤ 4.0%</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);" colspan="2">≤ 6.0%</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 8px 10px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Roll Width</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);" colspan="4">36 inch (1,000 mm)</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px 10px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Roll Area</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">432 ft²</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">216 ft²</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">216 ft²</td>
-      <td style="padding: 8px 10px; text-align: center; color: var(--color-text-primary, #0f172a);">216 ft²</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-### Weight Grade Selection Guide
-
-Asphalt felt is categorized by weight per roll, which directly correlates with thickness and durability. Heavier grades provide proportionally higher tear resistance, longer temporary weather exposure tolerance, and better durability under foot traffic during construction.
-
-- **15#** (0.5mm / ~4–6 kg/roll) — Standard residential roofing in moderate climates. The most economical choice for budget-sensitive projects.
-- **30#** (0.8mm / ~7–10 kg/roll) — Commercial roofing, high-wind zones, and heavy tile or metal roof coverings. The industry workhorse.
-- **40#** (0.8mm+ / ~12–14 kg/roll) — Industrial buildings, extreme weather regions, and premium residential applications requiring maximum durability.
-- **50#–60#** (0.8mm+ / ~15–30 kg/roll) — Infrastructure projects, extended construction timelines, and heavy-duty commercial applications.
-
-### Built for the Global Roofing Supply Chain
-
-Whether you are importing container loads for roofing distribution across North America, Europe, the Middle East, or Africa, or sourcing for a specific residential or commercial project, our asphalt felt is manufactured for consistent international quality.
-
-<div class="rwd-cards-2col">
-<table style="width:100%; border-collapse: separate; border-spacing: 12px; margin: 20px 0; font-size: 13px;">
-  <tr>
-    <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
-      <p style="margin: 0 0 8px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Dual ASTM Compliance</p>
-      <p style="margin: 0; color: var(--color-text-secondary, #475569); line-height: 1.7;">Conforms to both <strong>ASTM D226</strong> and <strong>ASTM D4869</strong> — accepted across North American and international building code jurisdictions without additional certification.</p>
-    </td>
-    <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
-      <p style="margin: 0 0 8px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Full Weight Grade Range</p>
-      <p style="margin: 0; color: var(--color-text-secondary, #475569); line-height: 1.7;">From <strong>15# through 60#</strong> in lb/roll or <strong>4kg through 30kg</strong> in kg/roll — every project covered, from economy residential to heavy commercial.</p>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
-      <p style="margin: 0 0 8px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Batch-Tested Quality Control</p>
-      <p style="margin: 0; color: var(--color-text-secondary, #475569); line-height: 1.7;">Every production run tested for <strong>net mass, saturation ratio, breaking strength (MD/CD), pliability, tear strength, and loss on heating</strong> — documented and traceable.</p>
-    </td>
-    <td style="width:50%; padding: 20px; background: var(--color-background-secondary, #f8fafc); border-radius: 16px; border: 1px solid var(--color-border-tertiary, #e2e8f0); vertical-align: top;">
-      <p style="margin: 0 0 8px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Export-Optimized Packaging</p>
-      <p style="margin: 0; color: var(--color-text-secondary, #475569); line-height: 1.7;">Plastic-wrapped rolls on fumigated pallets with protective corner boards and heavy-duty strapping — engineered for safe ocean freight to any global port.</p>
-    </td>
-  </tr>
-</table>
-</div>
-
-Contact our export team with your target ASTM standard, weight grade, roll dimensions, and destination port for a competitive factory quotation and free sample.
