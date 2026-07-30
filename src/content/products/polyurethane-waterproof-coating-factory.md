@@ -55,34 +55,34 @@ spec_table:
     value: "Iron bucket — clean, dry, airtight"
 
 quick_facts:
-  - title: "Single-Component — No Mixing"
-    text: "Unlike two-component polyurethane systems that require precise on-site mixing of resin and hardener, TY-SHIELD™ single-component PU coating is ready to apply straight from the container. This eliminates mixing ratio errors, reduces application time, and removes the risk of pot-life expiration during hot-weather construction."
-  - title: "Moisture-Cure Technology"
-    text: "The coating cures by absorbing moisture from the air — no catalyst, no hardener, no heat required. This means it can be applied on damp (but not wet) substrates, and the curing reaction actually benefits from ambient humidity rather than being inhibited by it."
-  - title: "Seamless Monolithic Membrane"
-    text: "As a liquid-applied system, PU coating flows into cracks, corners, pipe penetrations, and complex details that sheet membranes cannot reach. The cured membrane is continuous and joint-free — eliminating the lap-joint failures that account for the majority of sheet-membrane leaks."
-  - title: "Non-Toxic & Environmentally Friendly"
-    text: "The cured membrane is non-toxic, odorless, and pollution-free. Suitable for indoor wet areas, kitchens, swimming pools, and water features where occupant exposure after curing is a consideration. Custom color pigments can be added for decorative waterproofing applications."
+  - title: "开桶就用——没有配比，没有损耗"
+    text: "双组份 PU 需要工人在现场量树脂和固化剂的比例，少倒一点多倒一点都会影响固化质量。在东南亚 35°C 的工地上，搅拌好的双组份物料 2 小时内用不完就报废。单组份不存在这个问题——桶盖打开就是成品，用多少倒多少，剩下的盖回去下次接着用。对项目经理来说，这意味着一笔被清零的现场损耗费。"
+  - title: "雨季不用等——空气里有水就能干"
+    text: "混凝土永远干不透。刚拆模的地下室底板、一场阵雨后的露台、华南梅雨季里永远潮乎乎的卫生间地面——这是防水施工的常态，不是例外。单组份 PU 用空气里的水分固化：湿度越大，反应越快。不是跟水对抗，是拿水当催化剂用。拖一天工期就是一天的人工费和设备租赁费——这个涂料不让你等。"
+  - title: "管根、阴阳角——用液体对付异形"
+    text: "三根穿墙管交叉的墙角、排水沟的转角、电梯井底坑的阴角——铺卷材的师傅最怕这些地方。一卷 1 米宽的 SBS 要切成七八片，每片之间还要搭接 10 公分，搭接缝叠在一起容易从中间渗。PU 是液体，倒下去自己流平到最低点，不需要切割也不需要拼缝。这些复杂节点的施工时间，液体能做到卷材的三分之一甚至更少。"
+  - title: "泳池水接触级——有报告，自己看"
+    text: "室内大面积滚涂 PU，工人不需要防毒面具，整栋楼不需要空置散味。固化后的膜无毒无味，第三方检测报告覆盖饮用水接触标准和挥发性有机物限值。如果你做的是学校、医院、酒店泳池、水产养殖池——需要水接触安全认证的防水项目，PU 是少数能同时交出弹性、拉伸和毒理学三项报告的涂料。"
 
 applications:
-  - title: "Irregular & Complex Roofing"
-    text: "The preferred solution for flat roofs, inclined roofs, gutters, canopies, and architectural details where sheet membranes cannot conform to complex geometry or would require excessive cutting and seaming."
-  - title: "Underground Structures"
-    text: "Superior protection for basement slabs and walls, interior and exterior foundation walls, tunnels, and well pits against constant hydrostatic pressure and groundwater ingress."
-  - title: "Interior Wet Areas"
-    text: "Ideal for bathrooms, kitchens, swimming pools, flower beds, and sluice rooms where a seamless, tile-receptive waterproofing layer is required."
-  - title: "Construction Joints & Penetrations"
-    text: "Excellent for waterproofing expansion joints, construction joints, pipe penetrations, and outfalls — details where sheet membranes require complex cutting and risk leak paths."
+  - title: "地下室、隧道、地下工程"
+    text: "底板、侧墙、电梯井、集水坑——这些位置一旦漏水，修的成本经常高于重建。PU 的高延伸率（≥550% Type I）意味着混凝土的热胀冷缩不会拉裂涂膜，0.3MPa 的不透水性意味着 30 米水头压不穿。"
+  - title: "屋面、天沟、檐口"
+    text: "大面用喷涂或滚涂，天沟和檐口用手刮——PU 在斜面和垂直面上不流淌。复杂的屋面造型、出屋面管道、空调基座——液体自己找平包覆，不需要像卷材那样现场放样裁切。"
+  - title: "卫生间、厨房、淋浴区"
+    text: "做完 PU 可以直接在上面做水泥砂浆保护层或铺贴瓷砖。2–3 道涂层交替方向施工，每道间隔半天，一面墙的防水一个下午就做完。"
+  - title: "伸缩缝、施工缝、穿墙管"
+    text: "这些是最容易漏的部位——卷材在这些地方需要额外裁剪、搭接、封边，每多一道工序就多一个漏点。PU 一遍刮过去，缝里灌满、管根包住、拐角抹圆，固化后整片无缝。"
 
 features:
-  - title: "Non-Toxic & Environmentally Safe"
-    text: "The cured PU membrane is non-toxic, tasteless, odorless, and pollution-free. Suitable for potable water contact applications and occupied indoor environments."
-  - title: "Single-Component Convenience"
-    text: "No on-site mixing or blending — open the container and apply. Eliminates the risk of incorrect mixing ratios, incomplete blending, and pot-life waste associated with two-component systems."
-  - title: "Damp-Base Application"
-    text: "Can be applied on damp (not saturated) concrete substrates. The moisture-cure reaction actually benefits from ambient humidity — unlike solvent-based coatings that fail on damp surfaces."
-  - title: "Colorable & Decorative"
-    text: "Pigments can be added to the coating for colored waterproofing that doubles as a decorative finish — eliminating the need for a separate wearing course in non-trafficked applications."
+  - title: "耐水解配方——水下泡得住"
+    text: "聚氨酯的分子链里含有酯基或醚基，在水里长期浸泡会发生水解——分子链断了，涂膜强度下降。所以不是所有 PU 都能做水池防水。TY-SHIELD™ 的异氰酸酯预聚体配方控制交联密度，涂膜在 0.3MPa 静水压下 30 分钟不渗漏只是底线；耐碱处理后的拉伸保持率 80%–150%，意味着埋在地下被地下水长期浸泡也不会降解。"
+  - title: "涂膜厚度是你控制的——不是工厂定死的"
+    text: "卷材的厚度是出厂就焊死的——1.2mm 就是 1.2mm，4mm 就是 4mm。PU 涂料的厚度是你一刮刀一刮刀刷出来的。1mm 干膜需要约 1.6–1.8 kg 材料，2mm 翻倍。不同基面、不同水压、不同暴露条件需要的厚度不一样——Type I 做屋面 1.5mm 够用，Type II 做水池建议 2mm 起步。这个控制权在你手上。"
+  - title: "-40°C 不裂——从哈尔滨到漠河"
+    text: "很多弹性涂料在常温下拉伸数据漂亮，一到零下就脆了。GB/T 19250 要求 Type I 和 Type II 在 -40°C 下弯折不裂——这不是涂料的常态表现，是需要配方专门调的。低温柔性不是看最低温多少度，是看这个温度下还能不能保持弹性。北方冬季施工、东北地区的屋面和地下室，认准这个参数。"
+  - title: "粘在混凝土上比混凝土本身还结实"
+    text: "PU 对水泥基面的粘接强度 ≥0.50 MPa。这个数字翻译成人话：在做拉拔测试的时候，破坏的是水泥基面本身，不是 PU 和混凝土的界面。这叫 100% 内聚破坏——涂层撕不下来，因为它跟基面已经是一个整体了。这个测试对地下室外防水尤其关键，因为回填土和地下水会把膜往外推。"
 
 technical_data:
   - label: "Tensile Strength — Type I"
@@ -147,28 +147,28 @@ technical_data:
     value: "No crack"
 
 application_guide:
-  - title: "Substrate Preparation"
-    text: "Ensure the base course is smooth, solid, and dry without standing water, dust, or greasy dirt. Fill low-lying areas to a smooth, level surface. For underground applications, drain water 24 hours before construction."
-  - title: "Additional Layer at Details"
-    text: "Apply additional waterproof coating at internal and external corners, pipe roots, and movement joints. 2–4 coats of additional coating (minimum 1mm total thickness). If reinforcement is required, fully saturate polyester non-woven fabric before embedding."
-  - title: "Coating Application"
-    text: "Apply using a plastic or rubber scraper in even coats, alternating direction between coats (perpendicular strokes) to ensure complete coverage and penetration. Each coat cures in approximately 12 hours at room temperature. Apply the next coat only after the previous coat is tack-free (non-sticky film)."
-  - title: "Build-Up & Reinforcement"
-    text: "Apply 2–3 coats total for standard waterproofing. For enhanced performance, embed glass fiber cloth or polyester non-woven fabric between coats. This adds mechanical strength, crack-bridging capacity, and puncture resistance."
-  - title: "Protective Layer"
-    text: "To enhance the bond between the waterproof layer and subsequent protective screed or tile adhesive, broadcast coarse sand onto the surface of the final coat before it cures. This creates a mechanical key for the next layer."
-  - title: "Curing & Protection"
-    text: "Do not step on or damage the waterproof layer before it is fully hard-dry (minimum 24 hours at room temperature). Protect the completed membrane from rain, direct sunlight, and construction traffic until the protective layer is applied."
+  - title: "铲平、扫干净、别有水"
+    text: "基面要平、要实。起灰起砂的用扫帚扫掉，油污用溶剂擦，凸出来的凿平。地下室的积水先抽干，晾一天。现场有轻微潮湿没关系——PU 不怕潮。但水面不能汪在那里。"
+  - title: "碰角、管根先单独处理一遍"
+    text: "所有阴阳角、穿墙管根部、地漏周边——这些是必漏点，不要等大面施工时才带过。先单独刷 2–4 遍，总厚度攒到 1mm 以上。如果设计有加筋要求，在涂层没干之前把聚酯无纺布贴上去，用刮板压平浸透，不能起泡。"
+  - title: "大面施工——十字交叉，两道打底"
+    text: "用橡胶刮板或滚筒，顺着一个方向刷第一道。夏天大约半天之后，手指轻按不粘手了，换个方向（跟第一道垂直）刷第二道。两道的纹路交叉可以堵住单道可能漏掉的针眼。每道大约吃掉 0.8–1.0 kg/m²。总厚度按设计要求来——一般屋面 1.5mm，水池 2mm 起步。"
+  - title: "想加布？在第一道和第二道之间加"
+    text: "需要增强抗裂的地方——裂缝修补区、新旧混凝土接缝——在第一道涂料刷完还没干时，把玻璃纤维布或聚酯无纺布铺上去，用刮板从中间往两边压，把布下面的气泡全部赶出来。布要完全浸透，表面不能看到干纤维。布与布搭接最少 10 公分。"
+  - title: "撒砂——让后道工序咬得住"
+    text: "如果做完防水层上面还要做水泥砂浆保护层或者贴瓷砖，在最后一道涂料还没干的时候，把干净的中粗砂均匀撒在上面。撒完不用管，等干了砂子就嵌在涂层表面。下一道水泥砂浆抹上去时，砂粒提供机械咬合力——不用再刷界面剂。"
+  - title: "千万别踩——干了再走"
+    text: "表干之前不许上人。夏天的下午刷完，第二天早上可以走；冬天可能要多等半天。没干透之前下雨要盖——刚刷完的涂料被雨打了会起泡。保护层或面砖做完之前，管住现场的工人和推车。"
 
 packaging:
-  - title: "Iron Bucket Packaging"
-    text: "Supplied in clean, dry, airtight iron buckets with secure lids and handles. Standard bucket sizes available — custom packaging options for wholesale and distribution partners."
-  - title: "Hazardous Article Transport"
-    text: "Classified as hazardous material during transportation. Shipments must be protected from rain, direct sunlight, squeezing, compression, and collision. Buckets must remain upright — upside-down storage and transport is prohibited."
-  - title: "Storage Requirements"
-    text: "Store in a dry, shaded area with good ventilation below 40°C. Avoid direct sunlight exposure. Keep containers sealed when not in use. Shelf life: 12 months from production date in unopened original packaging."
-  - title: "OEM & Private Label"
-    text: "Full OEM support including custom bucket labels, product branding, color formulations, and packaging configurations for international coating distributors and construction-chemical brands."
+  - title: "铁桶包装——密封、干净、防潮"
+    text: "标准铁桶密封包装，带提手和防伪盖。桶型规格按客户要求定制。托盘打包，整柜发运。"
+  - title: "危险品运输——直立、防雨、防撞"
+    text: "属于危险品，运输途中桶必须正放，不能倒扣。防雨淋、防晒、防挤压碰撞。单证随货：TDS、MSDS、装箱单、原产地证。"
+  - title: "储存"
+    text: "干燥、阴凉、通风——40°C 以下。避免阳光直射。打开没用完的马上盖回去，桶口别留残料。原包装未开封保质期 12 个月。"
+  - title: "OEM / 贴牌"
+    text: "桶身印你的品牌和产品信息，颜色按你市场调，桶型大小你定。需要定制性能指标的——拉伸做高一点、伸长做大一点、固化时间调快调慢——技术部按你的样标来出配方。MOQ 按规格来。"
 
 loading_data:
   - label: "20FT Container"
@@ -203,46 +203,41 @@ related_products:
     href: "/products/pp-pe-composite-membrane-factory/"
 
 faqs:
-  - question: "What is single-component polyurethane waterproof coating?"
-    answer: "It is a liquid-applied, moisture-curing synthetic polymer waterproofing material. Unlike two-component PU systems that require on-site mixing of resin and hardener, single-component PU is ready to use straight from the container. It cures by absorbing moisture from the air, forming a seamless, highly elastic, rubber-like waterproof membrane — no catalyst, no heat, no mixing required."
-  - question: "What is the difference between Type I and Type II PU coating?"
-    answer: "Type I is the high-elongation grade (≥550% elongation at break, ≥1.9 MPa tensile) — suitable for applications where crack-bridging and structural movement accommodation are the primary requirements, such as roofing and expansion joints. Type II is the high-tensile grade (≥2.45 MPa tensile, ≥450% elongation) — specified for applications requiring higher mechanical strength, such as underground structures, tunnels, and areas subject to hydrostatic pressure."
-  - question: "Can PU coating be applied on damp surfaces?"
-    answer: "Yes — within limits. Single-component PU is moisture-curing, meaning it uses ambient humidity to polymerize. It can be applied on damp (not saturated or standing-water) concrete substrates, and actually cures more reliably in moderate humidity than solvent-based coatings. However, the substrate must be free of standing water, and for underground applications, water should be drained 24 hours before construction."
-  - question: "How long does it take to cure?"
-    answer: "Tack-free time is ≤12 hours at room temperature (approximately 23°C). Hard-dry time is ≤24 hours. Each coat must be tack-free before applying the next. Curing time is temperature and humidity dependent — faster in warm, humid conditions; slower in cold, dry conditions. Construction should be conducted above 5°C with adequate ventilation."
-  - question: "How many coats are needed?"
-    answer: "2–3 coats in two perpendicular directions are recommended for standard waterproofing. The alternating direction ensures complete coverage and uniform film thickness. Additional coats (2–4) with a minimum total thickness of 1mm are required at construction details — internal and external corners, pipe penetrations, and movement joints."
-  - question: "Can PU coating be used for exposed roofing?"
-    answer: "Yes, when the product is formulated for exposed use. Our weather-resistant formulation passes artificial weathering aging tests (GB/T 19250) with no cracking or deformation. For exposed applications, specify the weathering-grade product and ensure adequate film thickness. For non-exposed applications (protected by screed, tiles, or ballast), standard-grade product is sufficient."
-  - question: "Do you offer OEM / private label for PU coating?"
-    answer: "Yes. Full OEM and private-label programs available — including custom bucket packaging, product branding, color formulations, and private-label documentation. Minimum order quantities vary by formulation. Contact our export team with your market requirements for a tailored quotation and sample arrangement."
+  - question: "这桶东西打开是什么样？怎么用？"
+    answer: "打开铁桶，里面是能流动的黑褐色粘稠液体。用橡胶刮板或者滚筒刮到混凝土上，剩下的交给空气。它吸收空气里的水分自己固化，不用加任何东西，不用搅拌，不用加热。夏天半天表干，一天硬干——手指按上去不粘手就是好了。低于 5°C 的天不建议做，太冷了反应太慢。"
+  - question: "I 型 II 型怎么选？"
+    answer: "I 型是你需要它会跟着动的——屋面、天沟、伸缩缝、地震带的建筑。伸长率 550% 以上，基面拉裂了涂层跟着走不破。II 型是你需要它扛水压的——地下室、隧道、泳池、蓄水池。拉伸强度 2.45 MPa 以上，顶得住 30 米水头。简单记：会动的用 I，水深的用 II。"
+  - question: "基面是湿的能刷吗？"
+    answer: "潮的可以，汪着水的不行。基面有潮湿感、颜色深——没问题，PU 用空气中的水固化，湿度反而是帮你的。但如果基面上有积水坑、刚浇完还在返水的混凝土、雨水打湿后水珠还挂着——先擦干或者抽掉。地下室做完后晾 24 小时再施工最保险。"
+  - question: "多长时间能干？"
+    answer: "夏天手指轻触不粘——4 到 6 小时。完全硬干——24 小时内。冬天会慢，气温低于 10°C 可能要到 48 小时。判断标准：手指按下去涂层不回粘、不留指纹——就可以刷下一道了。赶工期的话，用工业暖风机对着吹可以加速，但别超过 60°C。"
+  - question: "刷几遍？每遍多重？"
+    answer: "最少两道，两次的方向交叉——第一道竖着刷，第二道横着刷，针眼不容易漏。每道大约吃掉 0.8–1.0 公斤每平方。总厚度看用途：卫生间 1.2mm 就够，屋面 1.5mm，泳池和地下室建议 2mm 起步。阴角和管根提前单独多刷两遍，攒到 1mm 以上。"
+  - question: "能做露天屋面吗？太阳晒会老化吗？"
+    answer: "能。我们的耐候型配方通过了 GB/T 19250 的人工气候加速老化测试——模拟暴晒老化后不开裂。但是有个前提：下单时你要说明是露天的，我们会发耐候型产品。普通室内用的 PU 不建议拿去暴晒——配方不一样。露天的涂膜厚度也别省，建议 2mm 起步，紫外线走表面往下打，薄了容易穿透。"
+  - question: "OEM 贴牌怎么做？"
+    answer: "桶上印你的牌子——LOGO、品名、型号、颜色，按你提供的设计稿来做。桶子大小你定——我们常见的规格是 20kg 铁桶，你要 10kg 或 25kg 也行。颜色也能调——你要灰色的、红色的、绿色的，技术部给你配。如果你市场的标准跟 GB/T 19250 不一样——比如你需要拉伸强度做到 3.0MPa，或者伸长率做到 800%——我们按你的样标出配方打样，你确认后再投产。MOQ 根据规格来，发个询盘过来我们实报实算。"
 
 ---
 
-### The Liquid-Applied Advantage — Seamless, Effortless, Reliable
+### PU 想的是怎么流进那些复杂形状里
 
-Single-component polyurethane waterproof coating represents a fundamentally different approach to waterproofing. Sheet membranes work by creating a physical barrier — and their joints are their vulnerability. PU coating is a liquid that becomes the barrier, flowing into every detail, crack, and penetration before curing into a continuous, seamless, rubber-like membrane with no joints to fail.
+地下室底板有穿墙管、排水沟、电梯井的转角——这不是一个直角，是三根管子在一个平面上交叉。铺卷材的师傅要把 1 米宽的卷材切成七八片，直角转弯处还要搭接 10 公分，搭接缝叠了三层，中间但凡有个砂眼就是未来的漏点。
 
-TY-SHIELD™ single-component PU coating is a synthetic polymer formulation based on isocyanate chemistry with moisture-cure technology. The product is supplied as a ready-to-use liquid in sealed airtight containers. When applied, it absorbs atmospheric moisture to trigger polymerization — no catalyst, no hardener, no on-site mixing. The cured membrane is non-toxic, odorless, highly elastic, and bonds to concrete, masonry, metal, wood, glass, and rubber surfaces.
+PU 的思路不一样。它不是去覆盖这些形状——它是流进这些形状里。液体倒下去自己找平到最低点，阴角里灌满、管根包住、沟槽填平。固化后整片无缝——不是拼出来的，是化学长出来的。这是 PU 跟卷材最根本的区别，也是它最适合复杂节点和异形基面的原因。
 
-The coating can be applied on damp substrates — a critical advantage in underground construction where completely dry surfaces are rare. Pigments can be added for colored waterproofing that doubles as a decorative finish, combining two construction steps into one. All products comply with **GB/T 19250-2013**.
+TY-SHIELD™ 单组份 PU 的固化不靠搅拌、不靠加热、不靠催化剂——靠空气里的水分。异氰酸酯基团跟水反应生成脲键，交联成三维弹性网络。这个反应不需要你参与——桶盖打开，刮刀摊平，剩下的交给化学。在华南和东南亚的工地上，空气湿度常年 70% 以上——这恰好是 PU 最喜欢的工作环境。
 
-As a direct manufacturer, Weifang Tianyuan supplies international construction-chemical distributors, waterproofing contractors, and project procurement teams with consistent batch-tested quality, complete OEM flexibility, and custom formulations for specific climate and application requirements.
+Type I（≥550% 伸长，≥1.9 MPa）适合会动的基面。Type II（≥2.45 MPa，≥450% 伸长）适合水压大的地下工程。两款都做到 -40°C 弯折不裂——不是所有弹性防水涂料都能在这个温度下保持柔韧性的。
 
-### Five Engineering Advantages
+Weifang Tianyuan 是直接工厂，不做贴牌转手。你需要什么桶型、什么颜色、什么性能指标——技术部按你的样标来配。询盘直接发过来：哪种类型、多少量、目的港是哪里——当天报实价。
 
-1. **Non-toxic, odorless, pollution-free** — safe for occupied buildings, indoor wet areas, and environmentally sensitive projects
-2. **Single-component — no mixing** — eliminates the two most common failure modes of multi-component systems: incorrect mixing ratios and incomplete blending
-3. **Damp-base compatible** — moisture-cure chemistry works with ambient humidity rather than fighting it
-4. **Seamless monolithic membrane** — flows into every detail, leaving no joints to fail
-5. **Universal substrate bonding** — adheres to concrete, masonry, metal, wood, glass, and rubber
+### 哪些地方 PU 比卷材好使
 
-### Scope of Application
+- **管根和转角**：一把刮刀走一遍，不需要多片拼贴和搭接封边。这些节点的防水施工时间可能是卷材的三分之一。
+- **基面不平整**：液体自动填补凹凸，不怕基面上的小坑小缝。卷材怕的空鼓问题在 PU 这里不存在——因为它是贴上去的，不是铺上去的。
+- **新旧混凝土接缝**：加一层玻璃纤维布嵌在你道涂层之间，接缝处不会因为后期沉降产生应力集中裂缝。卷材在这一点上比较被动——缝一拉，卷材跟着裂。
+- **需要贴瓷砖的地方**：撒一层砂在最后一道还没干的涂层上，干了砂粒嵌在表面。后面抹水泥砂浆时直接咬合——不需要再刷界面剂。
+- **渗漏修补**：漏水点凿开找到裂缝，PU 灌进去，加布补强，做完就封死了。不用像卷材那样要把周边 1 平米全揭开重新做。
 
-- **Irregular roofing structures** — flat roofs, inclined roofs, gutters, canopies, and complex architectural details
-- **Underground waterproofing** — basement slabs and walls, interior and exterior foundation walls, tunnels, well pits
-- **Interior wet areas** — bathrooms, kitchens, swimming pools, flower beds, sluice rooms
-- **Construction details** — expansion joints, construction joints, pipe penetrations, wall pipes, and outfalls
-
-Contact our export team with your target type (I or II), project application, estimated quantity, and destination port for a competitive factory quotation and free sample.
+这些优势不是营销话术——是 PU 作为液体材料的物理属性。它能做到的，卷材做不到，因为卷材是工厂做好的固定尺寸产品，不是现场成型的。
