@@ -9,7 +9,7 @@ product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-coating.webp"
 
-hero_description: "TY-SHIELD™ polymer modified asphalt waterproof coating — a single-component, water-based SBS bitumen emulsion engineered for cold-applied, seamless liquid waterproofing. Petroleum asphalt is the base material, modified with high-quality SBS rubber and nano-fillers through a scientific formulation process. Under temperature and mechanical action, the polymer modifier forms a three-dimensional network structure within the bitumen matrix — transforming the asphalt into an organic polymer elastomer with rubber-like properties. The coating is non-toxic, odorless, and environmentally friendly. It can be applied cold on damp substrates, and after curing forms a seamless, joint-free elastic waterproof layer that sheet membranes cannot achieve. Available in L (standard) and H (high-performance) grades. Compliant with JC/T 408-2005. Factory-direct supply with full OEM, private-label packaging, and custom performance formulations."
+hero_description: "TY-SHIELD™ polymer modified asphalt waterproof coating — a single-component, water-based SBS bitumen emulsion that cures by water evaporation into a seamless elastic membrane. Think of it as the same SBS chemistry found in your torch-applied waterproofing membrane — but delivered in liquid form, in a pail, applied with a brush or roller. No cutting. No torching. No seam welding. Where a roll membrane struggles with complex geometry, the liquid simply flows. Where seams create leak paths, a continuous film eliminates them. Available in L grade (standard, -15°C flex) and H grade (high-performance, 110°C heat resistance). Compliant with JC/T 408-2005. Factory-direct supply with OEM pail branding and custom formulations."
 
 hero_tags:
   - "SBS Liquid Membrane"
@@ -55,34 +55,37 @@ spec_table:
     value: "Metal pail — 18kg / 20kg / 50kg — custom sizes available"
 
 quick_facts:
-  - title: "SBS 3D Network — Asphalt Becomes an Elastomer"
-    text: "The defining innovation of this coating is the SBS polymer modifier forming a three-dimensional network structure within the asphalt matrix. Published research (ACS Sustainable Chemistry & Engineering, 2022) confirms that this network fundamentally changes the bitumen's rheological behavior — the coating behaves as an organic polymer elastomer with rubber-like elasticity, not as traditional liquid asphalt."
-  - title: "Cold-Applied, Water-Based, No Solvents"
-    text: "Single-component, ready to use straight from the pail. Water-based formulation means no hazardous solvents, no toxic fumes, no volatile organic compounds (VOC <50 g/L per ASTM D3960). Safe for confined spaces, occupied buildings, and environmentally sensitive projects."
-  - title: "Seamless Joint-Free Waterproof Layer"
-    text: "As a liquid-applied system, the coating flows into every crack, corner, and detail — forming a continuous, monolithic waterproof membrane after curing. This eliminates the seam and joint failures that account for the majority of sheet membrane leaks, achieving what 'coil products cannot' — a truly integrated waterproofing envelope."
-  - title: "On-Demand Repair — No Replacement"
-    text: "When damage occurs — whether from follow-up construction or long-term wear — only the affected area needs treatment. Local patch repair restores the original waterproofing performance without removing or replacing adjacent sections. This reduces maintenance cost and extends the effective service life of the waterproofing system."
+  - title: "Same SBS Chemistry as Your Roll Membrane. Different Form."
+    text: "If you already spec SBS waterproofing membranes, you know the polymer. It's the same styrene-butadiene-styrene modifier — the same elastic behavior, the same low-temperature flexibility. The difference is the delivery format. The roll membrane comes off a production line at a fixed width and thickness, and your installer cuts and torches it. This coating comes in a steel pail, and your installer brushes it on. Where the membrane needs careful detailing around parapets and penetrations, the liquid pours in and levels itself. One product line, two application methods — the chemistry does the same job."
+
+  - title: "Steel Pails Stack on Pallets — Plastic Buckets Don't"
+    text: "When you're shipping waterproof coating across an ocean, the packaging matters as much as the product. Steel pails can be stacked. They don't crush when a forklift bumps the pallet. They don't crack when temperatures hit 40°C in a container at sea. Plastic buckets — especially the thin-walled injection-molded ones — warp and leak. Steel pails arrive at your port in the same condition they left our factory. A 20FT container holds 15–18 metric tons palletized — run the numbers on your freight cost per square meter of installed coating, and the pail pays for itself."
+
+  - title: "Elongation Over 600% — But Recovery Is the Real Story"
+    text: "Elongation tells you how far the coating can stretch before breaking. Recovery tells you whether it goes back. A crack opens — the coating stretches to bridge it. The crack closes — the coating must return to its original position without forming a permanent wrinkle or fold that weakens on the next cycle. Water-based polymer modified asphalt with SBS modification achieves both: >600% elongation and near-complete elastic recovery. This is why it works on substrates subject to thermal cycling — roofs, external retaining walls, surfaces that heat up and cool down every 24 hours. If the coating only stretches once and stays stretched, the second crack opens next to the first one."
+
+  - title: "No Separate SKU for Primer — Same Pail, More Water"
+    text: "Most waterproofing systems need a dedicated primer product — separate order, separate line item, separate application step. With this coating, you take material from the same pail, dilute it with about 20% clean water, and brush it on as the primer coat. It penetrates dusty concrete, seals porous surfaces, and bonds to damp substrates. For very dry or very absorbent surfaces, two primer coats. Then the full-strength coating goes on top. One material. One SKU to stock. One less thing for the procurement team to forget."
 
 applications:
-  - title: "Retaining Walls & Foundations"
-    text: "The standard choice for damp-proofing and waterproofing external concrete surfaces below ground level — applied directly to foundation walls, retaining structures, and boundary wall footings."
-  - title: "Flat Roof Refurbishment"
-    text: "Ideal for sealing existing flat roofs, terraces, and balconies without high-heat torching equipment. The seamless liquid membrane conforms to irregular surfaces and penetrations that sheet membranes cannot cover."
-  - title: "Complex Architectural Details"
-    text: "The preferred solution for gutters, canopies, pipe penetrations, expansion joints, and wall-floor junctions — details where sheet membrane cutting, seaming, and detailing is time-consuming and leak-prone."
-  - title: "Damp-Proof Membrane"
-    text: "Used as a sandwich damp-proof course in floors and walls, and as a general vapor-proof coating for interior and exterior surfaces."
+  - title: "Existing Roof Overcoating — No Strip, No Torch"
+    text: "The coating bonds to old bitumen felt, aged asphalt, and weathered roll membranes. This means a failing flat roof doesn't need to be stripped down to the deck before waterproofing. Clean the surface, patch the obvious damage, brush the coating on. No open flame on a roof where insulation or timber might be underneath. No hot-work permit. No insurance rider for torch work."
+  - title: "External Retaining Walls — Brush It on Before the Backfill"
+    text: "Damp-proofing foundation walls and retaining structures is a volume job — large flat areas where speed matters. Roller application covers 1–2 m² per liter per coat. A 20kg pail covers a 15–20 m² section. The coating cures in place, the backfill goes on, and the wall stays dry. No seams for groundwater to find."
+  - title: "Complex Concrete Details — Where the Roll Won't Go"
+    text: "Gutters. Downpipe outlets. Parapet upstands. Expansion joints. The places where cutting sheet membrane stops being installation and starts being origami. The liquid flows into these shapes. It doesn't care about the geometry. Two coats brushed in alternating directions, and every corner is covered."
+  - title: "Damp-Proof Sandwich Layer in Floors and Walls"
+    text: "Used between the structural slab and the screed as a continuous vapor-proof membrane. Applied to walls as a tanking layer before plastering. These aren't exposed applications — the coating is buried in the building assembly — but it does its job invisibly for the life of the structure."
 
 features:
-  - title: "SBS 3D Network Elastomer Formation"
-    text: "Under temperature and mechanical action during manufacturing, SBS polymer particles swell by absorbing the light aromatic fractions of the base asphalt. This forms a continuous three-dimensional elastomeric network within the bitumen matrix — transforming the asphalt into a rubber-like organic polymer elastomer with dramatically improved mechanical properties."
-  - title: "Universal Application — Brush, Roller, or Spray"
-    text: "Can be applied by brush for detail work, roller for medium areas, or airless spray equipment for large-scale coverage. The thixotropic consistency holds on vertical surfaces without sagging."
-  - title: "Simple Maintenance — Target Only the Damage"
-    text: "Unlike sheet systems where one leak may require extensive membrane replacement, this coating only needs spot treatment at the damaged location to restore full waterproofing performance."
-  - title: "Seamless Integral Waterproof Layer"
-    text: "After water evaporation curing, the coating forms a continuous, joint-free elastic waterproof membrane — eliminating the lap-joint vulnerabilities inherent in sheet membrane systems and achieving waterproofing integrity impossible with coil products."
+  - title: "Bitumen Bonds to Bitumen — No Stripping Required"
+    text: "Most polymer coatings need a clean, dust-free, oil-free surface — preferably with a bonding primer. This coating is bitumen-based. It bonds chemically to existing bitumen surfaces — old felt, aged roll membrane, previous asphalt coatings. You can overcoat a failing bitumen roof without mechanical stripping. This is not a universal property of waterproof coatings. It's a property of this specific material chemistry."
+  - title: "VOC Under 50 Grams Per Liter — Water Does the Work"
+    text: "The liquid carrier is water, not solvent. A warehouse full of pails doesn't need explosion-proof electricals. Application in a confined basement doesn't require forced-air ventilation or occupant evacuation. ASTM D3960 testing confirms VOC levels under 50 g/L — well within the most stringent international green-building thresholds. This isn't a marketing claim. It's a documented formulation parameter."
+  - title: "Thixotropic — Stays on the Wall, Levels on the Floor"
+    text: "At rest, the coating has a thick, paste-like consistency. When brushed, it thins and spreads. On a vertical wall, it holds its position without sagging or dripping. On a horizontal slab, it self-levels into a smooth, even film. This dual behavior comes from the formulation, not from on-site water adjustment or additives. Application temperature window: 5°C to 55°C — wider than many water-based coatings."
+  - title: "JC/T 408 with ASTM Cross-Reference"
+    text: "The Chinese national standard is JC/T 408-2005. For international specification, equivalent test methods are documented: ASTM D2939 for solid content and film integrity, ASTM D5147 for heat resistance and low-temperature flexibility, ASTM E96 for water vapor transmission. Your project specifier can validate the data against familiar test frameworks without interpreting an unfamiliar standard."
 
 technical_data:
   - label: "Solid Content — H Grade"
@@ -147,44 +150,42 @@ technical_data:
     value: "2–4h"
 
 application_guide:
-  - title: "Substrate Preparation"
-    text: "Ensure the substrate is clean, sound, and free from dust, oil, grease, curing compounds, and other contaminants. For contaminated surfaces, use light mechanical grinding, grit blasting, or high-pressure water jet cleaning. Fill surface defects and remove all protrusions."
-  - title: "Priming (Recommended)"
-    text: "Prepare a primer coat on-site by diluting the coating with approximately 20% clean water. Apply uniformly onto the substrate by brush or roller. For highly porous or very dry surfaces, apply two coats of the diluted primer. The primer is suitable for damp or freshly cast concrete — but not for waterlogged or flowing-water surfaces. If more than 24 hours passes before the main coat, re-prime."
-  - title: "Coating Application"
-    text: "Stir the pail contents thoroughly before use. Apply the coating at a coverage rate of 1–2 m²/L per coat depending on required dry film thickness. Apply each subsequent coat perpendicular to the previous coat direction, only after the previous coat has fully dried. Two to three coats are standard for waterproofing."
-  - title: "Sand Broadcasting (Optional)"
-    text: "To enhance adhesion for subsequent render, screed, or tile adhesive, broadcast clean dry sand onto the wet final coat. This creates a mechanical key that bonds with the next construction layer."
-  - title: "Detail Reinforcement"
-    text: "For cracks, joints, and penetrations, embed a layer of polyester reinforcement fabric saturated with coating between coats. Ensure a minimum 100mm overlap on fabric joints. Apply additional coats at all internal and external corners."
-  - title: "Curing & Protection"
-    text: "Protect the coating from rain, direct sunlight, and construction traffic until fully cured (24–48 hours depending on temperature and humidity). For areas subject to backfill, install a protection board or cement-sand screed before backfilling."
+  - title: "Clean It, Don't Polish It"
+    text: "Sweep off loose dust. Scrape off anything flaking. Rinse off oil and grease — solvent wipe works, degreaser works, whichever you have on site. The substrate doesn't need to be sandblasted. It needs to be firm, clean, and not actively shedding material. Slightly damp is fine — standing water is not. Drain it first."
+  - title: "Make Your Own Primer from the Same Pail"
+    text: "Pour some coating into a separate container. Add about 20% clean water. Stir. That's your primer. Brush or roll it onto the substrate — it should soak in, not puddle. If the surface is very dry or porous, give it two coats of primer. Wait until it's dry to the touch before the main coat. If more than 24 hours pass before you continue, re-prime the area."
+  - title: "Main Coat — Brush, Roller, or Airless Spray"
+    text: "Stir the pail thoroughly before use — settlement during storage is normal. Apply each coat at roughly 1–2 m² per liter. For large horizontal areas, a long-handled roller is fastest. For vertical surfaces, a medium-nap roller works — the coating's body prevents sagging. For details and edges, a brush. If you're spraying, use an airless unit with a tip size matched to the coating viscosity."
+  - title: "Second Coat Goes Perpendicular"
+    text: "The first coat goes in one direction. Once it's dry to the touch — typically 2–4 hours, longer in cold or damp weather — apply the second coat at right angles to the first. The cross-direction pattern ensures any pinholes or thin spots from the first pass get covered by the second. Two coats are standard for waterproofing. Three if the substrate is rough and absorbs more material."
+  - title: "Corners, Penetrations, and Cracks — Go Heavy Here"
+    text: "Pipe penetrations, drain outlets, wall-floor junctions — these get an extra coat before the main area is done. For cracks wider than 2mm, embed a strip of polyester reinforcement fabric into the first coat while it's still wet, then coat over it. The fabric bridges the crack and prevents stress concentration in the coating film."
+  - title: "Protect It While It Cures"
+    text: "Keep foot traffic off until the coating is fully dry — 24 to 48 hours depending on temperature and humidity. If rain is forecast before it's cured, cover it. If backfill is going on top, lay a protection board or geotextile between the coating and the soil. The coating can handle groundwater. It can't handle a shovel blade."
 
 packaging:
-  - title: "Metal Pail Packaging"
-    text: "Supplied in sealed metal pails with secure lids and handles. Standard sizes: 18kg, 20kg, 50kg — custom packaging available for wholesale and distribution partners."
-  - title: "Water-Based — Standard Transport"
-    text: "Water-based formulation eliminates hazardous material classification. Standard freight handling applies — no special chemical transport permits required. Protect from freezing during transit and storage."
-  - title: "Storage & Shelf Life"
-    text: "Store in a cool, dry, well-ventilated area away from direct sunlight below 40°C. Keep containers tightly sealed when not in use. Protect from freezing. Shelf life: 12 months in original unopened packaging under standard conditions."
-  - title: "OEM & Private Label"
-    text: "Full OEM support including custom pail labels, product branding, performance grade customization, and packaging formats for international coating distributors and construction-chemical brands."
+  - title: "Steel Pails — 18kg, 20kg, 50kg"
+    text: "Metal pails with secure lids and wire handles. Stackable. Palletized and strapped for container shipment. Steel doesn't warp in transit heat like thin-walled plastic does. Custom pail sizes and private-label printing on request."
+  - title: "Water-Based — Standard Freight, No Hazmat"
+    text: "Non-flammable liquid. No hazardous material classification. No special transport permits. No solvent-odor complaints from receiving warehouse staff. Protect from freezing during transit — water-based products don't survive sub-zero storage."
+  - title: "Store Dry, Above Freezing"
+    text: "Keep in a cool, dry, ventilated area. Pails sealed when not in use. Shelf life: 12 months from production date in original unopened packaging under standard conditions."
 
 loading_data:
   - label: "20FT Container"
-    value: "Approx. 16–20 metric tons (varies by pail size and pallet configuration)"
+    value: "Approx. 15–18 metric tons (varies by pail size and pallet configuration)"
   - label: "Packaging Options"
-    value: "18kg / 20kg / 50kg metal pails — custom sizes available"
+    value: "18kg / 20kg / 50kg steel pails — custom sizes available"
   - label: "Documentation"
     value: "TDS, MSDS, Packing List, Certificate of Origin"
 
 downloads:
   - title: "Polymer Modified Asphalt Coating TDS"
-    description: "Complete JC/T 408-2005 performance index with L vs H grade comparison, curing data, and application guidance."
+    description: "Complete JC/T 408-2005 performance index with L vs H grade comparison, ASTM cross-reference equivalents, curing data, and application guidance."
     type: "PDF"
     href: ""
   - title: "Liquid-Applied Coating Installation Guide"
-    description: "Full application instructions covering substrate preparation, priming, multi-coat application, reinforcement embedding, and curing protocols."
+    description: "Full application instructions covering substrate preparation, self-priming, multi-coat application, reinforcement embedding, and curing protocols."
     type: "PDF"
     href: ""
 
@@ -203,39 +204,35 @@ related_products:
     href: "/products/polyurethane-waterproof-coating-factory/"
 
 faqs:
-  - question: "What is polymer modified asphalt waterproof coating?"
-    answer: "It is a single-component, water-based SBS bitumen emulsion. Petroleum asphalt is the base material, modified with SBS (styrene-butadiene-styrene) rubber and nano-fillers. The polymer modifier forms a three-dimensional network within the asphalt matrix, transforming it into an organic polymer elastomer with rubber-like elasticity. It is cold-applied by brush, roller, or spray, and cures by water evaporation to form a seamless, joint-free waterproof membrane."
-  - question: "What is the difference between L grade and H grade?"
-    answer: "L grade (standard) offers -15°C low-temperature flexibility and 80°C heat resistance — suitable for most general waterproofing applications and moderate climates. H grade (high-performance) offers 110°C heat resistance with 0°C low-temperature flexibility — specified for hot-climate regions, exposed roof applications, and areas subject to high thermal loads. The supply-demand parties may agree on alternative low-temperature targets for specific project requirements."
-  - question: "Can this coating be applied on damp surfaces?"
-    answer: "Yes. As a water-based formulation, the coating can be applied on damp (not waterlogged) concrete substrates. The diluted primer coat is specifically designed to bond to damp or freshly cast concrete. For underground applications, drain standing water 24 hours before construction. Do not apply on surfaces with flowing water."
-  - question: "How does this compare to non-curing rubber asphalt coating?"
-    answer: "Polymer modified asphalt coating is a water-based, curing system — it forms a dry elastic film after water evaporation. Non-curing rubber asphalt coating (JC/T 2428) remains permanently viscous and never dries, requiring hot-melt application. The water-based coating is simpler to apply (no heating equipment) and is suitable for general waterproofing. Non-curing is specified for high-movement structures and composite systems where permanent self-healing is the primary requirement."
-  - question: "How is this different from polyurethane (PU) waterproof coating?"
-    answer: "PU is a reactive polymer system with higher elongation (450-550%) and is moisture-curing. Polymer modified asphalt coating is a water-based bitumen emulsion with comparable elongation (≥600%) but at a lower cost per square meter. PU is preferred for exposed roofing and extreme flexibility. Asphalt-based coating is preferred for foundations, retaining walls, damp-proofing, and budget-sensitive projects where bitumen's natural waterproofing properties are sufficient."
-  - question: "Can this be used as the sole waterproofing layer?"
-    answer: "Yes — when applied at the specified number of coats and total dry film thickness, the coating forms a complete, standalone waterproof membrane. For enhanced durability in high-water-pressure or backfill applications, it can also serve as the base layer in a composite system with reinforced sheet membranes."
-  - question: "What fire and safety precautions are required during application?"
-    answer: "As a water-based formulation, the coating itself is non-flammable when wet. However, construction sites require standard fire prevention measures — fire extinguishers on-site, adequate ventilation in confined spaces, and personal protective equipment (gloves, masks, eye protection). The water-based, low-VOC formulation significantly reduces the inhalation and fire risks associated with solvent-based bitumen coatings, and is safe for application in enclosed and occupied spaces."
-  - question: "Do you offer OEM / private label for this coating?"
-    answer: "Yes. Full OEM and private-label programs available — including custom pail packaging, product branding, performance grade selection (L/H), and private-label technical documentation. Minimum order quantities vary by packaging format. Contact our export team with your market requirements for a tailored quotation and sample arrangement."
+  - question: "So this is basically liquid SBS membrane?"
+    answer: "That's the simplest way to think about it. Same SBS polymer that gives your roll membrane its elasticity — dissolved into bitumen emulsion instead of coated onto a polyester mat. The roll membrane comes out of a factory at a fixed width. This comes out of a pail and takes the shape of whatever you brush it onto. For flat roofs with parapets, drains, and equipment stands — places where cutting roll membrane gets complicated — the liquid version eliminates the seams. For existing roofs that already have bitumen on them, the liquid bonds directly to the old surface without stripping. Same chemistry, different toolbox."
+  - question: "L grade or H grade — which one?"
+    answer: "L grade handles -15°C without cracking. Use it where cold winters are the design concern — northern climates, high-altitude projects, exposed retaining walls. Heat resistance is 80°C, which is fine for most buried and protected applications. H grade goes to 110°C without flowing or dripping. Use it where heat is the limiting factor — exposed flat roofs in hot climates, surfaces under dark-colored finishes that absorb solar radiation. The trade-off: H grade's low-temp flexibility drops to 0°C. If your project sees both extreme cold and extreme heat, talk to our technical team — we can discuss formulation adjustments for unusual climate combinations."
+  - question: "Can I apply this on a damp concrete wall?"
+    answer: "Damp — yes. The primer coat you make by diluting the coating with water is specifically designed to penetrate damp concrete. The water in the coating and the moisture in the substrate actually help — the bitumen emulsion breaks and the film forms more uniformly when there's moderate humidity. What it can't handle: standing water, actively weeping walls, surfaces where you can see water beading or running. If the wall looks dark and feels cool to the touch, you're fine. If you can wipe water off with your hand, dry it first."
+  - question: "How does this compare to polyurethane waterproofing?"
+    answer: "PU gives you higher tensile strength (2.45 MPa) and similar elongation (450–550%). This coating gives you comparable elongation (≥600%) at lower cost per square meter, with one practical advantage: bitumen-to-bitumen bonding. If you're waterproofing over an existing bitumen surface — an old felt roof, a previous asphalt coating — PU needs a primer and may not bond reliably. This coating is chemically compatible — it fuses with the old bitumen layer. For new construction on clean concrete where budget allows, PU is the premium option. For refurbishment, large-area damp-proofing, and value-engineered projects, this coating is the practical choice."
+  - question: "Do I really not need a separate primer?"
+    answer: "No separate primer purchase. You dilute some of the coating from the same pail — roughly 20% water — and that's your primer. If the substrate is highly absorbent or dusty, two primer coats are recommended. The primer penetrates and seals the surface. Then the full-strength coating goes on top. This isn't a cost-cutting shortcut that compromises performance — it's the specified application method. The chemistry works because the primer and the topcoat are the same material, just at different viscosities."
+  - question: "What fire precautions do I need for application?"
+    answer: "The coating is water-based — it's non-flammable in liquid form and while curing. This is the primary reason contractors choose it over solvent-based bitumen coatings for occupied buildings and confined spaces. Standard construction site precautions apply: fire extinguisher on site, adequate ventilation in enclosed areas, and personal protective equipment — gloves, eye protection, protective clothing. The dried coating film is combustible, like any organic material, but during application there is no fire hazard from the product itself."
+  - question: "How long does a pail last once opened?"
+    answer: "The shelf life of an unopened pail is 12 months from the production date under standard storage. Once opened, reseal the lid tightly. If the surface of the coating skins over between uses — a thin dry film on top — peel it off. The material underneath is still good. Avoid repeatedly opening and closing the pail over weeks — once you start a job, plan to finish the pail within the same project phase."
+  - question: "OEM — can you put our brand on the pail?"
+    answer: "Yes. Custom pail printing with your logo, product name, and technical information. Pail size can be adjusted to your market norm — 18kg, 20kg, 50kg, or custom. Formulation parameters can be tuned: faster drying for humid climates, adjusted viscosity for your local application method, specific low-temperature or heat-resistance targets for your regional standards. Send us your target specification and annual volume — we provide a firm quotation with lead time."
 
 ---
 
-### SBS Liquid Membrane — Seamless Waterproofing Without Joints
+### The SBS Membrane That Comes in a Pail
 
-Polymer modified asphalt waterproof coating — commonly referred to as **SBS liquid waterproof membrane** — bridges the gap between traditional bitumen sheet systems and modern polymer coatings. Petroleum asphalt provides the waterproofing base. SBS rubber modifier, dispersed through a proprietary manufacturing process, forms a three-dimensional elastomeric network within the bitumen matrix, fundamentally transforming the asphalt's rheological behavior. The result is an organic polymer elastomer — a coating that behaves like rubber while retaining bitumen's natural affinity for concrete and masonry substrates.
+You already know SBS modified bitumen as a waterproofing material. It's the polymer that makes your roll membrane elastic — that stretches when the building moves, that stays flexible at sub-zero temperatures, that resists the thermal cycling from sun-up to sun-down on an exposed flat roof.
 
-TY-SHIELD™ polymer modified asphalt coating is a single-component, water-based formulation supplied ready to use in metal pails. No on-site mixing, no heating, no solvents — simply stir, apply, and allow to cure by water evaporation. The cured membrane is seamless and joint-free — achieving what sheet membrane systems, by their nature, cannot.
+This coating is the same SBS chemistry — delivered differently. Instead of being coated onto a polyester mat and rolled up at the factory, it's emulsified in water and sealed in a steel pail. You open the pail, stir it, and brush it on. It cures by water evaporation into a continuous elastic film with no seams.
 
-Three properties define its practical advantage on the job site:
+The practical advantage of this format is geometry. A 1-meter-wide roll membrane handles rectangular areas well. It handles corners, penetrations, drains, and parapets with a knife, a torch, and a lot of patience. The liquid version doesn't fight the shape — it flows into it. For flat roof refurbishment where the existing bitumen surface stays in place, for retaining wall damp-proofing where speed matters more than precision, for detail work that would be 90% cutting and 10% waterproofing with a roll — the pail is the right tool.
 
-- **Cold-applied on damp substrates** — no torches, no drying time, no weather-dependent curing. Apply directly to damp concrete foundations after drain-down.
-- **Self-levelling on complex details** — flows into cracks, corners, pipe penetrations, and wall-floor junctions that require extensive cutting and seaming with sheet membranes.
-- **Point-repairable throughout service life** — unlike sheet systems where isolated damage may necessitate extensive membrane replacement, only the affected area needs retreatment to restore full waterproofing performance.
+Two performance grades cover the climate range. L grade holds -15°C without cracking — suited for northern and high-altitude projects. H grade takes 110°C without flowing — suited for exposed roofs in hot regions. The trade-off is real: H grade sacrifices some low-temperature flexibility for heat resistance. Pick the grade that matches your climate, not the higher number.
 
-All products comply with **JC/T 408-2005** (Water Emulsion Asphalt Waterproof Coating). For international reference, key properties align with testing methodologies in ASTM D2939 (solid content), ASTM D5147 (heat resistance and low-temperature flexibility), and ASTM E96 (water vapor transmission).
+The coating is manufactured to JC/T 408-2005. For international specification, equivalent ASTM test methods — D2939 for solids, D5147 for heat and cold performance, E96 for vapor transmission — are documented in the TDS. Your specifier can cross-reference without translation.
 
-As a direct manufacturer, Weifang Tianyuan supplies international construction-chemical distributors, waterproofing contractors, and project procurement teams with consistent batch-tested quality, complete OEM flexibility, and custom formulations for specific climate and application requirements.
-
-Contact our export team with your target grade (L or H), project application, estimated quantity, and destination port for a competitive factory quotation, lead time estimate, and free sample.
+Weifang Tianyuan produces this coating directly. The pail size, the formulation parameters, and the label artwork are all adjustable to your market requirements. Send us your target grade, annual volume, and destination port for a quotation.
