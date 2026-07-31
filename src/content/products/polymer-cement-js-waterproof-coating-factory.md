@@ -9,7 +9,7 @@ product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
 
-hero_description: "TY-SHIELD™ JS (Jùhéwù=Polymer + Shuǐní=Cement) waterproof coating — a two-component, water-based composite system that combines high-elasticity polymer emulsion with hydraulic cement and mineral fillers. The 'JS' designation literally describes its dual nature: organic polymer flexibility plus inorganic cement durability — combining rigidity with flexibility in a single waterproofing system. After application, the coating cures through a dual mechanism: cement hydration and polymer film formation via water evaporation, creating a seamless, high-strength, elastic waterproof membrane. Available in Type I (high elongation, ≥200%), Type II (balanced, ≥80%), and Type III (rigid, ≥30%). Can be applied on damp substrates and accepts tile adhesives directly. Compliant with GB/T 23445-2009. Factory-direct supply with full OEM, private-label packaging, and custom performance formulations."
+hero_description: "TY-SHIELD™ JS waterproof coating — a two-component, water-based composite system that combines high-elasticity polymer emulsion with hydraulic cement and mineral fillers. The name tells you what's inside: Polymer (J) plus Cement (S) — a dual-nature design delivering organic flexibility and inorganic durability in a single coating. After application, the material cures through two simultaneous mechanisms: cement hydration and polymer film formation via water evaporation, creating a seamless, high-strength, elastic waterproof membrane. Available in Type I (high elongation, ≥200%), Type II (balanced, ≥80%), and Type III (rigid, ≥30%). Can be applied on damp substrates and accepts tile adhesives directly. Compliant with GB/T 23445-2009. Factory-direct supply with full OEM, private-label packaging, and custom performance formulations."
 
 hero_tags:
   - "JS Polymer+Cement"
@@ -34,9 +34,9 @@ gallery:
 
 spec_table:
   - label: "Product Type"
-    value: "JS Polymer Cement (Two-Component) Waterproof Coating — 'J'=Polymer + 'S'=Cement"
+    value: "JS Polymer Cement (Two-Component) Waterproof Coating — J=Polymer, S=Cement"
   - label: "Standard"
-    value: "GB/T 23445-2009 → GB/T 23445-2025 (new standard valid from July 2026)"
+    value: "GB/T 23445-2009 → GB/T 23445-2025 (new standard effective July 2026)"
   - label: "Material"
     value: "Liquid: polymer emulsion + additives / Powder: cement + quartz sand + mineral fillers"
   - label: "Types"
@@ -55,34 +55,40 @@ spec_table:
     value: "Liquid: sealed plastic bucket / Powder: woven bag or paper bag"
 
 quick_facts:
-  - title: "JS 这两个字把配方写在了脸上"
-    text: "JS 不是舶来的英文缩写。是中国防水行业自己叫出来的——J 是聚合物乳液，S 是水泥粉末。这桶东西打开以后你看到的是一包液体和一袋灰粉。搅在一起，刷到墙上，干了以后它既不是塑料膜也不是水泥壳。它是两者的杂交体——有机物的弹性加上无机物的强度，一份钱买了两套机制。"
-  - title: "你要做的防水层，其实是两道防线"
-    text: "双组份涂料的真正价值不在施工——在固化以后。水泥吃水硬化，给你的是一道强度防线——0.3MPa 水压穿不过去。聚合物靠水蒸发成膜，给你的是一道弹性防线——基面拉裂了涂层跟着走。单组份涂料只有两道中的一道。JS 给的是两道，而且各管各的，互不干扰。"
-  - title: "基面是湿的？那是正常工况"
-    text: "大部分防水涂料的说明书第一页写着：基面必须干燥。JS 写的是：基面潮湿不影响施工。不是它比别的涂料更宽容——是它的固化逻辑不一样。水泥需要水来水化，给它水它还你强度。聚合物靠水蒸发成膜，湿度反而是帮它的。所以你不需要把刚拆模的地下室晾三天。把积水抽掉，扫干净，直接刮——工期就是这么省出来的。"
-  - title: "你省的不是材料钱，是工序钱"
-    text: "装修公司接一单卫生间防水，报价单上列的不是材料费——是人工费。JS 做完防水层，瓷砖胶直接往上抹。不用刷界面剂，不用多等一天。省一道工序、少来一趟工人、早一天交活。这个账，做施工和做采购的都算得出来。按平方米算，JS 的材料成本可能比 PU 低 40% 到 60%——加上工序省下来的工时，差距更大。"
+  - title: "The Name Is the Formula"
+    text: "JS isn't an acronym borrowed from English. It was named by the waterproofing industry itself — J for Polymer, S for Cement. Open the delivery and you get two packages: a white emulsion and a bag of grey powder. Mix them together, trowel it on a wall, and what cures is neither a plastic film nor a cement shell. It's a hybrid — the elasticity of an organic polymer and the compressive strength of inorganic cement, both working in the same layer."
+
+  - title: "Two-Component Means Two Independent Defenses"
+    text: "The real value of the two-part system isn't in the mixing process — it's in what happens after curing. The cement hydrates and hardens, creating a strength barrier that holds back 0.3 MPa of water pressure. The polymer emulsion coalesces into a continuous film as water evaporates, forming an elastic barrier that stretches when the substrate cracks. A single-component coating gives you one of these. JS gives you both, operating independently — if the cement side takes a hit, the polymer side still holds."
+
+  - title: "The Substrate Is Damp? That's a Feature, Not a Problem"
+    text: "Most coating data sheets start with 'substrate must be completely dry.' JS says 'damp substrate is acceptable.' This isn't because it's more forgiving — it's because its curing logic runs the other direction. The cement component actively needs water for hydration. The polymer component cures by evaporation, which works in the same humidity. So you don't need to wait three days for a freshly stripped basement wall to dry. Pump out the standing water, sweep it clean, and start troweling. That's how you recover schedule time."
+
+  - title: "The Real Saving Is Labor, Not Material"
+    text: "A contractor pricing a bathroom waterproofing job isn't looking at material cost per kilogram. They're looking at trips to site. JS needs no primer before tiling. The tile adhesive goes directly onto the cured coating — cement-to-cement, no intermediary bonding agent needed. That's one less product to buy, one less coat to apply, and one less drying interval to schedule. Per square meter, JS material runs 40–60% less than polyurethane — and when you add the eliminated labor step, the gap widens further."
 
 applications:
-  - title: "卫生间、厨房、阳台——做完直接贴砖"
-    text: "国内 90% 以上的住宅卫生间防水用的就是 JS。不是因为它最牛——是因为它做完以后上面能直接铺水泥砂浆和瓷砖，不需要中间过渡层。墙面、地面、淋浴区下面——一道 JS 防水，上面瓷砖胶，砖就贴上去了。"
-  - title: "泳池和蓄水池——长期泡水的地方"
-    text: "II 型和 III 型扛得住 0.6MPa 的抗渗压力。不是泡一天两天——是常年蓄水。水面以下的涂层必须同时满足不透水和耐碱两个条件，因为池水加了消毒剂以后是碱性的。JS 的耐碱处理保持率 80% 以上，给它这个底气。"
-  - title: "地下室和隧道——埋在地里看不见的地方"
-    text: "地下室的外墙回填以后，如果漏水，修的成本经常比重建还高——因为要挖开。JS 的潮湿基面粘接强度 ≥0.7MPa（II 型），在刚拆模还没完全干透的混凝土墙上就能做。不等到墙干透才施工，整个地下工程就快一个节奏。"
-  - title: "非暴露屋面——做完上面盖保护层"
-    text: "I 型 200% 的伸长率用来吃屋面的热胀冷缩。上面再铺保温板、找平层、防水卷材——JS 是做在最下面一道、直接贴在混凝土板上的那道防线。太阳晒不到它，但温度传导到它——所以弹性比刚性重要。"
+  - title: "Bathrooms, Kitchens, Balconies — Tiles Go Directly on Top"
+    text: "Over 90% of residential bathroom waterproofing in China uses JS. Not because it's the highest-spec coating available — because it's the only one that lets you screed and tile directly on top without a bonding primer. Walls, floors, under shower trays — one JS layer, then tile adhesive, then tiles."
+  - title: "Swimming Pools and Water Tanks — Immersed Long-Term"
+    text: "Type II and III handle 0.6 MPa anti-permeability pressure. This isn't splash-proof — this is permanently submerged. The coating must stay watertight and alkali-resistant simultaneously, because pool water treated with disinfectant is consistently alkaline. JS holds ≥80% tensile retention after alkali treatment — that's what gives it the staying power."
+  - title: "Basements and Tunnels — Buried Where Nobody Can Inspect"
+    text: "Once a basement wall is backfilled, a leak costs more to fix than to rebuild — you're excavating. JS bonds to damp concrete at ≥0.7 MPa (Type II), which means it goes on right after formwork is stripped, before the wall has fully cured. You're not waiting for the concrete to dry before you waterproof. That pulls the entire underground construction sequence forward."
+  - title: "Protected Roofs — Under the Insulation, On the Slab"
+    text: "Type I's 200% elongation absorbs the thermal expansion and contraction of the roof slab. The JS goes directly on the concrete deck — then insulation, screed, and the waterproof membrane above it. Sunlight never hits this layer. But temperature does — and that's why elasticity matters more than rigidity here."
 
 features:
-  - title: "颜色是你自己调的——不是工厂定死的"
-    text: "聚合物乳液本身就是白的，你加什么颜料就出什么颜色。游泳池刷蓝色——防水层就是装饰层，不用上面再做一道涂料。阳台做灰色——跟地砖一个色系，交接处看不出痕迹。外墙面做白色——反射阳光，降低墙面温度。颜色不影响性能，影响的是你能接什么类型的项目。"
-  - title: "垂直面不流挂——稠度在你手上"
-    text: "先倒液体到桶里，再慢慢加粉，边加边搅。搅 5 分钟，搅到没有疙瘩。这时候你看稠度——太稀了挂在墙上会往下淌，太稠了刮不开。诀窍：先把规定的量倒进去，如果做垂直面，少加 10-15% 的水，让料稠一点。刮上去像批腻子，不往下溜。"
-  - title: "埋在土里三年，拉伸还能保住 80%"
-    text: "地下室墙外是回填土，土里的水带着碱性和盐分长年累月泡着防水层。普通聚合物涂料在碱性环境里会水解、软化、跟基面脱开。GB/T 23445 要求 JS 在碱处理后的拉伸强度保留率 ≥80%，粘接强度也保留同等级。这不是多出来的卖点——是埋在地底下最基本的存活条件。"
-  - title: "北方冬天、阴角直角——用 I 型"
-    text: "卫生间墙面和地面交接的阴角，现场做圆弧的没几家。大多数是直角。直角处涂层本来就薄，天一冷收缩，刚性材料容易从这里裂开。I 型的 200% 伸长率不是拿来看的——是给施工现实留的后路。冷干地区——北方、西北、高海拔——阴角没有圆弧处理的项目，I 型比 III 型靠谱。"
+  - title: "Color Is Your Choice — Not Ours"
+    text: "The polymer emulsion is white to begin with. Add whatever pigment your project needs. Blue for swimming pools — the waterproofing layer doubles as the decorative finish, no separate coating on top. Grey for balconies — matches the floor tile tone, no visible seam at the transition. White for exterior walls — reflects solar radiation, keeps the wall cooler. Color doesn't change performance. It changes which projects you can bid for."
+
+  - title: "Vertical Walls Don't Sag — Thickness Is In Your Hands"
+    text: "Pour the liquid into the mixing bucket first. Add powder gradually while stirring. Mix for five minutes until lump-free. Now check the consistency — too thin and it'll run down the wall. Too thick and you won't spread it. The trick: for vertical surfaces, use 10–15% less water than the package specifies. The slurry should hold its shape on a trowel like plaster, not drip off like paint."
+
+  - title: "After Alkaline Soaking, It Still Holds ≥80%"
+    text: "A basement wall faces groundwater, and groundwater is almost always alkaline — dissolved minerals from soil and rock. Standard polymer coatings soften, blister, and debond in alkaline conditions over months of exposure. GB/T 23445 requires JS to retain ≥80% of its tensile strength and full adhesion grade after alkali treatment. This isn't a nice-to-have. For anything buried underground, it's the minimum survival requirement."
+
+  - title: "Cold, Dry Climate — No Arc at the Inside Corner — Use Type I"
+    text: "Bathroom corners where the wall meets the floor — on most sites, they're sharp 90-degree angles, not rounded arcs. Coating applied in a sharp corner is naturally thinner. When temperatures drop and the building contracts, rigid coatings crack right at that thin spot. Type I's 200% elongation is there for this exact construction reality — the coating moves with the corner instead of splitting. For cold, dry regions and high-altitude projects where inside corners stay sharp, Type I is the safer choice than Type III."
 
 technical_data:
   - label: "Solid Content (all types)"
@@ -152,26 +158,26 @@ technical_data:
     value: "≥ 0.6"
 
 application_guide:
-  - title: "铲平、扫干净、先把水抽掉"
-    text: "基面铲掉鼓包和浮灰，油污擦干净。有裂缝的先补。墙地面交接的阴角如果有条件做圆角尽量做——实在做不了的，选 I 型不用 III 型。地下室的积水先抽掉，晾一下，基面摸着是潮湿的没问题，但不能汪着水。"
-  - title: "先倒液、再加粉、搅到没疙瘩"
-    text: "把液体组分倒进桶里，按包装上标的比例加水。先开水再倒液，搅两圈混合均匀。然后边搅边慢慢加粉——粉倒太快会结块。搅拌 5 分钟，搅到看不到干粉颗粒、整个浆料像酸奶一样均匀。做完后在 2 小时内用完——时间过了会变稠，加水没用。"
-  - title: "阴角和管根——先单独做 2-4 遍"
-    text: "所有阴角、阳角、水管穿墙的根部、地漏周围——这些地方是全屋最可能漏的点。大面施工之前先把这些位置单独处理：用小刷子刷 2-4 遍，每次薄刷，等上一遍干了再刷下一遍。如果设计要求加布——在涂层没干之前把聚酯无纺布贴上去，刮板从中间往两边刮平压紧，布下面不能有气泡。"
-  - title: "大面做四遍，横竖交叉"
-    text: "第一遍竖着刷，干了以后第二遍横着刷，第三遍又竖着。四遍交叉打底能把单道漏掉的针眼全部堵上。每遍间隔至少 8 小时——夏天快一些，冬天慢一些。手指轻按不粘手了就可以做下一遍。每遍大约吃掉 0.8 公斤每平方。总厚度按设计要求——卫生间墙 1.2mm 够用，淋浴区和泳池建议 1.5-2mm。"
-  - title: "墙上做稠一点——少加水"
-    text: "垂直面施工如果料太稀，刷上去会往下淌。淌下来的料厚度不够，干了以后是个薄弱点。搅拌的时候比规定的用水量少加 10-15%，让浆料稠到刮上去不流挂的程度。用手抹或者用短毛滚筒，不要用长毛滚筒——长毛带料太多更容易流。"
-  - title: "干两天再贴砖，别心急"
-    text: "最后一道涂完，夏天等 24 小时，冬天等 48 小时——涂层要完全硬干才能上人。没干透之前贴砖，砖胶会把涂料一起扯起来。做完防水层以后如果要走线管或者做别的工序，先在上面铺一层保护垫——踩坏了要重新补，不如一开始就护住。"
+  - title: "Clean, Level, and Drain First"
+    text: "Scrape off loose material and dust. Wipe away oil and grease. Patch any cracks before coating. Inside corners — if you can radius them, do it. If the corner stays sharp, choose Type I over Type III. For basements, pump out standing water first. The surface can feel damp to the touch — that's fine. It just can't have puddles."
+  - title: "Liquid First, Powder Second — Mix Until Lump-Free"
+    text: "Pour the liquid component into the bucket. Add water per the ratio on the package. Stir briefly, then add the powder slowly while continuing to stir — dumping powder too fast creates lumps that are hard to break. Mix for five minutes until the slurry is uniform, with no dry pockets visible. You've got about two hours to use it after mixing. If it starts thickening, don't add water — it won't help."
+  - title: "Inside Corners and Pipe Penetrations — Hit These First"
+    text: "Every inside corner, outside corner, pipe root, and drain surround is a potential leak point. Before you do the main area, apply 2–4 thin coats to each of these spots with a small brush, waiting for each coat to dry before the next. If the design calls for it, embed polyester non-woven fabric into the wet coating — press from the center outward with a trowel to squeeze out all air bubbles. The fabric must be fully saturated, with no dry fibers visible."
+  - title: "Four Coats Minimum, Alternating Direction Each Time"
+    text: "First coat goes on vertically. Once it's dry to the touch, the second coat goes horizontally. The third coat back to vertical. Four coats minimum, with the alternating pattern ensuring no pinhole gets missed twice. Minimum eight hours between coats — faster in summer, slower in winter. Each coat consumes around 0.8 kg per square meter. Total dry film thickness per specification — bathroom walls at 1.2mm, shower areas and pools at 1.5–2mm."
+  - title: "Less Water for Vertical Walls"
+    text: "If the mix is too thin on a vertical surface, the coating sags downward. The sagged area ends up thinner than specified — a weak point in the waterproofing. When mixing for walls, cut the water by 10–15% from the package ratio. The slurry should be thick enough to hold on a trowel without sliding. Apply with a short-nap roller or by hand trowel — long-nap rollers pick up too much material and make sagging worse."
+  - title: "Wait Two Days Before Tiling"
+    text: "The last coat needs to harden fully before anyone walks on it or tiles over it. In summer: 24 hours. In winter: up to 48 hours. If you tile too early, the tile adhesive can pull the coating up with it. If other trades need to work over the waterproofed area before tiling, put down protection boards — patching a damaged spot costs more time than protecting it from the start."
 
 packaging:
-  - title: "液体密封桶 + 粉体编织袋"
-    text: "液体：密封塑料桶。粉体：编织袋或者纸袋。标准规格可按客户要求调整。托盘打包，整柜发运。"
-  - title: "储存要求"
-    text: "5°C 以上存放——液体怕冻，冻过的乳液破乳就不能用了。干燥、阴凉、遮阳。开桶没用完的马上盖回去。原包装未开封保质期 12 个月。"
-  - title: "OEM / 贴牌"
-    text: "桶和袋子印你的品牌。液粉比、聚合物掺量、凝固时间按你市场的施工习惯来调——工地温度高的地方凝固时间做短一点，湿度低的地方聚合物多加点。你的样标发过来，我们技术部出配方打样。"
+  - title: "Liquid in Sealed Buckets + Powder in Woven Bags"
+    text: "Liquid component: sealed plastic bucket. Powder component: woven bag or paper bag. Standard sizes per client specification. Palletized and strapped for container shipping."
+  - title: "Storage Requirements"
+    text: "Store above 5°C — the liquid component freezes and the emulsion breaks if it drops below freezing, rendering the product unusable. Keep in a dry, shaded area. Reseal opened containers immediately. Shelf life: 12 months in original unopened packaging under standard conditions."
+  - title: "OEM / Private Label"
+    text: "Your brand on the bucket and bag. Polymer-to-cement ratio, set time, and viscosity adjustable to your market's site conditions — faster set for hot climates, higher polymer content for low-humidity regions. Send us your target specification and we'll formulate to match."
 
 loading_data:
   - label: "20FT Container"
@@ -179,7 +185,7 @@ loading_data:
   - label: "Packaging"
     value: "Liquid: sealed plastic bucket / Powder: woven bag or paper bag"
   - label: "Standard"
-    value: "GB/T 23445-2009 → GB/T 23445-2025 (new standard valid from July 2026)"
+    value: "GB/T 23445-2009 → GB/T 23445-2025 (new standard effective July 2026)"
   - label: "Types Available"
     value: "Type I (flexible) / Type II (balanced) / Type III (rigid)"
 
@@ -208,43 +214,51 @@ related_products:
     href: "/products/pp-pe-composite-membrane-factory/"
 
 faqs:
-  - question: "JS 这名字怎么来的？"
-    answer: "JS 是中国防水行业自己命名的——J 是聚合物（Jùhéwù），S 是水泥（Shuǐní）。不是英文缩写，也不是国际通用分类。这名字其实把配方告诉你了：你收到的不是一桶东西，是两包——一桶白色乳液，一袋灰色粉末。搅在一起就是 JS。这个分类体系最早从日本引进，中国从 1991 年开始研发，94 年实现产业化。现在国内住宅卫生间防水，90% 以上就是用的 JS。"
-  - question: "I 型 II 型 III 型怎么选？"
-    answer: "I 型——你要它会动的。伸长率 200%，适合基面不太稳的地方——屋面、阳台、带地暖的地面、有轻微沉降的新房。混合比约 1:1.2（液:粉），粉少液多，弹性高。II 型——你要它既能扛水压又能跟着基面走。伸长率 80%，适合墙面、地下室、泳池、长期泡水的地方。混合比约 1:1.5，强度比 I 型高。III 型——你要它硬扛。伸长率只有 30%，但粘接强度 1.0MPa，适合完全不动的地下结构。记住：Ⅰ 求活，Ⅲ 求稳，Ⅱ 取中。"
-  - question: "基面是湿的能直接刷吗？"
-    answer: "能。潮湿没问题，积水不行。刚拆模的地下室墙——颜色深、摸着有潮感——可以直接刷，不用等干透。水泥组分正好需要水来水化。但如果墙上有水珠挂着、地面有积水坑、或者刚下完雨基面还在返水——先擦干或者抽掉。拿块干布擦一下，布不湿就能做。"
-  - question: "跟单组份 PU 比，什么时候用 JS？"
-    answer: "PU 是纯聚合物——伸长率高（450%–550%），适合作最外面那道防水层，尤其是暴露在阳光下的屋面。JS 是水泥+聚合物的复合体——伸长率不如 PU，但跟混凝土基面的结合方式不一样。PU 是粘上去的，JS 是'长'在上面的——水泥跟水泥之间是化学同源，不是物理粘附。所以 JS 更适合：1）做完上面要贴砖的（PU 贴砖需要界面剂，JS 不用）；2）地下泡水的（PU 长期泡水会水解，JS 耐水解好）；3）预算敏感的大面积项目（JS 按平方算比 PU 便宜一截）。"
-  - question: "做完 JS 能直接贴砖吗？"
-    answer: "能。这是 JS 对比其他防水涂料最大的实用优势。PU 做完以后要先刷一道界面剂才能抹水泥砂浆——因为 PU 表面太滑，砂浆咬不住。JS 的表面是水泥基的，跟瓷砖胶里的水泥是同一种材料——物理上就是一家人，不需要中间人。做完最后一道 JS，等干透（夏天一天，冬天两天），瓷砖胶直接上。"
-  - question: "自愈是怎么回事？靠谱吗？"
-    answer: "靠谱，但有前提——裂缝必须是微小的，不是结构缝。原理是这样：JS 里面总有一些水泥颗粒在施工时没完全水化——它们处于休眠状态。后来如果涂层出现微裂纹，水渗进去，这些休眠的水泥颗粒二次水化，体积膨胀，把裂缝堵死。同时聚合物弹性回复帮助裂缝闭合。这个机制能处理微裂纹（0.1mm 级别），但不能处理结构变形缝——那种缝要用专门的嵌缝材料。"
-  - question: "GB/T 23445 标准升级了，Tianyuan 跟上了吗？"
-    answer: "跟上了。新标准 GB/T 23445-2025 在 2025 年 12 月发布，2026 年 7 月 1 日正式实施。新标准比 2009 版多了三块核心内容：长期耐水性测试、加速老化测试、以及环保指标——VOC、游离甲醛、苯系物的限值。我们已经在按照新标准的要求做产品过渡。你的项目如果在 2026 年 7 月之后验收，需要符合新标准的检测报告——提前跟我们说，我们发新版 TDS 给你。"
-  - question: "OEM 贴牌怎么做？"
-    answer: "桶和袋子上印你的品牌——名称、型号、LOGO，按你给的稿子来。液粉比和聚合物掺量也能按你市场的要求调——工地温度高的地方凝固时间调短，湿度低的地方聚合物多掺。桶的大小你定——常见的液 20kg 粉 30kg，你要别的规格也行。MOQ 按规格来，发个询盘过来我们实报实算。"
+  - question: "Where does the name 'JS' come from?"
+    answer: "It's a classification created by China's waterproofing industry — J stands for Polymer and S for Cement. It's not an international standard code, and you won't find 'JS' in ASTM or EN naming systems. What the name tells you is that this isn't a one-part product — you receive a liquid emulsion and a powder bag that you mix on site. The classification system was originally adapted from Japan in the early 1990s. Today, over 90% of residential bathroom waterproofing in China is JS — not because it was mandated, but because it's the most practical solution for the specific job of waterproofing a room that's about to be tiled."
+
+  - question: "How do I choose between Type I, II, and III?"
+    answer: "Type I — the substrate moves. 200% elongation, 1:1.2 liquid-to-powder ratio. Use it on roofs, balconies, floors with underfloor heating, and new-build rooms where minor settlement is expected. More liquid, less powder — higher flexibility, lower compressive strength. Type II — the substrate moves a little, but water pressure is the bigger concern. 80% elongation, 1:1.5 ratio. Use it on walls, basements, pools, and permanently submerged applications. Good balance of flexibility and strength. Type III — the substrate doesn't move. 30% elongation, 1.0 MPa adhesion. Use it on stable underground structures. Highest compressive strength, lowest flexibility. Think of it this way: Type I bends, Type II balances, Type III holds."
+
+  - question: "Can I apply it on damp concrete?"
+    answer: "Damp — yes. Wet with standing water — no. A freshly stripped basement wall that looks dark and feels cool to the touch? Start coating. The cement component needs water to hydrate — you're feeding it, not fighting it. But if the wall has visible water beads, or the floor has puddles, or the surface is actively weeping — dry or drain it first. Quick test: wipe a section with a dry cloth. If the cloth comes back damp but the surface doesn't re-wet within seconds, you're ready."
+
+  - question: "When should I use JS instead of polyurethane?"
+    answer: "PU is the better elastomer — 450% to 550% elongation, suitable for exposed roofs and complex geometries. JS is the better composite — lower elongation but it bonds differently. PU adheres to concrete. JS integrates with it — cement-to-cement, no chemical interface. Three scenarios where JS wins: 1) Tiles are the final surface — PU needs a primer before tiling, JS doesn't. 2) Constant water immersion — PU can hydrolyze over years of submersion, JS is more resistant. 3) Budget — JS costs 40–60% less per square meter and saves a labor step."
+
+  - question: "Can I tile directly over JS coating?"
+    answer: "Yes — this is JS's single biggest practical advantage over other waterproof coatings. PU and other polymer-only coatings leave a smooth, non-porous surface that tile adhesive can't grip without a bonding primer. JS leaves a cement-based surface. Tile adhesive is also cement-based. They're chemically the same family — they bond without an intermediary. Apply your last JS coat, wait until it's fully cured (24 hours summer, 48 hours winter), then tile adhesive goes directly on."
+
+  - question: "Does the self-healing actually work?"
+    answer: "It works — within limits. The mechanism: during initial mixing and application, some cement particles don't fully hydrate. They stay dormant in the cured coating. Later, if a micro-crack forms and water seeps in, those dormant particles hydrate — they swell and physically plug the crack. Meanwhile the polymer matrix provides elastic recovery, pulling the crack edges closer together. This handles micro-cracks at the 0.1mm level. It will not handle structural movement joints, expansion joints, or wide cracks — those need separate joint sealants."
+
+  - question: "Has Tianyuan transitioned to the new GB/T 23445-2025 standard?"
+    answer: "Yes. GB/T 23445-2025 was published in December 2025 and comes into legal effect on July 1, 2026, replacing the 2009 version. The new standard adds three major areas: long-term water resistance testing, accelerated aging tests, and environmental limits on VOC, free formaldehyde, and benzene compounds. Our production is already aligned with the 2025 requirements. If your project requires 2025-standard certification before the formal effective date, request the updated TDS when you send your inquiry."
+
+  - question: "How do private label orders work?"
+    answer: "Your brand name, logo, and product designation on the bucket and bag — printed to your artwork. We can adjust the polymer-to-cement ratio, set time, and viscosity based on your local site conditions: faster curing for hot-climate markets, higher polymer content for low-humidity regions. Standard packaging: 20kg liquid bucket with 30kg powder bag. Other sizes available. MOQ varies by formulation. Send us your target specification and we'll provide a firm quote."
 
 ---
 
-### 装修公司仓库里常备三样东西：水泥、砂子、JS 防水涂料
+### There Are Three Things Every Contractor Keeps in Their Warehouse: Cement, Sand, and JS Coating
 
-前两样盖房子用的。第三样确保盖好的房子不漏水。
+The first two build the structure. The third one makes sure water never gets through it.
 
-JS 是防水材料里最不像"防水材料"的东西。它一半是有机聚合物乳液，一半是无机水泥粉末。你把两包东西搅在一起，刷到墙上，干了以后它跟混凝土长成一体——不是贴上去的，不是粘上去的，是化学反应让它变成了墙体的一部分。
+JS waterproof coating occupies an unusual position. It's half organic polymer emulsion and half inorganic cement powder — mixed together on site, troweled onto a wall, and left to cure into something that is genuinely neither plastic nor mortar. The cement hydrates like concrete. The polymer coalesces like paint. The result bonds to the concrete substrate not through adhesion, but through shared chemistry — cement to cement, no interface to fail.
 
-这个特质决定了 JS 的角色：它不是防水卷材的竞争对手，也不是 PU 的替代品。它有自己的专属战场——卫生间、厨房、泳池、需要贴砖的墙面、常年泡水的地下室。在这些地方，JS 的短板（伸长率不如 PU、不能像卷材那样工厂化生产）不重要；它的长板（跟水泥天然同源、潮湿基面直接用、做完无缝、不上界面剂就能贴砖）恰好是别人做不到的。
+This is the reason JS dominates residential bathroom waterproofing across Asia. Not because it's the most advanced coating on the market, but because it's the one that lets you screed and tile directly on top — eliminating the bonding primer that every other polymer coating requires. For bathrooms, kitchens, and wet areas where tiles are the final surface, JS strips a full step out of the construction sequence. That's the value proposition: not raw material cost, but total installed cost including labor.
 
-GB/T 23445-2009 是这条产品线的国标底线。Tianyuan 做的 JS 不满足于过线——液粉比、聚合物掺量、凝固时间全部按客户市场的施工习惯和气候条件来调。你的项目基面动不动、泡不泡水、上面贴什么砖——这三个问题决定了你应该用 I 型还是 II 型还是 III 型。拿不准的，把项目条件发过来，我们告诉你答案。
+The three Type classifications — I, II, and III — are not quality grades. They're application profiles. Type I stretches. Type II balances. Type III holds. Choosing the wrong one for your substrate is the most common specification error on JS projects. The table below covers the essentials.
 
-### I、II、III 型速查
-
-| | I 型 | II 型 | III 型 |
+| | Type I | Type II | Type III |
 |---|---|---|---|
-| **伸长率** | ≥200% | ≥80% | ≥30% |
-| **拉伸强度** | ≥1.2 MPa | ≥1.8 MPa | ≥1.8 MPa |
-| **粘接强度** | ≥0.5 MPa | ≥0.7 MPa | ≥1.0 MPa |
-| **适合基面** | 会动的——屋面、阳台、地暖地面 | 微动的——墙面、泳池、地下室 | 不动的——稳定地下结构 |
-| **典型场景** | 卫生间、非暴露屋面、冷干地区无圆弧阴角 | 地下室外墙、泳池、隧道、长期浸水 | 底板、稳定墙基 |
+| **Elongation** | ≥200% | ≥80% | ≥30% |
+| **Tensile** | ≥1.2 MPa | ≥1.8 MPa | ≥1.8 MPa |
+| **Adhesion** | ≥0.5 MPa | ≥0.7 MPa | ≥1.0 MPa |
+| **Ratio (Liquid:Powder)** | ~1:1.2 | ~1:1.5 | ~1:1.5 |
+| **Substrate** | Moves — roofs, balconies, heated floors | Moves slightly — walls, pools, basements | Rigid — stable underground structures |
+| **Best For** | Bathrooms, protected roofs, cold/dry climates with sharp corners | Basement walls, swimming pools, tunnels, long-term immersion | Foundation slabs, stable retaining walls |
 
-Weifang Tianyuan 是生产 JS 的工厂，不是贴牌转手商。液粉比能调，凝固时间能调，包装能印你的牌子。要样品还是报价，把项目条件发过来。
+Tianyuan manufacturers JS coating directly — we're not a trading company putting our label on someone else's production. The polymer-to-cement ratio, the set time, and the viscosity are all adjustable to your market's climate and application norms. If you're not sure which Type your project needs, send us the substrate conditions and whether the area will be submerged. We'll tell you the right answer.
+
+GB/T 23445-2009 is the baseline national standard. The updated GB/T 23445-2025 (effective July 2026) adds long-term water resistance, accelerated aging, and environmental compliance testing. Our production is already aligned with the new standard. Request the current TDS with your inquiry.
