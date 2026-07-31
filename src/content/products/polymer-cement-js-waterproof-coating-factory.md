@@ -250,14 +250,55 @@ This is the reason JS dominates residential bathroom waterproofing across Asia. 
 
 The three Type classifications — I, II, and III — are not quality grades. They're application profiles. Type I stretches. Type II balances. Type III holds. Choosing the wrong one for your substrate is the most common specification error on JS projects. The table below covers the essentials.
 
-| | Type I | Type II | Type III |
-|---|---|---|---|
-| **Elongation** | ≥200% | ≥80% | ≥30% |
-| **Tensile** | ≥1.2 MPa | ≥1.8 MPa | ≥1.8 MPa |
-| **Adhesion** | ≥0.5 MPa | ≥0.7 MPa | ≥1.0 MPa |
-| **Ratio (Liquid:Powder)** | ~1:1.2 | ~1:1.5 | ~1:1.5 |
-| **Substrate** | Moves — roofs, balconies, heated floors | Moves slightly — walls, pools, basements | Rigid — stable underground structures |
-| **Best For** | Bathrooms, protected roofs, cold/dry climates with sharp corners | Basement walls, swimming pools, tunnels, long-term immersion | Foundation slabs, stable retaining walls |
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<table style="width:100%; border-collapse: collapse; margin: 20px 0; font-size: 13px; min-width:580px;">
+  <thead>
+    <tr style="background: var(--color-background-tertiary, #334155);">
+      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);"></th>
+      <th style="padding: 10px 12px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Type I</th>
+      <th style="padding: 10px 12px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Type II</th>
+      <th style="padding: 10px 12px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Type III</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+      <td style="padding: 10px 12px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Elongation</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-4-ink, #C68E31); font-weight: 500;">≥200%</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-3-ink, #6F8854);">≥80%</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-secondary, #475569);">≥30%</td>
+    </tr>
+    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0); background: var(--color-background-secondary, #f8fafc);">
+      <td style="padding: 10px 12px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Tensile</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-2-ink, #C56443); font-weight: 500;">≥1.2 MPa</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-secondary, #475569);">≥1.8 MPa</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-secondary, #475569);">≥1.8 MPa</td>
+    </tr>
+    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+      <td style="padding: 10px 12px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Adhesion</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-1-ink, #3D6F94); font-weight: 500;">≥0.5 MPa</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-1-ink, #3D6F94);">≥0.7 MPa</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-1-ink, #3D6F94);">≥1.0 MPa</td>
+    </tr>
+    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0); background: var(--color-background-secondary, #f8fafc);">
+      <td style="padding: 10px 12px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Ratio (Liquid:Powder)</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-secondary, #475569);">~1:1.2</td>
+      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-secondary, #475569);" colspan="2">~1:1.5</td>
+    </tr>
+    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
+      <td style="padding: 10px 12px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Substrate</td>
+      <td style="padding: 10px 12px; font-size: 12px; color: var(--color-text-secondary, #475569);">Moves — roofs, balconies, heated floors</td>
+      <td style="padding: 10px 12px; font-size: 12px; color: var(--color-text-secondary, #475569);">Moves slightly — walls, pools, basements</td>
+      <td style="padding: 10px 12px; font-size: 12px; color: var(--color-text-secondary, #475569);">Rigid — stable underground structures</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px 12px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Best For</td>
+      <td style="padding: 10px 12px; font-size: 12px; color: var(--color-text-secondary, #475569);">Bathrooms, protected roofs, cold/dry climates</td>
+      <td style="padding: 10px 12px; font-size: 12px; color: var(--color-text-secondary, #475569);">Basement walls, swimming pools, tunnels, long-term immersion</td>
+      <td style="padding: 10px 12px; font-size: 12px; color: var(--color-text-secondary, #475569);">Foundation slabs, stable retaining walls</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 Tianyuan manufacturers JS coating directly — we're not a trading company putting our label on someone else's production. The polymer-to-cement ratio, the set time, and the viscosity are all adjustable to your market's climate and application norms. If you're not sure which Type your project needs, send us the substrate conditions and whether the area will be submerged. We'll tell you the right answer.
 
