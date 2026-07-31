@@ -247,31 +247,33 @@ faqs:
 
 ---
 
-### One Coating on This Site That Doesn't Dry
+### The Only Coating on This Site That Stays Soft
 
-Polyurethane cures. JS cures. The polymer modified asphalt coating cures. They all leave the pail as liquid and arrive on the wall as a solid film.
+PU cures into a rubber film. JS cures into a cement-polymer composite. Polymer modified asphalt cures by water evaporation. Every other waterproof coating on this page arrives as a liquid and turns into a solid.
 
-This one doesn't.
+This one arrives as a gel and stays a gel.
 
-Non-curing rubber asphalt coating stays in the same viscoelastic state from the day it's applied to the day the building comes down. ≥99% of what leaves the drum stays on the substrate permanently — there's almost nothing to evaporate. Pour it out hot. It cools back to a thick, sticky gel. Come back fifty years later — still a thick, sticky gel.
+It remains permanently viscoelastic — the same consistency on day one and year fifty. There is almost nothing to evaporate: ≥99% of what leaves the drum stays on the substrate as functional material.
 
-Because it never hardens, it never cracks. When the building settles, the coating flows instead of fighting. Stress relaxation testing under JC/T 2428-2017 puts a number on this behavior: hold the material at a fixed stretch, and the resisting force drops to ≤35% of its starting value. It stops pulling back. It yields. That's why it's still waterproof forty years after stiffer materials have cracked.
+**What this means in practice:** the coating never cracks from aging, never shrinks away from the concrete, and never becomes brittle from thermal cycling. When the building moves — and every building moves — a cured coating has to stretch to keep up. This coating doesn't stretch. It flows. The crack opens, the material around it shifts into the gap, and the waterproofing stays intact.
 
-### It's a Bonding Layer, Not a Waterproofing Layer
+JC/T 2428-2017 quantifies this behavior as stress relaxation: hold the material at a fixed deformation, and the force resisting it drops to ≤35% of the starting value. The coating stops fighting and yields to the movement. That's not a weakness — it's the reason it's still waterproof forty years after rigid materials have failed.
 
-The coating's job is to glue the membrane to the concrete — not to be the membrane itself.
+### It's the Glue, Not the Sheet
 
-Hot coating goes onto the substrate. An SBS or APP modified bitumen membrane goes down immediately, while the coating is still hot enough to fuse. The result is a composite with no gap. No space for water to travel sideways. Any leak is confined to its exact point of entry.
+The coating is not meant to be the primary waterproofing layer. Its job is to bond the membrane to the concrete — permanently, with no gap between them.
 
-The membrane provides thickness and puncture resistance. The coating provides the bond, the crack bridging, and the anti-channeling. Together they do what neither can do alone.
+The process is straightforward. Hot coating is applied to the substrate. An SBS or APP modified bitumen membrane goes down immediately while the coating is still hot, fusing into the coating surface as it cools. The result is a single composite assembly: membrane, coating, and concrete, chemically and mechanically integrated.
 
-### Four Things No Other Coating on This Site Can Claim
+Why this matters: in a conventional sheet system, water that gets behind the membrane can travel sideways — channel — until it finds an entry point meters away from the damage. With the coating filling every void between concrete and membrane, there is nowhere for water to go. Any leak is trapped at its exact point of origin.
 
-- **It never cures.** No aging. No film shrinkage. No temperature-cycle fatigue.
-- **It seals its own damage.** Physical creep closes punctures — no chemical reaction, no manual repair.
-- **The bond breaks the coating before it breaks the bond.** 100% cohesive failure on dry and wet substrates. It peels itself apart before it peels off the concrete.
-- **It lets go of stress.** ≤35% retained force at constant deformation. It yields so the building can move.
+### What Makes It Different From Everything Else on This Site
 
-Compliant with JC/T 2428-2017. The TDS covers 16 individual performance parameters — request it with your inquiry.
+- **Permanently soft.** No aging. No film shrinkage. No temperature-cycle fatigue.
+- **Self-sealing punctures.** The material flows into damage sites under its own weight — no chemical reaction or manual repair needed.
+- **The bond fails before the coating does.** 100% cohesive failure — the coating tears itself apart before it peels off the concrete. Both dry and wet substrates.
+- **It yields to stress instead of resisting it.** ≤35% force retained at constant deformation. The building moves, the coating moves with it.
 
-Weifang Tianyuan produces this coating direct. Drum size, viscosity, and application behavior adjustable to your market. Send your project specs — we send back a quote.
+JC/T 2428-2017 compliant. Sixteen performance parameters on the TDS — request it with your inquiry.
+
+Weifang Tianyuan produces this coating direct. Drum size, viscosity, and application behavior adjustable to your market. Send your project specs and we'll send back a quote.
