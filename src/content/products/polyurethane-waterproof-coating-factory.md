@@ -167,14 +167,14 @@ application_guide:
     text: "Do not allow foot traffic on the wet coating. At 25°C, the surface is walkable after approximately 24 hours. In cooler conditions — below 10°C — allow 48 hours. Protect fresh coating from rain: water droplets on uncured PU cause surface blistering. Once fully cured, the coating is resistant to temporary water exposure."
 
 packaging:
-  - title: "Iron Drum Packaging — Sealed, Dry, Stackable"
-    text: "Standard iron drums with carry handles and tamper-evident lids. Drum size customized to order — common configurations are 10 kg, 20 kg, and 25 kg. Palletized for container shipment."
-  - title: "Transport — Upright, Protected From Weather"
-    text: "Classified as dangerous goods for transport. Drums must remain upright at all times. Protect from rain, direct sun exposure, and mechanical impact. Documentation supplied with each shipment: TDS, MSDS, packing list, certificate of origin."
-  - title: "Storage — Cool, Dry, Sealed"
-    text: "Store at 5–40°C in a dry, ventilated area away from direct sunlight. Reseal partially used drums immediately — isocyanate reacts with atmospheric moisture, and air exposure will skin over the remaining product. Unopened shelf life: 12 months from production date."
-  - title: "OEM / Private Label"
-    text: "Full custom packaging: your brand, product name, colors, and drum dimensions. Performance customization available — adjust tensile strength upward, elongation higher, cure time faster or slower according to your local standard requirements. Technical team formulates to your target specification. MOQ varies by formulation complexity — send your target parameters for a firm quotation."
+  - title: "Why the Drum Seal Matters — This Product Cures by Breathing Air"
+    text: "Single-component PU is an isocyanate-terminated prepolymer — it cures by reacting with atmospheric moisture. The same chemistry that makes it convenient on site makes it vulnerable in storage. Every drum is filled under controlled dry conditions and sealed immediately. The tamper-evident lid has a rubber gasket that maintains a moisture-proof barrier. Common drum sizes: 10 kg, 20 kg, 25 kg. Palletized, stretch-wrapped, and labeled per IMDG requirements for container shipment."
+  - title: "DG Class 3 — What It Means for Your Logistics"
+    text: "PU waterproof coating is classified as UN 1263 (paint-related material) or UN 1866 (resin solution), Class 3 flammable liquid, Packing Group III. Drums must remain upright. Your forwarder needs the MSDS to book DG-rated container space — some shipping lines restrict Class 3 on certain routes. We provide the full document set (TDS, MSDS, packing list, certificate of origin) at the time of shipment so your customs broker files before the vessel arrives."
+  - title: "12-Month Shelf Life — What Happens After"
+    text: "Unopened drums stored at 5–40°C in dry, ventilated conditions maintain full performance for 12 months from the production date. Over time, trace moisture diffuses through the seal — viscosity increases and a thin skin may form on the surface. Expired product is not automatically waste: open the drum, remove any surface skin, stir thoroughly, and run a small test patch. If the coating cures to a tack-free film within 24 hours at 23°C, the remaining material is still functional. For drums already opened on site, reseal within 30 minutes. Any air left in the headspace will react with the product."
+  - title: "OEM — Don't Just Put Your Logo on It. Tune It for Your Market."
+    text: "Standard OEM: your brand, label design, drum color, and drum size. But the real value of factory-direct supply is formulation-level customization. Need lower viscosity for spray application? Thixotropic additive to hold vertical surfaces? Faster tack-free time for high-humidity climates? Aliphatic base for UV-exposed product positioning? Our technical team adjusts the prepolymer synthesis and additive package to match your target specification — we ship a sample batch for your approval before production. MOQ varies by formulation complexity. Send your target parameters."
 
 loading_data:
   - label: "20FT Container"
