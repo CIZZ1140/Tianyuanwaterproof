@@ -90,87 +90,7 @@ features:
   - title: "≥1000 m² per Day — Throughput That Changes the Economics"
     text: "Single spray unit with two operators covers ≥1000 m² per shift at specified thickness. Tunnel lining, bridge deck, containment floor — one day, one pass, done. Compare to roller-applied systems requiring multiple coats with drying intervals between each. The labor savings on large-area infrastructure projects are not incremental — they redefine the waterproofing line item in the construction budget."
 
-technical_data:
-  - label: "Solid Content (Pure)"
-    unit: "%"
-    standard: "—"
-    requirement: "100"
-    value: "100"
-  - label: "Solid Content (Hybrid)"
-    unit: "%"
-    standard: "—"
-    requirement: "≥ 98"
-    value: "≥ 98"
-  - label: "Tensile Strength (Pure)"
-    unit: "MPa"
-    standard: "—"
-    requirement: "≥ 20"
-    value: "≥ 20"
-  - label: "Tensile Strength (Hybrid)"
-    unit: "MPa"
-    standard: "—"
-    requirement: "≥ 22"
-    value: "≥ 22"
-  - label: "Elongation at Break (Pure)"
-    unit: "%"
-    standard: "—"
-    requirement: "≥ 600"
-    value: "600+"
-  - label: "Elongation at Break (Hybrid)"
-    unit: "%"
-    standard: "—"
-    requirement: "≥ 500"
-    value: "500+"
-  - label: "Tear Strength (Pure)"
-    unit: "N/mm"
-    standard: "—"
-    requirement: "≥ 45"
-    value: "≥ 45"
-  - label: "Tear Strength (Hybrid)"
-    unit: "kN/m"
-    standard: "—"
-    requirement: "80"
-    value: "80"
-  - label: "Hardness (Pure)"
-    unit: "Shore A"
-    standard: "—"
-    requirement: "92 ± 5"
-    value: "92 ± 5"
-  - label: "Hardness (Hybrid)"
-    unit: "Shore A"
-    standard: "—"
-    requirement: "80"
-    value: "80"
-  - label: "Bonding Strength (Hybrid)"
-    unit: "MPa"
-    standard: "—"
-    requirement: "≥ 3.34"
-    value: "3.34"
-  - label: "Water Absorption (Hybrid)"
-    unit: "%"
-    standard: "—"
-    requirement: "≤ 0.40"
-    value: "0.40"
-  - label: "Abrasion Resistance (Pure / Hybrid)"
-    unit: "mg loss"
-    standard: "750g, 500r"
-    requirement: "≤ 50 / 25"
-    value: "≤ 50 / 25"
-  - label: "Low Temp Flexibility (All Types)"
-    unit: "°C"
-    standard: "—"
-    requirement: "-35°C — No crack"
-    value: "No crack"
-  - label: "Operating Temperature (All Types)"
-    unit: "°C"
-    standard: "—"
-    requirement: "-45 to 120 (continuous)"
-    value: "-45 to 120"
-  - label: "VOC Content (All Types)"
-    unit: "g/L"
-    standard: "—"
-    requirement: "0"
-    value: "0"
+technical_data: []
 
 application_guide:
   - title: "Equipment Is Not Optional — Plural-Component Proportioner Required"
@@ -253,6 +173,74 @@ faqs:
     answer: "Your brand and product designation on both Component A and B drums. Formulation parameters tunable within chemistry limits: gel time (faster for pure, extended for hybrid), hardness (Shore A80–A92), elongation (target 500–600%+), and tensile strength (target 20–22 MPa+). Base chemistry selection — pure or hybrid — determined by your target application profile. Nitrogen-sealed packaging per export requirements. MOQ by formulation. Send your target specification for a sample batch and firm quotation."
 
 ---
+
+### Pure Polyurea Technical Data
+
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<table style="width:100%; border-collapse:collapse; margin:16px 0; font-size:13px; min-width:480px;">
+  <thead>
+    <tr style="background:#1e293b;">
+      <th style="padding:8px 10px;text-align:left;font-weight:600;color:#e2e8f0;">Property</th>
+      <th style="padding:8px 10px;text-align:center;font-weight:600;color:#e2e8f0;">Unit</th>
+      <th style="padding:8px 10px;text-align:center;font-weight:600;color:#e2e8f0;">Requirement</th>
+      <th style="padding:8px 10px;text-align:center;font-weight:600;color:#e2e8f0;">Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom:1px solid #e2e8f0;"><td style="padding:8px 10px;font-weight:600;">Solid Content</td><td style="padding:8px 10px;text-align:center;">%</td><td style="padding:8px 10px;text-align:center;">100</td><td style="padding:8px 10px;text-align:center;font-weight:600;">100</td></tr>
+    <tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc;"><td style="padding:8px 10px;font-weight:600;">Tensile Strength</td><td style="padding:8px 10px;text-align:center;">MPa</td><td style="padding:8px 10px;text-align:center;">≥ 20</td><td style="padding:8px 10px;text-align:center;font-weight:600;">≥ 20</td></tr>
+    <tr style="border-bottom:1px solid #e2e8f0;"><td style="padding:8px 10px;font-weight:600;">Elongation at Break</td><td style="padding:8px 10px;text-align:center;">%</td><td style="padding:8px 10px;text-align:center;">≥ 600</td><td style="padding:8px 10px;text-align:center;font-weight:600;">600+</td></tr>
+    <tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc;"><td style="padding:8px 10px;font-weight:600;">Tear Strength</td><td style="padding:8px 10px;text-align:center;">N/mm</td><td style="padding:8px 10px;text-align:center;">≥ 45</td><td style="padding:8px 10px;text-align:center;font-weight:600;">≥ 45</td></tr>
+    <tr style="border-bottom:1px solid #e2e8f0;"><td style="padding:8px 10px;font-weight:600;">Hardness</td><td style="padding:8px 10px;text-align:center;">Shore A</td><td style="padding:8px 10px;text-align:center;">92 ± 5</td><td style="padding:8px 10px;text-align:center;font-weight:600;">92 ± 5</td></tr>
+    <tr style="background:#f8fafc;"><td style="padding:8px 10px;font-weight:600;">VOC Content</td><td style="padding:8px 10px;text-align:center;">g/L</td><td style="padding:8px 10px;text-align:center;">0</td><td style="padding:8px 10px;text-align:center;font-weight:600;">0</td></tr>
+  </tbody>
+</table>
+</div>
+
+### Hybrid Polyurea Technical Data
+
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<table style="width:100%; border-collapse:collapse; margin:16px 0; font-size:13px; min-width:480px;">
+  <thead>
+    <tr style="background:#1e293b;">
+      <th style="padding:8px 10px;text-align:left;font-weight:600;color:#e2e8f0;">Property</th>
+      <th style="padding:8px 10px;text-align:center;font-weight:600;color:#e2e8f0;">Unit</th>
+      <th style="padding:8px 10px;text-align:center;font-weight:600;color:#e2e8f0;">Requirement</th>
+      <th style="padding:8px 10px;text-align:center;font-weight:600;color:#e2e8f0;">Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom:1px solid #e2e8f0;"><td style="padding:8px 10px;font-weight:600;">Solid Content</td><td style="padding:8px 10px;text-align:center;">%</td><td style="padding:8px 10px;text-align:center;">≥ 98</td><td style="padding:8px 10px;text-align:center;font-weight:600;">≥ 98</td></tr>
+    <tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc;"><td style="padding:8px 10px;font-weight:600;">Tensile Strength</td><td style="padding:8px 10px;text-align:center;">MPa</td><td style="padding:8px 10px;text-align:center;">≥ 22</td><td style="padding:8px 10px;text-align:center;font-weight:600;">≥ 22</td></tr>
+    <tr style="border-bottom:1px solid #e2e8f0;"><td style="padding:8px 10px;font-weight:600;">Elongation at Break</td><td style="padding:8px 10px;text-align:center;">%</td><td style="padding:8px 10px;text-align:center;">≥ 500</td><td style="padding:8px 10px;text-align:center;font-weight:600;">500+</td></tr>
+    <tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc;"><td style="padding:8px 10px;font-weight:600;">Tear Strength</td><td style="padding:8px 10px;text-align:center;">kN/m</td><td style="padding:8px 10px;text-align:center;">80</td><td style="padding:8px 10px;text-align:center;font-weight:600;">80</td></tr>
+    <tr style="border-bottom:1px solid #e2e8f0;"><td style="padding:8px 10px;font-weight:600;">Hardness</td><td style="padding:8px 10px;text-align:center;">Shore A</td><td style="padding:8px 10px;text-align:center;">80</td><td style="padding:8px 10px;text-align:center;font-weight:600;">80</td></tr>
+    <tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc;"><td style="padding:8px 10px;font-weight:600;">Bonding Strength</td><td style="padding:8px 10px;text-align:center;">MPa</td><td style="padding:8px 10px;text-align:center;">≥ 3.34</td><td style="padding:8px 10px;text-align:center;font-weight:600;">3.34</td></tr>
+    <tr style="border-bottom:1px solid #e2e8f0;"><td style="padding:8px 10px;font-weight:600;">Water Absorption</td><td style="padding:8px 10px;text-align:center;">%</td><td style="padding:8px 10px;text-align:center;">≤ 0.40</td><td style="padding:8px 10px;text-align:center;font-weight:600;">0.40</td></tr>
+    <tr style="background:#f8fafc;"><td style="padding:8px 10px;font-weight:600;">VOC Content</td><td style="padding:8px 10px;text-align:center;">g/L</td><td style="padding:8px 10px;text-align:center;">0</td><td style="padding:8px 10px;text-align:center;font-weight:600;">0</td></tr>
+  </tbody>
+</table>
+</div>
+
+### Shared Properties (Both Types)
+
+<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<table style="width:100%; border-collapse:collapse; margin:16px 0; font-size:13px; min-width:480px;">
+  <thead>
+    <tr style="background:#1e293b;">
+      <th style="padding:8px 10px;text-align:left;font-weight:600;color:#e2e8f0;">Property</th>
+      <th style="padding:8px 10px;text-align:center;font-weight:600;color:#e2e8f0;">Unit</th>
+      <th style="padding:8px 10px;text-align:center;font-weight:600;color:#e2e8f0;">Requirement</th>
+      <th style="padding:8px 10px;text-align:center;font-weight:600;color:#e2e8f0;">Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom:1px solid #e2e8f0;"><td style="padding:8px 10px;font-weight:600;">Abrasion Resistance</td><td style="padding:8px 10px;text-align:center;">mg (750g/500r)</td><td style="padding:8px 10px;text-align:center;">Pure ≤ 50 / Hybrid 25</td><td style="padding:8px 10px;text-align:center;font-weight:600;">≤ 50 / 25</td></tr>
+    <tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc;"><td style="padding:8px 10px;font-weight:600;">Low Temp Flexibility</td><td style="padding:8px 10px;text-align:center;">°C</td><td style="padding:8px 10px;text-align:center;">-35°C — No crack</td><td style="padding:8px 10px;text-align:center;font-weight:600;">No crack</td></tr>
+    <tr style="background:#f8fafc;"><td style="padding:8px 10px;font-weight:600;">Operating Temperature</td><td style="padding:8px 10px;text-align:center;">°C</td><td style="padding:8px 10px;text-align:center;">-45 to 120 (continuous)</td><td style="padding:8px 10px;text-align:center;font-weight:600;">-45 to 120</td></tr>
+  </tbody>
+</table>
+</div>
 
 ### Why Polyurea Belongs on Infrastructure Specifications, Not Just Product Lists
 
