@@ -1,10 +1,10 @@
 ---
-title: "JS Polymer Cement Waterproof Coating Manufacturer | Two-Component | Wholesale"
+title: "JS Polymer Cementitious Waterproof Coating Manufacturer | Two-Component | Wholesale"
 displayName: "JS Polymer Cement Coating"
 category: "waterproof-coatings"
 featured: true
 order: 60
-meta_description: "GB/T 23445 certified two-component JS polymer cement coating. Types I/II/III, damp-base application, self-healing, tile-direct bonding. OEM & free sample. Factory quote."
+meta_description: "GB/T 23445 certified two-component JS polymer cementitious coating. Types I/II/III, damp-base, self-healing, tile-direct, potable water safe. OEM & free sample. Factory quote."
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
@@ -70,8 +70,8 @@ quick_facts:
 applications:
   - title: "Bathrooms, Kitchens, Balconies — Tiles Go Directly on Top"
     text: "Over 90% of residential bathroom waterproofing in China uses JS. Not because it's the highest-spec coating available — because it's the only one that lets you screed and tile directly on top without a bonding primer. Walls, floors, under shower trays — one JS layer, then tile adhesive, then tiles."
-  - title: "Swimming Pools and Water Tanks — Immersed Long-Term"
-    text: "Type II and III handle 0.6 MPa anti-permeability pressure. This isn't splash-proof — this is permanently submerged. The coating must stay watertight and alkali-resistant simultaneously, because pool water treated with disinfectant is consistently alkaline. JS holds ≥80% tensile retention after alkali treatment — that's what gives it the staying power."
+  - title: "Swimming Pools, Water Tanks, Potable Water — Immersed Long-Term"
+    text: "Type II and III handle 0.6 MPa anti-permeability pressure. Non-toxic, water-based formulation is safe for potable water contact. JS holds ≥80% tensile retention after alkali treatment — pool disinfectants and treated water won't degrade the coating."
   - title: "Basements and Tunnels — Buried Where Nobody Can Inspect"
     text: "Once a basement wall is backfilled, a leak costs more to fix than to rebuild — you're excavating. JS bonds to damp concrete at ≥0.7 MPa (Type II), which means it goes on right after formwork is stripped, before the wall has fully cured. You're not waiting for the concrete to dry before you waterproof. That pulls the entire underground construction sequence forward."
   - title: "Protected Roofs — Under the Insulation, On the Slab"
@@ -230,7 +230,7 @@ faqs:
     answer: "Yes — this is JS's single biggest practical advantage over other waterproof coatings. PU and other polymer-only coatings leave a smooth, non-porous surface that tile adhesive can't grip without a bonding primer. JS leaves a cement-based surface. Tile adhesive is also cement-based. They're chemically the same family — they bond without an intermediary. Apply your last JS coat, wait until it's fully cured (24 hours summer, 48 hours winter), then tile adhesive goes directly on."
 
   - question: "Does the self-healing actually work?"
-    answer: "It works — within limits. The mechanism: during initial mixing and application, some cement particles don't fully hydrate. They stay dormant in the cured coating. Later, if a micro-crack forms and water seeps in, those dormant particles hydrate — they swell and physically plug the crack. Meanwhile the polymer matrix provides elastic recovery, pulling the crack edges closer together. This handles micro-cracks at the 0.1mm level. It will not handle structural movement joints, expansion joints, or wide cracks — those need separate joint sealants."
+    answer: "Yes — within limits. The mechanism involves two parallel processes confirmed by cementitious materials research (PMC, 2017): 1) Dormant cement particles in the cured coating rehydrate when water enters a micro-crack, forming new calcium silicate hydrate (C-S-H) gel that physically plugs the crack. 2) The polymer matrix provides elastic recovery, pulling the crack edges closer together. This dual mechanism handles micro-cracks at the 0.1mm level. Structural movement joints, expansion joints, and wide cracks require separate joint sealants — self-healing is not a substitute for proper joint detailing."
 
   - question: "Has Tianyuan transitioned to the new GB/T 23445-2025 standard?"
     answer: "Yes. GB/T 23445-2025 was published in December 2025 and comes into legal effect on July 1, 2026, replacing the 2009 version. The new standard adds three major areas: long-term water resistance testing, accelerated aging tests, and environmental limits on VOC, free formaldehyde, and benzene compounds. Our production is already aligned with the 2025 requirements. If your project requires 2025-standard certification before the formal effective date, request the updated TDS when you send your inquiry."
