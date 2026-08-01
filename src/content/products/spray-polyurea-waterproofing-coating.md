@@ -75,7 +75,7 @@ applications:
   - title: "Tunnels, Subways, Underground Infrastructure"
     text: "Applied directly to shotcrete or rock. Moisture-insensitive cure allows application in high-humidity underground environments. No dew-point restrictions during spray."
   - title: "Wastewater Treatment & Water Infrastructure"
-    text: "100% solids, zero-VOC formulation. Resists constant water immersion and chemical attack from treated effluent. ≥1000 m²/day throughput keeps plant downtime to a single shift."
+    text: "100% solids, zero-VOC formulation resists constant immersion and chemical attack. Potable-water-grade formulations available — tested to NSF/ANSI 61 requirements. ≥1000 m²/day throughput keeps plant downtime to a single shift."
 
 features:
   - title: "Pure vs Hybrid — Two Chemistries, One Platform"
@@ -245,6 +245,9 @@ faqs:
 
   - question: "What are the fire safety properties?"
     answer: "Polyurea exhibits low flame spread rate and self-extinguishing behavior — when the external flame source is removed, the coating stops burning. Combined with zero VOC (no flammable solvent content) and 100% solids, this meets the fire safety criteria increasingly required for tunnel waterproofing, petrochemical secondary containment, and occupied infrastructure. Polyurea does not contribute fuel load in a fire scenario, unlike solvent-based coating systems. If your project requires a specific fire-resistance rating (e.g., ASTM E84 Class A), confirm with our technical team — formulation adjustments and testing can support compliance documentation."
+
+  - question: "What certifications and standards does polyurea comply with?"
+    answer: "Polyurea's performance is validated against multiple international standards. For potable water contact, formulations can be tested to NSF/ANSI 61 (U.S.) and EU Drinking Water Directive requirements — specify potable-water-grade polyurea at order stage. For infrastructure applications in European markets, polyurea membranes are specified under EN 1504-2 (surface protection systems for concrete) covering crack-bridging ability, abrasion resistance, impact resistance, and chemical resistance. For bridge deck waterproofing, EAD 030675-00-0107 (European Assessment Document) and BBA HAPAS (UK) provide the certification framework. Contact our technical team with your project's jurisdiction and application — we'll confirm which certifications apply and supply the corresponding test documentation."
 
   - question: "How do OEM and private label orders work?"
     answer: "Your brand and product designation on both Component A and B drums. Formulation parameters tunable within chemistry limits: gel time (faster for pure, extended for hybrid), hardness (Shore A80–A92), elongation (target 500–600%+), and tensile strength (target 20–22 MPa+). Base chemistry selection — pure or hybrid — determined by your target application profile. Nitrogen-sealed packaging per export requirements. MOQ by formulation. Send your target specification for a sample batch and firm quotation."
