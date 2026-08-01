@@ -167,14 +167,14 @@ application_guide:
     text: "Do not allow foot traffic on the wet coating. At 25°C, the surface is walkable after approximately 24 hours. In cooler conditions — below 10°C — allow 48 hours. Protect fresh coating from rain: water droplets on uncured PU cause surface blistering. Once fully cured, the coating is resistant to temporary water exposure."
 
 packaging:
-  - title: "Why the Drum Seal Matters — This Product Cures by Breathing Air"
-    text: "Single-component PU is an isocyanate-terminated prepolymer — it cures by reacting with atmospheric moisture. The same chemistry that makes it convenient on site makes it vulnerable in storage. Every drum is filled under controlled dry conditions and sealed immediately. The tamper-evident lid has a rubber gasket that maintains a moisture-proof barrier. Common drum sizes: 10 kg, 20 kg, 25 kg. Palletized, stretch-wrapped, and labeled per IMDG requirements for container shipment."
-  - title: "DG Class 3 — What It Means for Your Logistics"
-    text: "PU waterproof coating is classified as UN 1263 (paint-related material) or UN 1866 (resin solution), Class 3 flammable liquid, Packing Group III. Drums must remain upright. Your forwarder needs the MSDS to book DG-rated container space — some shipping lines restrict Class 3 on certain routes. We provide the full document set (TDS, MSDS, packing list, certificate of origin) at the time of shipment so your customs broker files before the vessel arrives."
-  - title: "12-Month Shelf Life — What Happens After"
-    text: "Unopened drums stored at 5–40°C in dry, ventilated conditions maintain full performance for 12 months from the production date. Over time, trace moisture diffuses through the seal — viscosity increases and a thin skin may form on the surface. Expired product is not automatically waste: open the drum, remove any surface skin, stir thoroughly, and run a small test patch. If the coating cures to a tack-free film within 24 hours at 23°C, the remaining material is still functional. For drums already opened on site, reseal within 30 minutes. Any air left in the headspace will react with the product."
-  - title: "OEM — Don't Just Put Your Logo on It. Tune It for Your Market."
-    text: "Standard OEM: your brand, label design, drum color, and drum size. But the real value of factory-direct supply is formulation-level customization. Need lower viscosity for spray application? Thixotropic additive to hold vertical surfaces? Faster tack-free time for high-humidity climates? Aliphatic base for UV-exposed product positioning? Our technical team adjusts the prepolymer synthesis and additive package to match your target specification — we ship a sample batch for your approval before production. MOQ varies by formulation complexity. Send your target parameters."
+  - title: "Why the Drum Seal Matters"
+    text: "The prepolymer cures on contact with air. Every drum is moisture-sealed with a rubber-gasketed lid. 10 kg, 20 kg, 25 kg. Palletized for container shipment."
+  - title: "DG Class 3 — UN 1263 / UN 1866"
+    text: "Flammable liquid, Packing Group III. Drums must remain upright. MSDS required for DG container booking. TDS, MSDS, packing list, and certificate of origin provided with every shipment."
+  - title: "12-Month Shelf Life"
+    text: "Store at 5–40°C, dry and ventilated. Reseal opened drums within 30 minutes — air in the headspace reacts with the product. Expired drums: remove surface skin, stir, test-patch. If it cures tack-free in 24h, it's still usable."
+  - title: "OEM — Brand It, Then Tune It"
+    text: "Custom label, drum color, and size. Formulation-level tuning: lower viscosity for spray, thixotropic additive for vertical surfaces, faster tack-free for humid climates, aliphatic base for UV-exposed product positioning. Sample batch for approval before production."
 
 loading_data:
   - label: "20FT Container"
