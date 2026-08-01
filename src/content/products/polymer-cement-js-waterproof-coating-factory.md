@@ -1,15 +1,15 @@
 ---
-title: "JS Polymer Cement Waterproof Coating Manufacturer | Two-Component Cement-Based | Wholesale"
+title: "JS Polymer Cement Waterproof Coating Manufacturer | Two-Component | Wholesale"
 displayName: "JS Polymer Cement Coating"
 category: "waterproof-coatings"
 featured: true
 order: 60
-meta_description: "Factory-direct JS (polymer+cement) two-component waterproof coating. GB/T 23445-2009 certified, Types I/II/III. Damp-base application, non-toxic water-based, self-healing. Wet areas, underground, pool, roof. OEM & free sample. Get a quote!"
+meta_description: "GB/T 23445 certified two-component JS polymer cement coating. Types I/II/III, damp-base application, self-healing, tile-direct bonding. OEM & free sample. Factory quote."
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
 
-hero_description: "TY-SHIELD™ JS waterproof coating — a two-component, water-based composite system that combines high-elasticity polymer emulsion with hydraulic cement and mineral fillers. The name tells you what's inside: Polymer (J) plus Cement (S) — a dual-nature design delivering organic flexibility and inorganic durability in a single coating. After application, the material cures through two simultaneous mechanisms: cement hydration and polymer film formation via water evaporation, creating a seamless, high-strength, elastic waterproof membrane. Available in Type I (high elongation, ≥200%), Type II (balanced, ≥80%), and Type III (rigid, ≥30%). Can be applied on damp substrates and accepts tile adhesives directly. Compliant with GB/T 23445-2009. Factory-direct supply with full OEM, private-label packaging, and custom performance formulations."
+hero_description: "TY-SHIELD™ JS waterproof coating — a two-component, water-based composite system combining polymer emulsion with hydraulic cement. The name encodes the formula: Polymer (J) + Cement (S). Cures through two simultaneous mechanisms — cement hydration for compressive strength, polymer film formation for elasticity — creating a seamless membrane that bonds cement-to-cement with the substrate. Available in Type I (≥200% elongation, flexible substrates), Type II (≥80%, balanced), and Type III (≥1.0 MPa adhesion, rigid structures). Applies on damp concrete and accepts tile adhesives directly — no bonding primer required. GB/T 23445-2009 compliant; production aligned with GB/T 23445-2025 (effective July 2026)."
 
 hero_tags:
   - "JS Polymer+Cement"
@@ -172,12 +172,12 @@ application_guide:
     text: "The last coat needs to harden fully before anyone walks on it or tiles over it. In summer: 24 hours. In winter: up to 48 hours. If you tile too early, the tile adhesive can pull the coating up with it. If other trades need to work over the waterproofed area before tiling, put down protection boards — patching a damaged spot costs more time than protecting it from the start."
 
 packaging:
-  - title: "Liquid in Sealed Buckets + Powder in Woven Bags"
-    text: "Liquid component: sealed plastic bucket. Powder component: woven bag or paper bag. Standard sizes per client specification. Palletized and strapped for container shipping."
-  - title: "Storage Requirements"
-    text: "Store above 5°C — the liquid component freezes and the emulsion breaks if it drops below freezing, rendering the product unusable. Keep in a dry, shaded area. Reseal opened containers immediately. Shelf life: 12 months in original unopened packaging under standard conditions."
+  - title: "Liquid: Sealed Plastic Bucket / Powder: Woven Bag"
+    text: "The liquid component is a polymer emulsion — it freezes and irreversibly breaks below 0°C, so winter shipping requires insulated container loading. Powder is cement-based — keep dry. Standard sizes per client specification. Palletized for container shipment."
+  - title: "Storage — Above 5°C, Keep Powder Dry"
+    text: "Liquid: the emulsion separates if frozen. Powder: cement hardens on contact with moisture — reseal opened bags immediately. Shelf life: 12 months in original unopened packaging under standard conditions."
   - title: "OEM / Private Label"
-    text: "Your brand on the bucket and bag. Polymer-to-cement ratio, set time, and viscosity adjustable to your market's site conditions — faster set for hot climates, higher polymer content for low-humidity regions. Send us your target specification and we'll formulate to match."
+    text: "Your brand on bucket and bag. Polymer-to-cement ratio adjustable — higher polymer content for more flexibility, more cement for higher compressive strength. Set time tunable for climate: faster for hot regions, slower for cold. Send your target specification."
 
 loading_data:
   - label: "20FT Container"
@@ -224,7 +224,7 @@ faqs:
     answer: "Damp — yes. Wet with standing water — no. A freshly stripped basement wall that looks dark and feels cool to the touch? Start coating. The cement component needs water to hydrate — you're feeding it, not fighting it. But if the wall has visible water beads, or the floor has puddles, or the surface is actively weeping — dry or drain it first. Quick test: wipe a section with a dry cloth. If the cloth comes back damp but the surface doesn't re-wet within seconds, you're ready."
 
   - question: "When should I use JS instead of polyurethane?"
-    answer: "PU is the better elastomer — 450% to 550% elongation, suitable for exposed roofs and complex geometries. JS is the better composite — lower elongation but it bonds differently. PU adheres to concrete. JS integrates with it — cement-to-cement, no chemical interface. Three scenarios where JS wins: 1) Tiles are the final surface — PU needs a primer before tiling, JS doesn't. 2) Constant water immersion — PU can hydrolyze over years of submersion, JS is more resistant. 3) Budget — JS costs 40–60% less per square meter and saves a labor step."
+    answer: "[PU is the better elastomer](/products/polyurethane-waterproof-coating-factory/) — 450% to 550% elongation, suitable for exposed roofs and complex geometries. JS is the better composite — lower elongation but it bonds differently. PU adheres to concrete. JS integrates with it — cement-to-cement, no chemical interface. Three scenarios where JS wins: 1) Tiles are the final surface — PU needs a primer before tiling, JS doesn't. 2) Constant water immersion — PU can hydrolyze over years of submersion, JS is more resistant. 3) Budget — JS costs 40–60% less per square meter and saves a labor step."
 
   - question: "Can I tile directly over JS coating?"
     answer: "Yes — this is JS's single biggest practical advantage over other waterproof coatings. PU and other polymer-only coatings leave a smooth, non-porous surface that tile adhesive can't grip without a bonding primer. JS leaves a cement-based surface. Tile adhesive is also cement-based. They're chemically the same family — they bond without an intermediary. Apply your last JS coat, wait until it's fully cured (24 hours summer, 48 hours winter), then tile adhesive goes directly on."
@@ -240,66 +240,12 @@ faqs:
 
 ---
 
-### There Are Three Things Every Contractor Keeps in Their Warehouse: Cement, Sand, and JS Coating
+### Why JS Dominates Residential Waterproofing
 
-The first two build the structure. The third one makes sure water never gets through it.
+JS occupies an unusual position in the waterproofing product family. It is half organic polymer emulsion and half inorganic cement powder — mixed on site, troweled onto a wall, and left to cure into something that is neither plastic nor mortar. The cement hydrates like concrete. The polymer coalesces like paint. The result bonds to the substrate not through surface adhesion, but through shared chemistry — cement to cement, no interface to fail.
 
-JS waterproof coating occupies an unusual position. It's half organic polymer emulsion and half inorganic cement powder — mixed together on site, troweled onto a wall, and left to cure into something that is genuinely neither plastic nor mortar. The cement hydrates like concrete. The polymer coalesces like paint. The result bonds to the concrete substrate not through adhesion, but through shared chemistry — cement to cement, no interface to fail.
+This is why over 90% of residential bathroom waterproofing in China uses JS. Not because it's the highest-spec coating available, but because it's the only one that lets you screed and tile directly on top — eliminating the bonding primer every other polymer coating requires. For bathrooms, kitchens, and wet areas where tiles are the final surface, JS strips a full step out of the construction schedule. Per square meter, material cost runs 40–60% below [single-component polyurethane coatings](/products/polyurethane-waterproof-coating-factory/) — when you add the eliminated labor step, the installed cost gap widens further.
 
-This is the reason JS dominates residential bathroom waterproofing across Asia. Not because it's the most advanced coating on the market, but because it's the one that lets you screed and tile directly on top — eliminating the bonding primer that every other polymer coating requires. For bathrooms, kitchens, and wet areas where tiles are the final surface, JS strips a full step out of the construction sequence. That's the value proposition: not raw material cost, but total installed cost including labor.
+The Three Types — I, II, and III — are not quality grades. They're application profiles. See the FAQ section below for a detailed selection guide covering elongation, adhesion, and substrate compatibility for each Type.
 
-The three Type classifications — I, II, and III — are not quality grades. They're application profiles. Type I stretches. Type II balances. Type III holds. Choosing the wrong one for your substrate is the most common specification error on JS projects. The table below covers the essentials.
-
-<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
-<table style="width:100%; border-collapse: collapse; margin: 20px 0; font-size: 13px; min-width:580px;">
-  <thead>
-    <tr style="background: var(--color-background-tertiary, #334155);">
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);"></th>
-      <th style="padding: 10px 12px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Type I</th>
-      <th style="padding: 10px 12px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Type II</th>
-      <th style="padding: 10px 12px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Type III</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Elongation</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-4-ink, #C68E31); font-weight: 500;">≥200%</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-3-ink, #6F8854);">≥80%</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-secondary, #475569);">≥30%</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0); background: var(--color-background-secondary, #f8fafc);">
-      <td style="padding: 10px 12px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Tensile</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-2-ink, #C56443); font-weight: 500;">≥1.2 MPa</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-secondary, #475569);">≥1.8 MPa</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-secondary, #475569);">≥1.8 MPa</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Adhesion</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-1-ink, #3D6F94); font-weight: 500;">≥0.5 MPa</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-1-ink, #3D6F94);">≥0.7 MPa</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-1-ink, #3D6F94);">≥1.0 MPa</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0); background: var(--color-background-secondary, #f8fafc);">
-      <td style="padding: 10px 12px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Ratio (Liquid:Powder)</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-secondary, #475569);">~1:1.2</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-secondary, #475569);" colspan="2">~1:1.5</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Substrate</td>
-      <td style="padding: 10px 12px; font-size: 12px; color: var(--color-text-secondary, #475569);">Moves — roofs, balconies, heated floors</td>
-      <td style="padding: 10px 12px; font-size: 12px; color: var(--color-text-secondary, #475569);">Moves slightly — walls, pools, basements</td>
-      <td style="padding: 10px 12px; font-size: 12px; color: var(--color-text-secondary, #475569);">Rigid — stable underground structures</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px 12px; font-weight: 700; color: var(--color-text-primary, #0f172a);">Best For</td>
-      <td style="padding: 10px 12px; font-size: 12px; color: var(--color-text-secondary, #475569);">Bathrooms, protected roofs, cold/dry climates</td>
-      <td style="padding: 10px 12px; font-size: 12px; color: var(--color-text-secondary, #475569);">Basement walls, swimming pools, tunnels, long-term immersion</td>
-      <td style="padding: 10px 12px; font-size: 12px; color: var(--color-text-secondary, #475569);">Foundation slabs, stable retaining walls</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-Tianyuan manufacturers JS coating directly — we're not a trading company putting our label on someone else's production. The polymer-to-cement ratio, the set time, and the viscosity are all adjustable to your market's climate and application norms. If you're not sure which Type your project needs, send us the substrate conditions and whether the area will be submerged. We'll tell you the right answer.
-
-GB/T 23445-2009 is the baseline national standard. The updated GB/T 23445-2025 (effective July 2026) adds long-term water resistance, accelerated aging, and environmental compliance testing. Our production is already aligned with the new standard. Request the current TDS with your inquiry.
+Tianyuan manufactures JS coating direct from the production line. Polymer-to-cement ratio, set time, and viscosity are adjustable to your market's climate and application norms. GB/T 23445-2009 is the baseline national standard. The updated GB/T 23445-2025 (effective July 2026) adds long-term water resistance, accelerated aging, and VOC limits — our production is already aligned. Request the current TDS with your inquiry.
