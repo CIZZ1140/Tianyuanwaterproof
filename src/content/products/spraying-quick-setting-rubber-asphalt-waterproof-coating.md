@@ -1,15 +1,15 @@
 ---
-title: "Spray Quick-Setting Rubber Asphalt Coating Manufacturer | Instant Gel Liquid Rubber | Wholesale"
+title: "Spray Quick-Setting Rubber Asphalt Coating Manufacturer | Instant Gel | Wholesale"
 displayName: "Quick-Setting Rubber Coating"
 category: "waterproof-coatings"
 featured: true
 order: 45
-meta_description: "Factory-direct spray-applied quick-setting rubber asphalt waterproof coating. Instant gel in seconds, ≥1000% elongation, 120°C heat resistance. Two-component plural spray system, 1000 m²/day. Damp-base OK. OEM & free sample. Get a quote!"
+meta_description: "JC/T 2428 certified spray quick-setting rubber asphalt coating. Instant gel ≤5s, ≥1000% elongation, 120°C heat resistance. Core-shell emulsion, plural-component spray, 1000 m²/day. OEM. Factory quote."
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt-waterproof-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt-waterproof-coating.webp"
 
-hero_description: "TY-SHIELD™ spray-applied quick-setting rubber asphalt waterproof coating — a two-component system engineered for plural-component spray equipment, where the A-component rubber-asphalt emulsion and B-component coagulant meet for the first time in the air, millimeters from the substrate. Gelation occurs in seconds — before the spray gun moves to the next pass. The result is an instant, seamless, fully-bonded rubber waterproof membrane with ≥1000% elongation and 120°C heat resistance, applied at a single-pass thickness of 2–3mm. The core-shell emulsion technology keeps the rubber and asphalt stable in the drum, then releases them simultaneously at the nozzle. This is not a coating you brush on. It is a system you spray on — the pump, the twin hoses, and the mixing nozzle are as essential as the liquid in the drums. Compliant with JC/T 2428-2017 with spray-specific performance parameters. Factory-direct supply with OEM drum labeling and custom formulations."
+hero_description: "TY-SHIELD™ spray-applied quick-setting rubber asphalt waterproof coating — a two-component plural-spray system where A-component (core-shell rubber-asphalt emulsion) and B-component (metal salt coagulant) meet only at the nozzle tip. Gelation is physical, not chemical: the coagulant instantly breaks the emulsion, collapsing rubber particles and asphalt into a continuous film in ≤5 seconds. Single-pass application at 2–3mm with ≥1000% elongation and 120°C heat resistance — one formulation delivering both extremes simultaneously. No pot life limit, no stoichiometric dependency, and damp-substrate compatible. Covers ≥1000 m² per day with two operators and a plural-component spray pump. Compliant with JC/T 2428-2017. Available in 25kg and 50kg drum sets; coagulant ratio and gelation speed tunable to local climate and equipment."
 
 hero_tags:
   - "Two-Component Spray"
@@ -232,4 +232,4 @@ This changes the economics of large-area waterproofing at a fundamental level. A
 
 The chemistry also handles conditions that trip up other systems. The physical gelation means there's no stoichiometric dependency — unlike chemical-cure coatings where an off-ratio mix means incomplete cure, this system tolerates slight ratio variance because it's not waiting for a chemical reaction to complete. Damp concrete? Fine — the water in the emulsion and the moisture in the substrate are part of the same evaporation process. Cold weather? The gelation still happens at the nozzle tip — the only variable is how long the residual water takes to evaporate afterward.
 
-The coating complies with JC/T 2428-2017 with spray-specific performance parameters. Weifang Tianyuan manufactures the A and B components directly. The coagulant ratio, the gelation speed, and the drum labeling are all adjustable to your local spray equipment and climate conditions. Send us your pump specifications and project parameters — we'll send you a matched formulation and a quote.
+The coating complies with JC/T 2428-2017 with spray-specific performance parameters. Compared to the [non-curing rubber asphalt coating](/products/non-curing-rubber-asphalt-waterproof-coating/) — which stays permanently soft as a composite bonding layer — this product gels in seconds into a standalone waterproof membrane. Weifang Tianyuan manufactures the A and B components directly. The coagulant ratio, the gelation speed, and the drum labeling are all adjustable to your local spray equipment and climate conditions. Send us your pump specifications and project parameters — we'll send you a matched formulation and a quote.
