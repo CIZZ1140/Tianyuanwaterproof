@@ -237,7 +237,7 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
 
               <!-- Searchable Phone Selector (復刻同行的專業組件) -->
               <div class="relative">
-                <label class={labelClass} for="phone">WhatsApp / Phone</label>
+                <label class={labelClass} for="phone">WhatsApp / Phone *</label>
                 <div class="flex items-stretch rounded-lg border border-[#E8E2D8] bg-white overflow-visible transition focus-within:border-[#A87835]">
                   <!-- Country Code Trigger -->
                   <div class="relative" id="country-selector">
@@ -263,7 +263,7 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
                       </div>
                     </div>
                   </div>
-                  <input id="phone" name="Phone" type="text" placeholder="Please enter your mobile phone" class="w-full bg-transparent px-4 py-3 text-sm text-[#4A453E] outline-none" />
+                  <input id="phone" name="Phone" type="text" required placeholder="Please enter your mobile phone" class="w-full bg-transparent px-4 py-3 text-sm text-[#4A453E] outline-none" />
                   <input type="hidden" name="Full Phone" id="full-phone" />
                   <input type="hidden" name="Selected Code" id="selected-code" value="" />
                 </div>
@@ -381,11 +381,12 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
       });
     });
 
-    // Form validation — require country code
+    // Form validation — require country code + phone number
     const form = selector?.closest('form');
     const phoneContainer = selector?.closest('.flex');
+    const phoneInput = document.getElementById('phone') as HTMLInputElement;
     form?.addEventListener('submit', (e) => {
-      if (!selectedCodeInput?.value) {
+      if (!selectedCodeInput?.value || !phoneInput?.value.trim()) {
         e.preventDefault();
         document.getElementById('code-hint')?.classList.remove('hidden');
         phoneContainer?.classList.add('!border-red-400');
