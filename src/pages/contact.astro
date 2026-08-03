@@ -335,15 +335,7 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
                   </span>
                   <span class="min-w-0">
                     <span class="block text-xs font-bold tracking-wider text-[#6F6255]">{card.label}</span>
-                    <span class="mt-1 block break-words text-sm font-black text-[#241F1A] group-hover:text-[#A87835] transition-colors">
-                      {card.icon === 'whatsapp' ? (
-                        <span class="whatsapp-protected cursor-pointer" data-full={card.value}>
-                          {card.value.substring(0, 7)}... <span class="text-[10px] bg-[#A87835] text-white px-1.5 py-0.5 rounded ml-1">Show</span>
-                        </span>
-                      ) : (
-                        card.value
-                      )}
-                    </span>
+                    <span class="mt-1 block break-words text-sm font-black text-[#241F1A] group-hover:text-[#A87835] transition-colors">{card.value}</span>
                   </span>
                 </a>
               ))}
@@ -422,19 +414,6 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
         phoneContainer?.classList.add('!border-red-400');
         selector?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
-    });
-
-    // WhatsApp Protection Logic
-    document.querySelectorAll('.whatsapp-protected').forEach(el => {
-      el.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        const full = el.getAttribute('data-full');
-        if (full) {
-          el.textContent = full;
-          el.classList.remove('cursor-pointer');
-        }
-      });
     });
   </script>
 </Layout>

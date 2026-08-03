@@ -250,9 +250,7 @@ const productJsonLd = {
 
             <div class="mt-10 flex flex-col items-center gap-3 sm:flex-row">
               <a href="/contact/" class="inline-flex w-full items-center justify-center rounded-xl bg-blue-700 px-10 py-3.5 text-sm font-black text-white shadow-xl shadow-blue-700/20 transition hover:bg-blue-800 sm:w-auto">Get Factory Quote</a>
-              <button class="whatsapp-protected-btn inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-emerald-100 bg-emerald-50 px-8 py-3.5 text-sm font-black text-emerald-700 transition hover:bg-emerald-100 sm:w-auto" data-full="https://wa.me/8615263640998">
-                <MessageCircle class="h-4 w-4" /> <span class="btn-text">WhatsApp Us</span>
-              </button>
+              <a href="https://wa.me/8615263640998" target="_blank" rel="noopener" class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-emerald-100 bg-emerald-50 px-8 py-3.5 text-sm font-black text-emerald-700 transition hover:bg-emerald-100 sm:w-auto"><MessageCircle class="h-4 w-4" /> WhatsApp</a>
               <a href="/contact/" class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-blue-100 bg-blue-50 px-8 py-3.5 text-sm font-black text-blue-800 transition hover:bg-blue-100 sm:w-auto"><FileText class="h-4 w-4" /> Request TDS</a>
             </div>
             
@@ -263,18 +261,6 @@ const productJsonLd = {
               <span class="flex items-center gap-2"><ShieldCheck class="h-3.5 w-3.5" /> OEM Labeling</span>
               <span class="flex items-center gap-2"><FileText class="h-3.5 w-3.5" /> Technical Support</span>
     </div>
-    <script>
-      // WhatsApp Protection Logic
-      document.querySelectorAll('.whatsapp-protected-btn').forEach(el => {
-        el.addEventListener('click', (e) => {
-          e.preventDefault();
-          const full = el.getAttribute('data-full');
-          if (full) {
-            window.open(full, '_blank');
-          }
-        });
-      });
-    </script>
   </main>
 </Layout>
 nt; }
