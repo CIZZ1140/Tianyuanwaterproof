@@ -464,21 +464,32 @@ const aboutPageSchema = {
                 Our technical sales team is ready to provide suitable materials, technical data, and factory-direct quotations based on your specific project requirements.
               </p>
               <div class="mt-12 flex flex-col justify-center gap-5 sm:flex-row">
-                 <a href="/contact/" class="inline-flex items-center justify-center rounded-xl bg-[#F58A1F] px-10 py-5 text-base font-black text-white transition hover:bg-[#E77911] shadow-xl shadow-orange-950/40 group">
-                    Get a Factory Quote <ArrowRight class="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                 </a>
-                 <a href="https://wa.me/8615263640998" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/5 px-10 py-5 text-base font-black text-white backdrop-blur-md transition hover:bg-white/10">
-                    Quick WhatsApp <span class="ml-2 opacity-60">→</span>
-                 </a>
-              </div>
-              <div class="mt-10 flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-xs font-bold text-slate-400 uppercase tracking-widest">
-                 <span class="flex items-center gap-2"><CheckCircle2 size={14} class="text-[#F58A1F]" /> 24h Response</span>
-                 <span class="flex items-center gap-2"><CheckCircle2 size={14} class="text-[#F58A1F]" /> TDS & MSDS Provided</span>
-                 <span class="flex items-center gap-2"><CheckCircle2 size={14} class="text-[#F58A1F]" /> OEM Available</span>
-              </div>
-           </div>
-        </div>
+                  <a href="/contact/" class="inline-flex items-center justify-center rounded-xl bg-[#F58A1F] px-10 py-5 text-base font-black text-white transition hover:bg-[#E77911] shadow-xl shadow-orange-950/40 group">
+                     Get a Factory Quote <ArrowRight class="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </a>
+                  <button class="whatsapp-protected-btn inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/5 px-10 py-5 text-base font-black text-white backdrop-blur-md transition hover:bg-white/10" data-full="https://wa.me/8615263640998">
+                     Quick WhatsApp <span class="ml-2 opacity-60">→</span>
+                  </button>
+               </div>
+               <div class="mt-10 flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-xs font-bold text-slate-400 uppercase tracking-widest">
+                  <span class="flex items-center gap-2"><CheckCircle2 size={14} class="text-[#F58A1F]" /> 24h Response</span>
+                  <span class="flex items-center gap-2"><CheckCircle2 size={14} class="text-[#F58A1F]" /> TDS & MSDS Provided</span>
+                  <span class="flex items-center gap-2"><CheckCircle2 size={14} class="text-[#F58A1F]" /> OEM Available</span>
+               </div>
+            </div>
+         </div>
       </div>
     </section>
   </main>
+  <script>
+    document.querySelectorAll('.whatsapp-protected-btn').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        const full = el.getAttribute('data-full');
+        if (full) {
+          window.open(full, '_blank');
+        }
+      });
+    });
+  </script>
 </Layout>

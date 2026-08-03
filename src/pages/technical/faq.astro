@@ -166,8 +166,19 @@ const jsonLd = {
       <p class="text-slate-500 mb-12 max-w-2xl mx-auto text-lg leading-relaxed font-medium">Get custom quotations, technical datasheets, and professional advice for your specific waterproofing project.</p>
       <div class="flex flex-wrap justify-center gap-6">
         <a href="/contact/" class="bg-[#0B1E3B] text-white font-black text-sm uppercase tracking-[0.2em] px-12 py-5 rounded-2xl hover:bg-blue-600 transition-all shadow-2xl shadow-navy/20">Send Inquiry</a>
-        <a href="https://wa.me/8615263640998" class="bg-[#25D366] text-white font-black text-sm uppercase tracking-[0.2em] px-12 py-5 rounded-2xl hover:scale-105 transition-all shadow-2xl shadow-green-500/20">WhatsApp Us</a>
+        <button class="whatsapp-protected-btn bg-[#25D366] text-white font-black text-sm uppercase tracking-[0.2em] px-12 py-5 rounded-2xl hover:scale-105 transition-all shadow-2xl shadow-green-500/20" data-full="https://wa.me/8615263640998">WhatsApp Us</button>
       </div>
     </div>
   </section>
+  <script>
+    document.querySelectorAll('.whatsapp-protected-btn').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        const full = el.getAttribute('data-full');
+        if (full) {
+          window.open(full, '_blank');
+        }
+      });
+    });
+  </script>
 </Layout>
