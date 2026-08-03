@@ -35,7 +35,9 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
               </div>
               <div>
                 <p class="text-[10px] font-bold uppercase tracking-wider text-white/40 transition-colors group-hover:text-white/60">WhatsApp</p>
-                <p class="text-sm font-bold text-white transition-colors group-hover:text-brand">{site.whatsapp}</p>
+                <p class="text-sm font-bold text-white transition-colors group-hover:text-brand whatsapp-protected-dark cursor-pointer" data-full={site.whatsapp}>
+                  {site.whatsapp.substring(0, 7)}... <span class="text-[9px] bg-white/20 px-1 py-0.5 rounded ml-1">Show</span>
+                </p>
               </div>
             </a>
 
@@ -56,7 +58,13 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
         </div>
 
         <div class="bg-white rounded-[2rem] p-8 shadow-2xl">
+          <!-- Cloudflare Turnstile Script -->
+          <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+          
           <form action="https://formspree.io/f/mzdqdpwd" method="POST" class="space-y-4">
+            <!-- Honeypot -->
+            <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off" />
+            
             <div class="grid gap-4 sm:grid-cols-2">
               <div>
                 <label for="full-name" class="block text-[11px] font-bold text-slate-600 uppercase tracking-widest mb-2 ml-1">Full Name</label>
@@ -88,10 +96,27 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
               <label for="message-text" class="block text-[11px] font-bold text-slate-600 uppercase tracking-widest mb-2 ml-1">Message</label>
               <textarea id="message-text" name="Message" rows="4" placeholder="How can we help you? (Quantity, Specifications...)" required class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all resize-none"></textarea>
             </div>
+
+            <!-- Cloudflare Turnstile -->
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEFV-aa3nhpRSCsJ"></div>
+
             <button type="submit" class="w-full rounded-xl bg-[#C05800] py-4 text-[15px] font-bold text-white shadow-xl shadow-[#C05800]/20 transition-all hover:bg-[#9E4700] hover:-translate-y-1 active:translate-y-0">Submit Inquiry →</button>
           </form>
         </div>
       </div>
     </div>
   </div>
+  <script>
+    document.querySelectorAll('.whatsapp-protected-dark').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const full = el.getAttribute('data-full');
+        if (full) {
+          el.textContent = full;
+          el.classList.remove('cursor-pointer');
+        }
+      });
+    });
+  </script>
 </section>
