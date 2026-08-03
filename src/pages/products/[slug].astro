@@ -260,10 +260,405 @@ const productJsonLd = {
               <span class="flex items-center gap-2"><Factory class="h-3.5 w-3.5" /> Direct Supply</span>
               <span class="flex items-center gap-2"><ShieldCheck class="h-3.5 w-3.5" /> OEM Labeling</span>
               <span class="flex items-center gap-2"><FileText class="h-3.5 w-3.5" /> Technical Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Full Width Modular Blocks -->
+    <div class="mx-auto w-full max-w-[1680px] space-y-4 px-4 sm:px-6 lg:px-8">
+      
+       <!-- MOVED UP: Product Overview Content -->
+      {hasBody && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-12 shadow-sm">
+          
+            <>
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-10 uppercase tracking-tight">Product Overview</h2>
+              <div class="prose prose-slate max-w-none 
+                prose-headings:font-black prose-headings:text-slate-950
+                prose-p:text-slate-600 prose-p:leading-8
+                prose-img:rounded-3xl prose-img:shadow-xl
+                prose-table:rounded-xl prose-table:overflow-hidden prose-table:border prose-table:border-slate-100
+                prose-th:bg-slate-50 prose-th:font-black
+                prose-hr:my-12 prose-hr:border-slate-100">
+                <Content />
+              </div>
+            </>
+        </section>
+      )}
+
+      {configurations.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Available Configurations</h2>
+          <p class="mb-6 max-w-3xl text-sm font-medium leading-7 text-slate-600">Select the reinforcement, thickness and surface finish to match your project requirements. Contact us with your specification for a tailored quotation.</p>
+          <div class="overflow-x-auto rounded-2xl border border-slate-200">
+            <table class="w-full min-w-[700px] border-collapse text-left text-sm">
+              <thead class="bg-slate-50 text-slate-950">
+                <tr class="border-b border-slate-200">
+                  <th class="px-4 py-4 font-black">Configuration</th>
+                  <th class="px-4 py-4 font-black">Reinforcement</th>
+                  <th class="px-4 py-4 font-black">Thickness</th>
+                  <th class="px-4 py-4 font-black">Surface</th>
+                  <th class="px-4 py-4 font-black">Recommended Use</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200">
+                {configurations.map((config: any) => (
+                  <tr class="transition hover:bg-blue-50/40">
+                    <td class="px-4 py-4 font-bold text-slate-800">{config.code || "—"}</td>
+                    <td class="px-4 py-4 font-medium text-slate-600">{config.reinforcement || "—"}</td>
+                    <td class="px-4 py-4 font-medium text-slate-600">{Array.isArray(config.thickness) ? config.thickness.join(" / ") : (config.thickness || "—")}</td>
+                    <td class="px-4 py-4 font-medium text-slate-600">{config.surface || "—"}</td>
+                    <td class="px-4 py-4 text-sm leading-6 text-slate-600">{config.use || "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4 text-sm font-medium text-slate-400">All thicknesses and surface finishes shown are available in standard production. Custom roll dimensions, packaging and private-label printing are available subject to minimum order quantity. Final configuration should be selected according to climate, substrate, waterproofing system design, exposure condition and local project specifications.</p>
+        </section>
+      )}
+
+      {applications.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Applications</h2>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+            {applications.slice(0, 5).map((item, index) => {
+              const Icon = getCardIcon(item, applicationIcons, index);
+              return (
+                <article class="rounded-2xl border border-slate-100 bg-slate-50/50 p-6">
+                  <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-white text-blue-700 shadow-sm border border-blue-50"><Icon class="h-6 w-6" /></div>
+                  <h3 class="text-sm font-black text-slate-950 mb-2">{item.title}</h3>
+                  <p class="text-sm font-medium leading-relaxed text-slate-600">{item.text}</p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {features.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Key Benefits</h2>
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {features.slice(0, 4).map((item, index) => {
+              const Icon = getCardIcon(item, benefitIcons, index);
+              return (
+                <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm border-l-4 border-l-blue-600">
+                  <Icon class="mb-5 h-8 w-8 text-blue-700" />
+                  <h3 class="text-base font-black text-slate-950 mb-3">{item.title}</h3>
+                  <p class="text-sm font-medium leading-7 text-slate-600">{item.text}</p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {technicalData.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4">Technical Specifications</h2>
+          {data.technical_scope && <p class="mb-6 text-sm font-medium text-slate-500">{data.technical_scope}</p>}
+          <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+            <table class="w-full text-left text-sm border-collapse">
+              <thead class="bg-slate-50">
+                <tr class="border-b border-slate-200">
+                  <th class="px-6 py-4 font-black">Test Item</th>
+                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black">Unit</th>}
+                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black">Test Method</th>}
+                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black">Requirement</th>}
+                  <th class="px-6 py-4 font-black">Result / Notes</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                {technicalData.map(row => (
+                  <tr class="hover:bg-blue-50/20 transition-colors">
+                    <td class="px-6 py-4 font-bold text-slate-800">{row.label}</td>
+                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.unit || "—"}</td>}
+                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.standard || "—"}</td>}
+                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.requirement || "—"}</td>}
+                    <td class="px-6 py-4 font-bold text-slate-900">{row.value || "Pass"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {data.technical_disclaimer && <p class="mt-4 text-sm font-medium text-slate-400">{data.technical_disclaimer}</p>}
+        </section>
+      )}
+
+      {technicalDataHybrid.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4">Technical Specifications — Hybrid Polyurea</h2>
+          <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+            <table class="w-full text-left text-sm border-collapse">
+              <thead class="bg-slate-50">
+                <tr>
+                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Test Item</th>
+                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Unit</th>}
+                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Test Method</th>}
+                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Requirement</th>}
+                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Result / Notes</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                {technicalDataHybrid.map(row => (
+                  <tr class="hover:bg-blue-50/20 transition-colors">
+                    <td class="px-6 py-4 font-bold text-slate-800">{row.label}</td>
+                    <td class="px-6 py-4 text-slate-600 font-medium">{row.unit || "—"}</td>
+                    <td class="px-6 py-4 text-slate-600 font-medium">{row.standard || "—"}</td>
+                    <td class="px-6 py-4 text-slate-600 font-medium">{row.requirement || "—"}</td>
+                    <td class="px-6 py-4 font-bold text-slate-900">{row.value || "Pass"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
+      {data.standards_mapping && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4 border-b border-slate-100 pb-6">
+            <div>
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-1 uppercase tracking-tight">Global Standard Alignment</h2>
+              <p class="text-sm font-medium text-slate-500">Cross-reference for engineering specifications & global procurement</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span class="text-[10px] font-black uppercase tracking-widest text-emerald-600">Compliance Verified</span>
+            </div>
+          </div>
+          
+          <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-slate-50">
+            <table class="w-full text-left text-sm border-collapse">
+              <thead>
+                <tr class="bg-slate-100/50">
+                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Property</th>
+                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">China (GB)</th>
+                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">USA (ASTM)</th>
+                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Europe (EN)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200 bg-white">
+                {data.standards_mapping.map((item: any) => (
+                  <tr class="hover:bg-blue-50/20 transition-colors">
+                    <td class="px-6 py-4 font-bold text-slate-800">{item.property}</td>
+                    <td class="px-6 py-4 font-medium text-slate-600">
+                      {item.gb === 'FULL MATCH' || item.gb === 'GB/T 18242' ? (
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-emerald-100 text-emerald-700 border border-emerald-200 uppercase tracking-tighter">{item.gb}</span>
+                      ) : item.gb}
+                    </td>
+                    <td class="px-6 py-4 font-medium text-slate-600">
+                      {item.astm === 'Equivalent' ? (
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-blue-100 text-blue-700 border border-blue-200 uppercase tracking-tighter">{item.astm}</span>
+                      ) : item.astm}
+                    </td>
+                    <td class="px-6 py-4 font-medium text-slate-600">
+                      {item.en === 'Equivalent' ? (
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-blue-100 text-blue-700 border border-blue-200 uppercase tracking-tighter">{item.en}</span>
+                      ) : item.en}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-6 text-[11px] font-medium text-slate-400 italic bg-slate-50 p-4 rounded-xl border border-slate-100">
+            * Technical Note: TY-SHIELD™ SBS modified bitumen membranes are engineered to meet or exceed core mechanical requirements of ASTM D6164 and EN 13707. Independent laboratory test reports (SGS/Intertek) available for project specification review.
+          </p>
+        </section>
+      )}
+
+      {applicationGuide.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8">Installation Guide</h2>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {applicationGuide.slice(0, 4).map((item, index) => {
+              const Icon = installationIcons[index % installationIcons.length];
+              return (
+                <article class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                  <Icon class="mb-5 h-8 w-8 text-blue-700" />
+                  <h3 class="text-sm font-black uppercase text-slate-950 mb-3">{item.title}</h3>
+                  <p class="text-sm font-medium leading-relaxed text-slate-600">{item.text}</p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {(packaging.length > 0 || loadingData.length > 0) && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Packaging & OEM</h2>
+          <div class={packaging.length > 0 ? "grid gap-8 lg:grid-cols-[0.8fr_1.2fr]" : "block"}>
+            {packaging.length > 0 && (
+              <div class="grid gap-4 sm:grid-cols-2">
+                {packaging.slice(0, 4).map((item, index) => {
+                  const Icon = packagingIcons[index % packagingIcons.length];
+                  return (
+                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 transition hover:bg-white hover:shadow-md">
+                      <Icon class="mb-4 h-6 w-6 text-blue-700" />
+                      <h3 class="text-[10px] font-black uppercase text-slate-950 mb-2">{item.title}</h3>
+                      <p class="text-sm font-medium leading-relaxed text-slate-600">{item.text}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+            {loadingData.length > 0 && (
+              <div class="overflow-hidden rounded-2xl border border-blue-200 bg-white shadow-sm">
+                <div class="bg-blue-700 px-6 py-4 text-white flex items-center gap-3">
+                  <Truck class="h-5 w-5" />
+                  <span class="text-xs font-black uppercase tracking-widest">Export Loading Reference</span>
+                </div>
+                <div class="divide-y divide-slate-100">
+                  {loadingData.map(row => (
+                    <div class="grid grid-cols-[0.4fr_0.6fr] px-6 py-4 text-sm transition hover:bg-blue-50/30">
+                      <div class="font-black text-blue-800">{row.label}</div>
+                      <div class="font-medium text-slate-600">{row.value}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
+      {supplyInfo.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Ordering Information</h2>
+          <div class="overflow-hidden rounded-2xl border border-blue-200 bg-white shadow-sm">
+            <div class="bg-blue-700 px-6 py-4 text-white flex items-center gap-3">
+              <Truck class="h-5 w-5" />
+              <span class="text-xs font-black uppercase tracking-widest">Export Supply Reference</span>
+            </div>
+            <div class="divide-y divide-slate-100">
+              {supplyInfo.map(row => (
+                <div class="grid grid-cols-[0.3fr_0.7fr] px-6 py-4 text-sm transition hover:bg-blue-50/30">
+                  <div class="font-black text-blue-800 pl-4">{row.title}</div>
+                  <div class="font-medium text-slate-600">{row.text}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {projectReferences.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Project References</h2>
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {projectReferences.map((ref: any) => (
+              <div class="group rounded-2xl border border-slate-200 overflow-hidden hover:shadow-md transition">
+                <div class="aspect-[3/2] bg-slate-100">
+                  {ref.image ? (
+                    <img src={ref.image} alt={ref.title} class="h-full w-full object-cover" loading="lazy" />
+                  ) : (
+                    <div class="h-full w-full flex items-center justify-center text-slate-400 text-sm font-medium">Project Photo</div>
+                  )}
+                </div>
+                <div class="p-5">
+                  <h3 class="font-black text-slate-950 mb-3 leading-snug">{ref.title}</h3>
+                  <div class="space-y-1.5 text-sm">
+                    <div class="flex justify-between"><span class="text-slate-400 font-bold">Configuration</span><span class="text-slate-700 font-medium">{ref.config || "—"}</span></div>
+                    <div class="flex justify-between"><span class="text-slate-400 font-bold">Quantity</span><span class="text-slate-700 font-medium">{ref.quantity || "—"}</span></div>
+                    <div class="flex justify-between"><span class="text-slate-400 font-bold">Year</span><span class="text-slate-700 font-medium">{ref.year || "—"}</span></div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <div class="grid gap-4 lg:grid-cols-2">
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 mb-8 uppercase tracking-tight">Technical Downloads</h2>
+          <div class="space-y-3">
+            {downloads.map((doc: any) => (
+              <div class="flex items-center justify-between p-5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-md transition-all">
+                <div class="flex items-center gap-4">
+                  <div class="h-10 w-10 flex items-center justify-center rounded-xl bg-red-50 text-red-600 shadow-inner"><FileText size={20} /></div>
+                  <div>
+                    <h3 class="text-sm font-black text-slate-900 leading-tight">{doc.title}</h3>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Ready for PDF Request</p>
+                  </div>
+                </div>
+                <a 
+                  href={doc.href && doc.href !== "#" ? doc.href : "/contact/"} 
+                  target={doc.href && doc.href !== "#" ? "_blank" : "_self"}
+                  class="px-5 py-2 rounded-xl bg-white border border-slate-200 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:border-blue-300 hover:text-blue-700 transition shadow-sm"
+                >
+                  {doc.href && doc.href !== "#" ? "Download" : "Request"}
+                </a>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 mb-8 uppercase tracking-tight">RELATED PRODUCT</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {relatedProducts.map(rp => (
+              <a href={`/products/${rp.slug}/`} class="group flex flex-col gap-3">
+                <div class="aspect-[4/3] overflow-hidden rounded-2xl bg-slate-100 border border-slate-200">
+                  <img src={normalizeAsset(rp.data.main_image || rp.data.image)} class="h-full w-full object-contain transition duration-500 group-hover:scale-105" alt={rp.data.title} />
+                </div>
+                <h4 class="text-xs font-black text-slate-900 line-clamp-1 group-hover:text-blue-700 transition-colors">{rp.data.displayName || rp.data.title}</h4>
+              </a>
+            ))}
+          </div>
+        </section>
+      </div>
     </div>
-  </main>
-</Layout>
-nt; }
+
+    {faqs.length > 0 && (
+      <section class="mx-auto w-full max-w-[1680px] px-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Frequently Asked Questions</h2>
+          <div class="space-y-4">
+            {faqs.map((f: any, i: number) => (
+              <details class="group rounded-2xl border border-slate-200 bg-slate-50/50 overflow-hidden transition hover:border-blue-200">
+                <summary class="flex items-center justify-between px-6 py-5 cursor-pointer list-none font-black text-slate-900 text-sm leading-snug group-open:text-blue-700 transition-colors">
+                  <span class="pr-8">{f.question}</span>
+                  <span class="flex-shrink-0 text-slate-400 group-open:rotate-180 transition-transform duration-200">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </summary>
+                <div class="px-6 pb-5 text-sm text-slate-600 leading-relaxed">{f.answer}</div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <CTA />
+
+    <script is:inline>
+      const mainImg = document.getElementById('main-product-image');
+      const thumbs = document.querySelectorAll('.gallery-thumb');
+      if (mainImg && thumbs.length > 0) {
+        thumbs[0].classList.add('active');
+        thumbs.forEach(thumb => {
+          const handleSwitch = () => {
+            const newSrc = thumb.getAttribute('data-full');
+            if (newSrc && mainImg.src !== newSrc) {
+              thumbs.forEach(t => t.classList.remove('active'));
+              thumb.classList.add('active');
+              mainImg.style.opacity = '0';
+              setTimeout(() => { mainImg.src = newSrc; mainImg.style.opacity = '1'; }, 200);
+            }
+          };
+          thumb.addEventListener('click', handleSwitch);
+          thumb.addEventListener('mouseenter', handleSwitch);
+        });
+      }
+    </script>
+    <style is:global>
+      .gallery-thumb.active { border-color: #3b82f6 !important; background-color: #eff6ff !important; }
     </style>
   </main>
 </Layout>
