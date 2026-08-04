@@ -92,11 +92,26 @@ const articleJsonLd = validArticle
         : undefined
     }
   : undefined;
+
+const faqJsonLd = validArticle?.data.faqs?.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: validArticle.data.faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: { '@type': 'Answer', text: faq.answer }
+      }))
+    }
+  : undefined;
 ---
 
 <Layout title={pageTitle} description={pageDescription} preloadImage={validArticle?.data.coverImage} ogImage={validArticle?.data.coverImage}>
   {articleJsonLd && (
     <script type="application/ld+json" is:inline set:html={JSON.stringify(articleJsonLd)} />
+  )}
+  {faqJsonLd && (
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqJsonLd)} />
   )}
 
   {
