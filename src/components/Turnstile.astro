@@ -1,0 +1,65 @@
+---
+const sitekey = "0x4AAAAAAEFV-aa3nhpRSCsJ";
+---
+
+<!-- Cloudflare Turnstile widget (api.js injected lazily when the widget nears the viewport) -->
+<div class="cf-turnstile" data-sitekey={sitekey}></div>
+
+<script>
+  (function () {
+    let loaded = false;
+
+    function loadTurnstile() {
+      if (loaded) return;
+      loaded = true;
+      const script = document.createElement('script');
+      script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+      script.async = true;
+      document.head.appendChild(script);
+      // Cleanup listeners
+      ['scroll', 'mousemove', 'touchstart', 'keydown', 'pointerdown'].forEach((ev) => {
+        window.removeEventListener(ev, schedule);
+      });
+    }
+
+    function schedule() {
+      // Defer actual injection to idle time to avoid blocking the main thread
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadTurnstile, { timeout: 3000 });
+      } else {
+        setTimeout(loadTurnstile, 1500);
+      }
+    }
+
+    // Primary trigger: inject when the widget enters the viewport
+    const widget = document.querySelector('.cf-turnstile');
+    if (widget && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((e) => e.isIntersecting)) {
+            io.disconnect();
+            schedule();
+          }
+        },
+        { rootMargin: '300px 0px' }
+      );
+      io.observe(widget);
+    } else {
+      schedule();
+    }
+
+    // Fallback: first user interaction anywhere on the page
+    ['scroll', 'mousemove', 'touchstart', 'keydown', 'pointerdown'].forEach((ev) => {
+      window.addEventListener(ev, schedule, { passive: true });
+    });
+
+    // Safety net: ensure the widget loads eventually, even with no interaction
+    window.addEventListener('load', () => {
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadTurnstile, { timeout: 15000 });
+      } else {
+        setTimeout(loadTurnstile, 15000);
+      }
+    });
+  })();
+</script>

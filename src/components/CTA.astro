@@ -1,5 +1,6 @@
 ---
 import { site } from '../data/site';
+import Turnstile from './Turnstile.astro';
 const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?text=Hi%2C%20I'm%20interested%20in%20your%20waterproofing%20materials.";
 ---
 
@@ -56,9 +57,6 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
         </div>
 
         <div class="bg-white rounded-[2rem] p-8 shadow-2xl">
-          <!-- Cloudflare Turnstile Script -->
-          <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-          
           <form action="https://formspree.io/f/mzdqdpwd" method="POST" class="space-y-4">
             <!-- Honeypot -->
             <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off" />
@@ -95,8 +93,7 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
               <textarea id="message-text" name="Message" rows="4" placeholder="How can we help you? (Quantity, Specifications...)" required class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all resize-none"></textarea>
             </div>
 
-            <!-- Cloudflare Turnstile -->
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEFV-aa3nhpRSCsJ"></div>
+            <Turnstile />
 
             <button type="submit" class="w-full rounded-xl bg-[#C05800] py-4 text-[15px] font-bold text-white shadow-xl shadow-[#C05800]/20 transition-all hover:bg-[#9E4700] hover:-translate-y-1 active:translate-y-0">Submit Inquiry →</button>
           </form>

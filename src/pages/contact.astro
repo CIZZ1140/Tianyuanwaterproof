@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import { site } from '@/data/site';
 import { ChevronDown, Search, MessageCircle, Mail, MapPin, Store, ArrowRight, CheckCircle2 } from 'lucide-astro';
+import Turnstile from '@/components/Turnstile.astro';
 
 const buyerTypes = [
   'Importer',
@@ -182,9 +183,6 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
     }
   </style>
   <main class="min-h-screen bg-[#F9F7F2] py-16 sm:py-24 font-sans">
-    <!-- Cloudflare Turnstile Script -->
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-    
     <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
       <!-- Header -->
       <div class="mb-12 max-w-2xl">
@@ -303,8 +301,7 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
               <textarea id="message" name="Message" rows="6" required placeholder="Tell us your application, required specifications, quantity, destination port, or any technical questions." class={`${inputClass} resize-y`}></textarea>
             </div>
 
-            <!-- Cloudflare Turnstile -->
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEFV-aa3nhpRSCsJ"></div>
+            <Turnstile />
 
             <div class="flex flex-col gap-4 border-t border-[#D1C7B7]/70 pt-6 sm:flex-row sm:items-center sm:justify-between">
               <div class="flex items-center gap-2 text-[#6F6255]">
