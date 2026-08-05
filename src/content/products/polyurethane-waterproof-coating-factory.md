@@ -205,7 +205,7 @@ related_products:
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
   - title: "Non-Curing Rubber Asphalt Coating"
-    image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt.webp"
+    image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v2.webp"
     href: "/products/non-curing-rubber-asphalt-waterproof-coating/"
 
 faqs:

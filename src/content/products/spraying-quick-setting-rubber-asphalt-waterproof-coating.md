@@ -6,8 +6,8 @@ featured: true
 order: 45
 meta_description: "JC/T 2428 certified spray quick-setting rubber asphalt coating. Instant gel ≤5s, ≥1000% elongation, 120°C heat resistance. Core-shell emulsion, plural-component spray, 1000 m²/day. OEM. Factory quote."
 product_category: "Waterproof Coatings"
-image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt-waterproof-coating.webp"
-main_image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt-waterproof-coating.webp"
+image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt.webp"
+main_image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt.webp"
 
 hero_description: "TY-SHIELD™ spray-applied quick-setting rubber asphalt waterproof coating — a two-component plural-spray system where A-component (core-shell rubber-asphalt emulsion) and B-component (metal salt coagulant) meet only at the nozzle tip. Gelation is physical, not chemical: the coagulant instantly breaks the emulsion, collapsing rubber particles and asphalt into a continuous film in ≤5 seconds. Single-pass application at 2–3mm with ≥1000% elongation and 120°C heat resistance — one formulation delivering both extremes simultaneously. No pot life limit, no stoichiometric dependency, and damp-substrate compatible. Covers ≥1000 m² per day with two operators and a plural-component spray pump. Compliant with JC/T 2428-2017. Available in 25kg and 50kg drum sets; coagulant ratio and gelation speed tunable to local climate and equipment."
 
@@ -25,7 +25,7 @@ technical_scope: "Spray Quick-Setting Rubber Asphalt / Two-Component / 25kg Drum
 technical_disclaimer: "Values shown apply to the stated product configuration. Other packaging sizes, mix ratios, and formulations may have different performance values. Request the corresponding TDS and batch test report before specification or procurement."
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt-waterproof-coating.webp"
+  - image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt.webp"
     title: "Quick-Setting Spray Coating Applied"
     alt: "Spray-applied quick-setting rubber asphalt waterproof coating instant gel liquid rubber dual-component plural spray"
   - image: "/placeholder.webp"

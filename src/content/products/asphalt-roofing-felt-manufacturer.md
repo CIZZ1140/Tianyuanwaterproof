@@ -155,7 +155,7 @@ related_products:
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
     href: "/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/"
   - title: "APP Modified Bitumen Membrane"
-    image: "https://img.tyuanwaterproof.com/products/app-bitumen-membrane.webp"
+    image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     href: "/products/app-modified-bitumen-waterproofing-membrane-manufacturer/"
 
 faqs:

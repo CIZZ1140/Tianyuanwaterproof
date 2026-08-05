@@ -300,7 +300,7 @@ related_products:
     image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
     href: "/products/polymer-cement-js-waterproof-coating-factory/"
   - title: "Non-Curing Rubber Asphalt Coating"
-    image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt.webp"
+    image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v2.webp"
     href: "/products/non-curing-rubber-asphalt-waterproof-coating/"
 
 faqs:

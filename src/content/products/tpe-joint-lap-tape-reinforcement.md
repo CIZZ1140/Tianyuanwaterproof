@@ -152,7 +152,7 @@ related_products:
     image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"
     href: "/products/butyl-waterproof-sealing-tape-supplier/"
   - title: "JS Polymer Cement Coating"
-    image: "https://img.tyuanwaterproof.com/products/polymer-cement-js-waterproof-coating-factory.webp"
+    image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
     href: "/products/polymer-cement-js-waterproof-coating-factory/"
 
 faqs:
