@@ -73,14 +73,14 @@ const itemListJson = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Waterproofing Materials Catalog",
-  url: "https://www.tyuanwaterproof.com/products/",
+  url: "https://tyuanwaterproof.com/products/",
   numberOfItems: processedProducts.length,
   itemListOrder: "https://schema.org/ItemListOrderDescending",
   itemListElement: processedProducts.map((p, i) => ({
     "@type": "ListItem",
     position: i + 1,
     name: p.data.displayName || p.data.title,
-    url: "https://www.tyuanwaterproof.com" + p.href
+    url: "https://tyuanwaterproof.com" + p.href
   }))
 });
 ---
