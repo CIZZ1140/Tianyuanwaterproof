@@ -20,8 +20,9 @@ const {
 	ogImage = "https://img.tyuanwaterproof.com/og-default.webp"
 } = Astro.props;
 
-// Canonical URL logic: ensure it always uses www and trailing slash
-const canonicalURL = new URL(Astro.url.pathname, 'https://www.tyuanwaterproof.com').href;
+// Canonical URL logic: follow the configured site URL, always with trailing slash
+const canonicalPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : Astro.url.pathname + '/';
+const canonicalURL = new URL(canonicalPath, Astro.site).href;
 
 const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?text=Hi%2C%20I'm%20interested%20in%20your%20waterproofing%20materials.%20Could%20you%20please%20send%20me%20a%20catalog%20and%20price%20list%3F";
 ---
