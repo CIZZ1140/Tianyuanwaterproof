@@ -164,6 +164,10 @@ application_guide:
   - title: "Protection Layer"
     text: "After membrane installation is complete, construct the protection and isolation layer according to the waterproofing system design — typically cement mortar screed, protection boards, or drainage mats before backfilling or final surfacing."
 
+guide_links:
+  - title: "Troubleshooting: Why do bubbles appear in torch-applied SBS membrane?"
+    href: "/blog/bubbles-in-sbs-membrane-torch-application-guide/"
+
 packaging:
   - title: "Export Standard Packing"
     text: "Rolls are secured vertically on fumigated wooden pallets, wrapped in high-density polyethylene film with corner protectors and heavy-duty strapping for safe ocean freight transit."

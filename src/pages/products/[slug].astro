@@ -486,6 +486,22 @@ const productJsonLd = {
               );
             })}
           </div>
+          {data.guide_links?.length > 0 && (
+            <div class="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+              <h3 class="text-sm font-black uppercase text-slate-950 mb-3">Related Technical Guides</h3>
+              <div class="space-y-2">
+                {data.guide_links.slice(0, 4).map((link) => (
+                  <a
+                    href={link.href}
+                    class="flex items-center gap-2 text-sm font-semibold text-blue-800 transition hover:text-blue-600"
+                  >
+                    <FileText class="h-4 w-4 flex-none text-blue-700" />
+                    <span>{link.title}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
         </section>
       )}
 
