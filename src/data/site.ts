@@ -37,9 +37,9 @@ export const nav = [
     href: '/technical/',
     children: [
       { label: 'Technical Data', href: '/technical/' },
-      { label: 'Blog', href: '/blog/' },
       { label: 'Case Studies', href: '/projects/' },
       { label: 'Selection Guides', href: '/technical/installation-guide/' },
+      { label: 'Blog', href: '/blog/' },
       { label: 'FAQ', href: '/technical/faq/' }
     ]
   },
