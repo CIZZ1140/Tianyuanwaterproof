@@ -36,7 +36,7 @@ const categoryMeta = {
   'product-guides': { label: 'Product Guides', className: 'bg-cyan-100 text-cyan-700' }
 } as const;
 
-const siteUrl = (Astro.site ?? new URL('https://tyuanwaterproof.com')).toString().replace(/\/$/, '');
+const siteUrl = (Astro.site ?? new URL('https://www.tyuanwaterproof.com')).toString().replace(/\/$/, '');
 const articleHref = validArticle ? `${siteUrl}/blog/${validArticle.slug}/` : `${siteUrl}/blog/`;
 
 const blogTitle = validArticle?.data.title ?? '';

@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://tyuanwaterproof.com',
+  site: 'https://www.tyuanwaterproof.com',
   base: '/',
   trailingSlash: 'always',
   output: 'static',
