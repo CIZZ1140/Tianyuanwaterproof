@@ -23,6 +23,17 @@
   ],
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "tyuanwaterproof.com"
+        }
+      ],
+      "destination": "https://www.tyuanwaterproof.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/products/sbs-bitumen-membrane/(.*)",
       "destination": "/products/sbs-bitumen-waterproofing-membrane-manufacturer/",
       "permanent": true
