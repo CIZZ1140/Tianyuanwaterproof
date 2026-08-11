@@ -49,28 +49,27 @@ const stats: HeroStat[] = [
 ---
 
 <section class="relative w-full overflow-hidden bg-[#0E2A47] text-white">
-  <div class="relative min-h-[600px] md:min-h-[720px] flex items-center">
-    <!-- Background Image -->
-    <div class="absolute inset-0 z-0 bg-[#0E2A47] aspect-[3/4] md:aspect-auto">
-      <picture>
-        <source srcset={mobileImageSrc} media="(max-width: 768px)" width="768" height="1024" />
-        <img
-          src={imageSrc}
-          alt={imageAlt}
-          class="absolute inset-0 h-full w-full object-cover object-center lg:object-[center_right]"
-          loading="eager"
-          fetchpriority="high"
-          decoding="async"
-          width="1920"
-          height="1080"
-          sizes="100vw"
-        />
-      </picture>
-    </div>
+  <!-- Background Image - Now covering the entire section -->
+  <div class="absolute inset-0 z-0">
+    <picture>
+      <source srcset={mobileImageSrc} media="(max-width: 768px)" width="768" height="1024" />
+      <img
+        src={imageSrc}
+        alt={imageAlt}
+        class="absolute inset-0 h-full w-full object-cover object-center lg:object-[center_right]"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+        width="1920"
+        height="1080"
+        sizes="100vw"
+      />
+    </picture>
+    <!-- Overlay Gradient - Also covering entire section -->
+    <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,24,49,0.95)_0%,rgba(14,42,71,0.85)_40%,rgba(14,42,71,0.3)_100%)]"></div>
+  </div>
 
-    <!-- Overlay Gradient -->
-    <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,24,49,0.95)_0%,rgba(14,42,71,0.85)_40%,rgba(14,42,71,0.3)_100%)] z-10"></div>
-
+  <div class="relative min-h-[600px] md:min-h-[720px] flex items-center z-10">
     <!-- Content -->
     <div class="relative mx-auto w-full max-w-[1680px] px-6 lg:px-16 z-20">
       <div class="max-w-[720px] text-left lg:-translate-y-6">
@@ -106,12 +105,12 @@ const stats: HeroStat[] = [
     </div>
   </div>
 
-  <!-- Redesigned Stats Bar - Major Improvement -->
-  <div class="relative z-30 bg-[#0E2A47] border-y border-white/10">
+  <!-- Redesigned Stats Bar - Transparent with backdrop blur -->
+  <div class="relative z-30 bg-white/5 backdrop-blur-md border-y border-white/10">
     <div class="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-transparent to-blue-900/40 opacity-50"></div>
     <dl class="relative mx-auto grid w-full max-w-[1680px] grid-cols-2 md:grid-cols-5 divide-x divide-white/10">
       {stats.map((item) => (
-        <div class="group px-6 py-10 flex flex-col items-center justify-center text-center transition-all hover:bg-blue-600/10">
+        <div class="group px-6 py-10 flex flex-col items-center justify-center text-center transition-all hover:bg-white/5">
           <div class="mb-4 text-blue-400 group-hover:scale-110 group-hover:text-blue-300 transition-all duration-300" aria-hidden="true">
             <item.icon size={28} strokeWidth={2.5} />
           </div>
