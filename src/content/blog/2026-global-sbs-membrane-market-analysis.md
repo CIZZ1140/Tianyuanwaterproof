@@ -18,7 +18,7 @@ faqs:
   - question: "Why do SBS membrane prices vary between suppliers?"
     answer: "The price difference is driven by specification — thickness (3mm, 4mm or 5mm), reinforcement (polyester, fiberglass or composite), surface finish (PE film, sand, granules or foil), performance grade (Type I or II) and container loading efficiency — not by the supplier's brand. Bitumen feedstock costs, linked to crude oil, set the market baseline, but two quotations only become comparable when they cover identical specifications and trade terms."
   - question: "What documents should I request from an SBS membrane supplier?"
-    answer: "Request the TDS (technical data sheet), MSDS/SDS, certificate of analysis, batch test report and packing list before ordering. For export projects, confirm the membrane is tested to the standard relevant to your region — GB/T 18242-2008, ASTM or EN — and ask for the corresponding test evidence rather than a generic claim."
+    answer: "Request the TDS (technical data sheet), MSDS/SDS, certificate of analysis, batch test report and packing list before ordering. For export projects, confirm the membrane is tested to the standard relevant to your region — GB/T 18242, ASTM or EN — and ask for the corresponding test evidence rather than a generic claim."
   - question: "How should I compare quotations from different SBS suppliers?"
     answer: "Ask every supplier to quote on the same specification and trade terms: identical thickness, reinforcement, surface finish and grade, the same FOB or CIF basis, the same MOQ and payment terms, and the same delivery lead time. Verify that the quoted specification matches the TDS before comparing unit prices. A lower price on a different specification is not a lower price."
   - question: "What is the typical MOQ and container loading for SBS membrane?"
@@ -80,7 +80,7 @@ B2B buyers often assume the brand or the country of origin drives the price. In 
 
 A lower price on a different specification is not a lower price. To compare quotations meaningfully:
 
-1. **Fix the specification first.** Send every supplier the same thickness, reinforcement, surface and grade — ideally referencing the standard (e.g., GB/T 18242-2008, Type II, PY, 4mm).
+1. **Fix the specification first.** Send every supplier the same thickness, reinforcement, surface and grade — ideally referencing the standard (e.g., GB/T 18242, Type II, PY, 4mm).
 2. **Align the trade terms.** Compare like for like: FOB vs CIF, the same MOQ, the same payment terms (e.g., T/T 30% advance, 70% against B/L copy), and the same delivery lead time.
 3. **Verify the TDS matches the quote.** A quoted "4mm polyester" that is actually a lighter reinforcement is a different product at a different price.
 4. **Factor in loading.** Ask for the container loading plan (m² per 20FT/40FT) — it converts the unit price into the true landed cost per m².
@@ -98,7 +98,7 @@ Before you commit to a quotation, the supplier should be able to provide:
 | **Batch test report** | Third-party or factory-laboratory evidence matching the TDS values |
 | **Packing list** | Roll count, m², gross/net weight, pallet configuration |
 
-For export projects, confirm the test standard relevant to your region — GB/T 18242-2008, ASTM, or EN — and ask for evidence against that standard, not a generic compliance claim.
+For export projects, confirm the test standard relevant to your region — GB/T 18242, ASTM, or EN — and ask for evidence against that standard, not a generic compliance claim.
 
 ## 4. Regional Market Context
 
@@ -110,7 +110,7 @@ China remains the global hub for waterproofing production, but the quality gap b
 
 1. **Technical Density (the gram weight).** Do not just ask for "polyester." Ask for the reinforcement gram weight per square meter (g/m²). A 180g/m² reinforcement offers significantly better puncture resistance than a lighter alternative — and the difference shows up in the batch test report.
 2. **Verification of flexibility.** Request the -20°C / -25°C bend test result from the batch report, or a video of the test. High-quality SBS membranes show no cracking when bent around a 25mm mandrel at sub-zero temperatures.
-3. **Audit the export compliance.** Confirm the factory can provide documentation for your region — ASTM for the Americas, EN for Europe, or GB/T 18242-2008 for international engineering.
+3. **Audit the export compliance.** Confirm the factory can provide documentation for your region — ASTM for the Americas, EN for Europe, or GB/T 18242 for international engineering.
 
 ## Frequently Asked Questions
 
@@ -120,7 +120,7 @@ The price difference is driven by specification — thickness (3mm, 4mm or 5mm),
 
 ### What documents should I request from an SBS membrane supplier?
 
-Request the TDS (technical data sheet), MSDS/SDS, certificate of analysis, batch test report and packing list before ordering. For export projects, confirm the membrane is tested to the standard relevant to your region — GB/T 18242-2008, ASTM or EN — and ask for the corresponding test evidence rather than a generic claim.
+Request the TDS (technical data sheet), MSDS/SDS, certificate of analysis, batch test report and packing list before ordering. For export projects, confirm the membrane is tested to the standard relevant to your region — GB/T 18242, ASTM or EN — and ask for the corresponding test evidence rather than a generic claim.
 
 ### How should I compare quotations from different SBS suppliers?
 

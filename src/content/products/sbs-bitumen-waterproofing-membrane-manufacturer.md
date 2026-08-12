@@ -4,16 +4,16 @@ displayName: "SBS Waterproofing Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 100
-meta_description: "Premium SBS elastomeric bitumen membrane for cold-climate regions. Engineered for -25°C flexibility and superior crack-bridging in tunnels, metro systems, and deep foundations. GB/T 18242-2008 certified factory supply. Request a free sample today!"
+meta_description: "Premium SBS elastomeric bitumen membrane for cold-climate regions. Engineered for -25°C flexibility and superior crack-bridging in tunnels, metro systems, and deep foundations. Manufactured per the GB/T 18242 standard series. Request a free sample today!"
 product_category: "Bitumen Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 
-hero_description: "TY-SHIELD™ SBS (Styrene-Butadiene-Styrene) modified bitumen waterproofing membrane — a torch-applied, rubber-modified sheet membrane engineered for cold-climate roofing, basement, foundation, tunnel, and infrastructure waterproofing. Available in polyester (PY), glass fiber (G), and glass-reinforced polyester (PYG) reinforcement, with PE film, fine sand, mineral granules, or aluminum foil surfaces across 3mm, 4mm, and 5mm thicknesses. Compliant with GB/T 18242-2008. Factory-direct supply with full OEM, private-label, and export packaging support."
+hero_description: "TY-SHIELD™ SBS (Styrene-Butadiene-Styrene) modified bitumen waterproofing membrane — a torch-applied, rubber-modified sheet membrane engineered for cold-climate roofing, basement, foundation, tunnel, and infrastructure waterproofing. Available in polyester (PY), glass fiber (G), and glass-reinforced polyester (PYG) reinforcement, with PE film, fine sand, mineral granules, or aluminum foil surfaces across 3mm, 4mm, and 5mm thicknesses. Compliant with the GB/T 18242 standard series (current edition GB/T 18242-2025). Factory-direct supply with full OEM, private-label, and export packaging support."
 
 hero_tags:
   - "SBS Elastomeric"
-  - "GB/T 18242-2008"
+  - "GB/T 18242 Series"
   - "3mm / 4mm / 5mm"
   - "PY / G / PYG"
   - "Torch-Applied"
@@ -22,7 +22,7 @@ hero_tags:
   - "OEM Available"
 
 technical_scope: "SBS PY II, 4mm, PE Film Surface (Representative Configuration)"
-technical_disclaimer: "Values shown apply to the stated product configuration. Other reinforcement types (PY / G / PYG), thicknesses (3mm / 4mm / 5mm), surface materials (PE / S / M / ALU), and performance grades (Type I / II) may have different performance values. Request the corresponding TDS and batch test report before specification or procurement."
+technical_disclaimer: "Values shown apply to the stated product configuration. Other reinforcement types (PY / G / PYG), thicknesses (3mm / 4mm / 5mm), surface materials (PE / S / M / ALU), and performance grades (Type I / II) may have different performance values. Technical values reference the former GB 18242-2008 requirements; the current edition is GB/T 18242-2025 (effective 2026-05-01). Request the corresponding TDS and batch test report before specification or procurement."
 
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
@@ -42,7 +42,7 @@ spec_table:
   - label: "Product Type"
     value: "SBS (Styrene-Butadiene-Styrene) Modified Bitumen Waterproofing Membrane"
   - label: "Standard"
-    value: "GB/T 18242-2008"
+    value: "GB 18242-2008 (former) / GB/T 18242-2025 (current)"
   - label: "Reinforcement Options"
     value: "PY (Polyester) | G (Glass Fiber) | PYG (Glass Fiber Reinforced Polyester)"
   - label: "Performance Grade"
@@ -66,7 +66,7 @@ quick_facts:
   - title: "-25°C Cold-Climate Authority"
     text: "While standard membranes stiffen in winter, our Type II SBS remains flexible down to -25°C. This makes it the essential specification for northern latitudes, high-altitude infrastructure, and refrigerated storage facilities where cracking is a critical failure risk."
   - title: "Infrastructure-Grade Reinforcement"
-    text: "Available with heavy-duty PYG (Glass-reinforced Polyester) carriers, designed specifically to meet the high-load demands of tunnels, metro systems, and bridge decks. This composite core provides the ultimate balance of tensile strength and dimensional stability."
+    text: "Available with heavy-duty PYG (Glass-reinforced Polyester) composite carriers that combine tensile strength with dimensional stability. Under the former GB 18242-2008 classification, PYG was intended mainly for mechanically fastened single-layer roofing; our composite carriers are also supplied for project-specific heavy-load applications. Confirm the applicable standard and product class with our technical team."
   - title: "Monolithic Hot-Melt Bonding"
     text: "The torch-application process creates a permanent, fused bond with the substrate. As the bitumen melts and re-solidifies, it forms a monolithic seal that is virtually impossible to delaminate, ensuring long-term hydrostatic pressure resistance."
 
@@ -239,12 +239,12 @@ configurations:
     reinforcement: "Fiberglass Felt (G)"
     thickness: ["3mm", "4mm", "5mm"]
     surface: "PE Film"
-    use: "Dimensionally stable multi-layer roof systems"
+    use: "Dimensionally stable multi-layer roof systems. Standard thickness per former GB 18242-2008: 3-4mm; 5mm available on request"
   - code: "SBS PYG PE"
     reinforcement: "Composite (PYG)"
     thickness: ["3mm", "4mm", "5mm"]
     surface: "PE Film / Sand"
-    use: "Infrastructure, tunnels, project-specific systems"
+    use: "Mechanically fastened single-layer roofing (legacy GB 18242-2008 classification); project-specific heavy-load systems. Standard thickness per former standard: 5mm; other thicknesses on request"
 
 project_references:
   - title: "Flat Roof Waterproofing Project, Thailand"
@@ -288,7 +288,7 @@ faqs:
   - question: "When should I choose SBS instead of APP membrane?"
     answer: "SBS is the preferred choice for cold-climate regions and structures subject to significant thermal movement. Its rubber modification provides low-temperature flexibility down to -25°C (Type II) — far superior to APP's -15°C. Choose SBS for tunnels, basements, foundations, and roofing in temperature-variable regions. Choose APP for hot-climate exposed roofing where heat resistance (130°C) is the priority. Both can be torch-applied and are compatible with cold-bonding."
   - question: "What is the difference between PY, G, and PYG reinforcement?"
-    answer: "PY (Polyester Felt) offers the highest tensile strength (≥800 N/50mm Type II) and elongation — the best choice for substrates with structural movement, tunnels, and below-grade waterproofing. G (Glass Fiber Felt) provides superior dimensional stability — ideal for stable substrates and multi-layer roof systems where thermal movement is minimal. PYG (Glass Fiber Reinforced Polyester) combines both — a polyester mat with embedded glass strands for the best balance of strength and stability, recommended for heavy civil infrastructure and bridge decks."
+    answer: "PY (Polyester Felt) offers the highest elongation and movement accommodation — the common choice for substrates with structural movement, tunnels, and below-grade waterproofing. G (Glass Fiber Felt) provides dimensional stability — suitable for stable substrates and multi-layer roof systems where thermal movement is minimal. PYG (Glass Fiber Reinforced Polyester) is a legacy composite classification from the former GB 18242-2008 standard, combining polyester with embedded glass strands; it was intended mainly for mechanically fastened single-layer roofing. Under the current GB/T 18242-2025 standard, PY and G are the principal reinforcement categories."
   - question: "Which surface finish should I choose?"
     answer: "PE Film is the standard for non-exposed layers in multi-layer systems and below-grade applications. Fine Sand (S) provides additional inter-layer bonding for multi-course roof systems and is specified for underground engineering. Mineral Granules (M) — slate chips — provide built-in UV protection for exposed roofing cap sheets. Aluminum Foil (ALU) provides the highest reflectivity and vapor barrier properties. Our spec table lists all compatible combinations by thickness."
   - question: "What is the difference between Type I and Type II SBS membrane?"
@@ -306,7 +306,7 @@ Tianyuan's **SBS Modified Bitumen Membrane** is a rubber-modified bitumen system
 
 - **Engineered Resilience** — Retains elastomeric properties down to -25°C, ensuring reliable sealing in cold climates and high-altitude infrastructure.
 - **Structural Compatibility** — Designed for civil engineering projects where substrate movement and crack-bridging performance are critical to long-term waterproofing integrity.
-- **Technical Compliance** — Manufactured with reference to GB/T 18242-2008 technical requirements. Confirm the applicable product class and test documentation with our technical team before specification.
+- **Technical Compliance** — Manufactured with reference to the GB/T 18242 standard series (current edition GB/T 18242-2025, superseding GB 18242-2008). Confirm the applicable product class and test documentation with our technical team before specification.
 
 For hot-climate or exposed roofing applications, see our [APP Modified Bitumen Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/). For torch-free, cold-applied installations, see our [Self-Adhesive Bituminous Membrane](/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/).
 
