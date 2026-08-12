@@ -15,12 +15,45 @@ function normalizeAsset(value: any) {
 
 const products = (await getCollection('products')).sort((a,b)=>a.data.order-b.data.order);
 const featured = products.filter((p)=>p.data.featured).slice(0,6);
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Weifang Tianyuan Waterproof Material Co., Ltd.",
+  "alternateName": "Tianyuan Waterproof",
+  "url": "https://www.tyuanwaterproof.com",
+  "logo": "https://www.tyuanwaterproof.com/favicon.svg",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+86-15263640998",
+    "contactType": "sales",
+    "areaServed": "Worldwide",
+    "availableLanguage": ["en", "Chinese"]
+  },
+  "sameAs": [
+    "https://wa.me/8615263640998"
+  ]
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Tianyuan Waterproof",
+  "url": "https://www.tyuanwaterproof.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.tyuanwaterproof.com/products/?search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+};
 ---
 <Layout 
 	title="Tianyuan Waterproof | Leading China Waterproofing Materials Manufacturer"
 	description="Weifang Tianyuan Waterproof (TY-SHIELD™) is a professional manufacturer of high-quality bitumen membranes, polymer membranes, and waterproof coatings with 30+ years of export experience."
 	isHomePage={true}
 >
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(organizationJsonLd)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(websiteJsonLd)} />
   <Hero />
   <h2 class="sr-only">Main Content</h2>
 

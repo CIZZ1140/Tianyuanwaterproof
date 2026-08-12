@@ -6,12 +6,12 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 
 <section class="bg-white py-16" id="inquiry" aria-labelledby="inq-title">
   <div class="container mx-auto px-4">
-    <div class="rounded-[2rem] bg-gradient-to-br from-[#0E2A47] to-[#1F4E8C] p-8 md:p-12 shadow-2xl relative overflow-hidden">
+    <div class="rounded-[2rem] bg-gradient-to-br from-[#0E2A47] to-[#1F4E8C] px-5 pt-8 pb-12 md:p-12 shadow-2xl relative overflow-hidden">
       <!-- Background Decorative Elements -->
       <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-64 h-64 bg-white/5 rounded-full blur-3xl" aria-hidden="true"></div>
       <div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-96 h-96 bg-brand/10 rounded-full blur-3xl" aria-hidden="true"></div>
 
-      <div class="relative z-10 grid gap-12 lg:grid-cols-[1fr_0.8fr] lg:items-center">
+      <div class="relative z-10 grid gap-8 lg:gap-12 lg:grid-cols-[1fr_0.8fr] lg:items-center">
         <div class="text-white">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-white text-[10px] font-bold uppercase tracking-[0.2em] mb-8 border border-white/10">
             <span class="relative flex h-2 w-2" aria-hidden="true">
@@ -56,29 +56,29 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
           </div>
         </div>
 
-        <div class="bg-white rounded-[2rem] p-8 shadow-2xl">
-          <form action="https://formspree.io/f/mzdqdpwd" method="POST" class="space-y-4">
+        <div class="bg-white rounded-[2rem] p-5 sm:p-8 shadow-2xl">
+          <form action="https://formspree.io/f/mzdqdpwd" method="POST" class="space-y-3 sm:space-y-4">
             <!-- Honeypot -->
             <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off" />
             
-            <div class="grid gap-4 sm:grid-cols-2">
+            <div class="grid gap-3 sm:gap-4 sm:grid-cols-2">
               <div>
-                <label for="full-name" class="block text-[11px] font-bold text-slate-600 uppercase tracking-widest mb-2 ml-1">Full Name</label>
-                <input id="full-name" type="text" name="Name" placeholder="Your Name" required class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all" />
+                <label for="full-name" class="block text-[10px] sm:text-[11px] font-bold text-slate-600 uppercase tracking-widest mb-1.5 ml-1">Full Name</label>
+                <input id="full-name" type="text" name="Name" placeholder="Your Name" required class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all" />
               </div>
               <div>
-                <label for="email-address" class="block text-[11px] font-bold text-slate-600 uppercase tracking-widest mb-2 ml-1">Email Address</label>
-                <input id="email-address" type="email" name="Email" placeholder="name@company.com" required class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all" />
+                <label for="email-address" class="block text-[10px] sm:text-[11px] font-bold text-slate-600 uppercase tracking-widest mb-1.5 ml-1">Email Address</label>
+                <input id="email-address" type="email" name="Email" placeholder="name@company.com" required class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all" />
               </div>
             </div>
             <div>
-              <label for="company-name" class="block text-[11px] font-bold text-slate-600 uppercase tracking-widest mb-2 ml-1">Company</label>
-              <input id="company-name" type="text" name="Company" placeholder="Company Name" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all" />
+              <label for="company-name" class="block text-[10px] sm:text-[11px] font-bold text-slate-600 uppercase tracking-widest mb-1.5 ml-1">Company</label>
+              <input id="company-name" type="text" name="Company" placeholder="Company Name" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all" />
             </div>
             <div>
-              <label for="interested-product" class="block text-[11px] font-bold text-slate-600 uppercase tracking-widest mb-2 ml-1">Interested Product</label>
-              <select id="interested-product" name="Product" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2364748b%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C/polyline%3E%3C/svg%3E')] bg-[length:18px_18px] bg-[right_1rem_center] bg-no-repeat cursor-pointer">
-                <option value="">Select product category...</option>
+              <label for="interested-product" class="block text-[10px] sm:text-[11px] font-bold text-slate-600 uppercase tracking-widest mb-1.5 ml-1">Interested Product</label>
+              <select id="interested-product" name="Product" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2364748b%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C/polyline%3E%3C/svg%3E')] bg-[length:18px_18px] bg-[right_1rem_center] bg-no-repeat cursor-pointer">
+                <option value="">Select category...</option>
                 <option value="Bitumen Membranes">Bitumen Membranes</option>
                 <option value="Polymer Membranes">Polymer Membranes</option>
                 <option value="Asphalt Shingles">Asphalt Shingles</option>
@@ -89,8 +89,8 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
               </select>
             </div>
             <div>
-              <label for="message-text" class="block text-[11px] font-bold text-slate-600 uppercase tracking-widest mb-2 ml-1">Message</label>
-              <textarea id="message-text" name="Message" rows="4" placeholder="How can we help you? (Quantity, Specifications...)" required class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all resize-none"></textarea>
+              <label for="message-text" class="block text-[10px] sm:text-[11px] font-bold text-slate-600 uppercase tracking-widest mb-1.5 ml-1">Message</label>
+              <textarea id="message-text" name="Message" placeholder="How can we help you? (Quantity, Specifications...)" required class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all resize-none h-20 sm:h-32"></textarea>
             </div>
 
             <Turnstile />

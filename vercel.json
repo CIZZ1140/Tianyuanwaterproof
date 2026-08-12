@@ -23,6 +23,37 @@
   ],
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "tyuanwaterproof.com"
+        }
+      ],
+      "destination": "https://www.tyuanwaterproof.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/applications/basement-waterproofing/(.*)",
+      "destination": "/applications/underground-waterproofing/",
+      "permanent": true
+    },
+    {
+      "source": "/applications/basement-waterproofing",
+      "destination": "/applications/underground-waterproofing/",
+      "permanent": true
+    },
+    {
+      "source": "/products/tpo-waterproof-membrane/(.*)",
+      "destination": "/products/tpo-waterproofing-membrane-manufacturer/",
+      "permanent": true
+    },
+    {
+      "source": "/products/tpo-waterproof-membrane",
+      "destination": "/products/tpo-waterproofing-membrane-manufacturer/",
+      "permanent": true
+    },
+    {
       "source": "/products/sbs-bitumen-membrane/(.*)",
       "destination": "/products/sbs-bitumen-waterproofing-membrane-manufacturer/",
       "permanent": true
