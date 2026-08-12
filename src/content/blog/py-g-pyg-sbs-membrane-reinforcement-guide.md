@@ -4,8 +4,8 @@ description: "PY, G or PYG reinforcement in SBS membrane: tensile strength, elon
 category: "product-guides"
 publishDate: 2026-08-10
 updatedDate: 2026-08-10
-coverImage: "https://img.tyuanwaterproof.com/blog/sbs-reinforcement-cover-v2.webp"
-coverAlt: "Polyester felt and glass fiber felt reinforcement close-ups used inside SBS waterproofing membrane"
+coverImage: "https://img.tyuanwaterproof.com/blog/sbs-reinforcement-cover-v4.webp"
+coverAlt: "Three SBS membrane reinforcement carriers side by side — polyester felt, glass fiber mesh and composite felt"
 author: "Tianyuan Waterproof Technical Team"
 draft: false
 tags:
