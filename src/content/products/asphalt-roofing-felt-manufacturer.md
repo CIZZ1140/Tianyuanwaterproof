@@ -234,8 +234,6 @@ faqs:
     answer: "Keep rolls dry, protected from direct sunlight and rain, and stored in a ventilated location. Separate different sizes and grades and protect rolls from crushing, leaning and side pressure during storage and transportation."
 ---
 
-## Product Overview
-
 Asphalt-saturated organic roofing felt is a flexible bituminous sheet for specification-led roofing supply. It is mainly used as a secondary water-shedding layer beneath compatible roof coverings, especially asphalt shingles; selected grades may also serve as a reinforcing ply in compatible built-up roofing or hot-asphalt systems. It is not a self-adhesive membrane, torch-applied modified bitumen membrane or permanent exposed roof covering.
 
 | B2B specification item | Product information |
