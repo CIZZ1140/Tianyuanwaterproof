@@ -45,6 +45,18 @@ spec_table:
   - label: "Exposure"
     value: "Not intended as the permanent exposed roof covering"
 
+configurations:
+  - code: "Organic Felt Underlayment 0.5"
+    reinforcement: "Organic fiber felt"
+    thickness: "0.5 mm"
+    surface: "Grey / Black"
+    use: "Roof-deck underlayment beneath compatible asphalt shingles or roof coverings"
+  - code: "Organic Felt Underlayment 0.8"
+    reinforcement: "Organic fiber felt"
+    thickness: "0.8 mm"
+    surface: "Grey / Black"
+    use: "Roof-deck underlayment or selected compatible asphaltic system applications"
+
 quick_facts:
   - title: "Traditional Asphalt Felt Construction"
     text: "An organic fiber felt carrier is saturated with asphalt to create a flexible roofing sheet used as a secondary water-shedding layer or as a ply within compatible asphaltic roofing systems."
