@@ -234,18 +234,13 @@ faqs:
     answer: "Keep rolls dry, protected from direct sunlight and rain, and stored in a ventilated location. Separate different sizes and grades and protect rolls from crushing, leaning and side pressure during storage and transportation."
 ---
 
-Asphalt-saturated organic roofing felt is a flexible bituminous sheet for specification-led roofing supply. It is mainly used as a secondary water-shedding layer beneath compatible roof coverings, especially asphalt shingles; selected grades may also serve as a reinforcing ply in compatible built-up roofing or hot-asphalt systems. It is not a self-adhesive membrane, torch-applied modified bitumen membrane or permanent exposed roof covering.
+### Specification-Led Underlayment for Export Roofing Projects
 
-| B2B specification item | Product information |
-|---|---|
-| Product | Asphalt-saturated organic roofing felt |
-| Construction | Organic fiber felt saturated with asphalt |
-| Primary use | Roof-deck underlayment beneath compatible roof coverings |
-| System use | Selected built-up roofing or hot-asphalt assemblies where specified |
-| Nominal width | 1 m |
-| Nominal thickness | 0.5 mm / 0.8 mm |
-| Color | Grey / Black |
-| Supply form | Roll |
-| Standards reference | ASTM D226 / ASTM D4869 frameworks; confirm exact grade compliance |
-| Product boundary | Not intended as a permanent exposed roof covering |
-| Approval basis | Roof-system design, target standard, selected grade and current Tianyuan TDS |
+Tianyuan's **Asphalt-Saturated Organic Roofing Felt** is a flexible bituminous sheet designed primarily as a secondary water-shedding layer beneath compatible roof coverings, especially asphalt shingles. Selected grades may also serve as a reinforcing ply in compatible built-up roofing or hot-asphalt waterproofing assemblies.
+
+- **Traditional Asphalt Construction** — Organic fiber felt saturated with asphalt for conventional roofing underlayment and compatible asphaltic systems.
+- **Metric Export Configuration** — Catalog options include a nominal 1 m width, 0.5 mm / 0.8 mm thickness and grey or black appearance; exact roll length and grade are confirmed before quotation.
+- **System-Based Selection** — Select the felt according to roof design, target standard, installation method, local requirements and current Tianyuan TDS rather than thickness alone.
+- **Defined Product Boundary** — This is not a self-adhesive membrane, torch-applied modified bitumen membrane or permanent exposed roof covering.
+
+For shingle underlayment, built-up roofing or hot-asphalt applications, send the roof system, target standard, required dimensions and packaging requirements to our export team. We will confirm the suitable grade and provide the relevant technical documentation before specification.
