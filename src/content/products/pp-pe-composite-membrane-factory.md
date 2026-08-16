@@ -4,7 +4,7 @@ displayName: "PP-PE Composite Membrane"
 category: "polymer-membranes"
 featured: true
 order: 75
-meta_description: "Damp-substrate compatible PP/PE composite waterproofing membrane. Cement-based bonding for bathrooms, basements, and tunnels. Multi-layer fiber reinforcement for direct tile application. GB 18173.1 certified wholesale supply."
+meta_description: "Damp-substrate compatible PP/PE composite waterproofing membrane for bathrooms, basements, and tunnels. Cement-based bonding, multi-layer reinforcement, and factory supply. Request a TDS or quotation."
 main_image: "https://img.tyuanwaterproof.com/products/polyethylene-propylene-waterproof-membrane.webp"
 image: "https://img.tyuanwaterproof.com/products/polyethylene-propylene-waterproof-membrane.webp"
 
@@ -58,7 +58,7 @@ technical_data:
     unit: "°C"
     standard: "GB 18173.1"
     requirement: "-20°C No crack"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
   - label: "Peel Strength"
     unit: "N"
     standard: "GB 18173.1"

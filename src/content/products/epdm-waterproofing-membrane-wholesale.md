@@ -1,17 +1,17 @@
 ---
-title: "Durable EPDM Rubber Membrane Manufacturer | 50-Year Service Life"
+title: "Durable EPDM Rubber Waterproofing Membrane Manufacturer"
 displayName: "EPDM Waterproofing Membrane"
 category: "polymer-membranes"
 featured: true
 order: 85
-meta_description: "Durable EPDM rubber waterproofing membrane for 50-year service life. Extreme weather resistance and -40°C flexibility. Ideal for high-end roofing, bridge decks, and critical infrastructure. Direct factory wholesale pricing."
+meta_description: "EPDM rubber waterproofing membrane for roofing, bridge decks, and infrastructure applications. Available with selected reinforcement and thickness options. Request a TDS or factory quotation."
 main_image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
 image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
 
-hero_description: "TY-SHIELD™ EPDM (Ethylene-Propylene Diene Monomer) rubber waterproofing membrane — the longest-serving synthetic polymer waterproofing sheet, with a proven service life of up to 50 years. Formulated for extreme UV resistance and -40°C flexibility in high-end roofing and civil infrastructure."
+hero_description: "TY-SHIELD™ EPDM (Ethylene-Propylene Diene Monomer) rubber waterproofing membrane for roofing, bridge decks, and civil infrastructure. Available in selected configurations with weathering and low-temperature performance documented according to the applicable product specification. Confirm the product TDS before specification."
 
 hero_tags:
-  - "50-Year Service Life"
+  - "Long-Term Roofing Use"
   - "-40°C Flexibility"
   - "Ozone Resistant"
   - "High Elongation"
@@ -29,8 +29,8 @@ spec_table:
     value: "Standard Black"
 
 quick_facts:
-  - title: "Unmatched 50-Year Longevity"
-    text: "With a saturated molecular backbone, EPDM is the longest-lasting synthetic membrane available. It has been proven in the field for over half a century, resisting the degradation from UV, ozone, and heat."
+  - title: "Weathering Resistance"
+    text: "EPDM is used in systems that require flexibility and resistance to weathering. Actual performance depends on formulation, thickness, exposure, detailing, installation quality, and maintenance."
   - title: "Exceptional Elastic Strain"
     text: "Vulcanized EPDM can stretch over 450% and return to its original shape. This flexibility allows it to bridge substrate cracks and accommodate significant structural settlement."
   - title: "Extreme Temperature Resilience"
@@ -58,7 +58,7 @@ technical_data:
     unit: "°C"
     standard: "GB/T 18173.1"
     requirement: "-40°C No crack"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
   - label: "Ozone Aging"
     unit: "168h"
     standard: "GB/T 18173.1"
@@ -88,7 +88,7 @@ faqs:
   - question: "What is the difference between vulcanized and non-vulcanized EPDM?"
     answer: "Vulcanized EPDM undergoes a curing process that delivers superior tensile strength and better low-temperature flexibility. Non-vulcanized is easier to bond but has slightly lower mechanical properties."
   - question: "How does EPDM compare to TPO for roofing?"
-    answer: "EPDM offers the longest proven service life (50+ years), while TPO is heat-weldable and recyclable. EPDM is ideal for longevity-critical projects."
+    answer: "EPDM and TPO use different polymer systems and installation methods. EPDM is commonly selected for flexible sheet applications, while TPO uses heat-welded seams and may suit projects with specific recycling or welding requirements. Compare the product-specific TDS, detailing method, exposure, and project requirements before selection."
   - question: "Is EPDM safe for fish ponds?"
     answer: "Yes. Our EPDM membrane contains no plasticizers or toxic additives, making it safe for aquaculture and potable water applications."
 
@@ -113,7 +113,7 @@ downloads:
 
 ## The Gold Standard in Synthetic Polymer Waterproofing
 
-EPDM (Ethylene-Propylene Diene Monomer) rubber waterproofing membrane is the longest-serving synthetic polymer waterproofing material in the construction industry, with documented installations exceeding 50 years of continuous service. Its secret is chemistry: EPDM's saturated molecular backbone contains no reactive double bonds, giving it unmatched resistance to UV radiation, ozone, thermal oxidation, and environmental aging.
+EPDM (Ethylene-Propylene Diene Monomer) rubber waterproofing membrane is used in roofing and civil infrastructure systems where flexible sheet performance and weathering resistance are required. Actual service life depends on formulation, thickness, exposure, detailing, installation quality, and maintenance. Confirm the applicable product data and project requirements before specification.
 
 ### Vulcanized vs Non-Vulcanized — Selecting the Right EPDM Type
 

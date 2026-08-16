@@ -209,4 +209,4 @@ Our needle-punching technology ensures the fabric can withstand the rigors of he
 ### Chemical & Biological Stability
 Our fabrics resist naturally occurring soil chemicals, acids, and alkalis. This ensures a design life that matches the infrastructure it protects.
 
-Tianyuan Waterproof is a trusted partner for international engineering firms and distributors. We provide full technical support, including **TDS, MSDS, and ISO/CE certifications**, to ensure your project meets the highest quality standards.
+Tianyuan Waterproof supports international engineering firms and distributors with technical documentation, including product-specific TDS and MSDS. Applicable certificates and test reports depend on the product configuration and destination market; confirm the required documentation before specification.

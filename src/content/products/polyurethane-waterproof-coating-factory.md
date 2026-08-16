@@ -4,7 +4,7 @@ displayName: "Single-Component PU Coating"
 category: "waterproof-coatings"
 featured: true
 order: 65
-meta_description: "GB/T 19250 certified single-component PU coating: ≥550% elongation, -40°C flex, damp-base adhesion ≥0.50 MPa. OEM, free sample. Factory quote."
+meta_description: "Single-component PU waterproof coating for moisture-cure applications on selected substrates. Product grades, elongation, low-temperature flexibility, and adhesion depend on the specification. Request a TDS or quotation."
 product_category: "Waterproof Coatings"
 main_image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
 image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
@@ -65,7 +65,7 @@ quick_facts:
     text: "Three pipe penetrations intersecting in a corner. An elevator pit with a drainage channel running diagonally across the floor. The inside curve of a domed roof. These geometries are why sheet membrane installers spend half their time cutting, lapping, and sealing pieces together — each seam is a potential entry point for water. PU is a liquid. Pour it, spread it, and it self-levels into the lowest point. No cut pieces. No overlap seams. No torch. The cured film is one continuous molecule across the entire surface — a seamless, joint-free elastomeric waterproofing membrane."
 
   - title: "The Concrete Breaks Before the Bond Does"
-    text: "Pull-off adhesion testing on PU-coated concrete routinely produces 100% cohesive failure: the fracture occurs inside the concrete substrate, not at the PU-concrete interface. The measured bond strength (≥0.50 MPa on damp substrate, higher on dry) exceeds the tensile capacity of the concrete surface layer. This is not a marketing claim — it's the standard failure mode required by GB/T 19250 for qualified product. For an underground basement wall under hydrostatic pressure, where groundwater is physically trying to push the waterproofing layer off the concrete, cohesive failure mode means the bond cannot be peeled away by the pressure it's resisting."
+    text: "Pull-off adhesion testing evaluates whether failure occurs within the concrete, coating, or interface. The applicable acceptance criterion depends on the product grade and test method. Confirm the bond strength, substrate condition, and failure mode in the product-specific TDS before specification."
 
 applications:
   - title: "Basements, Tunnels, Underground Structures"
@@ -145,7 +145,7 @@ technical_data:
     unit: "%"
     standard: "GB/T 19250"
     requirement: "80–150"
-    value: "Qualified"
+    value: "Typical value; confirm with the product TDS"
   - label: "Artificial Weathering"
     unit: "—"
     standard: "GB/T 19250"
@@ -238,4 +238,4 @@ A basement slab with three pipe penetrations converging at one corner, a drainag
 
 PU does not cut and fit. It is a liquid. Pour it in, spread it, and it self-levels into the lowest point, filling annular spaces around pipes and rounding inside corners naturally. The cured film is one continuous, seamless elastomeric membrane — chemically formed on the substrate, not mechanically assembled from factory-cut pieces. Installation time at complex nodes is typically one-third or less of the equivalent sheet membrane detailing.
 
-Weifang Tianyuan supplies PU waterproof coating direct from the production line — no trading-company markup, no repackaged third-party material. Specify the type, the volume, and the destination port. Same-day quotation with lead time, container configuration, and freight options. Aliphatic UV-resistant formulations and performance-tuned custom variants available on request.
+Weifang Tianyuan supplies PU waterproof coating direct from the production line. Specify the type, volume, application, and destination port; our team can then confirm the applicable quotation, production schedule, container configuration, freight options, and available custom variants.

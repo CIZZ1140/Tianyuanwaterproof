@@ -76,12 +76,12 @@ technical_data:
     unit: "N/50mm"
     standard: "GB/T 20474"
     requirement: ">=800"
-    value: "Qualified (1000+)"
+    value: "Typical value; confirm with the product TDS"
   - label: "Tear Strength"
     unit: "N"
     standard: "ASTM D3462"
     requirement: ">=25"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
   - label: "Heat Resistance"
     unit: "degC"
     standard: "GB/T 20474"
@@ -153,7 +153,7 @@ faqs:
   - question: "Are they suitable for high-wind coastal areas?"
     answer: "Absolutely. Due to their double-layer weight and advanced sealing strips, they are engineered for high-wind environments."
   - question: "What is the expected lifespan of premium laminated shingles?"
-    answer: "With professional installation, these shingles typically provide a service life of 30 years or more."
+    answer: "Service life depends on shingle formulation, roof design, climate, installation quality, and maintenance. Confirm the applicable product documentation and project requirements before setting an expected service life."
 ---
 
 ## Premium Architectural Roofing

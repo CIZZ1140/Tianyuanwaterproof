@@ -4,11 +4,11 @@ displayName: "PVC Waterproofing Membrane"
 category: "polymer-membranes"
 featured: true
 order: 80
-meta_description: "Industrial-grade PVC waterproofing membrane for roofing and tunnels. Engineered for 25+ years of exposed service life with superior hot-air weldability and high tensile strength. GB 12952-2011 certified factory supply."
+meta_description: "Industrial-grade PVC waterproofing membrane for roofing and tunnels, with hot-air weldable seams and reinforced options. Factory supply with technical documentation. Request a TDS or quotation."
 main_image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
 image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
 
-hero_description: "Professional Grade PVC (Polyvinyl Chloride) waterproofing membranes manufactured to GB12952-2011. Featuring high-tenacity polyester reinforcement, UV-stabilized formulations, and monolithic hot-air weldable seams for 25+ years of reliable performance."
+hero_description: "Professional-grade PVC (Polyvinyl Chloride) waterproofing membranes for roofing, tunnels, and below-grade applications. Available with polyester reinforcement, UV-stabilized formulations, and hot-air weldable seams. Confirm the applicable grade and test documentation for your project."
 
 hero_tags:
   - "Hot-Air Weldable"
@@ -35,18 +35,18 @@ spec_table:
     value: "1.2mm, 1.5mm, 1.8mm, 2.0mm"
   - label: "Width"
     value: "2.05m / 1.0m"
-  - label: "Life Expectancy"
-    value: "25+ Years (Exposed)"
+  - label: "Service Life"
+    value: "Project-specific; confirm with the product TDS"
 
 quick_facts:
   - title: "Internal Scrim Reinforcement"
     text: "Engineered with a high-tenacity polyester scrim core that provides exceptional dimensional stability and tear resistance. This reinforced structure allows the membrane to withstand heavy wind uplift loads and foot traffic on large-scale industrial roofs."
   - title: "Fusion-Welded Seam Integrity"
-    text: "Unlike adhesive-dependent systems, PVC seams are fused using automatic hot-air welding technology. This creates a monolithic, inseparable bond that is physically stronger than the sheet itself, ensuring zero leak paths at the most critical points."
+    text: "Unlike adhesive-dependent systems, PVC seams are fused using automatic hot-air welding technology. Properly prepared and tested welds create a continuous seam for the waterproofing system; installation conditions and quality control remain essential."
   - title: "Chemical & Fire Resistance"
     text: "Possesses inherent self-extinguishing properties and high resistance to common industrial chemicals, oils, and greases. It is the mandatory specification for chemical storage facilities and industrial plants with strict fire safety protocols."
-  - title: "Proven Decades of Performance"
-    text: "PVC has the longest documented track record among thermoplastic membranes, with many installations exceeding 30 years of continuous service. Our formulations are UV-stabilized to prevent embrittlement in the most demanding solar environments."
+  - title: "Designed for Long-Term Use"
+    text: "PVC membranes are used in long-term roofing and waterproofing systems. Actual service life depends on the formulation, exposure, system design, installation quality, and maintenance. Confirm project-specific performance requirements with our technical team."
 
 features:
   - title: "Cool Roof Reflective Surface"
@@ -73,12 +73,12 @@ technical_data:
     unit: "°C"
     standard: "GB12952"
     requirement: "No crack at -25"
-    value: "Pass"
+    value: "Typical value; confirm with the product TDS"
   - label: "Puncture Resistance"
     unit: "N"
     standard: "FTM 101C"
     requirement: "High Load"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
   - label: "Tear Resistance"
     unit: "N/mm"
     standard: "GB12952"
@@ -150,7 +150,7 @@ related_products:
 
 faqs:
   - question: "What is PVC waterproofing membrane and how is it different from TPO?"
-    answer: "PVC (polyvinyl chloride) waterproofing membrane is a single-ply thermoplastic roofing sheet manufactured with internal polyester reinforcement for high tensile strength. Unlike TPO (thermoplastic polyolefin), PVC contains plasticizers for enhanced flexibility and has a longer proven track record (40+ years of field performance vs. 30+ for TPO). PVC also offers superior chemical resistance and is inherently flame-retardant due to its chlorine content, whereas TPO relies on added fire retardants."
+    answer: "PVC (polyvinyl chloride) waterproofing membrane is a single-ply thermoplastic sheet that can be supplied with internal polyester reinforcement. Compared with TPO, PVC formulations and project suitability differ in flexibility, chemical resistance, welding behavior, environmental profile, and fire performance. Compare the product-specific TDS with the project requirements before selection."
   - question: "Is PVC membrane good for flat roofs, and how thick should it be?"
     answer: "Yes, PVC membrane is widely used on flat and low-slope commercial roofs. For exposed mechanically-fastened systems, 1.5 mm (60 mil) is the standard thickness; for high-traffic or fully adhered applications, 1.8-2.0 mm (72-80 mil) is recommended. The membrane's hot-air welded seams create a monolithic barrier that performs reliably even under ponding water conditions."
   - question: "How do you install and weld PVC waterproofing membrane?"
@@ -158,7 +158,7 @@ faqs:
   - question: "Can PVC membrane be installed over existing bitumen roofing?"
     answer: "Yes, PVC membrane can be installed as a retrofit over existing bitumen roofing, but a separation layer (geotextile fleece or gypsum board) must be placed between the bitumen and the PVC. This prevents plasticizer migration from the PVC into the bitumen, which can cause embrittlement, and protects the new membrane from bitumen-related chemical attack."
   - question: "How long does PVC roofing membrane last, and is it UV resistant?"
-    answer: "A properly installed PVC roofing membrane typically lasts 25+ years on exposed roofs, with life expectancy extending well beyond 30 years in moderate climates. PVC is inherently UV-resistant when formulated with advanced stabilizers; these additives prevent embrittlement and color fading from long-term sun exposure. White PVC membranes also reflect up to 85% of solar radiation, reducing thermal aging and building cooling loads."
+    answer: "PVC service life depends on the formulation, thickness, exposure, system design, installation quality, and maintenance. UV performance and solar reflectance also vary by formulation and surface color. Request the product-specific TDS and confirm the expected operating conditions before specification."
   - question: "How do you repair a leaking PVC membrane seam?"
     answer: "PVC membrane seams can be repaired by cleaning the affected area, applying a PVC-compatible solvent cleaner, and hot-air welding a patch of the same material over the damaged seam. The patch must be round-cut at the corners to prevent peeling and should extend at least 75 mm beyond the damaged area in all directions. For extensive seam leakage, a new strip of membrane should be welded over the entire seam line rather than patching individual points."
 ---
@@ -185,7 +185,7 @@ The weakest point of any waterproofing system is usually the joint. PVC solves t
 
 *   **No Adhesives Needed**: Unlike EPDM or bitumen, the joint itself becomes the strongest part of the system.
 *   **Automatic Welding**: Our membranes are designed for high-speed automatic welding machines (like Leister), ensuring consistent quality across large-scale projects.
-*   **100% Watertight**: Once cooled, the seam is monolithic, meaning it will never delaminate or leak even under standing water.
+*   **Continuous Welded Seams**: Once cooled, a properly executed seam forms a continuous connection. Weld settings, substrate preparation, and seam testing must follow the project installation requirements.
 
 ![PVC Hot-Air Welding Process](https://img.tyuanwaterproof.com/products/pvc-welding.png?v=1)
 
@@ -197,7 +197,7 @@ A professional project requires more than just a roll of membrane. Tianyuan offe
 
 *   **Prefabricated Corners**: Pre-molded inside and outside corners for 90-degree transitions.
 *   **Mechanical Fasteners**: Specialized screws and stress plates for wind-resistant steel roof systems.
-*   **Roof Drains & Vents**: PVC-compatible outlets that weld directly to the main membrane for a zero-leak connection.
+*   **Roof Drains & Vents**: PVC-compatible outlets designed to weld to the main membrane. Detail design and seam testing should follow the project waterproofing system requirements.
 
 These accessories are also fully compatible with our [TPO roofing membrane systems](/products/tpo-waterproofing-membrane-manufacturer/), allowing contractors to standardize detailing across mixed thermoplastic roof projects.
 

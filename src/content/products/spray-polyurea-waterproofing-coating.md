@@ -1,21 +1,21 @@
 ---
-title: "Pure & Hybrid Spray Polyurea Waterproof Coating Manufacturer | 100% Solids | Wholesale"
+title: "Pure & Hybrid Spray Polyurea Waterproof Coating Manufacturer"
 displayName: "Spray Polyurea Coating"
 category: "waterproof-coatings"
 featured: true
 order: 55
-meta_description: "100% solids pure and hybrid spray polyurea coating. ≥20 MPa tensile, ≥600% elongation, gel in 15-40s, -45°C to 120°C range. Infrastructure, secondary containment, bridge deck. OEM. Factory quote."
+meta_description: "Pure and hybrid spray polyurea waterproof coating for infrastructure, secondary containment, bridge decks, tunnels, and industrial projects. Request product-specific technical data and a factory quotation."
 product_category: "Waterproof Coatings"
 main_image: "https://img.tyuanwaterproof.com/products/spray-polyurea-coating-v2.webp"
 image: "https://img.tyuanwaterproof.com/products/spray-polyurea-coating-v2.webp"
 
-hero_description: "TY-SHIELD™ spray polyurea waterproofing coating — a two-component, 100% solids, plural-component spray-applied elastomeric system available in two chemistry types. Pure Polyurea: isocyanate semi-prepolymer (A) + amino-terminal resin (B), no hydroxyls or catalysts. Hybrid Polyurea (semi-polyurea): isocyanate semi-prepolymer (A) + hydroxyl/amino-terminal resin blend (B), catalyst-optimized for extended gel time and tailored hardness. Both types cure within seconds to minutes upon impingement at the spray nozzle, forming a seamless, joint-free elastomeric membrane. Pure achieves ≥600% elongation and ≥20 MPa tensile; Hybrid reaches ≥500% elongation and ≥22 MPa tensile. Operating range: -45°C to 120°C. Applied via heated plural-component spray equipment at ≥1000 m² per day per unit. For infrastructure, secondary containment, bridge decks, tunnels, and industrial waterproofing."
+hero_description: "TY-SHIELD™ spray polyurea waterproofing coating — a two-component, plural-component spray-applied elastomeric system available in pure and hybrid chemistry types. The selected formulation determines solids content, gel time, hardness, tensile strength, elongation, operating range, and equipment settings. Applied via heated plural-component spray equipment for infrastructure, secondary containment, bridge decks, tunnels, and industrial waterproofing. Request the product-specific TDS before specification."
 
 hero_tags:
-  - "100% Solids"
   - "Pure & Hybrid"
-  - "≥600% Elongation"
-  - "≥20 MPa Tensile"
+  - "Plural-Component Spray"
+  - "Fast-Cure System"
+  - "Project-Specific TDS"
   - "Instant Cure"
   - "-45°C to 120°C"
   - "≥1000 m²/day"
@@ -326,7 +326,7 @@ faqs:
     answer: "Polyurea exhibits low flame spread rate and self-extinguishing behavior — when the external flame source is removed, the coating stops burning. Combined with zero VOC (no flammable solvent content) and 100% solids, this meets the fire safety criteria increasingly required for tunnel waterproofing, petrochemical secondary containment, and occupied infrastructure. Polyurea does not contribute fuel load in a fire scenario, unlike solvent-based coating systems. If your project requires a specific fire-resistance rating (e.g., ASTM E84 Class A), confirm with our technical team — formulation adjustments and testing can support compliance documentation."
 
   - question: "What certifications and standards does polyurea comply with?"
-    answer: "Polyurea's performance is validated against multiple international standards. For potable water contact, formulations can be tested to NSF/ANSI 61 (U.S.) and EU Drinking Water Directive requirements — specify potable-water-grade polyurea at order stage. For infrastructure applications in European markets, polyurea membranes are specified under EN 1504-2 (surface protection systems for concrete) covering crack-bridging ability, abrasion resistance, impact resistance, and chemical resistance. For bridge deck waterproofing, EAD 030675-00-0107 (European Assessment Document) and BBA HAPAS (UK) provide the certification framework. Contact our technical team with your project's jurisdiction and application — we'll confirm which certifications apply and supply the corresponding test documentation."
+    answer: "Applicable standards and test methods depend on the formulation, application, and destination market. Potable-water, infrastructure, and bridge-deck projects may require specific documentation or third-party testing. Contact our technical team with your jurisdiction and application so we can confirm the applicable requirements and available test documentation."
 
   - question: "How do OEM and private label orders work?"
     answer: "Your brand and product designation on both Component A and B drums. Formulation parameters tunable within chemistry limits: gel time (faster for pure, extended for hybrid), hardness (Shore A80–A92), elongation (target 500–600%+), and tensile strength (target 20–22 MPa+). Base chemistry selection — pure or hybrid — determined by your target application profile. Nitrogen-sealed packaging per export requirements. MOQ by formulation. Send your target specification for a sample batch and firm quotation."
@@ -341,4 +341,4 @@ This chemistry translates directly into operational economics. A two-operator sp
 
 The pure vs hybrid distinction matters for specification. Pure polyurea's amino-terminal chemistry delivers the fastest cure, the highest humidity tolerance, and ≥600% elongation. Hybrid polyurea's hydroxyl/amino blend extends gel time to ≤40 seconds and allows hardness to be tuned across a Shore A80–A92 range — useful when the coating must balance flexibility against compressive loading or when the substrate geometry requires slightly more working time before gelation. Both formulations share the same operating envelope: -45°C to 120°C continuous, flame-retardant with self-extinguishing behavior, and zero VOC.
 
-TY-SHIELD™ spray polyurea is manufactured by Weifang Tianyuan — direct from the production line, not through a trading company. Specify pure or hybrid. Specify the thickness and square meterage. Technical team provides equipment guidance, application parameters, and a same-day quotation with container configuration and lead time.
+TY-SHIELD™ spray polyurea is manufactured by Weifang Tianyuan. Specify pure or hybrid, thickness, square meterage, and destination port. Our technical team can review equipment, application parameters, container configuration, and production schedule after receiving the project requirements.

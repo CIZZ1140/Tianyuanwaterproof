@@ -4,12 +4,12 @@ displayName: "Pre-applied HDPE Membrane"
 category: "polymer-membranes"
 featured: true
 order: 70
-meta_description: "Factory-direct pre-applied HDPE self-adhesive waterproof membrane. EN 13967 & GB/T 23457 certified, anti-water channeling, self-healing polymer layer. 1.2mm/1.5mm, 1.0m/2.0m width. Underground foundation, basement, tunnel. OEM & free sample. Get a quote!"
+meta_description: "Factory-direct pre-applied HDPE self-adhesive waterproof membrane for foundations, basements, and tunnels. Available in selected thicknesses and widths with OEM support. Request a TDS or quotation."
 product_category: "Polymer Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp"
 image: "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp"
 
-hero_description: "TY-SHIELD™ pre-applied HDPE self-adhesive waterproof membrane — a high-density polyethylene sheet with a reactive polymer self-adhesive layer, engineered for installation before concrete pouring. When liquid concrete is cast against the membrane, the polymer self-adhesive layer chemically cross-links with the curing concrete, forming a permanent, gap-free, monolithic bond that eliminates water channeling between the waterproofing layer and the structural concrete. Features a 70mm synthetic adhesive lap area on the long edge and a self-healing polymer layer that seals small construction-phase punctures during concrete placement. Available in 1.2mm and 1.5mm thicknesses, 1.0m and 2.0m widths. Compliant with EN 13967 and GB/T 23457. Factory-direct supply with full OEM and private-label support for international civil engineering and foundation waterproofing projects."
+hero_description: "TY-SHIELD™ pre-applied HDPE self-adhesive waterproof membrane — a high-density polyethylene sheet with a reactive polymer self-adhesive layer for installation before concrete pouring. The system is designed to bond with the curing concrete and help limit water movement at the membrane-concrete interface when installed according to the project method. Available in selected thicknesses and widths with OEM and private-label support. Confirm the applicable standard, test documentation, and project configuration with our technical team."
 
 hero_tags:
   - "HDPE Pre-Applied"
@@ -66,7 +66,7 @@ quick_facts:
 
 applications:
   - title: "Underground Foundation & Basement"
-    text: "The standard specification for basement slabs, pile caps, and deep foundation waterproofing where a permanent, gap-free bond with the structural concrete is essential."
+    text: "Used for basement slabs, pile caps, and deep foundation waterproofing where a bonded membrane-concrete interface is required by the project design."
   - title: "Blind-Side & Retaining Walls"
     text: "Ideal for diaphragm walls, secant pile walls, and subway stations where waterproofing must be installed on the outside face before the concrete structure is cast — with no access for post-application inspection or repair."
   - title: "Tunnels & Cut-and-Cover"
@@ -104,22 +104,22 @@ technical_data:
     unit: "kg"
     standard: "EN 12730"
     requirement: "≥ 20"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
   - label: "Resistance to Impact"
     unit: "mm"
     standard: "EN 12691-B"
     requirement: "600mm"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
   - label: "Nail Shank Tear (L/T)"
     unit: "N"
     standard: "EN 12310-1"
     requirement: "≥ 500"
-    value: "Qualified"
+    value: "Typical value; confirm with the product TDS"
   - label: "Joint Peel Resistance"
     unit: "N/50mm"
     standard: "EN 12317-2"
     requirement: "≥ 400"
-    value: "Qualified"
+    value: "Typical value; confirm with the product TDS"
   - label: "Chemical Durability (Post-Test)"
     unit: "kPa / h"
     standard: "EN 1847 → EN 1928"
@@ -139,12 +139,12 @@ technical_data:
     unit: "kg/m²"
     standard: "EN 1848-2"
     requirement: "≥ 1.25"
-    value: "Qualified"
+    value: "Typical value; confirm with the product TDS"
   - label: "Mass per Unit Area (1.5mm)"
     unit: "kg/m²"
     standard: "EN 1848-2"
     requirement: "≥ 1.75"
-    value: "Qualified"
+    value: "Typical value; confirm with the product TDS"
 
 application_guide:
   - title: "Surface Preparation"
@@ -224,10 +224,10 @@ faqs:
 
 Self-adhesive pre-applied HDPE waterproof membrane represents a fundamental shift in underground waterproofing philosophy. Traditional systems install the waterproofing layer on the completed concrete structure — creating a physical interface that can separate, delaminate, or channel water. HDPE pre-applied membrane inverts this sequence: the membrane is laid first, and the concrete structure is cast directly against it.
 
-This is not a small process change — it is a different category of waterproofing performance. When wet concrete contacts the reactive polymer self-adhesive layer, the cement slurry penetrates the polymer surface. As the concrete hydrates and cures, a chemical cross-linking reaction permanently bonds the waterproofing layer to the structural concrete. There is no gap. There is no interface for water to migrate through. The waterproofing is the structure.
+This is a different installation sequence from conventional post-applied systems. When wet concrete contacts the reactive polymer self-adhesive layer, the interface is designed to bond as the concrete cures. Actual bonding performance depends on the membrane formulation, substrate conditions, concrete placement, detailing, and installation quality; follow the project method and confirm the applicable test documentation.
 
 TY-SHIELD™ HDPE pre-applied membrane comprises four functional layers: a high-density polyethylene film substrate for physical strength and chemical barrier performance, a reactive polymer self-adhesive compound on one surface, a protective coating, and a 70mm synthetic adhesive lap area on the long edge for field jointing. The self-adhesive layer also exhibits self-healing behavior — flowing into small punctures and construction damage when concrete is placed, sealing them during the hydration process.
 
-All products comply with **EN 13967** and **GB/T 23457**, with full EN test documentation covering chemical durability (EN 1847), accelerated aging (EN 1296), nail shank tear resistance (EN 12310-1), static loading (EN 12730), and impact resistance (EN 12691-B). As a direct manufacturer, Weifang Tianyuan supplies international civil engineering contractors, foundation waterproofing specialists, and project procurement teams with consistent, batch-tested quality and complete OEM flexibility.
+Applicable standards and test methods depend on the selected product configuration and destination market. Request the product-specific TDS and available test documentation for review before specification. As a direct manufacturer, Weifang Tianyuan supports civil engineering contractors, foundation waterproofing specialists, and project procurement teams with OEM options and export documentation.
 
-Contact our export team with your target thickness, width, and destination port for a competitive factory quotation, lead time estimate, and free sample.
+Contact our export team with your target thickness, width, application, and destination port. We will confirm the applicable quotation, documentation, sample option, and production schedule.

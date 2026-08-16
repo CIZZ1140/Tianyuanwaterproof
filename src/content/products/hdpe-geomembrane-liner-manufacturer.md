@@ -10,9 +10,9 @@ hero_description: "Professional HDPE geomembrane manufacturer providing high-den
 
 hero_tags:
   - "HDPE Geomembrane"
-  - "ASTM / GRI-GM13"
-  - "0.2mm>=.0mm Thickness"
-  - "1m>=m Seamless Width"
+  - "ASTM / GRI-GM13 Reference"
+  - "0.2mm-3.0mm Thickness"
+  - "Custom Width Options"
   - "Excellent UV Resistance"
   - "OEM Available"
 
@@ -30,7 +30,7 @@ spec_table:
   - label: "Manufacturing Process"
     value: "High-pressure blow molding / T-die extrusion"
   - label: "Width Range"
-    value: "1m >=8m (Supports seamless large-scale installation)"
+    value: "1m-8m (custom width subject to specification)"
   - label: "Thickness Options"
     value: "0.2mm, 0.5mm, 0.75mm, 1.0mm, 1.5mm, 2.0mm, 3.0mm"
   - label: "Surface Finish"
@@ -38,7 +38,7 @@ spec_table:
   - label: "Standard Compliance"
     value: "GB/T17643-2011, ASTM D5199, GRI-GM13"
   - label: "Service Life"
-    value: "50+ years (underground/covered environment)"
+    value: "Project-specific; confirm with the product TDS"
   - label: "Customization"
     value: "Thickness, color, width, and roll length customizable"
 
@@ -122,7 +122,7 @@ application_guide:
   - title: "Extrusion Welding"
     text: "Apply extrusion welding for detail areas, patches, corners, and pipe penetrations."
   - title: "Quality Inspection"
-    text: "Perform air pressure tests for dual-track seams and vacuum box tests for extrusion welds to ensure zero leakage."
+    text: "Perform air pressure tests for dual-track seams and vacuum box tests for extrusion welds to verify seam continuity according to the project quality plan."
   - title: "Anchoring & Protection"
     text: "Secure the edges in an anchor trench and backfill. Cover with a protective layer (geotextile/soil) as designed."
 
@@ -143,12 +143,12 @@ loading_data:
     value: "5.8m / 7.0m / 8.0m"
   - label: "Standard Length"
     value: "50m / 100m (Customizable)"
-  - label: "Certification"
-    value: "ISO9001, CE, GRI-GM13"
+  - label: "Documentation"
+    value: "Product-specific TDS and applicable test documentation on request"
   - label: "Loading Port"
     value: "Qingdao, China"
-  - label: "Lead Time"
-    value: "7-15 days for bulk orders"
+  - label: "Production Schedule"
+    value: "Confirmed after specification, quantity, and packaging review"
 
 downloads:
   - title: "Technical Data Sheet (TDS)"
@@ -178,7 +178,7 @@ faqs:
   - question: "What is the difference between Smooth and Textured HDPE Geomembrane?"
     answer: "Smooth geomembrane is the standard choice for flat containment. Textured geomembrane (single or double-sided) provides higher friction and is essential for steep slopes to prevent sliding of the cover soil or the liner itself."
   - question: "How long does HDPE geomembrane last?"
-    answer: "When properly installed and covered (protected from direct UV), HDPE geomembranes can have a service life exceeding 50-100 years. Our high-quality virgin resin ensure excellent long-term durability."
+    answer: "Service life depends on resin formulation, thickness, exposure, cover, installation quality, and site conditions. Covered systems may support long-term use, but the expected service life should be confirmed from the product TDS and project design requirements."
   - question: "Is HDPE geomembrane safe for fish ponds?"
     answer: "Yes, our geomembranes are produced from 100% virgin high-density polyethylene resin without toxic additives, making them safe for aquaculture, fish ponds, and drinking water reservoirs."
   - question: "What is the recommended thickness for a landfill liner?"
@@ -191,12 +191,12 @@ faqs:
 
 HDPE Geomembrane (High-Density Polyethylene Liner) is a low-permeability synthetic membrane liner. It is an integral component of any geotechnical engineering project. We make it from premium virgin polyethylene resins through a sophisticated blow molding or extrusion process. This provides an impenetrable barrier against liquids and gases.
 
-## Why Choose Tianyuan HDPE Geomembrane>=
+## Why Choose Tianyuan HDPE Geomembrane
 
-As a professional manufacturer in China, Tianyuan provides HDPE liners that meet and exceed **ASTM GRI-GM13** international standards. Our geomembranes are engineered for the most demanding environments. They work effectively in hazardous waste landfills and high-pressure water reservoirs.
+As a professional manufacturer in China, Tianyuan provides HDPE liners for landfill, mining, reservoir, and aquaculture applications. Available standards, test methods, and certification scope depend on the product specification and destination market; confirm the applicable documentation with our technical team before specification.
 
-### Seamless Large-Scale Installation
-我们提供宽度>=**8.0 >=* 的卷材。这能显著减少现场焊缝数量。焊缝通常是防渗工程中最容易发生泄漏的点>=
+### Large-Scale Installation
+We offer custom roll widths subject to the product specification. Wider rolls can reduce the number of field seams, while seam preparation and testing remain essential parts of the installation quality plan.
 
 ### Superior Durability
 Enhanced with carbon black and antioxidants, our liners offer exceptional resistance to UV radiation. They also withstand thermal aging and chemical corrosion from acids, alkalis, and salts.

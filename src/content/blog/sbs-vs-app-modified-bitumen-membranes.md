@@ -24,7 +24,7 @@ faqs:
   - question: "Which is cheaper, SBS or APP membrane?"
     answer: "It depends on the specification, not the material type alone. The price difference is driven by thickness, reinforcement type, surface finish, and container loading efficiency — not the modifier itself. A 4mm polyester-reinforced SBS can cost more or less than an equivalent APP depending on order volume, packaging, and destination port. Request a quotation with full specifications for an accurate comparison."
   - question: "Which membrane should I choose if I'm not sure about my climate?"
-    answer: "Send your project location and application details to our technical team for a recommendation based on your actual climate data. As a general rule: cold regions and structures with thermal movement favor SBS; hot exposed roofs favor APP. Both are available with full TDS documentation, and free samples can be arranged for testing before specification."
+    answer: "Send your project location and application details to our technical team for a recommendation based on your actual climate data. As a general rule: cold regions and structures with thermal movement favor SBS; hot exposed roofs favor APP. Product-specific TDS documentation and sample options can be confirmed with our technical team before specification."
 ---
 
 ## What Are SBS and APP Modified Bitumen Membranes?
@@ -216,6 +216,6 @@ It depends on the specification, not the material type alone. The price differen
 
 ### Which membrane should I choose if I'm not sure about my climate?
 
-Send your project location and application details to our technical team for a recommendation based on your actual climate data. As a general rule: cold regions and structures with thermal movement favor SBS; hot exposed roofs favor APP. Both are available with full TDS documentation, and free samples can be arranged for testing before specification.
+Send your project location and application details to our technical team for a recommendation based on your actual climate data. As a general rule: cold regions and structures with thermal movement favor SBS; hot exposed roofs favor APP. Product-specific TDS documentation and sample options can be confirmed with our technical team before specification.
 
 For a deeper look at price drivers and supplier selection, see our [2026 SBS Membrane Market & Procurement Guide](/blog/2026-global-sbs-membrane-market-analysis/).

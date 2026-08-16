@@ -84,7 +84,7 @@ A lower price on a different specification is not a lower price. To compare quot
 2. **Align the trade terms.** Compare like for like: FOB vs CIF, the same MOQ, the same payment terms (e.g., T/T 30% advance, 70% against B/L copy), and the same delivery lead time.
 3. **Verify the TDS matches the quote.** A quoted "4mm polyester" that is actually a lighter reinforcement is a different product at a different price.
 4. **Factor in loading.** Ask for the container loading plan (m² per 20FT/40FT) — it converts the unit price into the true landed cost per m².
-5. **Request samples.** Free samples cost the supplier little; a supplier unwilling to send samples or batch test reports is a pricing risk of its own.
+5. **Request samples.** Sample availability and courier terms vary by supplier and product; request samples or batch test reports when they are relevant to the specification.
 
 ## 3. Documents Every Serious Supplier Should Provide
 

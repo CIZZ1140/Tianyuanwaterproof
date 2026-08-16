@@ -4,7 +4,7 @@ displayName: "Quick-Setting Rubber Coating"
 category: "waterproof-coatings"
 featured: true
 order: 45
-meta_description: "JC/T 2428 certified spray quick-setting rubber asphalt coating. Instant gel ≤5s, ≥1000% elongation, 120°C heat resistance. Core-shell emulsion, plural-component spray, 1000 m²/day. OEM. Factory quote."
+meta_description: "Spray-applied quick-setting rubber asphalt coating for selected waterproofing and infrastructure systems. Gel time, elongation, heat resistance, and output depend on formulation and equipment. Request a TDS or quotation."
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt.webp"
 main_image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt.webp"
@@ -112,7 +112,7 @@ technical_data:
     unit: "MPa"
     standard: "JC/T 2428"
     requirement: "≥ 0.8"
-    value: "Qualified"
+    value: "Typical value; confirm with the product TDS"
   - label: "Watertightness"
     unit: "MPa / min"
     standard: "JC/T 2428"
@@ -132,7 +132,7 @@ technical_data:
     unit: "°C"
     standard: "JC/T 2428"
     requirement: "120°C — No flowing, sliding, dripping"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
   - label: "Nail Rod Self-Healing"
     unit: "—"
     standard: "JC/T 2428"
@@ -142,7 +142,7 @@ technical_data:
     unit: "MPa"
     standard: "JC/T 2428"
     requirement: "≥ 0.40"
-    value: "Qualified"
+    value: "Typical value; confirm with the product TDS"
 
 application_guide:
   - title: "Surface Prep — You're Gluing to It, Make It Grippable"

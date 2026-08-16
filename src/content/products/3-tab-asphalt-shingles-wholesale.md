@@ -67,7 +67,7 @@ technical_data:
     unit: "N/50mm"
     standard: "GB/T 20474"
     requirement: "min. 600"
-    value: "Qualified"
+    value: "Typical value; confirm with the product TDS"
   - label: "Heat Resistance"
     unit: "degC"
     standard: "GB/T 20474"
@@ -82,7 +82,7 @@ technical_data:
     unit: "km/h"
     standard: "ASTM D3161"
     requirement: "Class F"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
   - label: "Fire Resistance"
     unit: "Rating"
     standard: "UL 790"
@@ -139,7 +139,7 @@ faqs:
   - question: "Can they be installed over existing roofs?"
     answer: "We recommend a clean deck for the best long-term performance."
   - question: "What is the life expectancy of these shingles?"
-    answer: "Typically, these premium shingles last 20 to 30 years."
+    answer: "Service life depends on shingle formulation, roof design, climate, installation quality, and maintenance. Request the product-specific documentation before setting a project service-life expectation."
 ---
 
 ## Economic and Durable Roofing Solution

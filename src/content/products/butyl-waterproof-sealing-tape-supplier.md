@@ -43,8 +43,8 @@ spec_table:
     value: "Width, length, surface, and private brand marks"
 
 quick_facts:
-  - title: "Permanent Sealing"
-    text: "Solvent-free material that never hardens, providing lifelong sealing and tracking resistance."
+  - title: "Flexible Sealing"
+    text: "Solvent-free material designed to remain flexible after application. Actual sealing performance depends on the tape grade, substrate, exposure, joint movement, and installation conditions."
   - title: "High Adhesion"
     text: "Exceptional bonding strength to cement, metal, wood, and polymer membranes without primers."
   - title: "Extreme Weatherability"
@@ -77,7 +77,7 @@ technical_data:
     unit: ">="
     standard: "JC/T 942-2004"
     requirement: "Standard Conformity"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
   - label: "Persistent Adhesivity"
     unit: "min"
     standard: "JC/T 942-2004"
@@ -97,7 +97,7 @@ technical_data:
     unit: "MPa"
     standard: "JC/T 942-2004"
     requirement: ">=2.0"
-    value: "Qualified"
+    value: "Typical value; confirm with the product TDS"
   - label: "Peel Strength (Cement)"
     unit: "N/mm"
     standard: "JC/T 942-2004"
@@ -107,7 +107,7 @@ technical_data:
     unit: "%"
     standard: "Ca(OH)>=retention"
     requirement: ">=80"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
 
 application_guide:
   - title: "Substrate Cleaning"
@@ -165,7 +165,7 @@ related_products:
 
 faqs:
   - question: "Is butyl tape permanent?"
-    answer: "Yes, our solvent-free butyl formula is engineered to remain permanently flexible and tacky for the life of the project."
+    answer: "The solvent-free butyl formulation is designed to remain flexible and tacky after application. Actual performance depends on the tape grade, substrate, exposure, joint movement, and installation conditions."
   - question: "Can I use butyl tape on a wet surface?"
     answer: "For maximum bond, the surface must be clean and dry. We do not recommend installation on active leaks or wet surfaces."
   - question: "What is the construction temperature range?"
@@ -176,4 +176,4 @@ faqs:
 
 Butyl rubber waterproof sealing self-adhesive tape is a premier, solvent-free material designed for high-performance sealing in construction and industrial projects. Engineered from a blend of butyl rubber and high-polymer materials, it provides an impenetrable, flexible barrier for everything from residential roofing to subway tunnels.
 
-Known for its exceptional bonding strength to diverse substrates like metal, cement, and wood, Tianyuan's butyl tape is a favorite among contractors for its ease of installation and lifelong durability. We support full OEM customization, providing tailored widths, lengths, and packaging for global distributors and large-scale infrastructure projects.
+Tianyuan's butyl tape is designed for bonding to selected substrates such as metal, cement, and wood when properly prepared. We support OEM customization, providing tailored widths, lengths, and packaging for global distributors and infrastructure projects.

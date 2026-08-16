@@ -4,15 +4,15 @@ displayName: "TPO Waterproofing Membrane"
 category: "polymer-membranes"
 featured: true
 order: 90
-meta_description: "Eco-friendly TPO waterproofing membrane manufacturer. 100% recyclable, chlorine-free formulation for sustainable roofing. Superior UV resistance and hot-air weldability. Ideal for commercial projects and LEED certification."
+meta_description: "TPO waterproofing membrane for commercial roofing and sustainable infrastructure. Hot-air weldable sheet with selected thickness and width options. Request a TDS or factory quotation."
 main_image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
 image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
 
-hero_description: "TY-SHIELD™ TPO (Thermoplastic Polyolefin) waterproofing membrane — a hot-air weldable, single-ply polymer sheet engineered for exposed roofing and sustainable infrastructure. Our 100% recyclable, chlorine-free formulation provides maximum energy efficiency and weather resistance for LEED-certified green buildings."
+hero_description: "TY-SHIELD™ TPO (Thermoplastic Polyolefin) waterproofing membrane — a hot-air weldable, single-ply polymer sheet for exposed roofing and sustainable infrastructure. Available in selected configurations with product-specific technical documentation. Confirm the applicable environmental, fire, and project requirements before specification."
 
 hero_tags:
   - "Hot-Air Weldable"
-  - "100% Recyclable"
+  - "Recyclable Formulation Options"
   - "Energy Efficient"
   - "UV Resistant"
 
@@ -28,11 +28,11 @@ spec_table:
 
 quick_facts:
   - title: "Chlorine-Free & Recyclable"
-    text: "TPO is a 100% recyclable polyolefin material that contains no chlorine, plasticizers, or hazardous additives. It is the leading choice for sustainable construction projects aiming for LEED or BREEAM certification."
+    text: "TPO is a polyolefin membrane option used in sustainable roofing systems. Recyclability, additives, environmental declarations, and suitability for LEED or BREEAM projects depend on the formulation and available documentation; confirm the product-specific details before specification."
   - title: "Exceptional Ozone Resistance"
-    text: "Engineered from advanced ethylene and alpha-olefin polymers, TPO offers unmatched resistance to ozone and environmental pollutants. Unlike rubber-based systems, it maintains its surface integrity without oxidation."
+    text: "TPO is designed for resistance to ozone and common environmental exposure. Actual weathering performance depends on the formulation, thickness, surface, climate, and installation conditions; confirm the product-specific data before specification."
   - title: "Energy-Efficient Cool Roof"
-    text: "The highly reflective white surface of our TPO membrane reduces roof surface temperatures by up to 30°C compared to dark surfaces. This significantly lowers HVAC energy consumption."
+    text: "Light-colored TPO surfaces may support solar reflectance and cool-roof design objectives. Actual thermal performance depends on surface color, climate, roof assembly, insulation, and building operation; confirm project-specific data before making an energy estimate."
   - title: "Robust Thermal Weldability"
     text: "Allows for a wide welding window during installation, ensuring consistent, high-strength seam fusion even in fluctuating weather conditions. The resulting monolithic joints are inseparable."
 
@@ -56,7 +56,7 @@ technical_data:
     unit: "°C"
     standard: "GB 27789"
     requirement: "-40°C No crack"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
   - label: "Joint Peeling Strength"
     unit: "N/mm"
     standard: "GB 27789"
@@ -79,7 +79,7 @@ faqs:
   - question: "What is the difference between TPO Type H, L, and P?"
     answer: "H is homogeneous, L has textile backing for bonding, and P is polyester reinforced for mechanical fastening on exposed roofs."
   - question: "Is TPO better than PVC for roofing?"
-    answer: "TPO is more eco-friendly and 100% recyclable, while PVC offers superior chemical resistance for specific industrial exposures."
+    answer: "TPO and PVC use different polymer systems and may suit different roofing, chemical-exposure, welding, fire, and environmental requirements. Recyclability and chemical resistance depend on the formulation and available documentation. Compare the product-specific TDS before selection."
   - question: "What thickness should I choose?"
     answer: "1.2mm is common for general use, while 1.5mm is the industry standard for mechanically fastened exposed roofs."
 

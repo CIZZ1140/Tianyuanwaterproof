@@ -63,7 +63,7 @@ While self-adhesive membranes often carry a higher initial material price, they 
 | **Substrate** | Must be smooth, dry, and primed | More forgiving on irregular surfaces |
 | **Min. Temperature** | Usually $>5°C$ (Check TDS) | More controllable in cold weather |
 | **Confined Spaces** | Preferred (No fumes/hazard) | Not recommended due to oxygen risk |
-| **Typical Life** | 20-25+ years (System dependent) | 20-30 years (System dependent) |
+| **Service Life** | Project- and system-dependent; confirm with the product TDS | Project- and system-dependent; confirm with the product TDS |
 
 ---
 

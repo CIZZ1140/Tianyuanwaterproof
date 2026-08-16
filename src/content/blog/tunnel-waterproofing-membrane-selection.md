@@ -42,8 +42,8 @@ For infrastructure procurement managers, the initial material price is only one 
 | System Type | Initial Cost (CAPEX) | Life Expectancy | Maintenance Needs |
 |---|---|---|---|
 | **Bitumen Systems** | Low - Moderate | 15–20 Years | Moderate (Joint check) |
-| **PVC Sheet Systems** | Moderate - High | 25–50 Years | Low (Welded security) |
-| **HDPE Pre-applied** | High | 50+ Years | Very Low (Bonded seal) |
+| **PVC Sheet Systems** | Moderate - High | Project- and system-dependent; confirm with the product TDS | Low (Welded system) |
+| **HDPE Pre-applied** | High | Project- and system-dependent; confirm with the product TDS | Low (Bonded system) |
 
 **Pro Tip:** In high-budget subway projects, **PVC** is often selected because the labor savings from automatic welding and the reduced risk of future leaks far outweigh the higher initial material cost compared to bitumen.
 

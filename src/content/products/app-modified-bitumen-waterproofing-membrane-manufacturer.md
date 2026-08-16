@@ -116,7 +116,7 @@ technical_data:
     unit: "N"
     standard: "GB 18243"
     requirement: "≥ 300"
-    value: "Qualified"
+    value: "Typical value; confirm with the product TDS"
   - label: "Thermal Aging — Dimensional Change"
     unit: "%"
     standard: "GB 18243"
@@ -126,7 +126,7 @@ technical_data:
     unit: "g"
     standard: "GB 18243"
     requirement: "≤ 2.0 (loss)"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
 
 application_guide:
   - title: "Prepare the Substrate"
@@ -202,7 +202,7 @@ faqs:
   - question: "Can APP torch-applied membrane be installed on a wooden deck?"
     answer: "No. Torch application presents a direct fire risk on combustible substrates such as wooden decks. For wood-substrate projects, use our Self-Adhesive Bitumen Membrane (cold-applied, no flame required) or specify a cold-bonding adhesive method for the APP membrane."
   - question: "What information is needed for a factory quotation?"
-    answer: "Please provide: required thickness (3/4/5mm), reinforcement type (PY/G/PYG), surface finish (PE/S/M/ALU), project application, estimated quantity (sqm or containers), packaging preference, and destination port. Our export team will respond with a competitive quotation, lead time, and free sample arrangement."
+    answer: "Please provide: required thickness, reinforcement type, surface finish, project application, estimated quantity, packaging preference, and destination port. Our export team will review the details and confirm the applicable quotation, documentation, sample option, and production schedule."
   - question: "What is the difference between Type I and Type II APP membrane?"
     answer: "Type I is the standard performance grade with 105°C heat resistance and -5°C low-temperature flexibility — suitable for most general roofing applications in moderate climates. Type II is the high-performance grade offering 130°C heat resistance, -15°C low-temperature flexibility, and higher tensile and elongation values — the recommended specification for demanding hot-climate projects, exposed roofs, and infrastructure applications."
 
@@ -328,4 +328,4 @@ Whether you are importing container loads for roofing distribution across the Mi
 - **Consistent batch quality** — every production lot is tested against GB 18243-2008. Batch test reports are available on request for project specification review.
 - **Export-optimized packaging** — fumigated pallets, protective corner boards, weather-resistant wrapping, and custom labeling ensure your product arrives in factory-fresh condition at any global port.
 
-Contact our export team with your target specification (reinforcement type, surface material, thickness, and performance grade) for a detailed quotation, lead time estimate, and free sample arrangement.
+Contact our export team with your target specification, application, quantity, and destination port. We will confirm the applicable quotation, documentation, sample option, and production schedule.

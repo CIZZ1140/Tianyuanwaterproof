@@ -4,7 +4,7 @@ displayName: "JS Polymer Cement Coating"
 category: "waterproof-coatings"
 featured: true
 order: 60
-meta_description: "GB/T 23445 certified two-component JS polymer cementitious coating. Types I/II/III, damp-base, self-healing, tile-direct, potable water safe. OEM & free sample. Factory quote."
+meta_description: "Two-component JS polymer cementitious waterproof coating for damp-base, tile, roof, and below-grade applications. Types and performance depend on the selected grade. Request a TDS or factory quotation."
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"

@@ -4,12 +4,12 @@ displayName: "SBS Waterproofing Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 100
-meta_description: "Premium SBS elastomeric bitumen membrane for cold-climate regions. Engineered for -25°C flexibility and superior crack-bridging in tunnels, metro systems, and deep foundations. Manufactured per the GB/T 18242 standard series. Request a free sample today!"
+meta_description: "SBS elastomeric bitumen membrane for cold-climate roofing, tunnels, metro systems, and foundations. Available in multiple reinforcements and surface finishes. Request a TDS or factory quotation."
 product_category: "Bitumen Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 
-hero_description: "TY-SHIELD™ SBS (Styrene-Butadiene-Styrene) modified bitumen waterproofing membrane — a torch-applied, rubber-modified sheet membrane engineered for cold-climate roofing, basement, foundation, tunnel, and infrastructure waterproofing. Available in polyester (PY), glass fiber (G), and glass-reinforced polyester (PYG) reinforcement, with PE film, fine sand, mineral granules, or aluminum foil surfaces across 3mm, 4mm, and 5mm thicknesses. Compliant with the GB/T 18242 standard series (current edition GB/T 18242-2025). Factory-direct supply with full OEM, private-label, and export packaging support."
+hero_description: "TY-SHIELD™ SBS (Styrene-Butadiene-Styrene) modified bitumen waterproofing membrane for cold-climate roofing, basements, foundations, tunnels, and infrastructure. Available in polyester (PY), glass fiber (G), and glass-reinforced polyester (PYG) reinforcement, with PE film, fine sand, mineral granules, or aluminum foil surfaces across 3mm, 4mm, and 5mm thicknesses. Standard references and product documentation depend on the selected configuration; confirm the applicable TDS before specification."
 
 hero_tags:
   - "SBS Elastomeric"
@@ -113,7 +113,7 @@ technical_data:
     unit: "N/50mm"
     standard: "GB/T 18242"
     requirement: "≥ 900"
-    value: "Qualified"
+    value: "Typical value; confirm with the product TDS"
   - label: "Elongation at Peak (PY Type II)"
     unit: "%"
     standard: "GB/T 18242"
@@ -148,7 +148,7 @@ technical_data:
     unit: "%"
     standard: "GB/T 18242"
     requirement: "≤ 1.0"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
 
 application_guide:
   - title: "Surface Preparation"
@@ -195,8 +195,8 @@ standards_mapping:
     en: "EN 12311-1"
   - property: "Low Temp Flexibility"
     gb: "-25°C"
-    astm: "-20°C (Pass)"
-    en: "-25°C (Pass)"
+    astm: "Reference value; confirm with the product TDS"
+    en: "Reference value; confirm with the product TDS"
   - property: "Heat Resistance"
     gb: "90°C / 105°C"
     astm: "ASTM D5147"
@@ -210,9 +210,9 @@ supply_info:
   - title: "MOQ"
     text: "1 × 20FT container per specification. Mixed container loading available."
   - title: "Sample"
-    text: "Free A4-size samples for quality evaluation. Customer covers freight."
-  - title: "Production Lead Time"
-    text: "15–25 days after deposit confirmation."
+    text: "Sample availability, format, and courier arrangements depend on the selected configuration and destination."
+  - title: "Production Schedule"
+    text: "Confirmed after specification, quantity, packaging, and deposit requirements are reviewed."
   - title: "Payment Terms"
     text: "T/T 30% advance, 70% against B/L copy."
   - title: "Loading Port"
@@ -296,7 +296,7 @@ faqs:
   - question: "Can SBS membrane be cold-applied?"
     answer: "Yes. While torch application is the standard and most reliable method, SBS membrane is fully compatible with cold-bonding adhesives. This is useful for projects where open-flame work is restricted — for example, over occupied buildings, near flammable materials, or in confined spaces. Select from full-adhesion, strip-adhesion, or spot-adhesion methods based on your substrate conditions and wind uplift requirements."
   - question: "Do you offer OEM / private label for SBS membrane?"
-    answer: "Yes. We provide full OEM and private-label programs — including custom roll printing, branded wrapper film, private-label pallet marking, and custom specifications (thickness, reinforcement, surface, roll dimensions). MOQ: 1 × 20FT container per specification, mixed loading available. Contact our export team with your market requirements for a tailored quotation and free sample arrangement."
+    answer: "Yes. We support OEM and private-label programs, including custom roll printing, branded wrapper film, pallet marking, and selected specification adjustments. MOQ, mixed loading, sample availability, and preparation time depend on the product and order requirements; contact our export team for confirmation."
 
 ---
 
@@ -310,4 +310,4 @@ Tianyuan's **SBS Modified Bitumen Membrane** is a rubber-modified bitumen system
 
 For hot-climate or exposed roofing applications, see our [APP Modified Bitumen Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/). For torch-free, cold-applied installations, see our [Self-Adhesive Bituminous Membrane](/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/).
 
-Contact our export team with your target reinforcement type, thickness, surface finish, and performance grade for a competitive factory quotation, lead time estimate, and free sample arrangement.
+Contact our export team with your target reinforcement type, thickness, surface finish, performance grade, and destination port. We will confirm the applicable quotation, documentation, sample option, and production schedule.

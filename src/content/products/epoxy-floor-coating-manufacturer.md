@@ -46,7 +46,7 @@ quick_facts:
   - title: "High Mechanical Strength"
     text: "Exceptional resistance to impact, heavy foot traffic, and equipment movement in commercial spaces."
   - title: "Superior Adhesion"
-    text: "Bonds permanently to concrete, wood, and ceramic tiles, preventing peeling even under high stress."
+    text: "Designed to bond to properly prepared concrete, wood, and ceramic tile substrates. Adhesion and resistance to peeling depend on surface preparation, system design, and service conditions."
   - title: "Eco-Friendly & Safe"
     text: "95% solid content with low VOC emissions and zero detected harmful heavy metals like lead or mercury."
 
@@ -100,7 +100,7 @@ technical_data:
     unit: "h"
     standard: "168h test"
     requirement: "No Bubbling"
-    value: "Passed"
+    value: "Typical value; confirm with the product TDS"
   - label: "Heavy Metals (Pb/Cd)"
     unit: "mg/kg"
     standard: "Safety Test"

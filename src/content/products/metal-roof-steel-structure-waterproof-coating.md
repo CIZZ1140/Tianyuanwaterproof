@@ -65,7 +65,7 @@ technical_data:
     unit: "h"
     standard: "GB/T 16777"
     requirement: "80h, no blistering"
-    value: "Pass"
+    value: "Typical value; confirm with the product TDS"
   - label: "Adhesion (Steel)"
     unit: "MPa"
     standard: "GB/T 5210"

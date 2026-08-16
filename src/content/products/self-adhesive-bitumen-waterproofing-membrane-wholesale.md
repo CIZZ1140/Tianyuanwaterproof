@@ -1,5 +1,5 @@
 ﻿---
-title: "Self-Adhesive Bitumen Membrane Manufacturer | Cold Applied Peel & Stick Waterproofing | Wholesale Price & Free Sample"
+title: "Self-Adhesive Bitumen Membrane Manufacturer | Cold-Applied Waterproofing"
 displayName: "Self-Adhesive Bituminous Membrane"
 category: "bitumen-membranes"
 featured: true
@@ -74,7 +74,7 @@ features:
   - title: "Solvent-Free & Environmentally Friendly"
     text: "Applied without the use of volatile organic compounds (VOCs) or hot binders, making it ideal for indoor environments, food processing facilities, and hospitals where air quality and odor control are paramount."
   - title: "Precision Factory-Controlled Thickness"
-    text: "Unlike fluid-applied systems, our self-adhesive membrane provides a uniform, factory-guaranteed thickness across the entire project area, eliminating the risks of thin spots and inconsistent field application."
+    text: "Unlike fluid-applied systems, a factory-produced self-adhesive membrane is supplied with a defined nominal thickness. Confirm the product tolerance, substrate preparation, lap treatment, and installation quality requirements in the product TDS."
   - title: "Exceptional Elongation Capacity"
     text: "Maintains high elastic strain capacity, allowing it to bridge substrate cracks and accommodate significant building movement without losing its watertight integrity, even in deep below-grade applications."
   - title: "Integrated Release Liner Protection"
@@ -105,7 +105,7 @@ technical_data:
     unit: "%"
     standard: "GB 23441"
     requirement: "≥ 250 (I) / ≥ 150 (II)"
-    value: "Qualified"
+    value: "Typical value; confirm with the product TDS"
   - label: "Heat Resistance"
     unit: "°C / 2h"
     standard: "GB 23441"
@@ -145,7 +145,7 @@ technical_data:
     unit: "min"
     standard: "GB 23441"
     requirement: "≥ 20 (N) / ≥ 15 (PY)"
-    value: "Qualified"
+    value: "Typical value; confirm with the product TDS"
 
 application_guide:
   - title: "Surface Preparation"
@@ -308,4 +308,4 @@ Whether you are importing container loads for distribution across Southeast Asia
 - **Export-optimized packaging** — fumigated pallets, protective corner boards, weather-resistant wrapping, and custom labeling ensure your product arrives in factory-fresh condition.
 - **OEM without compromise** — your brand, our quality. Private label rolls with your company name, logo, barcode, and packaging design, shipped directly to your port.
 
-Contact our export team with your target specification (reinforcement type, surface material, thickness, and performance grade) for a detailed quotation, lead time estimate, and free sample arrangement.
+Contact our export team with your target specification, application, quantity, and destination port. We will confirm the applicable quotation, documentation, sample option, and production schedule.

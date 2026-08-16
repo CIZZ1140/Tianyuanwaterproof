@@ -102,7 +102,7 @@ technical_data:
     unit: "°C"
     standard: "DIN 53361"
     requirement: "-20°C, no cracks"
-    value: "Pass (-25°C)"
+    value: "Typical value; confirm with the product TDS"
   - label: "Hydrostatic Resistance"
     unit: "bar"
     standard: "DIN EN 1928"
@@ -180,4 +180,4 @@ The genius of this design lies in its fabric-reinforced edges. Unlike plain rubb
 *   **Universal Detail Support**: Available in pre-formed internal/external corners and pipe sleeves.
 *   **Broad Chemical Resistance**: Resistant to soil acids, alkalis, and UV exposure.
 
-Tianyuan supports global distributors and contractors with **OEM private labeling and customized roll sizes**. Whether reinforcing a wet-room corner in North America or sealing a tunnel expansion joint in Southeast Asia, TY-SHIELD™ TPE tape is the professional's choice for zero-leakage detail treatment.
+Tianyuan supports global distributors and contractors with **OEM private labeling and customized roll sizes**. TY-SHIELD™ TPE tape is designed for detail reinforcement and joint-sealing applications; final system performance depends on the substrate, detailing, installation, and project requirements.
