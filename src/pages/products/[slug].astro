@@ -112,6 +112,24 @@ const title = normalizeString(data.displayName || data.title, "Product Detail");
 const hasCustomSeoTitle = data.displayName && data.title && data.title.trim() !== data.displayName.trim();
 const seoTitle = hasCustomSeoTitle ? data.title.trim() : `${title} | Tianyuan Waterproof`;
 const productCategory = normalizeString(data.product_category || data.category, "Waterproofing");
+const inquiryCategoryMap: Record<string, string> = {
+  "bitumen-membranes": "Bitumen Membranes",
+  "polymer-membranes": "Polymer Membranes",
+  "asphalt-shingles": "Asphalt Shingles",
+  "waterproof-tapes": "Waterproof Tapes",
+  "waterproof-coatings": "Waterproof Coatings",
+  "geosynthetics": "Geosynthetics",
+};
+const inquiryCategory = inquiryCategoryMap[data.category] || "Other Waterproof Products";
+const contactHref = (intent: string) => {
+  const params = new URLSearchParams({
+    category: inquiryCategory,
+    product: title,
+    intent,
+    source: `/products/${entry.slug}/`,
+  });
+  return `/contact/?${params.toString()}`;
+};
 const mainImage = normalizeAsset(data.main_image || data.image);
 const gallery = normalizeGallery(data.gallery || []);
 const initialImage = gallery.length > 0 ? gallery[0].image : mainImage;
@@ -249,9 +267,9 @@ const productJsonLd = {
             )}
 
             <div class="mt-10 flex flex-col items-center gap-3 sm:flex-row">
-              <a href="/contact/" class="inline-flex w-full items-center justify-center rounded-xl bg-blue-700 px-10 py-3.5 text-sm font-black text-white shadow-xl shadow-blue-700/20 transition hover:bg-blue-800 sm:w-auto">Get Factory Quote</a>
+              <a href={contactHref("quote")} class="inline-flex w-full items-center justify-center rounded-xl bg-blue-700 px-10 py-3.5 text-sm font-black text-white shadow-xl shadow-blue-700/20 transition hover:bg-blue-800 sm:w-auto">Get Factory Quote</a>
               <a href="https://wa.me/8615263640998" target="_blank" rel="noopener" class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-emerald-100 bg-emerald-50 px-8 py-3.5 text-sm font-black text-emerald-700 transition hover:bg-emerald-100 sm:w-auto"><MessageCircle class="h-4 w-4" /> WhatsApp</a>
-              <a href="/contact/" class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-blue-100 bg-blue-50 px-8 py-3.5 text-sm font-black text-blue-800 transition hover:bg-blue-100 sm:w-auto"><FileText class="h-4 w-4" /> Request TDS</a>
+              <a href={contactHref("tds")} class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-blue-100 bg-blue-50 px-8 py-3.5 text-sm font-black text-blue-800 transition hover:bg-blue-100 sm:w-auto"><FileText class="h-4 w-4" /> Request TDS</a>
             </div>
             
             <p class="mt-4 text-[11px] font-medium text-slate-400 italic">For project-specific pricing, send your technical requirements and destination port.</p>

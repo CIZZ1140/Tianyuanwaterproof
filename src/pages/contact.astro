@@ -217,6 +217,9 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
               <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off" />
               
               <input type="hidden" name="_subject" value="New B2B Inquiry" />
+              <input type="hidden" name="Specific Product" id="specific-product" />
+              <input type="hidden" name="Inquiry Intent" id="inquiry-intent" />
+              <input type="hidden" name="Source Page" id="source-page" />
             
             <div class="grid gap-6 sm:grid-cols-2">
               <div>
@@ -356,8 +359,25 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
     </div>
   </main>
 
-  <!-- Phone Selector Logic -->
+  <!-- Inquiry context and phone selector logic -->
   <script>
+    const inquiryParams = new URLSearchParams(window.location.search);
+    const productInterest = document.getElementById('productInterest') as HTMLSelectElement;
+    const specificProduct = document.getElementById('specific-product') as HTMLInputElement;
+    const inquiryIntent = document.getElementById('inquiry-intent') as HTMLInputElement;
+    const sourcePage = document.getElementById('source-page') as HTMLInputElement;
+    const category = inquiryParams.get('category') || '';
+    const product = inquiryParams.get('product') || '';
+    const intent = inquiryParams.get('intent') || '';
+    const source = inquiryParams.get('source') || '';
+
+    if (category && productInterest && Array.from(productInterest.options).some(option => option.value === category)) {
+      productInterest.value = category;
+    }
+    if (specificProduct) specificProduct.value = product;
+    if (inquiryIntent) inquiryIntent.value = intent;
+    if (sourcePage) sourcePage.value = source;
+
     const selector = document.getElementById('country-selector');
     const trigger = selector?.querySelector('button');
     const dropdown = document.getElementById('country-dropdown');
