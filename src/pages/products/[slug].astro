@@ -222,11 +222,11 @@ const productJsonLd = {
     <!-- 2. Hero Card -->
     <section class="mx-auto w-full max-w-[1680px] px-4 py-4 sm:px-6 lg:px-8 lg:py-8">
       <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-10">
-        <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <!-- Left: Gallery Switcher -->
-          <div>
-            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 flex items-center justify-center relative shadow-inner">
-              <img id="main-product-image" src={initialImage} alt={title} class="max-h-[480px] w-full object-contain transition-all duration-300" />
+          <div class="flex flex-col">
+            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 flex-1 min-h-0 flex items-center justify-center relative shadow-inner">
+              <img id="main-product-image" src={initialImage} alt={title} width="100%" class="max-h-[600px] w-full object-contain transition-all duration-300" />
             </div>
             {gallery.length > 0 && (
               <div class="mt-4 grid gap-3 grid-cols-4 sm:grid-cols-5">
