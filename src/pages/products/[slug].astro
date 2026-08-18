@@ -229,8 +229,8 @@ const productJsonLd = {
               <img id="main-product-image" src={initialImage} alt={title} class="max-h-[480px] w-full object-contain transition-all duration-300" />
             </div>
             {gallery.length > 0 && (
-              <div class="mt-4 grid gap-3 grid-cols-4">
-                {gallery.slice(0, 4).map((item) => (
+              <div class="mt-4 grid gap-3 grid-cols-4 sm:grid-cols-5">
+                {gallery.slice(0, 5).map((item) => (
                   <button class="gallery-thumb group flex rounded-2xl border-2 border-slate-200 bg-white shadow-sm transition hover:border-blue-400 overflow-hidden" data-full={item.image}>
                     <div class="aspect-[4/3] w-full bg-slate-50 p-1 flex items-center justify-center">
                       <img src={item.image} alt={item.alt || item.title} class="h-full w-full object-contain transition group-hover:scale-105" />
