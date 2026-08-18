@@ -28,6 +28,9 @@ gallery:
   - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
     title: "APP Membrane Surface"
     alt: "APP modified bitumen waterproofing membrane mineral granule surface torch-applied roofing"
+  - image: "https://img.tyuanwaterproof.com/products/app-membrane-branded-roll.webp"
+    title: "Factory Roll"
+    alt: "Tianyuan branded APP modified bitumen membrane roll with mineral granule surface on white background"
   - image: "https://img.tyuanwaterproof.com/products/app-membrane-structure.webp"
     title: "Product Structure"
     alt: "APP modified bitumen waterproofing membrane product structure diagram showing polyester reinforcement and PE film layers"
@@ -37,9 +40,6 @@ gallery:
   - image: "https://img.tyuanwaterproof.com/products/app-membrane-torch-application.webp"
     title: "Torch Application"
     alt: "close-up of propane torch flame heating APP modified bitumen membrane roll during torch-applied installation"
-  - image: "https://img.tyuanwaterproof.com/products/app-membrane-branded-roll.webp"
-    title: "Factory Roll"
-    alt: "Tianyuan branded APP modified bitumen membrane roll with mineral granule surface on white background"
 
 spec_table:
   - label: "Product Type"
