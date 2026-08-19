@@ -8,6 +8,7 @@ interface Props {
 	title: string;
 	description?: string;
 	preloadImage?: string;
+	preloadImageMobile?: string;
 	isHomePage?: boolean;
 	ogImage?: string;
 }
@@ -16,6 +17,7 @@ const {
 	title, 
 	description = "Weifang Tianyuan Waterproof Material Co., Ltd. is a leading manufacturer of high-quality modified bitumen membranes, polymer membranes, and waterproof coatings for global construction projects.", 
 	preloadImage,
+	preloadImageMobile,
 	isHomePage = false,
 	ogImage = "https://img.tyuanwaterproof.com/og-default.webp"
 } = Astro.props;
@@ -85,12 +87,25 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 			</>
 		) : (
 			preloadImage && (
-				<link 
-					rel="preload" 
-					as="image" 
-					href={preloadImage} 
-					fetchpriority="high"
-				/>
+				<>
+					{preloadImageMobile && (
+						<link 
+							rel="preload" 
+							as="image" 
+							href={preloadImageMobile} 
+							media="(max-width: 768px)"
+							type="image/webp"
+							fetchpriority="high"
+						/>
+					)}
+					<link 
+						rel="preload" 
+						as="image" 
+						href={preloadImage} 
+						media={preloadImageMobile ? "(min-width: 769px)" : undefined}
+						fetchpriority="high"
+					/>
+				</>
 			)
 		)}
 

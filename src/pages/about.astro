@@ -37,6 +37,7 @@ const hero = {
   description: 'Tianyuan Waterproof manufactures waterproofing membranes, coatings, tapes, asphalt shingles and related construction materials for distributors, contractors and project procurement teams.',
   supportText: 'Based in Weifang, Shandong Province, China, we support product selection, technical documentation, export packing, OEM orders and factory quotation for global projects.',
   image: 'https://img.tyuanwaterproof.com/factory-main.webp',
+  imageMobile: 'https://img.tyuanwaterproof.com/factory-main-mobile.webp',
   imageAlt: 'Tianyuan Waterproof manufacturing factory in Weifang, Shandong, China',
   primaryCta: { label: 'View Our Products', href: '/products/' },
   secondaryCta: { label: 'Contact Technical Sales', href: '/contact/' }
@@ -133,21 +134,28 @@ const aboutPageSchema = {
 };
 ---
 
-<Layout title={pageTitle} description={pageDescription} preloadImage={hero.image}>
+<Layout title={pageTitle} description={pageDescription} preloadImage={hero.image} preloadImageMobile={hero.imageMobile}>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(aboutPageSchema)} />
 
   <main class="overflow-hidden bg-white text-slate-600 font-sans">
     <!-- 1. Hero -->
     <section class="relative isolate min-h-[580px] overflow-hidden bg-[#0E2A47]">
-      <img
-        src={hero.image}
-        alt={hero.imageAlt}
-        width="1920"
-        height="1080"
-        loading="eager"
-        fetchpriority="high"
-        class="absolute inset-0 h-full w-full object-cover"
-      />
+      <picture>
+        <source
+          srcset={hero.imageMobile}
+          media="(max-width: 768px)"
+          type="image/webp"
+        />
+        <img
+          src={hero.image}
+          alt={hero.imageAlt}
+          width="1200"
+          height="900"
+          loading="eager"
+          fetchpriority="high"
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+      </picture>
       <div class="absolute inset-0 bg-[#07192B]/80"></div>
       <div class="absolute inset-0 bg-gradient-to-r from-[#07192B] via-[#07192B]/85 to-transparent"></div>
 
