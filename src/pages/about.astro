@@ -133,7 +133,7 @@ const aboutPageSchema = {
 };
 ---
 
-<Layout title={pageTitle} description={pageDescription}>
+<Layout title={pageTitle} description={pageDescription} preloadImage={hero.image}>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(aboutPageSchema)} />
 
   <main class="overflow-hidden bg-white text-slate-600 font-sans">
@@ -145,6 +145,7 @@ const aboutPageSchema = {
         width="1920"
         height="1080"
         loading="eager"
+        fetchpriority="high"
         class="absolute inset-0 h-full w-full object-cover"
       />
       <div class="absolute inset-0 bg-[#07192B]/80"></div>
