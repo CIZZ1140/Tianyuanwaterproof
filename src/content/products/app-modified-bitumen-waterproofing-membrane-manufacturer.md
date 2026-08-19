@@ -4,7 +4,7 @@ displayName: "APP Modified Bitumen Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 95
-meta_description: "High-performance APP plastomeric bitumen membrane designed for hot-climate roofing. Withstands up to 130°C heat without flow or drip. Ideal for tropical regions, Middle East projects, and exposed roofs. Direct manufacturer wholesale prices."
+meta_description: "APP plastomeric bitumen membrane for hot-climate roofing. 130°C heat resistance, PY/G/PYG reinforcement, PE/sand/mineral/ALU surfaces, OEM wholesale."
 product_category: "Bitumen Membranes"
 image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
@@ -215,7 +215,55 @@ faqs:
   - question: "What is the difference between Type I and Type II APP membrane?"
     answer: "Type I is the standard performance grade with 105°C heat resistance and -5°C low-temperature flexibility — suitable for most general roofing applications in moderate climates. Type II is the high-performance grade offering 130°C heat resistance, -15°C low-temperature flexibility, and higher tensile and elongation values — the recommended specification for demanding hot-climate projects, exposed roofs, and infrastructure applications."
 
-# --- New Sections: Template code not yet implemented ---
+applications:
+  - title: "Hot-Climate Exposed Roofing"
+    text: "The standard choice for exposed roof systems across the Middle East, Southeast Asia, and tropical regions, where surface temperatures regularly exceed 80°C. Type II APP compound holds its shape at 130°C with no flow or drip, resisting the sag and slip that softens conventional bitumen sheets."
+  - title: "High-Temperature Industrial Roofing"
+    text: "Specified for factories, smelters, and process buildings where roof decks absorb radiant heat from plant operations. The plastomeric APP matrix maintains dimensional stability through repeated high-temperature cycles without embrittlement."
+  - title: "Commercial Roofing Systems"
+    text: "Used as mineral-surfaced cap sheet in multi-layer commercial roof assemblies and as a torch-applied base layer over stable substrates. Mineral granule surfaces add UV protection and foot-traffic resistance for long-service-life roofing."
+  - title: "Bridge & Infrastructure Waterproofing"
+    text: "Applied to concrete bridge decks and elevated structures in hot climates, where the membrane must tolerate both high service temperatures and thermal expansion stresses. PY and PYG reinforcements provide the required tensile performance."
+
+guide_links:
+  - title: "APP vs SBS: Which Modified Bitumen Membrane for Your Climate?"
+    href: "/blog/sbs-vs-app-modified-bitumen-membranes/"
+
+standards_mapping:
+  - property: "Tensile Strength"
+    gb: "≥ 800 N/50mm (PY)"
+    astm: "ASTM D6222"
+    en: "EN 12311-1"
+  - property: "Heat Resistance"
+    gb: "105°C / 130°C"
+    astm: "ASTM D5147"
+    en: "EN 1110"
+  - property: "Low Temp Flexibility"
+    gb: "-5°C / -15°C"
+    astm: "Reference value; confirm with the product TDS"
+    en: "Reference value; confirm with the product TDS"
+  - property: "Compliance Status"
+    gb: "GB 18243-2008"
+    astm: "Equivalent"
+    en: "Equivalent"
+
+supply_info:
+  - title: "MOQ"
+    text: "1 × 20FT container per specification. Mixed container loading available."
+  - title: "Sample"
+    text: "Sample availability, format, and courier arrangements depend on the selected configuration and destination."
+  - title: "Production Schedule"
+    text: "Confirmed after specification, quantity, packaging, and deposit requirements are reviewed."
+  - title: "Payment Terms"
+    text: "T/T 30% advance, 70% against B/L copy."
+  - title: "Loading Port"
+    text: "Qingdao, China"
+  - title: "Documents"
+    text: "TDS, MSDS, Packing List, Certificate of Origin"
+  - title: "Inspection"
+    text: "Factory QC + third-party inspection available on request"
+  - title: "OEM Service"
+    text: "Mineral granule color selection, surface finish (PE / Sand / M / ALU), thickness (3–5mm), and Type I/II grade customization with branded roll printing and private-label pallet marking."
 
 configurations:
   - reinforcement: "Polyester Felt (PY)"
@@ -231,28 +279,6 @@ configurations:
     surface: ["PE Film", "Fine Sand", "Mineral Granules"]
     application: "Commercial Roofing, Selected Infrastructure, Project-Specific Systems"
 
-structure:
-  diagram: "/placeholder.webp"
-  layers:
-    - name: "Upper Surface Layer"
-      role: "PE Film, Fine Sand, Mineral Granules, or Aluminum Foil — selected according to system exposure, climate, and finish requirements."
-    - name: "APP Modified Bitumen Coating"
-      role: "Provides the primary waterproofing and APP polymer-modified bitumen performance layer with plastomeric heat resistance."
-    - name: "Reinforcement Layer"
-      role: "PY, G, or PYG reinforcement provides tensile strength, puncture resistance, and dimensional stability."
-    - name: "APP Modified Bitumen Coating"
-      role: "Forms the lower waterproofing layer around the reinforcement carrier."
-    - name: "Lower Surface Layer"
-      role: "Burn-off PE Film designed for torch-applied installation — melts evenly under controlled flame for full-surface bonding."
-  surface_finish_guidance:
-    - surface: "PE Film"
-      use: "Multi-layer and non-exposed waterproofing systems."
-    - surface: "Fine Sand"
-      use: "When additional inter-layer bonding or mechanical protection is required."
-    - surface: "Mineral Granules"
-      use: "Exposed hot-climate roof systems requiring UV protection and decorative finish."
-    - surface: "Aluminum Foil"
-      use: "High-reflectivity applications — solar heat reduction and enhanced vapor barrier performance."
 ---
 
 ## Hot-Climate Roofing Engineered for Extreme Heat
