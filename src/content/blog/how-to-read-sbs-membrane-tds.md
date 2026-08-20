@@ -1,6 +1,6 @@
 ---
 title: "How to Read an SBS Membrane TDS: Key Parameters Explained"
-description: "Six parameters decide whether an SBS membrane TDS is worth trusting: soluble content, tensile strength, elongation, low-temperature flexibility, heat resistance and watertightness. How to read each one, what the GB/T 18242 values mean, and the 5-step speed-read method for B2B buyers."
+description: "How to judge an SBS membrane TDS: soluble content, tensile, elongation, low-temp flexibility, heat resistance, watertightness — GB/T 18242 values and a 5-step read."
 category: "industry-insights"
 publishDate: 2026-08-20
 updatedDate: 2026-08-20
@@ -24,14 +24,12 @@ faqs:
   - question: "What does tensile strength ≥800 N/50mm mean on an SBS membrane TDS?"
     answer: "It means a 50mm-wide test specimen must withstand at least 800 N of pulling force before failure. This value applies to Type II with polyester (PY) reinforcement under GB/T 18242, and it tells you how well the membrane resists substrate cracking and structural movement. Higher tensile strength and elongation together mean better crack-bridging performance. Compare the value with the reinforcement type — fiberglass (G) grades have lower tensile requirements than polyester (PY)."
   - question: "Why does a TDS list both GB 18242-2008 and GB/T 18242-2025?"
-    answer: "GB 18242-2008 is the previous edition of the standard; GB/T 18242-2025 is the current one, effective 1 May 2026. The 2025 edition adjusts classifications, test methods and some requirement values. When reviewing a TDS, check which standard edition the values are declared against — and for new orders, require the supplier to confirm values under the current GB/T 18242-2025."
+    answer: "GB 18242-2008 is the previous edition of the standard; GB/T 18242-2025 is the current one, effective 1 May 2026. GB/T 18242-2025 supersedes the previous edition and is the applicable reference for new orders. When reviewing a TDS, check which standard edition the values are declared against — and for new orders, require the supplier to confirm values under the current GB/T 18242-2025."
 ---
 
 ## Quick Answer: The Six Numbers That Decide Whether a TDS Is Trustworthy
 
 **Six parameters on an SBS membrane TDS decide project performance: soluble content, tensile strength, elongation, low-temperature flexibility, heat resistance and watertightness.** The two you should check first are low-temperature flexibility (Type I -20°C / Type II -25°C) and soluble content (≥2,100 g/m² for 3mm, ≥2,900 for 4mm, ≥3,500 for 5mm under GB/T 18242) — they determine climate suitability and material honesty. Then confirm tensile strength, heat resistance and watertightness against your project specification, and always verify which standard edition the values reference (current edition: GB/T 18242-2025, effective 1 May 2026).
-
-![Reading an SBS membrane TDS in a factory quality-control room](https://img.tyuanwaterproof.com/blog/sbs-tds-reading-flow.svg)
 
 ## Why Reading a TDS Is a Procurement Skill, Not a Paperwork Formality
 
@@ -69,6 +67,7 @@ Tensile strength (N/50mm) measures the pulling force a 50mm-wide specimen withst
 - Type II polyester (PY) reinforcement: tensile **≥800 N/50mm**, elongation **≥40%**.
 - Type I PY: **≥500 N/50mm**, elongation **≥30%**; fiberglass (G) grades carry lower tensile requirements (≥350-500 N/50mm) because glass felt prioritizes dimensional stability over stretch.
 - **How to use it:** for substrates with expected movement (tunnels, foundations, large roofs), prefer high tensile + high elongation — the membrane must stretch with the structure without tearing.
+- **Composite (PYG) grades** sit higher again: Type II PYG requires ≥900 N/50mm peak tensile with a second-peak requirement of ≥800 N/50mm — specified for heavy-load projects under the legacy classification.
 
 ### Low-Temperature Flexibility — The Climate Decision
 
@@ -90,6 +89,8 @@ Tested at **0.3 MPa for 30 minutes** (Type I PY and both Type II grades; 0.2 MPa
 Lap seams are the most common failure location in installed systems. Seam peel strength **≥1.5 N/mm** confirms the seam can resist peeling forces; it is only meaningful when installation follows the approved lap procedure (see our [installation guide](/technical/installation-guide/)).
 
 ## How to Read a TDS in Five Steps
+
+![Reading an SBS membrane TDS in a factory quality-control room](https://img.tyuanwaterproof.com/blog/sbs-tds-reading-flow.svg)
 
 1. **Check the grade first.** Find Type I / II and the reinforcement (PY / G / PYG) — every other value must be read against these.
 2. **Verify the standard edition.** Values declared under GB 18242-2008 (historical) differ from GB/T 18242-2025 (current, effective 1 May 2026). Require current-edition values for new orders.
@@ -117,6 +118,8 @@ To receive a comparable, verifiable TDS, request these five items together:
 
 A supplier that answers all five with a dated, referenced TDS is telling you how they control quality. One that sends a brochure instead is telling you something else.
 
+Once the specification is confirmed, the next procurement question is quantity — see how many rolls and m² fit per container in our [SBS container loading guide](/blog/how-many-rolls-of-sbs-membrane-fit-in-a-container/).
+
 ## Frequently Asked Questions
 
 ### What is the most important parameter on an SBS membrane TDS?
@@ -137,6 +140,6 @@ It means a 50mm-wide test specimen must withstand at least 800 N of pulling forc
 
 ### Why does a TDS list both GB 18242-2008 and GB/T 18242-2025?
 
-GB 18242-2008 is the previous edition of the standard; GB/T 18242-2025 is the current one, effective 1 May 2026. The 2025 edition adjusts classifications, test methods and some requirement values. When reviewing a TDS, check which standard edition the values are declared against — and for new orders, require the supplier to confirm values under the current GB/T 18242-2025.
+GB 18242-2008 is the previous edition of the standard; GB/T 18242-2025 is the current one, effective 1 May 2026. GB/T 18242-2025 supersedes the previous edition and is the applicable reference for new orders. When reviewing a TDS, check which standard edition the values are declared against — and for new orders, require the supplier to confirm values under the current GB/T 18242-2025.
 
 For the full specification matrix — reinforcement, surface and grade combinations — see our [SBS Waterproofing Membrane product page](/products/sbs-bitumen-waterproofing-membrane-manufacturer/). For grade selection logic, see the [SBS Membrane Type I vs Type II Guide](/blog/sbs-membrane-type-i-vs-type-ii-guide/).
