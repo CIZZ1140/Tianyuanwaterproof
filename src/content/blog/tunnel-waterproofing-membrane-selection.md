@@ -14,6 +14,17 @@ tags:
   - "Underground Waterproofing"
   - "Infrastructure Waterproofing"
   - "Membrane Selection"
+faqs:
+  - question: "What is the best waterproofing membrane for tunnels?"
+    answer: "The best membrane depends on the tunnel type, groundwater condition, installation method and structural design. PVC and HDPE membranes are commonly used for sprayed concrete-lined tunnels, while SBS bitumen membranes are used in selected cut-and-cover and protected underground systems. No single membrane is suitable for all tunnel projects."
+  - question: "Can bitumen membranes be used in tunnel waterproofing?"
+    answer: "SBS modified bitumen membranes can be used in selected underground and cut-and-cover waterproofing systems where a protected torch-applied membrane is specified. Final selection should follow the project specification and technical approval process."
+  - question: "PVC vs HDPE membrane for tunnel waterproofing — which is better?"
+    answer: "PVC membranes are flexible sheet systems commonly used with welded joints in tunnel lining applications. HDPE pre-applied membranes are often selected where concrete bonding and high chemical resistance are required. The choice depends on installation method, bonding requirement and project specification."
+  - question: "How to choose a waterproofing system for underground tunnels?"
+    answer: "Start with the tunnel type, waterproofing layer position, groundwater condition, substrate, installation method and required protection layer. Then compare membrane thickness, tensile strength, elongation, puncture resistance, joint treatment and available technical documents."
+  - question: "What documents are required for tunnel waterproofing membrane procurement?"
+    answer: "Request the product technical data sheet, installation guide, selected test reports, packing specification and any project-specific technical recommendations required for engineering approval."
 ---
 
 ## What Is a Tunnel Waterproofing Membrane System?
