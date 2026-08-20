@@ -13,6 +13,17 @@ tags:
   - "Torch-on Membrane"
   - "B2B Sourcing"
   - "Cost Comparison"
+faqs:
+  - question: "What is the main difference between self-adhesive and torch-applied membrane?"
+    answer: "Self-adhesive uses a factory-applied pressure-sensitive adhesive protected by a release liner and installs without open flame; torch-applied melts the bitumen with a propane flame to fuse it to the substrate. Choose self-adhesive for flame-restricted or confined sites, and torch-applied where heat-assisted bonding is required for cold or irregular substrates."
+  - question: "Is primer required for self-adhesive waterproofing membranes?"
+    answer: "Yes. A bitumen primer stabilizes dust and ensures a permanent bond with the concrete substrate — without it, adhesion can fail. Apply primer on all prepared surfaces and allow it to dry fully before laying the membrane."
+  - question: "Which is more suitable for cold-weather installation?"
+    answer: "Torch-applied is generally more controllable below 0°C because the heat softens both the membrane and the substrate for a positive bond. Self-adhesive bonding is temperature-sensitive and usually requires surface temperatures above 5°C — check the product TDS for the minimum. For sub-zero work, prefer torch-applied or a hybrid system with a self-adhered base installed under warmer conditions."
+  - question: "Can self-adhesive and torch-on membrane be combined?"
+    answer: "Yes, in an approved hybrid system: a self-adhered base layer protects the substrate from direct flame, and a torch-applied mineral-surfaced cap provides UV resistance and fused seams. Confirm chemical compatibility with the supplier before specifying a hybrid assembly."
+  - question: "What technical documents should I request before ordering waterproofing membrane?"
+    answer: "Request the TDS (Technical Data Sheet), MSDS and batch-specific test reports before ordering bulk quantities. Verify peel adhesion (≥1.5 N/mm), low-temperature flexibility and reinforcement type against your project specification."
 ---
 
 ## Executive Summary
@@ -61,7 +72,7 @@ While self-adhesive membranes often carry a higher initial material price, they 
 | :--- | :--- | :--- |
 | **Open Flame** | **No** (Safe for combustible decks) | Yes (Requires fire controls) |
 | **Substrate** | Must be smooth, dry, and primed | More forgiving on irregular surfaces |
-| **Min. Temperature** | Usually $>5°C$ (Check TDS) | More controllable in cold weather |
+| **Min. Temperature** | Usually >5°C (Check TDS) | More controllable in cold weather |
 | **Confined Spaces** | Preferred (No fumes/hazard) | Not recommended due to oxygen risk |
 | **Service Life** | Project- and system-dependent; confirm with the product TDS | Project- and system-dependent; confirm with the product TDS |
 
@@ -74,7 +85,7 @@ Before finalizing a procurement contract, ensure your **Technical Data Sheet (TD
 ![Close-up of self-adhesive membrane bonding and overlap](https://img.tyuanwaterproof.com/blog/self-adhesive-bonding-detail.webp)
 *Figure 3: Superior bonding performance showing the permanent molecular fusion at the overlap.*
 
-*   **Peel Adhesion:** Look for $\geq 1.5$ N/mm for high-performance self-adhesive systems.
+*   **Peel Adhesion:** Look for ≥1.5 N/mm for high-performance self-adhesive systems.
 *   **Low-Temperature Flexibility:** Premium SBS-modified variants from [Tianyuan Waterproof](/about/) pass tests at **-25°C**.
 *   **Reinforcement:** Specify **180g/m² Polyester (PY)** or **PYG Composite** for high-traffic infrastructure.
 
@@ -102,61 +113,29 @@ When requesting a quotation, provide the following details for a precise CIF/FOB
 
 ## FAQ: Strategic Waterproofing Sourcing
 
-### 1. What is the main difference between self-adhesive and torch-applied?
-Self-adhesive uses a pressure-sensitive compound and release liner, while torch-on uses a propane flame to melt the bitumen for bonding.
+### What is the main difference between self-adhesive and torch-applied membrane?
 
-### 2. Is primer required for self-adhesive waterproofing membranes?
-**Yes.** A bitumen primer is essential to stabilize dust and ensure a permanent bond with the concrete substrate.
+Self-adhesive uses a factory-applied pressure-sensitive adhesive protected by a release liner and installs without open flame; torch-applied melts the bitumen with a propane flame to fuse it to the substrate. Choose self-adhesive for flame-restricted or confined sites, and torch-applied where heat-assisted bonding is required for cold or irregular substrates.
 
-### 3. Which is more suitable for cold-weather installation?
-Torch-applied is generally more controllable in temperatures below $0°C$. Self-adhesive bonding is highly temperature-sensitive.
+### Is primer required for self-adhesive waterproofing membranes?
 
-### 4. Can self-adhesive and torch-on be combined?
-Yes, in an approved "Hybrid System." This reduces flame exposure while maintaining the durability of a torched cap sheet.
+Yes. A bitumen primer stabilizes dust and ensures a permanent bond with the concrete substrate — without it, adhesion can fail. Apply primer on all prepared surfaces and allow it to dry fully before laying the membrane.
 
-### 5. Do they have the same service life?
-Lifespan depends on the system design and maintenance. Both can last over 20 years when installed according to manufacturer guidelines.
+### Which is more suitable for cold-weather installation?
 
-### 6. Can I install self-adhesive over old bitumen?
-It is possible if the surface is cleaned and primed, but torch-on is often better for leveling over irregular old roofing.
+Torch-applied is generally more controllable below 0°C because the heat softens both the membrane and the substrate for a positive bond. Self-adhesive bonding is temperature-sensitive and usually requires surface temperatures above 5°C — check the product TDS for the minimum. For sub-zero work, prefer torch-applied or a hybrid system with a self-adhered base installed under warmer conditions.
 
-### 7. What technical documents should I request?
-Always ask for the **Technical Data Sheet (TDS)**, **MSDS**, and batch-specific **Test Reports** before ordering bulk quantities.
+### Can self-adhesive and torch-on membrane be combined?
+
+Yes, in an approved hybrid system: a self-adhered base layer protects the substrate from direct flame, and a torch-applied mineral-surfaced cap provides UV resistance and fused seams. Confirm chemical compatibility with the supplier before specifying a hybrid assembly.
+
+### What technical documents should I request before ordering waterproofing membrane?
+
+Request the TDS (Technical Data Sheet), MSDS and batch-specific test reports before ordering bulk quantities. Verify peel adhesion (≥1.5 N/mm), low-temperature flexibility and reinforcement type against your project specification.
+
+For the material chemistry behind both installation methods — SBS versus APP modification — see our [SBS vs APP Modified Bitumen Membranes guide](/blog/sbs-vs-app-modified-bitumen-membranes/).
 
 ---
 
 **Need a Technical Comparison Sheet or a Formal Quote?**  
 [Request Project Support from Tianyuan Waterproof →](/contact/)
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Is primer required for self-adhesive waterproofing membranes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, a bitumen primer is highly recommended to stabilize dust and ensure a permanent molecular bond between the substrate and the adhesive layer."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which is more suitable for cold-weather installation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Torch-applied membranes are generally preferred for cold-weather installation as the heat allows for a more controllable bond on cold substrates."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a self adhesive waterproofing membrane?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A self adhesive waterproofing membrane is a modified bitumen system with a factory-prefabricated adhesive layer protected by a release liner, requiring no open flame for installation."
-      }
-    }
-  ]
-}
-</script>

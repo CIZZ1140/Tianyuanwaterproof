@@ -27,6 +27,10 @@ faqs:
     answer: "Send your project location and application details to our technical team for a recommendation based on your actual climate data. As a general rule: cold regions and structures with thermal movement favor SBS; hot exposed roofs favor APP. Product-specific TDS documentation and sample options can be confirmed with our technical team before specification."
 ---
 
+## Quick Answer: Which Membrane for Which Climate?
+
+**Choose SBS for cold and variable climates, APP for hot exposed roofs.** SBS's rubber modification delivers low-temperature flexibility to -25°C (Type II), while APP's plastic modification provides heat resistance up to a 130°C softening point. Match the membrane to the expected roof surface temperature and lowest winter temperature — the wrong choice fails by cracking in cold or softening in heat. For cold regions, structures with thermal movement, tunnels and basements, specify SBS; for sustained extreme heat on exposed roofs, specify APP.
+
 ## What Are SBS and APP Modified Bitumen Membranes?
 
 SBS (Styrene-Butadiene-Styrene) and APP (Atactic Polypropylene) are two types of polymer-modified bitumen waterproofing membranes. Both are widely used in roofing, basements, tunnels, and infrastructure waterproofing across global construction markets.
