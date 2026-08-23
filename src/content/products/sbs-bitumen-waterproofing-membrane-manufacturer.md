@@ -1,10 +1,10 @@
 ---
-title: "SBS Bitumen Membrane Manufacturer | Torch Applied Cold-Climate Roofing | Wholesale"
+title: "SBS Bitumen Membrane Manufacturer | -25°C Cold-Climate Expert | Factory Price"
 displayName: "SBS Waterproofing Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 100
-meta_description: "SBS elastomeric bitumen membrane for cold-climate roofing, tunnels, metro systems, and foundations. Available in multiple reinforcements and surface finishes. Request a TDS or factory quotation."
+meta_description: "Stop roofing failures in cold climates. Our SBS membrane stays flexible at -25°C. High-tensile (900N+) & seismic-ready for infrastructure. Direct factory pricing for wholesalers. Request a bulk quote & free sample now!"
 product_category: "Bitumen Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"

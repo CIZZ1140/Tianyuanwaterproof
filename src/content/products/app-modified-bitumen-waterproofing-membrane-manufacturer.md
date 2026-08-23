@@ -1,10 +1,10 @@
 ---
-title: "APP Bitumen Membrane Manufacturer | Torch Applied Hot-Climate Roofing | Wholesale"
+title: "APP Modified Bitumen Manufacturer | 130°C Heat-Resistant | Tropical Roofing Expert"
 displayName: "APP Modified Bitumen Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 95
-meta_description: "APP plastomeric bitumen membrane for hot-climate roofing. 130°C heat resistance, PY/G/PYG reinforcement, PE/sand/mineral/ALU surfaces, OEM wholesale."
+meta_description: "Engineered for Middle East & tropical solar loads. Our 130°C heat-resistant APP membrane prevents sagging & UV aging. Save on freight with optimized 20FT loading. Direct factory supply & OEM support. Get a factory quote today!"
 product_category: "Bitumen Membranes"
 image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
