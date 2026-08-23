@@ -1,15 +1,15 @@
 ---
-title: "JS Polymer Cementitious Waterproof Coating Manufacturer | Two-Component | Wholesale"
+title: "JS Polymer Cement Waterproof Coating Manufacturer | Type I II III | Factory Price"
 displayName: "JS Polymer Cement Coating"
 category: "waterproof-coatings"
 featured: true
 order: 60
-meta_description: "Two-component JS polymer cementitious waterproof coating for damp-base, tile, roof, and below-grade applications. Types and performance depend on the selected grade. Request a TDS or factory quotation."
+meta_description: "Wholesale two-component JS polymer cement waterproof coating (Type I/II/III). GB/T 23445 compliant. High elongation (≥200%) & damp-base adhesion (≥1.0MPa). Perfect for damp-base bathroom & basement waterproofing. Direct factory supply."
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
 
-hero_description: "TY-SHIELD™ JS waterproof coating — a two-component, water-based composite system combining polymer emulsion with hydraulic cement. The name encodes the formula: Polymer (J) + Cement (S). Cures through two simultaneous mechanisms — cement hydration for compressive strength, polymer film formation for elasticity — creating a seamless membrane that bonds cement-to-cement with the substrate. Available in Type I (≥200% elongation, flexible substrates), Type II (≥80%, balanced), and Type III (≥1.0 MPa adhesion, rigid structures). Applies on damp concrete and accepts tile adhesives directly — no bonding primer required. GB/T 23445-2009 compliant; production aligned with GB/T 23445-2025 (effective July 2026)."
+hero_description: "TY-SHIELD™ JS Waterproof Coating — a professional two-component composite system of organic polymer emulsion and inorganic cement. Engineered for the 'Cement-to-Cement' bonding logic, it eliminates the need for primers before tiling. Our formula adheres to GB/T 23445-2009 standards, offering Type I (Flexible, 1:1.2 ratio), Type II (Balanced, 1:1.5 ratio), and Type III (Rigid, high-adhesion). Specifically designed for damp-base applications, it solves the challenge of waterproofing basements and bathrooms without waiting for complete substrate drying. Direct factory supply in 50kg sets (20kg Liquid + 30kg Powder)."
 
 hero_tags:
   - "JS Polymer+Cement"
@@ -18,7 +18,7 @@ hero_tags:
   - "Two-Component"
   - "Water-Based & Non-Toxic"
   - "Damp-Base Application"
-  - "Self-Healing"
+  - "Mixing Ratio 1:1.2/1.5"
   - "OEM Available"
 
 technical_scope: "JS Polymer Cement / Type II / GB/T 23445-2009 (Representative Configuration)"
@@ -34,29 +34,31 @@ gallery:
 
 spec_table:
   - label: "Product Type"
-    value: "JS Polymer Cement (Two-Component) Waterproof Coating — J=Polymer, S=Cement"
+    value: "Two-Component JS Polymer Cementitious Coating"
+  - label: "Mixing Ratio (L:P)"
+    value: "Type I (1:1.2) / Type II (1:1.5) / Type III (Customizable)"
+  - label: "Packaging"
+    value: "50kg Set (20kg/Drum Liquid + 30kg/Bag Powder)"
   - label: "Standard"
-    value: "GB/T 23445-2009 → GB/T 23445-2025 (new standard effective July 2026)"
-  - label: "Material"
-    value: "Liquid: polymer emulsion + additives / Powder: cement + quartz sand + mineral fillers"
-  - label: "Types"
-    value: "Type I (≥200% elongation, flexible) / Type II (≥80%, balanced) / Type III (≥30%, rigid)"
+    value: "GB/T 23445-2009 (Compliant with 2025 New Standard)"
   - label: "Solid Content"
-    value: "≥ 70%"
-  - label: "Coats Required"
-    value: "4–5 coats, 8-hour inter-coat interval (longer in winter)"
+    value: "≥ 70% (Batch test results typically ≥ 81%)"
+  - label: "Types Available"
+    value: "Type I (Flexible) / Type II (Balanced) / Type III (Rigid)"
   - label: "Curing Mechanism"
-    value: "Dual-cure: cement hydration + polymer film formation by water evaporation"
-  - label: "Low Temp Flexibility (Type I)"
+    value: "Dual-cure: cement hydration + polymer film formation"
+  - label: "Damp Base Adhesion"
+    value: "≥ 0.5MPa (I) / ≥ 0.7MPa (II) / ≥ 1.0MPa (III)"
+  - label: "Elongation"
+    value: "≥ 200% (Type I) / ≥ 80% (Type II) / ≥ 30% (Type III)"
+  - label: "Low Temp Flexibility"
     value: "-10°C, 10mm mandrel — No crack"
   - label: "Watertightness"
-    value: "0.3 MPa, 30 min — Impervious (all types)"
-  - label: "Packaging"
-    value: "Liquid: sealed plastic bucket / Powder: woven bag or paper bag"
+    value: "0.3 MPa, 30 min — Impervious"
 
 quick_facts:
-  - title: "The Name Is the Formula"
-    text: "JS isn't an acronym borrowed from English. It was named by the waterproofing industry itself — J for Polymer, S for Cement. Open the delivery and you get two packages: a white emulsion and a bag of grey powder. Mix them together, trowel it on a wall, and what cures is neither a plastic film nor a cement shell. It's a hybrid — the elasticity of an organic polymer and the compressive strength of inorganic cement, both working in the same layer."
+  - title: "Precise Mixing for Target Performance"
+    text: "JS coating is a sensitive chemical balance. Our catalog specifies two distinct mixing ratios to match site requirements: Type I (Flexible) uses a 1:1.2 liquid-to-powder ratio for maximum elongation, while Type II (Balanced) uses a 1:1.5 ratio for higher compressive strength. Always pour the liquid into the mixing bucket first, then add powder slowly while stirring to prevent lumps. A properly mixed 50kg set covers approximately 30-35 square meters (two coats)."
 
   - title: "Two-Component Means Two Independent Defenses"
     text: "The real value of the two-part system isn't in the mixing process — it's in what happens after curing. The cement hydrates and hardens, creating a strength barrier that holds back 0.3 MPa of water pressure. The polymer emulsion coalesces into a continuous film as water evaporates, forming an elastic barrier that stretches when the substrate cracks. A single-component coating gives you one of these. JS gives you both, operating independently — if the cement side takes a hit, the polymer side still holds."
