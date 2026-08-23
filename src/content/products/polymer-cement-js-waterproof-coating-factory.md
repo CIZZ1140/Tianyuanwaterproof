@@ -4,7 +4,7 @@ displayName: "JS Polymer Cement Coating"
 category: "waterproof-coatings"
 featured: true
 order: 60
-meta_description: "Wholesale two-component JS polymer cement waterproof coating (Type I/II/III). GB/T 23445 compliant. High elongation (≥200%) & damp-base adhesion (≥1.0MPa). Perfect for damp-base bathroom & basement waterproofing. Direct factory supply."
+meta_description: "Save 40% on labor costs with TY-SHIELD™ JS waterproof coating—no primers needed before tiling. Bonds perfectly to damp concrete to pull your construction schedule forward. Direct factory wholesale pricing with OEM support. GB/T 23445 certified. Request a free sample or bulk quote today!"
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
