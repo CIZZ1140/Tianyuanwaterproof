@@ -3,3 +3,11 @@ dist/
 .astro/
 .env
 .DS_Store
+
+# One-time tooling & local artifacts (not part of the site source)
+.lighthouseci/
+temp_*.py
+temp_gallery/
+media-output/
+public/assets/sa-*
+public/certs/ce-rohs-*-opt.jpg
