@@ -28,7 +28,8 @@ export const nav = [
       { label: 'Waterproof Coatings', href: '/categories/waterproof-coatings/' },
       { label: 'Waterproof Tapes', href: '/categories/waterproof-tapes/' },
       { label: 'Asphalt Shingles', href: '/categories/asphalt-shingles/' },
-      { label: 'Geosynthetics', href: '/categories/geosynthetics/' }
+      { label: 'Geosynthetics', href: '/categories/geosynthetics/' },
+      { label: 'Roofing Accessories', href: '/categories/roofing-accessories/' }
     ]
   },
   { label: 'Solutions', href: '/applications/' },
@@ -112,6 +113,16 @@ export const productCategories = [
     items: [
       { title: 'Geomembrane', href: '/products/hdpe-geomembrane-liner-manufacturer/' },
       { title: 'Geotextile', href: '/products/geotextile-fabric-manufacturer/' }
+    ]
+  },
+  {
+    title: 'Roofing Accessories',
+    slug: 'roofing-accessories',
+    href: '/categories/roofing-accessories/',
+    image: '/placeholder.webp',
+    description: 'TPO walkway pads and protective accessories for single-ply membrane roofing systems.',
+    items: [
+      { title: 'TPO Walkway Pad', href: '/products/tpo-walkway-pad-manufacturer/' }
     ]
   }
 ];
