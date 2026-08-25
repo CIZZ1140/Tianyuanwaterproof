@@ -179,7 +179,7 @@ downloads:
   - title: "TPO Walkway Pad Technical Data Sheet (TDS)"
     description: "Physical property metrics, dimensions and test methods."
     type: "PDF"
-    href: ""
+    href: "/docs/tpo-walkway-pad-tds.pdf"
   - title: "Walkway Installation & Welding Guide"
     description: "Best practices for heat-welded walkway installation."
     type: "PDF"
