@@ -6,8 +6,20 @@ featured: true
 order: 80
 product_category: "Roofing Underlayment"
 meta_description: "Asphalt-saturated organic roofing felt for shingle underlayment and compatible hot-asphalt roofing systems. 1 m width with 0.5 mm and 0.8 mm options. Request technical data and a factory quotation."
-main_image: "https://img.tyuanwaterproof.com/products/asphalt-felt.webp"
-image: "https://img.tyuanwaterproof.com/products/asphalt-felt.webp"
+main_image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
+image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
+
+gallery:
+  - image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
+    title: "Asphalt Roofing Felt Roll"
+  - image: "https://img.tyuanwaterproof.com/products/asphalt-felt-flexibility.webp"
+    title: "Flexibility & Roll Form"
+  - image: "https://img.tyuanwaterproof.com/products/asphalt-felt-underlayment.webp"
+    title: "Roofing Underlayment Application"
+  - image: "https://img.tyuanwaterproof.com/products/asphalt-felt-material.webp"
+    title: "Material Detail & Surface Texture"
+  - image: "https://img.tyuanwaterproof.com/products/asphalt-felt-supply-oem.webp"
+    title: "Bulk Supply & OEM Packaging"
 
 hero_description: "Asphalt-saturated organic roofing felt designed for roof-deck underlayment beneath asphalt shingles and for use as a ply in compatible hot-asphalt roofing or waterproofing assemblies. Tianyuan catalog configurations include 1 m width, 0.5 mm and 0.8 mm thickness options, with grey or black appearance. Exact grade and standard compliance should be confirmed against the current TDS before procurement."
 
