@@ -11,3 +11,6 @@ temp_gallery/
 media-output/
 public/assets/sa-*
 public/certs/ce-rohs-*-opt.jpg
+
+# Local asset staging (contains R2 credentials in scripts, never commit)
+素材暂存/
