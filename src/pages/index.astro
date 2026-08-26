@@ -56,7 +56,7 @@ const websiteJsonLd = {
     <div class="container mx-auto">
       <SectionHeader title="Product Categories" href="/products/" linkLabel="View All Products" id="cat-title" />
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {productCategories.map((cat)=>(
+        {productCategories.filter((cat) => cat.slug !== 'roofing-accessories').map((cat)=>(
           <article class="card overflow-hidden p-5 flex flex-col h-full">
             <a href={cat.href} class="block aspect-[16/9] w-full rounded-xl bg-slate-50 overflow-hidden">
               <img 
