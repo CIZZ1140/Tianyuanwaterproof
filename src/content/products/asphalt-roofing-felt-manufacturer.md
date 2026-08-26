@@ -88,14 +88,14 @@ applications:
     text: "The felt may be embedded in compatible hot asphalt as part of a designed multi-layer roofing or waterproofing assembly. It is not a standalone exposed waterproofing membrane."
 
 features:
-  - title: "Organic Felt Construction"
-    text: "An organic fiber carrier saturated with asphalt forms a flexible sheet for conventional roofing underlayment and compatible asphaltic systems."
-  - title: "Secondary Water-Shedding"
-    text: "When installed beneath the approved primary roof covering, the felt helps shed incidental moisture that passes beneath shingles or other compatible materials."
-  - title: "Roll Handling"
-    text: "The roll format supports practical handling, cutting, positioning and installation across prepared roof decks or compatible substrates."
-  - title: "Asphalt-System Compatibility"
-    text: "Depending on the approved design, the felt can be mechanically fastened as underlayment or bonded with compatible roofing asphalt in a multi-ply assembly."
+  - title: "Full Asphalt Impregnation"
+    text: "The organic fiber carrier is passed through molten asphalt and hot-roller extruded so the sheet is impregnated through its full thickness rather than merely coated — the construction described in the Tianyuan product catalog for asphalt roofing felt."
+  - title: "Type I / Type II Catalog Grades"
+    text: "Catalog data groups the felt into Type I (15#) and Type II (30#) performance grades aligned to ASTM D226 requirement levels, with minimum saturated-felt mass of 560 g/m2 and 1270 g/m2 respectively."
+  - title: "Heat-Stable Asphalt Saturant"
+    text: "Catalog performance data shows max 4.00% loss on heating at 105 degC for 5 h, supporting use in warm export climates when stored and transported per the catalog guidance (below 45 degC, protected from direct sun and rain)."
+  - title: "Field-Proven Installation Options"
+    text: "The felt can be mechanically fastened as steep-slope underlayment or embedded in compatible hot asphalt as a built-up roofing ply — no torch, primer or curing time required on site."
 
 technical_scope: "Technical properties depend on the selected grade, construction and target standard. Tianyuan catalog data confirms nominal 1 m width, 0.5 mm / 0.8 mm thickness and grey / black configurations, with Type I / Type II performance grades aligned to the ASTM D226 15# / 30# requirement levels shown in the table (D4869-equivalent levels are also available). Grade-specific physical properties should be confirmed against the latest Tianyuan TDS or applicable test report before procurement."
 technical_disclaimer: "ASTM D226/D226M and ASTM D4869/D4869M are referenced as relevant industry specification frameworks. Mention of these standards does not by itself constitute certification or compliance for every Tianyuan configuration. Confirm the required standard, type, edition, roll configuration and test results before specification or purchase."
