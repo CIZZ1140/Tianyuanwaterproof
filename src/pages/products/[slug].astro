@@ -171,12 +171,12 @@ const manualRelated = (data.related_products || []).slice(0, 4).map(rp => ({
   image: normalizeAsset(rp.image),
   title: rp.title,
 }));
-const relatedProducts = autoRelated.length > 0 ? autoRelated : manualRelated;
+const relatedProducts = manualRelated.length > 0 ? manualRelated : autoRelated;
 
 const heroSpecCards = [
-  { label: "Reinforcement Options", value: getSpecValue(specTable, ["reinforcement options"]), icon: Boxes },
-  { label: "Typical Applications", value: getSpecValue(specTable, ["typical applications"]), icon: Factory },
-  { label: "Standard Roll Size", value: getSpecValue(specTable, ["standard roll size"]), icon: Ruler },
+  { label: "Reinforcement Options", value: getSpecValue(specTable, ["reinforcement options", "reinforcement", "reinforcement material"]), icon: Boxes },
+  { label: "Typical Applications", value: getSpecValue(specTable, ["typical applications", "applications", "application"]), icon: Factory },
+  { label: "Standard Roll Size", value: getSpecValue(specTable, ["standard roll size", "roll size", "roll width"]), icon: Ruler },
 ].filter((item) => item.value);
 
 const applicationIcons = [Factory, Box, Truck, Wrench, Droplets, ShieldCheck];
@@ -195,7 +195,7 @@ const productJsonLd = {
   "@type": "Product",
   "name": title,
   "image": gallery.length > 0 ? gallery.map(item => item.image) : [mainImage],
-  "description": heroDesc,
+  "description": (data.meta_description || heroDesc).slice(0, 160),
   "brand": { "@type": "Brand", "name": "Tianyuan Waterproof" },
   "manufacturer": { "@type": "Organization", "name": "Weifang Tianyuan Waterproof Material Co., Ltd." },
   "material": data.product_category || data.category || "Modified Bitumen",
@@ -206,6 +206,18 @@ const productJsonLd = {
     "name": row.label,
     "value": row.value
   }))
+};
+
+const canonicalUrl = `https://www.tyuanwaterproof.com${Astro.url.pathname}`;
+const breadcrumbLd = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tyuanwaterproof.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.tyuanwaterproof.com/products/" },
+    { "@type": "ListItem", "position": 3, "name": productCategory, "item": `https://www.tyuanwaterproof.com/categories/${entry.data.category}/` },
+    { "@type": "ListItem", "position": 4, "name": title, "item": canonicalUrl }
+  ]
 };
 ---
 
@@ -222,6 +234,7 @@ const productJsonLd = {
       }))
     })} />
   )}
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)} />
   <main class="bg-slate-50 text-slate-950 pb-12">
     
     <!-- 1. Breadcrumb -->
@@ -232,6 +245,8 @@ const productJsonLd = {
         <li><a href="/products/" class="hover:text-blue-700 transition">Products</a></li>
         <li class="mx-1">/</li>
         <li><a href={`/categories/${entry.data.category}/`} class="hover:text-blue-700 transition">{productCategory}</a></li>
+        <li class="mx-1">/</li>
+        <li><span aria-current="page" class="text-slate-500">{title}</span></li>
       </ol>
     </nav>
 
@@ -248,7 +263,7 @@ const productJsonLd = {
             </div>
             {gallery.length > 0 && (
               <div class={"mt-4 grid gap-3 grid-cols-4" + (gallery.length > 4 ? " sm:grid-cols-5" : "")}>
-                {gallery.slice(0, 5).map((item) => (
+                {gallery.slice(0, 8).map((item) => (
                   <button class="gallery-thumb group flex rounded-2xl border-2 border-slate-200 bg-white shadow-sm transition hover:border-blue-400 overflow-hidden" data-full={item.image}>
                     <div class="aspect-[4/3] w-full bg-slate-50 p-1 flex items-center justify-center">
                       <img src={item.image} alt={item.alt || item.title} class="h-full w-full object-contain transition group-hover:scale-105" />
@@ -260,7 +275,7 @@ const productJsonLd = {
           </div>
           <!-- Right: Info Area -->
           <div class="flex flex-col">
-            <p class="mb-4 text-[10px] font-black uppercase tracking-[0.3em] text-blue-700 opacity-80">Factory Direct Supply</p>
+            <p class="mb-4 text-[11px] font-black uppercase tracking-[0.3em] text-blue-700">Factory Direct Supply</p>
             <h1 class="text-3xl font-black text-slate-950 sm:text-4xl lg:text-5xl tracking-tight leading-tight">{title}</h1>
             <p class="mt-6 text-base leading-8 text-slate-600 sm:text-lg">{heroDesc}</p>
             
@@ -330,13 +345,14 @@ const productJsonLd = {
           <p class="mb-6 max-w-3xl text-sm font-medium leading-7 text-slate-600">Select the reinforcement, thickness and surface finish to match your project requirements. Contact us with your specification for a tailored quotation.</p>
           <div class="overflow-x-auto rounded-2xl border border-slate-200">
             <table class="w-full min-w-[700px] border-collapse text-left text-sm">
+              <caption class="sr-only">Available configurations of {title}</caption>
               <thead class="bg-slate-50 text-slate-950">
                 <tr class="border-b border-slate-200">
-                  <th class="px-4 py-4 font-black">Configuration</th>
-                  <th class="px-4 py-4 font-black">Reinforcement</th>
-                  <th class="px-4 py-4 font-black">Thickness</th>
-                  <th class="px-4 py-4 font-black">Surface</th>
-                  <th class="px-4 py-4 font-black">Recommended Use</th>
+                  <th scope="col" class="px-4 py-4 font-black">Configuration</th>
+                  <th scope="col" class="px-4 py-4 font-black">Reinforcement</th>
+                  <th scope="col" class="px-4 py-4 font-black">Thickness</th>
+                  <th scope="col" class="px-4 py-4 font-black">Surface</th>
+                  <th scope="col" class="px-4 py-4 font-black">Recommended Use</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-200">
@@ -352,7 +368,8 @@ const productJsonLd = {
               </tbody>
             </table>
           </div>
-          <p class="mt-4 text-sm font-medium text-slate-400">All thicknesses and surface finishes shown are available in standard production. Custom roll dimensions, packaging and private-label printing are available subject to minimum order quantity. Final configuration should be selected according to climate, substrate, waterproofing system design, exposure condition and local project specifications.</p>
+          <p class="mt-2 text-[11px] font-medium text-slate-500 md:hidden">Swipe to view the full table →</p>
+          <p class="mt-4 text-sm font-medium text-slate-600">All thicknesses and surface finishes shown are available in standard production. Custom roll dimensions, packaging and private-label printing are available subject to minimum order quantity. Final configuration should be selected according to climate, substrate, waterproofing system design, exposure condition and local project specifications.</p>
         </section>
       )}
 
@@ -393,18 +410,19 @@ const productJsonLd = {
       )}
 
       {technicalData.length > 0 && (
-        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+        <section id="technical-specifications" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4">Technical Specifications</h2>
           {data.technical_scope && <p class="mb-6 text-sm font-medium text-slate-500">{data.technical_scope}</p>}
           <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
             <table class="w-full text-left text-sm border-collapse">
+              <caption class="sr-only">Technical specifications of {title}</caption>
               <thead class="bg-slate-50">
                 <tr class="border-b border-slate-200">
-                  <th class="px-6 py-4 font-black">Test Item</th>
-                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black">Unit</th>}
-                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black">Test Method</th>}
-                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black">Requirement</th>}
-                  <th class="px-6 py-4 font-black">Result / Notes</th>
+                  <th scope="col" class="px-6 py-4 font-black">Test Item</th>
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black">Unit</th>}
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black">Test Method</th>}
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black">Requirement</th>}
+                  <th scope="col" class="px-6 py-4 font-black">Result / Notes</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-100">
@@ -420,7 +438,8 @@ const productJsonLd = {
               </tbody>
             </table>
           </div>
-          {data.technical_disclaimer && <p class="mt-4 text-sm font-medium text-slate-400">{data.technical_disclaimer}</p>}
+          <p class="mt-2 text-[11px] font-medium text-slate-500 md:hidden">Swipe to view the full table →</p>
+          {data.technical_disclaimer && <p class="mt-4 text-sm font-medium text-slate-600">{data.technical_disclaimer}</p>}
         </section>
       )}
 
@@ -429,13 +448,14 @@ const productJsonLd = {
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4">Technical Specifications — Hybrid Polyurea</h2>
           <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
             <table class="w-full text-left text-sm border-collapse">
+              <caption class="sr-only">Technical specifications — Hybrid Polyurea</caption>
               <thead class="bg-slate-50">
                 <tr>
-                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Test Item</th>
-                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Unit</th>}
-                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Test Method</th>}
-                  {!isSimpleTechnicalTable && <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Requirement</th>}
-                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Result / Notes</th>
+                  <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Test Item</th>
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Unit</th>}
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Test Method</th>}
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Requirement</th>}
+                  <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Result / Notes</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-100">
@@ -469,12 +489,13 @@ const productJsonLd = {
           
           <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-slate-50">
             <table class="w-full text-left text-sm border-collapse">
+              <caption class="sr-only">Global standard alignment of {title}</caption>
               <thead>
                 <tr class="bg-slate-100/50">
-                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Property</th>
-                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">China (GB)</th>
-                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">USA (ASTM)</th>
-                  <th class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Europe (EN)</th>
+                  <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Property</th>
+                  <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">China (GB)</th>
+                  <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">USA (ASTM)</th>
+                  <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Europe (EN)</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-200 bg-white">
@@ -501,14 +522,15 @@ const productJsonLd = {
               </tbody>
             </table>
           </div>
-          <p class="mt-6 text-[11px] font-medium text-slate-400 italic bg-slate-50 p-4 rounded-xl border border-slate-100">
+          <p class="mt-2 text-[11px] font-medium text-slate-500 md:hidden">Swipe to view the full table →</p>
+          <p class="mt-6 text-[11px] font-medium text-slate-600 italic bg-slate-50 p-4 rounded-xl border border-slate-100">
             * Technical Note: The values shown are reference information for the selected product configuration. Confirm the applicable standard, test method, certification scope, and product-specific documentation with our technical team before specification.
           </p>
         </section>
       )}
 
       {applicationGuide.length > 0 && (
-        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+        <section id="installation-guide" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8">Installation Guide</h2>
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {applicationGuide.slice(0, 4).map((item, index) => {
@@ -542,7 +564,7 @@ const productJsonLd = {
       )}
 
       {(packaging.length > 0 || loadingData.length > 0) && (
-        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+        <section id="packaging" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Packaging & OEM</h2>
           <div class={packaging.length > 0 ? "grid gap-8 lg:grid-cols-[0.8fr_1.2fr]" : "block"}>
             {packaging.length > 0 && (
@@ -615,9 +637,9 @@ const productJsonLd = {
                 <div class="p-5">
                   <h3 class="font-black text-slate-950 mb-3 leading-snug">{ref.title}</h3>
                   <div class="space-y-1.5 text-sm">
-                    <div class="flex justify-between"><span class="text-slate-400 font-bold">Configuration</span><span class="text-slate-700 font-medium">{ref.config || "—"}</span></div>
-                    <div class="flex justify-between"><span class="text-slate-400 font-bold">Quantity</span><span class="text-slate-700 font-medium">{ref.quantity || "—"}</span></div>
-                    <div class="flex justify-between"><span class="text-slate-400 font-bold">Year</span><span class="text-slate-700 font-medium">{ref.year || "—"}</span></div>
+                    <div class="flex justify-between"><span class="text-slate-500 font-bold">Configuration</span><span class="text-slate-700 font-medium">{ref.config || "—"}</span></div>
+                    <div class="flex justify-between"><span class="text-slate-500 font-bold">Quantity</span><span class="text-slate-700 font-medium">{ref.quantity || "—"}</span></div>
+                    <div class="flex justify-between"><span class="text-slate-500 font-bold">Year</span><span class="text-slate-700 font-medium">{ref.year || "—"}</span></div>
                   </div>
                 </div>
               </div>
@@ -636,7 +658,7 @@ const productJsonLd = {
                   <div class="h-10 w-10 flex items-center justify-center rounded-xl bg-red-50 text-red-600 shadow-inner"><FileText size={20} /></div>
                   <div>
                     <h3 class="text-sm font-black text-slate-900 leading-tight">{doc.title}</h3>
-                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Ready for PDF Request</p>
+                    <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mt-1">Ready for PDF Request</p>
                   </div>
                 </div>
                 <a 
@@ -644,7 +666,7 @@ const productJsonLd = {
                   target={doc.href && doc.href !== "#" ? "_blank" : "_self"}
                   class="px-5 py-2 rounded-xl bg-white border border-slate-200 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:border-blue-300 hover:text-blue-700 transition shadow-sm"
                 >
-                  {doc.href && doc.href !== "#" ? "Download" : "Request"}
+                  {doc.href && doc.href !== "#" ? "Download" : "Request PDF"}
                 </a>
               </div>
             ))}
@@ -695,19 +717,24 @@ const productJsonLd = {
       const mainImg = document.getElementById('main-product-image');
       const thumbs = document.querySelectorAll('.gallery-thumb');
       if (mainImg && thumbs.length > 0) {
-        thumbs[0].classList.add('active');
-        thumbs.forEach(thumb => {
-          const handleSwitch = () => {
+        let switchToken = 0;
+        thumbs.forEach((thumb, i) => {
+          thumb.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
+          thumb.addEventListener('click', () => {
+            const token = ++switchToken;
             const newSrc = thumb.getAttribute('data-full');
             if (newSrc && mainImg.src !== newSrc) {
-              thumbs.forEach(t => t.classList.remove('active'));
+              thumbs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-pressed', 'false'); });
               thumb.classList.add('active');
+              thumb.setAttribute('aria-pressed', 'true');
               mainImg.style.opacity = '0';
-              setTimeout(() => { mainImg.src = newSrc; mainImg.style.opacity = '1'; }, 200);
+              setTimeout(() => {
+                if (token !== switchToken) return;
+                mainImg.src = newSrc;
+                mainImg.onload = () => { if (token === switchToken) mainImg.style.opacity = '1'; };
+              }, 200);
             }
-          };
-          thumb.addEventListener('click', handleSwitch);
-          thumb.addEventListener('mouseenter', handleSwitch);
+          });
         });
       }
     </script>

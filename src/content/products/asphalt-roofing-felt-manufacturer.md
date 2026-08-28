@@ -1,11 +1,11 @@
 ---
-title: "Asphalt-Saturated Organic Roofing Felt Manufacturer | Underlayment | Wholesale"
+title: "Asphalt Roofing Felt Manufacturer | 15#/30# Underlayment Wholesale"
 displayName: "Asphalt-Saturated Organic Roofing Felt"
 category: "bitumen-membranes"
 featured: true
 order: 80
 product_category: "Roofing Underlayment"
-meta_description: "Asphalt-saturated organic roofing felt for shingle underlayment and compatible hot-asphalt roofing systems. 1 m width with 0.5 mm and 0.8 mm options. Request technical data and a factory quotation."
+meta_description: "Factory direct asphalt roofing felt for shingle underlayment & BUR. 1m x 20m rolls, 0.5/0.8mm, Type I (15#) & Type II (30#) to ASTM D226. MOQ, OEM & free samples available."
 main_image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
 image_width: 1254
 image_height: 1254
@@ -14,21 +14,26 @@ image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
     title: "Asphalt Roofing Felt Roll"
+    alt: "Asphalt roofing felt roll for shingle underlayment - 1m x 20m"
   - image: "https://img.tyuanwaterproof.com/products/asphalt-felt-flexibility.webp"
     title: "Flexibility & Roll Form"
+    alt: "Type II 30 lb asphalt felt roll flexibility detail"
   - image: "https://img.tyuanwaterproof.com/products/asphalt-felt-underlayment.webp"
     title: "Roofing Underlayment Application"
+    alt: "Asphalt roofing felt installed as shingle underlayment on roof deck"
   - image: "https://img.tyuanwaterproof.com/products/asphalt-felt-material.webp"
     title: "Material Detail & Surface Texture"
+    alt: "Asphalt-saturated organic felt surface texture close-up"
   - image: "https://img.tyuanwaterproof.com/products/asphalt-felt-supply-oem.webp"
     title: "Bulk Supply & OEM Packaging"
+    alt: "Asphalt felt bulk rolls OEM packaging for export container"
 
 hero_description: "Asphalt-saturated organic roofing felt designed for roof-deck underlayment beneath asphalt shingles and for use as a ply in compatible hot-asphalt roofing or waterproofing assemblies. Tianyuan catalog configurations include 1 m width, 0.5 mm and 0.8 mm thickness options, with grey or black appearance. Exact grade and standard compliance should be confirmed against the current TDS before procurement."
 
 hero_tags:
   - "Asphalt-Saturated Organic Felt"
   - "Roofing Underlayment"
-  - "No.15 / No.30 Grades"
+  - "15 lb / 30 lb (No.15/No.30) Grades"
   - "1m x 20m Rolls"
   - "Hot-Asphalt BUR Ply"
   - "Cost-Effective Underlayment"
@@ -99,7 +104,7 @@ features:
   - title: "Field-Proven Installation Options"
     text: "The felt can be mechanically fastened as steep-slope underlayment or embedded in compatible hot asphalt as a built-up roofing ply — no torch, primer or curing time required on site."
 
-technical_scope: "Technical properties depend on the selected grade, construction and target standard. Tianyuan catalog data confirms nominal 1 m width, 0.5 mm / 0.8 mm thickness and grey / black configurations, with Type I / Type II performance grades aligned to the ASTM D226 15# / 30# requirement levels shown in the table (D4869-equivalent levels are also available). Grade-specific physical properties should be confirmed against the latest Tianyuan TDS or applicable test report before procurement."
+technical_scope: "Technical properties depend on the selected grade, construction and target standard. Tianyuan catalog data confirms nominal 1 m width, 0.5 mm / 0.8 mm thickness and grey / black configurations, with Type I / Type II performance grades aligned to the ASTM D226 15# / 30# (15 lb / 30 lb) requirement levels shown in the table (D4869-equivalent levels are also available). Grade-specific physical properties should be confirmed against the latest Tianyuan TDS or applicable test report before procurement."
 technical_disclaimer: "ASTM D226/D226M and ASTM D4869/D4869M are referenced as relevant industry specification frameworks. Mention of these standards does not by itself constitute certification or compliance for every Tianyuan configuration. Confirm the required standard, type, edition, roll configuration and test results before specification or purchase."
 
 technical_data:
@@ -196,13 +201,13 @@ supply_info:
   - title: "Project Selection Support"
     text: "Provide the roof covering, roof slope, substrate, installation method and target market when requesting product selection support."
   - title: "Type I / Type II Selection"
-    text: "Catalog data groups the felt into Type I and Type II performance grades, aligned to the ASTM D226 15# and 30# requirement levels shown in the technical table. State the target standard and grade when requesting a quotation so the correct configuration is confirmed."
+    text: "Catalog data groups the felt into Type I and Type II performance grades, aligned to the ASTM D226 15# and 30# (15 lb and 30 lb) requirement levels shown in the technical table. State the target standard and grade when requesting a quotation so the correct configuration is confirmed."
 
 downloads:
   - title: "Asphalt Felt Technical Data Sheet"
     description: "Complete grade-specific technical data and weight-grade information are available on request."
     type: "PDF"
-    href: ""
+    href: "https://img.tyuanwaterproof.com/docs/asphalt-felt-tds.pdf"
   - title: "Underlayment Installation Guide"
     description: "Installation guidance for organic asphalt felt on pitched roofs is available on request."
     type: "PDF"
@@ -227,7 +232,7 @@ faqs:
     answer: "It is a flexible roofing sheet made from an organic fiber felt carrier saturated with asphalt. It is commonly used as roof underlayment beneath compatible roofing materials and, in selected systems, as a ply in built-up roofing or asphaltic waterproofing assemblies."
   - question: "Is asphalt roofing felt the same as a self-adhesive bitumen membrane?"
     answer: "No. Standard asphalt-saturated organic felt does not have a peel-off release liner or factory-applied self-adhesive layer. It is normally mechanically fastened as roof underlayment or incorporated with compatible asphalt in a specified multi-ply system. Projects requiring peel-and-stick waterproofing should use a purpose-designed self-adhered membrane."
-  - question: "What is the difference between No.15 and No.30 roofing felt?"
+  - question: "What is the difference between 15 lb and 30 lb roofing felt?"
     answer: "No.15 and No.30 are traditional roofing-felt grade designations. Under ASTM D226, Type I is commonly referred to as No.15 and Type II as No.30. Buyers should not rely on the name alone because actual mass, strength, roll coverage and applicable standard must be confirmed from the current product specification."
   - question: "What is the difference between ASTM D226 and ASTM D4869?"
     answer: "ASTM D226 covers asphalt-saturated organic felt used in roofing and waterproofing, including steep-slope underlayment and specified built-up roofing or waterproofing applications. ASTM D4869 is specifically focused on asphalt-saturated organic felt underlayment for steep-slope roofing. The correct standard depends on the intended system and project specification."
@@ -251,26 +256,11 @@ faqs:
 
 ### Specification-Led Underlayment for Export Roofing Projects
 
-Tianyuan's **Asphalt-Saturated Organic Roofing Felt** is a flexible bituminous sheet designed primarily as a secondary water-shedding layer beneath compatible roof coverings, especially asphalt shingles. Selected grades may also serve as a reinforcing ply in compatible built-up roofing or hot-asphalt waterproofing assemblies.
+Tianyuan's **asphalt-saturated organic roofing felt** is a flexible, cost-effective secondary water-shedding layer for steep-slope roofs — typically beneath asphalt shingles — and a reinforcing ply in compatible built-up roofing (BUR) assemblies.
 
-### The Economical Standard for Roofing Underlayment
+- **Full asphalt impregnation** — organic fiber carrier saturated through its full thickness, not merely coated, for reliable shedding of wind-driven rain and ice-dam moisture
+- **Two grades to ASTM D226** — Type I (15 lb) for standard steep-slope duty, Type II (30 lb) for heavier build-up, greater puncture resistance and longer service exposure
+- **Fast, low-cost installation** — mechanically fastened or embedded in compatible hot asphalt; no torch, no primer, no peel-and-stick liner, no curing time
+- **Export-friendly format** — 1 m x 20 m (20 m2) rolls, 0.5 / 0.8 mm, grey or black, container-efficient for Africa and Asia markets
 
-Asphalt-saturated organic felt remains one of the most cost-effective secondary water-shedding layers available to export roofing projects. It is manufactured by passing a thick organic fiber felt through molten asphalt and hot-roller extrusion, so the carrier is fully impregnated with bitumen rather than merely coated. The result is a flexible sheet that sheds wind-driven rain and ice-dam moisture beneath the primary roof covering — and, where the roof system is designed for it, performs as a reinforcing ply in hot-asphalt built-up roofing (BUR) assemblies.
-
-For markets where material cost and proven installation practice decide the specification, felt underlayment keeps the barrier low: no torch, no chemical primer, no peel-and-stick liner and no curing time. Roof crews can roll, cut and fasten it with basic tools, or embed it directly into compatible hot asphalt where a multi-ply assembly is specified.
-
-### Type I / Type II Grades Aligned to ASTM D226
-
-The catalog groups the felt into two performance grades aligned to the ASTM D226 15# and 30# requirement levels shown in the technical table. Type I (15#) carries a minimum saturated-felt mass of 560 g/m2 and suits standard steep-slope underlayment duty; Type II (30#) carries a minimum of 1270 g/m2 for projects specifying heavier build-up, greater puncture resistance and longer service exposure. Both grades share a 12.7 mm pliability radius, minimum 2.5 N tear strength and max 4.00% loss on heating at 105 degC for 5 h, per catalog data.
-
-Selecting by grade rather than by the historical No.15 / No.30 name avoids a common specification error: the mass, strength and roll coverage of the actual configuration must be confirmed against the current specification before it is written into a tender.
-
-### Installation in Roofing Systems
-
-Two methods cover most export projects. Mechanically fastened underlayment — horizontal courses laid from the lower edge upward over a clean, dry deck, fastened in accordance with the roof-covering manufacturer's instructions — is the standard approach beneath asphalt shingles. In hot-asphalt systems, the felt is embedded into a uniform mopping of compatible roofing asphalt with continuous contact and no trapped air, following the system designer's specification for asphalt type, laps and application temperature. Where the primary covering is a [self-adhesive bitumen membrane](/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/), compare the system design first: organic felt is a component of traditional asphaltic assemblies, not a substitute for peel-and-stick waterproofing.
-
-### Export Format and Warm-Climate Handling
-
-Rolls are supplied at a nominal 1 m width in grey or black, with 1m x 20m (20 m2) roll configurations available per product labeling, and 0.5 mm / 0.8 mm thickness options. The lightweight roll format keeps container loading efficient for Africa and Asia markets. Catalog storage guidance keeps rolls below 45 degC, flat-stacked to a maximum of five layers, upright in single layer only, and protected from direct sun and rain during transport — practical instructions that matter when shipments cross tropical climates.
-
-For shingle underlayment, built-up roofing or hot-asphalt applications, send the roof system, target standard, required dimensions and packaging requirements to our export team. We will confirm the suitable grade and provide the relevant technical documentation before specification.
+See the [technical specifications](#technical-specifications), [installation guide](#installation-guide) and [packaging](#packaging) sections for full details, or [request the TDS and quotation](/contact/).
