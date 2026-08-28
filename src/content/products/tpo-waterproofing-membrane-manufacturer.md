@@ -5,8 +5,25 @@ category: "polymer-membranes"
 featured: true
 order: 90
 meta_description: "TPO membrane manufacturer. White cool-roof surface (SRI 0.85), hot-air welded seams, -40°C flexibility, H/L/P types 1.2-2.0mm. Factory OEM wholesale."
-main_image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
-image: "https://img.tyuanwaterproof.com/products/tpo-waterproof-membrane.webp"
+main_image: "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-white-roll-main.webp"
+image: "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-white-roll-main.webp"
+
+gallery:
+  - image: "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-white-roll-main.webp"
+    title: "White TPO Roll"
+    alt: "white TPO waterproofing membrane roll with unrolled sheet on white background"
+  - image: "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-roll-closeup.webp"
+    title: "Surface & Backing Detail"
+    alt: "close-up of TPO membrane roll with gloved hand peeling back sheet showing white surface and dark backing"
+  - image: "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-roof-installation.webp"
+    title: "Workers Unrolling on Site"
+    alt: "two workers unrolling white TPO membrane on commercial flat roof with insulation boards"
+  - image: "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-seam-welding.webp"
+    title: "Automatic Hot-Air Welding"
+    alt: "worker operating automatic hot-air welding machine fusing TPO membrane seams on rooftop"
+  - image: "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-weld-nozzle.webp"
+    title: "Weld Nozzle & Roller Close-Up"
+    alt: "close-up of hot-air weld nozzle inserted under TPO membrane seam with silicone roller pressing weld"
 
 technical_scope: "TPO, Type P (Reinforced), 1.5mm, White Surface (Representative Configuration)"
 technical_disclaimer: "Values shown apply to the stated product configuration. Other types (H / L / P), thicknesses (1.2mm / 1.5mm / 2.0mm), colors, and reinforcement options may have different performance values. GB 27789-2011 is the current edition; confirm the applicable product TDS and batch test report before specification or procurement."
