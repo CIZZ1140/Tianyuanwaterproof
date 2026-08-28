@@ -718,9 +718,10 @@ const breadcrumbLd = {
       const thumbs = document.querySelectorAll('.gallery-thumb');
       if (mainImg && thumbs.length > 0) {
         let switchToken = 0;
+        let hoverTimer = null;
         thumbs.forEach((thumb, i) => {
           thumb.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
-          thumb.addEventListener('click', () => {
+          const switchTo = () => {
             const token = ++switchToken;
             const newSrc = thumb.getAttribute('data-full');
             if (newSrc && mainImg.src !== newSrc) {
@@ -730,11 +731,18 @@ const breadcrumbLd = {
               mainImg.style.opacity = '0';
               setTimeout(() => {
                 if (token !== switchToken) return;
+                mainImg.removeAttribute('srcset');
                 mainImg.src = newSrc;
                 mainImg.onload = () => { if (token === switchToken) mainImg.style.opacity = '1'; };
               }, 200);
             }
+          };
+          thumb.addEventListener('click', switchTo);
+          thumb.addEventListener('mouseenter', () => {
+            clearTimeout(hoverTimer);
+            hoverTimer = setTimeout(switchTo, 250);
           });
+          thumb.addEventListener('mouseleave', () => clearTimeout(hoverTimer));
         });
       }
     </script>

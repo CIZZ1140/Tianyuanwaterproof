@@ -1,6 +1,6 @@
 ---
 title: "Asphalt Roofing Felt Manufacturer | 15#/30# Underlayment Wholesale"
-displayName: "Asphalt-Saturated Organic Roofing Felt"
+displayName: "Asphalt Roofing Felt"
 category: "bitumen-membranes"
 featured: true
 order: 80
@@ -31,7 +31,7 @@ gallery:
 hero_description: "Asphalt-saturated organic roofing felt designed for roof-deck underlayment beneath asphalt shingles and for use as a ply in compatible hot-asphalt roofing or waterproofing assemblies. Tianyuan catalog configurations include 1 m width, 0.5 mm and 0.8 mm thickness options, with grey or black appearance. Exact grade and standard compliance should be confirmed against the current TDS before procurement."
 
 hero_tags:
-  - "Asphalt-Saturated Organic Felt"
+  - "Asphalt Roofing Felt"
   - "Roofing Underlayment"
   - "15 lb / 30 lb (No.15/No.30) Grades"
   - "1m x 20m Rolls"
@@ -40,7 +40,7 @@ hero_tags:
 
 spec_table:
   - label: "Product Type"
-    value: "Asphalt-Saturated Organic Roofing Felt"
+    value: "Asphalt Roofing Felt"
   - label: "Base Material"
     value: "Organic fiber felt saturated with asphalt"
   - label: "Nominal Width"
@@ -228,7 +228,7 @@ related_products:
     href: "/products/app-modified-bitumen-waterproofing-membrane-manufacturer/"
 
 faqs:
-  - question: "What is asphalt-saturated organic roofing felt?"
+  - question: "What is asphalt roofing felt?"
     answer: "It is a flexible roofing sheet made from an organic fiber felt carrier saturated with asphalt. It is commonly used as roof underlayment beneath compatible roofing materials and, in selected systems, as a ply in built-up roofing or asphaltic waterproofing assemblies."
   - question: "Is asphalt roofing felt the same as a self-adhesive bitumen membrane?"
     answer: "No. Standard asphalt-saturated organic felt does not have a peel-off release liner or factory-applied self-adhesive layer. It is normally mechanically fastened as roof underlayment or incorporated with compatible asphalt in a specified multi-ply system. Projects requiring peel-and-stick waterproofing should use a purpose-designed self-adhered membrane."
@@ -256,7 +256,7 @@ faqs:
 
 ### Specification-Led Underlayment for Export Roofing Projects
 
-Tianyuan's **asphalt-saturated organic roofing felt** is a flexible, cost-effective secondary water-shedding layer for steep-slope roofs — typically beneath asphalt shingles — and a reinforcing ply in compatible built-up roofing (BUR) assemblies.
+Tianyuan's **asphalt roofing felt** is a flexible, cost-effective secondary water-shedding layer for steep-slope roofs — typically beneath asphalt shingles — and a reinforcing ply in compatible built-up roofing (BUR) assemblies.
 
 - **Full asphalt impregnation** — organic fiber carrier saturated through its full thickness, not merely coated, for reliable shedding of wind-driven rain and ice-dam moisture
 - **Two grades to ASTM D226** — Type I (15 lb) for standard steep-slope duty, Type II (30 lb) for heavier build-up, greater puncture resistance and longer service exposure
