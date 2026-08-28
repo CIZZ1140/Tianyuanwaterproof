@@ -7,6 +7,8 @@ order: 80
 product_category: "Roofing Underlayment"
 meta_description: "Asphalt-saturated organic roofing felt for shingle underlayment and compatible hot-asphalt roofing systems. 1 m width with 0.5 mm and 0.8 mm options. Request technical data and a factory quotation."
 main_image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
+image_width: 1254
+image_height: 1254
 image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
 
 gallery:
