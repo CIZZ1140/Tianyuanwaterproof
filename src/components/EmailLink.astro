@@ -1,0 +1,42 @@
+---
+interface Props {
+  /** Local part of the email address (before the @) */
+  user?: string;
+  /** Domain part of the email address (after the @) */
+  domain?: string;
+  /** CSS classes applied to the rendered <a> element */
+  className?: string;
+}
+
+const { user = "sales", domain = "tyuanwaterproof.com", className = "" } = Astro.props;
+---
+
+<span
+  class="email-obfuscated"
+  data-user={user}
+  data-domain={domain}
+  data-class={className}
+  aria-label="Email address"
+>&#8230;</span>
+
+<script>
+  function revealEmails(): void {
+    document.querySelectorAll<HTMLElement>(".email-obfuscated").forEach((el) => {
+      const user = el.dataset.user ?? "";
+      const domain = el.dataset.domain ?? "";
+      if (!user || !domain) return;
+      const email = `${user}@${domain}`;
+      const link = document.createElement("a");
+      link.href = `mailto:${email}`;
+      link.textContent = email;
+      if (el.dataset.class) link.className = el.dataset.class;
+      el.replaceWith(link);
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", revealEmails);
+  } else {
+    revealEmails();
+  }
+</script>

@@ -1,5 +1,6 @@
 ---
 import { site, productCategories, applications, nav } from '../data/site';
+import EmailLink from './EmailLink.astro';
 
 type FooterLink = {
   label: string;
@@ -104,7 +105,9 @@ const {
         {contactItems.map((item) => (
           <li class="text-[15px] leading-relaxed">
             <span class="block text-white/75 uppercase tracking-wider font-bold text-xs mb-1">{item.label}</span>
-            {item.href ? (
+            {item.label === "Email" ? (
+              <EmailLink className="text-[#DDE7F2] transition hover:text-[#F58A1F] break-words whitespace-normal" />
+            ) : item.href ? (
               <a
                 href={item.href}
                 class="text-[#DDE7F2] transition hover:text-[#F58A1F] break-words whitespace-normal"

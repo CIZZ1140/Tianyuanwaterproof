@@ -3,6 +3,7 @@ import Layout from '@/layouts/Layout.astro';
 import { site } from '@/data/site';
 import { ChevronDown, Search, MessageCircle, Mail, MapPin, Store, ArrowRight, CheckCircle2 } from 'lucide-astro';
 import Turnstile from '@/components/Turnstile.astro';
+import EmailLink from '@/components/EmailLink.astro';
 
 const buyerTypes = [
   'Importer',
@@ -325,20 +326,32 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
             <h2 class="font-serif text-2xl font-semibold text-[#241F1A]">Get in touch directly</h2>
             <p class="mt-3 text-sm leading-7 text-[#6F6255]">Available on WhatsApp, email and factory visit.</p>
             <div class="mt-8 space-y-4">
-              {contactCards.map((card) => (
-                <a href={card.href || undefined} class="group flex items-center gap-4 rounded-2xl border border-[#D1C7B7] bg-[#F4F0E8] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#A87835] hover:shadow-md">
-                  <span class={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${card.iconBg} ${card.iconText}`}>
-                    {card.icon === 'whatsapp' && <MessageCircle size={24} />}
-                    {card.icon === 'email' && <Mail size={24} />}
-                    {card.icon === 'location' && <MapPin size={24} />}
-                    {card.icon === 'store' && <Store size={24} />}
-                  </span>
-                  <span class="min-w-0">
-                    <span class="block text-xs font-bold tracking-wider text-[#6F6255]">{card.label}</span>
-                    <span class="mt-1 block break-words text-sm font-black text-[#241F1A] group-hover:text-[#A87835] transition-colors">{card.value}</span>
-                  </span>
-                </a>
-              ))}
+              {contactCards.map((card) =>
+                card.label === 'Email' ? (
+                  <div class="group flex items-center gap-4 rounded-2xl border border-[#D1C7B7] bg-[#F4F0E8] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#A87835] hover:shadow-md">
+                    <span class={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${card.iconBg} ${card.iconText}`}>
+                      <Mail size={24} />
+                    </span>
+                    <span class="min-w-0">
+                      <span class="block text-xs font-bold tracking-wider text-[#6F6255]">{card.label}</span>
+                      <EmailLink className="mt-1 block break-words text-sm font-black text-[#241F1A] group-hover:text-[#A87835] transition-colors" />
+                    </span>
+                  </div>
+                ) : (
+                  <a href={card.href || undefined} class="group flex items-center gap-4 rounded-2xl border border-[#D1C7B7] bg-[#F4F0E8] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#A87835] hover:shadow-md">
+                    <span class={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${card.iconBg} ${card.iconText}`}>
+                      {card.icon === 'whatsapp' && <MessageCircle size={24} />}
+                      {card.icon === 'email' && <Mail size={24} />}
+                      {card.icon === 'location' && <MapPin size={24} />}
+                      {card.icon === 'store' && <Store size={24} />}
+                    </span>
+                    <span class="min-w-0">
+                      <span class="block text-xs font-bold tracking-wider text-[#6F6255]">{card.label}</span>
+                      <span class="mt-1 block break-words text-sm font-black text-[#241F1A] group-hover:text-[#A87835] transition-colors">{card.value}</span>
+                    </span>
+                  </a>
+                )
+              )}
             </div>
 
             <div class="mt-8 border-t border-[#D1C7B7]/60 pt-6">
