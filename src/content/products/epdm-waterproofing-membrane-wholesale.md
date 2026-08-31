@@ -1,24 +1,27 @@
 ---
-title: "Durable EPDM Rubber Waterproofing Membrane Manufacturer"
+title: "EPDM Rubber Waterproofing Membrane Manufacturer & Wholesale | Cold-Bonded"
 displayName: "EPDM Waterproofing Membrane"
 category: "polymer-membranes"
 featured: true
 order: 85
-meta_description: "EPDM rubber waterproofing membrane for roofing, bridge decks, and infrastructure applications. Available with selected reinforcement and thickness options. Request a TDS or factory quotation."
+meta_description: "EPDM rubber waterproofing membrane to GB/T 18173.1 / ASTM D4637. 1.2-2.0mm, -40°C flexibility, 450% elongation, cold-bonded seams, OEM wholesale."
 main_image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
 image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
 
-hero_description: "TY-SHIELD™ EPDM (Ethylene-Propylene Diene Monomer) rubber waterproofing membrane for roofing, bridge decks, and civil infrastructure. Available in selected configurations with weathering and low-temperature performance documented according to the applicable product specification. Confirm the product TDS before specification."
+technical_scope: "EPDM, JL1 Vulcanized, 1.5mm, Standard Black (Representative Configuration)"
+technical_disclaimer: "Values shown apply to the stated product configuration. Other types (vulcanized / non-vulcanized), thicknesses (1.2mm / 1.5mm / 2.0mm), and surface finishes may have different performance values. GB/T 18173.1-2012 is the current edition; confirm the applicable product TDS, batch test report, and project requirements before specification or procurement."
+
+hero_description: "TY-SHIELD™ EPDM (Ethylene-Propylene Diene Monomer) rubber waterproofing membrane with a saturated polymer backbone that resists UV and ozone attack. Vulcanized grades deliver ≥ 7.5 MPa tensile strength, ≥ 450% elongation, and -40°C low-temperature flexibility. Seams are bonded cold with contact adhesive or splicing tape — no open flame, no hot-air welder. Available in JL1 vulcanized and non-vulcanized types across 1.2mm, 1.5mm, and 2.0mm thicknesses. Confirm the applicable product TDS before specification."
 
 hero_tags:
-  - "Long-Term Roofing Use"
+  - "Cold-Bonded Seams"
   - "-40°C Flexibility"
-  - "Ozone Resistant"
-  - "High Elongation"
+  - "≥450% Elongation"
+  - "Ozone & UV Resistant"
 
 spec_table:
   - label: "Standard"
-    value: "GB/T 18173.1-2012 / ASTM D4637"
+    value: "GB/T 18173.1-2012 (JL1) / ASTM D4637"
   - label: "Type Options"
     value: "JL1 Vulcanized / Non-Vulcanized"
   - label: "Thickness"
@@ -26,17 +29,35 @@ spec_table:
   - label: "Width"
     value: "1.0m / 1.2m / 2.0m"
   - label: "Color"
-    value: "Standard Black"
+    value: "Standard Black (custom colors on request)"
+  - label: "Reinforcement Options"
+    value: "Non-reinforced standard; polyester scrim on request"
+  - label: "Typical Applications"
+    value: "Roofing, bridge decks, ponds & reservoirs"
+  - label: "Standard Roll Size"
+    value: "20m × 1.5m (at 1.5mm)"
 
-quick_facts:
-  - title: "Weathering Resistance"
-    text: "EPDM is used in systems that require flexibility and resistance to weathering. Actual performance depends on formulation, thickness, exposure, detailing, installation quality, and maintenance."
-  - title: "Exceptional Elastic Strain"
-    text: "Vulcanized EPDM can stretch over 450% and return to its original shape. This flexibility allows it to bridge substrate cracks and accommodate significant structural settlement."
-  - title: "Extreme Temperature Resilience"
-    text: "Maintains its rubber-like properties in temperatures from -40°C to +160°C. It is the essential specification for high-altitude projects and industrial environments."
-  - title: "Potable Water Safety"
-    text: "Non-toxic and chemically inert, EPDM is safe for use in drinking water reservoirs and aquaculture ponds. It does not leach plasticizers or harmful chemicals."
+features:
+  - title: "Saturated Backbone, Nothing to Attack"
+    text: "EPDM's ethylene-propylene backbone is fully saturated — no double bonds for UV, ozone, or oxygen to attack. The degradation pathways open to asphalt-based and PVC membranes do not exist in this molecule, which is why the same chemistry seals automotive weatherstrips for decades."
+  - title: "Elastic Memory Absorbs Movement"
+    text: "Vulcanized EPDM stretches past 450% and returns to shape, absorbing thermal cycling, structural settlement, and substrate cracking without stress concentration. Rigid membranes transfer that movement to the seam line; EPDM absorbs it in the sheet itself."
+  - title: "Cold-Bonded Seams, No Open Flame"
+    text: "Lap joints are fused with contact adhesive or self-adhering splicing tape — no torch, no hot-air welder, no fume risk. EPDM becomes specifiable where open flame is restricted: storage facilities, hospitals, retrofit of occupied buildings, and insulation-sensitive assemblies."
+  - title: "Repairable in the Field, Forever"
+    text: "Damage is repaired with uncured EPDM patch or liquid EPDM that vulcanizes in place, restoring a monolithic membrane. Unlike coatings that need re-application or sheets that need seam re-welding, an EPDM roof can be patched in minutes at any age."
+
+applications:
+  - title: "Single-Ply Roofing"
+    text: "Large-area cold-applied roofing on commercial and industrial buildings, including retrofit over existing decks where open flame is not permitted."
+  - title: "Bridge Decks & Infrastructure"
+    text: "Absorbs deck movement and thermal expansion on bridges, viaducts, and parking structures where rigid membranes crack."
+  - title: "Ponds, Reservoirs & Aquaculture"
+    text: "Chemically inert sheet with no plasticizer migration — safe for potable water storage, fish ponds, and aquaculture raceways."
+  - title: "Tunnels & Underground Structures"
+    text: "Flexible liner for tunnels and underground structures subject to settlement and hydrostatic pressure. See our tunnel membrane selection guide."
+  - title: "Inverted & Green Roofs"
+    text: "Serves as the waterproofing layer beneath protection boards or green-roof build-ups, where resistance to biological and chemical exposure matters."
 
 technical_data:
   - label: "Tensile Strength (Vulc.)"
@@ -70,6 +91,46 @@ technical_data:
     requirement: "0.3 MPa, 30min"
     value: "Impermeable"
 
+standards_mapping:
+  - property: "Product Standard"
+    gb: "GB/T 18173.1-2012 (JL1)"
+    astm: "ASTM D4637"
+    en: "EN 13956"
+  - property: "Low-Temperature Flexibility"
+    gb: "-40°C no crack"
+    astm: "ASTM D2137 (confirm with TDS)"
+    en: "EN 495-5 (confirm with TDS)"
+  - property: "Ozone Aging"
+    gb: "168h no cracking"
+    astm: "ASTM D1149 (confirm with TDS)"
+    en: "EN 1844 (confirm with TDS)"
+  - property: "Watertightness"
+    gb: "0.3 MPa / 30 min"
+    astm: "Confirm with TDS"
+    en: "EN 1928 (confirm with TDS)"
+
+configurations:
+  - code: "TY-EPDM-VL-1.2"
+    reinforcement: "None (standard)"
+    thickness: "1.2mm"
+    surface: "Standard Black"
+    use: "General waterproofing, pond liners, light-duty roofing"
+  - code: "TY-EPDM-VL-1.5"
+    reinforcement: "None (standard)"
+    thickness: "1.5mm"
+    surface: "Standard Black"
+    use: "Single-ply roofing, bridge decks, water features"
+  - code: "TY-EPDM-VL-2.0"
+    reinforcement: "None (standard)"
+    thickness: "2.0mm"
+    surface: "Standard Black"
+    use: "Heavy-duty roofing, reservoirs, high-traffic assemblies"
+  - code: "TY-EPDM-NV-1.5"
+    reinforcement: "None"
+    thickness: "1.5mm"
+    surface: "Black"
+    use: "Easy-bond applications, repairs, complex detailing"
+
 application_guide:
   - title: "Substrate Preparation"
     text: "Ensure the base course is flat, solid, smooth, and dry (moisture content < 9%). Corners at parapets should be radiused to 20mm."
@@ -84,13 +145,61 @@ application_guide:
   - title: "Joint Sealing"
     text: "Apply professional butyl rubber adhesive on lap joints. Press firmly and seal edges with polyurethane sealant."
 
+supply_info:
+  - title: "Minimum Order"
+    text: "1,000 m² per specification (negotiable for repeat orders)"
+  - title: "Lead Time"
+    text: "15–25 days after deposit confirmation, depending on thickness and volume"
+  - title: "Packaging"
+    text: "Core-wound rolls, film-wrapped and palletized — see Packaging & OEM"
+  - title: "OEM / Private Label"
+    text: "Custom width, color, roll length, and printed labeling available"
+  - title: "Documentation"
+    text: "TDS, batch test reports, and GB / ASTM / EN certificates on request"
+
+packaging:
+  - title: "Core-Wound Under Tension"
+    text: "Vulcanized EPDM has rubber memory — it wants to spring back. Rolls are wound on rigid cardboard cores under controlled tension and held with PE film so they arrive round, not oval, and unroll flat on site."
+  - title: "Palletized & Corner-Protected"
+    text: "A 1.5mm × 20m roll weighs roughly 54 kg. Rolls are stacked on export pallets, strapped, and corner-protected so the stack survives container handling without edge damage."
+  - title: "Non-Dangerous Goods"
+    text: "EPDM sheet carries no UN number and no hazard class — a cured rubber sheet, not a reactive or flammable product. No DG declaration and no special container requirements on sea freight."
+  - title: "OEM Labeling at the Mill"
+    text: "Brand, specification, and batch data printed directly on the wrapper or embossed on the sheet edge — your labeling, our production line."
+
+loading_data:
+  - label: "Roll Size (1.5mm)"
+    value: "1.5m × 20m (30 m² per roll)"
+  - label: "Roll Weight (1.5mm)"
+    value: "≈ 54 kg"
+  - label: "20GP Loading"
+    value: "≈ 4,500 m² (industry estimate)"
+  - label: "40HQ Loading"
+    value: "≈ 11,000 m² (industry estimate)"
+  - label: "Note"
+    value: "Confirm exact loading with the factory for your roll specification"
+
+guide_links:
+  - title: "Tunnel Waterproofing Membrane Selection Guide"
+    href: "/blog/tunnel-waterproofing-membrane-selection/"
+  - title: "Self-Adhesive vs Torch-Applied Membrane: Selection Guide"
+    href: "/blog/self-adhesive-vs-torch-applied-membrane-comparison/"
+  - title: "How to Read a Membrane TDS"
+    href: "/blog/how-to-read-sbs-membrane-tds/"
+
 faqs:
   - question: "What is the difference between vulcanized and non-vulcanized EPDM?"
-    answer: "Vulcanized EPDM undergoes a curing process that delivers superior tensile strength and better low-temperature flexibility. Non-vulcanized is easier to bond but has slightly lower mechanical properties."
+    answer: "Vulcanized EPDM is cross-linked during production, delivering higher mechanical performance — tensile strength ≥ 7.5 MPa, elongation ≥ 450%, tear strength ≥ 25 kN/m — and better low-temperature flexibility. Non-vulcanized grades (tensile ≥ 4.0 MPa, elongation ≥ 400%) are easier to bond and shape around complex details, at slightly lower strength. Select the type based on the mechanical demand of the project; vulcanized is the standard for exposed roofing."
   - question: "How does EPDM compare to TPO for roofing?"
-    answer: "EPDM and TPO use different polymer systems and installation methods. EPDM is commonly selected for flexible sheet applications, while TPO uses heat-welded seams and may suit projects with specific recycling or welding requirements. Compare the product-specific TDS, detailing method, exposure, and project requirements before selection."
-  - question: "Is EPDM safe for fish ponds?"
-    answer: "Yes. Our EPDM membrane contains no plasticizers or toxic additives, making it safe for aquaculture and potable water applications."
+    answer: "The two use different polymer systems and, critically, different seaming methods. EPDM is a cured rubber sheet bonded with cold-applied contact adhesive or splicing tape — no heat source needed — which suits buildings where open flame or hot-air welding is restricted. TPO is a thermoplastic sheet fused by hot-air welding within a +400°C to +620°C window for monolithic seams and is often chosen where weldability and recyclability are specified. Compare the product-specific TDS, detailing method, exposure, and project requirements before selection."
+  - question: "Is EPDM safe for fish ponds and potable water?"
+    answer: "Yes. EPDM contains no plasticizers or toxic additives that could migrate into water — plasticizer-free formulations are widely used for potable water reservoirs, fish ponds, and aquaculture. If potable water compliance is required, request the relevant food-contact or water-safety test documentation for the specific formulation before specification."
+  - question: "How long does an EPDM membrane last?"
+    answer: "Industry field experience for vulcanized EPDM in roofing is typically 30–50 years, with factory warranties commonly covering 10–20 years depending on thickness and system. Actual service life depends on formulation, sheet thickness, UV exposure, detailing quality, and maintenance. The saturated backbone chemistry gives EPDM one of the longest documented service records among single-ply membranes."
+  - question: "How are EPDM lap seams made, and how strong are they?"
+    answer: "Lap seams are bonded with contact adhesive or self-adhering splicing tape over a lap width of 75–100mm. Adhesive is applied to both faces and allowed to dry until tack-free (15–30 minutes); after rolling, the seam reaches working strength within about 24 hours. In shear, a properly made lap joint typically outperforms the sheet itself because the overlap area doubles the load path — but joint quality depends on clean surfaces and correct adhesive selection for the substrate."
+  - question: "Can EPDM be installed in cold weather?"
+    answer: "The membrane itself remains flexible to -40°C, so the sheet can be handled and laid in freezing conditions. However, solvent-based contact adhesives generally require ambient temperatures above 5°C to bond reliably — in cold weather use low-temperature adhesive grades or self-adhering tape, and warm the splice area if condensation is present. Plan detailing for wind chill, since the adhesive, not the membrane, sets the practical installation temperature window."
 
 related_products:
   - title: "TPO Waterproofing Membrane"
@@ -113,7 +222,7 @@ downloads:
 
 ## The Gold Standard in Synthetic Polymer Waterproofing
 
-EPDM (Ethylene-Propylene Diene Monomer) rubber waterproofing membrane is used in roofing and civil infrastructure systems where flexible sheet performance and weathering resistance are required. Actual service life depends on formulation, thickness, exposure, detailing, installation quality, and maintenance. Confirm the applicable product data and project requirements before specification.
+EPDM (Ethylene-Propylene Diene Monomer) is a cured rubber membrane used where flexible sheet performance and weathering resistance are the deciding factors: exposed roofing, bridge decks, water infrastructure, and buried applications. Where modified bitumen and PVC membranes lose flexibility as plasticizers migrate or oxidation advances, EPDM's saturated backbone stays chemically inert — there is simply no double bond left for UV, ozone, or oxygen to attack. That is why EPDM field service records in roofing routinely pass three decades while the sheet remains elastic enough to stretch past 450%.
 
 ### Vulcanized vs Non-Vulcanized — Selecting the Right EPDM Type
 
@@ -132,6 +241,14 @@ EPDM (Ethylene-Propylene Diene Monomer) rubber waterproofing membrane is used in
   </tr>
 </table>
 
+### Why Cold-Bonded Seams Matter
+
+Every membrane system is only as strong as its seam — and seam construction is where EPDM fundamentally differs from [TPO membrane](/products/tpo-waterproofing-membrane-manufacturer/) and modified bitumen sheets. EPDM lap joints are bonded with contact adhesive or self-adhering splicing tape over a 75–100mm overlap, cured in place, and fully watertight without a single flame or hot-air gun on the roof. For a retrofit over an occupied building, a hospital, or a warehouse holding flammable stock, that removes the entire risk class of torch- or welder-related fires. It also removes the operator skill dependency: a clean, rolled adhesive lap is far more forgiving than a heat-welded seam that depends on nozzle temperature, travel speed, and wind conditions.
+
+### EPDM in Water Infrastructure
+
+The same chemistry that resists UV aging makes EPDM a preferred specification for water contact: no plasticizer to migrate, no phthalate to leach, no vulcanization by-product to release. Potable water reservoirs, fish ponds, aquaculture raceways, and decorative water features rely on this inertness, and EPDM liners flex with settlement and seasonal water levels where rigid liners crack. For tunnels and underground structures subject to hydrostatic pressure, see our [tunnel waterproofing membrane selection guide](/blog/tunnel-waterproofing-membrane-selection/) — and if the project calls for a welded thermoplastic sheet instead of a bonded rubber one, compare [PVC waterproofing membrane](/products/pvc-waterproofing-membrane-manufacturer/) before specifying.
+
 ### Engineered for the Most Demanding Environments
 
-EPDM's performance advantages are not marketing claims — they are the direct result of its molecular architecture. The saturated polymer backbone means there are no vulnerable double bonds for UV, ozone, or oxygen to attack. This is the same chemistry that makes EPDM the material of choice for automotive weather seals.
+EPDM's performance advantages are not marketing claims — they are the direct result of its molecular architecture. The saturated polymer backbone means there are no vulnerable double bonds for UV, ozone, or oxygen to attack. This is the same chemistry that makes EPDM the material of choice for automotive weather seals, radiator hoses, and window gaskets — components that sit in direct sun and ozone-rich air for the life of a vehicle.
