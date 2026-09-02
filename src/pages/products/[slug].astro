@@ -256,17 +256,32 @@ const breadcrumbLd = {
         <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <!-- Left: Gallery Switcher -->
           <div class="flex flex-col">
-            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 flex-1 min-h-0 flex items-center justify-center relative shadow-inner">
+            <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 flex-1 min-h-[300px] flex items-center justify-center relative shadow-inner">
               <link rel="preload" as="image" href={mainImage640} media="(max-width: 767px)" fetchpriority="high" />
               <link rel="preload" as="image" href={initialImage} media="(min-width: 768px)" fetchpriority="high" />
-              <img id="main-product-image" src={initialImage} alt={title} width={data.image_width ?? undefined} height={data.image_height ?? undefined} fetchpriority="high" srcset={`${mainImage640} 640w, ${initialImage} ${mainImageW}w`} sizes="(min-width: 1024px) 600px, 100vw" class="max-h-[620px] w-full object-contain transition-all duration-300" />
+              <img 
+                id="main-product-image" 
+                src={initialImage} 
+                alt={title} 
+                width={data.image_width ?? undefined} 
+                height={data.image_height ?? undefined} 
+                fetchpriority="high" 
+                loading="eager"
+                srcset={`${mainImage640} 640w, ${initialImage} ${mainImageW}w`} 
+                sizes="(min-width: 1024px) 600px, 100vw" 
+                class="max-h-[620px] w-full object-contain transition-opacity duration-300" 
+              />
             </div>
-            {gallery.length > 0 && (
+            {gallery.length > 1 && (
               <div class={"mt-4 grid gap-3 grid-cols-4" + (gallery.length > 4 ? " sm:grid-cols-5" : "")}>
-                {gallery.slice(0, 8).map((item) => (
-                  <button class="gallery-thumb group flex rounded-2xl border-2 border-slate-200 bg-white shadow-sm transition hover:border-blue-400 overflow-hidden" data-full={item.image}>
-                    <div class="aspect-[4/3] w-full bg-slate-50 p-1 flex items-center justify-center">
-                      <img src={item.image} alt={item.alt || item.title} class="h-full w-full object-contain transition group-hover:scale-105" />
+                {gallery.slice(0, 8).map((item, index) => (
+                  <button 
+                    class={`gallery-thumb group flex rounded-2xl border-2 transition shadow-sm overflow-hidden ${index === 0 ? 'active border-blue-600 ring-2 ring-blue-100' : 'border-slate-200 bg-white hover:border-blue-400'}`} 
+                    data-full={item.image}
+                    aria-label={`View product image ${index + 1}`}
+                  >
+                    <div class="aspect-[4/3] w-full bg-slate-50 p-1 flex items-center justify-center pointer-events-none">
+                      <img src={item.image} alt={item.alt || item.title} class="h-full w-full object-contain transition group-hover:scale-105" loading="lazy" />
                     </div>
                   </button>
                 ))}
@@ -411,7 +426,7 @@ const breadcrumbLd = {
 
       {technicalData.length > 0 && (
         <section id="technical-specifications" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4">Technical Specifications</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4 uppercase tracking-tight">Technical Specifications</h2>
           {data.technical_scope && <p class="mb-6 text-sm font-medium text-slate-500">{data.technical_scope}</p>}
           <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
             <table class="w-full text-left text-sm border-collapse">
@@ -445,7 +460,7 @@ const breadcrumbLd = {
 
       {technicalDataHybrid.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4">Technical Specifications — Hybrid Polyurea</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4 uppercase tracking-tight">Technical Specifications — Hybrid Polyurea</h2>
           <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
             <table class="w-full text-left text-sm border-collapse">
               <caption class="sr-only">Technical specifications — Hybrid Polyurea</caption>
@@ -531,7 +546,7 @@ const breadcrumbLd = {
 
       {applicationGuide.length > 0 && (
         <section id="installation-guide" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8">Installation Guide</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Installation Guide</h2>
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {applicationGuide.slice(0, 4).map((item, index) => {
               const Icon = installationIcons[index % installationIcons.length];
@@ -706,6 +721,99 @@ const breadcrumbLd = {
                 <div class="px-6 pb-5 text-sm text-slate-600 leading-relaxed">{f.answer}</div>
               </details>
             ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    {data.category === "bitumen-membranes" && (
+      <section class="mx-auto w-full max-w-[1680px] px-4 sm:px-6 lg:px-8 my-20">
+        <div class="rounded-3xl border border-slate-100 bg-slate-50/30 p-6 sm:p-10 shadow-inner text-left">
+          <div class="flex items-center gap-4 mb-10">
+            <div class="h-8 w-1 bg-blue-700"></div>
+            <h2 class="text-xl font-black uppercase tracking-tight text-slate-900">Technical Knowledge Base</h2>
+          </div>
+          
+          <p class="text-sm font-medium text-slate-500 mb-10 max-w-3xl leading-relaxed">Deep dive into polymer-modified bitumen technology, international standards, and global market trends with our expert technical series.</p>
+
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {entry.slug === "self-adhesive-bitumen-waterproofing-membrane-wholesale" ? (
+              <>
+                <a href="/blog/self-adhesive-vs-torch-applied-membrane-comparison/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
+                  <div>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Selection Guide</div>
+                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Self-Adhesive vs Torch-Applied: Safety & Efficiency Compared</h4>
+                  </div>
+                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                </a>
+                <a href="/blog/tunnel-waterproofing-membrane-selection/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
+                  <div>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Infrastructure</div>
+                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Tunnel Waterproofing: Why Self-Adhesive is the Safety Standard</h4>
+                  </div>
+                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                </a>
+                <a href="/blog/2026-global-sbs-membrane-market-analysis/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
+                  <div>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Market Insights</div>
+                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">2026 Bitumen Membrane Market Analysis & Procurement Guide</h4>
+                  </div>
+                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                </a>
+              </>
+            ) : entry.slug === "asphalt-roofing-felt-manufacturer" ? (
+              <>
+                <a href="/blog/sbs-vs-app-modified-bitumen-membranes/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
+                  <div>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Selection Guide</div>
+                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Roofing Underlayment: Choosing the Right Secondary Layer</h4>
+                  </div>
+                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                </a>
+                <a href="/blog/py-g-pyg-sbs-membrane-reinforcement-guide/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
+                  <div>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Materials Science</div>
+                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Understanding ASTM D226: Standards for Asphalt Felt</h4>
+                  </div>
+                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                </a>
+                <a href="/blog/how-many-rolls-of-sbs-membrane-fit-in-a-container/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
+                  <div>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Logistics</div>
+                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Shipping Efficiency: How many rolls fit in a 20FT Container?</h4>
+                  </div>
+                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                </a>
+              </>
+            ) : (
+              <>
+                <a href="/blog/3mm-vs-4mm-sbs-waterproofing-membrane/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
+                  <div>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Selection Guide</div>
+                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">3mm vs 4mm SBS Membrane: When does thickness matter?</h4>
+                  </div>
+                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                </a>
+                <a href="/blog/sbs-vs-app-modified-bitumen-membranes/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
+                  <div>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Climate Logic</div>
+                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">SBS vs APP: How to Choose the Right System for Your Climate?</h4>
+                  </div>
+                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                </a>
+                <a href="/blog/how-to-read-sbs-membrane-tds/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
+                  <div>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Standards & TDS</div>
+                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">How to Read an SBS TDS: Key Metrics for Engineers</h4>
+                  </div>
+                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                </a>
+              </>
+            )}
+          </div>
+          
+          <div class="mt-10 pt-8 border-t border-slate-200/60 flex justify-center">
+            <a href="/blog/" class="text-xs font-black uppercase tracking-widest text-slate-400 hover:text-blue-700 transition-colors">View All Technical Articles →</a>
           </div>
         </div>
       </section>

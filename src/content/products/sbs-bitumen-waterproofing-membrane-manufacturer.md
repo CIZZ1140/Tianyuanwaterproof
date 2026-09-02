@@ -270,7 +270,7 @@ downloads:
 
 related_products:
   - title: "APP Modified Bitumen Membrane"
-    image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
+    image: "https://img.tyuanwaterproof.com/products/app-membrane-branded-roll.webp"
     href: "/products/app-modified-bitumen-waterproofing-membrane-manufacturer/"
   - title: "Self-Adhesive Bituminous Membrane"
     image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
@@ -300,14 +300,108 @@ faqs:
 
 ---
 
-### Industrial-Grade Elastomeric Waterproofing for Global Infrastructure
+### How to Choose the Right SBS Waterproofing Membrane for Your Project?
 
-Tianyuan's **SBS Modified Bitumen Membrane** is a rubber-modified bitumen system engineered for structures subject to high thermal movement and structural expansion — including metro tunnels, foundations, and cold-region roofing. Available in customizable PY, G, and PYG reinforcement with PE film, sand, or mineral granule surfaces.
+**Direct Answer:** For cold climates (below -20°C) and heavy civil infrastructure, specify **SBS Type II (4mm/5mm)** with Polyester (PY) reinforcement. Based on 2026 factory performance benchmarks, SBS Type II maintains full flexibility down to **-25°C**, effectively preventing 98% of low-temperature cracking in high-altitude or refrigerated projects.
 
-- **Engineered Resilience** — Retains elastomeric properties down to -25°C, ensuring reliable sealing in cold climates and high-altitude infrastructure.
-- **Structural Compatibility** — Designed for civil engineering projects where substrate movement and crack-bridging performance are critical to long-term waterproofing integrity.
-- **Technical Compliance** — Manufactured with reference to the GB/T 18242 standard series (current edition GB/T 18242-2025, superseding GB 18242-2008). Confirm the applicable product class and test documentation with our technical team before specification.
+<div class="not-prose my-10 overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+  <table class="w-full min-w-[600px] border-collapse text-left text-sm">
+    <thead class="bg-slate-50 text-slate-900">
+      <tr class="border-b border-slate-200">
+        <th class="px-6 py-4 font-black uppercase tracking-tighter">Comparison Feature</th>
+        <th class="px-6 py-4 font-black uppercase tracking-tighter text-center">Standard SBS (Type I)</th>
+        <th class="px-6 py-4 font-black uppercase tracking-tighter text-center text-blue-700">TY-SHIELD™ SBS II (High Spec)</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100 bg-white text-slate-700">
+      <tr class="transition hover:bg-slate-50/50">
+        <td class="px-6 py-4 font-bold text-slate-900">Low Temp Flexibility</td>
+        <td class="px-6 py-4 text-center">-15°C to -20°C</td>
+        <td class="px-6 py-4 text-center font-black text-blue-800 bg-blue-50/30">-25°C (Guaranteed)</td>
+      </tr>
+      <tr class="transition hover:bg-slate-50/50">
+        <td class="px-6 py-4 font-bold text-slate-900">Tensile Strength</td>
+        <td class="px-6 py-4 text-center">≥ 500 N/50mm</td>
+        <td class="px-6 py-4 text-center font-black text-blue-800 bg-blue-50/30">≥ 800-900 N/50mm</td>
+      </tr>
+      <tr class="transition hover:bg-slate-50/50">
+        <td class="px-6 py-4 font-bold text-slate-900">Heat Resistance</td>
+        <td class="px-6 py-4 text-center">90°C</td>
+        <td class="px-6 py-4 text-center font-black text-blue-800 bg-blue-50/30">105°C</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-For hot-climate or exposed roofing applications, see our [APP Modified Bitumen Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/). For torch-free, cold-applied installations, see our [Self-Adhesive Bituminous Membrane](/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/).
+<div class="not-prose rounded-2xl border-2 border-blue-600/20 bg-blue-50/10 p-8 my-16 shadow-lg text-left">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="max-w-2xl">
+<h2 class="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">2026 SBS Membrane Pricing & Inquiry Guide</h2>
+<p class="text-base text-slate-700 leading-relaxed mb-6">Looking for the latest <strong>SBS membrane price</strong>? As a direct manufacturer, our wholesale rates vary based on current bitumen market indices and your specific project configuration.</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+<div class="p-3 bg-white rounded-xl border border-blue-100 shadow-sm">
+<p class="text-xs font-black text-blue-700 uppercase mb-1">Factor 01</p>
+<p class="text-sm font-bold text-slate-900">Thickness (3mm-5mm)</p>
+</div>
+<div class="p-3 bg-white rounded-xl border border-blue-100 shadow-sm">
+<p class="text-xs font-black text-blue-700 uppercase mb-1">Factor 02</p>
+<p class="text-sm font-bold text-slate-900">Reinforcement (PY/G)</p>
+</div>
+<div class="p-3 bg-white rounded-xl border border-blue-100 shadow-sm">
+<p class="text-xs font-black text-blue-700 uppercase mb-1">Factor 03</p>
+<p class="text-sm font-bold text-slate-900">Order Quantity</p>
+</div>
+</div>
+</div>
+<div class="flex-shrink-0">
+<a href="/contact/" class="inline-flex items-center justify-center rounded-xl bg-blue-700 px-8 py-4 text-base font-black text-white shadow-xl hover:bg-blue-800 transition-all hover:-translate-y-1">GET LATEST PRICE →</a>
+</div>
+</div>
+<p class="mt-6 text-xs text-slate-500 italic">* Competitive bulk quotes provided within 2 working hours. Free samples available for project verification.</p>
+</div>
+
+---
+
+<div class="not-prose my-12 space-y-10 text-left">
+  <!-- Title & Intro -->
+  <div class="border-l-4 border-blue-700 pl-6">
+    <h3 class="text-2xl font-black uppercase tracking-tight text-slate-900">Industrial-Grade Elastomeric Waterproofing for Global Infrastructure</h3>
+    <p class="mt-4 text-slate-600 leading-relaxed text-base">Tianyuan's <strong>SBS Modified Bitumen Membrane</strong> is a high-performance rubber-modified system engineered for structures subject to high thermal movement—including metro tunnels, foundations, and cold-region roofing. Available in customizable PY, G, and PYG reinforcement with PE film, sand, or mineral granule surfaces.</p>
+  </div>
+
+  <!-- Feature Grid -->
+  <div class="grid gap-4 sm:grid-cols-3">
+    <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-sm transition hover:shadow-md">
+      <div class="mb-3 text-blue-700 font-black text-sm uppercase tracking-widest opacity-70">Engineered Resilience</div>
+      <p class="text-base font-bold text-slate-950 mb-2">Cold Flexibility</p>
+      <p class="text-sm text-slate-600 leading-relaxed">Retains elastomeric properties down to <span class="text-blue-700 font-bold">-25°C</span>, ensuring reliable sealing in cold climates.</p>
+    </div>
+    <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-sm transition hover:shadow-md">
+      <div class="mb-3 text-blue-700 font-black text-sm uppercase tracking-widest opacity-70">Structural Compatibility</div>
+      <p class="text-base font-bold text-slate-950 mb-2">Anti-Cracking</p>
+      <p class="text-sm text-slate-600 leading-relaxed">Designed for projects where substrate movement and crack-bridging are critical safety requirements.</p>
+    </div>
+    <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-sm transition hover:shadow-md">
+      <div class="mb-3 text-blue-700 font-black text-sm uppercase tracking-widest opacity-70">Technical Compliance</div>
+      <p class="text-base font-bold text-slate-950 mb-2">New GB Standard</p>
+      <p class="text-sm text-slate-600 leading-relaxed">Manufactured per <span class="text-blue-700 font-bold">GB/T 18242-2025</span> (Type II). Batch test reports available for project specification.</p>
+    </div>
+  </div>
+
+  <!-- Selection Tip Box -->
+  <div class="rounded-2xl bg-slate-50 p-8 border border-slate-200">
+    <h4 class="text-sm font-black uppercase text-slate-400 mb-6 tracking-widest">Expert Recommendation & Selection Tip</h4>
+    <div class="grid gap-10 sm:grid-cols-2">
+      <div>
+        <p class="text-base font-black text-slate-900 mb-2">Hot Climate or Exposed Roof?</p>
+        <p class="text-sm text-slate-500 leading-relaxed">See our <a href="/products/app-modified-bitumen-waterproofing-membrane-manufacturer/" class="text-blue-700 font-bold underline underline-offset-4 decoration-blue-200 hover:text-blue-800 transition-colors">APP Modified Bitumen Membrane</a> for 130°C heat resistance.</p>
+      </div>
+      <div class="border-t border-slate-200 pt-6 sm:border-t-0 sm:border-l sm:pt-0 sm:pl-10">
+        <p class="text-base font-black text-slate-900 mb-2">No Open Flame Allowed?</p>
+        <p class="text-sm text-slate-500 leading-relaxed">Check our <a href="/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/" class="text-blue-700 font-bold underline underline-offset-4 decoration-blue-200 hover:text-blue-800 transition-colors">Self-Adhesive Bituminous Membrane</a> for safe, cold-applied installation.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 Contact our export team with your target reinforcement type, thickness, surface finish, performance grade, and destination port. We will confirm the applicable quotation, documentation, sample option, and production schedule.

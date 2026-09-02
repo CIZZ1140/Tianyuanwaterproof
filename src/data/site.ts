@@ -11,9 +11,9 @@ export const site = {
   email: 'sales@tyuanwaterproof.com',
   whatsapp: '+86 15263640998',
   socials: {
-    facebook: '#',
-    linkedIn: '#',
-    youtube: '#'
+    facebook: 'https://www.facebook.com/people/Tianyuan-Waterproof-Materials-Manufacturer/61568156258850/',
+    linkedIn: 'https://www.linkedin.com/company/tianyuan-waterproof/',
+    youtube: 'https://www.youtube.com/@TianyuanWaterproof'
   }
 };
 
@@ -57,7 +57,9 @@ export const productCategories = [
     description: 'SBS/APP modified bitumen and self-adhesive waterproofing membranes for durable roofing and underground projects.',
     items: [
       { title: 'SBS Bitumen Membrane', href: '/products/sbs-bitumen-waterproofing-membrane-manufacturer/' },
-      { title: 'Self-Adhesive Membrane', href: '/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/' }
+      { title: 'Self-Adhesive Membrane', href: '/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/' },
+      { title: 'APP Modified Bitumen', href: '/products/app-modified-bitumen-waterproofing-membrane-manufacturer/' },
+      { title: 'Asphalt Roofing Felt', href: '/products/asphalt-roofing-felt-manufacturer/' }
     ]
   },
   {

@@ -307,15 +307,29 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
 
             <Turnstile />
 
-            <div class="flex flex-col gap-4 border-t border-[#D1C7B7]/70 pt-6 sm:flex-row sm:items-center sm:justify-between">
-              <div class="flex items-center gap-2 text-[#6F6255]">
-                <CheckCircle2 size={16} class="text-[#A87835]" />
-                <p class="text-sm">Response within 24 hours.</p>
+            <div class="flex flex-wrap items-center gap-x-6 gap-y-3 mb-6 mt-10 rounded-2xl border border-dashed border-[#D1C7B7] bg-[#F8F9FA] px-6 py-4">
+              <div class="flex items-center gap-2 text-xs font-bold text-[#4A453E]">
+                <CheckCircle2 size={14} class="text-[#0E7490]" />
+                ISO 9001
               </div>
-              <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-[#1E4F9A] px-10 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-[#163D79] hover:-translate-y-0.5 group">
+              <div class="flex items-center gap-2 text-xs font-bold text-[#4A453E]">
+                <CheckCircle2 size={14} class="text-[#0E7490]" />
+                CE Certified
+              </div>
+              <div class="flex items-center gap-2 text-xs font-bold text-[#4A453E]">
+                <CheckCircle2 size={14} class="text-[#0E7490]" />
+                50+ Countries
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <button type="submit" class="inline-flex w-full items-center justify-center rounded-xl bg-[#1E4F9A] px-10 py-4 text-base font-bold text-white shadow-lg transition hover:bg-[#163D79] hover:-translate-y-0.5 group">
                 Submit Inquiry
-                <ArrowRight class="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight class="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </button>
+              <p class="text-center text-[11px] font-medium text-[#94A3B8]">
+                * Response within 1 hour during business days.
+              </p>
             </div>
           </form>
         </div>

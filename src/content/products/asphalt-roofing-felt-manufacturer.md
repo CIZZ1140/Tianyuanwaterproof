@@ -254,13 +254,81 @@ faqs:
     answer: "The felt carrier is fully saturated with asphalt, which provides a stable water-resistant barrier in warm conditions. Catalog performance data includes loss on heating at 105 degC (max 4%) and Type I / Type II mass and strength grades aligned to ASTM D226 15# / 30# requirement levels. For project-specific high-temperature behavior, request the grade-specific TDS and confirm the applicable standard and grade before specification."
 ---
 
-### Specification-Led Underlayment for Export Roofing Projects
+<div class="not-prose my-12 space-y-10 text-left">
+  <!-- Title & Intro -->
+  <div class="border-l-4 border-blue-700 pl-6">
+    <h3 class="text-xl font-black uppercase tracking-tight text-slate-900">Specification-Led Underlayment for Export Roofing Projects</h3>
+    <p class="mt-4 text-slate-600 leading-relaxed text-sm">Tianyuan's <strong>Asphalt Roofing Felt</strong> is a professional-grade organic fiber sheet saturated with high-purity asphalt. It serves as the primary secondary water-shedding layer beneath asphalt shingles and as a reliable reinforcing ply in complex built-up roofing (BUR) assemblies.</p>
+  </div>
 
-Tianyuan's **asphalt roofing felt** is a flexible, cost-effective secondary water-shedding layer for steep-slope roofs — typically beneath asphalt shingles — and a reinforcing ply in compatible built-up roofing (BUR) assemblies.
+  <!-- Key Features Grid -->
+  <div class="grid gap-4 sm:grid-cols-3">
+    <div class="rounded-xl border border-slate-100 bg-white p-5 shadow-sm transition hover:shadow-md">
+      <div class="mb-3 text-blue-700 font-black text-xs uppercase tracking-widest opacity-70">Full Impregnation</div>
+      <p class="text-sm font-bold text-slate-800 leading-relaxed">Organic fiber carrier is saturated through its full thickness for superior rain and moisture resistance.</p>
+    </div>
+    <div class="rounded-xl border border-slate-100 bg-white p-5 shadow-sm transition hover:shadow-md">
+      <div class="mb-3 text-blue-700 font-black text-xs uppercase tracking-widest opacity-70">ASTM D226 Compliant</div>
+      <p class="text-sm font-bold text-slate-800 leading-relaxed">Available in Type I (15#) and Type II (30#) grades to meet international building codes.</p>
+    </div>
+    <div class="rounded-xl border border-slate-100 bg-white p-5 shadow-sm transition hover:shadow-md">
+      <div class="mb-3 text-blue-700 font-black text-xs uppercase tracking-widest opacity-70">Fast Installation</div>
+      <p class="text-sm font-bold text-slate-800 leading-relaxed">Mechanically fastened or embedded in hot asphalt. No torch, no primer, and zero curing time required.</p>
+    </div>
+  </div>
 
-- **Full asphalt impregnation** — organic fiber carrier saturated through its full thickness, not merely coated, for reliable shedding of wind-driven rain and ice-dam moisture
-- **Two grades to ASTM D226** — Type I (15 lb) for standard steep-slope duty, Type II (30 lb) for heavier build-up, greater puncture resistance and longer service exposure
-- **Fast, low-cost installation** — mechanically fastened or embedded in compatible hot asphalt; no torch, no primer, no peel-and-stick liner, no curing time
-- **Export-friendly format** — 1 m x 20 m (20 m2) rolls, 0.5 / 0.8 mm, grey or black, container-efficient for Africa and Asia markets
+  <!-- Specification Comparison Table -->
+  <div>
+    <h4 class="text-sm font-black uppercase text-slate-900 mb-4 tracking-tight">Grade Comparison: Type I (15 lb) vs Type II (30 lb)</h4>
+    <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+      <table class="w-full min-w-[600px] border-collapse text-left text-sm">
+        <thead class="bg-slate-50 text-slate-900">
+          <tr class="border-b border-slate-200">
+            <th class="px-6 py-4 font-black uppercase tracking-tighter">Performance Metric</th>
+            <th class="px-6 py-4 font-black uppercase tracking-tighter text-center">Type I (No. 15)</th>
+            <th class="px-6 py-4 font-black uppercase tracking-tighter text-center text-blue-700">Type II (No. 30) — Heavy Duty</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100 bg-white text-slate-700">
+          <tr class="transition hover:bg-slate-50/50">
+            <td class="px-6 py-4 font-bold text-slate-900">Saturated Felt Mass</td>
+            <td class="px-6 py-4 text-center">≥ 560 g/m²</td>
+            <td class="px-6 py-4 text-center font-black text-blue-800 bg-blue-50/30">≥ 1270 g/m²</td>
+          </tr>
+          <tr class="transition hover:bg-slate-50/50">
+            <td class="px-6 py-4 font-bold text-slate-900">Breaking Strength (MD)</td>
+            <td class="px-6 py-4 text-center">≥ 30 lbf/in</td>
+            <td class="px-6 py-4 text-center font-black text-blue-800 bg-blue-50/30">≥ 40 lbf/in</td>
+          </tr>
+          <tr class="transition hover:bg-slate-50/50">
+            <td class="px-6 py-4 font-bold text-slate-900">Pliability (at 23°C)</td>
+            <td class="px-6 py-4 text-center">No Crack</td>
+            <td class="px-6 py-4 text-center font-black text-blue-800 bg-blue-50/30">No Crack</td>
+          </tr>
+          <tr class="transition hover:bg-slate-50/50">
+            <td class="px-6 py-4 font-bold text-slate-900">Recommended Use</td>
+            <td class="px-6 py-4 text-center text-xs">Standard steep-slope roofing</td>
+            <td class="px-6 py-4 text-center text-xs font-black text-blue-800 bg-blue-50/30">Heavy BUR & long-term exposure</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Expert Recommendation Box -->
+  <div class="rounded-2xl bg-slate-50 p-6 border border-slate-200">
+    <h4 class="text-xs font-black uppercase text-slate-400 mb-4 tracking-widest">Expert Underlayment Selection Tip</h4>
+    <div class="grid gap-6 sm:grid-cols-2">
+      <div>
+        <p class="text-sm font-black text-slate-900 mb-1">Installing Asphalt Shingles?</p>
+        <p class="text-sm text-slate-500 leading-relaxed">For standard residential projects, <strong>Type I (15#)</strong> is the most cost-effective choice. It provides sufficient secondary protection without excessive roll weight.</p>
+      </div>
+      <div class="border-t border-slate-200 pt-4 sm:border-t-0 sm:border-l sm:pt-0 sm:pl-8">
+        <p class="text-sm font-black text-slate-900 mb-1">Need Puncture Resistance?</p>
+        <p class="text-sm text-slate-500 leading-relaxed">For large-scale industrial projects or multi-layer assemblies, specify <strong>Type II (30#)</strong>. Its increased mass offers better durability against job-site foot traffic.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 See the [technical specifications](#technical-specifications), [installation guide](#installation-guide) and [packaging](#packaging) sections for full details, or [request the TDS and quotation](/contact/).

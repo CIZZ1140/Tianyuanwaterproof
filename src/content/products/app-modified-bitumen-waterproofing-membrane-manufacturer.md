@@ -6,8 +6,8 @@ featured: true
 order: 95
 meta_description: "Engineered for Middle East & tropical solar loads. Our 130°C heat-resistant APP membrane prevents sagging & UV aging. Save on freight with optimized 20FT loading. Direct factory supply & OEM support. Get a factory quote today!"
 product_category: "Bitumen Membranes"
-image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
-main_image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
+main_image: "https://img.tyuanwaterproof.com/products/app-membrane-branded-roll.webp"
+image: "https://img.tyuanwaterproof.com/products/app-membrane-branded-roll.webp"
 
 hero_description: "TY-SHIELD™ APP (Atactic Polypropylene) modified bitumen waterproofing membrane — a torch-applied, reinforced sheet membrane engineered for hot-climate roofing and high-temperature waterproofing systems. Available with polyester (PY), glass fiber (G), or glass-reinforced polyester (PYG) reinforcement, in PE film, fine sand, mineral granules, or aluminum foil surface finishes across 3mm, 4mm, and 5mm thicknesses. Compliant with GB 18243-2008. Factory-direct supply with full OEM and private-label support for international building material importers and wholesalers."
 
@@ -25,12 +25,9 @@ technical_scope: "APP Modified Bitumen, PY / Mineral Surface / Type II / 4mm (Re
 technical_disclaimer: "Values shown apply to the stated product configuration. Other reinforcement types (PY / G / PYG), surface materials (PE / S / M / ALU), and performance grades (Type I / II) may have different performance values. Request the corresponding TDS and batch test report before specification or procurement."
 
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"
-    title: "APP Membrane Surface"
-    alt: "APP modified bitumen waterproofing membrane mineral granule surface torch-applied roofing"
   - image: "https://img.tyuanwaterproof.com/products/app-membrane-branded-roll.webp"
-    title: "Factory Roll"
-    alt: "Tianyuan branded APP modified bitumen membrane roll with mineral granule surface on white background"
+    title: "APP Membrane Roll"
+    alt: "Tianyuan branded APP modified bitumen membrane roll with mineral granule surface"
   - image: "https://img.tyuanwaterproof.com/products/app-membrane-structure.webp"
     title: "Product Structure"
     alt: "APP modified bitumen waterproofing membrane product structure diagram showing polyester reinforcement and PE film layers"
@@ -281,86 +278,110 @@ configurations:
 
 ---
 
-## Hot-Climate Roofing Engineered for Extreme Heat
+<div class="not-prose my-12 space-y-10 text-left">
+  <!-- Title & Intro -->
+  <div class="border-l-4 border-blue-700 pl-6">
+    <h3 class="text-2xl font-black uppercase tracking-tight text-slate-900">Hot-Climate Roofing Engineered for Extreme Heat</h3>
+    <p class="mt-4 text-slate-600 leading-relaxed text-base">TY-SHIELD™ APP (Atactic Polypropylene) modified bitumen membrane is the industry standard for high-temperature regions. Unlike rubber-modified SBS, APP uses a plastomeric polymer that ensures the bitumen remains firm and stable even when roof surface temperatures exceed <strong>80°C</strong> under intense solar radiation.</p>
+  </div>
 
-APP (Atactic Polypropylene) modified bitumen waterproofing membrane is the industry standard for roofing systems in hot-climate regions. Unlike SBS which uses rubber modification for cold-weather flexibility, APP uses a plastomeric polymer that fundamentally changes how the bitumen behaves under heat — resisting softening, flowing, and deformation even when roof surface temperatures exceed 80°C under direct solar radiation.
+  <!-- APP vs SBS Comparison Table -->
+  <div>
+    <h4 class="text-base font-black uppercase text-slate-900 mb-4 tracking-tight">APP vs SBS — Choosing the Right Membrane for Your Climate</h4>
+    <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+      <table class="w-full min-w-[600px] border-collapse text-left text-base">
+        <thead class="bg-slate-50 text-slate-900">
+          <tr class="border-b border-slate-200">
+            <th class="px-6 py-4 font-black uppercase tracking-tighter">Feature</th>
+            <th class="px-6 py-4 font-black uppercase tracking-tighter text-center text-blue-700">APP (Plastomeric)</th>
+            <th class="px-6 py-4 font-black uppercase tracking-tighter text-center">SBS (Elastomeric)</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100 bg-white text-slate-700">
+          <tr class="transition hover:bg-slate-50/50">
+            <td class="px-6 py-4 font-bold text-slate-900">Best Climate</td>
+            <td class="px-6 py-4 text-center font-black text-blue-800 bg-blue-50/30">Hot (Middle East, Africa, SE Asia)</td>
+            <td class="px-6 py-4 text-center">Cold (Northern Europe, Russia, N. America)</td>
+          </tr>
+          <tr class="transition hover:bg-slate-50/50">
+            <td class="px-6 py-4 font-bold text-slate-900">Heat Resistance</td>
+            <td class="px-6 py-4 text-center font-black text-blue-800 bg-blue-50/30">130°C (Type II)</td>
+            <td class="px-6 py-4 text-center">105°C (Type II)</td>
+          </tr>
+          <tr class="transition hover:bg-slate-50/50">
+            <td class="px-6 py-4 font-bold text-slate-900">Dimensional Stability</td>
+            <td class="px-6 py-4 text-center font-black text-blue-800 bg-blue-50/30">Excellent (Resists Sagging)</td>
+            <td class="px-6 py-4 text-center">Good</td>
+          </tr>
+          <tr class="transition hover:bg-slate-50/50">
+            <td class="px-6 py-4 font-bold text-slate-900">Low Temp Flexibility</td>
+            <td class="px-6 py-4 text-center">-15°C (Type II)</td>
+            <td class="px-6 py-4 text-center font-black text-blue-800 bg-blue-50/30">-25°C to -30°C</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
-TY-SHIELD™ APP membranes are manufactured with petroleum asphalt, APP polymer modifier, and a choice of three internal reinforcement carriers (PY, G, PYG), finished with PE film, fine sand, mineral granules, or aluminum foil surfaces. All products comply with **GB 18243-2008**, the national standard for plastomeric modified asphalt waterproofing membranes.
+  <!-- Reinforcement Guide Cards -->
+  <div>
+    <h4 class="text-base font-black uppercase text-slate-900 mb-4 tracking-tight">Reinforcement Selection Guide</h4>
+    <div class="grid gap-4 sm:grid-cols-3">
+      <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-sm">
+        <div class="mb-2 text-blue-700 font-black text-sm uppercase tracking-widest opacity-70">Polyester Felt (PY)</div>
+        <p class="text-base font-bold text-slate-950 mb-2">High Tensile & Elongation</p>
+        <p class="text-sm text-slate-500 leading-relaxed">Best for exposed roofing and large-area projects where structural movement is expected.</p>
+      </div>
+      <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-sm">
+        <div class="mb-2 text-blue-700 font-black text-sm uppercase tracking-widest opacity-70">Glass Fiber (G)</div>
+        <p class="text-base font-bold text-slate-950 mb-2">Dimensional Stability</p>
+        <p class="text-sm text-slate-500 leading-relaxed">Best for multi-layer non-exposed systems and substrates with minimal thermal movement.</p>
+      </div>
+      <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-sm">
+        <div class="mb-2 text-blue-700 font-black text-sm uppercase tracking-widest opacity-70">Composite (PYG)</div>
+        <p class="text-base font-bold text-slate-950 mb-2">The Balanced Performer</p>
+        <p class="text-sm text-slate-500 leading-relaxed">Combines PY's strength with G's stability. Ideal for commercial roofs and high-wind infrastructure.</p>
+      </div>
+    </div>
+  </div>
 
-As a direct manufacturer, Weifang Tianyuan supplies international importers, roofing contractors, and wholesale distributors with consistent batch-tested APP membranes, export-ready packaging, and complete OEM flexibility for hot-climate markets worldwide.
+  <!-- Value Propositions -->
+  <div>
+    <h4 class="text-base font-black uppercase text-slate-900 mb-4 tracking-tight">Built for the Global Hot-Climate Supply Chain</h4>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="rounded-xl border border-slate-100 bg-slate-50/50 p-5">
+        <p class="text-sm font-black text-blue-700 uppercase mb-1">Full Versatility</p>
+        <p class="text-sm font-bold text-slate-800 leading-snug">3 Reinforcements & 4 Surface Finishes (PE/Sand/M/ALU).</p>
+      </div>
+      <div class="rounded-xl border border-slate-100 bg-slate-50/50 p-5">
+        <p class="text-sm font-black text-blue-700 uppercase mb-1">Standard Compliance</p>
+        <p class="text-sm font-bold text-slate-800 leading-snug">Every batch tested against GB 18243-2008 requirements.</p>
+      </div>
+      <div class="rounded-xl border border-slate-100 bg-slate-50/50 p-5">
+        <p class="text-sm font-black text-blue-700 uppercase mb-1">Export Packaging</p>
+        <p class="text-sm font-bold text-slate-800 leading-snug">Fumigated pallets & protective corner boards for safe transit.</p>
+      </div>
+      <div class="rounded-xl border border-slate-100 bg-slate-50/50 p-5">
+        <p class="text-sm font-black text-blue-700 uppercase mb-1">Direct Supply</p>
+        <p class="text-sm font-bold text-slate-800 leading-snug">Factory pricing with complete OEM & private label support.</p>
+      </div>
+    </div>
+  </div>
 
-### APP vs SBS — Choosing the Right Bitumen Membrane for Your Climate
-
-One of the most frequent questions from international buyers is whether to specify APP or SBS. The answer depends primarily on your project's climate zone.
-
-<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
-<table style="width:100%; border-collapse: collapse; margin: 20px 0; font-size: 13px; min-width:600px;">
-  <thead>
-    <tr style="background: var(--color-background-tertiary, #334155);">
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Property</th>
-      <th style="padding: 10px 12px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">APP (Plastomeric)</th>
-      <th style="padding: 10px 12px; text-align: center; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">SBS (Elastomeric)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Polymer Type</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">APP — Atactic Polypropylene (plastic)</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">SBS — Styrene-Butadiene-Styrene (rubber)</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Best Climate</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-status-error-text, #C94A38); font-weight: 500;">Hot — Middle East, Africa, South Asia, SE Asia</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-viz-1-ink, #3D6F94); font-weight: 500;">Cold — Northern Europe, Russia, North America, high-altitude</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Heat Resistance</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);"><strong>130°C</strong> (Type II)</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">105°C</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Low-Temp Flexibility</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">-15°C (Type II)</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);"><strong>-25°C to -30°C</strong></td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Dimensional Stability (Heat)</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-status-error-text, #C94A38); font-weight: 500;">Excellent</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">Good</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Installation Method</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">Torch-applied (cold-bonding compatible)</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">Torch-applied (cold-bonding compatible)</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Primary Applications</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">Exposed hot-climate roofs, industrial roofing, bridge decks</td>
-      <td style="padding: 10px 12px; text-align: center; color: var(--color-text-primary, #0f172a);">Cold-climate roofs, basement waterproofing, tunnels</td>
-    </tr>
-  </tbody>
-</table>
+  <!-- Expert Recommendation Box -->
+  <div class="rounded-2xl bg-slate-50 p-8 border border-slate-200">
+    <h4 class="text-sm font-black uppercase text-slate-400 mb-6 tracking-widest">Expert Recommendation & Selection Tip</h4>
+    <div class="grid gap-10 sm:grid-cols-2">
+      <div>
+        <p class="text-base font-black text-slate-900 mb-2">Extreme Cold Climate?</p>
+        <p class="text-sm text-slate-500 leading-relaxed">See our <a href="/products/sbs-bitumen-waterproofing-membrane-manufacturer/" class="text-blue-700 font-bold underline underline-offset-4 decoration-blue-200 hover:text-blue-800 transition-colors">SBS Bitumen Membrane</a> for flexibility down to -25°C.</p>
+      </div>
+      <div class="border-t border-slate-200 pt-6 sm:border-t-0 sm:border-l sm:pt-0 sm:pl-10">
+        <p class="text-base font-black text-slate-900 mb-2">Safety-Sensitive Site?</p>
+        <p class="text-sm text-slate-500 leading-relaxed">Check our <a href="/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/" class="text-blue-700 font-bold underline underline-offset-4 decoration-blue-200 hover:text-blue-800 transition-colors">Self-Adhesive Series</a> for torch-free installation.</p>
+      </div>
+    </div>
+  </div>
 </div>
-
-If your project is in a hot region where roof surface temperatures regularly exceed 60°C, APP is the technically correct specification. If your project spans both hot and cold extremes, we can supply both product types and advise on the optimal specification for each building area.
-
-### Reinforcement Selection Guide
-
-Select the reinforcement carrier based on your project's structural and performance requirements:
-
-| Reinforcement | Key Strength | Best For |
-|---|---|---|
-| **PY (Polyester Felt)** | High tensile strength and elongation — handles structural movement | Exposed roofing, large-area waterproofing, below-grade with backfill |
-| **G (Glass Fiber Felt)** | Superior dimensional stability — minimal thermal movement | Multi-layer non-exposed systems, areas with stable substrates |
-| **PYG (Glass Fiber Reinforced Polyester)** | Best balance — PY's strength + G's stability | Large commercial roofs, high-wind zones, infrastructure, bridges |
-
-### Built for the Global Hot-Climate Supply Chain
-
-Whether you are importing container loads for roofing distribution across the Middle East, Africa, or South Asia, or sourcing for a specific infrastructure project in a high-temperature environment, our APP membrane is engineered for the thermal realities of your market:
-
-- **Three reinforcement grades** — PY, G, and PYG cover every project from standard commercial roofing to heavy civil infrastructure.
-- **Four surface finishes** — PE, Sand, Mineral, and Aluminum Foil accommodate every exposure condition from fully buried to directly exposed.
-- **Consistent batch quality** — every production lot is tested against GB 18243-2008. Batch test reports are available on request for project specification review.
-- **Export-optimized packaging** — fumigated pallets, protective corner boards, weather-resistant wrapping, and custom labeling ensure your product arrives in factory-fresh condition at any global port.
 
 Contact our export team with your target specification, application, quantity, and destination port. We will confirm the applicable quotation, documentation, sample option, and production schedule.

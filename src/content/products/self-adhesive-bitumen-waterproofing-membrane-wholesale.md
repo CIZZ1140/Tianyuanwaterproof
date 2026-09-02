@@ -226,86 +226,76 @@ faqs:
     answer: "Yes. We provide full private label and OEM support for wholesale and distribution partners — including custom roll labels, barcodes, brand-name printing, bespoke packaging design, and customized roll dimensions. Minimum order quantities apply and vary by specification. Contact our export team with your requirements for a tailored quotation."
 ---
 
-## Factory-Direct Cold-Applied Waterproofing for Safe, Fast Construction
+<div class="not-prose my-12 space-y-10 text-left">
+  <!-- Title & Intro -->
+  <div class="border-l-4 border-blue-700 pl-6">
+    <h3 class="text-xl font-black uppercase tracking-tight text-slate-900">Factory-Direct Cold-Applied Waterproofing for Safe, Fast Construction</h3>
+    <p class="mt-4 text-slate-600 leading-relaxed text-sm">TY-SHIELD™ self-adhesive membrane is the modern answer to traditional torch-on systems—eliminating open flames, binders, and complex equipment. Using a premium rubberized asphalt compound, it bonds instantly to primed substrates, forming a continuous, monolithic barrier for everything from residential roofing to heavy civil infrastructure.</p>
+  </div>
 
-Self-adhesive bituminous waterproofing membrane is the modern answer to traditional torch-on systems — eliminating open flames, binders, and complex equipment from the job site. TY-SHIELD™ self-adhesive membranes use a premium SBS-modified rubberized asphalt compound that bonds instantly to primed substrates upon contact, forming a continuous, monolithic waterproofing barrier.
+  <!-- Key Features Grid -->
+  <div class="grid gap-4 sm:grid-cols-3">
+    <div class="rounded-xl border border-slate-100 bg-white p-5 shadow-sm transition hover:shadow-md">
+      <div class="mb-3 text-blue-700 font-black text-xs uppercase tracking-widest opacity-70">No-Flame Safety</div>
+      <p class="text-sm font-bold text-slate-800 leading-relaxed">Eliminates fire risk and hot-work permits. Mandatory for refineries, wooden structures, and confined spaces.</p>
+    </div>
+    <div class="rounded-xl border border-slate-100 bg-white p-5 shadow-sm transition hover:shadow-md">
+      <div class="mb-3 text-blue-700 font-black text-xs uppercase tracking-widest opacity-70">Active Self-Healing</div>
+      <p class="text-sm font-bold text-slate-800 leading-relaxed">The "creep" property of modified bitumen automatically seals minor punctures and fastener penetrations.</p>
+    </div>
+    <div class="rounded-xl border border-slate-100 bg-white p-5 shadow-sm transition hover:shadow-md">
+      <div class="mb-3 text-blue-700 font-black text-xs uppercase tracking-widest opacity-70">Peel-and-Stick Efficiency</div>
+      <p class="text-sm font-bold text-slate-800 leading-relaxed">Reduces job-site labor time by up to 50% compared to traditional torch-applied or cold-bonding methods.</p>
+    </div>
+  </div>
 
-Available with or without internal reinforcement, in single-side and double-side self-adhesive configurations, and with five distinct surface material options, our product range covers every application from residential roofing underlayment to heavy civil tunnel waterproofing. All products are manufactured in strict compliance with **GB 23441-2009**, the national standard for self-adhering polymer modified asphalt waterproofing membranes.
+  <!-- Classification Table -->
+  <div>
+    <h4 class="text-sm font-black uppercase text-slate-900 mb-4 tracking-tight">Selection Guide: Understanding Reinforcement & Performance</h4>
+    <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+      <table class="w-full min-w-[600px] border-collapse text-left text-sm">
+        <thead class="bg-slate-50 text-slate-900">
+          <tr class="border-b border-slate-200">
+            <th class="px-6 py-4 font-black uppercase tracking-tighter">Classification</th>
+            <th class="px-6 py-4 font-black uppercase tracking-tighter">Options Available</th>
+            <th class="px-6 py-4 font-black uppercase tracking-tighter text-blue-700">Key B2B Consideration</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100 bg-white text-slate-700">
+          <tr class="transition hover:bg-slate-50/50">
+            <td class="px-6 py-4 font-bold text-slate-900">Reinforcement</td>
+            <td class="px-6 py-4">Class N (Non-Reinforced) / Class PY (Polyester)</td>
+            <td class="px-6 py-4 font-medium text-blue-800 bg-blue-50/30">Specify <strong>Class PY</strong> for heavy-duty infrastructure and high-puncture risks.</td>
+          </tr>
+          <tr class="transition hover:bg-slate-50/50">
+            <td class="px-6 py-4 font-bold text-slate-900">Performance Grade</td>
+            <td class="px-6 py-4">Type I / Type II (High Performance)</td>
+            <td class="px-6 py-4 font-medium text-blue-800 bg-blue-50/30"><strong>Type II</strong> offers superior low-temp flexibility down to <strong>-30°C</strong>.</td>
+          </tr>
+          <tr class="transition hover:bg-slate-50/50">
+            <td class="px-6 py-4 font-bold text-slate-900">Surface Layer</td>
+            <td class="px-6 py-4">PE / PET / ALU / Sand / Green Strong Film</td>
+            <td class="px-6 py-4 font-medium text-blue-800 bg-blue-50/30">Use <strong>Aluminum Foil</strong> for direct UV exposure and heat reflection.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
-As a direct manufacturer with over two decades of bitumen processing expertise, Weifang Tianyuan supplies international importers, wholesalers, and construction contractors with consistent, batch-tested quality and complete OEM flexibility.
-
-
-### Product Classification &amp; Selection Guide
-
-Understanding the classification system helps you select the right specification for your project. GB 23441-2009 categorizes self-adhesive membranes by three dimensions:
-
-<table style="width:100%; border-collapse: collapse; margin: 20px 0; font-size: 13px;">
-  <thead>
-    <tr style="background: var(--color-brand-soft, #E6F0F3); border-bottom: 2px solid var(--color-brand-border, #B8D4DC);">
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-brand-ink, #1A4A5D);">Classification Dimension</th>
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-brand-ink, #1A4A5D);">Options</th>
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-brand-ink, #1A4A5D);">Key Consideration</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Reinforcement (Tire Base)</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);"><strong>N</strong> — Non-Reinforced<br/><strong>PY</strong> — Polyester Felt</td>
-      <td style="padding: 10px 12px; color: var(--color-text-secondary, #475569);">N: thinner, more flexible, lower cost. PY: heavier-duty, higher tensile &amp; puncture resistance.</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Top Surface Material</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);"><strong>PE</strong> — Polyethylene Film<br/><strong>PET</strong> — Polyester Film<br/><strong>D</strong> — Sand / Mineral Granules<br/><strong>ALU</strong> — Aluminum Foil<br/><strong>Green</strong> — Strong Green Film</td>
-      <td style="padding: 10px 12px; color: var(--color-text-secondary, #475569);">PE = economical general-purpose. PET = higher reflectivity. D = slip-resistant &amp; torch-compatible. ALU = UV &amp; vapor barrier. Green = enhanced strength.</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">Performance Grade</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);"><strong>Type I</strong> — Standard Performance<br/><strong>Type II</strong> — High Performance</td>
-      <td style="padding: 10px 12px; color: var(--color-text-secondary, #475569);">Type II offers higher tensile, better low-temp flexibility (-30°C vs -20°C), and superior thermal aging resistance for demanding projects.</td>
-    </tr>
-  </tbody>
-</table>
-
-### Standard Specification Matrix (GB 23441-2009)
-
-<table style="width:100%; border-collapse: collapse; margin: 20px 0; font-size: 13px;">
-  <thead>
-    <tr style="background: var(--color-background-tertiary, #334155);">
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Tire Base</th>
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Surface</th>
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Grade</th>
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Thickness</th>
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Width</th>
-      <th style="padding: 10px 12px; text-align: left; font-weight: 500; color: var(--color-text-secondary, #CBD5E1);">Roll Area</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">N</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">PE / PET / D / ALU / Green</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">I &amp; II</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">1.2mm / 1.5mm / 2.0mm</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">1,000mm</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">10m² / 15m² / 20m² / 30m²</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-tertiary, #e2e8f0);">
-      <td style="padding: 10px 12px; font-weight: 500; color: var(--color-text-primary, #0f172a);">PY</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">PE / D / ALU</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">I &amp; II</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">2.0mm / 3.0mm / 4.0mm</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">1,000mm</td>
-      <td style="padding: 10px 12px; color: var(--color-text-primary, #0f172a);">10m² / 15m² / 20m² / 30m²</td>
-    </tr>
-  </tbody>
-</table>
-
-### Designed for the Global B2B Supply Chain
-
-Whether you are importing container loads for distribution across Southeast Asia, Africa, or the Middle East, or sourcing for a specific infrastructure project, our self-adhesive membrane is engineered for the realities of international trade:
-
-- **Multiple thicknesses &amp; reinforcement grades** — one supplier covers your entire project spec range, from light-duty N-type underlayment to heavy-duty PY-type tunnel waterproofing.
-- **Consistent batch quality** — every production lot is tested against GB 23441-2009 and documented in batch test reports available on request.
-- **Export-optimized packaging** — fumigated pallets, protective corner boards, weather-resistant wrapping, and custom labeling ensure your product arrives in factory-fresh condition.
-- **OEM without compromise** — your brand, our quality. Private label rolls with your company name, logo, barcode, and packaging design, shipped directly to your port.
+  <!-- Expert Recommendation Box -->
+  <div class="rounded-2xl bg-slate-50 p-6 border border-slate-200">
+    <h4 class="text-xs font-black uppercase text-slate-400 mb-4 tracking-widest">Expert Recommendation & Selection Tip</h4>
+    <div class="grid gap-6 sm:grid-cols-2">
+      <div>
+        <p class="text-sm font-black text-slate-900 mb-1">Building a Standard Roof in Moderate Climate?</p>
+        <p class="text-sm text-slate-500 leading-relaxed">Specify <strong>1.5mm Class N</strong> with PE surface. It offers the best cost-to-performance ratio for general roofing underlayment.</p>
+      </div>
+      <div class="border-t border-slate-200 pt-4 sm:border-t-0 sm:border-l sm:pt-0 sm:pl-8">
+        <p class="text-sm font-black text-slate-900 mb-1">Basement or High Hydrostatic Pressure?</p>
+        <p class="text-sm text-slate-500 leading-relaxed">Always use <strong>3.0mm-4.0mm Class PY (Type II)</strong>. The high-tensile polyester core prevents ruptures during soil settlement.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 Contact our export team with your target specification, application, quantity, and destination port. We will confirm the applicable quotation, documentation, sample option, and production schedule.
