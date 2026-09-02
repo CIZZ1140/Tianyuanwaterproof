@@ -150,20 +150,41 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		{/* Scripts: idle-loading strategy — analytics deferred to browser idle time */}
 		<script is:inline>
 			(function() {
+				// Google Ads conversion tag.
+				// WHATSAPP_CONV_LABEL: label of the "WhatsApp Click" conversion action,
+				// from Ads > Goals > Conversions > WhatsApp Click > View event snippet.
+				const GOOGLE_ADS_ID = 'AW-18274384476';
+				const WHATSAPP_CONV_LABEL = 'Uzg7CK6yxewcENz084lE'; // WhatsApp Click (Ads, 2026-09-02)
+
+				// Register the global gtag stub FIRST so any call made before gtag.js
+				// finishes loading is queued instead of throwing (official gtag pattern).
+				window.dataLayer = window.dataLayer || [];
+				window.gtag = function(){ dataLayer.push(arguments); };
+				gtag('js', new Date());
+				gtag('config', GOOGLE_ADS_ID);
+
+				// One delegated listener covers every wa.me link on the site
+				// (floating button, CTA, footer, product pages) - present and future.
+				function fireWhatsAppConversion() {
+					if (!WHATSAPP_CONV_LABEL) return;
+					gtag('event', 'conversion', {
+						send_to: GOOGLE_ADS_ID + '/' + WHATSAPP_CONV_LABEL
+					});
+				}
+				document.addEventListener('click', function(e) {
+					const link = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"]') : null;
+					if (link) fireWhatsAppConversion();
+				}, true);
+
+				// gtag.js stays lazy-loaded (idle / first interaction) to protect LCP.
 				let analyticsLoaded = false;
 				function loadAnalytics() {
 					if (analyticsLoaded) return;
 					analyticsLoaded = true;
 
 					const script = document.createElement('script');
-					script.src = "https://www.googletagmanager.com/gtag/js?id=AW-18274384476";
+					script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GOOGLE_ADS_ID;
 					script.async = true;
-					script.onload = function() {
-						window.dataLayer = window.dataLayer || [];
-						function gtag(){dataLayer.push(arguments);}
-						gtag('js', new Date());
-						gtag('config', 'AW-18274384476');
-					};
 					document.head.appendChild(script);
 
 					// Cleanup listeners
