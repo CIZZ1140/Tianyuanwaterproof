@@ -180,10 +180,10 @@ related_products:
     image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
     href: "/products/epdm-waterproofing-membrane-wholesale/"
   - title: "PP-PE Composite Membrane"
-    image: "https://img.tyuanwaterproof.com/products/pp-pe-composite-membrane.webp"
+    image: "https://img.tyuanwaterproof.com/products/polyethylene-propylene-waterproof-membrane.webp"
     href: "/products/pp-pe-composite-membrane-factory/"
   - title: "Pre-Applied HDPE Membrane"
-    image: "https://img.tyuanwaterproof.com/products/pre-applied-hdpe-membrane.webp"
+    image: "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp"
     href: "/products/pre-applied-hdpe-membrane-supplier/"
 
 downloads:

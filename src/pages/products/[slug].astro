@@ -262,6 +262,7 @@ const breadcrumbLd = {
               <img 
                 id="main-product-image" 
                 src={initialImage} 
+                data-fallback={initialImage}
                 alt={title} 
                 width={data.image_width ?? undefined} 
                 height={data.image_height ?? undefined} 
@@ -823,6 +824,20 @@ const breadcrumbLd = {
 
     <script is:inline>
       const mainImg = document.getElementById('main-product-image');
+      if (mainImg) {
+        // Fallback: if the srcset candidate (e.g. -640 variant) fails to load,
+        // drop srcset and retry with the full-size source URL.
+        let fallbackUsed = false;
+        mainImg.addEventListener('error', () => {
+          if (fallbackUsed) return;
+          const fb = mainImg.getAttribute('data-fallback');
+          if (!fb) return;
+          fallbackUsed = true;
+          mainImg.removeAttribute('srcset');
+          mainImg.removeAttribute('src');
+          mainImg.src = fb;
+        });
+      }
       const thumbs = document.querySelectorAll('.gallery-thumb');
       if (mainImg && thumbs.length > 0) {
         let switchToken = 0;
