@@ -4,7 +4,7 @@ description: "A professional B2B guide to the 2026 global bitumen membrane marke
 category: "industry-insights"
 publishDate: 2026-09-03
 updatedDate: 2026-09-03
-coverImage: "/img/blog/2026-market-report-cover.jpg"
+coverImage: "https://img.tyuanwaterproof.com/blog/2026-market-report-cover.jpg"
 coverAlt: "Professional roofing contractor performing torch-applied SBS modified bitumen membrane installation on a flat roof"
 author: "Tianyuan Waterproof Technical Team"
 draft: false
