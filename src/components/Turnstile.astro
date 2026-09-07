@@ -53,13 +53,10 @@ const sitekey = "0x4AAAAAAEFV-aa3nhpRSCsJ";
       window.addEventListener(ev, schedule, { passive: true });
     });
 
-    // Safety net: ensure the widget loads eventually, even with no interaction
-    window.addEventListener('load', () => {
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(loadTurnstile, { timeout: 15000 });
-      } else {
-        setTimeout(loadTurnstile, 15000);
-      }
-    });
+    // NOTE: no `load` safety net here on purpose. An idle-time fallback after
+    // load fires almost immediately on a quiet thread, pulling Turnstile api.js
+    // into the lab-measured TBT window even when the form never enters the
+    // viewport. Real users are covered by the IntersectionObserver trigger above
+    // (scroll-to-form) and the interaction fallback.
   })();
 </script>
