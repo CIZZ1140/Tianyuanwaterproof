@@ -155,6 +155,7 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 				// from Ads > Goals > Conversions > WhatsApp Click > View event snippet.
 				const GOOGLE_ADS_ID = 'AW-18274384476';
 				const WHATSAPP_CONV_LABEL = 'Uzg7CK6yxewcENz084lE'; // WhatsApp Click (Ads, 2026-09-02)
+				const GA4_ID = 'G-4BD10P0X1Q'; // GA4 Measurement ID (CIZZ account, tyuanwaterproof.com property, 2026-09-08)
 
 				// Register the global gtag stub FIRST so any call made before gtag.js
 				// finishes loading is queued instead of throwing (official gtag pattern).
@@ -162,6 +163,7 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 				window.gtag = function(){ dataLayer.push(arguments); };
 				gtag('js', new Date());
 				gtag('config', GOOGLE_ADS_ID);
+				if (GA4_ID) gtag('config', GA4_ID);
 
 				// One delegated listener covers every wa.me link on the site
 				// (floating button, CTA, footer, product pages) - present and future.
@@ -173,7 +175,43 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 				}
 				document.addEventListener('click', function(e) {
 					const link = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"]') : null;
-					if (link) fireWhatsAppConversion();
+					if (link) {
+						fireWhatsAppConversion();
+						if (GA4_ID) gtag('event', 'whatsapp_click', { send_to: GA4_ID });
+					}
+				}, true);
+
+				// Quote / TDS intent clicks (links into /contact/?intent=...). Navigation is
+				// delayed ~150ms so the event beacon is not cut off by the page unload.
+				document.addEventListener('click', function(e) {
+					if (!GA4_ID) return;
+					const target = e.target && e.target.closest ? e.target.closest('a[href^="/contact/"]') : null;
+					if (!target) return;
+					const q = new URLSearchParams(String(target.href).split('?')[1] || '');
+					const intent = q.get('intent');
+					if (intent !== 'quote' && intent !== 'tds') return;
+					e.preventDefault();
+					window.__track(intent === 'quote' ? 'quote_click' : 'tds_request', {
+						product: q.get('product') || '',
+						category: q.get('category') || ''
+					});
+					setTimeout(function() { window.location.href = target.href; }, 150);
+				}, true);
+
+				// Email clicks (EmailLink reveals the real mailto: address at runtime).
+				document.addEventListener('click', function(e) {
+					if (!GA4_ID) return;
+					const target = e.target && e.target.closest ? e.target.closest('a[href^="mailto:"]') : null;
+					if (!target) return;
+					window.__track('email_click', {});
+				}, true);
+
+				// Technical document downloads (TDS / MSDS / catalogs).
+				document.addEventListener('click', function(e) {
+					if (!GA4_ID) return;
+					const target = e.target && e.target.closest ? e.target.closest('a[download], a[href$=".pdf"], a[href$=".zip"]') : null;
+					if (!target) return;
+					window.__track('download_click', { file: target.getAttribute('href') || '' });
 				}, true);
 
 				// gtag.js stays lazy-loaded (idle / first interaction) to protect LCP.
@@ -192,6 +230,14 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 						window.removeEventListener(ev, scheduleAnalytics);
 					});
 				}
+
+				// Public helpers used by FormAjax.astro and the global CTA listeners below.
+				window.__ensureAnalytics = loadAnalytics;
+				window.__track = function (eventName, eventParams) {
+					if (!GA4_ID) return;
+					loadAnalytics();
+					gtag('event', eventName, Object.assign({}, eventParams || {}, { send_to: GA4_ID }));
+				};
 
 				function scheduleAnalytics() {
 					// Defer actual script injection to idle time to avoid blocking LCP

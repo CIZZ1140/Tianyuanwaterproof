@@ -2,6 +2,7 @@
 import { site } from '../data/site';
 import EmailLink from './EmailLink.astro';
 import Turnstile from './Turnstile.astro';
+import FormAjax from './FormAjax.astro';
 const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?text=Hi%2C%20I'm%20interested%20in%20your%20waterproofing%20materials.";
 ---
 
@@ -57,7 +58,7 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
         </div>
 
         <div class="bg-white rounded-[2rem] p-5 sm:p-8 shadow-2xl">
-          <form action="https://formspree.io/f/mzdqdpwd" method="POST" class="space-y-3 sm:space-y-4">
+          <form action="https://formspree.io/f/mzdqdpwd" method="POST" data-ajax class="space-y-3 sm:space-y-4">
             <!-- Honeypot -->
             <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off" />
             
@@ -101,4 +102,6 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
       </div>
     </div>
   </div>
-</section>
+  </section>
+  <FormAjax />
+

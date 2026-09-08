@@ -1,0 +1,111 @@
+---
+---
+<!--
+  FormAjax: turns any <form data-ajax> into an in-page AJAX submission.
+  - Success: the form is replaced in place by a confirmation card (no redirect away from the site).
+  - Server-side validation error: inline error message + Turnstile reset + retry stays enabled.
+  - Network/CSP failure: falls back to the native POST so an inquiry is never lost.
+  - Fires GA4 events (form_submit_success / form_submit_error) via window.__track when GA4 is configured.
+  Used by: /contact/ full form and the site-wide CTA quick form.
+-->
+<script>
+  (function () {
+    var forms = document.querySelectorAll('form[data-ajax]');
+
+    function clearMessages(form) {
+      form.querySelectorAll('.form-ajax-error').forEach(function (el) { el.remove(); });
+    }
+
+    function showError(form, message) {
+      clearMessages(form);
+      var box = document.createElement('p');
+      box.className = 'form-ajax-error mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700';
+      box.setAttribute('role', 'alert');
+      box.textContent = message;
+      form.prepend(box);
+      // Turnstile tokens expire (~5 min); force a fresh challenge after a server-side rejection.
+      if (window.turnstile) {
+        var widget = form.querySelector('.cf-turnstile');
+        if (widget) window.turnstile.reset(widget);
+      }
+    }
+
+    function showSuccess(form) {
+      var wrap = document.createElement('div');
+      wrap.className = 'rounded-2xl border border-emerald-200 bg-emerald-50 p-8 text-center';
+      wrap.setAttribute('role', 'status');
+      var heading = document.createElement('p');
+      heading.className = 'text-lg font-black text-emerald-800';
+      heading.textContent = 'Inquiry received - thank you!';
+      var note = document.createElement('p');
+      note.className = 'mt-2 text-sm leading-6 text-emerald-700';
+      note.textContent = 'Our sales team will reply within 1 business day. Adding your quantity, specification and destination port to your email thread helps us quote faster.';
+      wrap.appendChild(heading);
+      wrap.appendChild(note);
+      if (form.parentNode) form.parentNode.insertBefore(wrap, form);
+      form.style.display = 'none';
+    }
+
+    function fire(form, name, extra) {
+      var fd = new FormData(form);
+      var params = {
+        category: fd.get('Product Interest') || fd.get('category') || '',
+        product: fd.get('Specific Product') || fd.get('Product') || '',
+        intent: fd.get('Inquiry Intent') || 'contact_form',
+        source: fd.get('Source Page') || window.location.pathname
+      };
+      if (extra) {
+        for (var k in extra) params[k] = extra[k];
+      }
+      if (typeof window.__track === 'function') window.__track(name, params);
+    }
+
+    forms.forEach(function (form) {
+      form.addEventListener('submit', function (e) {
+        if (form.dataset.fallback) return; // native fallback path: allow default navigation
+        if (e.defaultPrevented) return; // another handler (e.g. phone/country validation) already blocked the submit
+        e.preventDefault();
+        if (form.dataset.sending) return false;
+        form.dataset.sending = '1';
+        var btn = form.querySelector('button[type="submit"]');
+        if (btn) btn.disabled = true;
+        clearMessages(form);
+
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        })
+          .then(function (res) {
+            if (res.ok) {
+              fire(form, 'form_submit_success');
+              showSuccess(form);
+              return;
+            }
+            return res.json().catch(function () { return null; }).then(function (j) {
+              var msg = 'Submission failed. Please try again.';
+              if (j && j.errors && j.errors.length) {
+                var joined = j.errors.map(function (x) { return x.message; }).filter(Boolean).join('; ');
+                if (joined) msg = joined;
+              } else if (j && j.error) {
+                msg = String(j.error);
+              }
+              fire(form, 'form_submit_error', { reason: 'server_' + res.status });
+              showError(form, msg);
+              form.dataset.sending = '';
+              if (btn) btn.disabled = false;
+            });
+          })
+          .catch(function () {
+            // Network / CSP failure: degrade to the original native POST so the
+            // inquiry still reaches Formspree (worst case = the old redirect UX).
+            fire(form, 'form_submit_error', { reason: 'network_fallback' });
+            form.dataset.sending = '';
+            if (btn) btn.disabled = false;
+            form.dataset.fallback = '1';
+            form.submit();
+          });
+      });
+    });
+  })();
+</script>

@@ -3,6 +3,7 @@ import Layout from '@/layouts/Layout.astro';
 import { site } from '@/data/site';
 import { ChevronDown, Search, MessageCircle, Mail, MapPin, Store, ArrowRight, CheckCircle2 } from 'lucide-astro';
 import Turnstile from '@/components/Turnstile.astro';
+import FormAjax from '@/components/FormAjax.astro';
 import EmailLink from '@/components/EmailLink.astro';
 
 const buyerTypes = [
@@ -210,6 +211,7 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
           </p>
 
             <form
+              data-ajax
               class="mt-10 space-y-6"
               action="https://formspree.io/f/mzdqdpwd"
               method="POST"
@@ -460,4 +462,5 @@ const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3
       }
     });
   </script>
+<FormAjax />
 </Layout>
