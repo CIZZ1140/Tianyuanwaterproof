@@ -48,6 +48,36 @@
       "permanent": true
     },
     {
+      "source": "/applications/window-door-sealing/(.*)",
+      "destination": "/applications/joint-detail-sealing/",
+      "permanent": true
+    },
+    {
+      "source": "/applications/window-door-sealing",
+      "destination": "/applications/joint-detail-sealing/",
+      "permanent": true
+    },
+    {
+      "source": "/applications/joint-sealing/(.*)",
+      "destination": "/applications/joint-detail-sealing/",
+      "permanent": true
+    },
+    {
+      "source": "/applications/joint-sealing",
+      "destination": "/applications/joint-detail-sealing/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/accessories/(.*)",
+      "destination": "/categories/roofing-accessories/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/accessories",
+      "destination": "/categories/roofing-accessories/",
+      "permanent": true
+    },
+    {
       "source": "/products/tpo-waterproof-membrane/(.*)",
       "destination": "/products/tpo-waterproofing-membrane-manufacturer/",
       "permanent": true

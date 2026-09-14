@@ -35,6 +35,24 @@ export const applications = [
     ]
   },
   {
+    slug: 'bathroom-waterproofing',
+    title: 'Bathroom Waterproofing',
+    description: 'Liquid-applied waterproofing for bathrooms, shower rooms and balconies — JS polymer cement and PU coatings for tiled wet areas, with technical data and bulk supply from the manufacturer.',
+    intro: 'Liquid-applied waterproofing for bathrooms, shower rooms, balconies and other wet areas in residential, hotel and commercial fit-out projects.',
+    recommended: [
+      { title: 'Polymer Cement (JS) Waterproof Coating', href: '/products/polymer-cement-js-waterproof-coating-factory/' },
+      { title: 'Polyurethane (PU) Waterproof Coating', href: '/products/polyurethane-waterproof-coating-factory/' },
+      { title: 'Butyl Flashing Tape', href: '/products/butyl-waterproof-sealing-tape-supplier/' }
+    ],
+    points: [
+      'Two-component polymer cement (JS) coatings for tiled wet areas, shower rooms and swimming pools',
+      'Liquid PU membranes for balconies, planters and areas exposed to standing water',
+      'Seamless joint-free films avoid the lap seams that sheet membranes leave behind in small rooms',
+      'Cement-to-cement bonding allows tiling without a separate primer in most wet-area build-ups',
+      'Flexible grades available for substrates subject to thermal movement and minor structural cracking'
+    ]
+  },
+  {
     slug: 'tunnel-waterproofing',
     title: 'Tunnel Waterproofing',
     intro: 'Flexible sheet membrane systems for subway, railway, road tunnel and underground infrastructure waterproofing.',

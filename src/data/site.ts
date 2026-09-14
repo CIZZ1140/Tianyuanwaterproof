@@ -171,6 +171,13 @@ export const applications = [
     image: 'https://img.tyuanwaterproof.com/app-joint-detail-sealing.webp',
     summary: 'Professional sealing for expansion joints, structural cracks and laps.',
     products: ['Butyl Tape', 'Bitumen Tape', 'TPE Tape']
+  },
+  {
+    title: 'Bathroom Waterproofing',
+    slug: 'bathroom-waterproofing',
+    image: 'https://img.tyuanwaterproof.com/app-bathroom-waterproofing.webp',
+    summary: 'Liquid-applied coatings for wet areas, shower rooms and balconies.',
+    products: ['JS Coating', 'PU Coating', 'Butyl Tape']
   }
 ];
 
