@@ -10,6 +10,8 @@ main_image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.we
 image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 
 hero_description: "TY-SHIELD™ SBS (Styrene-Butadiene-Styrene) modified bitumen waterproofing membrane for cold-climate roofing, basements, foundations, tunnels, and infrastructure. Available in polyester (PY), glass fiber (G), and glass-reinforced polyester (PYG) reinforcement, with PE film, fine sand, mineral granules, or aluminum foil surfaces across 3mm, 4mm, and 5mm thicknesses. Standard references and product documentation depend on the selected configuration; confirm the applicable TDS before specification."
+product_summary: "SBS modified bitumen waterproofing membrane for roofing and below-grade systems where low-temperature flexibility, reinforcement selection and torch-applied installation are required. Choose the reinforcement, thickness, surface finish and performance grade according to the substrate, exposure condition and project specification."
+installation_summary: "Torch-applied membrane system. Use a clean, sound and compatible substrate; primer, lap dimensions, flame control and detailing must follow the selected configuration's TDS and project specification. Cold-bonding options are available for projects where open-flame work is restricted."
 
 hero_tags:
   - "SBS Elastomeric"
@@ -61,32 +63,22 @@ spec_table:
     value: "-20°C (Type I) / -25°C (Type II)"
 
 quick_facts:
-  - title: "Superior Elastomeric Recovery"
-    text: "Engineered with high-grade Styrene-Butadiene-Styrene (SBS) thermoplastic rubber, this membrane exhibits true elastomeric behavior. It can withstand repeated stretching and contraction, making it the premier choice for structures prone to thermal movement or seismic activity."
-  - title: "-25°C Cold-Climate Authority"
-    text: "While standard membranes stiffen in winter, our Type II SBS remains flexible down to -25°C. This makes it the essential specification for northern latitudes, high-altitude infrastructure, and refrigerated storage facilities where cracking is a critical failure risk."
-  - title: "Infrastructure-Grade Reinforcement"
-    text: "Available with heavy-duty PYG (Glass-reinforced Polyester) composite carriers that combine tensile strength with dimensional stability. Under the former GB 18242-2008 classification, PYG was intended mainly for mechanically fastened single-layer roofing; our composite carriers are also supplied for project-specific heavy-load applications. Confirm the applicable standard and product class with our technical team."
-  - title: "Monolithic Hot-Melt Bonding"
-    text: "The torch-application process creates a permanent, fused bond with the substrate. As the bitumen melts and re-solidifies, it forms a monolithic seal that is virtually impossible to delaminate, ensuring long-term hydrostatic pressure resistance."
+  - title: "Cold-climate flexibility"
+    text: "Type II configurations are available with low-temperature flexibility down to -25°C. Confirm the applicable grade and TDS before specification."
+  - title: "Reinforcement selection"
+    text: "PY, G and PYG reinforcement options support different requirements for elongation, dimensional stability and project configuration."
+  - title: "Torch-applied system"
+    text: "Designed for hot-melt installation, with cold-bonding options available where open-flame work is restricted."
 
 applications:
   - title: "Metro & Tunnel Infrastructure"
-    text: "The global standard for underground transit systems and deep tunnels where high elasticity and permanent water pressure resistance are non-negotiable engineering requirements."
-  - title: "Cold-Region Industrial Roofing"
-    text: "Specified for large-span industrial roofs in cold climates, where the membrane must survive extreme temperature swings without losing its waterproofing integrity."
-  - title: "Deep Foundation Waterproofing"
-    text: "Ideal for below-grade applications with significant structural settlement risks, providing a reliable barrier against aggressive groundwater and soil acids."
+    text: "For below-grade concrete structures exposed to groundwater pressure and substrate movement."
+  - title: "Cold-Region Roofing"
+    text: "For roofing systems where low-temperature flexibility and heat resistance must be confirmed against the project specification."
+  - title: "Basements & Foundations"
+    text: "For buried waterproofing systems using the selected reinforcement, thickness and surface configuration."
 
-features:
-  - title: "Exceptional Tensile Resilience"
-    text: "Achieves superior tensile values (900N+ for Type II) combined with high elongation. This allows the membrane to function as a 'flexible skin' that bridges cracks and absorbs substrate deformation without rupturing."
-  - title: "All-Season Weather Versatility"
-    text: "Maintains its physical properties across a broad temperature spectrum, from -25°C to 105°C. This ensures consistent performance throughout the transition from freezing winters to intense summer sun."
-  - title: "Chemical & Corrosion Shield"
-    text: "The high-purity bitumen compound is naturally resistant to the acids, alkalis, and salts commonly found in soils and industrial environments, ensuring the membrane's longevity in buried applications."
-  - title: "Adaptive Installation Protocols"
-    text: "Fully optimized for precision torching (hot-melt) for maximum security, while remaining compatible with cold-applied adhesives where open flames are restricted, providing flexibility for diverse site conditions."
+features: []
 
 technical_data:
   - label: "Soluble Content (3mm)"

@@ -139,6 +139,7 @@ const mainImageW = data.image_width || 1254;
 
 const heroTags = data.hero_tags || [];
 const heroDesc = normalizeString(data.hero_description, `Industrial grade ${title} for global B2B supply.`);
+const installationSummary = normalizeString(data.installation_summary, "Refer to the applicable product TDS for substrate preparation, application conditions and detailing requirements.");
 
 const specTable = normalizeRows(data.spec_table || []);
 const quickFacts = normalizeCards(data.quick_facts || []);
@@ -186,8 +187,6 @@ const packagingIcons = [Package, Truck, Box, Factory, FileText, FlaskConical];
 
 const hasBody = entry.body && entry.body.replace(/---[\s\S]*?---/, "").trim().length > 0;
 const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.standard && !row.requirement);
-const isSbsOrApp = ["sbs-bitumen-waterproofing-membrane-manufacturer", "app-modified-bitumen-waterproofing-membrane-manufacturer"].includes(entry.slug);
-const isSbs = entry.slug === "sbs-bitumen-waterproofing-membrane-manufacturer";
 
 // B2B Schema — inquiry-based; no price/offers/rating fabricated
 const productJsonLd = {
@@ -291,7 +290,6 @@ const breadcrumbLd = {
           </div>
           <!-- Right: Info Area -->
           <div class="flex flex-col">
-            <p class="mb-4 text-[11px] font-black uppercase tracking-[0.3em] text-blue-700">Factory Direct Supply</p>
             <h1 class="text-3xl font-black text-slate-950 sm:text-4xl lg:text-5xl tracking-tight leading-tight">{title}</h1>
             <p class="mt-6 text-base leading-8 text-slate-600 sm:text-lg">{heroDesc}</p>
             
@@ -336,29 +334,27 @@ const breadcrumbLd = {
     <!-- 3. Full Width Modular Blocks -->
     <div class="mx-auto w-full max-w-[1680px] space-y-4 px-4 sm:px-6 lg:px-8">
       
-       <!-- MOVED UP: Product Overview Content -->
-      {hasBody && (
-        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-12 shadow-sm">
-          
-            <>
-              <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-10 uppercase tracking-tight">Product Overview</h2>
-              <div class="prose prose-slate max-w-none 
-                prose-headings:font-black prose-headings:text-slate-950
-                prose-p:text-slate-600 prose-p:leading-8
-                prose-img:rounded-3xl prose-img:shadow-xl
-                prose-table:rounded-xl prose-table:overflow-hidden prose-table:border prose-table:border-slate-100
-                prose-th:bg-slate-50 prose-th:font-black
-                prose-hr:my-12 prose-hr:border-slate-100">
-                <Content />
+      {specTable.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <div class="mb-6 flex flex-col gap-2 border-b border-slate-100 pb-5 sm:flex-row sm:items-end sm:justify-between">
+            <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Quick specifications</h2>
+            <p class="text-xs font-medium text-slate-500">Confirm configuration-dependent values in the applicable TDS.</p>
+          </div>
+          <dl class="grid gap-x-8 md:grid-cols-2">
+            {specTable.slice(0, 8).map((row) => (
+              <div class="grid grid-cols-[minmax(8rem,0.8fr)_minmax(0,1.2fr)] gap-4 border-b border-slate-100 px-1 py-4 text-sm last:border-b-0 md:[&:nth-last-child(2)]:border-b-0">
+                <dt class="font-black text-slate-500">{row.label}</dt>
+                <dd class="font-medium leading-6 text-slate-700">{row.value}</dd>
               </div>
-            </>
+            ))}
+          </dl>
         </section>
       )}
 
       {configurations.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Available Configurations</h2>
-          <p class="mb-6 max-w-3xl text-sm font-medium leading-7 text-slate-600">Select the reinforcement, thickness and surface finish to match your project requirements. Contact us with your specification for a tailored quotation.</p>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 tracking-tight">Available configurations</h2>
+          <p class="mb-6 max-w-3xl text-sm font-medium leading-7 text-slate-600">Select the configuration that matches your substrate, exposure condition and project specification.</p>
           <div class="overflow-x-auto rounded-2xl border border-slate-200">
             <table class="w-full min-w-[700px] border-collapse text-left text-sm">
               <caption class="sr-only">Available configurations of {title}</caption>
@@ -368,7 +364,7 @@ const breadcrumbLd = {
                   <th scope="col" class="px-4 py-4 font-black">Reinforcement</th>
                   <th scope="col" class="px-4 py-4 font-black">Thickness</th>
                   <th scope="col" class="px-4 py-4 font-black">Surface</th>
-                  <th scope="col" class="px-4 py-4 font-black">Recommended Use</th>
+                  <th scope="col" class="px-4 py-4 font-black">Recommended use</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-200">
@@ -385,13 +381,21 @@ const breadcrumbLd = {
             </table>
           </div>
           <p class="mt-2 text-[11px] font-medium text-slate-500 md:hidden">Swipe to view the full table →</p>
-          <p class="mt-4 text-sm font-medium text-slate-600">All thicknesses and surface finishes shown are available in standard production. Custom roll dimensions, packaging and private-label printing are available subject to minimum order quantity. Final configuration should be selected according to climate, substrate, waterproofing system design, exposure condition and local project specifications.</p>
+        </section>
+      )}
+
+      {hasBody && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-12 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-10 tracking-tight">Product overview</h2>
+          <div class="prose prose-slate max-w-none prose-headings:font-black prose-headings:text-slate-950 prose-p:text-slate-600 prose-p:leading-8 prose-img:rounded-3xl prose-img:shadow-xl prose-table:rounded-xl prose-table:overflow-hidden prose-table:border prose-table:border-slate-100 prose-th:bg-slate-50 prose-th:font-black prose-hr:my-12 prose-hr:border-slate-100">
+            <Content />
+          </div>
         </section>
       )}
 
       {applications.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Applications</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 tracking-tight">Applications</h2>
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {applications.slice(0, 5).map((item, index) => {
               const Icon = getCardIcon(item, applicationIcons, index);
@@ -409,7 +413,7 @@ const breadcrumbLd = {
 
       {features.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Key Benefits</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 tracking-tight">Key benefits</h2>
           <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {features.slice(0, 4).map((item, index) => {
               const Icon = getCardIcon(item, benefitIcons, index);
@@ -427,7 +431,7 @@ const breadcrumbLd = {
 
       {technicalData.length > 0 && (
         <section id="technical-specifications" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4 uppercase tracking-tight">Technical Specifications</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4 tracking-tight">Technical specifications</h2>
           {data.technical_scope && <p class="mb-6 text-sm font-medium text-slate-500">{data.technical_scope}</p>}
           <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
             <table class="w-full text-left text-sm border-collapse">
@@ -461,7 +465,7 @@ const breadcrumbLd = {
 
       {technicalDataHybrid.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4 uppercase tracking-tight">Technical Specifications — Hybrid Polyurea</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4 tracking-tight">Technical specifications — hybrid polyurea</h2>
           <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
             <table class="w-full text-left text-sm border-collapse">
               <caption class="sr-only">Technical specifications — Hybrid Polyurea</caption>
@@ -494,13 +498,10 @@ const breadcrumbLd = {
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4 border-b border-slate-100 pb-6">
             <div>
-              <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-1 uppercase tracking-tight">Global Standard Alignment</h2>
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-1 tracking-tight">Global standard alignment</h2>
               <p class="text-sm font-medium text-slate-500">Cross-reference for engineering specifications & global procurement</p>
             </div>
-            <div class="flex items-center gap-2">
-              <span class="flex h-2 w-2 rounded-full bg-blue-500"></span>
-              <span class="text-[10px] font-black uppercase tracking-widest text-blue-600">Reference Information</span>
-            </div>
+
           </div>
           
           <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-slate-50">
@@ -520,17 +521,17 @@ const breadcrumbLd = {
                     <td class="px-6 py-4 font-bold text-slate-800">{item.property}</td>
                     <td class="px-6 py-4 font-medium text-slate-600">
                       {item.gb === 'FULL MATCH' || item.gb === 'GB/T 18242' ? (
-                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-emerald-100 text-emerald-700 border border-emerald-200 uppercase tracking-tighter">{item.gb}</span>
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-emerald-100 text-emerald-700 border border-emerald-200 tracking-tighter">{item.gb}</span>
                       ) : item.gb}
                     </td>
                     <td class="px-6 py-4 font-medium text-slate-600">
                       {item.astm === 'Equivalent' ? (
-                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-blue-100 text-blue-700 border border-blue-200 uppercase tracking-tighter">{item.astm}</span>
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-blue-100 text-blue-700 border border-blue-200 tracking-tighter">{item.astm}</span>
                       ) : item.astm}
                     </td>
                     <td class="px-6 py-4 font-medium text-slate-600">
                       {item.en === 'Equivalent' ? (
-                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-blue-100 text-blue-700 border border-blue-200 uppercase tracking-tighter">{item.en}</span>
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-blue-100 text-blue-700 border border-blue-200 tracking-tighter">{item.en}</span>
                       ) : item.en}
                     </td>
                   </tr>
@@ -545,30 +546,30 @@ const breadcrumbLd = {
         </section>
       )}
 
-      {applicationGuide.length > 0 && (
+      {applicationGuide.length > 0 ? (
         <section id="installation-guide" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Installation Guide</h2>
-          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col gap-3 border-b border-slate-100 pb-6 sm:flex-row sm:items-end sm:justify-between">
+            <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Installation guide</h2>
+            <a href="#technical-downloads" class="text-xs font-bold text-blue-700 hover:text-blue-900">View documents ↓</a>
+          </div>
+          <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {applicationGuide.slice(0, 4).map((item, index) => {
               const Icon = installationIcons[index % installationIcons.length];
               return (
                 <article class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
                   <Icon class="mb-5 h-8 w-8 text-blue-700" />
-                  <h3 class="text-sm font-black uppercase text-slate-950 mb-3">{item.title}</h3>
+                  <h3 class="text-sm font-black text-slate-950 mb-3">{item.title}</h3>
                   <p class="text-sm font-medium leading-relaxed text-slate-600">{item.text}</p>
                 </article>
               );
             })}
           </div>
           {data.guide_links?.length > 0 && (
-            <div class="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-6">
-              <h3 class="text-sm font-black uppercase text-slate-950 mb-3">Related Technical Guides</h3>
+            <div class="mt-6 border-t border-slate-100 pt-5">
+              <p class="mb-3 text-sm font-bold text-slate-900">Related technical guides</p>
               <div class="space-y-2">
                 {data.guide_links.slice(0, 4).map((link) => (
-                  <a
-                    href={link.href}
-                    class="flex items-center gap-2 text-sm font-semibold text-blue-800 transition hover:text-blue-600"
-                  >
+                  <a href={link.href} class="flex items-center gap-2 text-sm font-semibold text-blue-800 transition hover:text-blue-600">
                     <FileText class="h-4 w-4 flex-none text-blue-700" />
                     <span>{link.title}</span>
                   </a>
@@ -577,11 +578,33 @@ const breadcrumbLd = {
             </div>
           )}
         </section>
+      ) : (specTable.length > 0 || downloads.length > 0) && (
+        <section id="installation-guide" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <div class="flex flex-col gap-3 border-b border-slate-100 pb-6 sm:flex-row sm:items-end sm:justify-between">
+            <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Installation & documents</h2>
+            <a href="#technical-downloads" class="text-xs font-bold text-blue-700 hover:text-blue-900">View documents ↓</a>
+          </div>
+          <div class="mt-6 grid gap-4 md:grid-cols-3">
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p class="text-xs font-bold text-slate-500">Installation method</p>
+              <p class="mt-2 text-sm font-bold text-slate-900">{getSpecValue(specTable, ["installation method", "application method"]) || "Confirm by configuration"}</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p class="text-xs font-bold text-slate-500">Substrate / application</p>
+              <p class="mt-2 text-sm font-bold text-slate-900">Use a clean, sound and compatible substrate or application surface.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p class="text-xs font-bold text-slate-500">Key requirement</p>
+              <p class="mt-2 text-sm font-bold leading-6 text-slate-900">Follow the selected configuration's TDS for preparation, conditions and detailing.</p>
+            </div>
+          </div>
+          {installationSummary && <p class="mt-5 text-sm font-medium leading-7 text-slate-600">{installationSummary}</p>}
+        </section>
       )}
 
       {(packaging.length > 0 || loadingData.length > 0) && (
         <section id="packaging" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Packaging & OEM</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 tracking-tight">Packaging & OEM</h2>
           <div class={packaging.length > 0 ? "grid gap-8 lg:grid-cols-[0.8fr_1.2fr]" : "block"}>
             {packaging.length > 0 && (
               <div class="grid gap-4 sm:grid-cols-2">
@@ -590,7 +613,7 @@ const breadcrumbLd = {
                   return (
                     <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 transition hover:bg-white hover:shadow-md">
                       <Icon class="mb-4 h-6 w-6 text-blue-700" />
-                      <h3 class="text-[10px] font-black uppercase text-slate-950 mb-2">{item.title}</h3>
+                      <h3 class="text-xs font-black text-slate-950 mb-2">{item.title}</h3>
                       <p class="text-sm font-medium leading-relaxed text-slate-600">{item.text}</p>
                     </div>
                   );
@@ -619,7 +642,7 @@ const breadcrumbLd = {
 
       {supplyInfo.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Ordering Information</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 tracking-tight">Ordering information</h2>
           <div class="overflow-hidden rounded-2xl border border-blue-200 bg-white shadow-sm">
             <div class="bg-blue-700 px-6 py-4 text-white flex items-center gap-3">
               <Truck class="h-5 w-5" />
@@ -639,7 +662,7 @@ const breadcrumbLd = {
 
       {projectReferences.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Project References</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 tracking-tight">Project references</h2>
           <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {projectReferences.map((ref: any) => (
               <div class="group rounded-2xl border border-slate-200 overflow-hidden hover:shadow-md transition">
@@ -665,8 +688,8 @@ const breadcrumbLd = {
       )}
 
       <div class="grid gap-4 lg:grid-cols-2">
-        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 mb-8 uppercase tracking-tight">Technical Downloads</h2>
+        <section id="technical-downloads" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 mb-8 tracking-tight">Technical downloads</h2>
           <div class="space-y-3">
             {downloads.map((doc: any) => (
               <div class="flex items-center justify-between p-5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-md transition-all">
@@ -690,7 +713,7 @@ const breadcrumbLd = {
         </section>
         {relatedProducts.length > 0 && (
           <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-            <h2 class="text-xl font-black text-slate-950 mb-8 uppercase tracking-tight">RELATED PRODUCT</h2>
+            <h2 class="text-xl font-black text-slate-950 mb-8 tracking-tight">Related product</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {relatedProducts.map(rp => (
                 <a href={rp.href} class="group flex flex-col gap-3">
@@ -709,7 +732,7 @@ const breadcrumbLd = {
     {faqs.length > 0 && (
       <section class="mx-auto w-full max-w-[1680px] px-4 sm:px-6 lg:px-8">
         <div class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 uppercase tracking-tight">Frequently Asked Questions</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 tracking-tight">Frequently asked questions</h2>
           <div class="space-y-4">
             {faqs.map((f: any, i: number) => (
               <details class="group rounded-2xl border border-slate-200 bg-slate-50/50 overflow-hidden transition hover:border-blue-200">
@@ -732,7 +755,7 @@ const breadcrumbLd = {
         <div class="rounded-3xl border border-slate-100 bg-slate-50/30 p-6 sm:p-10 shadow-inner text-left">
           <div class="flex items-center gap-4 mb-10">
             <div class="h-8 w-1 bg-blue-700"></div>
-            <h2 class="text-xl font-black uppercase tracking-tight text-slate-900">Technical Knowledge Base</h2>
+            <h2 class="text-xl font-black tracking-tight text-slate-900">Technical knowledge base</h2>
           </div>
           
           <p class="text-sm font-medium text-slate-500 mb-10 max-w-3xl leading-relaxed">Deep dive into polymer-modified bitumen technology, international standards, and global market trends with our expert technical series.</p>
