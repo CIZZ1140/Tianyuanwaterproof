@@ -19,8 +19,12 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/epoxy-floor-paint.jpg"
     title: "Epoxy Paint Product"
-  - image: "/placeholder.webp"
-    title: "Production Facility"
+  - image: "https://img.tyuanwaterproof.com/products/epoxy-floor-coating-production-workshop.webp"
+    title: "Seamless Epoxy Floor in Production Workshop"
+  - image: "https://img.tyuanwaterproof.com/products/epoxy-floor-coating-warehouse-floor.webp"
+    title: "Warehouse Epoxy Floor with Traffic Lane Markings"
+  - image: "https://img.tyuanwaterproof.com/products/epoxy-floor-coating-application-kit.webp"
+    title: "Two-Component Epoxy Application Tools"
 
 spec_table:
   - label: "Product Type"
