@@ -5,7 +5,6 @@ export const site = {
   title: 'Weifang Tianyuan Waterproof Material Co., Ltd.',
   description: 'Professional manufacturer of high-quality modified bitumen waterproofing membranes, polymer membranes, and coatings.',
   url: 'https://www.tyuanwaterproof.com',
-  ogImage: 'https://www.tyuanwaterproof.com/og.jpg',
   address: 'Weifang City, Shandong Province, China',
   phone: '+86 15263640998',
   email: 'sales@tyuanwaterproof.com',

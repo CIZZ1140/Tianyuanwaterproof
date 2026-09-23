@@ -134,8 +134,15 @@ const contactHref = (intent: string) => {
 const mainImage = normalizeAsset(data.main_image || data.image);
 const gallery = normalizeGallery(data.gallery || []);
 const initialImage = gallery.length > 0 ? gallery[0].image : mainImage;
-const mainImage640 = initialImage.replace(/\.(webp|jpg|jpeg|png)$/i, "-640.$1");
 const mainImageW = data.image_width || 1254;
+// Only R2-hosted product images ship a -640 sibling. Appending the suffix to a
+// local asset such as /placeholder.webp would request a file that never exists.
+const mainImage640 = initialImage.startsWith("https://img.tyuanwaterproof.com/")
+  ? initialImage.replace(/\.(webp|jpg|jpeg|png)$/i, "-640.$1")
+  : null;
+const mainImageSrcset = mainImage640
+  ? `${mainImage640} 640w, ${initialImage} ${mainImageW}w`
+  : initialImage;
 
 const heroTags = data.hero_tags || [];
 const heroDesc = normalizeString(data.hero_description, `Industrial grade ${title} for global B2B supply.`);
@@ -256,7 +263,9 @@ const breadcrumbLd = {
           <!-- Left: Gallery Switcher -->
           <div class="flex flex-col">
             <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 flex-1 min-h-[300px] flex items-center justify-center relative shadow-inner">
-              <link rel="preload" as="image" href={mainImage640} media="(max-width: 767px)" fetchpriority="high" />
+              {mainImage640 && (
+                <link rel="preload" as="image" href={mainImage640} media="(max-width: 767px)" fetchpriority="high" />
+              )}
               <link rel="preload" as="image" href={initialImage} media="(min-width: 768px)" fetchpriority="high" />
               <img 
                 id="main-product-image" 
@@ -267,7 +276,7 @@ const breadcrumbLd = {
                 height={data.image_height ?? undefined} 
                 fetchpriority="high" 
                 loading="eager"
-                srcset={`${mainImage640} 640w, ${initialImage} ${mainImageW}w`} 
+                srcset={mainImageSrcset} 
                 sizes="(min-width: 1024px) 600px, 100vw" 
                 class="max-h-[620px] w-full object-contain transition-opacity duration-300" 
               />

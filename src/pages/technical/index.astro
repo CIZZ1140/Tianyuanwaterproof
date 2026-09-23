@@ -571,7 +571,7 @@ const technicalFaqs = [
             </a>
 
             <a
-              href={`https://wa.me/${site.whatsapp}`}
+              href={`https://wa.me/${site.whatsapp.replace(/\D/g, '')}`}
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white px-6 py-4 text-sm font-bold text-[#0E2A47] transition hover:-translate-y-0.5 hover:bg-[#F5F7FA]"
