@@ -14,3 +14,25 @@ public/certs/ce-rohs-*-opt.jpg
 
 # Local asset staging (contains R2 credentials in scripts, never commit)
 素材暂存/
+
+# R2 / asset migration scripts — these inline the R2 access key pair in plain
+# text. Never commit them; read credentials from the environment instead.
+list_r2.py
+fix_webp_r2.py
+deploy_assets.py
+migrate_remaining_images.py
+migrate_shingles.py
+optimize_category_bitumen.py
+optimize_category_polymer.py
+optimize_category_shingle.py
+optimize_factory_image.py
+optimize_psi_images.py
+refine_logo.py
+refresh_shingles.py
+temp_upload_sbs.py
+temp_upload_webp.py
+ultra_logo.py
+upload_cover.py
+upload_felt_image.py
+upload_pvc.py
+upload_tool.py
