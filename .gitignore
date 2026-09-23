@@ -36,3 +36,8 @@ upload_cover.py
 upload_felt_image.py
 upload_pvc.py
 upload_tool.py
+
+# Local scratch dirs (one holds an R2 upload script; also build caches)
+.tmp-certs/
+__pycache__/
+*.pyc
