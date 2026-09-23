@@ -78,6 +78,16 @@
       "permanent": true
     },
     {
+      "source": "/categories/asphalt-membranes/(.*)",
+      "destination": "/categories/bitumen-membranes/",
+      "permanent": true
+    },
+    {
+      "source": "/categories/asphalt-membranes",
+      "destination": "/categories/bitumen-membranes/",
+      "permanent": true
+    },
+    {
       "source": "/products/tpo-waterproof-membrane/(.*)",
       "destination": "/products/tpo-waterproofing-membrane-manufacturer/",
       "permanent": true
