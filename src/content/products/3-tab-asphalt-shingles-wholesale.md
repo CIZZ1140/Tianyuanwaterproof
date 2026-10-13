@@ -5,6 +5,7 @@ category: "asphalt-shingles"
 product_category: "Asphalt Shingles"
 main_image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-3-tab.webp"
 hero_description: "Factory-supplied classic 3-tab asphalt roofing shingles for residential and commercial projects. Features a high-strength fiberglass carrier, durable mineral surface, and easy cold installation."
+meta_description: "Factory-direct 3-tab asphalt roofing shingles with fiberglass carrier and mineral surface. Cold installation, wholesale pricing and OEM support."
 hero_tags:
   - "3-Tab Shingles"
   - "Fiberglass Carrier"

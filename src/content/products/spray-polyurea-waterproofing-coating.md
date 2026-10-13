@@ -4,7 +4,7 @@ displayName: "Spray Polyurea Coating"
 category: "waterproof-coatings"
 featured: true
 order: 55
-meta_description: "Pure and hybrid spray polyurea waterproof coating for infrastructure, secondary containment, bridge decks, tunnels, and industrial projects. Request product-specific technical data and a factory quotation."
+meta_description: "Pure and hybrid spray polyurea waterproof coating for bridge decks, tunnels, secondary containment and infrastructure. Plural-component spray applied."
 product_category: "Waterproof Coatings"
 main_image: "https://img.tyuanwaterproof.com/products/spray-polyurea-coating-v2.webp"
 image: "https://img.tyuanwaterproof.com/products/spray-polyurea-coating-v2.webp"

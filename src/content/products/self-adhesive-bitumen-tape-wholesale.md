@@ -9,6 +9,7 @@ main_image: "https://img.tyuanwaterproof.com/products/bitumen-tape.webp"
 image: "https://img.tyuanwaterproof.com/products/bitumen-tape.webp"
 
 hero_description: "Professional cold-applied SBS rubberized bitumen sealing tape with aluminum foil protection. The ideal solution for roof flashing, pipe sealing, and quick waterproof repairs."
+meta_description: "Cold-applied SBS rubberized bitumen flashing tape with aluminum foil face. For roof flashing, pipe sealing and quick waterproof repair. Factory direct, OEM."
 
 hero_tags:
   - "SBS Bitumen"

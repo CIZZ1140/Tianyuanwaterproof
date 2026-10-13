@@ -1,6 +1,7 @@
 ---
 title: "3mm vs 4mm vs 5mm SBS Waterproofing Membrane: Thickness Selection Guide"
-description: "3mm, 4mm or 5mm SBS waterproofing membrane — which thickness do you need? Thickness controls puncture resistance, system layers and container loading; cold-weather performance is set by the grade. Full selection guide for B2B buyers."
+seoTitle: "3mm vs 4mm vs 5mm SBS Membrane: Thickness Guide"
+description: "3mm, 4mm or 5mm SBS membrane — which thickness do you need? Thickness sets puncture resistance and container loading; grade sets cold-weather performance."
 category: "product-guides"
 publishDate: 2026-08-04
 updatedDate: 2026-08-04

@@ -1,10 +1,10 @@
 ---
-title: "Non-Curing Rubber Asphalt Waterproof Coating Manufacturer | Self-Healing Composite System | Wholesale"
+title: "Non-Curing Rubber Asphalt Waterproof Coating Manufacturer"
 displayName: "Non-Curing Rubber Coating"
 category: "waterproof-coatings"
 featured: true
 order: 50
-meta_description: "Non-curing rubber asphalt waterproof coating for hot-applied composite systems with SBS or APP membranes. Viscoelastic formulation for bonding and anti-water-channeling design. Request a TDS or quotation."
+meta_description: "Non-curing rubber asphalt coating for hot-applied composite systems with SBS or APP membranes. Viscoelastic, self-healing and anti-water-channeling."
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v2.webp"
 main_image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v2.webp"

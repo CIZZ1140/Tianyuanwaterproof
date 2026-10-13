@@ -7,6 +7,7 @@ image: "https://img.tyuanwaterproof.com/products/tpe-joint-expansion-tape.webp"
 main_image: "https://img.tyuanwaterproof.com/products/tpe-joint-expansion-tape.webp"
 
 hero_description: "Professional TY-SHIELD™ TPE expansion joint tape. Featuring a high-elasticity waterproof center and reinforced fabric edges, designed for seamless movement bridging in structural joints, pipe roots, and corners."
+meta_description: "TPE expansion joint tape with a high-elasticity waterproof centre and reinforced fabric edges. Bridges movement in joints, pipe roots and corners."
 
 hero_tags:
   - "TY-SHIELD™ Ever-Seal"

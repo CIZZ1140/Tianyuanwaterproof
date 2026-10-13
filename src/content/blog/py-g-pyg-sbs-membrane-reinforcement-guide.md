@@ -1,5 +1,6 @@
 ---
 title: "PY vs G vs PYG SBS Membrane Reinforcement: Differences, Uses & 2025 Standard Update"
+seoTitle: "PY vs G vs PYG SBS Membrane Reinforcement Explained"
 description: "Compare PY, G and PYG reinforcement for SBS waterproofing membranes — tensile strength, elongation, applications, and what changed under GB/T 18242-2025."
 category: "product-guides"
 publishDate: 2026-08-10

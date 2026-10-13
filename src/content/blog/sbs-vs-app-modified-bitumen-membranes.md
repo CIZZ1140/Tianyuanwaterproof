@@ -1,6 +1,7 @@
 ---
 title: "SBS vs APP Modified Bitumen Membranes: How to Choose the Right Waterproofing System"
-description: "Compare SBS and APP modified bitumen waterproofing membranes by climate suitability, temperature range, reinforcement options, surface finish and real project applications. Make the right choice for your roofing or underground project."
+seoTitle: "SBS vs APP Modified Bitumen Membranes: Which to Choose"
+description: "Compare SBS and APP modified bitumen membranes by climate suitability, temperature range, reinforcement, surface finish and real project applications."
 category: "product-guides"
 publishDate: 2026-07-10
 updatedDate: 2026-08-04

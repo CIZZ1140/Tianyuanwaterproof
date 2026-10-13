@@ -1,10 +1,10 @@
 ---
-title: "SBS Bitumen Membrane Manufacturer | -25°C Cold-Climate Expert | Factory Price"
+title: "SBS Bitumen Membrane Manufacturer | -25°C Cold-Climate"
 displayName: "SBS Waterproofing Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 100
-meta_description: "Stop roofing failures in cold climates. Our SBS membrane stays flexible at -25°C. High-tensile (900N+) & seismic-ready for infrastructure. Direct factory pricing for wholesalers. Request a bulk quote & free sample now!"
+meta_description: "SBS modified bitumen membrane that stays flexible at -25°C. PY, G or PYG reinforcement, 3-5mm, for roofing, basements and infrastructure. Bulk pricing."
 product_category: "Bitumen Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
 image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
@@ -256,9 +256,9 @@ downloads:
   - title: "SBS Membrane Installation Manual"
     model: "All SBS torch-applied configurations"
     version: "2026.01"
-    pages: "3"
+    pages: "12"
     size: "720 KB"
-    href: ""
+    href: "/docs/sbs-membrane-installation-manual.pdf"
 
 related_products:
   - title: "APP Modified Bitumen Membrane"

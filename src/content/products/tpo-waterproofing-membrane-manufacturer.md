@@ -1,5 +1,5 @@
 ---
-title: "Eco-friendly TPO Waterproofing Membrane Manufacturer | Cool Roof Systems"
+title: "TPO Waterproofing Membrane Manufacturer | Cool Roof"
 displayName: "TPO Waterproofing Membrane"
 category: "polymer-membranes"
 featured: true

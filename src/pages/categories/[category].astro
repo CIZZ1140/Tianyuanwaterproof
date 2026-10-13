@@ -109,19 +109,61 @@ const { cat } = Astro.props;
 const products = await getCollection('products', ({ data }) => {
   return data.category === cat.id;
 });
+
+// Some categories have no hero photo yet and fall back to /placeholder.webp. Preloading a
+// grey placeholder as the LCP image is worse than not preloading at all, and a grey hero is
+// worse still — so fall back to the first real product photo in the category.
+const firstProductImage = products.find((p: any) => String(p.data.main_image || '').startsWith('http'))?.data.main_image;
+const heroImage = cat.image?.startsWith('http') ? cat.image : firstProductImage;
+
+const categoryUrl = `https://www.tyuanwaterproof.com/categories/${cat.id}/`;
+const categorySchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': `${categoryUrl}#webpage`,
+      url: categoryUrl,
+      name: `${cat.name} Wholesale & OEM | Tianyuan Waterproof`,
+      description: `Factory-direct ${cat.name.toLowerCase()} for global B2B buyers — custom widths, thicknesses and OEM branding, with TDS documentation and export packing support.`,
+      isPartOf: { '@id': 'https://www.tyuanwaterproof.com/#website' }
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.tyuanwaterproof.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://www.tyuanwaterproof.com/products/' },
+        { '@type': 'ListItem', position: 3, name: cat.name, item: categoryUrl }
+      ]
+    },
+    {
+      '@type': 'ItemList',
+      name: cat.name,
+      numberOfItems: products.length,
+      itemListElement: products.map((p, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: p.data.displayName || p.data.title,
+        url: `https://www.tyuanwaterproof.com/products/${p.slug}/`
+      }))
+    }
+  ]
+};
 ---
 
 <Layout 
-  title={`${cat.name} Wholesale & OEM - Weifang Tianyuan Waterproof`} 
-  description={`High-quality ${cat.name} for global construction. We offer direct factory pricing, OEM manufacturing, and reliable export supply for ${cat.name.toLowerCase()} projects.`}
-  preloadImage={cat.image}
+  title={`${cat.name} Wholesale & OEM | Tianyuan Waterproof`}
+  description={`Factory-direct ${cat.name.toLowerCase()} for global B2B buyers — custom widths, thicknesses and OEM branding, with TDS documentation and export packing support.`}
+  preloadImage={heroImage}
+  ogType="website"
 >
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(categorySchema)} />
   <main class="bg-slate-50 min-h-screen">
     <!-- Category Hero Header -->
     <section class="relative py-28 bg-[#0B1E3B] text-white overflow-hidden border-b border-white/10">
       <div class="absolute inset-0 z-0">
         <img 
-          src={cat.image} 
+          src={heroImage}
           alt="" 
           class="w-full h-full object-cover opacity-20" 
           width="1920"

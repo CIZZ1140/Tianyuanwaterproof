@@ -1,6 +1,6 @@
 ---
 title: "How Many Rolls of SBS Membrane Fit in a Container?"
-description: "A 20FT container holds approximately 400-500 rolls (4,000-5,000 m²) of 3mm SBS membrane, 300-400 rolls of 4mm, and 250-350 rolls of 5mm — 5mm is limited by weight, not volume. Loading calculator, formula and pallet guide for B2B buyers."
+description: "A 20FT container holds roughly 400-500 rolls of 3mm SBS membrane, 300-400 of 4mm and 250-350 of 5mm — limited by weight, not volume. Loading guide."
 category: "industry-insights"
 publishDate: 2026-08-19
 updatedDate: 2026-08-19

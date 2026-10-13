@@ -1,6 +1,7 @@
 ---
 title: "2026 Bitumen Membrane Export Report: Standard Alignment & Cost Structure Guide"
-description: "A professional B2B guide to the 2026 global bitumen membrane market. Covers the cost drivers behind custom SBS/APP quotations, analysis of new GB/T 18242-2025 standards, and export logistics data for international buyers."
+seoTitle: "2026 Bitumen Membrane Export Report: Standards & Cost"
+description: "A B2B guide to the 2026 bitumen membrane market: the cost drivers behind custom SBS and APP quotations, plus export logistics data for international buyers."
 category: "industry-insights"
 publishDate: 2026-09-03
 updatedDate: 2026-09-04

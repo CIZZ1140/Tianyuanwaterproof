@@ -4,9 +4,44 @@ import { productCategories, site } from "../../data/site";
 
 const pageTitle = `Product Categories | ${site.brand}`;
 const pageDescription = "Browse our professional range of waterproofing membranes, coatings, and specialized construction materials categorized by material and application.";
+
+const categoriesUrl = "https://www.tyuanwaterproof.com/categories/";
+const categoriesSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": `${categoriesUrl}#webpage`,
+      url: categoriesUrl,
+      name: pageTitle,
+      description: pageDescription,
+      isPartOf: { "@id": "https://www.tyuanwaterproof.com/#website" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.tyuanwaterproof.com/" },
+        { "@type": "ListItem", position: 2, name: "Products", item: "https://www.tyuanwaterproof.com/products/" },
+        { "@type": "ListItem", position: 3, name: "Product Categories", item: categoriesUrl }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      name: "Product Categories",
+      numberOfItems: productCategories.length,
+      itemListElement: productCategories.map((cat, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: cat.title,
+        url: `https://www.tyuanwaterproof.com${cat.href}`
+      }))
+    }
+  ]
+};
 ---
 
-<Layout title={pageTitle} description={pageDescription}>
+<Layout title={pageTitle} description={pageDescription} ogType="website">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(categoriesSchema)} />
   <main class="bg-[#F5F7FA] min-h-screen pb-20">
     <section class="bg-[#0B1E3B] text-white py-24 px-6 text-center">
       <h1 class="text-4xl md:text-5xl font-black mb-6">Product Categories</h1>

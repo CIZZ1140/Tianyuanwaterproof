@@ -1,5 +1,5 @@
 ---
-title: "EPDM Rubber Waterproofing Membrane Manufacturer & Wholesale | Cold-Bonded"
+title: "EPDM Rubber Membrane Manufacturer | Cold-Bonded Seams"
 displayName: "EPDM Waterproofing Membrane"
 category: "polymer-membranes"
 featured: true

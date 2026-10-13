@@ -1,10 +1,10 @@
 ---
-title: "Polymer Modified Asphalt Waterproof Coating Manufacturer | SBS Liquid Membrane | Wholesale"
+title: "Polymer Modified Asphalt Coating Manufacturer | SBS Liquid"
 displayName: "Polymer Modified Asphalt Coating"
 category: "waterproof-coatings"
 featured: true
 order: 55
-meta_description: "Water-based polymer modified asphalt waterproof coating for selected roof and below-grade applications. L and H grades with product-specific technical data. Request a TDS or quotation."
+meta_description: "Water-based polymer modified asphalt waterproof coating with SBS bitumen chemistry in liquid form. Brush or roller applied - no torch, no seam welding."
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-coating.webp"

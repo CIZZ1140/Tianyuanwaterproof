@@ -9,6 +9,8 @@ const blog = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    /** Optional SERP-facing title while retaining the full editorial headline. */
+    seoTitle: z.string().optional(),
     description: z.string(),
     category: z.enum([
       'roofing',

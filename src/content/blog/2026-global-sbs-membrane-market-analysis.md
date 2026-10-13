@@ -1,6 +1,7 @@
 ---
 title: "SBS Waterproofing Membrane Price Factors & B2B Procurement Guide"
-description: "What actually drives the price of SBS waterproofing membrane? A B2B guide to specification-based pricing, fair quotation comparison, required documents, MOQ and container loading, and supplier verification."
+seoTitle: "SBS Waterproofing Membrane Price Factors for B2B"
+description: "What drives the price of SBS waterproofing membrane? A B2B guide to specification-based pricing, quotation comparison, MOQ and container loading."
 category: "industry-insights"
 publishDate: 2026-07-12
 updatedDate: 2026-08-04

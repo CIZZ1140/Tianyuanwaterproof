@@ -1,5 +1,5 @@
 ---
-import { getCollection, getEntryBySlug, render, type CollectionEntry } from 'astro:content';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { ArrowLeft, ArrowRight, CalendarDays, Clock3, UserRound } from 'lucide-astro';
 
 import Layout from '../../layouts/Layout.astro';
@@ -17,8 +17,7 @@ const visibleArticles = [...allArticles].sort(
   (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
 
-const article = slug ? await getEntryBySlug('blog', slug) : undefined;
-const validArticle = article && !article.data.draft ? article : undefined;
+const validArticle = visibleArticles.find((entry) => entry.slug === slug);
 
 if (!validArticle) {
   Astro.response.status = 404;
@@ -39,13 +38,25 @@ const categoryMeta = {
 const siteUrl = (Astro.site ?? new URL('https://www.tyuanwaterproof.com')).toString().replace(/\/$/, '');
 const articleHref = validArticle ? `${siteUrl}/blog/${validArticle.slug}/` : `${siteUrl}/blog/`;
 
-const blogTitle = validArticle?.data.title ?? '';
-const fullPageTitle = `${blogTitle} | Tianyuan Waterproof Blog`;
-const pageTitle = validArticle
-  ? (fullPageTitle.length > 65 
-    ? `${blogTitle.length > 50 ? blogTitle.slice(0, 50) + '...' : blogTitle} | Tianyuan Waterproof Blog`
-    : fullPageTitle)
-  : 'Article Not Found | Tianyuan Waterproof Blog';
+// SEO title budget is ~60 characters: that is roughly where Google truncates the SERP
+// title. Keep the article headline intact and drop the brand suffix when it would push
+// past the budget — a cut-off headline with a brand tail is worse than no brand tail.
+const TITLE_BUDGET = 60;
+const BRAND_SUFFIX = ' | Tianyuan Waterproof Blog';
+// seoTitle lets a long editorial headline (some run to 89 characters) carry a shorter
+// SERP-facing title without losing keywords to a mid-phrase cut. The <h1> keeps the full
+// headline; only the <title> uses the shorter form.
+const blogTitle = validArticle?.data.seoTitle ?? validArticle?.data.title ?? '';
+
+function buildBlogTitle(headline: string) {
+  if (headline.length + BRAND_SUFFIX.length <= TITLE_BUDGET) return headline + BRAND_SUFFIX;
+  if (headline.length <= TITLE_BUDGET) return headline;
+  // Headline alone is over budget: cut on a word boundary rather than mid-word.
+  const clipped = headline.slice(0, TITLE_BUDGET - 3).replace(/[\s\-,:;&]+\S*$/, '');
+  return `${clipped}...`;
+}
+
+const pageTitle = validArticle ? buildBlogTitle(blogTitle) : 'Article Not Found | Tianyuan Waterproof';
 
 const pageDescription = validArticle
   ? validArticle.data.description

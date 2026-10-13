@@ -1,10 +1,10 @@
 ---
-title: "Single-Component PU Waterproof Coating Manufacturer | Moisture-Cure | Wholesale"
+title: "Single-Component PU Waterproof Coating Manufacturer"
 displayName: "Single-Component PU Coating"
 category: "waterproof-coatings"
 featured: true
 order: 65
-meta_description: "Single-component PU waterproof coating for moisture-cure applications on selected substrates. Product grades, elongation, low-temperature flexibility, and adhesion depend on the specification. Request a TDS or quotation."
+meta_description: "Single-component moisture-cure PU waterproof coating - no mixing and no pot life. Type I at 550% elongation and Type II grades. Factory-direct supply."
 product_category: "Waterproof Coatings"
 main_image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
 image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"

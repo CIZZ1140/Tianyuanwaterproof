@@ -1,10 +1,10 @@
 ---
-title: "Pre-Applied HDPE Waterproof Membrane Manufacturer | Anti-Water Channeling Underground System | Wholesale"
+title: "Pre-Applied HDPE Waterproof Membrane Manufacturer | OEM"
 displayName: "Pre-applied HDPE Membrane"
 category: "polymer-membranes"
 featured: true
 order: 70
-meta_description: "Factory-direct pre-applied HDPE self-adhesive waterproof membrane for foundations, basements, and tunnels. Available in selected thicknesses and widths with OEM support. Request a TDS or quotation."
+meta_description: "Pre-applied HDPE self-adhesive waterproof membrane for foundations, basements and tunnels. Bonds to curing concrete before the pour. Factory direct, OEM."
 product_category: "Polymer Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp"
 image: "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp"

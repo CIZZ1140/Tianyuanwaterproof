@@ -162,12 +162,64 @@ const countries = [
 
 const labelClass = 'mb-2 block text-sm font-bold tracking-wide text-[#4A453E]';
 const inputClass = 'w-full rounded-lg border border-[#E8E2D8] bg-white px-4 py-3 text-sm text-[#4A453E] outline-none transition focus:border-[#A87835]';
+
+// Organization + ContactPage markup. This is the page B2B buyers land on right before
+// they submit an enquiry, so it is the strongest place on the site to state the legal
+// entity, its location and its reachable contact channels in machine-readable form.
+const contactPageSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://www.tyuanwaterproof.com/#organization',
+      name: site.title,
+      alternateName: 'Tianyuan Waterproof',
+      url: 'https://www.tyuanwaterproof.com/',
+      logo: 'https://www.tyuanwaterproof.com/logo.png',
+      email: site.email,
+      telephone: site.phone,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Weifang',
+        addressRegion: 'Shandong',
+        addressCountry: 'CN'
+      },
+      contactPoint: [
+        {
+          '@type': 'ContactPoint',
+          contactType: 'sales',
+          email: site.email,
+          telephone: site.phone,
+          availableLanguage: ['en', 'zh']
+        }
+      ]
+    },
+    {
+      '@type': 'ContactPage',
+      '@id': 'https://www.tyuanwaterproof.com/contact/#webpage',
+      url: 'https://www.tyuanwaterproof.com/contact/',
+      name: 'Contact Us | Tianyuan Waterproof',
+      description:
+        'Get in touch with Tianyuan Waterproof for factory-direct quotes, product samples, TDS/MSDS documentation and OEM support. Based in Weifang, Shandong, China.',
+      mainEntity: { '@id': 'https://www.tyuanwaterproof.com/#organization' },
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.tyuanwaterproof.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://www.tyuanwaterproof.com/contact/' }
+        ]
+      }
+    }
+  ]
+};
 ---
 
 <Layout 
   title="Contact Us | Tianyuan Waterproof"
-  description="Get in touch with Tianyuan Waterproof for factory-direct quotes and technical support."
+  description="Get in touch with Tianyuan Waterproof for factory-direct quotes, product samples, TDS/MSDS documentation and OEM support. Based in Weifang, Shandong, China."
+  ogType="website"
 >
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(contactPageSchema)} />
   <style is:global>
     .custom-scrollbar::-webkit-scrollbar {
       width: 6px;

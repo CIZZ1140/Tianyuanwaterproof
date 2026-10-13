@@ -1,10 +1,10 @@
 ---
-title: "Damp-substrate compatible PP/PE Composite Waterproof Membrane Factory"
+title: "Damp-Substrate PP/PE Composite Waterproof Membrane Factory"
 displayName: "PP-PE Composite Membrane"
 category: "polymer-membranes"
 featured: true
 order: 75
-meta_description: "Damp-substrate compatible PP/PE composite waterproofing membrane for bathrooms, basements, and tunnels. Cement-based bonding, multi-layer reinforcement, and factory supply. Request a TDS or quotation."
+meta_description: "PP/PE composite waterproofing membrane that bonds to damp concrete with cement-based adhesive. For bathrooms, basements and tunnels. Factory-direct supply."
 main_image: "https://img.tyuanwaterproof.com/products/polyethylene-propylene-waterproof-membrane.webp"
 image: "https://img.tyuanwaterproof.com/products/polyethylene-propylene-waterproof-membrane.webp"
 

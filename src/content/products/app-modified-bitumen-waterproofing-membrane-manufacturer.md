@@ -1,10 +1,10 @@
 ---
-title: "APP Modified Bitumen Manufacturer | 130°C Heat-Resistant | Tropical Roofing Expert"
+title: "APP Modified Bitumen Membrane Manufacturer for Hot Climates"
 displayName: "APP Modified Bitumen Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 95
-meta_description: "Engineered for Middle East & tropical solar loads. Our 130°C heat-resistant APP membrane prevents sagging & UV aging. Save on freight with optimized 20FT loading. Direct factory supply & OEM support. Get a factory quote today!"
+meta_description: "130°C heat-resistant APP modified bitumen membrane for Middle East and tropical roofs. PY, G or PYG reinforcement, 3-5mm, factory supply with OEM support."
 product_category: "Bitumen Membranes"
 main_image: "https://img.tyuanwaterproof.com/products/app-membrane-branded-roll.webp"
 image: "https://img.tyuanwaterproof.com/products/app-membrane-branded-roll.webp"

@@ -1,6 +1,6 @@
 ---
 title: "TPO Walkway Pads: When, Where & How to Spec Roof Protection"
-description: "TPO walkway pads protect single-ply membranes in high-traffic zones. When to install, thickness (1.5–3.0mm) and width (500/600mm) selection, quantity calculation, and a welding checklist."
+description: "TPO walkway pads protect single-ply membranes in high-traffic zones. Thickness and width selection, quantity calculation and a welding checklist."
 category: "industry-insights"
 publishDate: 2026-08-31
 updatedDate: 2026-08-31

@@ -7,6 +7,7 @@ image: "https://img.tyuanwaterproof.com/products/hdpe-geomembrane-liner-roll.web
 main_image: "https://img.tyuanwaterproof.com/products/hdpe-geomembrane-liner-roll.webp?v=2"
 
 hero_description: "Professional HDPE geomembrane manufacturer providing high-density polyethylene liners for landfills, mining ponds, reservoirs, and aquaculture anti-seepage projects."
+meta_description: "HDPE geomembrane manufacturer supplying high-density polyethylene liners for landfills, mining ponds, reservoirs and aquaculture anti-seepage projects."
 
 hero_tags:
   - "HDPE Geomembrane"

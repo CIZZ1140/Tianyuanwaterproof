@@ -7,6 +7,7 @@ image: "https://img.tyuanwaterproof.com/products/geotextile-nonwoven.webp"
 main_image: "https://img.tyuanwaterproof.com/products/geotextile-nonwoven.webp"
 
 hero_description: "Leading nonwoven geotextile manufacturer providing high-performance PP and PET fabrics for filtration, separation, drainage, and soil reinforcement in global engineering projects."
+meta_description: "Non-woven geotextile manufacturer supplying PP and PET fabrics for filtration, separation, drainage and soil reinforcement in global civil engineering projects."
 
 hero_tags:
   - "PP / PET Material"

@@ -1,6 +1,7 @@
 ---
 title: "Self-Adhesive vs. Torch-Applied Waterproofing Membrane | Cost & Selection Guide"
-description: "Compare self-adhesive and torch-on modified bitumen membranes by installation method, substrate type, climate resilience, and total installed cost. Expert selection guide for B2B procurement managers."
+seoTitle: "Self-Adhesive vs Torch-Applied Waterproofing Membrane"
+description: "Compare self-adhesive and torch-on modified bitumen membranes by installation method, substrate type, climate resilience and total installed cost."
 category: "industry-insights"
 publishDate: 2026-07-14
 updatedDate: 2026-07-14

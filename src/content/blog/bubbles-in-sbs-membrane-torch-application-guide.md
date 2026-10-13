@@ -1,6 +1,6 @@
 ---
 title: "Bubbles in SBS Membrane: Causes, Prevention & Repair Guide"
-description: "Why do bubbles and wrinkles appear after torch-applying SBS membrane? Root causes, moisture testing, correct installation steps, and when to repair vs replace — with factory TDS data."
+description: "Why do bubbles and wrinkles appear after torch-applying SBS membrane? Root causes, moisture testing, correct installation steps, and when to repair vs replace."
 category: "installation"
 publishDate: 2026-08-06
 updatedDate: 2026-08-06

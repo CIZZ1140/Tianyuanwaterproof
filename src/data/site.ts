@@ -22,6 +22,7 @@ export const nav = [
     label: 'Products', 
     href: '/products/',
     children: [
+      { label: 'All Categories', href: '/categories/' },
       { label: 'Bitumen Membranes', href: '/categories/bitumen-membranes/' },
       { label: 'Polymer Membranes', href: '/categories/polymer-membranes/' },
       { label: 'Waterproof Coatings', href: '/categories/waterproof-coatings/' },
@@ -38,7 +39,7 @@ export const nav = [
     children: [
       { label: 'Technical Data', href: '/technical/' },
       { label: 'Case Studies', href: '/projects/' },
-      { label: 'Selection Guides', href: '/technical/installation-guide/' },
+      { label: 'Installation Guide', href: '/technical/installation-guide/' },
       { label: 'Blog', href: '/blog/' },
       { label: 'FAQ', href: '/technical/faq/' }
     ]
@@ -69,7 +70,10 @@ export const productCategories = [
     description: 'Advanced PVC, TPO, and HDPE membranes for high-end engineering.',
     items: [
       { title: 'TPO Membrane', href: '/products/tpo-waterproofing-membrane-manufacturer/' },
-      { title: 'PVC Membrane', href: '/products/pvc-waterproofing-membrane-manufacturer/' }
+      { title: 'PVC Membrane', href: '/products/pvc-waterproofing-membrane-manufacturer/' },
+      { title: 'EPDM Membrane', href: '/products/epdm-waterproofing-membrane-wholesale/' },
+      { title: 'PP-PE Composite Membrane', href: '/products/pp-pe-composite-membrane-factory/' },
+      { title: 'Pre-applied HDPE Membrane', href: '/products/pre-applied-hdpe-membrane-supplier/' }
     ]
   },
   {
@@ -101,8 +105,9 @@ export const productCategories = [
     image: 'https://img.tyuanwaterproof.com/cat-asphalt-shingles.webp',
     description: 'Artistic and durable roofing shingles for residential buildings.',
     items: [
-      { title: 'Laminated Asphalt Shingles', href: '/products/asphalt-roofing-felt-manufacturer/' },
-      { title: '3-Tab Asphalt Shingles', href: '/products/3-tab-asphalt-shingles-wholesale/' }
+      { title: 'Laminated Asphalt Shingles', href: '/products/laminated-asphalt-shingles-manufacturer/' },
+      { title: '3-Tab Asphalt Shingles', href: '/products/3-tab-asphalt-shingles-wholesale/' },
+      { title: 'Artistic Asphalt Shingles', href: '/products/artistic-asphalt-shingles-supplier/' }
     ]
   },
   {
@@ -120,7 +125,7 @@ export const productCategories = [
     title: 'Roofing Accessories',
     slug: 'roofing-accessories',
     href: '/categories/roofing-accessories/',
-    image: '/placeholder.webp',
+    image: 'https://img.tyuanwaterproof.com/products/tpo-walkway-pad-main.webp',
     description: 'TPO walkway pads and protective accessories for single-ply membrane roofing systems.',
     items: [
       { title: 'TPO Walkway Pad', href: '/products/tpo-walkway-pad-manufacturer/' }

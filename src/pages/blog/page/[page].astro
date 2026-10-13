@@ -26,12 +26,37 @@ const { page } = Astro.props as Props;
 const currentPage = page.currentPage;
 const totalPages = page.lastPage;
 
-const pageTitle = `Blog Page ${currentPage} | Waterproofing Insights & Guides | Tianyuan Waterproof`;
-const pageDescription =
-  'Explore waterproofing insights, technical guides, product selection advice and B2B sourcing knowledge from Tianyuan Waterproof.';
+const pageTitle = `Blog Page ${currentPage} | Waterproofing Insights & Guides`;
+// Keep each paginated page's description distinct — an identical description across
+// /blog/page/N/ reads as duplicate metadata to crawlers.
+const pageDescription = `Waterproofing insights and technical guides from Tianyuan Waterproof — page ${currentPage} of ${totalPages}: membrane selection, installation practice and B2B sourcing notes.`;
+
+const pageUrl = `https://www.tyuanwaterproof.com/blog/page/${currentPage}/`;
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': `${pageUrl}#webpage`,
+      url: pageUrl,
+      name: pageTitle,
+      description: pageDescription,
+      isPartOf: { '@id': 'https://www.tyuanwaterproof.com/blog/#blog' }
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.tyuanwaterproof.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.tyuanwaterproof.com/blog/' },
+        { '@type': 'ListItem', position: 3, name: `Page ${currentPage}`, item: pageUrl }
+      ]
+    }
+  ]
+};
 ---
 
-<Layout title={pageTitle} description={pageDescription}>
+<Layout title={pageTitle} description={pageDescription} ogType="website">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(pageSchema)} />
   <main class="min-h-screen bg-[#F5F7FA] text-[#102033]">
     <section class="bg-[#0E2A47] px-4 py-10 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-[1680px]">

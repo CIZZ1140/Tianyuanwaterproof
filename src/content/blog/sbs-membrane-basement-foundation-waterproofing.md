@@ -1,6 +1,6 @@
 ---
 title: "SBS Membrane Basement Waterproofing: Walls, Slabs & Foundations"
-description: "SBS membrane for basement and foundation waterproofing: torch-applied Type II on slabs, self-adhesive on confined walls, PYG at settlement joints. Layer selection, protection and acceptance checklist — with factory data."
+description: "SBS membrane for basements and foundations: torch-applied on slabs, self-adhesive on confined walls, PYG at settlement joints. Selection and checklist."
 category: "basement"
 coverImage: "https://img.tyuanwaterproof.com/blog/basement-foundation-sbs-cover.webp"
 coverAlt: "Workers torch-applying SBS modified bitumen waterproofing membrane onto a concrete foundation wall in a basement excavation"

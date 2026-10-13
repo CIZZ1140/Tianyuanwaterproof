@@ -9,6 +9,7 @@ main_image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"
 image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"
 
 hero_description: "Professional-grade solvent-free butyl rubber sealing tape for roofing, joints, and steel structures. Exceptional bonding strength, weather resistance, and permanent sealing performance."
+meta_description: "Solvent-free butyl rubber sealing tape for roofing, joints and steel structures. Permanent bonding, weather resistance, factory supply and OEM widths."
 
 hero_tags:
   - "Butyl Rubber"

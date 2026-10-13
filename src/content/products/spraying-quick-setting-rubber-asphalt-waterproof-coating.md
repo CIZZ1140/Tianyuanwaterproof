@@ -1,10 +1,10 @@
 ---
-title: "Spray Quick-Setting Rubber Asphalt Coating Manufacturer | Instant Gel | Wholesale"
+title: "Spray Quick-Setting Rubber Asphalt Coating Manufacturer"
 displayName: "Quick-Setting Rubber Coating"
 category: "waterproof-coatings"
 featured: true
 order: 45
-meta_description: "Spray-applied quick-setting rubber asphalt coating for selected waterproofing and infrastructure systems. Gel time, elongation, heat resistance, and output depend on formulation and equipment. Request a TDS or quotation."
+meta_description: "Two-component spray-applied quick-setting rubber asphalt coating that gels at the nozzle in seconds. For roofing and infrastructure waterproofing systems."
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt.webp"
 main_image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt.webp"

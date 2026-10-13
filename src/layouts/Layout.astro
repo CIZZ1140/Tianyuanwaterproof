@@ -11,6 +11,10 @@ interface Props {
 	preloadImageMobile?: string;
 	isHomePage?: boolean;
 	ogImage?: string;
+	/** Per-page robots directive. Pass "noindex, follow" on non-indexable pages (e.g. 404). */
+	robots?: string;
+	/** Open Graph object type. Defaults to "website" on the home page, "article" elsewhere. */
+	ogType?: string;
 }
 
 const { 
@@ -19,7 +23,9 @@ const {
 	preloadImage,
 	preloadImageMobile,
 	isHomePage = false,
-	ogImage = "https://img.tyuanwaterproof.com/og-default.webp"
+	ogImage = "https://img.tyuanwaterproof.com/og-default.webp",
+	robots = "index, follow",
+	ogType = isHomePage ? "website" : "article"
 } = Astro.props;
 
 // Canonical URL logic: follow the configured site URL, always with trailing slash
@@ -36,7 +42,7 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
-		<meta name="robots" content="index, follow" />
+		<meta name="robots" content={robots} />
 		<link rel="canonical" href={canonicalURL} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
@@ -45,7 +51,7 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:url" content={canonicalURL} />
-		<meta property="og:type" content={isHomePage ? "website" : "article"} />
+		<meta property="og:type" content={ogType} />
 		<meta property="og:site_name" content="Tianyuan Waterproof" />
 		<meta property="og:image" content={ogImage} />
 		<meta property="og:locale" content="en_US" />
@@ -56,10 +62,9 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={ogImage} />
 		
-		<!-- Early hints for critical resources -->
-		<link rel="dns-prefetch" href="//www.tyuanwaterproof.com" />		
-		<link rel="dns-prefetch" href="//www.tyuanwaterproof.com" />
-		<link rel="preconnect" href="https://www.tyuanwaterproof.com" />
+		<!-- Early hints for critical resources.
+		     No dns-prefetch for the site's own host: that origin is already resolved by the
+		     main document request, so the hint is dead weight. Only the CDN needs a hint. -->
 		<link rel="preconnect" href="https://img.tyuanwaterproof.com" crossorigin />
 		<link rel="dns-prefetch" href="https://img.tyuanwaterproof.com" />
 		
@@ -123,6 +128,9 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 				.rwd-cards-3col td, .rwd-cards-2col td { margin-bottom:10px; }
 			}
 		</style>
+
+		{/* Pages inject extra head tags here (e.g. per-page robots, structured data). */}
+		<slot name="head" />
 	</head>
 	<body class="bg-[#F5F7FA] text-[#102033] antialiased font-sans">
 		<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-[200] focus:bg-white focus:p-4 focus:text-navy focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-brand">

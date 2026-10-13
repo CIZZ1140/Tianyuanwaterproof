@@ -227,7 +227,7 @@ const breadcrumbLd = {
 };
 ---
 
-<Layout title={seoTitle} description={data.meta_description || heroDesc} ogImage={mainImage}>
+<Layout title={seoTitle} description={data.meta_description || heroDesc} ogImage={mainImage} ogType="product">
   <script type="application/ld+json" is:inline set:html={JSON.stringify(productJsonLd)} />
   {faqs.length > 0 && (
     <script type="application/ld+json" is:inline set:html={JSON.stringify({

@@ -1,10 +1,10 @@
 ﻿---
-title: "Self-Adhesive Bitumen Membrane Manufacturer | Cold-Applied Waterproofing"
+title: "Self-Adhesive Bitumen Membrane Manufacturer | Cold-Applied"
 displayName: "Self-Adhesive Bituminous Membrane"
 category: "bitumen-membranes"
 featured: true
 order: 95
-meta_description: "Safe and efficient self-adhesive 'Peel & Stick' bitumen membrane. No-torch cold application for fast job-site productivity. Superior self-healing properties and instant bond to concrete and metal. OEM branding and private label support."
+meta_description: "Self-adhesive peel-and-stick bituminous membrane to GB 23441-2009. Torch-free, self-healing, bonds to concrete and metal. 1.2-4.0mm, OEM branding."
 product_category: "Bitumen Membranes"
 image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"
 main_image: "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp"

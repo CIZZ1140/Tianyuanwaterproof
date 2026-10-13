@@ -6,6 +6,7 @@ product_category: "Asphalt Shingles"
 main_image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-artistic.webp"
 
 hero_description: "Unique and creative hexagonal or fish-scale asphalt shingles for architectural roofing. High flexibility for complex roof geometries with premium aesthetic appeal."
+meta_description: "Hexagonal and fish-scale artistic asphalt shingles for architectural roofs. High flexibility for complex geometries, factory-direct supply and OEM branding."
 
 hero_tags:
   - "Artistic Designs"

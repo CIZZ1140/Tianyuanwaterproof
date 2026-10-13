@@ -1,11 +1,11 @@
 ---
-title: "Asphalt Roofing Felt Manufacturer | 15#/30# Underlayment Wholesale"
+title: "Asphalt Roofing Felt Manufacturer | 15#/30# Underlayment"
 displayName: "Asphalt Roofing Felt"
 category: "bitumen-membranes"
 featured: true
 order: 80
 product_category: "Roofing Underlayment"
-meta_description: "Factory direct asphalt roofing felt for shingle underlayment & BUR. 1m x 20m rolls, 0.5/0.8mm, Type I (15#) & Type II (30#) to ASTM D226. MOQ, OEM & free samples available."
+meta_description: "Asphalt roofing felt for shingle underlayment and BUR. 1m x 20m rolls, 0.5/0.8mm, Type I (15#) and Type II (30#) to ASTM D226. MOQ, OEM and free samples."
 main_image: "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp"
 image_width: 1254
 image_height: 1254

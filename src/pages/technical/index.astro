@@ -215,12 +215,37 @@ const technicalFaqs = [
       "Yes. We provide standard installation steps and application guidance for torch-applied, self-adhesive and polymer membrane systems.",
   },
 ];
+
+const technicalUrl = 'https://www.tyuanwaterproof.com/technical/';
+const technicalSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'TechArticle',
+      '@id': `${technicalUrl}#article`,
+      headline: 'Technical Documentation & TDS Center',
+      url: technicalUrl,
+      description:
+        "Download technical data sheets (TDS), MSDS, and installation manuals for Tianyuan's full range of waterproofing membranes and coatings.",
+      publisher: { '@id': 'https://www.tyuanwaterproof.com/#organization' }
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.tyuanwaterproof.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Technical', item: technicalUrl }
+      ]
+    }
+  ]
+};
 ---
 
 <Layout
   title="Technical Documentation & TDS Center | Tianyuan Waterproof"
   description="Download technical data sheets (TDS), MSDS, and installation manuals for Tianyuan's full range of waterproofing membranes and coatings."
+  ogType="website"
 >
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(technicalSchema)} />
   <main class="relative bg-[#F5F7FA] text-[#102033]">
     <section class="relative overflow-hidden bg-[#0E2A47]">
       <div class="absolute inset-0 bg-[linear-gradient(120deg,rgba(14,42,71,0.95),rgba(14,42,71,0.86),rgba(245,138,31,0.18))]"></div>

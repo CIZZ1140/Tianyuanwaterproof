@@ -1,10 +1,10 @@
 ---
-title: "JS Polymer Cement Waterproof Coating Manufacturer | Type I II III | Factory Price"
+title: "JS Polymer Cement Waterproof Coating Factory | Type I-III"
 displayName: "JS Polymer Cement Coating"
 category: "waterproof-coatings"
 featured: true
 order: 60
-meta_description: "Save 40% on labor costs with TY-SHIELD™ JS waterproof coating—no primers needed before tiling. Bonds perfectly to damp concrete to pull your construction schedule forward. Direct factory wholesale pricing with OEM support. GB/T 23445 certified. Request a free sample or bulk quote today!"
+meta_description: "Two-component JS polymer cement waterproof coating to GB/T 23445-2009. Cement-to-cement bonding, no primer needed before tiling. Type I, II and III, OEM."
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"

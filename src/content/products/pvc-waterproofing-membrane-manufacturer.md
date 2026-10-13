@@ -1,10 +1,10 @@
 ---
-title: "Industrial-grade PVC Waterproofing Membrane Manufacturer | Long-Life Roofing"
+title: "PVC Waterproofing Membrane Manufacturer | Roofing & Tunnel"
 displayName: "PVC Waterproofing Membrane"
 category: "polymer-membranes"
 featured: true
 order: 80
-meta_description: "Industrial-grade PVC waterproofing membrane for roofing and tunnels, with hot-air weldable seams and reinforced options. Factory supply with technical documentation. Request a TDS or quotation."
+meta_description: "PVC waterproofing membrane for roofing and tunnels with hot-air weldable seams and polyester-reinforced, UV-stabilised options. Factory supply with TDS."
 main_image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
 image: "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp"
 

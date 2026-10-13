@@ -6,6 +6,7 @@ product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/metal-roof-acrylic-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/metal-roof-acrylic-coating.webp"
 hero_description: "High-performance acrylic-based waterproof coating specifically designed for metal roofs and steel structures. Features excellent adhesion, anti-corrosion properties, and superior UV resistance to extend the service life of metal buildings."
+meta_description: "Acrylic waterproof coating for metal roofs and steel structures. Rust-preventive, solar reflective and elastic - brush, roller or spray applied. Factory direct."
 
 hero_tags:
   - "Metal Roof Expert"

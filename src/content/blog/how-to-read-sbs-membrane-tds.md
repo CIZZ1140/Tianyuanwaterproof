@@ -1,6 +1,6 @@
 ---
 title: "How to Read an SBS Membrane TDS: Key Parameters Explained"
-description: "How to judge an SBS membrane TDS: soluble content, tensile, elongation, low-temp flexibility, heat resistance, watertightness — GB/T 18242 values and a 5-step read."
+description: "How to judge an SBS membrane TDS: soluble content, tensile, elongation, low-temp flexibility, heat resistance and watertightness, with a 5-step read."
 category: "industry-insights"
 publishDate: 2026-08-20
 updatedDate: 2026-08-20

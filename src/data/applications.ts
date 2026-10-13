@@ -2,6 +2,8 @@ export const applications = [
   {
     slug: 'roof-waterproofing',
     title: 'Roof Waterproofing',
+    description:
+      'Roof waterproofing for flat, pitched and industrial roofs — SBS/APP bitumen, TPO and PVC single-ply membranes, plus liquid PU for gutters and details.',
     intro: 'Roof waterproofing solutions for concrete flat roofs, industrial buildings, warehouses, commercial roofs and roofing renovation projects.',
     recommended: [
       { title: 'SBS / APP Bitumen Membrane', href: '/products/sbs-bitumen-waterproofing-membrane-manufacturer/' },
@@ -19,6 +21,8 @@ export const applications = [
   {
     slug: 'underground-waterproofing',
     title: 'Underground Waterproofing',
+    description:
+      'Below-grade waterproofing for basements, foundations and retaining walls — pre-applied HDPE, self-adhesive bitumen, drainage board and geotextile.',
     intro: 'Reliable below-grade waterproofing systems for basements, foundations, retaining walls and metro infrastructure.',
     recommended: [
       { title: 'Pre-applied HDPE / FPO Membrane', href: '/products/hdpe-geomembrane-liner-manufacturer/' },
@@ -37,7 +41,8 @@ export const applications = [
   {
     slug: 'bathroom-waterproofing',
     title: 'Bathroom Waterproofing',
-    description: 'Liquid-applied waterproofing for bathrooms, shower rooms and balconies — JS polymer cement and PU coatings for tiled wet areas, with technical data and bulk supply from the manufacturer.',
+    description:
+      'Waterproofing for bathrooms, shower rooms and balconies — JS polymer cement and PU coatings for tiled wet areas, supplied in bulk direct from the factory.',
     intro: 'Liquid-applied waterproofing for bathrooms, shower rooms, balconies and other wet areas in residential, hotel and commercial fit-out projects.',
     recommended: [
       { title: 'Polymer Cement (JS) Waterproof Coating', href: '/products/polymer-cement-js-waterproof-coating-factory/' },
@@ -55,6 +60,8 @@ export const applications = [
   {
     slug: 'tunnel-waterproofing',
     title: 'Tunnel Waterproofing',
+    description:
+      'Tunnel waterproofing for subway, railway and road tunnels — PVC-P and FPO membranes with geotextile protection, full-round and umbrella systems.',
     intro: 'Flexible sheet membrane systems for subway, railway, road tunnel and underground infrastructure waterproofing.',
     recommended: [
       { title: 'PVC-P Tunnel Waterproofing Membrane', href: '/products/pvc-waterproofing-membrane-manufacturer/' },
@@ -73,6 +80,8 @@ export const applications = [
   {
     slug: 'bridge-infrastructure',
     title: 'Bridge & Infrastructure',
+    description:
+      'Bridge deck and civil infrastructure waterproofing — modified bitumen membranes and liquid PU or polyurea for chloride-resistant deck protection.',
     intro: 'Waterproofing systems designed for highway bridges, railways, culverts and municipal engineering.',
     recommended: [
       { title: 'SBS / APP Modified Bitumen Bridge Deck Membrane', href: '/products/sbs-bitumen-waterproofing-membrane-manufacturer/' },
@@ -90,6 +99,8 @@ export const applications = [
   {
     slug: 'industrial-building',
     title: 'Industrial Building',
+    description:
+      'Waterproofing for warehouses, logistics centres and steel-structure plants — TPO and PVC single-ply roofing, with reflective cool-roof grades available.',
     intro: 'Comprehensive waterproofing for warehouses, logistics centers, and large-scale steel structure plants.',
     recommended: [
       { title: 'TPO Roofing Membrane', href: '/products/tpo-waterproofing-membrane-manufacturer/' },
@@ -105,6 +116,8 @@ export const applications = [
   {
     slug: 'joint-detail-sealing',
     title: 'Joint & Detail Sealing',
+    description:
+      'Joint and detail sealing for laps, window flashing, pipe penetrations and skylights — self-adhesive butyl and bitumen tapes for fast peel-and-stick repair.',
     intro: 'Self-adhesive sealing tapes for roof laps, window flashing, pipe penetrations, skylights and perimeter details.',
     recommended: [
       { title: 'Butyl Flashing Tape', href: '/products/butyl-waterproof-sealing-tape-supplier/' },

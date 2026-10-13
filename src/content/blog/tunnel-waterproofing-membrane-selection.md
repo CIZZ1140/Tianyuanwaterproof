@@ -1,6 +1,7 @@
 ---
 title: "Tunnel Waterproofing Membrane Selection Guide: PVC vs. HDPE vs. Bitumen (2026 B2B Update)"
-description: "An expert 2026 B2B guide comparing PVC, HDPE, and Bitumen systems for tunnel waterproofing. Includes cost-benefit analysis, life cycle durability, and a quick selection cheat sheet for infrastructure procurement."
+seoTitle: "Tunnel Waterproofing Membrane: PVC vs HDPE vs Bitumen"
+description: "A 2026 B2B guide comparing PVC, HDPE and bitumen systems for tunnel waterproofing, with life-cycle durability and a selection cheat sheet."
 category: "installation"
 coverImage: "https://img.tyuanwaterproof.com/app-tunnel-waterproofing.webp"
 coverAlt: "Tunnel waterproofing membrane system for underground infrastructure projects"

@@ -6,6 +6,7 @@ product_category: "Asphalt Shingles"
 main_image: "https://img.tyuanwaterproof.com/products/asphalt-shingles-laminated.webp"
 
 hero_description: "Heavy-duty dual-layer laminated shingles providing a 3D dimensional look and superior wind resistance. The premium architectural choice for luxury residential roofing."
+meta_description: "Heavy-duty dual-layer laminated asphalt shingles with a 3D dimensional look and high wind resistance. Premium architectural roofing, factory-direct supply."
 
 hero_tags:
   - "Laminated / Dual-Layer"

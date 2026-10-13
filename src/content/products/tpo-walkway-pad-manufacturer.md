@@ -1,10 +1,10 @@
 ---
-title: "TPO Walkway Pad & Board Manufacturer | Anti-Slip Roof Protection Walkway"
+title: "TPO Walkway Pad Manufacturer | Anti-Slip Roof Protection"
 displayName: "TPO Walkway Pad"
 category: "roofing-accessories"
 featured: false
 order: 70
-meta_description: "TPO walkway pad manufacturer. Heat-weldable anti-slip roof walkway for TPO membrane protection — embossed surface, yellow safety border, 1.5-3.0mm thickness, OEM roll production. Factory direct."
+meta_description: "TPO walkway pad manufacturer. Heat-weldable anti-slip roof walkway protecting TPO membrane - no adhesive or mechanical penetrations. 1.5-3.0mm, OEM rolls."
 main_image: "https://img.tyuanwaterproof.com/products/tpo-walkway-pad-main.webp"
 image: "https://img.tyuanwaterproof.com/products/tpo-walkway-pad-main.webp"
 

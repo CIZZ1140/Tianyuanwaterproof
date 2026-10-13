@@ -7,6 +7,7 @@ main_image: "https://img.tyuanwaterproof.com/products/epoxy-floor-paint.jpg"
 image: "https://img.tyuanwaterproof.com/products/epoxy-floor-paint.jpg"
 
 hero_description: "Premium high-solid two-component epoxy floor coating for commercial and industrial interiors. Features superior self-leveling, wear resistance, and a seamless decorative finish."
+meta_description: "Two-component high-solid epoxy self-leveling floor coating for industrial and commercial interiors. Seamless wear-resistant finish, factory supply and OEM."
 
 hero_tags:
   - "Epoxy Floor Coating"
