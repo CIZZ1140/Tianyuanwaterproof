@@ -44,7 +44,7 @@ quick_facts:
   - title: "Buy a Matched Spray System"
     text: "Procurement must cover both A and B components and a spray setup able to deliver them separately at the selected working ratio. Ask for the equipment requirements, component consumption and trial-spray procedure before pricing by kilogram."
   - title: "Fast Gel Is Not Full Drying"
-    text: "The catalog lists gel time at no more than 5 seconds and hard drying at no more than 24 hours under its test conditions. Rapid shape retention can help vertical and irregular work, but it does not authorize immediate traffic, backfilling or a follow-on layer."
+    text: "Gel time is no more than 5 seconds and hard drying no more than 24 hours under the stated test conditions. Rapid shape retention can help vertical and irregular work, but it does not authorize immediate traffic, backfilling or a follow-on layer."
   - title: "Measure the Installed Layer"
     text: "A spray pattern does not prove uniform thickness. Specify the required dry-film thickness, detail reinforcement, substrate condition and inspection method; verify coverage and film continuity before protection is installed."
 applications:
@@ -62,9 +62,9 @@ features:
   - title: "Documented Gel and Drying Stages"
     text: "The two time figures answer different site questions: initial gelation and subsequent hard drying. Keeping them distinct helps contractors schedule protection and inspection without treating a newly gelled film as fully ready."
   - title: "Elastic, Seam-Free Field"
-    text: "The catalog lists ≥1000% elongation untreated and ≥85% elastic recovery. These are material indices; actual installed performance still depends on detail design, substrate adhesion, thickness and protection."
+    text: "Untreated elongation is ≥1000% and elastic recovery is ≥85%. These are material indices; actual installed performance still depends on detail design, substrate adhesion, thickness and protection."
   - title: "Inspect Punctures and Bond"
-    text: "The catalog includes nail-rod watertightness and bond strength on dry and moist bases. Site acceptance should also check overspray, voids, junctions and the continuity of the finished coating."
+    text: "Nail-rod watertightness and bond strength on dry and moist bases are included in the technical indices. Site acceptance should also check overspray, voids, junctions and the continuity of the finished coating."
 technical_scope: "Two-component spray rubber-asphalt performance indices"
 technical_data:
   - label: "Solid content"
@@ -105,7 +105,7 @@ technical_data:
     requirement: "−20"
   - label: "Low-temperature flexibility"
     unit: "°C"
-    standard: "After listed conditioning treatments"
+    standard: "After alkali, acid, heat or UV conditioning"
     requirement: "−15"
   - label: "Tensile strength"
     unit: "MPa"
@@ -117,7 +117,7 @@ technical_data:
     requirement: "≥1000"
   - label: "Elongation at break"
     unit: "%"
-    standard: "After listed conditioning treatments"
+    standard: "After alkali, acid, heat or UV conditioning"
     requirement: "≥800"
 application_guide:
   - title: "Confirm the Assembly"
@@ -147,11 +147,11 @@ faqs:
   - question: "What is supplied with the A+B spray system?"
     answer: "Component A is the modified rubber-asphalt emulsion and Component B is the coagulant. Their working ratio, pack sizes and required spray equipment must be confirmed together for the quoted project; buying only the base emulsion is not a complete spray system."
   - question: "Does a five-second gel time mean the surface is ready for traffic?"
-    answer: "No. Gel time describes the initial set, while the catalog also lists hard drying time of up to 24 hours under test conditions. Site temperature, humidity, thickness and substrate affect the follow-on schedule. Inspect the film before allowing traffic or installing protection."
+    answer: "No. Gel time describes the initial set; hard drying may take up to 24 hours under test conditions. Site temperature, humidity, thickness and substrate affect the follow-on schedule. Inspect the film before allowing traffic or installing protection."
   - question: "How is this different from non-curing rubber asphalt coating?"
     answer: "This is a cold-sprayed A+B emulsion designed to gel and form an elastic membrane. Non-curing rubber asphalt remains tacky and is commonly used as a bonding layer in a coating-and-sheet assembly. The two products need different equipment and installation sequences."
   - question: "Can it be sprayed on a moist substrate?"
-    answer: "The catalog lists bond strength for both dry and moist bases, but that is not permission to spray over standing water or an unsound surface. Confirm the accepted substrate condition and primer method for the project."
+    answer: "Bond strength is specified for both dry and moist bases, but that is not permission to spray over standing water or an unsound surface. Confirm the accepted substrate condition and primer method for the project."
   - question: "Which numbers should go into a purchase inquiry?"
     answer: "Provide project area, designed dry-film thickness, substrate, exposed or protected location, number and type of details, available spray equipment, destination port and required technical standard. Request matched A+B quantities and the corresponding installation documents."
 ---
@@ -162,4 +162,4 @@ Spray quick-setting rubber asphalt is a two-component waterproofing system. Modi
 
 For a procurement team, the key distinction is between buying material and buying a workable project supply. The A and B quantities, pump configuration, working ratio, substrate preparation, detail reinforcement and protection course all affect the installed result. A quote that omits those items cannot be compared fairly with another waterproofing system.
 
-The catalog lists ≤5 seconds for gelation and ≤24 hours for hard drying. It also lists ≥1000% untreated elongation, ≥85% elastic recovery, 0.3 MPa / 30-minute watertightness and 120 ± 2°C heat resistance. These figures guide specification review; project documents and current supply details should be aligned before site acceptance.
+Technical indices include ≤5 seconds for gelation and ≤24 hours for hard drying, alongside ≥1000% untreated elongation, ≥85% elastic recovery, 0.3 MPa / 30-minute watertightness and 120 ± 2°C heat resistance. These figures guide specification review; project documents and current supply details should be aligned before site acceptance.
