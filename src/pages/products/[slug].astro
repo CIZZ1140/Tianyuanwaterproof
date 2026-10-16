@@ -157,6 +157,7 @@ const isPuCatalogTable = entry.slug === "polyurethane-waterproof-coating-factory
 const isJsGradeTable = entry.slug === "polymer-cement-js-waterproof-coating-factory";
 const isNonCuringIndexTable = entry.slug === "non-curing-rubber-asphalt-waterproof-coating";
 const isPolymerAsphaltGradeTable = entry.slug === "polymer-modified-asphalt-waterproof-coating";
+const isSprayAsphaltIndexTable = entry.slug === "spraying-quick-setting-rubber-asphalt-waterproof-coating";
 const technicalDataHybrid = normalizeRows(data.technical_data_hybrid || []);
 const applicationGuide = normalizeCards(data.application_guide || []);
 const packaging = normalizeCards(data.packaging || data.packaging_oem || data.oem_packaging || []);
@@ -351,7 +352,7 @@ const breadcrumbLd = {
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <div class="mb-6 flex flex-col gap-2 border-b border-slate-100 pb-5 sm:flex-row sm:items-end sm:justify-between">
             <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Quick specifications</h2>
-            {!isPuCatalogTable && !isJsGradeTable && !isNonCuringIndexTable && !isPolymerAsphaltGradeTable && <p class="text-xs font-medium text-slate-500">Confirm configuration-dependent values in the applicable TDS.</p>}
+            {!isPuCatalogTable && !isJsGradeTable && !isNonCuringIndexTable && !isPolymerAsphaltGradeTable && !isSprayAsphaltIndexTable && <p class="text-xs font-medium text-slate-500">Confirm configuration-dependent values in the applicable TDS.</p>}
           </div>
           <dl class="grid gap-x-8 md:grid-cols-2">
             {specTable.slice(0, 8).map((row) => (
@@ -453,9 +454,9 @@ const breadcrumbLd = {
                 <tr class="border-b border-slate-200">
                   <th scope="col" class="px-6 py-4 font-black">Test Item</th>
                   {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black">Unit</th>}
-                  {!isSimpleTechnicalTable && !isPuCatalogTable && <th scope="col" class="px-6 py-4 font-black">{isJsGradeTable ? "Type I" : isNonCuringIndexTable || isPolymerAsphaltGradeTable ? "Test Condition" : "Test Method"}</th>}
-                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black">{isPuCatalogTable ? "Type I" : isJsGradeTable ? "Type II" : isNonCuringIndexTable ? "Technical Index" : isPolymerAsphaltGradeTable ? "L Grade" : "Requirement"}</th>}
-                  {!isNonCuringIndexTable && <th scope="col" class="px-6 py-4 font-black">{isPuCatalogTable ? "Type II" : isJsGradeTable ? "Type III" : isPolymerAsphaltGradeTable ? "H Grade" : "Result / Notes"}</th>}
+                  {!isSimpleTechnicalTable && !isPuCatalogTable && <th scope="col" class="px-6 py-4 font-black">{isJsGradeTable ? "Type I" : isNonCuringIndexTable || isPolymerAsphaltGradeTable || isSprayAsphaltIndexTable ? "Test Condition" : "Test Method"}</th>}
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black">{isPuCatalogTable ? "Type I" : isJsGradeTable ? "Type II" : isNonCuringIndexTable || isSprayAsphaltIndexTable ? "Technical Index" : isPolymerAsphaltGradeTable ? "L Grade" : "Requirement"}</th>}
+                  {!isNonCuringIndexTable && !isSprayAsphaltIndexTable && <th scope="col" class="px-6 py-4 font-black">{isPuCatalogTable ? "Type II" : isJsGradeTable ? "Type III" : isPolymerAsphaltGradeTable ? "H Grade" : "Result / Notes"}</th>}
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-100">
@@ -465,7 +466,7 @@ const breadcrumbLd = {
                     {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.unit || "—"}</td>}
                     {!isSimpleTechnicalTable && !isPuCatalogTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.standard || "—"}</td>}
                     {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.requirement || "—"}</td>}
-                    {!isNonCuringIndexTable && <td class="px-6 py-4 font-bold text-slate-900">{row.value || "Available on request"}</td>}
+                    {!isNonCuringIndexTable && !isSprayAsphaltIndexTable && <td class="px-6 py-4 font-bold text-slate-900">{row.value || "Available on request"}</td>}
                   </tr>
                 ))}
               </tbody>
