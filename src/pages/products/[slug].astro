@@ -161,6 +161,7 @@ const isSprayAsphaltIndexTable = entry.slug === "spraying-quick-setting-rubber-a
 const isPolyureaGradeTable = entry.slug === "spray-polyurea-waterproofing-coating";
 const isEpoxyFloorIndexTable = entry.slug === "epoxy-floor-coating-manufacturer";
 const isButylTapeIndexTable = entry.slug === "butyl-waterproof-sealing-tape-supplier";
+const isBitumenTapeIndexTable = entry.slug === "self-adhesive-bitumen-tape-wholesale";
 const technicalDataHybrid = normalizeRows(data.technical_data_hybrid || []);
 const applicationGuide = normalizeCards(data.application_guide || []);
 const packaging = normalizeCards(data.packaging || data.packaging_oem || data.oem_packaging || []);
@@ -189,7 +190,11 @@ const manualRelated = (data.related_products || []).slice(0, 4).map(rp => ({
 }));
 const relatedProducts = manualRelated.length > 0 ? manualRelated : autoRelated;
 
-const heroSpecCards = isButylTapeIndexTable ? [
+const heroSpecCards = isBitumenTapeIndexTable ? [
+  { label: "Tape Build", value: "Aluminum-faced bitumen strip", icon: Boxes },
+  { label: "Primary Detail", value: "Roof flashings and gutters", icon: Factory },
+  { label: "Reference", value: "JC/T 1070-2008", icon: Ruler },
+] : isButylTapeIndexTable ? [
   { label: "Tape Format", value: "Single-sided faced butyl tape", icon: Boxes },
   { label: "Primary Detail", value: "Metal roof laps and joints", icon: Factory },
   { label: "Reference", value: "JC/T 942-2022", icon: Ruler },
@@ -367,7 +372,7 @@ const breadcrumbLd = {
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <div class="mb-6 flex flex-col gap-2 border-b border-slate-100 pb-5 sm:flex-row sm:items-end sm:justify-between">
             <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Quick specifications</h2>
-            {!isPuCatalogTable && !isJsGradeTable && !isNonCuringIndexTable && !isPolymerAsphaltGradeTable && !isSprayAsphaltIndexTable && !isPolyureaGradeTable && !isEpoxyFloorIndexTable && !isButylTapeIndexTable && <p class="text-xs font-medium text-slate-500">Confirm configuration-dependent values in the applicable TDS.</p>}
+            {!isPuCatalogTable && !isJsGradeTable && !isNonCuringIndexTable && !isPolymerAsphaltGradeTable && !isSprayAsphaltIndexTable && !isPolyureaGradeTable && !isEpoxyFloorIndexTable && !isButylTapeIndexTable && !isBitumenTapeIndexTable && <p class="text-xs font-medium text-slate-500">Confirm configuration-dependent values in the applicable TDS.</p>}
           </div>
           <dl class="grid gap-x-8 md:grid-cols-2">
             {specTable.slice(0, 8).map((row) => (
@@ -469,9 +474,9 @@ const breadcrumbLd = {
                 <tr class="border-b border-slate-200">
                   <th scope="col" class="px-6 py-4 font-black">Test Item</th>
                   {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black">Unit</th>}
-                  {!isSimpleTechnicalTable && !isPuCatalogTable && <th scope="col" class="px-6 py-4 font-black">{isJsGradeTable ? "Type I" : isEpoxyFloorIndexTable || isButylTapeIndexTable ? "Test Basis / Condition" : isNonCuringIndexTable || isPolymerAsphaltGradeTable || isSprayAsphaltIndexTable || isPolyureaGradeTable ? "Test Condition" : "Test Method"}</th>}
-                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black">{isPuCatalogTable ? "Type I" : isJsGradeTable ? "Type II" : isNonCuringIndexTable || isSprayAsphaltIndexTable || isPolyureaGradeTable || isEpoxyFloorIndexTable || isButylTapeIndexTable ? "Technical Index" : isPolymerAsphaltGradeTable ? "L Grade" : "Requirement"}</th>}
-                  {!isNonCuringIndexTable && !isSprayAsphaltIndexTable && !isPolyureaGradeTable && !isEpoxyFloorIndexTable && !isButylTapeIndexTable && <th scope="col" class="px-6 py-4 font-black">{isPuCatalogTable ? "Type II" : isJsGradeTable ? "Type III" : isPolymerAsphaltGradeTable ? "H Grade" : "Result / Notes"}</th>}
+                  {!isSimpleTechnicalTable && !isPuCatalogTable && <th scope="col" class="px-6 py-4 font-black">{isJsGradeTable ? "Type I" : isEpoxyFloorIndexTable || isButylTapeIndexTable || isBitumenTapeIndexTable ? "Test Basis / Condition" : isNonCuringIndexTable || isPolymerAsphaltGradeTable || isSprayAsphaltIndexTable || isPolyureaGradeTable ? "Test Condition" : "Test Method"}</th>}
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black">{isPuCatalogTable ? "Type I" : isJsGradeTable ? "Type II" : isNonCuringIndexTable || isSprayAsphaltIndexTable || isPolyureaGradeTable || isEpoxyFloorIndexTable || isButylTapeIndexTable || isBitumenTapeIndexTable ? "Technical Index" : isPolymerAsphaltGradeTable ? "L Grade" : "Requirement"}</th>}
+                  {!isNonCuringIndexTable && !isSprayAsphaltIndexTable && !isPolyureaGradeTable && !isEpoxyFloorIndexTable && !isButylTapeIndexTable && !isBitumenTapeIndexTable && <th scope="col" class="px-6 py-4 font-black">{isPuCatalogTable ? "Type II" : isJsGradeTable ? "Type III" : isPolymerAsphaltGradeTable ? "H Grade" : "Result / Notes"}</th>}
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-100">
@@ -481,7 +486,7 @@ const breadcrumbLd = {
                     {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.unit || "—"}</td>}
                     {!isSimpleTechnicalTable && !isPuCatalogTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.standard || "—"}</td>}
                     {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.requirement || "—"}</td>}
-                    {!isNonCuringIndexTable && !isSprayAsphaltIndexTable && !isPolyureaGradeTable && !isEpoxyFloorIndexTable && !isButylTapeIndexTable && <td class="px-6 py-4 font-bold text-slate-900">{row.value || "Available on request"}</td>}
+                    {!isNonCuringIndexTable && !isSprayAsphaltIndexTable && !isPolyureaGradeTable && !isEpoxyFloorIndexTable && !isButylTapeIndexTable && !isBitumenTapeIndexTable && <td class="px-6 py-4 font-bold text-slate-900">{row.value || "Available on request"}</td>}
                   </tr>
                 ))}
               </tbody>
@@ -633,7 +638,7 @@ const breadcrumbLd = {
 
       {(packaging.length > 0 || loadingData.length > 0) && (
         <section id="packaging" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 tracking-tight">{isEpoxyFloorIndexTable ? "Project Supply & Documents" : isButylTapeIndexTable ? "Roll Supply & Documents" : "Packaging & OEM"}</h2>
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 tracking-tight">{isEpoxyFloorIndexTable ? "Project Supply & Documents" : isButylTapeIndexTable || isBitumenTapeIndexTable ? "Roll Supply & Documents" : "Packaging & OEM"}</h2>
           <div class={packaging.length > 0 ? "grid gap-8 lg:grid-cols-[0.8fr_1.2fr]" : "block"}>
             {packaging.length > 0 && (
               <div class="grid gap-4 sm:grid-cols-2">
