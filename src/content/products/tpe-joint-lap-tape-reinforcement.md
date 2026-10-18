@@ -1,152 +1,128 @@
 ---
-title: "TY-SHIELD™ TPE Joint & Expansion Sealing Tape"
-displayName: "TPE Joint Tape"
+title: "TPE Expansion Joint Tape | 120 mm Fleece-Edge Rolls"
+displayName: "TPE Expansion Joint Tape"
 category: "waterproof-tapes"
 product_category: "Waterproof Tapes"
 image: "https://img.tyuanwaterproof.com/products/tpe-joint-expansion-tape.webp"
 main_image: "https://img.tyuanwaterproof.com/products/tpe-joint-expansion-tape.webp"
 
-hero_description: "Professional TY-SHIELD™ TPE expansion joint tape. Featuring a high-elasticity waterproof center and reinforced fabric edges, designed for seamless movement bridging in structural joints, pipe roots, and corners."
-meta_description: "TPE expansion joint tape with a high-elasticity waterproof centre and reinforced fabric edges. Bridges movement in joints, pipe roots and corners."
+hero_description: "TPE joint lap tape with a flexible centre and fleece bonding edges for waterproofing movement joints and wall-to-floor transitions. Specify the joint detail, bonding system and roll quantity for a project quote."
+meta_description: "TPE expansion joint tape with fleece edges, 120 mm width and 10 m or 50 m roll options. Compare thickness and material indices; request a project supply quote."
 
 hero_tags:
-  - "TY-SHIELD™ Ever-Seal"
-  - "500% High Elongation"
-  - "Fabric Edge Bonding"
-  - "Structural Joint Specialist"
-  - "UV & Chemical Resistant"
-  - "OEM/ODM Available"
+  - "TPE Centre + Fleece Edges"
+  - "120 mm Standard Width"
+  - "10 m / 50 m Roll Options"
+  - "500% Elongation Index"
+  - "Joint Detail Supply"
 
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/tpe-joint-expansion-tape.webp"
-    title: "TPE Joint Sealing Tape Roll"
+    title: "Blue-centre TPE joint tape roll with white fleece bonding edges"
 
 spec_table:
-  - label: "Material Composition"
-    value: "Thermoplastic Elastomer (TPE) with Fabric Reinforcement"
-  - label: "Standard Width"
-    value: "120mm (Customizable up to 300mm)"
-  - label: "Thickness"
-    value: "1.2mm ± 0.2mm"
-  - label: "Elongation at Break"
-    value: "≥ 500%"
-  - label: "Shore A Hardness"
-    value: "50 ± 10"
-  - label: "Temperature Range"
-    value: "-20°C to +70°C"
-  - label: "Installation Method"
-    value: "Embedded in Liquid Waterproof Coating"
-  - label: "Color"
-    value: "Blue center / White fabric edges"
+  - label: "Tape construction"
+    value: "Flexible TPE centre with fleece bonding edges"
+  - label: "Standard roll width"
+    value: "120 mm"
+  - label: "Roll lengths"
+    value: "10 m or 50 m"
+  - label: "Nominal thickness"
+    value: "1.2 ± 0.2 mm"
+  - label: "Density index"
+    value: "1.0 ± 0.1 g/cm³"
+  - label: "Hardness index"
+    value: "50 ± 10 Shore A"
+  - label: "Tensile strength index"
+    value: "1 MPa"
+  - label: "Elongation at break index"
+    value: "500%"
 
 quick_facts:
-  - title: "Expansion Joint Specialist"
-    text: "Specifically engineered for joints subject to significant displacement, maintaining a watertight seal during building movement."
-  - title: "Triple-Layer Hybrid Design"
-    text: "Features a waterproof TPE core and breathable fabric side-strips that ensure maximum mechanical bonding with liquid coatings."
-  - title: "500% Ultimate Elasticity"
-    text: "Bridges structural gaps and corners with ease, absorbing high stress without tearing or losing adhesion."
-  - title: "Complete Detail System"
-    text: "Available in multiple pre-formed shapes including pipe sleeves, internal corners, and external corner caps for total system integrity."
+  - title: "Bonding edges, flexible centre"
+    text: "The fleece edges are incorporated into the specified waterproofing system while the central TPE zone spans the joint."
+  - title: "Two roll formats"
+    text: "The 120 mm tape can be specified in 10 m and 50 m rolls, allowing project teams to compare detail length and roll count."
+  - title: "Movement needs joint design"
+    text: "The 500% material elongation index does not establish an allowable installed joint movement. Check joint width and system detailing separately."
+  - title: "Details beyond straight runs"
+    text: "The product range includes corner and pipe-detail pieces; identify the shapes and quantities required in the RFQ."
 
 applications:
-  - title: "Structural & Expansion Joints"
-    text: "The primary solution for sealing heavy-duty movement joints in concrete structures and factory floors."
-  - title: "Wall-to-Floor Junctions"
-    text: "Critical reinforcement for corners in bathrooms, kitchens, and basements where leakage risk is highest."
-  - title: "Pipe & Drain Penetrations"
-    text: "Provides a flexible, airtight seal around plumbing and electrical conduits passing through slabs."
-  - title: "Internal & External Corners"
-    text: "Pre-treated reinforcement for corners, eliminating the common failure point of traditional 'hand-folded' membranes."
-  - title: "Composite Coating Systems"
-    text: "Essential accessory for JS Cementitious, Polyurethane, and Asphalt-based liquid waterproofing systems."
+  - title: "Movement joints"
+    text: "Bridges a designed gap between waterproofed building elements where the joint remains free to move."
+  - title: "Wall-to-floor transitions"
+    text: "Connects the waterproofing across inside corners and perimeter junctions in wet-area or basement details."
+  - title: "Pipe penetrations"
+    text: "Supports pipe-base detailing when a matching formed piece and compatible bonding system are selected."
+  - title: "Precast and façade joints"
+    text: "Provides a tape-format option for project-designed connections between panels or dissimilar surfaces."
 
 features:
-  - title: "TY-SHIELD™ Ever-Seal Bond"
-    text: "The fabric-reinforced edges 'lock' into the liquid coating, creating a high-strength composite that prevents peeling."
-  - title: "Seamless Movement Adaptation"
-    text: "The non-reinforced TPE center allows the tape to expand and contract freely as the structural gap changes width."
-  - title: "Chemical & Aging Resistance"
-    text: "Resistant to acids, alkalis, and industrial wastewater, ensuring long-term underground and industrial durability."
-  - title: "High-Speed Installation"
-    text: "Easy to cut, fit, and press into wet coatings. Significantly faster than traditional bitumen tape for detail areas."
-  - title: "Safe & Solvent-Free"
-    text: "Environmentally safe TPE material with no harmful odors, suitable for indoor and potable water-adjacent projects."
+  - title: "Defined two-zone construction"
+    text: "Fleece edges provide a bonding interface; the uncoated TPE centre is reserved for the joint rather than rigidly embedded across its moving span."
+  - title: "Comparable procurement indices"
+    text: "Width, roll length, thickness, density, hardness, tensile strength and elongation can be stated together in the purchase specification."
+  - title: "Detail-led supply"
+    text: "Straight tape and formed corner or pipe pieces can be discussed as one joint-detail package, with shapes confirmed against drawings."
+  - title: "System-specific bonding"
+    text: "Bonding material, edge embedment and TPE-to-TPE connections are selected for the specified substrate and waterproofing system."
 
+technical_scope: "Standard 120 mm roll format and material indices for project specification."
 technical_data:
-  - label: "Thickness"
+  - label: "Roll width"
     unit: "mm"
-    standard: "EN 1849-2"
+    standard: "Nominal roll format"
+    requirement: "120"
+  - label: "Roll length"
+    unit: "m"
+    standard: "Nominal roll options"
+    requirement: "10 / 50"
+  - label: "Tape thickness"
+    unit: "mm"
+    standard: "Nominal material index"
     requirement: "1.2 ± 0.2"
-    value: "1.2"
   - label: "Density"
     unit: "g/cm³"
-    standard: "DIN 53479"
+    standard: "Material index"
     requirement: "1.0 ± 0.1"
-    value: "1.05"
-  - label: "Tensile Strength (Center)"
-    unit: "MPa"
-    standard: "ISO 37"
-    requirement: "≥ 1.0"
-    value: "1.25"
-  - label: "Elongation at Break"
-    unit: "%"
-    standard: "ISO 37"
-    requirement: "≥ 500"
-    value: "580"
-  - label: "Hardness (Shore A)"
-    unit: "—"
-    standard: "DIN 53505"
+  - label: "Hardness"
+    unit: "Shore A"
+    standard: "Material index"
     requirement: "50 ± 10"
-    value: "52"
-  - label: "Low Temp Flexibility"
+  - label: "Tensile strength"
+    unit: "MPa"
+    standard: "Material index"
+    requirement: "1"
+  - label: "Elongation at break"
+    unit: "%"
+    standard: "Material index"
+    requirement: "500"
+  - label: "Temperature resistance"
     unit: "°C"
-    standard: "DIN 53361"
-    requirement: "-20°C, no cracks"
-    value: "Typical value; confirm with the product TDS"
-  - label: "Hydrostatic Resistance"
-    unit: "bar"
-    standard: "DIN EN 1928"
-    requirement: "≥ 1.5"
-    value: "2.5"
+    standard: "Material index"
+    requirement: "−20 to +70"
 
 application_guide:
-  - title: "Substrate Prep"
-    text: "Ensure the substrate around the joint or corner is clean, dry, and firm. Remove all loose debris and dust."
-  - title: "Base Coating Application"
-    text: "Apply a generous first coat of your selected liquid waterproof coating (JS, PU, or Asphalt) along the joint line."
-  - title: "Tape Integration"
-    text: "Place the TY-SHIELD™ TPE tape into the wet coating. Ensure the fabric edges are fully submerged in the coating."
-  - title: "Press & Smooth"
-    text: "Use a trowel or roller to press the tape firmly, removing any air pockets or wrinkles from the fabric edges."
-  - title: "Over-Coating"
-    text: "Apply the second coat of waterproofing over the entire tape, ensuring the fabric edges are completely encapsulated and the TPE center is protected."
+  - title: "Confirm the joint design"
+    text: "Check the expected movement, gap width, water exposure and protection detail before selecting tape width and bonding material."
+  - title: "Prepare both bonding zones"
+    text: "Provide sound, clean and suitably dry surfaces on both sides of the joint in accordance with the selected bonding system."
+  - title: "Bond the fleece edges"
+    text: "Set the tape across the joint without stretching it taut. Embed and press the fleece edges into the specified bonding material, leaving the central TPE zone free over the gap."
+  - title: "Complete laps and transitions"
+    text: "Detail roll-to-roll connections, corners and penetrations with the approved system method; check continuity before concealment."
+  - title: "Finish and protect"
+    text: "Complete the surrounding waterproofing and any required mechanical or traffic protection without restricting joint movement."
+installation_summary: "Select adhesives, overlap method and protection from the project waterproofing design; material elongation alone is not an installed movement rating."
 
 packaging:
-  - title: "Standard Rolls"
-    text: "Supplied in 120mm x 50m or 10m rolls. Custom widths available for large expansion joints."
-  - title: "Accessory Range"
-    text: "Pre-formed Internal Corners, External Corners, and Pipe Sleeves (S, M, L sizes) available."
-  - title: "OEM Services"
-    text: "We provide private labeling, custom roll lengths, and localized packaging for distributors."
-
-loading_data:
-  - label: "Roll Dimensions"
-    value: "120mm x 50m / 10m"
-  - label: "Carton Capacity"
-    value: "Approx. 4-8 rolls per carton (depending on length)"
-  - label: "HS Code"
-    value: "3920990000"
-
-downloads:
-  - title: "Technical Data Sheet (TDS)"
-    description: "TPE tape elasticity, chemical resistance, and hydrostatic pressure data."
-    type: "PDF"
-    href: ""
-  - title: "Detailing Guide"
-    description: "Installation instructions for pipe roots, expansion joints, and corner reinforcement."
-    type: "PDF"
-    href: ""
+  - title: "Straight rolls"
+    text: "Roll formats: 120 mm × 10 m and 120 mm × 50 m. State the required roll count and destination."
+  - title: "Formed details"
+    text: "Identify inside corners, outside corners and pipe-base pieces by drawing and quantity when requesting a combined supply."
+  - title: "Project documentation"
+    text: "Request the current supply-grade technical sheet, material sample and packing details with the quotation."
 
 related_products:
   - title: "Butyl Sealing Tape"
@@ -157,28 +133,28 @@ related_products:
     href: "/products/polymer-cement-js-waterproof-coating-factory/"
 
 faqs:
-  - question: "Why does the tape have fabric on the edges but not in the middle?"
-    answer: "The fabric provides a mechanical 'key' for the liquid coating to bond to. The center remains pure TPE without fabric to allow for maximum, uninhibited expansion during structural movement."
-  - question: "Can I use this for swimming pools?"
-    answer: "Yes. Our TPE tape is chemically resistant and highly durable, making it ideal for joints in pools, tanks, and wastewater facilities when used with compatible coatings."
-  - question: "Is it compatible with all liquid coatings?"
-    answer: "It is compatible with most water-based (JS) and solvent-based (PU/Asphalt) coatings. We recommend a small patch test for specialized industrial coatings."
+  - question: "What is the difference between 500% elongation and joint movement capacity?"
+    answer: "Elongation at break describes the tape material in a tensile test. Installed movement depends on the free TPE zone, joint geometry, bond width and waterproofing detail; it must be designed for the project."
+  - question: "Which roll format should I include in an RFQ?"
+    answer: "Available quotation formats are 120 mm × 10 m and 120 mm × 50 m rolls. Send the total joint length, detail drawing, quantity and destination so the roll count and packing can be confirmed."
+  - question: "Can the tape be used with any waterproofing coating?"
+    answer: "The fleece edges must bond reliably to the selected system, and the centre must remain free to accommodate the designed joint. State the coating or adhesive, substrate and exposure conditions for compatibility review."
+  - question: "Are corner and pipe-detail pieces available?"
+    answer: "The product range illustrates formed corner and pipe-base details. Include their shapes, sizes and quantities with the straight-roll request to confirm the project supply set."
 ---
 
-## TY-SHIELD™ TPE Joint & Expansion Sealing Tape
+## TPE expansion joint tape for waterproofing details
 
-**TY-SHIELD™ TPE Joint Sealing Tape** is a high-performance expansion joint accessory designed for the most demanding structural waterproofing projects. Engineered with a multi-layer hybrid structure, it features a chemically resistant Thermoplastic Elastomer (TPE) core and stitch-bonded fabric wings for ultimate integration with liquid-applied membranes.
+Tianyuan TPE joint lap tape combines a flexible blue centre with white fleece bonding edges. The straight tape is listed in **120 mm × 10 m** and **120 mm × 50 m** rolls. It is a component for the designed waterproofing of movement joints, wall-to-floor junctions and selected penetrations—not a pressure-sensitive repair tape.
 
-### Mastering Structural Movement
-Modern architecture relies on the building's ability to "breathe" through expansion joints. Traditional reinforcement often fails because it is too rigid. Our **TY-SHIELD™ Ever-Seal technology** solves this by using a high-elastic TPE center that provides over **500% elongation**. This allows the tape to bridge moving gaps and cracks without losing its watertight integrity.
+### Specify the joint, then the tape
 
-### Engineered for Composite Bonding
-The genius of this design lies in its fabric-reinforced edges. Unlike plain rubber tapes that can peel away, the fabric wings of the TY-SHIELD™ tape become an integral part of the liquid coating system. When the coating cures, it "locks" the fabric into the concrete substrate, ensuring that the seal at the corners, pipe roots, and joints remains permanent and airtight.
+A procurement schedule should state the joint location, opening width, expected movement, substrate, water exposure, bonding system and required protection. The **500% elongation at break** shown in the material indices is useful for material comparison, but it is not a blanket allowance for 500% movement in an installed joint. Tape width and the free central zone must suit the approved detail.
 
-### Complete Detail Solution
-*   **500% Elasticity**: Perfectly bridges expansion joints and structural cracks.
-*   **Hybrid Sealing**: Combines TPE flexibility with fabric bonding strength.
-*   **Universal Detail Support**: Available in pre-formed internal/external corners and pipe sleeves.
-*   **Broad Chemical Resistance**: Resistant to soil acids, alkalis, and UV exposure.
+### A bondable edge on each side
 
-Tianyuan supports global distributors and contractors with **OEM private labeling and customized roll sizes**. TY-SHIELD™ TPE tape is designed for detail reinforcement and joint-sealing applications; final system performance depends on the substrate, detailing, installation, and project requirements.
+The fleece edges are incorporated into the chosen waterproofing or bonding material on sound substrate either side of the gap. The central TPE strip spans the moving section. This separation matters: coating or adhesive should secure the edges without locking the movement zone to the substrate. Laps, corners and pipe penetrations need their own compatible joining and protection detail.
+
+### Information for a bulk quotation
+
+Send the **roll length and quantity**, joint drawing or detail schedule, any formed corner or pipe-piece quantities, specified adhesive or coating, destination and documentation requirements. A supply-grade technical sheet and sample can then be matched to the proposed system and order.
