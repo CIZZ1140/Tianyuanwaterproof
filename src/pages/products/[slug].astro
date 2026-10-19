@@ -695,9 +695,9 @@ const breadcrumbLd = {
             </div>
             <div class="divide-y divide-slate-100">
               {supplyInfo.map(row => (
-                <div class="grid grid-cols-[0.3fr_0.7fr] px-6 py-4 text-sm transition hover:bg-blue-50/30">
-                  <div class="font-black text-blue-800 pl-4">{row.title}</div>
-                  <div class="font-medium text-slate-600">{row.text}</div>
+                <div class="grid grid-cols-1 gap-1.5 px-4 py-4 text-sm transition hover:bg-blue-50/30 sm:grid-cols-[0.3fr_0.7fr] sm:gap-0 sm:px-6">
+                  <div class="min-w-0 font-black text-blue-800 sm:pl-4">{row.title}</div>
+                  <div class="min-w-0 font-medium leading-6 text-slate-600 sm:leading-normal">{row.text}</div>
                 </div>
               ))}
             </div>
