@@ -120,6 +120,15 @@ packaging:
     text: "Request matched resin and hardener kits, colored quartz, primer, repair and leveling materials, and any seal coat as one project package. State floor area, target thickness, finish and destination port."
   - title: "Documents and Sample Approval"
     text: "Request the offered grade's current TDS, SDS, mixing ratio, packaging, shelf life and relevant test records. Approve a representative color-and-texture sample before bulk supply."
+downloads:
+  - title: "Epoxy Color Sand Flooring TDS"
+    description: "Request current data for the offered resin and hardener system."
+    type: "PDF"
+    href: ""
+  - title: "Color Sand Floor Application Guide"
+    description: "Request substrate, mixing and layer-sequence instructions."
+    type: "PDF"
+    href: ""
 related_products:
   - title: "Polyurethane Waterproof Coating"
     image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"

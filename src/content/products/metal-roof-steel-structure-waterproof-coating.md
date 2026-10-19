@@ -73,6 +73,15 @@ technical_data:
     requirement: "≥ 1.0"
     value: "1.6"
 
+downloads:
+  - title: "Metal Roof Waterproof Coating TDS"
+    description: "Request product data for the selected roof coating."
+    type: "PDF"
+    href: ""
+  - title: "Metal Roof Detailing Guide"
+    description: "Request seam, fastener and substrate preparation details."
+    type: "PDF"
+    href: ""
 related_products:
   - title: "Butyl Sealing Tape"
     image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"

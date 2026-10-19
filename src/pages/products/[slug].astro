@@ -741,11 +741,11 @@ const breadcrumbLd = {
                   <div class="h-10 w-10 flex items-center justify-center rounded-xl bg-red-50 text-red-600 shadow-inner"><FileText size={20} /></div>
                   <div>
                     <h3 class="text-sm font-black text-slate-900 leading-tight">{doc.title}</h3>
-                    <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mt-1">Ready for PDF Request</p>
+                    <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mt-1">{doc.href && doc.href !== "#" ? "PDF available" : "Request via contact form"}</p>
                   </div>
                 </div>
                 <a 
-                  href={doc.href && doc.href !== "#" ? doc.href : "/contact/"} 
+                  href={doc.href && doc.href !== "#" ? doc.href : contactHref(`Request ${doc.title}`)}
                   target={doc.href && doc.href !== "#" ? "_blank" : "_self"}
                   class="px-5 py-2 rounded-xl bg-white border border-slate-200 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:border-blue-300 hover:text-blue-700 transition shadow-sm"
                 >

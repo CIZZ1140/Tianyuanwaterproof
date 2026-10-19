@@ -105,6 +105,15 @@ packaging:
     text: "Specify thickness, width, length, foil finish, color, rolls per carton and destination port. Agree palletization and private-label artwork against an approved sample."
   - title: "Technical Documents & Samples"
     text: "Request the offered grade's TDS, SDS, substrate test and facing sample. State whether the tape will be exposed, overlaid or used on an existing bitumen roof."
+downloads:
+  - title: "Bitumen Flashing Tape TDS"
+    description: "Request current data for the selected aluminum-faced tape."
+    type: "PDF"
+    href: ""
+  - title: "Flashing Tape Application Guide"
+    description: "Request substrate and roof-detail installation instructions."
+    type: "PDF"
+    href: ""
 related_products:
   - title: "Butyl Rubber Sealing Tape"
     image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"

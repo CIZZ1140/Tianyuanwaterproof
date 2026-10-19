@@ -186,6 +186,15 @@ packaging:
     text: "Provide the grade, coated area, target thickness, substrate and destination port. Request both component quantities, current pack sizes, spray settings and shipment arrangement in one quotation."
   - title: "Request the Correct Project Documents"
     text: "Ask for the current grade-specific TDS, safety data, test report and installation instructions. If the project cites GB/T 23446-2025 or a local approval, confirm the applicable type and available evidence for the offered formulation."
+downloads:
+  - title: "Spray Polyurea Technical Data Sheet"
+    description: "Request current data for the offered pure or hybrid system."
+    type: "PDF"
+    href: ""
+  - title: "Polyurea Spray Application Guide"
+    description: "Request mixing, spray-equipment and substrate instructions."
+    type: "PDF"
+    href: ""
 related_products:
   - title: "Spray Quick-Setting Rubber Asphalt Coating"
     image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt-v2.webp"

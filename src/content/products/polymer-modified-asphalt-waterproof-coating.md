@@ -112,6 +112,15 @@ packaging:
     text: "Specify L or H grade, required pail size, quantity and destination port when requesting a quote. Packing, pallet layout and labeling can then be confirmed for the actual order."
   - title: "Request Project Documents"
     text: "Ask for the technical data, safety data and relevant test documentation for the selected grade and project requirement."
+downloads:
+  - title: "Polymer-Modified Asphalt Coating TDS"
+    description: "Request the technical data for the selected L or H grade."
+    type: "PDF"
+    href: ""
+  - title: "Coating Application Guide"
+    description: "Request substrate, thickness and application details for the proposed system."
+    type: "PDF"
+    href: ""
 related_products:
   - title: "SBS Bitumen Membrane"
     image: "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane.webp"

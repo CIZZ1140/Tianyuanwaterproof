@@ -124,6 +124,15 @@ packaging:
   - title: "Project documentation"
     text: "Request the current supply-grade technical sheet, material sample and packing details with the quotation."
 
+downloads:
+  - title: "TPE Joint Tape TDS"
+    description: "Request current material indices and dimensions for the offered tape."
+    type: "PDF"
+    href: ""
+  - title: "TPE Joint Installation Guide"
+    description: "Request bonding and movement-joint detailing instructions."
+    type: "PDF"
+    href: ""
 related_products:
   - title: "Butyl Sealing Tape"
     image: "https://img.tyuanwaterproof.com/products/butyl-tape.webp"

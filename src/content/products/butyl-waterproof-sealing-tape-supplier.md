@@ -105,6 +105,15 @@ packaging:
     text: "Quote by facing, width, thickness, roll length, color, roll count and carton count. Confirm the chosen combination before setting pallet and container quantities."
   - title: "Technical Documents and Samples"
     text: "Request the offered grade's TDS, SDS, product classification, test record and substrate-compatibility information. Approve a roll sample and facing appearance for the project."
+downloads:
+  - title: "Butyl Sealing Tape TDS"
+    description: "Request current dimensions and performance data for the offered tape."
+    type: "PDF"
+    href: ""
+  - title: "Butyl Tape Application Guide"
+    description: "Request substrate preparation and joint-sealing instructions."
+    type: "PDF"
+    href: ""
 related_products:
   - title: "Self-Adhesive Bitumen Tape"
     image: "https://img.tyuanwaterproof.com/products/bitumen-tape.webp"

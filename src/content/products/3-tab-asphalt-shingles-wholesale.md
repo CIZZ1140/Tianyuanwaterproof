@@ -119,6 +119,15 @@ packaging:
     text: "Approve a physical granule-color sample; screen and printed colors may vary from production batches."
   - title: "Export Quote"
     text: "State destination, requested color, bundle volume, pallet requirements and project standard in the RFQ."
+downloads:
+  - title: "3-Tab Asphalt Shingles TDS"
+    description: "Request current dimensions, packing and project test data."
+    type: "PDF"
+    href: ""
+  - title: "3-Tab Shingle Installation Guide"
+    description: "Request the roof-system fixing and detailing instructions."
+    type: "PDF"
+    href: ""
 related_products:
   - title: "Laminated Asphalt Shingles"
     description: "Compare a dimensional, multilayer shingle appearance with the regular 3-tab profile."

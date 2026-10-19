@@ -133,6 +133,15 @@ packaging:
     text: "State the project area, target thickness, spray equipment model and destination port. Confirm component ratio, pail or drum sizes, total quantities and shipment arrangement in the quotation."
   - title: "Request the Installation Package"
     text: "Ask for grade-specific technical and safety documents, component identification, equipment settings and project test requirements before site work."
+downloads:
+  - title: "Spray Rubber Asphalt Coating TDS"
+    description: "Request component and performance data for the proposed grade."
+    type: "PDF"
+    href: ""
+  - title: "Spray System Application Guide"
+    description: "Request equipment, substrate and detailing instructions."
+    type: "PDF"
+    href: ""
 related_products:
   - title: "Non-Curing Rubber Asphalt Coating"
     image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v2.webp"
