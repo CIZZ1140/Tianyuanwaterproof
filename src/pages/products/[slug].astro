@@ -649,9 +649,9 @@ const breadcrumbLd = {
       {(packaging.length > 0 || loadingData.length > 0) && (
         <section id="packaging" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 tracking-tight">{isEpoxyFloorIndexTable ? "Project Supply & Documents" : isButylTapeIndexTable || isBitumenTapeIndexTable || isTpeTapeIndexTable ? "Roll Supply & Documents" : "Packaging & OEM"}</h2>
-          <div class={packaging.length > 0 ? "grid gap-8 lg:grid-cols-[0.8fr_1.2fr]" : "block"}>
+          <div class={packaging.length > 0 && loadingData.length > 0 ? "grid gap-8 lg:grid-cols-[0.8fr_1.2fr]" : "block"}>
             {packaging.length > 0 && (
-              <div class="grid gap-4 sm:grid-cols-2">
+              <div class={loadingData.length > 0 ? "grid gap-4 sm:grid-cols-2" : packaging.length >= 4 ? "grid gap-4 sm:grid-cols-2 lg:grid-cols-4" : packaging.length === 3 ? "grid gap-4 sm:grid-cols-2 lg:grid-cols-3" : "grid gap-4 sm:grid-cols-2"}>
                 {packaging.slice(0, 4).map((item, index) => {
                   const Icon = packagingIcons[index % packagingIcons.length];
                   return (
