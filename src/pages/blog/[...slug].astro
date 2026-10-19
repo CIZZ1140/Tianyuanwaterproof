@@ -143,7 +143,7 @@ const faqJsonLd = validArticle?.data.faqs?.length
         <section class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
           <div class="mx-auto max-w-[1680px]">
             <div class="grid gap-10 xl:grid-cols-[minmax(0,1fr)_320px]">
-              <article class="mx-auto w-full max-w-5xl">
+              <article class="mx-auto w-full min-w-0 max-w-5xl">
                 <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-9 lg:p-12">
                   <div class="flex flex-wrap items-center gap-3">
                     <span class={`rounded-full px-3 py-1 text-xs font-bold ${categoryMeta[validArticle.data.category].className}`}>
@@ -180,7 +180,7 @@ const faqJsonLd = validArticle?.data.faqs?.length
 
                   <div
                     data-article-content
-                    class="mt-10 text-base leading-8 text-slate-700 [&_a]:font-bold [&_a]:text-brand [&_a]:underline [&_a]:decoration-brand/40 [&_a]:underline-offset-4 hover:[&_a]:text-navy [&_blockquote]:my-8 [&_blockquote]:border-l-4 [&_blockquote]:border-[#F58A1F] [&_blockquote]:bg-orange-50 [&_blockquote]:px-5 [&_blockquote]:py-4 [&_blockquote]:text-slate-700 [&_code]:rounded [&_code]:bg-slate-100 [&_code]:px-1.5 [&_code]:py-1 [&_code]:text-sm [&_h2]:mt-12 [&_h2]:scroll-mt-28 [&_h2]:text-3xl [&_h2]:font-black [&_h2]:leading-tight [&_h2]:text-[#102033] [&_h3]:mt-9 [&_h3]:scroll-mt-28 [&_h3]:text-2xl [&_h3]:font-black [&_h3]:text-[#102033] [&_img]:my-8 [&_img]:h-auto [&_img]:w-full [&_img]:rounded-2xl [&_img]:border [&_img]:border-slate-200 [&_img]:shadow-sm [&_img]:object-contain [&_li]:my-2 [&_ol]:my-6 [&_ol]:list-decimal [&_ol]:pl-6 [&_p]:mt-5 [&_strong]:font-black [&_table]:my-8 [&_table]:w-full [&_table]:border-collapse [&_td]:border [&_td]:border-slate-200 [&_td]:p-3 [&_th]:border [&_th]:border-slate-200 [&_th]:bg-slate-50 [&_th]:p-3 [&_th]:text-left [&_ul]:my-6 [&_ul]:list-disc [&_ul]:pl-6"
+                    class="mt-10 min-w-0 overflow-x-auto text-base leading-8 text-slate-700 [&_a]:font-bold [&_a]:text-brand [&_a]:underline [&_a]:decoration-brand/40 [&_a]:underline-offset-4 hover:[&_a]:text-navy [&_blockquote]:my-8 [&_blockquote]:border-l-4 [&_blockquote]:border-[#F58A1F] [&_blockquote]:bg-orange-50 [&_blockquote]:px-5 [&_blockquote]:py-4 [&_blockquote]:text-slate-700 [&_code]:rounded [&_code]:bg-slate-100 [&_code]:px-1.5 [&_code]:py-1 [&_code]:text-sm [&_h2]:mt-12 [&_h2]:scroll-mt-28 [&_h2]:text-3xl [&_h2]:font-black [&_h2]:leading-tight [&_h2]:text-[#102033] [&_h3]:mt-9 [&_h3]:scroll-mt-28 [&_h3]:text-2xl [&_h3]:font-black [&_h3]:text-[#102033] [&_img]:my-8 [&_img]:h-auto [&_img]:w-full [&_img]:rounded-2xl [&_img]:border [&_img]:border-slate-200 [&_img]:shadow-sm [&_img]:object-contain [&_li]:my-2 [&_ol]:my-6 [&_ol]:list-decimal [&_ol]:pl-6 [&_p]:mt-5 [&_strong]:font-black [&_table]:my-8 [&_table]:w-full [&_table]:border-collapse [&_td]:border [&_td]:border-slate-200 [&_td]:p-3 [&_th]:border [&_th]:border-slate-200 [&_th]:bg-slate-50 [&_th]:p-3 [&_th]:text-left [&_ul]:my-6 [&_ul]:list-disc [&_ul]:pl-6"
                   >
                     <Content />
                   </div>
