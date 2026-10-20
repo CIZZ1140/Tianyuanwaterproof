@@ -383,7 +383,7 @@ const breadcrumbLd = {
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <div class="mb-6 flex flex-col gap-2 border-b border-slate-100 pb-5 sm:flex-row sm:items-end sm:justify-between">
             <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Quick specifications</h2>
-            {!isPuCatalogTable && !isJsGradeTable && !isNonCuringIndexTable && !isPolymerAsphaltGradeTable && !isSprayAsphaltIndexTable && !isPolyureaGradeTable && !isEpoxyFloorIndexTable && !isButylTapeIndexTable && !isBitumenTapeIndexTable && !isTpeTapeIndexTable && !isThreeTabShingleIndexTable && !isLaminatedShingleIndexTable && <p class="text-xs font-medium text-slate-500">Confirm configuration-dependent values in the applicable TDS.</p>}
+            {!isPuCatalogTable && !isJsGradeTable && !isNonCuringIndexTable && !isPolymerAsphaltGradeTable && !isSprayAsphaltIndexTable && !isPolyureaGradeTable && !isEpoxyFloorIndexTable && !isButylTapeIndexTable && !isBitumenTapeIndexTable && !isTpeTapeIndexTable && !isThreeTabShingleIndexTable && !isLaminatedShingleIndexTable && entry.slug !== "geotextile-fabric-manufacturer" && <p class="text-xs font-medium text-slate-500">Confirm configuration-dependent values in the applicable TDS.</p>}
           </div>
           <dl class="grid gap-x-8 md:grid-cols-2">
             {specTable.slice(0, 8).map((row) => (
