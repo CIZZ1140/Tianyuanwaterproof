@@ -135,9 +135,9 @@ const mainImage = normalizeAsset(data.main_image || data.image);
 const gallery = normalizeGallery(data.gallery || []);
 const initialImage = gallery.length > 0 ? gallery[0].image : mainImage;
 const mainImageW = data.image_width || 1254;
-// Only R2-hosted product images ship a -640 sibling. Appending the suffix to a
-// local asset such as /placeholder.webp would request a file that never exists.
-const mainImage640 = initialImage.startsWith("https://img.tyuanwaterproof.com/")
+// JS coating currently has no 640px derivative in R2; use its original image
+// on mobile until that derivative is uploaded.
+const mainImage640 = initialImage.startsWith("https://img.tyuanwaterproof.com/") && entry.slug !== "polymer-cement-js-waterproof-coating-factory"
   ? initialImage.replace(/\.(webp|jpg|jpeg|png)$/i, "-640.$1")
   : null;
 const mainImageSrcset = mainImage640
@@ -383,7 +383,6 @@ const breadcrumbLd = {
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <div class="mb-6 flex flex-col gap-2 border-b border-slate-100 pb-5 sm:flex-row sm:items-end sm:justify-between">
             <h2 class="text-xl font-black text-slate-950 sm:text-2xl">Quick specifications</h2>
-            {!isPuCatalogTable && !isJsGradeTable && !isNonCuringIndexTable && !isPolymerAsphaltGradeTable && !isSprayAsphaltIndexTable && !isPolyureaGradeTable && !isEpoxyFloorIndexTable && !isButylTapeIndexTable && !isTpeTapeIndexTable && !isThreeTabShingleIndexTable && !isLaminatedShingleIndexTable && !["geotextile-fabric-manufacturer", "hdpe-geomembrane-liner-manufacturer", "artistic-asphalt-shingles-supplier", "metal-roof-steel-structure-waterproof-coating"].includes(entry.slug) && <p class="text-xs font-medium text-slate-500">Confirm configuration-dependent values in the applicable TDS.</p>}
           </div>
           <dl class="grid gap-x-8 md:grid-cols-2">
             {specTable.slice(0, 8).map((row) => (
