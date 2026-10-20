@@ -6,7 +6,7 @@ product_category: "Geotextile Nonwoven"
 image: "https://img.tyuanwaterproof.com/products/geotextile-nonwoven.webp"
 main_image: "https://img.tyuanwaterproof.com/products/geotextile-nonwoven.webp"
 hero_description: "Specify needle-punched PP or PET nonwoven geotextile rolls for soil separation, filtration, drainage and geomembrane cushioning. Send your target mass, hydraulic and strength requirements for a project quotation."
-meta_description: "Source PP or PET needle-punched nonwoven geotextile rolls for filtration, separation and liner protection. Compare 200–500 g/m² reference grades and request a project quote."
+meta_description: "PP or PET needle-punched nonwoven geotextile rolls for filtration, separation and liner protection. Compare 200–500 g/m² reference grades and request a quote."
 hero_tags:
   - "PP or PET Staple Fiber"
   - "100–800 g/m² Options"

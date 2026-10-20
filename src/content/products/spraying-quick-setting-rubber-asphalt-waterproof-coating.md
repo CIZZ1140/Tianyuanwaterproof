@@ -150,7 +150,7 @@ related_products:
     image: "https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-coating-v2.webp"
     href: "/products/polymer-modified-asphalt-waterproof-coating/"
   - title: "Spray Polyurea Coating"
-    image: "https://img.tyuanwaterproof.com/products/spray-polyurea-waterproofing-coating.webp"
+    image: "https://img.tyuanwaterproof.com/products/spray-polyurea-coating-v3.webp"
     href: "/products/spray-polyurea-waterproofing-coating/"
 faqs:
   - question: "What is supplied with the A+B spray system?"

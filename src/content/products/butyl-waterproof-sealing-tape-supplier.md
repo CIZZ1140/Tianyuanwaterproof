@@ -119,7 +119,7 @@ related_products:
     image: "https://img.tyuanwaterproof.com/products/bitumen-tape.webp"
     href: "/products/self-adhesive-bitumen-tape-wholesale/"
   - title: "Metal Roof Waterproof Coating"
-    image: "https://img.tyuanwaterproof.com/products/metal-roof-waterproof-coating.webp"
+    image: "https://img.tyuanwaterproof.com/products/metal-roof-acrylic-coating.webp"
     href: "/products/metal-roof-steel-structure-waterproof-coating/"
   - title: "EPDM Waterproofing Membrane"
     image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
