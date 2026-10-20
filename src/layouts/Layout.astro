@@ -177,6 +177,7 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 				// (floating button, CTA, footer, product pages) - present and future.
 				function fireWhatsAppConversion() {
 					if (!WHATSAPP_CONV_LABEL) return;
+					loadAnalytics();
 					gtag('event', 'conversion', {
 						send_to: GOOGLE_ADS_ID + '/' + WHATSAPP_CONV_LABEL
 					});

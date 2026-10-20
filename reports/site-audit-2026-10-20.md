@@ -13,6 +13,7 @@
 1. The JS polymer-cement coating page referenced a nonexistent `js-polymer-cement-coating-v2-640.webp` in both its mobile image preload and `srcset`. The original image remains valid; mobile now uses it directly until a 640px derivative is uploaded.
 2. Eleven product pages outside the previous 16-page optimization batch still displayed the generic buyer-facing note “Confirm configuration-dependent values in the applicable TDS.” Removed the note from the shared product template. Specification rows and download/contact actions remain.
 3. Astro's static checker previously reported 34 errors. Added types to the inquiry script and product/category mappings, and excluded the unused, UTF-16 root-level `clean_slug.astro` draft from the checker. The checker now reports zero errors. The form's submission behavior and page layouts were not changed.
+4. WhatsApp conversion clicks could be queued while the lazy Google tag had not yet loaded. A WhatsApp click now starts loading the tag before queuing the Ads and GA4 events. This improves delivery for quick clicks; the recorded conversion still needs confirmation in the connected Ads/analytics account.
 
 ## Checks passed
 
@@ -30,7 +31,7 @@
 - **Response-time claims conflict.** The contact form says “within 1 hour during business days”; the AJAX success message says “within 1 business day”; homepage data says “24/7 Quick Response”; the SBS page says “within 2 working hours”; a market blog promises a quotation within 24 hours. Confirm the actual service level before unifying these buyer-facing claims.
 - **Two placeholder gallery images remain:** metal-roof coating and pre-applied HDPE membrane. The metal-roof image was intentionally deferred pending a supplied replacement. Both require product-accurate imagery before removal or replacement.
 - The site makes broad certification and factory-capacity claims. This audit verified rendering, not the underlying certificates, current production capacity, or every historical product parameter. These require factory documentation before factual changes.
-- Formspree delivery, Turnstile completion, actual phone-browser behavior, GSC indexing and Google Ads conversion tracking were not verified by a live test submission or account-data review.
+- Formspree delivery, Turnstile completion, actual phone-browser behavior, GSC indexing and recorded Google Ads conversions were not verified by a live test submission or account-data review.
 
 ## Deployment
 
