@@ -40,7 +40,7 @@ const categoryOrder = [
 // 3. Process Products for UI
 const processedProducts = products.map(p => {
   const categoryId = p.data.category || "bitumen-membranes";
-  const categoryLabel = categoryMapping[categoryId] || "Bitumen Membranes";
+  const categoryLabel = categoryMapping[categoryId as keyof typeof categoryMapping] || "Bitumen Membranes";
   
   const isFullWidthProduct = [
     "sbs-bitumen-waterproofing-membrane-manufacturer",

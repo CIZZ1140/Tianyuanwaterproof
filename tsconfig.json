@@ -8,5 +8,6 @@
       "@data/*": ["src/data/*"],
       "@/*": ["src/*"]
     }
-  }
+  },
+  "exclude": ["clean_slug.astro"]
 }

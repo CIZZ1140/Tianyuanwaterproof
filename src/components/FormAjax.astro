@@ -10,13 +10,17 @@
 -->
 <script>
   (function () {
-    var forms = document.querySelectorAll('form[data-ajax]');
+    const forms = document.querySelectorAll<HTMLFormElement>('form[data-ajax]');
+    const trackingWindow = window as Window & {
+      __track?: (name: string, params: Record<string, string>) => void;
+      turnstile?: { reset: (widget?: HTMLElement) => void };
+    };
 
-    function clearMessages(form) {
+    function clearMessages(form: HTMLFormElement) {
       form.querySelectorAll('.form-ajax-error').forEach(function (el) { el.remove(); });
     }
 
-    function showError(form, message) {
+    function showError(form: HTMLFormElement, message: string) {
       clearMessages(form);
       var box = document.createElement('p');
       box.className = 'form-ajax-error mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700';
@@ -24,13 +28,13 @@
       box.textContent = message;
       form.prepend(box);
       // Turnstile tokens expire (~5 min); force a fresh challenge after a server-side rejection.
-      if (window.turnstile) {
-        var widget = form.querySelector('.cf-turnstile');
-        if (widget) window.turnstile.reset(widget);
+      if (trackingWindow.turnstile) {
+        const widget = form.querySelector<HTMLElement>('.cf-turnstile');
+        if (widget) trackingWindow.turnstile.reset(widget);
       }
     }
 
-    function showSuccess(form) {
+    function showSuccess(form: HTMLFormElement) {
       var wrap = document.createElement('div');
       wrap.className = 'rounded-2xl border border-emerald-200 bg-emerald-50 p-8 text-center';
       wrap.setAttribute('role', 'status');
@@ -46,18 +50,16 @@
       form.style.display = 'none';
     }
 
-    function fire(form, name, extra) {
+    function fire(form: HTMLFormElement, name: string, extra: Record<string, string> = {}) {
       var fd = new FormData(form);
-      var params = {
-        category: fd.get('Product Interest') || fd.get('category') || '',
-        product: fd.get('Specific Product') || fd.get('Product') || '',
-        intent: fd.get('Inquiry Intent') || 'contact_form',
-        source: fd.get('Source Page') || window.location.pathname
+      const params: Record<string, string> = {
+        category: String(fd.get('Product Interest') || fd.get('category') || ''),
+        product: String(fd.get('Specific Product') || fd.get('Product') || ''),
+        intent: String(fd.get('Inquiry Intent') || 'contact_form'),
+        source: String(fd.get('Source Page') || window.location.pathname)
       };
-      if (extra) {
-        for (var k in extra) params[k] = extra[k];
-      }
-      if (typeof window.__track === 'function') window.__track(name, params);
+      Object.assign(params, extra);
+      trackingWindow.__track?.(name, params);
     }
 
     forms.forEach(function (form) {
@@ -67,7 +69,7 @@
         e.preventDefault();
         if (form.dataset.sending) return false;
         form.dataset.sending = '1';
-        var btn = form.querySelector('button[type="submit"]');
+        var btn = form.querySelector<HTMLButtonElement>('button[type="submit"]');
         if (btn) btn.disabled = true;
         clearMessages(form);
 
@@ -85,7 +87,7 @@
             return res.json().catch(function () { return null; }).then(function (j) {
               var msg = 'Submission failed. Please try again.';
               if (j && j.errors && j.errors.length) {
-                var joined = j.errors.map(function (x) { return x.message; }).filter(Boolean).join('; ');
+                var joined = (j.errors as Array<{ message: string }>).map((x) => x.message).filter(Boolean).join('; ');
                 if (joined) msg = joined;
               } else if (j && j.error) {
                 msg = String(j.error);

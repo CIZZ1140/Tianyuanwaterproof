@@ -37,7 +37,7 @@ const groupedProducts = categoryOrder.map(label => {
   const items = products
     .filter(p => {
       const categoryId = p.data.category || "bitumen-membranes";
-      return (categoryMapping[categoryId] || "Bitumen Membranes") === label;
+      return (categoryMapping[categoryId as keyof typeof categoryMapping] || "Bitumen Membranes") === label;
     })
     .map(p => ({
       title: p.data.title,
