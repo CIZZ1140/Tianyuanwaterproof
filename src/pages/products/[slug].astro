@@ -431,7 +431,7 @@ const breadcrumbLd = {
       {hasBody && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-12 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-10 tracking-tight">Product overview</h2>
-          <div class="prose prose-slate max-w-none overflow-x-auto prose-headings:font-black prose-headings:text-slate-950 prose-p:text-slate-600 prose-p:leading-8 prose-img:rounded-3xl prose-img:shadow-xl prose-table:rounded-xl prose-table:overflow-hidden prose-table:border prose-table:border-slate-100 prose-th:bg-slate-50 prose-th:font-black prose-hr:my-12 prose-hr:border-slate-100">
+          <div class="product-editorial-content prose prose-slate max-w-none overflow-x-auto prose-headings:font-black prose-headings:text-slate-950 prose-p:text-slate-600 prose-p:leading-8 prose-img:rounded-3xl prose-img:shadow-xl prose-table:rounded-xl prose-table:overflow-hidden prose-table:border prose-table:border-slate-100 prose-th:bg-slate-50 prose-th:font-black prose-hr:my-12 prose-hr:border-slate-100">
             <Content />
           </div>
         </section>
@@ -938,6 +938,9 @@ const breadcrumbLd = {
     </script>
     <style is:global>
       .gallery-thumb.active { border-color: #3b82f6 !important; background-color: #eff6ff !important; }
+      @media (max-width: 639px) {
+        .product-editorial-content table { display: block; max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; }
+      }
     </style>
   </main>
 </Layout>

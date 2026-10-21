@@ -4,7 +4,7 @@ displayName: "TPO Waterproofing Membrane"
 category: "polymer-membranes"
 featured: true
 order: 90
-meta_description: "TPO membrane manufacturer. White cool-roof surface (SRI 0.85), hot-air welded seams, -40°C flexibility, H/L/P types 1.2-2.0mm. Factory OEM wholesale."
+meta_description: "TPO roofing membrane manufacturer with H/L/P configurations and hot-air welded seams. Request product-specific technical data and export supply options."
 main_image: "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-white-roll-main.webp"
 image: "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-white-roll-main.webp"
 
@@ -28,12 +28,12 @@ gallery:
 technical_scope: "TPO, Type P (Reinforced), 1.5mm, White Surface (Representative Configuration)"
 technical_disclaimer: "Values shown apply to the stated product configuration. Other types (H / L / P), thicknesses (1.2mm / 1.5mm / 2.0mm), colors, and reinforcement options may have different performance values. GB 27789-2011 is the current edition; confirm the applicable product TDS and batch test report before specification or procurement."
 
-hero_description: "TY-SHIELD™ TPO (Thermoplastic Polyolefin) waterproofing membrane — a hot-air weldable, single-ply polymer sheet for exposed roofing and sustainable infrastructure. White surfaces deliver a solar reflective index of 0.85 or higher; seams are fused by hot-air welding within a +400°C to +620°C window for monolithic, leak-free joints. Available in H (homogeneous), L (fabric-backed), and P (polyester-reinforced) types across 1.2mm, 1.5mm, and 2.0mm thicknesses. Confirm the applicable environmental, fire, and project requirements before specification."
+hero_description: "TPO (Thermoplastic Polyolefin) waterproofing membrane is a hot-air weldable single-ply sheet for roofing systems. Available configurations include homogeneous, fabric-backed and reinforced sheets. Confirm the product-specific thickness, reinforcement, backing and test documentation for the proposed roof assembly. Reflective performance and welding settings must be verified for the supplied product."
 
 hero_tags:
   - "Hot-Air Weldable"
-  - "+400–620°C Welding Window"
-  - "SRI 0.85 White Surface"
+  - "Trial-Weld Verification"
+  - "White Surface Option"
   - "-40°C Flexibility"
   - "H / L / P Types"
   - "1.2mm / 1.5mm / 2.0mm"
@@ -54,7 +54,7 @@ spec_table:
   - label: "Low Temp Flexibility"
     value: "-40°C, no crack"
   - label: "Seam Welding"
-    value: "Hot-air welding, +400°C to +620°C"
+    value: "Hot-air welding; settings established by trial welds"
   - label: "Installation Methods"
     value: "Mechanically Fastened / Fully Adhered / Ballasted"
   - label: "Tensile Strength (H type)"
@@ -63,10 +63,10 @@ spec_table:
     value: "Customizable width and length"
 
 quick_facts:
-  - title: "SRI 0.85+ Cool Roof Surface"
-    text: "White TPO surfaces deliver a solar reflective index of 0.85 or higher (ASTM C1549), reflecting most incident solar radiation instead of absorbing it. This lowers roof surface temperature and reduces the cooling load of conditioned buildings — a measurable energy lever, not a marketing claim."
-  - title: "Wide +400–620°C Welding Window"
-    text: "TPO seams are fused with hot-air welding equipment operating between +400°C and +620°C. The wide window keeps weld quality consistent across ambient temperature swings and operator technique, producing homogeneous joints that match or exceed the sheet's own tensile performance."
+  - title: "White Roofing Surface"
+    text: "White roofing surfaces can help reduce solar heat gain. Request measured solar reflectance, thermal emittance and any required SRI result for the exact configuration. These are different metrics; energy effects depend on climate, insulation and building use."
+  - title: "Hot-Air Welding Quality Control"
+    text: "Establish temperature, speed and airflow through trial welds using the supplied membrane, equipment and site conditions. Inspect the prepared seams using the applicable installation procedure; no single temperature range guarantees weld quality."
   - title: "Chlorine-Free, Plasticizer-Free Formulation"
     text: "The polyolefin matrix contains no chlorine and no migrating plasticizers — the property that distinguishes TPO from flexible PVC. Nothing leaches out over service life, so the sheet stays dimensionally stable and remains compatible with recycling streams that reject halogenated materials."
   - title: "-40°C Low-Temperature Flexibility"
@@ -114,10 +114,10 @@ technical_data:
     requirement: "≥ 4.0"
     value: "≥ 4.5"
   - label: "Solar Reflectance (White)"
-    unit: "SRI"
-    standard: "ASTM C1549 / E1980"
-    requirement: "≥ 0.85 initial"
-    value: "0.85–0.90 (typical white)"
+    unit: "Dimensionless fraction"
+    standard: "Confirm the test method in the product report"
+    requirement: "As specified by the project"
+    value: "Request product-specific measured results"
   - label: "Dimensional Change (Heat Aging)"
     unit: "%"
     standard: "GB 27789"
@@ -138,7 +138,7 @@ application_guide:
 
 applications:
   - title: "Commercial Low-Slope Roofing"
-    text: "The default single-ply specification for offices, retail, and institutional low-slope roofs, where white TPO's SRI 0.85+ surface measurably reduces summer cooling load and helps meet cool-roof code and green-building requirements."
+    text: "A single-ply option for offices, retail and institutional roofs. Verify the proposed assembly and any required cool-roof test results against the project requirements; membrane color alone does not establish compliance or energy savings."
   - title: "Industrial & Warehouse Roofing"
     text: "Large-span industrial decks are mechanically fastened with P-type TPO (≥ 250 N/cm max tension), delivering wind-uplift resistance and fast installation without open flames — a key advantage over torch-applied systems on occupied or fire-sensitive plants."
   - title: "Cold Storage & Refrigerated Facilities"
@@ -160,11 +160,11 @@ faqs:
   - question: "What is the difference between TPO Type H, L, and P?"
     answer: "Type H (homogeneous) is the general-purpose sheet for waterproofing and fabrication — tensile ≥ 12.0 MPa, elongation ≥ 500%. Type L has a textile backing for direct bonding to substrates — max tension ≥ 200 N/cm. Type P is polyester-reinforced for mechanically fastened exposed roofs — max tension ≥ 250 N/cm and tear strength ≥ 450 N. Select by attachment method: H for adhered/fabricated details, L for bonded systems, P for mechanically fastened decks."
   - question: "What is the solar reflectance of white TPO?"
-    answer: "White TPO surfaces typically achieve a solar reflective index (SRI) of 0.85 to 0.90 when measured to ASTM C1549 / E1980, depending on formulation and surface finish. For context, that is roughly double the reflectance of grey or black single-ply membranes and a primary reason white TPO is specified for cool-roof programs and energy codes."
+    answer: "Request the measured solar reflectance and thermal emittance for the exact membrane, color and test condition. If SRI is required, request that result separately with its calculation method. Solar reflectance and SRI are different metrics; a reflectance fraction such as 0.85 must not be reported as SRI."
   - question: "What temperature is used for TPO hot-air welding?"
-    answer: "TPO seams are welded with hot-air equipment set between +400°C and +620°C, depending on membrane thickness, ambient temperature, and machine speed. The wide welding window is a TPO advantage: it tolerates operator and weather variation while still producing homogeneous, watertight seams. Welds are verified by a visible continuous bead at the seam edge and, on critical projects, by peel testing."
+    answer: "Temperature, speed and airflow depend on the supplied membrane, thickness, equipment, substrate and weather. Follow the installation instructions and establish settings by trial welds under actual conditions. Carry out the specified seam inspection and testing; appearance alone does not establish seam quality."
   - question: "Is TPO better than PVC for roofing?"
-    answer: "They are different polymer systems with different trade-offs. TPO is chlorine-free and plasticizer-free — nothing migrates out over time, so the sheet stays dimensionally stable and is easier to recycle. PVC offers excellent chemical resistance and is a proven option where grease or chemical exposure is severe. For most commercial roofing, TPO's welding window (+400–620°C), SRI 0.85+ white surface, and -40°C flexibility make it the faster-growing specification; confirm chemical exposure with your project consultant before choosing."
+    answer: "Neither material is best for every roof. Compare the specific membrane and complete assembly against chemical exposure, attachment, substrate compatibility, reflective performance and required documentation. PVC and TPO require compatible welded accessories and must not be welded directly to each other."
   - question: "What thickness should I choose?"
     answer: "1.2mm is common for general and adhered applications, 1.5mm is the industry standard for mechanically fastened exposed roofs, and 2.0mm is specified for heavy-traffic or ballasted assemblies. Thicker sheets improve puncture resistance but add cost and roll weight — 1.5mm is the value-optimal default for most commercial projects."
   - question: "How long does TPO membrane last?"
@@ -272,7 +272,7 @@ loading_data:
 
 ## High-Performance Thermoplastic Polyolefin Roofing Membrane
 
-TPO (Thermoplastic Polyolefin) waterproofing membrane is a single-ply polymer sheet that has become the fastest-growing segment in the global commercial roofing market. It combines the flexibility of rubber with the heat-weldability of thermoplastics. Every seam is fused with hot-air welding at +400°C to +620°C — no open flame, no bitumen kettles — and the white surface reflects solar radiation with an SRI of 0.85 or higher, which measurably lowers roof surface temperature and building cooling demand.
+TPO (Thermoplastic Polyolefin) waterproofing membrane is a single-ply roofing sheet with hot-air welded seams. Select the configuration for the proposed roof assembly and confirm its technical documentation. White surface options require measured reflectance and thermal emittance data; SRI, where specified, is a separate calculated index. Welding settings must be established through trial welds under actual installation conditions.
 
 For projects where a flame-free, self-adhered installation is preferred over mechanical fastening, see our [Self-Adhesive Bitumen Membrane](/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/). Where a rubber-sheet system with taped or bonded seams is required, compare our [EPDM Waterproofing Membrane](/products/epdm-waterproofing-membrane-wholesale/) — and for a polymer sheet with strong chemical resistance, review our [PVC Waterproofing Membrane](/products/pvc-waterproofing-membrane-manufacturer/).
 

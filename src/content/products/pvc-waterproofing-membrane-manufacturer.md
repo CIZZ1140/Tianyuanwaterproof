@@ -50,7 +50,7 @@ quick_facts:
 
 features:
   - title: "Cool Roof Reflective Surface"
-    text: "The high Solar Reflectance Index (SRI) of our white PVC surface reflects up to 85% of solar radiation, significantly reducing building cooling costs and mitigating the urban heat island effect."
+    text: "White PVC roofing options can help reduce solar heat gain. Request measured solar reflectance and thermal emittance for the proposed configuration, and an SRI result if required. These metrics are distinct and do not by themselves establish building energy savings."
   - title: "Root-Proof for Green Systems"
     text: "Naturally resistant to root penetration without the need for additional biocides, making it the premier choice for vegetated roof gardens and landscaped podium decks in modern urban architecture."
   - title: "Adaptive Low-Temp Workability"
@@ -105,10 +105,10 @@ technical_data:
     requirement: ">= 40"
     value: "45-55"
   - label: "Solar Reflectance (White)"
-    unit: "%"
-    standard: "ASTM E1980"
-    requirement: ">= 80"
-    value: "85-87"
+    unit: "Dimensionless fraction"
+    standard: "Confirm the test method in the product report"
+    requirement: "As specified by the project"
+    value: "Request product-specific measured results"
 
 applications:
   - title: "Industrial Flat Roofs"
@@ -154,7 +154,7 @@ faqs:
   - question: "Is PVC membrane good for flat roofs, and how thick should it be?"
     answer: "Yes, PVC membrane is widely used on flat and low-slope commercial roofs. For exposed mechanically-fastened systems, 1.5 mm (60 mil) is the standard thickness; for high-traffic or fully adhered applications, 1.8-2.0 mm (72-80 mil) is recommended. The membrane's hot-air welded seams create a monolithic barrier that performs reliably even under ponding water conditions."
   - question: "How do you install and weld PVC waterproofing membrane?"
-    answer: "PVC membrane is installed by mechanically fastening or fully adhering the sheets to the substrate, then hot-air welding the overlapping seams at approximately 450-550°C using an automatic welding machine (such as Leister). The heat fuses the top and bottom sheets into a single, inseparable joint that is stronger than the membrane itself. Proper welding requires clean, dry surfaces and ambient temperatures above -5°C."
+    answer: "Use the attachment method and compatible components specified for the roof assembly. Prepare clean, dry weld surfaces and establish temperature, speed and airflow through trial welds with the supplied membrane and actual site conditions. Follow the applicable seam inspection and testing procedure rather than relying on a fixed equipment temperature."
   - question: "Can PVC membrane be installed over existing bitumen roofing?"
     answer: "Yes, PVC membrane can be installed as a retrofit over existing bitumen roofing, but a separation layer (geotextile fleece or gypsum board) must be placed between the bitumen and the PVC. This prevents plasticizer migration from the PVC into the bitumen, which can cause embrittlement, and protects the new membrane from bitumen-related chemical attack."
   - question: "How long does PVC roofing membrane last, and is it UV resistant?"
@@ -181,7 +181,7 @@ The reliability of a PVC membrane starts from within. Our **Type P (Reinforced)*
 
 ### 2. High-Precision Installation: Monolithic Seams
 
-The weakest point of any waterproofing system is usually the joint. PVC solves this through **Hot-Air Welding**. By melting the top and bottom layers of adjacent sheets together at 450°C+, they fuse into one single, continuous piece.
+The weakest point of any waterproofing system is usually the joint. PVC solves this through **Hot-Air Welding**. Hot-air welding joins compatible overlapping sheet surfaces. Establish the equipment settings through trial welds and follow the supplied installation and seam inspection requirements.
 
 *   **No Adhesives Needed**: Unlike EPDM or bitumen, the joint itself becomes the strongest part of the system.
 *   **Automatic Welding**: Our membranes are designed for high-speed automatic welding machines (like Leister), ensuring consistent quality across large-scale projects.
@@ -199,7 +199,7 @@ A professional project requires more than just a roll of membrane. Tianyuan offe
 *   **Mechanical Fasteners**: Specialized screws and stress plates for wind-resistant steel roof systems.
 *   **Roof Drains & Vents**: PVC-compatible outlets designed to weld to the main membrane. Detail design and seam testing should follow the project waterproofing system requirements.
 
-These accessories are also fully compatible with our [TPO roofing membrane systems](/products/tpo-waterproofing-membrane-manufacturer/), allowing contractors to standardize detailing across mixed thermoplastic roof projects.
+Select PVC-compatible welded accessories for the specified PVC sheet. Our [TPO roofing membrane systems](/products/tpo-waterproofing-membrane-manufacturer/) require their own compatible components. PVC and TPO must not be welded directly to each other; transitions require an approved detail.
 
 ![PVC Waterproofing System Accessories](https://img.tyuanwaterproof.com/products/pvc-accessories.png?v=1)
 
@@ -209,7 +209,7 @@ These accessories are also fully compatible with our [TPO roofing membrane syste
 
 From 50,000 sqm industrial plants to complex metro tunnel linings, our PVC membranes have been proven in the field. 
 
-*   **Industrial Cool Roofs**: White PVC reflects up to 80% of sunlight (Solar Reflectance Index > 85), reducing summer air conditioning costs by up to 20%.
+*   **Industrial Cool Roofs**: Confirm the exact white membrane's measured solar reflectance, thermal emittance and any required SRI value. Building energy effects depend on climate, insulation, operation and the complete roof design.
 *   **Tunnel & Subway**: Our H-type (homogeneous) membranes provide reliable anti-seepage for high-pressure underground environments. See our [technical documentation](/technical/) for project-specific waterproofing system design.
 *   **Green Roofs**: Inherent root resistance makes PVC the primary choice for sustainable rooftop gardens.
 
