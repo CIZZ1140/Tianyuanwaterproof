@@ -28,9 +28,6 @@ gallery:
   - image: "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp"
     title: "HDPE Membrane Surface"
     alt: "Pre-applied HDPE self-adhesive waterproof membrane roll white substrate"
-  - image: "/placeholder.webp"
-    title: "Production Line"
-    alt: "HDPE pre-applied waterproof membrane factory production line"
 
 spec_table:
   - label: "Product Type"

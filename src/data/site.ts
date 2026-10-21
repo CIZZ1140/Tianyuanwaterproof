@@ -190,6 +190,6 @@ export const stats = [
   { value: '5', label: 'Production Lines' },
   { value: '50+', label: 'Countries Exported' },
   { value: 'OEM/ODM', label: 'Service' },
-  { value: '24/7', label: 'Quick Response' }
+  { value: 'Within 1', label: 'Business Day Reply' }
 ];
 ;

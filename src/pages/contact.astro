@@ -382,7 +382,7 @@ const contactPageSchema = {
                 <ArrowRight class="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </button>
               <p class="text-center text-[11px] font-medium text-[#94A3B8]">
-                * Response within 1 hour during business days.
+                * Our sales team will reply within 1 business day.
               </p>
             </div>
           </form>
@@ -505,13 +505,18 @@ const contactPageSchema = {
     const form = selector?.closest('form');
     const phoneContainer = selector?.closest('.flex');
     const phoneInput = document.getElementById('phone') as HTMLInputElement;
+    const fullPhoneInput = document.getElementById('full-phone') as HTMLInputElement;
     form?.addEventListener('submit', (e) => {
+      // Populate before FormAjax constructs the submission payload.
+      fullPhoneInput.value = '';
       if (!selectedCodeInput?.value || !phoneInput?.value.trim()) {
         e.preventDefault();
         document.getElementById('code-hint')?.classList.remove('hidden');
         phoneContainer?.classList.add('!border-red-400');
         selector?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
       }
+      fullPhoneInput.value = selectedCodeInput.value + phoneInput.value.trim().replace(/[\s().-]/g, '');
     });
   </script>
 <FormAjax />

@@ -17,8 +17,6 @@ hero_tags:
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/metal-roof-acrylic-coating.webp"
     title: "Acrylic Waterproof Coating"
-  - image: "/placeholder.webp"
-    title: "Rust-Resistant Topcoat"
 
 spec_table:
   - label: "Material Base"

@@ -16,7 +16,7 @@ tags:
   - "B2B Procurement"
 faqs:
   - question: "What is the current price range for 4mm SBS membrane in 2026?"
-    answer: "Bitumen membranes are engineered-to-order, so quotations are spec-driven rather than list-priced. For 4mm SBS Type II (Polyester reinforced), the reinforcement class and surface finish are the two largest cost drivers, and pricing is quoted FOB against the prevailing bitumen index. Send your reinforcement, thickness and finish specifications to our export team for a current quotation within 24 hours."
+    answer: "Bitumen membranes are engineered-to-order, so quotations are spec-driven rather than list-priced. For 4mm SBS Type II (Polyester reinforced), the reinforcement class and surface finish are the two largest cost drivers, and pricing is quoted FOB against the prevailing bitumen index. Send your reinforcement, thickness and finish specifications to our export team and our sales team will reply within 1 business day."
   - question: "How does the new GB/T 18242-2025 standard affect international buyers?"
     answer: "The 2026 update significantly raises the bar for tensile strength and low-temperature flexibility. Buyers specifying to the new GB standard are essentially receiving a product that meets or exceeds ASTM D6164 High-Performance requirements, ensuring a longer service life in extreme climates."
 ---
@@ -77,10 +77,10 @@ Bitumen membranes are engineered-to-order products, not shelf items — a fixed 
 ### How a Custom Quotation Works
 
 *   **Quotation basis**: FOB Qingdao, quoted against the prevailing 2026 bitumen index.
-*   **Response time**: within 24 hours of receiving your specification.
+*   **Response time**: our sales team will reply within 1 business day of receiving your specification.
 *   **Price validity**: typically 15–30 days, depending on raw material index movement.
 
-**To receive an accurate quotation, share four details:** (1) target standard (GB/T 18242-2025, ASTM D6164 or EN 13707), (2) reinforcement &amp; thickness, (3) surface finish, (4) quantity and destination port. [Contact our technical export team](/contact/) and we will confirm your project quotation within 24 hours.
+**To receive an accurate quotation, share four details:** (1) target standard (GB/T 18242-2025, ASTM D6164 or EN 13707), (2) reinforcement &amp; thickness, (3) surface finish, (4) quantity and destination port. [Contact our technical export team](/contact/) and our sales team will reply within 1 business day.
 
 ---
 

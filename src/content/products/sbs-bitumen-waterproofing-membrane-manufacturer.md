@@ -349,7 +349,7 @@ faqs:
 <a href="/contact/" class="inline-flex items-center justify-center rounded-xl bg-blue-700 px-8 py-4 text-base font-black text-white shadow-xl hover:bg-blue-800 transition-all hover:-translate-y-1">GET LATEST PRICE →</a>
 </div>
 </div>
-<p class="mt-6 text-xs text-slate-500 italic">* Competitive bulk quotes provided within 2 working hours. Free samples available for project verification.</p>
+<p class="mt-6 text-xs text-slate-500 italic">* Our sales team will reply within 1 business day. Free samples available for project verification.</p>
 </div>
 
 ---

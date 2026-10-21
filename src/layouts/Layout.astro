@@ -163,6 +163,7 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 				// from Ads > Goals > Conversions > WhatsApp Click > View event snippet.
 				const GOOGLE_ADS_ID = 'AW-18274384476';
 				const WHATSAPP_CONV_LABEL = 'Uzg7CK6yxewcENz084lE'; // WhatsApp Click (Ads, 2026-09-02)
+				const INQUIRY_SUCCESS_CONV_LABEL = 'N8N1CIzj36QdENz084lE'; // Website Inquiry Success (Ads, 2026-10-21)
 				const GA4_ID = 'G-4BD10P0X1Q'; // GA4 Measurement ID (CIZZ account, tyuanwaterproof.com property, 2026-09-08)
 
 				// Register the global gtag stub FIRST so any call made before gtag.js
@@ -243,9 +244,14 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
 				// Public helpers used by FormAjax.astro and the global CTA listeners below.
 				window.__ensureAnalytics = loadAnalytics;
 				window.__track = function (eventName, eventParams) {
-					if (!GA4_ID) return;
 					loadAnalytics();
-					gtag('event', eventName, Object.assign({}, eventParams || {}, { send_to: GA4_ID }));
+					if (GA4_ID) gtag('event', eventName, Object.assign({}, eventParams || {}, { send_to: GA4_ID }));
+					// FormAjax emits this only after the submission endpoint returns success.
+					if (eventName === 'form_submit_success') {
+						gtag('event', 'conversion', {
+							send_to: GOOGLE_ADS_ID + '/' + INQUIRY_SUCCESS_CONV_LABEL
+						});
+					}
 				};
 
 				function scheduleAnalytics() {
