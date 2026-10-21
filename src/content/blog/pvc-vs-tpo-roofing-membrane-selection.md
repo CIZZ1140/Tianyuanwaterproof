@@ -3,7 +3,7 @@ title: "PVC vs TPO Roofing Membranes: A Buyer's Selection Guide"
 seoTitle: "PVC vs TPO Roofing Membranes: Selection Guide"
 description: "Compare PVC and TPO roofing membranes by exposure, roof assembly, welding and procurement documents. Use a project checklist before requesting a quote."
 category: "roofing"
-coverImage: "/images/blog/pvc-vs-tpo/pvc-vs-tpo-cover-v3.webp"
+coverImage: "https://img.tyuanwaterproof.com/blog/pvc-vs-tpo/pvc-vs-tpo-cover-v3.webp"
 coverAlt: "AI-generated illustration of PVC and TPO membrane rolls with separate sample pieces"
 publishDate: 2026-10-21
 author: "Tianyuan Waterproof Technical Team"
@@ -45,10 +45,10 @@ Use this comparison alongside the [PVC membrane product options](/products/pvc-w
 
 
 <figure>
-<a href="/images/blog/pvc-vs-tpo/pvc-tpo-selection-workflow-v2.webp" target="_blank" rel="noopener" aria-label="Open illustration at full size">
-<img src="/images/blog/pvc-vs-tpo/pvc-tpo-selection-workflow-v2.webp" width="1774" height="887" alt="Four-step selection workflow: exposure, roof assembly, evidence and supply scope" loading="lazy" decoding="async" />
+<a href="https://img.tyuanwaterproof.com/blog/pvc-vs-tpo/pvc-tpo-selection-workflow-v2.webp" target="_blank" rel="noopener" aria-label="Open illustration at full size">
+<img src="https://img.tyuanwaterproof.com/blog/pvc-vs-tpo/pvc-tpo-selection-workflow-v2.webp" width="1774" height="887" alt="Four-step selection workflow: exposure, roof assembly, evidence and supply scope" loading="lazy" decoding="async" />
 </a>
-<figcaption>Selection illustration, not a roof installation detail. Layer thicknesses are not to scale. <a href="/images/blog/pvc-vs-tpo/pvc-tpo-selection-workflow-v2.webp" target="_blank" rel="noopener">View full-size image</a>.</figcaption>
+<figcaption>Selection illustration, not a roof installation detail. Layer thicknesses are not to scale. <a href="https://img.tyuanwaterproof.com/blog/pvc-vs-tpo/pvc-tpo-selection-workflow-v2.webp" target="_blank" rel="noopener">View full-size image</a>.</figcaption>
 </figure>
 
 ## Start with exposure and the roof assembly
@@ -106,10 +106,10 @@ For maintenance access on a TPO roof, review the [TPO walkway pad selection guid
 
 
 <figure>
-<a href="/images/blog/pvc-vs-tpo/pvc-tpo-accessory-compatibility-v2.webp" target="_blank" rel="noopener" aria-label="Open illustration at full size">
-<img src="/images/blog/pvc-vs-tpo/pvc-tpo-accessory-compatibility-v2.webp" width="1536" height="1024" alt="Compatible PVC components paired with PVC sheet and compatible TPO components with TPO sheet; no direct welding between materials" loading="lazy" decoding="async" />
+<a href="https://img.tyuanwaterproof.com/blog/pvc-vs-tpo/pvc-tpo-accessory-compatibility-v2.webp" target="_blank" rel="noopener" aria-label="Open illustration at full size">
+<img src="https://img.tyuanwaterproof.com/blog/pvc-vs-tpo/pvc-tpo-accessory-compatibility-v2.webp" width="1536" height="1024" alt="Compatible PVC components paired with PVC sheet and compatible TPO components with TPO sheet; no direct welding between materials" loading="lazy" decoding="async" />
 </a>
-<figcaption>Compatibility illustration; sample thickness and dimensions are not to scale. Confirm each component with the proposed system supplier. <a href="/images/blog/pvc-vs-tpo/pvc-tpo-accessory-compatibility-v2.webp" target="_blank" rel="noopener">View full-size image</a>.</figcaption>
+<figcaption>Compatibility illustration; sample thickness and dimensions are not to scale. Confirm each component with the proposed system supplier. <a href="https://img.tyuanwaterproof.com/blog/pvc-vs-tpo/pvc-tpo-accessory-compatibility-v2.webp" target="_blank" rel="noopener">View full-size image</a>.</figcaption>
 </figure>
 
 ## Compare quotations on the same supply scope
