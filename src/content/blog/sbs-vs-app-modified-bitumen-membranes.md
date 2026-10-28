@@ -1,226 +1,185 @@
 ---
-title: "SBS vs APP Modified Bitumen Membranes: How to Choose the Right Waterproofing System"
-seoTitle: "SBS vs APP Modified Bitumen Membranes: Which to Choose"
-description: "Compare SBS and APP modified bitumen membranes by climate suitability, temperature range, reinforcement, surface finish and real project applications."
+title: "SBS vs APP Modified Bitumen Membranes: A Buyer's Selection Guide"
+seoTitle: "SBS vs APP Membranes: Roof Selection & Buying Guide"
+description: "Compare SBS and APP membranes by climate, roof build-up, surfacing and installation. Check test data and quotation scope before choosing a waterproofing system."
 category: "product-guides"
 publishDate: 2026-07-10
-updatedDate: 2026-08-04
-coverImage: "https://img.tyuanwaterproof.com/blog/sbs-vs-app-cover.webp"
-coverAlt: "Torch-applied SBS modified bitumen waterproofing membrane installation — flame bonding to substrate"
+updatedDate: 2026-10-28
 author: "Tianyuan Waterproof Technical Team"
 draft: false
-tags:
-  - "SBS Membrane"
-  - "APP Membrane"
-  - "Bitumen Waterproofing"
-  - "Roofing"
-  - "Product Selection"
+tags: ["SBS Membrane", "APP Membrane", "Bitumen Waterproofing", "Roofing", "B2B Procurement"]
 faqs:
-  - question: "Can SBS membrane be used in hot climates?"
-    answer: "Yes. Type II SBS with mineral granule surfacing performs reliably in moderate to hot climates, with heat resistance up to 105°C and built-in UV protection from the granule layer. However, for sustained extreme heat, where roof surface temperature regularly exceeds 80°C, APP membrane is the safer specification due to its higher softening point. Always confirm the expected surface temperature against the membrane TDS before specifying."
-  - question: "Does SBS membrane need a protection layer?"
-    answer: "Not always. Mineral granule (slate) surfaced SBS serves as the exposed final layer with built-in UV protection and needs no additional topping. PE film and fine sand surfaced SBS are designed for covered systems — they require a protection layer of mortar screed, protection boards, or drainage mat before backfilling or final surfacing. The requirement depends on where the membrane sits in your roof or underground system."
-  - question: "Is self-adhesive SBS the same as torch-applied SBS?"
-    answer: "No — they are two installation methods for the same SBS material. Torch-applied SBS uses a propane flame to melt the bitumen and fuse it to the substrate; self-adhesive SBS carries a factory-applied adhesive layer with a release film, installed without open flame. Membrane chemistry and temperature performance are similar, but self-adhesive suits confined spaces, occupied buildings, and flame-restricted sites."
-  - question: "Which is cheaper, SBS or APP membrane?"
-    answer: "It depends on the specification, not the material type alone. The price difference is driven by thickness, reinforcement type, surface finish, and container loading efficiency — not the modifier itself. A 4mm polyester-reinforced SBS can cost more or less than an equivalent APP depending on order volume, packaging, and destination port. Request a quotation with full specifications for an accurate comparison."
-  - question: "Which membrane should I choose if I'm not sure about my climate?"
-    answer: "Send your project location and application details to our technical team for a recommendation based on your actual climate data. As a general rule: cold regions and structures with thermal movement favor SBS; hot exposed roofs favor APP. Product-specific TDS documentation and sample options can be confirmed with our technical team before specification."
+  - question: "What is the main difference between SBS and APP membranes?"
+    answer: "SBS is an elastomeric modifier associated with flexibility and elastic recovery. APP is a plastomeric modifier associated with high-temperature stability. The finished sheet also depends on its formulation, reinforcement, surfacing and intended roof system."
+  - question: "Can SBS membranes be used in hot climates?"
+    answer: "Yes, when the specified sheet and complete roof assembly meet the project's heat, exposure and attachment requirements. Climate alone does not exclude SBS; compare product-specific test data and the proposed protective finish."
+  - question: "Does APP membrane always need no UV protection?"
+    answer: "No. Confirm whether the exact sheet is intended as an exposed cap sheet and what surfacing or coating it requires. The APP name alone does not establish suitability for permanent exposure."
+  - question: "Is self-adhesive SBS interchangeable with torch-applied SBS?"
+    answer: "No. They are distinct product configurations with different bonding faces, preparation requirements and installation limits. Confirm the specified sheet, substrate, primer, detailing and installation conditions before changing application methods."
+  - question: "Can SBS and APP layers be combined in one roof?"
+    answer: "Only where the proposed combination forms a documented, accepted system. Do not assume that sharing a bitumen base makes sheets, adhesives or flashings interchangeable. Request written confirmation for the complete build-up."
 ---
 
-## Quick Answer: Which Membrane for Which Climate?
+**SBS and APP describe the modifier in a bitumen membrane, not a complete roof specification.** SBS is commonly considered where flexibility and elastic recovery matter; APP is commonly considered where high-temperature stability is important. Choose between the actual sheets and roof assemblies offered, rather than assigning one material to an entire country or climate zone.
 
-**Choose SBS for cold and variable climates, APP for hot exposed roofs.** SBS's rubber modification delivers low-temperature flexibility to -25°C (Type II), while APP's plastic modification provides heat resistance up to a 130°C softening point. Match the membrane to the expected roof surface temperature and lowest winter temperature — the wrong choice fails by cracking in cold or softening in heat. For cold regions, structures with thermal movement, tunnels and basements, specify SBS; for sustained extreme heat on exposed roofs, specify APP.
+For a buyer comparing quotations, the useful question is: **which offered configuration meets the same project requirements, with compatible components and an acceptable installed cost?** This guide focuses on roofing procurement. Below-grade, bridge and tunnel applications require their own design and approval criteria.
 
-## What Are SBS and APP Modified Bitumen Membranes?
-
-SBS (Styrene-Butadiene-Styrene) and APP (Atactic Polypropylene) are two types of polymer-modified bitumen waterproofing membranes. Both are widely used in roofing, basements, tunnels, and infrastructure waterproofing across global construction markets.
-
-The key structural difference: **SBS uses a rubber-based modifier** that gives the membrane elasticity and low-temperature flexibility. **APP uses a plastic-based modifier** that delivers high-temperature stability and UV resistance. Choosing the wrong type for your climate or application can lead to premature cracking, softening, or loss of waterproofing integrity.
-
-<div style="background:#f8fafc; border:2px solid #3b82f6; border-radius:16px; padding:24px; margin:32px 0; font-family:sans-serif; text-align:center;">
-  <h3 style="margin-top:0; color:#1e3a8a;">🌍 Quick Climate Check: Which One Do You Need?</h3>
-  <p style="font-size:14px; color:#64748b; margin-bottom:24px;">Different environments require specific polymer modifiers. Select your region below:</p>
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:12px;">
-    <button onclick="document.getElementById('vs-cold').style.display='block';document.getElementById('vs-hot').style.display='none';document.getElementById('vs-sea').style.display='none';" style="background:white; border:1px solid #e2e8f0; border-radius:12px; padding:16px; cursor:pointer;">
-      <span style="font-size:24px; display:block; margin-bottom:8px;">❄️</span>
-      <span style="font-size:12px; font-weight:700; color:#0f172a;">Cold / Variable<br>(Russia / Europe)</span>
-    </button>
-    <button onclick="document.getElementById('vs-hot').style.display='block';document.getElementById('vs-cold').style.display='none';document.getElementById('vs-sea').style.display='none';" style="background:white; border:1px solid #e2e8f0; border-radius:12px; padding:16px; cursor:pointer;">
-      <span style="font-size:24px; display:block; margin-bottom:8px;">☀️</span>
-      <span style="font-size:12px; font-weight:700; color:#0f172a;">High Heat<br>(Middle East / Africa)</span>
-    </button>
-    <button onclick="document.getElementById('vs-sea').style.display='block';document.getElementById('vs-cold').style.display='none';document.getElementById('vs-hot').style.display='none';" style="background:white; border:1px solid #e2e8f0; border-radius:12px; padding:16px; cursor:pointer;">
-      <span style="font-size:24px; display:block; margin-bottom:8px;">🌴</span>
-      <span style="font-size:12px; font-weight:700; color:#0f172a;">SE Asia / Tropical<br>(Economic Value)</span>
-    </button>
-  </div>
-  <div id="vs-cold" style="display:none; margin-top:20px; padding:16px; background:#eff6ff; border-radius:12px; border-left:4px solid #3b82f6; text-align:left; font-size:14px; line-height:1.6; color:#1e40af;">
-    <strong>Recommended: SBS Modified Bitumen.</strong> Rubber modification ensures it won't become brittle at -25°C. Essential for high-altitude or northern projects.
-  </div>
-  <div id="vs-hot" style="display:none; margin-top:20px; padding:16px; background:#fff7ed; border-radius:12px; border-left:4px solid #f59e0b; text-align:left; font-size:14px; line-height:1.6; color:#9a3412;">
-    <strong>Recommended: APP Modified Bitumen.</strong> Its high softening point (130°C) is mandatory for roofs under intense, direct equatorial sun.
-  </div>
-  <div id="vs-sea" style="display:none; margin-top:20px; padding:16px; background:#f0fdf4; border-radius:12px; border-left:4px solid #22c55e; text-align:left; font-size:14px; line-height:1.6; color:#166534;">
-    <strong>Recommended: Mineral APP or Self-Adhesive SBS.</strong> Use Mineral APP for UV protection on exposed roofs, or Self-Adhesive for rapid installation between rain showers. Great value for money.
-  </div>
+<section class="climate-check" aria-labelledby="climate-check-title">
+<h2 id="climate-check-title">Quick climate check: what should you compare?</h2>
+<p class="climate-intro">Choose the condition closest to your project to see the selection priorities. Use the product data and complete roof build-up to make the final choice.</p>
+<fieldset class="climate-options">
+<legend>Select your main project condition</legend>
+<input class="climate-radio" type="radio" name="sbs-app-climate" id="climate-cold" checked />
+<input class="climate-radio" type="radio" name="sbs-app-climate" id="climate-hot" />
+<input class="climate-radio" type="radio" name="sbs-app-climate" id="climate-wet" />
+<div class="climate-cards">
+<label for="climate-cold"><span class="climate-icon" aria-hidden="true">❄️</span><span class="climate-label">Cold / variable</span><span class="climate-sub">Low temperatures &amp; movement</span></label>
+<label for="climate-hot"><span class="climate-icon" aria-hidden="true">☀️</span><span class="climate-label">Hot / exposed</span><span class="climate-sub">Roof heat &amp; weathering</span></label>
+<label for="climate-wet"><span class="climate-icon" aria-hidden="true">🌦️</span><span class="climate-label">Warm / wet</span><span class="climate-sub">Rainfall &amp; installation windows</span></label>
 </div>
+<div class="climate-result climate-result-cold" role="region" aria-labelledby="climate-cold-title">
+<h3 id="climate-cold-title">Compare flexibility and the installation limits</h3>
+<p><strong>SBS is often a starting point where flexibility and recovery matter.</strong> Compare the offered sheet's low-temperature test data, reinforcement and movement details. A flexibility test result is not an installation temperature limit; check both separately.</p>
+<a href="/products/sbs-bitumen-waterproofing-membrane-manufacturer/">Explore SBS membrane options <span aria-hidden="true">→</span></a>
+</div>
+<div class="climate-result climate-result-hot" role="region" aria-labelledby="climate-hot-title">
+<h3 id="climate-hot-title">Compare heat performance and the exposed finish</h3>
+<p><strong>APP is often shortlisted for high-temperature stability.</strong> Check the exact sheet's test method, intended cap-sheet use and required protective finish. A hot climate does not automatically exclude SBS, and a heat-resistance figure is not a continuous operating limit.</p>
+<a href="/products/app-modified-bitumen-waterproofing-membrane-manufacturer/">Explore APP membrane options <span aria-hidden="true">→</span></a>
+</div>
+<div class="climate-result climate-result-wet" role="region" aria-labelledby="climate-wet-title">
+<h3 id="climate-wet-title">Compare substrate conditions and drainage</h3>
+<p><strong>Rainfall does not choose SBS or APP for you.</strong> Confirm substrate dryness, drainage, preparation and the installation conditions allowed by the specified system. Self-adhesive bonding is not permission to install on a wet substrate or during rain.</p>
+<a href="/blog/self-adhesive-vs-torch-applied-membrane-comparison/">Compare installation methods <span aria-hidden="true">→</span></a>
+</div>
+</fieldset>
+<p class="climate-note">More than one condition can apply. Review each relevant card, then compare the complete proposals.</p>
+</section>
+<style>
+.climate-check{margin:2rem 0;padding:clamp(1rem,3vw,1.75rem);border:2px solid #3b82f6;border-radius:20px;background:#f8fafc;color:#16324f;overflow:hidden}
+.climate-check h2{margin:0 0 .75rem!important;font-size:clamp(1.25rem,2.5vw,1.6rem)!important;line-height:1.35!important;color:#163a72!important;text-align:center}
+.climate-check .climate-intro{margin:0 0 1.25rem!important;text-align:center;font-size:.95rem;line-height:1.65}
+.climate-options{position:relative;min-width:0;margin:0;padding:0;border:0}
+.climate-options legend{padding:0;margin:0 0 .75rem;font-size:.85rem;font-weight:700;color:#526377}
+.climate-radio{position:absolute;width:1px;height:1px;opacity:0}
+.climate-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}
+.climate-cards label{display:flex;min-width:0;min-height:138px;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;padding:1rem .65rem;border:2px solid #dce5f0;border-radius:14px;background:#fff;text-align:center;cursor:pointer;transition:border-color .15s,background .15s}
+.climate-cards label:hover{border-color:#7ba7e8;background:#eff6ff}
+.climate-icon{font-size:1.6rem;line-height:1.3}.climate-label{font-size:.95rem;font-weight:800;line-height:1.4}.climate-sub{font-size:.8rem;line-height:1.5;color:#526377}
+#climate-cold:checked~.climate-cards label[for="climate-cold"],#climate-hot:checked~.climate-cards label[for="climate-hot"],#climate-wet:checked~.climate-cards label[for="climate-wet"]{border-color:#2563eb;background:#eaf2ff;box-shadow:inset 0 0 0 1px #2563eb}
+#climate-cold:focus-visible~.climate-cards label[for="climate-cold"],#climate-hot:focus-visible~.climate-cards label[for="climate-hot"],#climate-wet:focus-visible~.climate-cards label[for="climate-wet"]{outline:3px solid #f97316;outline-offset:3px}
+.climate-result{display:none;margin-top:1rem;padding:1.1rem;border-left:4px solid #2563eb;border-radius:12px;background:#eff6ff;overflow-wrap:anywhere}
+.climate-result h3{margin:0 0 .5rem!important;font-size:1.05rem!important;line-height:1.45!important;color:#17365c!important}
+.climate-result p{margin:0 0 .7rem!important;font-size:.95rem;line-height:1.7}
+.climate-result a{display:inline-block;padding:.25rem 0;color:#174e9b;font-size:.9rem;font-weight:700;text-underline-offset:3px}
+.climate-result-hot{background:#fff7ed;border-left-color:#f97316}.climate-result-wet{background:#ecfdf5;border-left-color:#10b981}
+#climate-cold:checked~.climate-result-cold,#climate-hot:checked~.climate-result-hot,#climate-wet:checked~.climate-result-wet{display:block}
+.climate-check .climate-note{margin:.9rem 0 0!important;color:#526377;font-size:.8rem;line-height:1.6}
+@media(max-width:639px){.climate-cards{grid-template-columns:1fr}.climate-cards label{min-height:80px;display:grid;grid-template-columns:2.2rem 1fr;gap:.2rem .65rem;text-align:left;padding:.8rem 1rem}.climate-icon{grid-row:span 2}.climate-label,.climate-sub{justify-self:start}.climate-result{padding:.9rem}}
+@media(prefers-reduced-motion:reduce){.climate-cards label{transition:none}}
+</style>
 
-**Quick Summary (TL;DR):**
-- **Cold climate / high temperature variation** → Choose SBS (flexible to -25 deg C, handles freeze-thaw)
-- **Hot climate / exposed roof / high UV** → Choose APP (stable to 130 deg C, mineral granule finish)
-- **Underground / confined space** → Choose SBS self-adhesive (no open flame required)
-- Contact our technical team with project location, application type, and quantity for a tailored recommendation.
 
-Read on for the full technical comparison, climate logic, reinforcement guide, and real project scenarios.
+## SBS vs APP: compare the finished sheet
 
-## Technical Comparison at a Glance
+SBS means styrene-butadiene-styrene, an elastomeric modifier. APP means atactic polypropylene, a plastomeric modifier. These describe broad formulation families. Neither name identifies the reinforcement, thickness, surface finish, application method or tested performance of the delivered roll.
 
-| Property | SBS Membrane | APP Membrane |
-|----------|-------------|-------------|
-| **Modifier** | Styrene-Butadiene-Styrene (rubber-based) | Atactic Polypropylene (plastic-based) |
-| **Low-Temperature Flexibility** | Type I: -20°C / Type II: -25°C | Type I: -5°C / Type II: -15°C |
-| **High-Temperature Resistance** | Type I: 90°C / Type II: 105°C | Type I: 105°C / Type II: 130°C |
-| **Elasticity** | High (rubber-like recovery) | Moderate (more rigid) |
-| **UV Resistance** | Moderate (requires protection layer) | Good (suitable for exposed applications) |
-| **Application Method** | Torch-applied or self-adhesive | Torch-applied |
-| **Common Reinforcement** | Polyester, fiberglass, or composite | Fiberglass or composite (preferred for stability) |
-| **Surface Finish Options** | PE film, fine sand, mineral granules | Mineral granules, sand, PE film |
-| **Best Climate** | Cold regions, high temperature variation | Hot climates, high solar exposure |
-| **Typical Thickness** | 3mm, 4mm, 5mm | 3mm, 4mm, 5mm |
-| **Roll Size** | 1m x 10m (standard) | 1m x 10m (standard) |
+| Decision point | SBS option | APP option | Evidence to compare |
+|---|---|---|---|
+| Cold conditions and movement | Often shortlisted for flexibility and recovery | Check the offered grade rather than excluding it by name | Low-temperature flexibility, tensile and elongation data for the exact sheet |
+| High roof temperatures | Check the declared heat performance and attachment | Often shortlisted for high-temperature stability | Same test method, stated conditions and project requirement |
+| Exposed or covered use | Select the appropriate cap sheet or protected configuration | Select the appropriate cap sheet or protected configuration | Intended use, surfacing and complete roof build-up |
+| Installation | Torch-applied, self-adhered and other configurations exist | Torch application is common; verify the offered product | Product-specific instructions and compatible components |
+| Purchase cost | Compare the specified configuration | Compare an equivalent scope | Net coverage, complete system quantities and delivery basis |
 
-## When to Choose SBS Membrane
+Tianyuan's [SBS membrane product page](/products/sbs-bitumen-waterproofing-membrane-manufacturer/) and [APP membrane product page](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/) provide the starting points for a supply discussion. Match the offered grade and surface to the quotation; a headline figure on a product page is not a guarantee for every configuration.
 
-### Cold Climate and Variable Temperature Projects
+## Use climate as an input, then check the roof build-up
 
-SBS membranes maintain flexibility at temperatures as low as -25°C (Type II) / -20°C (Type I). This makes them the preferred choice for projects in northern China, Russia, Canada, Northern Europe, and other regions where winter temperatures drop well below freezing. The rubber-modified bitumen does not become brittle in cold conditions, so it handles freeze-thaw cycles without cracking.
+A cold-weather project should prompt questions about low-temperature performance, handling and the permitted installation conditions. A hot exposed roof should prompt questions about heat performance, weathering, surfacing and attachment. Both still need suitable substrates, drainage and details.
 
-### Buildings with Structural Movement
+Separate these three checks when reading a data sheet:
 
-Because SBS is elastomeric, it stretches and recovers with substrate movement. This property is critical for:
-- Roof decks on large-span steel structures that expand and contract with temperature
-- Bridges and infrastructure with vibration loads
-- Buildings in seismic zones where minor structural shifting is expected
-- Underground waterproofing where soil settlement may cause gradual movement
+- **Test result:** the property measured, method used, specimen configuration and acceptance criteria.
+- **Service exposure:** the conditions the proposed roof assembly must withstand after installation.
+- **Installation limit:** the conditions allowed while placing and bonding the sheet.
 
-### Self-Adhesive Variant Availability
+A low-temperature flexibility test does not by itself authorize installation at that temperature. A heat-resistance result or compound softening point does not establish a continuous roof operating limit. Do not compare figures with different test methods as though they describe the same property.
 
-SBS technology extends beyond torch-applied systems. Self-adhesive SBS membranes eliminate the need for open-flame torching, making them safer for:
-- Retrofitting occupied buildings where fire risk must be minimized
-- Confined basement spaces with limited ventilation
-- Wooden substrates that cannot tolerate torch heat
+For example, if two proposals quote the same nominal thickness, ask whether reinforcement, finish and roof layer count also match. A cheaper roll can produce a more expensive roof if it needs a different protective layer or additional components. Use the [roof waterproofing application overview](/applications/roof-waterproofing/) to discuss the build-up before finalizing quantities.
 
-For a detailed comparison of installation costs and site suitability, see our [Self-Adhesive vs Torch-Applied Waterproofing Membrane](/blog/self-adhesive-vs-torch-applied-membrane-comparison/) guide.
+## Specify the exposed finish and reinforcement separately
 
-Our [SBS Modified Bitumen Waterproofing Membrane](/products/sbs-bitumen-waterproofing-membrane-manufacturer/) is available in 3mm, 4mm, and 5mm thicknesses with PE film, fine sand, or mineral granule surface finishes.
+For an exposed roof, ask whether the offered sheet is designed as the final cap layer and what weathering protection is required. Mineral granules are a common protective surface. Smooth sheets may require a specified coating or protection; confirm the exact product instructions. Neither the SBS nor APP label settles the exposure question.
 
-## When to Choose APP Membrane
+For a covered system, identify what sits above the membrane and how the waterproofing will be protected during subsequent work. Do not treat a sheet intended for a covered assembly as an exposed cap sheet merely because it has the preferred modifier.
 
-### Hot Climate and High Solar Load Conditions
+The carrier also matters. Polyester, glass and composite reinforcements can support different combinations of elongation, strength and dimensional stability. Compare the values declared for the offered carrier, in the relevant test directions. The modifier alone does not prove movement accommodation, and ordinary field membrane does not replace a designed movement-joint detail.
 
-APP membranes withstand sustained temperatures up to 130°C (Type II) / 105°C (Type I) without softening or flowing. In tropical, desert, and equatorial regions where roof surfaces can exceed 80 deg C under direct sun, APP maintains dimensional stability that SBS cannot match. This thermal stability is driven by the plastic-based APP modifier, which has a higher softening point than rubber-based SBS.
+## Confirm the installation method before accepting a substitution
 
-### Exposed Roof Systems Without Protection Layers
+A self-adhesive sheet and a torch-applied sheet are different purchasing items, even when both are SBS-modified. The bonding face, preparation and installation conditions must match the proposed application. A release film is not evidence that a sheet is suitable for every substrate or weather condition.
 
-APP membranes with mineral granule surfacing can be left exposed as the final roofing layer. The granules reflect UV radiation and protect the bitumen compound from photodegradation. This eliminates the need for a separate protection layer of concrete tiles, gravel, or reflective coating. Common exposed applications include:
-- Flat and low-slope commercial roofs in the Middle East and Southeast Asia
-- Industrial warehouse roofing where a lightweight finished surface is preferred
-- Infrastructure decks where a protection layer would add excessive dead load
+If open-flame work is restricted, put that restriction in the enquiry before requesting a quotation. Then confirm the appropriate sheet, primer or adhesive, substrate preparation and detailing with the system supplier and installer. Changing the application method can change the rest of the assembly.
 
-### High-Temperature Process Facilities
+The same principle applies to repairs or mixed SBS/APP proposals: obtain written compatibility confirmation for the specific layers and components. Do not mix rolls, adhesives or flashings solely because all are described as bituminous. For a focused comparison of bonding approaches, see [self-adhesive versus torch-applied membranes](/blog/self-adhesive-vs-torch-applied-membrane-comparison/).
 
-For roofing above boiler rooms, industrial kitchens, manufacturing plants with heat-emitting equipment, or any structure where the substrate temperature is consistently elevated, APP provides a wider safety margin against heat-induced deformation.
+## Compare quotations on one project schedule
 
-Our [APP Modified Bitumen Waterproofing Membrane](/products/app-modified-bitumen-waterproofing-membrane-manufacturer/) is supplied with mineral granule surfacing for exposed applications and PE film for covered systems.
+Ask suppliers to price the same requirements and identify any departures. A practical comparison schedule includes:
 
-## Reinforcement Types and How They Affect Performance
+1. **Sheet identity:** product code, modifier, reinforcement, nominal thickness, surface finish and intended layer.
+2. **Performance basis:** applicable standard and edition, relevant test methods and evidence for the offered configuration. A material standard is not, by itself, approval of the installed roof.
+3. **Coverage and quantities:** roll width and length, nominal area, net coverage after specified laps, cutting allowances and detailing quantities.
+4. **System components:** primers, adhesives, base sheets, flashings and protection included or excluded from the quotation.
+5. **Delivery basis:** packaging, lead time, destination, delivery terms and quotation validity.
 
-Both SBS and APP membranes use internal reinforcement to control dimensional stability and tensile strength. The two standard options are:
+Compare cost per net covered area as well as price per roll. For a multi-layer assembly, include every layer and its accessories. Keep labour and local installation provisions on the same basis when evaluating the installed cost.
 
-### Polyester Reinforcement
+Before ordering, agree how the delivered roll labels, product code and batch information will be checked against the order and supporting documents. Confirm which TDS, test reports, installation instructions and samples Tianyuan can supply for the selected item; do not assume every listed option has the same documentation.
 
-Polyester (non-woven) reinforcement offers the highest elongation -- typically 30 to 50 percent -- and excellent puncture resistance. This is the default choice for most SBS membranes because the reinforcement's elasticity complements the rubber modifier's flexibility. Polyester-reinforced membranes are preferred for:
-- Roof decks with irregular substrates
-- Underground waterproofing where backfill pressure is a concern
-- Any application where the membrane must bridge minor cracks
+## Send a project brief for a comparable quotation
 
-### Fiberglass Reinforcement
+[Send Tianyuan your project requirements](/contact/) with:
 
-Fiberglass mats provide superior dimensional stability with near-zero elongation. This is useful in APP membranes for exposed roofing where the rigid substrate does not require the membrane to stretch. Fiberglass-reinforced APP membranes resist the "creep" that can occur when a flexible membrane is subjected to sustained high temperatures on a slope.
+- Project country and city, roof area, drawings and intended use.
+- New roof or refurbishment, deck and existing layers, proposed insulation and attachment.
+- Exposed or covered finish, movement concerns and any flame-work restrictions.
+- Requested SBS or APP configuration, or the alternatives you want compared.
+- Required standards, evidence and acceptance checks.
+- Quantity, delivery schedule, destination port and delivery terms.
 
-### Composite Reinforcement
+If the specification is incomplete, identify the open questions. That lets the discussion focus on a suitable configuration and the evidence needed before an order, rather than an unsupported claim that one modifier is always better.
 
-Some manufacturers offer composite reinforcement combining polyester and fiberglass layers. This hybrid approach balances elongation and stability, and is suitable for projects where both properties are needed.
 
-When requesting a quotation, specify reinforcement type alongside thickness and surface finish.
+## Frequently asked questions
 
-## Surface Finish Guide
+<details class="selection-faq">
+<summary>What is the main difference between SBS and APP membranes?</summary>
+<p>SBS is an elastomeric modifier associated with flexibility and elastic recovery. APP is a plastomeric modifier associated with high-temperature stability. The finished sheet also depends on its formulation, reinforcement, surfacing and intended roof system.</p>
+</details>
 
-The top surface of the membrane determines how it interacts with the environment:
+<details class="selection-faq">
+<summary>Can SBS membranes be used in hot climates?</summary>
+<p>Yes, when the specified sheet and complete roof assembly meet the project's heat, exposure and attachment requirements. Climate alone does not exclude SBS; compare product-specific test data and the proposed protective finish.</p>
+</details>
 
-| Surface Finish | Best For | Typical Use |
-|----------------|----------|-------------|
-| **PE Film** | Temporary protection during transport and installation | Base layer in multi-layer systems, underside of roofing |
-| **Fine Sand** | Bonding surface for subsequent layers | Intermediate layers in built-up systems |
-| **Mineral Granules** (colored) | UV protection, aesthetic finish, slip resistance | Exposed single-layer roofing, visible roofs |
-| **Aluminum Foil** | High reflectivity, additional heat barrier | Roofs in extreme-heat regions |
+<details class="selection-faq">
+<summary>Does APP membrane always need no UV protection?</summary>
+<p>No. Confirm whether the exact sheet is intended as an exposed cap sheet and what surfacing or coating it requires. The APP name alone does not establish suitability for permanent exposure.</p>
+</details>
 
-## Typical Selection Scenarios
+<details class="selection-faq">
+<summary>Is self-adhesive SBS interchangeable with torch-applied SBS?</summary>
+<p>No. They are distinct product configurations with different bonding faces, preparation requirements and installation limits. Confirm the specified sheet, substrate, primer, detailing and installation conditions before changing application methods.</p>
+</details>
 
-These scenarios illustrate typical selection logic for different climates and building types. For a verified project reference, see the Thailand flat-roof SBS waterproofing project on our [SBS product page](/products/sbs-bitumen-waterproofing-membrane-manufacturer/).
+<details class="selection-faq">
+<summary>Can SBS and APP layers be combined in one roof?</summary>
+<p>Only where the proposed combination forms a documented, accepted system. Do not assume that sharing a bitumen base makes sheets, adhesives or flashings interchangeable. Request written confirmation for the complete build-up.</p>
+</details>
 
-### Scenario 1: Factory Roof in Moscow, Russia
-
-A steel-structure factory roof in a region where winter temperatures reach -30 deg C and summer temperatures reach 35 deg C. The large temperature swing and freezing winters make **SBS with polyester reinforcement** the clear choice. A two-layer system with PE film on the base layer and mineral granules on the cap layer provides durability and weather resistance.
-
-### Scenario 2: Warehouse Roof in Dubai, UAE
-
-A flat concrete roof in a desert climate where surface temperatures exceed 80 deg C for several months each year. The sustained heat and intense UV exposure favor **APP with mineral granule surfacing**. A single-layer exposed system with polyester reinforcement handles the thermal load without softening or flowing under gravity on a low slope.
-
-### Scenario 3: Underground Parking Garage in Toronto, Canada
-
-A below-grade structure requiring waterproofing against both hydrostatic pressure and freeze-thaw cycling. **SBS self-adhesive membrane** is ideal here: the cold-applied installation eliminates torch hazards in a confined space, the rubber modifier handles the temperature range, and the self-adhesive bonding resists water migration between the membrane and concrete.
-
-### Scenario 4: Bridge Deck in Singapore
-
-An elevated bridge deck in a tropical climate with year-round heat and heavy rainfall. **APP membrane** provides the high-temperature stability needed for the exposed surface, while polyester reinforcement handles the dynamic loads from traffic and bridge movement.
-
-## What to Confirm Before Requesting a Quotation
-
-To receive an accurate factory-direct quotation from Tianyuan Waterproof, please confirm the following specifications:
-
-1. **Membrane type**: SBS or APP (or request a recommendation based on your project location)
-2. **Thickness**: 3mm, 4mm, or 5mm
-3. **Reinforcement**: Polyester, fiberglass, or composite
-4. **Surface finish**: PE film, fine sand, or mineral granules
-5. **Application area**: Roofing, basement, tunnel, bridge, or other
-6. **Project location**: City and country for climate assessment
-7. **Quantity**: Roll count or total square meters required
-8. **Destination port**: For CIF/FOB shipping quotation
-
-[Contact our technical team](/contact/) with your project requirements for a tailored recommendation and competitive pricing.
-
-## Frequently Asked Questions
-
-### Can SBS membrane be used in hot climates?
-
-Yes. Type II SBS with mineral granule surfacing performs reliably in moderate to hot climates, with heat resistance up to 105°C and built-in UV protection from the granule layer. However, for sustained extreme heat, where roof surface temperature regularly exceeds 80°C, APP membrane is the safer specification due to its higher softening point. Always confirm the expected surface temperature against the membrane TDS before specifying.
-
-### Does SBS membrane need a protection layer?
-
-Not always. Mineral granule (slate) surfaced SBS serves as the exposed final layer with built-in UV protection and needs no additional topping. PE film and fine sand surfaced SBS are designed for covered systems — they require a protection layer of mortar screed, protection boards, or drainage mat before backfilling or final surfacing. The requirement depends on where the membrane sits in your roof or underground system.
-
-### Is self-adhesive SBS the same as torch-applied SBS?
-
-No — they are two installation methods for the same SBS material. Torch-applied SBS uses a propane flame to melt the bitumen and fuse it to the substrate; self-adhesive SBS carries a factory-applied adhesive layer with a release film, installed without open flame. Membrane chemistry and temperature performance are similar, but self-adhesive suits confined spaces, occupied buildings, and flame-restricted sites.
-
-### Which is cheaper, SBS or APP membrane?
-
-It depends on the specification, not the material type alone. The price difference is driven by thickness, reinforcement type, surface finish, and container loading efficiency — not the modifier itself. A 4mm polyester-reinforced SBS can cost more or less than an equivalent APP depending on order volume, packaging, and destination port. Request a quotation with full specifications for an accurate comparison.
-
-### Which membrane should I choose if I'm not sure about my climate?
-
-Send your project location and application details to our technical team for a recommendation based on your actual climate data. As a general rule: cold regions and structures with thermal movement favor SBS; hot exposed roofs favor APP. Product-specific TDS documentation and sample options can be confirmed with our technical team before specification.
-
-For a deeper look at price drivers and supplier selection, see our [2026 SBS Membrane Market & Procurement Guide](/blog/2026-global-sbs-membrane-market-analysis/).
+<style>
+.selection-faq{margin:.75rem 0;padding:1rem 1.1rem;border:1px solid #dce5f0;border-radius:12px;background:#f8fafc}.selection-faq summary{cursor:pointer;font-weight:700;line-height:1.6;color:#17365c}.selection-faq summary:focus-visible{outline:3px solid #f97316;outline-offset:4px}.selection-faq p{margin:.75rem 0 0!important}
+</style>
