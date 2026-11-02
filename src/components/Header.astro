@@ -42,7 +42,7 @@ const {
 <header role="banner" class="sticky top-0 z-[110] w-full border-b border-white/5 bg-[#0E2A47] text-white shadow-sm xl:z-50">
   <div class="site-header-grid mx-auto grid min-h-[76px] max-w-[1680px] grid-cols-[auto_auto] items-center gap-4 px-5 md:px-8 xl:grid-cols-[280px_minmax(0,1fr)_auto] 2xl:px-16">
     <!-- Logo -->
-    <a href={homeHref} class="flex shrink-0 items-center gap-3">
+    <a href={homeHref} class="site-header-brand flex shrink-0 items-center gap-3">
       <img
         src={logoSrc}
         alt={logoAlt}
@@ -152,13 +152,34 @@ const {
   </div>
 </header>
 <style>
-  /* Keep navigation visible on smaller desktop windows. A second row gives
-     translated labels room without squeezing the logo or language picker. */
-  @media (min-width: 900px) and (max-width: 1279px) {
-    .site-header-grid { grid-template-columns: minmax(0, 1fr) auto; row-gap: 0; padding-top: 12px; }
-    .site-header-nav { display: flex; grid-column: 1 / -1; grid-row: 2; flex-wrap: wrap; column-gap: 24px; }
-    .site-header-nav > div { padding-top: 12px; padding-bottom: 12px; }
-    .site-header-actions { display: flex; }
+  /* Compact desktop chrome together so all three languages keep one row. */
+  @media (min-width: 900px) and (max-width: 1535px) {
+    .site-header-grid { grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; padding-inline: 20px; }
+    .site-header-brand { gap: 8px; white-space: nowrap; }
+    .site-header-brand img { width: 40px; height: 40px; }
+    .site-header-brand span { font-size: 18px; }
+    .site-header-nav { display: flex; flex-wrap: nowrap; gap: 12px; }
+    .site-header-nav > div > a { font-size: 13px; }
+    .site-header-actions { display: flex; gap: 10px; white-space: nowrap; }
+    .site-header-actions > a { padding-inline: 14px; font-size: 12px; }
+    .site-header-actions :global(.language-switcher > summary) { padding-inline: 10px; gap: 6px; font-size: 13px; }
     .site-header-mobile { display: none; }
+  }
+  @media (min-width: 900px) and (max-width: 1099px) {
+    .site-header-grid { gap: 8px; padding-inline: 12px; }
+    .site-header-brand img { width: 34px; height: 34px; }
+    .site-header-brand span { font-size: 15px; }
+    .site-header-nav { gap: 8px; }
+    .site-header-nav > div > a { font-size: 12px; }
+    .site-header-actions { gap: 8px; }
+    .site-header-actions > a { padding-inline: 10px; font-size: 11px; }
+    .site-header-actions :global(.language-switcher > summary) { padding-inline: 8px; gap: 5px; font-size: 12px; }
+  }
+  @media (min-width: 900px) and (max-width: 979px) {
+    .site-header-brand img { width: 32px; height: 32px; }
+    .site-header-brand span { font-size: 14px; }
+    .site-header-nav { gap: 4px; }
+    .site-header-nav > div > a { font-size: 11px; }
+    .site-header-actions :global(.language-switcher > summary > svg:first-child) { display: none; }
   }
 </style>
