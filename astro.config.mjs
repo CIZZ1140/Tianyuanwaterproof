@@ -13,5 +13,18 @@ export default defineConfig({
   build: {
     inlineStylesheets: 'auto',
   },
-  integrations: [tailwind(), sitemap()]
+  integrations: [tailwind(), sitemap({
+    // Dates represent substantive page edits, not the date of every deployment.
+    serialize(item) {
+      const updatedPages = new Set([
+        '/blog/tunnel-waterproofing-membrane-selection/',
+        '/blog/sbs-membrane-basement-foundation-waterproofing/',
+        '/categories/waterproof-coatings/'
+      ]);
+      if (updatedPages.has(new URL(item.url).pathname)) {
+        item.lastmod = '2026-11-02';
+      }
+      return item;
+    }
+  })]
 });

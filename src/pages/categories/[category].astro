@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import Turnstile from '../../components/Turnstile.astro';
+import CoatingSelectionGuide from '../../components/CoatingSelectionGuide.astro';
 
 export async function getStaticPaths() {
   const categories = [
@@ -47,14 +48,14 @@ export async function getStaticPaths() {
     {
       id: "waterproof-coatings",
       name: "Waterproof Coatings",
-      desc: "Liquid-applied high-elasticity polyurethane, high-polymer acrylic, and polymer-cementitious waterproof coatings for seamless surface protection.",
-      image: "https://img.tyuanwaterproof.com/categories/waterproof-coatings.webp",
+      desc: "Compare polyurethane, polymer cement, polyurea and rubber asphalt coatings by substrate, exposure and application method.",
+      image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp",
       capabilities: [
-        "Single-Component Polyurethane Waterproof Coating",
-        "Eco-friendly High-Elastic Acrylic Coating",
-        "Polymer-Modified Cementitious Waterproofing Slurry",
-        "Ideal for Bathrooms, Balconies, Swimming Pools & Roofs",
-        "Available in 5kg, 10kg, 20kg B2B Wholesale Drums"
+        "Single-Component Polyurethane and Polymer Cement Coatings",
+        "Spray Polyurea and Rubber Asphalt Systems",
+        "Protected Wet-Area, Roofing and Below-Grade Applications",
+        "Product-Specific TDS and Application Guidance",
+        "Factory Quotation and Export Packing Support"
       ]
     },
     {
@@ -106,15 +107,46 @@ export async function getStaticPaths() {
 
 const { cat } = Astro.props;
 
+function normalizeAsset(value: unknown): string {
+  if (typeof value === 'string') return value;
+  if (value && typeof value === 'object' && 'src' in value && typeof value.src === 'string') return value.src;
+  return '';
+}
+
 const products = await getCollection('products', ({ data }) => {
   return data.category === cat.id;
 });
+
+if (cat.id === 'waterproof-coatings') {
+  const coatingOrder = [
+    'polymer-cement-js-waterproof-coating-factory',
+    'polyurethane-waterproof-coating-factory',
+    'spray-polyurea-waterproofing-coating',
+    'metal-roof-steel-structure-waterproof-coating',
+    'non-curing-rubber-asphalt-waterproof-coating',
+    'polymer-modified-asphalt-waterproof-coating',
+    'spraying-quick-setting-rubber-asphalt-waterproof-coating',
+    'epoxy-floor-coating-manufacturer'
+  ];
+  const rank = (slug: string) => {
+    const index = coatingOrder.indexOf(slug);
+    return index < 0 ? coatingOrder.length : index;
+  };
+  products.sort((a, b) => rank(a.slug) - rank(b.slug));
+}
 
 // Some categories have no hero photo yet and fall back to /placeholder.webp. Preloading a
 // grey placeholder as the LCP image is worse than not preloading at all, and a grey hero is
 // worse still — so fall back to the first real product photo in the category.
 const firstProductImage = products.find((p: any) => String(p.data.main_image || '').startsWith('http'))?.data.main_image;
 const heroImage = cat.image?.startsWith('http') ? cat.image : firstProductImage;
+
+const categoryTitle = cat.id === 'waterproof-coatings'
+  ? 'Waterproof Coatings: PU, JS & Polyurea | Tianyuan'
+  : `${cat.name} Wholesale & OEM | Tianyuan Waterproof`;
+const categoryDescription = cat.id === 'waterproof-coatings'
+  ? 'Compare PU, polymer cement, polyurea and rubber asphalt waterproof coatings. Select by substrate and exposure; request product TDS and factory pricing.'
+  : `Factory-direct ${cat.name.toLowerCase()} for global B2B buyers — custom widths, thicknesses and OEM branding, with TDS documentation and export packing support.`;
 
 const categoryUrl = `https://www.tyuanwaterproof.com/categories/${cat.id}/`;
 const categorySchema = {
@@ -124,8 +156,8 @@ const categorySchema = {
       '@type': 'CollectionPage',
       '@id': `${categoryUrl}#webpage`,
       url: categoryUrl,
-      name: `${cat.name} Wholesale & OEM | Tianyuan Waterproof`,
-      description: `Factory-direct ${cat.name.toLowerCase()} for global B2B buyers — custom widths, thicknesses and OEM branding, with TDS documentation and export packing support.`,
+      name: categoryTitle,
+      description: categoryDescription,
       isPartOf: { '@id': 'https://www.tyuanwaterproof.com/#website' }
     },
     {
@@ -152,8 +184,8 @@ const categorySchema = {
 ---
 
 <Layout 
-  title={`${cat.name} Wholesale & OEM | Tianyuan Waterproof`}
-  description={`Factory-direct ${cat.name.toLowerCase()} for global B2B buyers — custom widths, thicknesses and OEM branding, with TDS documentation and export packing support.`}
+  title={categoryTitle} 
+  description={categoryDescription}
   preloadImage={heroImage}
   ogType="website"
 >
@@ -163,7 +195,7 @@ const categorySchema = {
     <section class="relative py-28 bg-[#0B1E3B] text-white overflow-hidden border-b border-white/10">
       <div class="absolute inset-0 z-0">
         <img 
-          src={heroImage}
+          src={heroImage} 
           alt="" 
           class="w-full h-full object-cover opacity-20" 
           width="1920"
@@ -184,6 +216,7 @@ const categorySchema = {
         </nav>
         <h1 class="text-4xl md:text-5xl font-black mb-4 tracking-tight text-white leading-tight">{cat.name}</h1>
         <p class="text-lg md:text-xl text-slate-200 max-w-3xl leading-relaxed opacity-0 animate-fade-in" style="animation-fill-mode: forwards;">{cat.desc}</p>
+        {cat.id === 'waterproof-coatings' && <a href="#coating-selection-title" class="mt-6 inline-flex rounded-xl border border-white/40 px-5 py-3 font-bold text-white hover:bg-white/10">Compare coating systems</a>}
       </div>
     </section>
 
@@ -193,11 +226,11 @@ const categorySchema = {
         <div>
           <div class="mb-12">
             <h2 class="text-xs font-bold uppercase tracking-wider text-blue-600 mb-2">Available Products</h2>
-            <p class="text-3xl font-extrabold text-slate-900">Standard Specifications</p>
+            <p class="text-3xl font-extrabold text-slate-900">{cat.id === 'waterproof-coatings' ? 'Compare Waterproof Coating Products' : 'Standard Specifications'}</p>
           </div>
           <div class="grid md:grid-cols-3 gap-10">
             {products.map((p, index) => {
-              let displayImage = p.data.main_image || p.data.image || "";
+              let displayImage = normalizeAsset(p.data.main_image || p.data.image);
               if (displayImage && !displayImage.toLowerCase().endsWith(".webp") && !displayImage.toLowerCase().endsWith(".jpg")) {
                 displayImage = displayImage.replace(/\/$/, "") + ".webp";
               }
@@ -227,7 +260,7 @@ const categorySchema = {
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   </div>
                   <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2" title={p.data.displayName || p.data.title}>{p.data.displayName || p.data.title}</h3>
-                  <p class="text-slate-500 mb-6 text-sm leading-relaxed line-clamp-3">{p.data.description}</p>
+                  <p class="text-slate-500 mb-6 text-sm leading-relaxed line-clamp-3">{cat.id === 'waterproof-coatings' ? (p.data.meta_description || p.data.description || p.data.hero_description) : p.data.description}</p>
                   <span class="inline-flex items-center gap-2 font-bold text-blue-600 text-sm">Learn More <span class="text-xl leading-none">›</span></span>
                 </a>
               );
@@ -298,5 +331,6 @@ const categorySchema = {
         </div>
       )}
     </section>
+    {cat.id === 'waterproof-coatings' && <CoatingSelectionGuide />}
   </main>
 </Layout>

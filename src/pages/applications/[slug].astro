@@ -65,5 +65,13 @@ const applicationSchema = {
     </div>
     <div><h2 class="text-3xl font-bold">Solution notes</h2><div class="mt-6 grid gap-4">{app.points.map((point) => <div class="card"><p class="font-semibold">✓ {point}</p></div>)}</div></div>
   </div></section>
+  {(app.slug === 'tunnel-waterproofing' || app.slug === 'underground-waterproofing' || app.slug === 'bathroom-waterproofing') && (
+    <section class="pb-16"><div class="container-wrap"><div class="card">
+      <h2 class="text-2xl font-bold text-[#0B1E3B]">Plan the waterproofing specification</h2>
+      {app.slug === 'tunnel-waterproofing' && <p class="mt-4 leading-relaxed text-slate-600">Compare construction sequence, drainage design and seam inspection in our <a class="font-semibold text-blue-700 underline" href="/blog/tunnel-waterproofing-membrane-selection/">tunnel waterproofing membrane selection guide</a> before requesting a project quotation.</p>}
+      {app.slug === 'underground-waterproofing' && <p class="mt-4 leading-relaxed text-slate-600">Use our <a class="font-semibold text-blue-700 underline" href="/blog/sbs-membrane-basement-foundation-waterproofing/">SBS basement and foundation waterproofing guide</a> to compare wall access, slab construction, joints and protection before backfill.</p>}
+      {app.slug === 'bathroom-waterproofing' && <p class="mt-4 leading-relaxed text-slate-600">Compare <a class="font-semibold text-blue-700 underline" href="/categories/waterproof-coatings/">waterproof coating types and selection checks</a> for the substrate, tiled finish and installation sequence.</p>}
+    </div></div></section>
+  )}
   <CTA />
 </Layout>

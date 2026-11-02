@@ -152,6 +152,11 @@ const faqJsonLd = validArticle?.data.faqs?.length
                     <time datetime={validArticle.data.publishDate.toISOString()} class="inline-flex items-center gap-1.5 text-sm font-medium text-slate-500">
                       <CalendarDays size={16} strokeWidth={1.8} /> {formatDate(validArticle.data.publishDate)}
                     </time>
+                    {validArticle.data.updatedDate && validArticle.data.updatedDate > validArticle.data.publishDate && (
+                      <time datetime={validArticle.data.updatedDate.toISOString()} class="text-sm font-medium text-slate-500">
+                        Updated {formatDate(validArticle.data.updatedDate)}
+                      </time>
+                    )}
                     <span class="inline-flex items-center gap-1.5 text-sm font-medium text-slate-500">
                       <UserRound size={16} strokeWidth={1.8} /> {validArticle.data.author}
                     </span>

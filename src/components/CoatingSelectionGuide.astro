@@ -1,0 +1,39 @@
+---
+const systems = [
+  {name: 'Polymer cement (JS)', href: '/products/polymer-cement-js-waterproof-coating-factory/', use: 'Cement-based wet areas and protected under-tile systems', check: 'Substrate, mixing ratio, film build, curing and compatibility with the tile adhesive'},
+  {name: 'Single-component polyurethane', href: '/products/polyurethane-waterproof-coating-factory/', use: 'Liquid-applied membranes around complex details and in specified protected systems', check: 'Moisture conditions, primer, dry film thickness and whether an exposed finish is approved'},
+  {name: 'Spray polyurea', href: '/products/spray-polyurea-waterproofing-coating/', use: 'Projects specifying a plural-component sprayed protective or waterproofing system', check: 'Application equipment, trained applicators, surface preparation and required finish'},
+  {name: 'Metal roof waterproof coating', href: '/products/metal-roof-steel-structure-waterproof-coating/', use: 'Specified metal-roof refurbishment systems, including seams and fastener details', check: 'Corrosion treatment, adhesion, reinforcement and roof movement details'},
+  {name: 'Rubber asphalt coatings', href: '/products/non-curing-rubber-asphalt-waterproof-coating/', use: 'Specified composite or protected waterproofing build-ups', check: 'Non-curing or spray-setting product type, sheet compatibility and protection'},
+  {name: 'Epoxy floor coating', href: '/products/epoxy-floor-coating-manufacturer/', use: 'Floor finishing where the project specifies an epoxy system', check: 'Floor moisture, preparation and service loads; floor coating is not automatically a waterproof membrane'}
+];
+---
+<section class="mx-auto max-w-7xl px-4 pb-16" aria-labelledby="coating-selection-title">
+  <div class="rounded-3xl border border-slate-200 bg-white p-6 md:p-10">
+    <p class="text-xs font-bold uppercase tracking-wider text-blue-600">Selection guide</p>
+    <h2 id="coating-selection-title" class="scroll-mt-28 mt-2 text-3xl font-extrabold text-slate-900">Choose a waterproof coating by substrate and exposure</h2>
+    <p class="mt-5 max-w-4xl leading-relaxed text-slate-600">Liquid-applied waterproof coatings form a continuous layer around corners, drains and penetrations. Choose the complete system for the surface and service conditions: a coating beneath tiles, an exposed metal-roof system and a buried composite membrane have different requirements. Use this comparison to shortlist products, then confirm the selected configuration against its technical data sheet.</p>
+    <div class="mt-8 overflow-x-auto">
+      <table class="w-full min-w-[640px] border-collapse text-left text-sm">
+        <caption class="sr-only">Waterproof coating types, applications and selection checks</caption>
+        <thead class="bg-slate-100 text-slate-900"><tr><th scope="col" class="p-4">Product family</th><th scope="col" class="p-4">Application to evaluate</th><th scope="col" class="p-4">Confirm before ordering</th></tr></thead>
+        <tbody>{systems.map(system => <tr class="border-b border-slate-200"><th scope="row" class="p-4 font-bold"><a href={system.href} class="text-blue-700 underline underline-offset-4">{system.name}</a></th><td class="p-4 text-slate-600">{system.use}</td><td class="p-4 text-slate-600">{system.check}</td></tr>)}</tbody>
+      </table>
+    </div>
+    <div class="mt-10 grid gap-8 md:grid-cols-2">
+      <div><h3 class="text-xl font-bold text-slate-900">For bathrooms, balconies and tiled areas</h3><p class="mt-3 leading-relaxed text-slate-600">Start with the substrate, drains, wall-to-floor junctions and the planned finish. Confirm whether the coating is approved beneath the specified tile adhesive, how penetrations are sealed and when the next layer can be installed. See our <a href="/applications/bathroom-waterproofing/" class="text-blue-700 underline">bathroom waterproofing solutions</a> for relevant product options.</p></div>
+      <div><h3 class="text-xl font-bold text-slate-900">For roofs and underground structures</h3><p class="mt-3 leading-relaxed text-slate-600">Confirm UV exposure, ponding conditions, movement and any required protective finish for a roof. Below grade, confirm water pressure, access, protection and compatibility with adjacent sheets. Compare <a href="/applications/roof-waterproofing/" class="text-blue-700 underline">roof waterproofing systems</a> and <a href="/applications/underground-waterproofing/" class="text-blue-700 underline">underground waterproofing systems</a> before choosing by price alone.</p></div>
+      <div><h3 class="text-xl font-bold text-slate-900">Compare coverage at the specified film thickness</h3><p class="mt-3 leading-relaxed text-slate-600">Bucket price alone does not show installed material cost. Ask for consumption at the required dry film thickness, the number of coats, primer and reinforcement requirements, and substrate preparation. Do not apply one coverage rate to all coating types or assume that wet thickness equals cured thickness.</p></div>
+      <div><h3 class="text-xl font-bold text-slate-900">Prepare a specification-matched inquiry</h3><p class="mt-3 leading-relaxed text-slate-600">Send the application area, substrate, exposed or protected finish, required system build, quantity and destination. Request the proposed product TDS, application instructions, available test documents and packing details. Where the design is incomplete, identify the open questions before comparing quotations.</p></div>
+    </div>
+    <div class="mt-10 border-t border-slate-200 pt-8">
+      <h3 class="text-xl font-bold text-slate-900">Questions before specifying</h3>
+      <dl class="mt-4 space-y-5 text-slate-600">
+        <div><dt class="font-bold text-slate-900">Which coating is best for my project?</dt><dd class="mt-2">There is no universal coating for every substrate and exposure. Match the product to the intended use, joint details, substrate condition, finish and application method.</dd></div>
+        <div><dt class="font-bold text-slate-900">Can a liquid coating replace joint treatment?</dt><dd class="mt-2">Do not assume the field coating alone accommodates a movement joint. Use the specified joint detail and compatible reinforcement, sealant or joint system.</dd></div>
+        <div><dt class="font-bold text-slate-900">Can any waterproof coating remain exposed?</dt><dd class="mt-2">Confirm exposed-service approval, UV performance and any required topcoat in the selected product documentation. A protected waterproofing layer should not be treated as an exposed roof finish.</dd></div>
+      </dl>
+      <a href="/contact/?category=Waterproof+Coatings" class="mt-8 inline-flex rounded-xl bg-blue-700 px-6 py-3 font-bold text-white hover:bg-blue-800">Request coating selection support</a>
+    </div>
+  </div>
+</section>
