@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import { languageAlternates, localeOf } from './src/i18n/routes.mjs';
+import fullPageLocalization from './src/i18n/localize-html.mjs';
 
 export default defineConfig({
   site: 'https://www.tyuanwaterproof.com',
@@ -32,5 +33,5 @@ export default defineConfig({
       if (localeOf(path) !== 'en') item.lastmod = '2026-11-02';
       return item;
     }
-  })]
+  }), fullPageLocalization()]
 });

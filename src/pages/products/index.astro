@@ -123,6 +123,7 @@ const itemListJson = JSON.stringify({
               {categories.map((cat, idx) => (
                 <button 
                   data-category-filter={cat.label}
+                  data-category-label={cat.label}
                   class={`w-full flex justify-between items-center px-4 py-3 rounded-2xl text-sm font-bold transition-all ${idx === 0 ? 'bg-[#EAF3FF] text-[#1F4E8C]' : 'text-[#102033] hover:bg-[#F5F7FA] hover:text-[#F58A1F]'}`}
                 >
                   <span class="cat-label text-left flex-1 leading-tight mr-4">{cat.label}</span>
@@ -197,7 +198,7 @@ const itemListJson = JSON.stringify({
         });
 
         // Update Title & Count
-        if (title) title.innerText = targetLabel || 'All Products';
+        if (title) title.innerText = btn.getAttribute('data-category-label') || targetLabel || 'All Products';
         if (countDisplay) countDisplay.innerText = String(visibleCount);
       });
     });

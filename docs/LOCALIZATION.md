@@ -1,30 +1,57 @@
-# Thai and Vietnamese launch
+# Full-page Thai and Vietnamese localization
 
-English stays at `/`; Thai uses `/th/`, Vietnamese `/vi/`. No automatic language redirects.
+English is the only layout/content source. Thai `/th/` and Vietnamese `/vi/` each
+have 26 pages: home, catalog, about, contact, four categories and 18 products.
+Polymer membranes, geosynthetics, roofing accessories, application pages and
+articles outside this manifest keep their existing English destinations.
 
-## Scope
+## Rendering contract
 
-Each language has 26 static pages: home, products, about, contact, four categories and 18 product buyer guides. The supported categories are bitumen membranes, asphalt shingles, waterproof tapes and waterproof coatings. Polymer sheet membranes, geosynthetics, roofing accessories and blogs remain English in this first release. English technical references are explicitly labeled on the localized product pages.
+`src/i18n/localize-html.mjs`, registered last in `astro.config.mjs`, runs after
+Astro renders the English pages. It parses each corresponding English document
+and emits its localized counterpart, retaining layout classes, module IDs,
+images/srcsets, tables/rows, data attributes and interaction scripts. It replaces
+visible copy, accessibility labels, metadata and structured-data text; adjusts
+canonical/OG URLs, supported internal links and language switchers; and adds
+locale-specific inquiry messages and a hidden Language field. No client-side
+translation service is loaded. The old simplified buyer-guide template is gone.
 
-## Content and routing
+The locale catch-all registers routes and sitemap entries; it is not a separate
+design. Use `npm run build` then `npm run preview` to inspect localized pages.
+The English development server alone does not run the post-build localization.
 
-- `src/i18n/ui.json`: navigation, page and inquiry copy, category descriptions.
-- `src/i18n/products.json`: curated product descriptions, uses, checks and selected specifications. These are localized buyer guides, not a paragraph-for-paragraph copy of the English long-form pages. Images and category identity come from the English product collection.
-- `src/i18n/routes.mjs`: the single manifest for published language paths and language alternatives.
-- `src/pages/[locale]/[...path].astro`: shared static templates; no separate template copy per language.
+## Translation sources
 
-Update both languages and verify technical terms when English product configurations change. Preserve values, units, standard IDs and product names. Native-language technical review is useful for future terminology refinement; this release has not been certified by a native translator.
+- `full-th.json` and `full-vi.json`: checked-in full-copy dictionaries.
+- `full-overrides.json`: curated UI/terminology and technical translations.
+- `scripts/finalize-localization.mjs`: applies those overrides and terminology fixes.
+- `scripts/extract-localization.mjs`: collects current English strings from `dist`.
+- `scripts/translate-full-pages.py`: optional offline, resumable machine-translation
+  preparation using Google's translation service. It sends public page text only;
+  protects numbers, units and identifiers; never runs in production. This requires
+  Python and requests only when refreshing dictionaries, not for deployment.
 
-## Search and navigation
+Initial full-copy translation is machine-assisted, with targeted terminology and
+technical corrections. Native-language technical proofreading is still pending;
+do not represent this as certified translation.
 
-Every published language page has a self-referencing canonical and reciprocal en/th/vi/x-default alternatives in HTML and the XML sitemap. English pages without a localized counterpart do not advertise nonexistent alternatives. Their language menu clearly links to a language homepage. Language switching on translated products preserves the product path.
+Builds fail on missing strings rather than silently publishing mixed-language
+pages. For English content edits, render English output with the localization
+integration temporarily disabled if needed, extract new strings, translate and
+review them, finalize dictionaries, restore the integration, and build again.
+Never remove modules or technical rows to work around missing translations.
 
-The XML sitemap contains 122 URLs after launch (70 original + 52 localized). Being listed does not guarantee indexing.
+## Verification
 
-## Inquiry flow
+Run `npx astro check`, `npx astro build` and
+`node scripts/verify-full-localization.mjs`. The parity check covers all 52 pages:
+module IDs, layout classes, source image sets, table/row counts, technical numbers
+and measurement units, interaction scripts, canonical/alternate URLs, supported
+links and inquiry locale fields. `reports/full-localization/validation.json`
+records the result. Browser QA additionally covers desktop/mobile home/product
+layouts, gallery switching, catalog filtering, cross-language links and inquiry
+preselection without submitting a production message.
 
-The localized forms use the existing Formspree endpoint and Turnstile protection, with localized success/error messages. A product inquiry carries the product slug, language and source path. Field labels are localized; submitted field names remain compatible with the business inbox. Never send production test inquiries without an appropriate reason. Browser validation and product preselection were checked without sending a message.
-
-## Validation
-
-Run `astro check` and `astro build`. Check built locale page counts, language tags, H1s, local links, self canonicals, reciprocal alternatives and sitemap coverage. Check English, Thai and Vietnamese headers at mobile and desktop widths; check the mobile language menu and the product-to-inquiry selection. Launch evidence is recorded under `reports/th-vi-launch-2026-11-02/` in the original workspace.
+Every language URL has its own canonical and reciprocal en/th/vi/x-default links.
+The sitemap remains 122 URLs. Keep the existing Formspree endpoint, Turnstile,
+field names and option values compatible with the English inquiry flow.

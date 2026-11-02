@@ -1,0 +1,536 @@
+{
+  "dictionaries": [
+    {
+      "locale": "th",
+      "strings": 2353,
+      "numericParity": true
+    },
+    {
+      "locale": "vi",
+      "strings": 2353,
+      "numericParity": true
+    }
+  ],
+  "pages": [
+    {
+      "path": "/th/",
+      "images": 28,
+      "tables": 0,
+      "forms": 1,
+      "ids": 16,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/",
+      "images": 28,
+      "tables": 0,
+      "forms": 1,
+      "ids": 16,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/",
+      "images": 27,
+      "tables": 0,
+      "forms": 0,
+      "ids": 4,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/",
+      "images": 27,
+      "tables": 0,
+      "forms": 0,
+      "ids": 4,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/about/",
+      "images": 11,
+      "tables": 0,
+      "forms": 0,
+      "ids": 3,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/about/",
+      "images": 11,
+      "tables": 0,
+      "forms": 0,
+      "ids": 3,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/contact/",
+      "images": 1,
+      "tables": 0,
+      "forms": 1,
+      "ids": 21,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/contact/",
+      "images": 1,
+      "tables": 0,
+      "forms": 1,
+      "ids": 21,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/categories/bitumen-membranes/",
+      "images": 6,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/categories/bitumen-membranes/",
+      "images": 6,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/categories/asphalt-shingles/",
+      "images": 5,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/categories/asphalt-shingles/",
+      "images": 5,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/categories/waterproof-tapes/",
+      "images": 5,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/categories/waterproof-tapes/",
+      "images": 5,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/categories/waterproof-coatings/",
+      "images": 10,
+      "tables": 1,
+      "forms": 0,
+      "ids": 2,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/categories/waterproof-coatings/",
+      "images": 10,
+      "tables": 1,
+      "forms": 0,
+      "ids": 2,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/sbs-bitumen-waterproofing-membrane-manufacturer/",
+      "images": 11,
+      "tables": 4,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/sbs-bitumen-waterproofing-membrane-manufacturer/",
+      "images": 11,
+      "tables": 4,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/app-modified-bitumen-waterproofing-membrane-manufacturer/",
+      "images": 10,
+      "tables": 4,
+      "forms": 1,
+      "ids": 13,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/app-modified-bitumen-waterproofing-membrane-manufacturer/",
+      "images": 10,
+      "tables": 4,
+      "forms": 1,
+      "ids": 13,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/",
+      "images": 10,
+      "tables": 2,
+      "forms": 1,
+      "ids": 13,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/",
+      "images": 10,
+      "tables": 2,
+      "forms": 1,
+      "ids": 13,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/asphalt-roofing-felt-manufacturer/",
+      "images": 11,
+      "tables": 3,
+      "forms": 1,
+      "ids": 13,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/asphalt-roofing-felt-manufacturer/",
+      "images": 11,
+      "tables": 3,
+      "forms": 1,
+      "ids": 13,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/3-tab-asphalt-shingles-wholesale/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/3-tab-asphalt-shingles-wholesale/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/laminated-asphalt-shingles-manufacturer/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/laminated-asphalt-shingles-manufacturer/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/artistic-asphalt-shingles-supplier/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/artistic-asphalt-shingles-supplier/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/butyl-waterproof-sealing-tape-supplier/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/butyl-waterproof-sealing-tape-supplier/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/self-adhesive-bitumen-tape-wholesale/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/self-adhesive-bitumen-tape-wholesale/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/tpe-joint-lap-tape-reinforcement/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 17,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/tpe-joint-lap-tape-reinforcement/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 17,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/polyurethane-waterproof-coating-factory/",
+      "images": 6,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/polyurethane-waterproof-coating-factory/",
+      "images": 6,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/polymer-cement-js-waterproof-coating-factory/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/polymer-cement-js-waterproof-coating-factory/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/metal-roof-steel-structure-waterproof-coating/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 13,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/metal-roof-steel-structure-waterproof-coating/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 13,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/non-curing-rubber-asphalt-waterproof-coating/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 15,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/non-curing-rubber-asphalt-waterproof-coating/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 15,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/polymer-modified-asphalt-waterproof-coating/",
+      "images": 6,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/polymer-modified-asphalt-waterproof-coating/",
+      "images": 6,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/spray-polyurea-waterproofing-coating/",
+      "images": 5,
+      "tables": 2,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/spray-polyurea-waterproofing-coating/",
+      "images": 5,
+      "tables": 2,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/th/products/epoxy-floor-coating-manufacturer/",
+      "images": 7,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/vi/products/epoxy-floor-coating-manufacturer/",
+      "images": 7,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    }
+  ]
+}

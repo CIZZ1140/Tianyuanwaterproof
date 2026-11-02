@@ -457,7 +457,7 @@ const contactPageSchema = {
     }
     if (specificProduct) specificProduct.value = product;
     if (inquiryIntent) inquiryIntent.value = intent;
-    if (sourcePage) sourcePage.value = source;
+    if (sourcePage) sourcePage.value = source || window.location.pathname;
 
     const selector = document.getElementById('country-selector');
     const trigger = selector?.querySelector('button');
