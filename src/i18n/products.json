@@ -1,0 +1,832 @@
+{
+  "sbs-bitumen-waterproofing-membrane-manufacturer": {
+    "th": {
+      "title": "แผ่นกันซึมบิทูเมนดัดแปร SBS",
+      "summary": "แผ่นกันซึมบิทูเมนดัดแปรด้วย SBS สำหรับระบบหลังคาและโครงสร้างใต้ดินที่โครงการระบุ เลือกชนิดชั้นเสริมแรง ผิวหน้า และวิธีติดตั้งให้เหมาะกับพื้นผิวและชั้นป้องกัน",
+      "uses": [
+        "หลังคาคอนกรีตที่มีระบบรองรับ",
+        "ผนังและฐานรากที่เข้าถึงด้านติดตั้งได้",
+        "ระบบกันซึมที่มีชั้นป้องกันตามแบบ"
+      ],
+      "checks": [
+        "ยืนยันความหนา จำนวนชั้น และวัสดุรองพื้น",
+        "รายละเอียดรอยต่อและความปลอดภัยในการใช้ความร้อนต้องได้รับการยืนยัน"
+      ],
+      "specs": [
+        [
+          "ชั้นเสริมแรง",
+          "PY / G / PYG"
+        ],
+        [
+          "เกรด",
+          "Type I / Type II"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Màng chống thấm bitum biến tính SBS",
+      "summary": "Màng bitum biến tính SBS dành cho các hệ mái và kết cấu ngầm theo thiết kế. Cần chọn lớp gia cường, bề mặt và phương pháp thi công phù hợp với nền và lớp bảo vệ.",
+      "uses": [
+        "Mái bê tông có hệ nền phù hợp",
+        "Tường và móng có thể tiếp cận mặt thi công",
+        "Hệ chống thấm có lớp bảo vệ theo thiết kế"
+      ],
+      "checks": [
+        "Xác nhận chiều dày, số lớp và sơn lót",
+        "Duyệt chi tiết mối nối và biện pháp an toàn khi thi công nhiệt"
+      ],
+      "specs": [
+        [
+          "Lớp gia cường",
+          "PY / G / PYG"
+        ],
+        [
+          "Cấp sản phẩm",
+          "Type I / Type II"
+        ]
+      ]
+    }
+  },
+  "app-modified-bitumen-waterproofing-membrane-manufacturer": {
+    "th": {
+      "title": "แผ่นกันซึมบิทูเมนดัดแปร APP",
+      "summary": "แผ่นบิทูเมนดัดแปร APP สำหรับงานที่ต้องเลือกระดับความทนความร้อนและรูปแบบผิวตามระบบหลังคา ต้องยืนยันชนิดวัสดุและการป้องกันผิวก่อนใช้กลางแจ้ง",
+      "uses": [
+        "หลังคาและพื้นที่ที่โครงการกำหนดแผ่น APP",
+        "งานปรับปรุงระบบกันซึมบนพื้นผิวที่เหมาะสม"
+      ],
+      "checks": [
+        "เปรียบเทียบเกรดและผิวหน้าตาม TDS",
+        "ยืนยันวิธีเชื่อมรอยต่อ วัสดุรองพื้น และชั้นป้องกัน"
+      ],
+      "specs": [
+        [
+          "ชั้นเสริมแรง",
+          "PY / G / PYG"
+        ],
+        [
+          "เกรด",
+          "Type I / Type II"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Màng chống thấm bitum biến tính APP",
+      "summary": "Màng bitum biến tính APP cho hệ chống thấm cần lựa chọn khả năng chịu nhiệt và dạng bề mặt. Phải xác nhận cấu hình sản phẩm và giải pháp bảo vệ trước khi dùng lộ thiên.",
+      "uses": [
+        "Mái và khu vực được thiết kế sử dụng màng APP",
+        "Cải tạo chống thấm trên nền tương thích"
+      ],
+      "checks": [
+        "Đối chiếu cấp sản phẩm và bề mặt theo TDS",
+        "Xác nhận cách xử lý mối nối, sơn lót và lớp bảo vệ"
+      ],
+      "specs": [
+        [
+          "Lớp gia cường",
+          "PY / G / PYG"
+        ],
+        [
+          "Cấp sản phẩm",
+          "Type I / Type II"
+        ]
+      ]
+    }
+  },
+  "self-adhesive-bitumen-waterproofing-membrane-wholesale": {
+    "th": {
+      "title": "แผ่นกันซึมบิทูเมนชนิดมีกาวในตัว",
+      "summary": "แผ่นบิทูเมนชนิดมีกาวในตัวพร้อมฟิล์มลอกออก สำหรับระบบที่ระบุการติดตั้งแบบไม่ใช้เปลวไฟ คุณภาพการยึดติดขึ้นอยู่กับพื้นผิว วัสดุรองพื้น อุณหภูมิ และการกดแนบรอยต่อ",
+      "uses": [
+        "ผนังใต้ดินที่เข้าถึงพื้นผิวและติดตั้งชั้นป้องกันได้",
+        "บริเวณที่จำกัดการใช้เปลวไฟตามแบบระบบ"
+      ],
+      "checks": [
+        "ห้ามถือว่าใช้ได้กับพื้นผิวเปียกทุกชนิด",
+        "ยืนยันรอยต่อ มุม และชั้นป้องกันก่อนถมดิน"
+      ],
+      "specs": [
+        [
+          "ชั้นเสริมแรง",
+          "N / PY"
+        ],
+        [
+          "เกรด",
+          "Type I / Type II"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Màng chống thấm bitum tự dính",
+      "summary": "Màng bitum tự dính có lớp màng bảo vệ bóc bỏ, dùng cho hệ được chỉ định thi công không dùng đèn khò. Độ bám dính phụ thuộc nền, sơn lót, nhiệt độ và việc ép chặt các mép nối.",
+      "uses": [
+        "Tường ngầm có thể tiếp cận và lắp lớp bảo vệ",
+        "Khu vực hạn chế lửa với hệ vật liệu được phê duyệt"
+      ],
+      "checks": [
+        "Không mặc định phù hợp với mọi nền ướt",
+        "Xác nhận mép nối, góc và lớp bảo vệ trước khi lấp đất"
+      ],
+      "specs": [
+        [
+          "Lớp gia cường",
+          "N / PY"
+        ],
+        [
+          "Cấp sản phẩm",
+          "Type I / Type II"
+        ]
+      ]
+    }
+  },
+  "asphalt-roofing-felt-manufacturer": {
+    "th": {
+      "title": "แผ่นรองหลังคาแอสฟัลต์",
+      "summary": "แผ่นใยอินทรีย์อิ่มตัวด้วยแอสฟัลต์ ใช้เป็นวัสดุรองใต้หลังคาตามระบบที่กำหนด เลือกชนิดและขนาดม้วนให้สัมพันธ์กับวัสดุมุงหลังคา ความลาดเอียง และลำดับติดตั้ง",
+      "uses": [
+        "ชั้นรองใต้กระเบื้องหลังคาแอสฟัลต์",
+        "งานหลังคาที่ระบุแผ่นรองชนิดแอสฟัลต์"
+      ],
+      "checks": [
+        "แผ่นรองไม่ใช่วัสดุมุงหลังคาสำเร็จ",
+        "ยืนยันระยะซ้อนทับ การยึด และการป้องกันก่อนปิดทับ"
+      ],
+      "specs": [
+        [
+          "ความกว้าง",
+          "1 m"
+        ],
+        [
+          "ความหนา",
+          "0.5 mm / 0.8 mm"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Tấm lót mái tẩm nhựa đường",
+      "summary": "Tấm nền sợi hữu cơ tẩm nhựa đường dùng làm lớp lót trong hệ mái được chỉ định. Chọn loại và quy cách cuộn theo vật liệu lợp, độ dốc và trình tự thi công.",
+      "uses": [
+        "Lớp lót dưới ngói bitum",
+        "Hệ mái yêu cầu tấm lót tẩm nhựa đường"
+      ],
+      "checks": [
+        "Tấm lót không thay thế lớp lợp hoàn thiện",
+        "Xác nhận chồng mí, liên kết và bảo vệ trước khi phủ lớp trên"
+      ],
+      "specs": [
+        [
+          "Chiều rộng",
+          "1 m"
+        ],
+        [
+          "Chiều dày",
+          "0.5 mm / 0.8 mm"
+        ]
+      ]
+    }
+  },
+  "3-tab-asphalt-shingles-wholesale": {
+    "th": {
+      "title": "กระเบื้องหลังคาแอสฟัลต์แบบสามแถบ",
+      "summary": "กระเบื้องแอสฟัลต์ชั้นเดียวแบบสามแถบ เสริมใยแก้วและปิดผิวด้วยเม็ดแร่สี สำหรับหลังคาลาดเอียงที่มีแผ่นรองและการยึดตามระบบ",
+      "uses": [
+        "หลังคาลาดเอียงของบ้านและอาคาร",
+        "โครงการที่ต้องการลายหลังคาแบบสามแถบ"
+      ],
+      "checks": [
+        "ยืนยันความลาดเอียงและวัสดุแผ่นรองรับ",
+        "ตรวจสอบตะปูยึด ขอบชายคา สันหลังคา และการระบายอากาศ"
+      ],
+      "specs": [
+        [
+          "ขนาดแผ่น",
+          "1000 × 333 mm"
+        ],
+        [
+          "ความหนา",
+          "2.6 ± 0.1 mm"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Ngói bitum ba tab phủ đá",
+      "summary": "Ngói bitum một lớp dạng ba tab, gia cường sợi thủy tinh và phủ hạt khoáng màu. Dùng cho mái dốc có nền đỡ, lớp lót và liên kết đúng hệ.",
+      "uses": [
+        "Mái dốc nhà ở và công trình",
+        "Dự án yêu cầu hình thức mái ba tab"
+      ],
+      "checks": [
+        "Xác nhận độ dốc và tấm nền đỡ",
+        "Kiểm tra đinh liên kết, mép mái, nóc mái và thông gió"
+      ],
+      "specs": [
+        [
+          "Kích thước tấm",
+          "1000 × 333 mm"
+        ],
+        [
+          "Chiều dày",
+          "2.6 ± 0.1 mm"
+        ]
+      ]
+    }
+  },
+  "laminated-asphalt-shingles-manufacturer": {
+    "th": {
+      "title": "กระเบื้องหลังคาแอสฟัลต์แบบลามิเนต",
+      "summary": "กระเบื้องแอสฟัลต์แบบซ้อนชั้น เสริมใยแก้วและปิดผิวด้วยเม็ดแร่ ช่วยสร้างมิติให้หลังคาลาดเอียง ต้องยืนยันระยะเปิดหน้าและลายวางของรุ่นที่เลือก",
+      "uses": [
+        "หลังคาบ้านและอาคารที่ต้องการลายซ้อนชั้น",
+        "งานหลังคาลาดเอียงตามแบบรองรับ"
+      ],
+      "checks": [
+        "ยืนยันรุ่น สี และตัวอย่างก่อนสั่ง",
+        "จำนวนแผ่นต่อพื้นที่ขึ้นกับระยะเปิดหน้าของรุ่น"
+      ],
+      "specs": [
+        [
+          "ขนาดแผ่นโดยประมาณ",
+          "1000 × 333 mm"
+        ],
+        [
+          "ระยะเปิดหน้าโดยประมาณ",
+          "145 mm"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Ngói bitum nhiều lớp phủ đá",
+      "summary": "Ngói bitum dạng nhiều lớp, gia cường sợi thủy tinh và phủ hạt khoáng, tạo chiều sâu cho mái dốc. Cần xác nhận phần lộ thiên và cách bố trí của đúng mẫu.",
+      "uses": [
+        "Mái nhà và công trình cần kiểu lợp nhiều lớp",
+        "Mái dốc có nền đỡ theo thiết kế"
+      ],
+      "checks": [
+        "Xác nhận mẫu, màu và mẫu vật trước khi đặt",
+        "Số tấm theo diện tích phụ thuộc phần lộ thiên của mẫu"
+      ],
+      "specs": [
+        [
+          "Kích thước danh nghĩa",
+          "1000 × 333 mm"
+        ],
+        [
+          "Phần lộ thiên danh nghĩa",
+          "145 mm"
+        ]
+      ]
+    }
+  },
+  "artistic-asphalt-shingles-supplier": {
+    "th": {
+      "title": "กระเบื้องหลังคาแอสฟัลต์ลายตกแต่ง",
+      "summary": "กระเบื้องแอสฟัลต์ลายเกล็ดปลาหรือลายหกเหลี่ยม สำหรับสร้างรูปแบบหลังคาตามงานสถาปัตยกรรม เลือกสีและลายจากตัวอย่างที่ยืนยันร่วมกัน",
+      "uses": [
+        "หลังคาลาดเอียงที่ต้องการลายตกแต่ง",
+        "บ้านพักและอาคารตามแบบสถาปัตยกรรม"
+      ],
+      "checks": [
+        "ยืนยันลาย สี ระยะเปิดหน้า และวัสดุรอง",
+        "รายละเอียดขอบ สัน และตะปูต้องตรงกับระบบติดตั้ง"
+      ],
+      "specs": [
+        [
+          "ขนาดแผ่น",
+          "1000 ± 3 × 333 ± 3 mm"
+        ],
+        [
+          "ความหนา",
+          "2.6 ± 0.1 mm"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Ngói bitum trang trí phủ đá",
+      "summary": "Ngói bitum dạng vảy cá hoặc họa tiết lục giác cho mái kiến trúc. Lựa chọn màu và kiểu dáng dựa trên mẫu được hai bên xác nhận.",
+      "uses": [
+        "Mái dốc cần họa tiết trang trí",
+        "Nhà ở và công trình theo thiết kế kiến trúc"
+      ],
+      "checks": [
+        "Xác nhận mẫu, màu, phần lộ thiên và lớp lót",
+        "Chi tiết mép, nóc và đinh cần phù hợp hệ thi công"
+      ],
+      "specs": [
+        [
+          "Kích thước tấm",
+          "1000 ± 3 × 333 ± 3 mm"
+        ],
+        [
+          "Chiều dày",
+          "2.6 ± 0.1 mm"
+        ]
+      ]
+    }
+  },
+  "butyl-waterproof-sealing-tape-supplier": {
+    "th": {
+      "title": "เทปบิวทิลปิดรอยต่อกันน้ำ",
+      "summary": "เทปบิวทิลแบบมีกาวด้านเดียวพร้อมวัสดุปิดผิวและฟิล์มลอกออก สำหรับรอยต่อและรายละเอียดที่พื้นผิวเข้ากันได้ เลือกความกว้างและความหนาตามลักษณะงาน",
+      "uses": [
+        "รอยต่อแผ่นโลหะและรายละเอียดปิดรอยต่อ",
+        "งานซ่อมเฉพาะจุดบนพื้นผิวที่ตรวจสอบการยึดติดแล้ว"
+      ],
+      "checks": [
+        "เตรียมพื้นผิวให้สะอาดและกดแนบ",
+        "เทปไม่ทดแทนการออกแบบรอยต่อที่เคลื่อนตัวมาก"
+      ],
+      "specs": [
+        [
+          "ความกว้างที่เสนอราคา",
+          "50 / 100 / 150 / 200 mm"
+        ],
+        [
+          "ความยาวม้วน",
+          "5 / 10 / 20 m"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Băng keo butyl chống thấm",
+      "summary": "Băng butyl tự dính một mặt, có lớp phủ bảo vệ và lớp giấy hoặc màng bóc bỏ. Dùng tại khe nối và chi tiết trên nền tương thích; chọn chiều rộng và chiều dày theo công việc.",
+      "uses": [
+        "Mối nối tấm kim loại và chi tiết che kín",
+        "Sửa chữa cục bộ trên nền đã kiểm tra độ bám dính"
+      ],
+      "checks": [
+        "Làm sạch nền và ép chặt băng",
+        "Không thay thế thiết kế khe có chuyển vị lớn"
+      ],
+      "specs": [
+        [
+          "Chiều rộng báo giá",
+          "50 / 100 / 150 / 200 mm"
+        ],
+        [
+          "Chiều dài cuộn",
+          "5 / 10 / 20 m"
+        ]
+      ]
+    }
+  },
+  "self-adhesive-bitumen-tape-wholesale": {
+    "th": {
+      "title": "เทปบิทูเมนมีกาวในตัวปิดผิวอะลูมิเนียม",
+      "summary": "เทปบิทูเมนดัดแปรปิดผิวอะลูมิเนียมพร้อมฟิล์มลอก ใช้ปิดรอยต่อและงานแฟลชชิงเฉพาะจุด ต้องประเมินการยึดติดและการรองรับของพื้นผิว",
+      "uses": [
+        "งานปิดรอยต่อและแฟลชชิง",
+        "งานซ่อมเฉพาะจุดตามข้อกำหนดระบบ"
+      ],
+      "checks": [
+        "ยืนยันความกว้างที่ครอบคลุมรอยต่อ",
+        "ตรวจสอบพื้นผิว วัสดุรองพื้น และความเข้ากันได้"
+      ],
+      "specs": [
+        [
+          "ความหนาที่เสนอราคา",
+          "1.0 / 1.2 / 1.5 mm"
+        ],
+        [
+          "ความยาวม้วน",
+          "5 / 10 / 20 m"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Băng bitum tự dính mặt nhôm",
+      "summary": "Băng bitum biến tính tự dính phủ mặt nhôm, có lớp bảo vệ bóc bỏ, dùng cho chi tiết flashing và che kín cục bộ. Cần đánh giá độ bám dính và độ ổn định của nền.",
+      "uses": [
+        "Chi tiết tiếp giáp và flashing",
+        "Sửa chữa cục bộ theo yêu cầu hệ vật liệu"
+      ],
+      "checks": [
+        "Xác nhận chiều rộng phủ qua mối nối",
+        "Kiểm tra nền, sơn lót và tính tương thích"
+      ],
+      "specs": [
+        [
+          "Chiều dày báo giá",
+          "1.0 / 1.2 / 1.5 mm"
+        ],
+        [
+          "Chiều dài cuộn",
+          "5 / 10 / 20 m"
+        ]
+      ]
+    }
+  },
+  "tpe-joint-lap-tape-reinforcement": {
+    "th": {
+      "title": "เทป TPE สำหรับรอยต่อและรอยต่อเผื่อการขยายตัว",
+      "summary": "เทป TPE มีส่วนกลางยืดหยุ่นและขอบใยสำหรับยึดประสาน ใช้เป็นส่วนหนึ่งของรายละเอียดรอยต่อที่ออกแบบร่วมกับวัสดุยึดติดและระบบกันซึม",
+      "uses": [
+        "รอยต่อก่อสร้างตามแบบระบบ",
+        "รอยต่อที่ต้องกำหนดช่วงเคลื่อนตัวและการยึดขอบ"
+      ],
+      "checks": [
+        "ให้ผู้ออกแบบยืนยันการเคลื่อนตัวและแรงดันน้ำ",
+        "ตรวจสอบกาว ระยะยึด และรอยต่อปลายเทป"
+      ],
+      "specs": [
+        [
+          "ความกว้างม้วน",
+          "120 mm"
+        ],
+        [
+          "ความยาวม้วน",
+          "10 m / 50 m"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Băng TPE xử lý khe co giãn",
+      "summary": "Băng TPE có vùng giữa mềm dẻo và mép vải để liên kết. Sử dụng trong chi tiết khe được thiết kế cùng keo dán và hệ chống thấm tương thích.",
+      "uses": [
+        "Khe thi công theo chi tiết hệ thống",
+        "Khe cần xác định chuyển vị và liên kết mép"
+      ],
+      "checks": [
+        "Đơn vị thiết kế xác nhận chuyển vị và áp lực nước",
+        "Kiểm tra keo, vùng liên kết và nối đầu băng"
+      ],
+      "specs": [
+        [
+          "Chiều rộng cuộn",
+          "120 mm"
+        ],
+        [
+          "Chiều dài cuộn",
+          "10 m / 50 m"
+        ]
+      ]
+    }
+  },
+  "polyurethane-waterproof-coating-factory": {
+    "th": {
+      "title": "วัสดุเคลือบกันซึมโพลียูรีเทน PU ชนิดส่วนประกอบเดียว",
+      "summary": "วัสดุเคลือบ PU ชนิดส่วนประกอบเดียว บ่มด้วยความชื้นเพื่อสร้างชั้นกันซึมต่อเนื่อง เหมาะสำหรับพิจารณาในระบบที่มีมุม ท่อ และรายละเอียดซับซ้อนตามข้อกำหนด",
+      "uses": [
+        "พื้นที่เปียกและระบบใต้ดินที่มีชั้นป้องกัน",
+        "รายละเอียดหลังคาที่ระบุระบบ PU"
+      ],
+      "checks": [
+        "ยืนยันความชื้นพื้นผิว วัสดุรองพื้น และความหนาฟิล์มแห้ง",
+        "การใช้กลางแจ้งต้องยืนยันชั้นปิดผิวที่เหมาะสม"
+      ],
+      "specs": [
+        [
+          "เกรด",
+          "Type I / Type II"
+        ],
+        [
+          "กำลังรับแรงดึง",
+          "Type I ≥1.9 MPa / Type II ≥2.45 MPa"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Lớp phủ chống thấm PU một thành phần",
+      "summary": "Lớp phủ PU một thành phần đóng rắn nhờ độ ẩm, tạo lớp chống thấm liên tục. Có thể xem xét cho hệ có góc, cổ ống và chi tiết phức tạp theo yêu cầu thiết kế.",
+      "uses": [
+        "Khu vực ẩm ướt và kết cấu ngầm có bảo vệ",
+        "Chi tiết mái sử dụng hệ PU được chỉ định"
+      ],
+      "checks": [
+        "Xác nhận độ ẩm nền, sơn lót và chiều dày màng khô",
+        "Dùng lộ thiên cần xác nhận lớp hoàn thiện thích hợp"
+      ],
+      "specs": [
+        [
+          "Cấp sản phẩm",
+          "Type I / Type II"
+        ],
+        [
+          "Cường độ kéo",
+          "Type I ≥1.9 MPa / Type II ≥2.45 MPa"
+        ]
+      ]
+    }
+  },
+  "polymer-cement-js-waterproof-coating-factory": {
+    "th": {
+      "title": "วัสดุกันซึมซีเมนต์ผสมพอลิเมอร์ JS",
+      "summary": "ระบบสองส่วนประกอบ ได้แก่ อิมัลชันพอลิเมอร์และผงซีเมนต์ สำหรับพื้นผิวซีเมนต์และระบบพื้นที่เปียกที่มีชั้นปิดทับ เลือกเกรดและอัตราผสมตามรุ่น",
+      "uses": [
+        "ห้องน้ำและระเบียงใต้ชั้นปิดผิว",
+        "พื้นผิวคอนกรีตในระบบที่กำหนด JS"
+      ],
+      "checks": [
+        "ชั่งผสมตามสัดส่วน ห้ามเพิ่มน้ำโดยไม่ยืนยัน",
+        "ตรวจสอบการบ่มและความเข้ากันได้กับกาวปูกระเบื้อง"
+      ],
+      "specs": [
+        [
+          "เกรด",
+          "Type I / Type II / Type III"
+        ],
+        [
+          "ของเหลว : ผง โดยน้ำหนัก",
+          "Type I 1:1.2 / Type II 1:1.5"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Lớp phủ chống thấm xi măng polymer JS",
+      "summary": "Hệ hai thành phần gồm nhũ tương polymer và bột gốc xi măng cho nền xi măng và khu vực ẩm ướt có lớp hoàn thiện. Chọn cấp sản phẩm và tỷ lệ trộn theo đúng cấu hình.",
+      "uses": [
+        "Phòng tắm và ban công dưới lớp hoàn thiện",
+        "Nền bê tông trong hệ được thiết kế dùng JS"
+      ],
+      "checks": [
+        "Cân trộn đúng tỷ lệ, không tự ý thêm nước",
+        "Kiểm tra dưỡng hộ và tương thích với keo dán gạch"
+      ],
+      "specs": [
+        [
+          "Cấp sản phẩm",
+          "Type I / Type II / Type III"
+        ],
+        [
+          "Lỏng : bột theo khối lượng",
+          "Type I 1:1.2 / Type II 1:1.5"
+        ]
+      ]
+    }
+  },
+  "metal-roof-steel-structure-waterproof-coating": {
+    "th": {
+      "title": "วัสดุเคลือบกันซึมอะคริลิกสำหรับหลังคาโลหะ",
+      "summary": "วัสดุเคลือบฐานอิมัลชันอะคริลิกสำหรับระบบหลังคาโลหะและโครงสร้างเหล็ก การเตรียมสนิมและการเสริมแรงบริเวณสกรูหรือรอยต่อเป็นส่วนสำคัญของระบบ",
+      "uses": [
+        "ซ่อมปรับปรุงหลังคาโลหะที่มีพื้นผิวเหมาะสม",
+        "สกรูและรอยต่อที่มีรายละเอียดเสริมแรง"
+      ],
+      "checks": [
+        "ตรวจสอบสนิมและการยึดติดของสีเดิม",
+        "ยืนยันปริมาณใช้ ชั้นเสริมแรง และเงื่อนไขน้ำขัง"
+      ],
+      "specs": [
+        [
+          "ของแข็ง",
+          "≥65%"
+        ],
+        [
+          "การยืดตัว",
+          "≥300%"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Lớp phủ chống thấm acrylic cho mái kim loại",
+      "summary": "Lớp phủ gốc nhũ tương acrylic cho hệ mái kim loại và kết cấu thép. Xử lý gỉ và gia cường tại vít, mối nối là các bước quan trọng của hệ thống.",
+      "uses": [
+        "Cải tạo mái kim loại có nền phù hợp",
+        "Vít và mối nối có chi tiết gia cường"
+      ],
+      "checks": [
+        "Kiểm tra gỉ và độ bám của sơn cũ",
+        "Xác nhận định mức, lớp gia cường và điều kiện đọng nước"
+      ],
+      "specs": [
+        [
+          "Hàm lượng chất rắn",
+          "≥65%"
+        ],
+        [
+          "Độ giãn dài",
+          "≥300%"
+        ]
+      ]
+    }
+  },
+  "non-curing-rubber-asphalt-waterproof-coating": {
+    "th": {
+      "title": "วัสดุเคลือบยางแอสฟัลต์ชนิดไม่บ่มแข็ง",
+      "summary": "วัสดุยางแอสฟัลต์ลักษณะเนื้อข้นชนิดส่วนประกอบเดียว ให้ความร้อนก่อนพ่นหรือปาด ใช้เป็นชั้นยึดติดและกันซึมใต้แผ่นกันซึมที่เข้ากันได้",
+      "uses": [
+        "ระบบกันซึมใต้ดินแบบใช้ร่วมกับแผ่น",
+        "ระบบหลังคาที่มีชั้นป้องกันตามแบบ"
+      ],
+      "checks": [
+        "ยืนยันอุณหภูมิและอุปกรณ์กับวิธีติดตั้ง",
+        "ไม่ใช้เป็นผิวทางเดินหรือชั้นเคลือบเปิดโล่งโดยอัตโนมัติ"
+      ],
+      "specs": [
+        [
+          "ของแข็ง",
+          "≥98%"
+        ],
+        [
+          "ระบบ",
+          "SBS / APP"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Lớp phủ cao su bitum không đóng rắn",
+      "summary": "Vật liệu cao su bitum dạng nhão một thành phần, gia nhiệt trước khi phun hoặc gạt. Dùng làm lớp liên kết và chống thấm dưới màng dạng tấm tương thích.",
+      "uses": [
+        "Hệ chống thấm ngầm kết hợp màng tấm",
+        "Hệ mái có lớp bảo vệ theo thiết kế"
+      ],
+      "checks": [
+        "Xác nhận nhiệt độ và thiết bị theo hướng dẫn",
+        "Không mặc định dùng làm bề mặt đi lại hoặc lớp phủ lộ thiên"
+      ],
+      "specs": [
+        [
+          "Hàm lượng chất rắn",
+          "≥98%"
+        ],
+        [
+          "Hệ vật liệu",
+          "SBS / APP"
+        ]
+      ]
+    }
+  },
+  "polymer-modified-asphalt-waterproof-coating": {
+    "th": {
+      "title": "วัสดุเคลือบกันซึมแอสฟัลต์ดัดแปรพอลิเมอร์",
+      "summary": "วัสดุเคลือบแอสฟัลต์ดัดแปรชนิดน้ำ ส่วนประกอบเดียว มีเกรด L และ H สำหรับเปรียบเทียบความยืดหยุ่นที่อุณหภูมิต่ำกับความทนความร้อน",
+      "uses": [
+        "ระบบหลังคาหรือใต้ดินที่ระบุผลิตภัณฑ์ชนิดนี้",
+        "รายละเอียดที่มีชั้นป้องกันและวัสดุประกอบที่ยืนยันแล้ว"
+      ],
+      "checks": [
+        "เลือก L หรือ H ตาม TDS และสภาพงาน",
+        "ยืนยันการแห้งก่อนปิดทับและเงื่อนไขพื้นผิว"
+      ],
+      "specs": [
+        [
+          "เกรด",
+          "L / H"
+        ],
+        [
+          "ทนความร้อน",
+          "L: 80 ± 2°C / H: 110 ± 2°C"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Lớp phủ chống thấm bitum biến tính polymer",
+      "summary": "Lớp phủ bitum biến tính gốc nước, một thành phần, có cấp L và H để lựa chọn theo yêu cầu mềm dẻo ở nhiệt độ thấp hoặc chịu nhiệt.",
+      "uses": [
+        "Hệ mái hoặc kết cấu ngầm chỉ định vật liệu này",
+        "Chi tiết có lớp bảo vệ và vật liệu tương thích được xác nhận"
+      ],
+      "checks": [
+        "Chọn L hoặc H theo TDS và điều kiện công trình",
+        "Xác nhận khô trước khi phủ lớp tiếp theo và yêu cầu nền"
+      ],
+      "specs": [
+        [
+          "Cấp sản phẩm",
+          "L / H"
+        ],
+        [
+          "Chịu nhiệt",
+          "L: 80 ± 2°C / H: 110 ± 2°C"
+        ]
+      ]
+    }
+  },
+  "spray-polyurea-waterproofing-coating": {
+    "th": {
+      "title": "วัสดุเคลือบกันซึมพ่นพอลิยูเรีย",
+      "summary": "ระบบพอลิยูเรียแบบพ่น มีทั้งชนิดเพียวและไฮบริด ใช้เครื่องพ่นสองส่วนประกอบแรงดันสูงพร้อมให้ความร้อน ต้องกำหนดการเตรียมพื้นผิวและควบคุมการพ่นโดยผู้ติดตั้งที่เหมาะสม",
+      "uses": [
+        "งานที่กำหนดระบบเคลือบพ่นและมีอุปกรณ์รองรับ",
+        "พื้นผิวที่ยืนยันวัสดุรองพื้นและชั้นปิดผิวแล้ว"
+      ],
+      "checks": [
+        "ยืนยันชนิดเพียวหรือไฮบริดและสัดส่วนผสม",
+        "ตรวจสอบระยะเวลาพ่นซ้ำ ความชื้น และข้อกำหนดผิวกลางแจ้ง"
+      ],
+      "specs": [
+        [
+          "ของแข็ง ชนิดเพียว",
+          "100%"
+        ],
+        [
+          "ของแข็ง ชนิดไฮบริด",
+          "≥98%"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Lớp phủ chống thấm polyurea dạng phun",
+      "summary": "Hệ polyurea phun gồm loại nguyên chất và hybrid, thi công bằng máy phun nhiều thành phần có gia nhiệt, áp lực cao. Cần chuẩn bị nền và kiểm soát thi công bởi đội ngũ phù hợp.",
+      "uses": [
+        "Công trình chỉ định hệ phun và có thiết bị phù hợp",
+        "Bề mặt đã xác nhận sơn lót và lớp hoàn thiện"
+      ],
+      "checks": [
+        "Xác nhận loại nguyên chất hoặc hybrid và tỷ lệ phối trộn",
+        "Kiểm tra khoảng thi công lớp tiếp theo, độ ẩm và yêu cầu lộ thiên"
+      ],
+      "specs": [
+        [
+          "Chất rắn, loại nguyên chất",
+          "100%"
+        ],
+        [
+          "Chất rắn, loại hybrid",
+          "≥98%"
+        ]
+      ]
+    }
+  },
+  "spraying-quick-setting-rubber-asphalt-waterproof-coating": {
+    "th": {
+      "title": "วัสดุกันซึมยางแอสฟัลต์แบบพ่นเซตตัวเร็ว",
+      "summary": "ระบบสองส่วนประกอบ ประกอบด้วยอิมัลชันยางแอสฟัลต์และสารทำให้จับตัว ใช้อุปกรณ์จ่ายคู่และหัวพ่นเฉพาะ ต้องแยกเวลาจับตัวออกจากเวลาแห้งพร้อมใช้งาน",
+      "uses": [
+        "งานกันซึมที่กำหนดระบบพ่นยางแอสฟัลต์",
+        "พื้นที่ที่เตรียมการป้องกันและการเข้าถึงสำหรับเครื่องพ่น"
+      ],
+      "checks": [
+        "ยืนยันเครื่องพ่นและการประสานส่วน A/B",
+        "อย่าปิดทับเพียงเพราะผิวเซตตัวแล้ว"
+      ],
+      "specs": [
+        [
+          "เวลาจับตัวตามการทดสอบ",
+          "≤5 s"
+        ],
+        [
+          "เวลาแห้งแข็งตามเงื่อนไขทดสอบ",
+          "≤24 h"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Lớp phủ cao su bitum phun đông kết nhanh",
+      "summary": "Hệ hai thành phần gồm nhũ tương cao su bitum và chất đông tụ, dùng thiết bị cấp kép với đầu phun chuyên dụng. Cần phân biệt thời gian tạo gel với thời gian khô để sử dụng.",
+      "uses": [
+        "Công trình chỉ định hệ cao su bitum phun",
+        "Khu vực có biện pháp bảo vệ và điều kiện tiếp cận thiết bị"
+      ],
+      "checks": [
+        "Xác nhận máy phun và phối hợp hai thành phần A/B",
+        "Không che phủ chỉ vì bề mặt đã tạo gel"
+      ],
+      "specs": [
+        [
+          "Thời gian tạo gel theo thử nghiệm",
+          "≤5 s"
+        ],
+        [
+          "Thời gian khô cứng theo điều kiện thử",
+          "≤24 h"
+        ]
+      ]
+    }
+  },
+  "epoxy-floor-coating-manufacturer": {
+    "th": {
+      "title": "วัสดุเคลือบพื้นอีพ็อกซีทรายสีปรับระดับ",
+      "summary": "ระบบเรซินอีพ็อกซีสองส่วนประกอบผสมทรายควอตซ์สี สำหรับพื้นคอนกรีตภายในอาคารที่เตรียมอย่างเหมาะสม เป็นระบบตกแต่งพื้น ไม่ควรถือว่าใช้แทนแผ่นกันซึมได้ทุกกรณี",
+      "uses": [
+        "พื้นคอนกรีตภายในที่แข็งแรงและแห้ง",
+        "โครงการที่ระบุผิวทรายสีเรียบหรือมีลวดลายผิว"
+      ],
+      "checks": [
+        "ตรวจสอบความชื้นและการเตรียมผิวคอนกรีต",
+        "ยืนยันสัดส่วน A/B เวลาใช้งาน และชั้นรองพื้น"
+      ],
+      "specs": [
+        [
+          "ส่วนประกอบ",
+          "A + B"
+        ],
+        [
+          "มาตรฐานอ้างอิง",
+          "GB/T 22374-2018"
+        ]
+      ]
+    },
+    "vi": {
+      "title": "Sơn sàn epoxy cát màu tự san phẳng",
+      "summary": "Hệ nhựa epoxy hai thành phần kết hợp cát thạch anh màu cho nền bê tông trong nhà đã được chuẩn bị phù hợp. Đây là hệ hoàn thiện sàn, không mặc định thay thế màng chống thấm.",
+      "uses": [
+        "Nền bê tông trong nhà chắc và khô",
+        "Công trình yêu cầu hoàn thiện cát màu nhẵn hoặc tạo nhám"
+      ],
+      "checks": [
+        "Kiểm tra độ ẩm và chuẩn bị bề mặt bê tông",
+        "Xác nhận tỷ lệ A/B, thời gian sử dụng và lớp lót"
+      ],
+      "specs": [
+        [
+          "Thành phần",
+          "A + B"
+        ],
+        [
+          "Tiêu chuẩn tham chiếu",
+          "GB/T 22374-2018"
+        ]
+      ]
+    }
+  }
+}

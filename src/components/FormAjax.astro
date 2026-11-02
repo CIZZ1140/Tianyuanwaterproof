@@ -40,10 +40,10 @@
       wrap.setAttribute('role', 'status');
       var heading = document.createElement('p');
       heading.className = 'text-lg font-black text-emerald-800';
-      heading.textContent = 'Inquiry received - thank you!';
+      heading.textContent = form.dataset.successTitle || 'Inquiry received - thank you!';
       var note = document.createElement('p');
       note.className = 'mt-2 text-sm leading-6 text-emerald-700';
-      note.textContent = 'Our sales team will reply within 1 business day. Adding your quantity, specification and destination port to your email thread helps us quote faster.';
+      note.textContent = form.dataset.successNote || 'Our sales team will reply within 1 business day. Adding your quantity, specification and destination port to your email thread helps us quote faster.';
       wrap.appendChild(heading);
       wrap.appendChild(note);
       if (form.parentNode) form.parentNode.insertBefore(wrap, form);
@@ -56,7 +56,8 @@
         category: String(fd.get('Product Interest') || fd.get('category') || ''),
         product: String(fd.get('Specific Product') || fd.get('Product') || ''),
         intent: String(fd.get('Inquiry Intent') || 'contact_form'),
-        source: String(fd.get('Source Page') || window.location.pathname)
+        source: String(fd.get('Source Page') || window.location.pathname),
+        language: document.documentElement.lang
       };
       Object.assign(params, extra);
       trackingWindow.__track?.(name, params);
@@ -93,7 +94,7 @@
                 msg = String(j.error);
               }
               fire(form, 'form_submit_error', { reason: 'server_' + res.status });
-              showError(form, msg);
+              showError(form, form.dataset.errorMessage || msg);
               form.dataset.sending = '';
               if (btn) btn.disabled = false;
             });

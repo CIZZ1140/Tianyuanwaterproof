@@ -1,0 +1,16 @@
+---
+import { languages, localeOf, basePath, localizedPaths, languagePath } from '../i18n/routes.mjs';
+const { inline = false } = Astro.props;
+const path = Astro.url.pathname;
+const locale = localeOf(path);
+const base = basePath(path);
+const hasEquivalent = localizedPaths.includes(base);
+const label = locale === 'th' ? 'ภาษา' : locale === 'vi' ? 'Ngôn ngữ' : 'Language';
+const homeLabel = locale === 'th' ? 'หน้าแรก' : locale === 'vi' ? 'Trang chủ' : 'Home';
+---
+<details class="relative text-sm">
+  <summary class="cursor-pointer list-none rounded-lg border border-white/30 px-3 py-2 font-bold text-white [&::-webkit-details-marker]:hidden" aria-label={label}>{locale.toUpperCase()} <span aria-hidden="true">⌄</span></summary>
+  <nav aria-label={label} class={`${inline ? 'relative' : 'absolute right-0'} z-[150] mt-2 min-w-40 rounded-xl border border-white/20 bg-[#0E2A47] p-2 text-white shadow-xl`}>
+    {languages.map(language => <a href={languagePath(hasEquivalent || language.code === 'en' ? base : '/', language.code)} lang={language.code} aria-current={language.code === locale ? 'page' : undefined} class="block rounded-lg px-3 py-3 font-semibold hover:bg-white/10">{language.label}{!hasEquivalent && language.code !== 'en' && <span class="ml-2 text-xs text-slate-300">({homeLabel})</span>}</a>)}
+  </nav>
+</details>

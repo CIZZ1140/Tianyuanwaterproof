@@ -27,6 +27,7 @@ type FooterProps = {
   contactItems?: ContactItem[];
   legalLinks?: FooterLink[];
   copyright?: string;
+  contactHeading?: string;
 };
 
 const defaultFooterGroups: FooterGroup[] = [
@@ -69,6 +70,7 @@ const {
   footerGroups = defaultFooterGroups,
   contactItems = defaultContactItems,
   legalLinks = defaultLegalLinks,
+  contactHeading = "CONTACT INFO",
   copyright = `© ${new Date().getFullYear()} ${site.brand}. All Rights Reserved.`,
 } = Astro.props as FooterProps;
 ---
@@ -98,7 +100,7 @@ const {
 
     <div>
       <h2 class="text-[17px] font-bold uppercase tracking-widest text-white">
-        CONTACT INFO
+        {contactHeading}
       </h2>
 
       <ul class="mt-6 space-y-6">

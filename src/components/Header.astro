@@ -1,5 +1,17 @@
 ---
 import { nav } from '../data/site';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { localeOf } from '../i18n/routes.mjs';
+import translations from '../i18n/ui.json';
+const locale = localeOf(Astro.url.pathname);
+const ui = locale === 'en' ? undefined : translations[locale];
+const homeHref = locale === 'en' ? '/' : `/${locale}/`;
+const localNav = ui ? [
+  { label: ui.home, href: homeHref },
+  { label: ui.products, href: `/${locale}/products/` },
+  { label: ui.about, href: `/${locale}/about/` },
+  { label: ui.contact, href: `/${locale}/contact/` }
+] : nav;
 
 type NavLink = {
   label: string;
@@ -21,17 +33,16 @@ const {
   logoSrc = "/logo.webp",
   logoAlt = "Tianyuan Waterproof Logo",
   brandName = "Tianyuan Waterproof",
-  navLinks = nav as NavLink[],
-  quoteHref = "/contact/",
-  quoteLabel = "REQUEST A QUOTE →",
-  languageLabel = "EN",
+  navLinks = localNav as NavLink[],
+  quoteHref = ui ? `/${locale}/contact/` : "/contact/",
+  quoteLabel = ui ? ui.quote : "REQUEST A QUOTE →",
 } = Astro.props as HeaderProps;
 ---
 
-<header role="banner" class="sticky top-0 z-[110] w-full border-b border-white/5 bg-[#0E2A47] text-white shadow-sm lg:z-50">
-  <div class="mx-auto grid min-h-[76px] max-w-[1680px] grid-cols-[auto_auto] items-center gap-4 px-6 md:px-10 lg:grid-cols-[300px_minmax(0,1fr)_320px] lg:px-10 xl:px-16">
+<header role="banner" class="sticky top-0 z-[110] w-full border-b border-white/5 bg-[#0E2A47] text-white shadow-sm xl:z-50">
+  <div class="mx-auto grid min-h-[76px] max-w-[1680px] grid-cols-[auto_auto] items-center gap-4 px-5 md:px-8 xl:grid-cols-[260px_minmax(0,1fr)_auto] 2xl:px-16">
     <!-- Logo -->
-    <a href="/" class="flex shrink-0 items-center gap-3">
+    <a href={homeHref} class="flex shrink-0 items-center gap-3">
       <img
         src={logoSrc}
         alt={logoAlt}
@@ -46,14 +57,14 @@ const {
 
     <!-- Desktop Navigation -->
     <nav
-      class="hidden items-center justify-center gap-6 lg:flex xl:gap-10"
-      aria-label="Main navigation"
+      class="hidden items-center justify-center gap-4 xl:flex 2xl:gap-8"
+      aria-label={ui?.menu || "Main navigation"}
     >
       {navLinks.map((item) => (
         <div class="group relative py-6">
           <a
             href={item.href}
-            class="flex items-center gap-1 text-[16px] font-bold text-white/85 transition hover:text-[#F58A1F]"
+            class="flex items-center gap-1 whitespace-nowrap text-[14px] font-bold 2xl:text-[16px] text-white/85 transition hover:text-[#F58A1F]"
           >
             {item.label}
             {item.children && (
@@ -80,10 +91,8 @@ const {
     </nav>
 
     <!-- Right Side Actions -->
-    <div class="hidden items-center justify-end gap-5 lg:flex">
-      <span class="rounded-full border border-white/20 px-4 py-2 text-xs font-bold text-white/85">
-        {languageLabel}
-      </span>
+    <div class="hidden items-center justify-end gap-4 xl:flex">
+      <LanguageSwitcher />
 
       <a
         href={quoteHref}
@@ -94,18 +103,18 @@ const {
     </div>
 
     <!-- Mobile Menu Button -->
-    <details class="group relative justify-self-end lg:hidden">
+    <details class="group relative justify-self-end xl:hidden">
       <summary 
         class="flex cursor-pointer list-none items-center gap-2 rounded-lg border border-white/20 px-3 py-2 text-sm font-bold text-white [&::-webkit-details-marker]:hidden"
-        aria-label="Toggle Navigation Menu"
+        aria-label={ui?.menu || "Toggle Navigation Menu"}
       >
-        Menu
+        {ui?.menu || 'Menu'}
         <span class="text-white/70 transition group-open:rotate-180" aria-hidden="true">⌄</span>
       </summary>
 
       <nav
         class="absolute right-0 mt-3 max-h-[calc(100dvh-6rem)] w-[calc(100vw-3rem)] max-w-80 overflow-y-auto overscroll-contain rounded-2xl border border-white/10 bg-[#0E2A47] p-4 shadow-xl"
-        aria-label="Mobile navigation"
+        aria-label={ui?.menu || "Mobile navigation"}
       >
         <div class="flex flex-col gap-1">
           {navLinks.map((item) => (
@@ -137,6 +146,7 @@ const {
           ))}
         </div>
 
+        <div class="mt-3 border-t border-white/20 pt-3"><LanguageSwitcher inline /></div>
       </nav>
     </details>
   </div>

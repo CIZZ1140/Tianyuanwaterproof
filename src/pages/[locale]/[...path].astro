@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import InquiryForm from '../../components/localized/InquiryForm.astro';
+import { site } from '../../data/site';
+import { localizedPaths, categoryIds } from '../../i18n/routes.mjs';
+import translations from '../../i18n/ui.json';
+import productText from '../../i18n/products.json';
+
+export function getStaticPaths() {
+  return ['th', 'vi'].flatMap(locale => localizedPaths.map(path => ({params: {locale, path: path === '/' ? undefined : path.slice(1, -1)}})));
+}
+const locale = Astro.params.locale as 'th' | 'vi';
+const ui = translations[locale];
+const path = '/' + (Astro.params.path ? Astro.params.path + '/' : '');
+const products = await getCollection('products');
+const catalog = Object.entries(productText).map(([slug, text]) => {
+  const source = products.find(product => product.slug === slug);
+  if (!source) throw new Error(`Missing source product ${slug}`);
+  return {slug, ...text[locale], source: source.data};
+});
+const product = catalog.find(item => path === `/products/${item.slug}/`);
+const category = categoryIds.find(id => path === `/categories/${id}/`) as keyof typeof ui.groupNames | undefined;
+const isHome = path === '/';
+const isAbout = path === '/about/';
+const isContact = path === '/contact/';
+const heading = product?.title || (category ? ui.groupNames[category] : isHome ? ui.homeHeading : isAbout ? ui.aboutTitle : isContact ? ui.contactTitle : ui.productTitle);
+const description = product?.summary || (category ? ui.groupDescriptions[category] : isHome ? ui.homeIntro : isAbout ? ui.aboutIntro : isContact ? ui.contactIntro : ui.productIntro);
+const title = isHome ? ui.homeTitle : `${heading} | Tianyuan Waterproof`;
+const href = (base: string) => `/${locale}${base}`;
+const featuredSlugs = ['sbs-bitumen-waterproofing-membrane-manufacturer', 'self-adhesive-bitumen-waterproofing-membrane-wholesale', 'app-modified-bitumen-waterproofing-membrane-manufacturer', 'polyurethane-waterproof-coating-factory', 'polymer-cement-js-waterproof-coating-factory', 'laminated-asphalt-shingles-manufacturer'];
+const filteredProducts = category ? catalog.filter(item => item.source.category === category) : isHome ? catalog.filter(item => featuredSlugs.includes(item.slug)) : catalog;
+const image = product?.source.main_image || (isAbout ? 'https://img.tyuanwaterproof.com/factory-main.webp' : 'https://img.tyuanwaterproof.com/banner.webp');
+const canonical = `https://www.tyuanwaterproof.com${href(path)}`;
+const breadcrumb = {
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: [{ '@type': 'ListItem', position: 1, name: ui.home, item: `https://www.tyuanwaterproof.com/${locale}/` }, ...(isHome ? [] : [{ '@type': 'ListItem', position: 2, name: heading, item: canonical }])]
+};
+const schema = product ? {
+  '@context': 'https://schema.org', '@type': 'Product', name: product.title,
+  description: product.summary, image: product.source.main_image, url: canonical,
+  brand: { '@type': 'Brand', name: 'Tianyuan Waterproof' },
+  additionalProperty: product.specs.map(([name, value]) => ({ '@type': 'PropertyValue', name, value }))
+} : {
+  '@context': 'https://schema.org', '@type': isContact ? 'ContactPage' : isAbout ? 'AboutPage' : 'CollectionPage',
+  name: heading, description, url: canonical, inLanguage: locale,
+  ...(!isContact && !isAbout ? {mainEntity: {'@type': 'ItemList', itemListElement: filteredProducts.map((item, i) => ({'@type':'ListItem',position:i+1,name:item.title,url:`https://www.tyuanwaterproof.com${href(`/products/${item.slug}/`)}`}))}} : {})
+};
+const quoteHref = product ? `${href('/contact/')}?product=${encodeURIComponent(product.slug)}&intent=quote&source=${encodeURIComponent(href(path))}#inquiry-form` : href('/contact/');
+---
+<Layout title={title} description={description} preloadImage={image} ogImage={image} ogType="website">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumb)} />
+  <section class="relative overflow-hidden bg-[#0E2A47] py-14 text-white md:py-20">
+    {isHome && <img src={image} alt="" width="1920" height="600" fetchpriority="high" class="absolute inset-0 h-full w-full object-cover opacity-15" />}
+    <div class="container-wrap relative">
+      {!isHome && <nav aria-label={ui.home} class="mb-6 flex flex-wrap gap-2 text-sm text-slate-200"><a href={href('/')} class="underline">{ui.home}</a><span aria-hidden="true">/</span>{product && <><a href={href('/products/')} class="underline">{ui.products}</a><span aria-hidden="true">/</span></>}<span>{heading}</span></nav>}
+      <div class="grid items-center gap-10 lg:grid-cols-[1.4fr_1fr]">
+        <div><h1 class="max-w-4xl text-3xl font-extrabold leading-[1.5] text-white md:text-5xl">{heading}</h1><p class="mt-6 max-w-3xl text-base leading-8 text-slate-100 md:text-lg">{description}</p>
+        {!isContact && <div class="mt-8 flex flex-wrap gap-4"><a href={quoteHref} class="rounded-xl bg-[#C05800] px-6 py-3 font-bold text-white hover:bg-[#9E4700]">{product ? ui.requestDocs : ui.quote}</a><a href={href('/products/')} class="rounded-xl border border-white/40 px-6 py-3 font-bold text-white hover:bg-white/10">{ui.all}</a></div>}</div>
+        {(product || isAbout) && <img src={image} alt={product ? product.title : ui.aboutTitle} width="720" height="540" fetchpriority="high" class="aspect-[4/3] w-full rounded-3xl bg-white object-contain" />}
+      </div>
+    </div>
+  </section>
+  {product ? (
+    <>
+      <section class="container-wrap grid gap-8 py-14 lg:grid-cols-2">
+        <div class="card"><h2 class="text-2xl font-bold leading-relaxed">{ui.specs}</h2><dl class="mt-6 divide-y divide-slate-200">{product.specs.map(([label, value]) => <div class="py-4"><dt class="font-bold text-slate-900">{label}</dt><dd class="mt-2 text-slate-600">{value}</dd></div>)}</dl><p class="mt-4 text-sm leading-7 text-slate-600">{ui.noteText}</p></div>
+        <div class="space-y-8"><div class="card"><h2 class="text-2xl font-bold leading-relaxed">{ui.uses}</h2><ul class="mt-5 list-disc space-y-3 pl-5 leading-8">{product.uses.map(use => <li>{use}</li>)}</ul></div><div class="card"><h2 class="text-2xl font-bold leading-relaxed">{ui.checks}</h2><ul class="mt-5 list-disc space-y-3 pl-5 leading-8">{product.checks.map(check => <li>{check}</li>)}</ul></div></div>
+      </section>
+      <section class="container-wrap pb-14"><div class="card"><h2 class="text-2xl font-bold leading-relaxed">{ui.buyerTitle}</h2><p class="mt-5 max-w-4xl leading-8">{ui.buyerText}</p><div class="mt-6 flex flex-wrap gap-5"><a href={quoteHref} class="rounded-xl bg-blue-700 px-6 py-3 font-bold text-white">{ui.requestDocs}</a><a href={`/products/${product.slug}/`} lang="en" class="self-center text-blue-700 underline">{ui.english}</a></div></div></section>
+      <section class="container-wrap pb-16"><h2 class="text-2xl font-bold">{ui.related}</h2><ul class="mt-6 grid gap-4 md:grid-cols-2">{catalog.filter(item => item.slug !== product.slug && item.source.category === product.source.category).map(item => <li><a class="card block font-bold text-blue-700" href={href(`/products/${item.slug}/`)}>{item.title}</a></li>)}</ul></section>
+    </>
+  ) : isContact ? (
+    <section class="container-wrap grid gap-10 py-14 lg:grid-cols-[.8fr_1.2fr]"><div class="space-y-6"><div class="card"><h2 class="text-2xl font-bold">{ui.contactInfo}</h2><dl class="mt-6 space-y-6"><div><dt class="font-bold">{ui.email}</dt><dd class="mt-2"><a class="break-all text-blue-700 underline" href={`mailto:${site.email}`}>{site.email}</a></dd></div><div><dt class="font-bold">WhatsApp</dt><dd class="mt-2"><a class="text-blue-700 underline" href="https://wa.me/8615263640998">{site.whatsapp}</a></dd></div><div><dt class="font-bold">{ui.location}</dt><dd class="mt-2 leading-8">{ui.address}</dd></div></dl></div><div class="card"><h2 class="text-xl font-bold">{ui.buyerTitle}</h2><p class="mt-4 leading-8">{ui.buyerText}</p></div></div><InquiryForm locale={locale} /></section>
+  ) : isAbout ? (
+    <section class="container-wrap grid gap-8 py-14 md:grid-cols-2"><div class="card"><h2 class="text-2xl font-bold leading-relaxed">{ui.supportTitle}</h2><p class="mt-5 leading-8">{ui.aboutText}</p><p class="mt-5 leading-8">{ui.supportText}</p></div><div class="card"><h2 class="text-2xl font-bold leading-relaxed">{ui.aboutQuality}</h2><p class="mt-5 leading-8">{ui.aboutQualityText}</p><a href={href('/contact/')} class="mt-6 inline-block font-bold text-blue-700 underline">{ui.quote}</a></div></section>
+  ) : (
+    <>
+      {!category && <section class="container-wrap py-14"><h2 class="text-2xl font-bold md:text-3xl">{ui.categoryTitle}</h2><div class="mt-8 grid gap-5 md:grid-cols-2">{categoryIds.map(id => <a href={href(`/categories/${id}/`)} class="card block"><h3 class="text-xl font-bold leading-relaxed text-blue-800">{ui.groupNames[id]}</h3><p class="mt-4 leading-8">{ui.groupDescriptions[id]}</p></a>)}</div></section>}
+      <section class="container-wrap pb-16 pt-8"><h2 class="text-2xl font-bold md:text-3xl">{category ? ui.groupNames[category] : ui.products}</h2><div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{filteredProducts.map(item => <a href={href(`/products/${item.slug}/`)} class="card group block"><img src={item.source.main_image} alt={item.title} width="480" height="360" loading="lazy" class="aspect-[4/3] w-full rounded-2xl bg-slate-50 object-contain" /><h3 class="mt-5 text-xl font-bold leading-relaxed group-hover:text-blue-700">{item.title}</h3><p class="mt-4 leading-8 text-slate-600">{item.summary}</p><span class="mt-5 inline-block font-bold text-blue-700">{ui.view} →</span></a>)}</div></section>
+      <section class="container-wrap grid gap-6 pb-16 md:grid-cols-2"><div class="card"><h2 class="text-2xl font-bold leading-relaxed">{ui.selectionTitle}</h2><p class="mt-5 leading-8">{ui.selectionText}</p></div><div class="card"><h2 class="text-2xl font-bold leading-relaxed">{ui.supportTitle}</h2><p class="mt-5 leading-8">{ui.supportText}</p><a href={href('/contact/')} class="mt-6 inline-block font-bold text-blue-700 underline">{ui.quote}</a></div></section>
+    </>
+  )}
+</Layout>
