@@ -40,7 +40,7 @@ const {
 ---
 
 <header role="banner" class="sticky top-0 z-[110] w-full border-b border-white/5 bg-[#0E2A47] text-white shadow-sm xl:z-50">
-  <div class="mx-auto grid min-h-[76px] max-w-[1680px] grid-cols-[auto_auto] items-center gap-4 px-5 md:px-8 xl:grid-cols-[280px_minmax(0,1fr)_auto] 2xl:px-16">
+  <div class="site-header-grid mx-auto grid min-h-[76px] max-w-[1680px] grid-cols-[auto_auto] items-center gap-4 px-5 md:px-8 xl:grid-cols-[280px_minmax(0,1fr)_auto] 2xl:px-16">
     <!-- Logo -->
     <a href={homeHref} class="flex shrink-0 items-center gap-3">
       <img
@@ -57,7 +57,7 @@ const {
 
     <!-- Desktop Navigation -->
     <nav
-      class="hidden items-center justify-center gap-4 xl:flex 2xl:gap-8"
+      class="site-header-nav hidden items-center justify-center gap-4 xl:flex 2xl:gap-8"
       aria-label={ui?.menu || "Main navigation"}
     >
       {navLinks.map((item) => (
@@ -91,7 +91,7 @@ const {
     </nav>
 
     <!-- Right Side Actions -->
-    <div class="hidden items-center justify-end gap-4 xl:flex">
+    <div class="site-header-actions hidden items-center justify-end gap-4 xl:flex">
       <LanguageSwitcher />
 
       <a
@@ -103,7 +103,7 @@ const {
     </div>
 
     <!-- Mobile Menu Button -->
-    <details class="group relative justify-self-end xl:hidden">
+    <details class="site-header-mobile group relative justify-self-end xl:hidden">
       <summary 
         class="flex cursor-pointer list-none items-center gap-2 rounded-lg border border-white/20 px-3 py-2 text-sm font-bold text-white [&::-webkit-details-marker]:hidden"
         aria-label={ui?.menu || "Toggle Navigation Menu"}
@@ -151,3 +151,14 @@ const {
     </details>
   </div>
 </header>
+<style>
+  /* Keep navigation visible on smaller desktop windows. A second row gives
+     translated labels room without squeezing the logo or language picker. */
+  @media (min-width: 900px) and (max-width: 1279px) {
+    .site-header-grid { grid-template-columns: minmax(0, 1fr) auto; row-gap: 0; padding-top: 12px; }
+    .site-header-nav { display: flex; grid-column: 1 / -1; grid-row: 2; flex-wrap: wrap; column-gap: 24px; }
+    .site-header-nav > div { padding-top: 12px; padding-bottom: 12px; }
+    .site-header-actions { display: flex; }
+    .site-header-mobile { display: none; }
+  }
+</style>
