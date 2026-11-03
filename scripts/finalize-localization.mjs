@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 const overrides=JSON.parse(await readFile('src/i18n/full-overrides.json','utf8'));
-for(const prefix of ['full','pdf']) for(const locale of ['th','vi','es']) {
+for(const prefix of ['full','pdf']) for(const locale of ['th','vi','es','pt-br']) {
   const file=`src/i18n/${prefix}-${locale}.json`;
   let existing;
   try { existing=JSON.parse(await readFile(file,'utf8')); }
@@ -84,6 +84,17 @@ for(const prefix of ['full','pdf']) for(const locale of ['th','vi','es']) {
       if(source==='min')target='min';
       if(source.includes('sq ft'))target=target.replace(/pies²/g,'sq ft');
       if(source==='Elongation at peak % ≥30 - ≥40 - -')target='Alargamiento en el pico % ≥30 - ≥40 - -';
+    }
+    if(locale==='pt-br') {
+      target=target.replace(/betume/gi,'asfalto');
+      if(/glass fiber mat|fiberglass/i.test(source))target=target.replace(/tapete de fibra de vidro/gi,'manta de fibra de vidro');
+      if(/below-grade/i.test(source))target=target.replace(/abaixo do grau/gi,'abaixo do nível do solo');
+      if(source.includes('TIANYUAN WATERPROOF'))target=target.replace(/TIANYUAN IMPERMEABILIZAÇÃO|TIANYUAN IMPERMEÁVEL|IMPERMEÁVEL TIANYUAN/g,'TIANYUAN WATERPROOF');
+      if(/\bTDS\b/.test(source)&&!source.includes('MSDS'))target=target.replace(/\bFDS\b/g,'TDS');
+      if(/shingles?/i.test(source))target=target.replace(/herpes[ -]z[oó]ster|cobreiro/gi,'telhas asfálticas');
+      if(/laps?/i.test(source))target=target.replace(/voltas/gi,'sobreposições');
+      if(/\bmin\b|\dmin\b/.test(source))target=target.replace(/minutos?/gi,'min');
+      if(source.includes('2026-05-01'))target=target.replace(/01-05-2026|01\/05\/2026/g,'2026-05-01');
     }
     target=target.replace(/\b(kg|g)\s*\/\s*m([²³23])/g,'$1/m$2').replace(/\bN\s*\/\s*(50)?\s*mm/g,'N/$1mm');
     dictionary[source]=target.replace(/ {2,}/g,' ').trim();

@@ -217,5 +217,31 @@
       "waterproof-tapes": "Seleccione cintas de butilo, asfalto o TPE según la junta y la compatibilidad del sustrato.",
       "waterproof-coatings": "Seleccione el recubrimiento según el sustrato, la exposición y los requisitos de aplicación."
     }
+  },
+  "pt-br": {
+    "home": "Início",
+    "products": "Produtos",
+    "about": "Sobre nós",
+    "contact": "Contato",
+    "menu": "Menu",
+    "language": "Idioma",
+    "quote": "Solicitar orçamento",
+    "skip": "Pular para o conteúdo",
+    "contactInfo": "Informações de contato",
+    "location": "Localização da fábrica",
+    "address": "Weifang, Shandong, China",
+    "email": "E-mail",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de uso",
+    "rights": "Todos os direitos reservados.",
+    "success": "Consulta enviada!",
+    "successNote": "Obrigado. Nossa equipe analisará sua consulta e entrará em contato.",
+    "error": "Não foi possível enviar a consulta. Tente novamente ou entre em contato por e-mail ou WhatsApp.",
+    "groupNames": {
+      "bitumen-membranes": "Mantas asfálticas",
+      "asphalt-shingles": "Telhas asfálticas",
+      "waterproof-tapes": "Fitas impermeabilizantes",
+      "waterproof-coatings": "Revestimentos impermeabilizantes"
+    }
   }
 }

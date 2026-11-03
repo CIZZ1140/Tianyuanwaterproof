@@ -6,9 +6,9 @@ const path = Astro.url.pathname;
 const locale = localeOf(path);
 const base = basePath(path);
 const hasEquivalent = localizedPaths.includes(base);
-const label = locale === 'th' ? 'ภาษา' : locale === 'vi' ? 'Ngôn ngữ' : locale === 'es' ? 'Idioma' : 'Language';
-const homeLabel = locale === 'th' ? 'หน้าแรก' : locale === 'vi' ? 'Trang chủ' : locale === 'es' ? 'Inicio' : 'Home';
-const flags = { en: 'gb', th: 'th', vi: 'vn', es: 'es' };
+const label = locale === 'th' ? 'ภาษา' : locale === 'vi' ? 'Ngôn ngữ' : ['es','pt-br'].includes(locale) ? 'Idioma' : 'Language';
+const homeLabel = locale === 'th' ? 'หน้าแรก' : locale === 'vi' ? 'Trang chủ' : locale === 'pt-br' ? 'Início' : locale === 'es' ? 'Inicio' : 'Home';
+const flags = { en: 'gb', th: 'th', vi: 'vn', es: 'es', 'pt-br': 'br' };
 const currentLanguage = languages.find(language => language.code === locale);
 ---
 <details class="language-switcher relative text-sm">

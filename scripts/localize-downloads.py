@@ -13,13 +13,14 @@ import sys
 
 ROOT=Path(__file__).resolve().parents[1]
 LABELS={
+ 'pt-br':{'title':'Documentação técnica em português','source':'Página de referência original','note':'Tradução de referência preparada com ferramentas de tradução assistida. Confira os dados técnicos com o original em inglês e a ficha técnica do produto oferecido. O documento original completo está no apêndice.'},
  'es':{'title':'Documentación técnica en español','source':'Página de referencia original','note':'Traducción de referencia preparada con herramientas de traducción asistida. Verifique los datos técnicos con el original en inglés y la ficha técnica del producto ofrecido. El documento original completo se incluye en el apéndice.'},
  'th':{'title':'เอกสารทางเทคนิคฉบับภาษาไทย','source':'หน้าอ้างอิงต้นฉบับ','note':'คำแปลเพื่อใช้อ้างอิงประกอบการจัดซื้อ จัดทำโดยใช้เครื่องมือช่วยแปล โปรดตรวจสอบข้อมูลทางเทคนิคกับเอกสารภาษาอังกฤษต้นฉบับและ TDS ที่ใช้กับสินค้าที่เสนอ เอกสารภาษาอังกฤษฉบับสมบูรณ์อยู่ในภาคผนวก'},
  'vi':{'title':'Tài liệu kỹ thuật bằng tiếng Việt','source':'Trang nguồn tham chiếu','note':'Bản dịch tham khảo phục vụ mua hàng, được chuẩn bị với công cụ hỗ trợ dịch. Vui lòng đối chiếu thông tin kỹ thuật với bản gốc tiếng Anh và TDS áp dụng cho sản phẩm được cung cấp. Bản tiếng Anh đầy đủ nằm trong phần phụ lục.'}
 }
 def main():
     output=ROOT/'output/pdf'; output.mkdir(parents=True,exist_ok=True)
-    locales=sys.argv[1:] or ['th','vi','es']
+    locales=sys.argv[1:] or ['th','vi','es','pt-br']
     report_path=ROOT/'reports/full-localization/pdf-validation.json'
     report=[item for item in json.loads(report_path.read_text(encoding='utf-8')) if item['language'] not in locales] if report_path.exists() else []
     for locale in locales:
@@ -68,7 +69,7 @@ def main():
             public=ROOT/f'public/docs/{locale}/{source.name}'; public.parent.mkdir(parents=True,exist_ok=True)
             public.write_bytes(destination.read_bytes())
             verification=fitz.open(destination)
-            if not re.search('[\u0e00-\u0e7f]' if locale=='th' else ('[áéíóúñü]' if locale=='es' else '[àáảãạăâđêôơư]'), ''.join(p.get_text() for p in verification[:translated_pages]),re.I): raise ValueError('Missing localized glyphs')
+            if not re.search('[\u0e00-\u0e7f]' if locale=='th' else ('[áéíóúñü]' if locale in ['es','pt-br'] else '[àáảãạăâđêôơư]'), ''.join(p.get_text() for p in verification[:translated_pages]),re.I): raise ValueError('Missing localized glyphs')
             if verification.page_count != translated_pages+original.page_count: raise ValueError('Incomplete source appendix')
             qa=ROOT/'reports/full-localization/pdf-preview'; qa.mkdir(exist_ok=True,parents=True)
             for page in verification:

@@ -25,7 +25,7 @@ async function discover(directory,path='/') {
   }
 }
 await discover('dist');
-assert.deepEqual([...localizedPaths].sort(),englishPaths.sort(),'Every published English page must have both language versions');
+assert.deepEqual([...localizedPaths].sort(),englishPaths.sort(),'Every published English page must have all supported language versions');
 for(const locale of translationLocales) {
   const dictionary=JSON.parse(await readFile(`src/i18n/full-${locale}.json`,'utf8'));
   for(const source of strings) {
@@ -68,7 +68,7 @@ for(const path of localizedPaths) {
     const links=nodes(doc,n=>n.tagName==='a'&&get(n,'href')?.startsWith(`/${locale}/`));
     for(const link of links) {
       const url=new URL(get(link,'href'),'https://www.tyuanwaterproof.com');
-      assert(localizedPaths.includes(url.pathname.slice(3)),`Unknown localized link ${url.pathname}`);
+      assert(localizedPaths.includes(url.pathname.slice(locale.length+1)),`Unknown localized link ${url.pathname}`);
     }
     for(const link of nodes(doc,n=>n.tagName==='a'&&get(n,'href')?.startsWith('/docs/'))) {
       assert(get(link,'href').startsWith(`/docs/${locale}/`),`Unlocalized PDF ${get(link,'href')}`);

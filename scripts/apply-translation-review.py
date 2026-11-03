@@ -8,7 +8,7 @@ import json,re
 
 ROOT=Path(__file__).resolve().parents[1]
 def main():
-    for locale in ['th','vi','es']:
+    for locale in ['th','vi','es','pt-br']:
         reviewed=json.loads((ROOT/f'tmp/bing-{locale}.json').read_text(encoding='utf-8'))
         for kind in ['full','pdf']:
             source=json.loads((ROOT/f'src/i18n/{kind}-source.json').read_text(encoding='utf-8'))
