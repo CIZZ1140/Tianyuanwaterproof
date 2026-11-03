@@ -85,7 +85,7 @@
     "translatedPages": 4,
     "sourceAppendixPages": 4,
     "translatedBlocks": 67,
-    "bytes": 721240
+    "bytes": 721243
   },
   {
     "file": "public\\docs\\es\\sbs-membrane-installation-manual.pdf",
@@ -93,7 +93,7 @@
     "translatedPages": 12,
     "sourceAppendixPages": 12,
     "translatedBlocks": 187,
-    "bytes": 731388
+    "bytes": 731405
   },
   {
     "file": "public\\docs\\es\\sbs-waterproofing-membrane-tds.pdf",
@@ -101,7 +101,7 @@
     "translatedPages": 4,
     "sourceAppendixPages": 2,
     "translatedBlocks": 65,
-    "bytes": 936859
+    "bytes": 936868
   },
   {
     "file": "public\\docs\\es\\self-adhesive-bitumen-membrane-tds.pdf",
@@ -109,7 +109,7 @@
     "translatedPages": 7,
     "sourceAppendixPages": 4,
     "translatedBlocks": 139,
-    "bytes": 1083515
+    "bytes": 1083518
   },
   {
     "file": "public\\docs\\es\\tpo-walkway-pad-tds.pdf",
@@ -117,6 +117,6 @@
     "translatedPages": 3,
     "sourceAppendixPages": 4,
     "translatedBlocks": 58,
-    "bytes": 706375
+    "bytes": 706381
   }
 ]

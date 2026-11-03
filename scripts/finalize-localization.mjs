@@ -74,6 +74,8 @@ for(const prefix of ['full','pdf']) for(const locale of ['th','vi','es']) {
     }
     if(locale==='es') {
       target=target.replace(/betún/gi,'asfalto');
+      if(source.includes('TIANYUAN WATERPROOF'))target=target.replace(/TIANYUAN IMPERMEABLE|IMPERMEABLE TIANYUAN/g,'TIANYUAN WATERPROOF');
+      if(/\bTDS\b/.test(source)&&!source.includes('MSDS'))target=target.replace(/\bFDS\b/g,'TDS');
       if(/shingles?/i.test(source))target=target.replace(/herpes z[oó]ster/gi,'tejas asfálticas');
       if(/laps?/i.test(source))target=target.replace(/vueltas/gi,'solapes');
       if(/\bmin\b|\dmin\b/.test(source))target=target.replace(/minutos?/gi,'min');
