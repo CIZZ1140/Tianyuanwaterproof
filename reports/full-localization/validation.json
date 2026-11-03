@@ -9,6 +9,11 @@
       "locale": "vi",
       "strings": 5126,
       "numericParity": true
+    },
+    {
+      "locale": "es",
+      "strings": 5126,
+      "numericParity": true
     }
   ],
   "pages": [
@@ -24,6 +29,16 @@
     },
     {
       "path": "/vi/",
+      "images": 28,
+      "tables": 0,
+      "forms": 1,
+      "ids": 16,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/",
       "images": 28,
       "tables": 0,
       "forms": 1,
@@ -53,6 +68,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/about/",
+      "images": 11,
+      "tables": 0,
+      "forms": 0,
+      "ids": 3,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/applications/",
       "images": 1,
       "tables": 0,
@@ -64,6 +89,16 @@
     },
     {
       "path": "/vi/applications/",
+      "images": 1,
+      "tables": 0,
+      "forms": 1,
+      "ids": 8,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/applications/",
       "images": 1,
       "tables": 0,
       "forms": 1,
@@ -93,6 +128,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/applications/bathroom-waterproofing/",
+      "images": 1,
+      "tables": 0,
+      "forms": 1,
+      "ids": 8,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/applications/bridge-infrastructure/",
       "images": 1,
       "tables": 0,
@@ -104,6 +149,16 @@
     },
     {
       "path": "/vi/applications/bridge-infrastructure/",
+      "images": 1,
+      "tables": 0,
+      "forms": 1,
+      "ids": 8,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/applications/bridge-infrastructure/",
       "images": 1,
       "tables": 0,
       "forms": 1,
@@ -133,6 +188,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/applications/industrial-building/",
+      "images": 1,
+      "tables": 0,
+      "forms": 1,
+      "ids": 8,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/applications/joint-detail-sealing/",
       "images": 1,
       "tables": 0,
@@ -144,6 +209,16 @@
     },
     {
       "path": "/vi/applications/joint-detail-sealing/",
+      "images": 1,
+      "tables": 0,
+      "forms": 1,
+      "ids": 8,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/applications/joint-detail-sealing/",
       "images": 1,
       "tables": 0,
       "forms": 1,
@@ -173,6 +248,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/applications/roof-waterproofing/",
+      "images": 1,
+      "tables": 0,
+      "forms": 1,
+      "ids": 8,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/applications/tunnel-waterproofing/",
       "images": 1,
       "tables": 0,
@@ -184,6 +269,16 @@
     },
     {
       "path": "/vi/applications/tunnel-waterproofing/",
+      "images": 1,
+      "tables": 0,
+      "forms": 1,
+      "ids": 8,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/applications/tunnel-waterproofing/",
       "images": 1,
       "tables": 0,
       "forms": 1,
@@ -213,6 +308,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/applications/underground-waterproofing/",
+      "images": 1,
+      "tables": 0,
+      "forms": 1,
+      "ids": 8,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/blog/",
       "images": 7,
       "tables": 0,
@@ -224,6 +329,16 @@
     },
     {
       "path": "/vi/blog/",
+      "images": 7,
+      "tables": 0,
+      "forms": 1,
+      "ids": 9,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/blog/",
       "images": 7,
       "tables": 0,
       "forms": 1,
@@ -253,6 +368,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/blog/3mm-vs-4mm-sbs-waterproofing-membrane/",
+      "images": 3,
+      "tables": 3,
+      "forms": 1,
+      "ids": 21,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/blog/2026-bitumen-membrane-market-price-index/",
       "images": 2,
       "tables": 1,
@@ -264,6 +389,16 @@
     },
     {
       "path": "/vi/blog/2026-bitumen-membrane-market-price-index/",
+      "images": 2,
+      "tables": 1,
+      "forms": 1,
+      "ids": 15,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/blog/2026-bitumen-membrane-market-price-index/",
       "images": 2,
       "tables": 1,
       "forms": 1,
@@ -293,6 +428,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/blog/2026-global-sbs-membrane-market-analysis/",
+      "images": 2,
+      "tables": 2,
+      "forms": 1,
+      "ids": 23,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/blog/bubbles-in-sbs-membrane-torch-application-guide/",
       "images": 4,
       "tables": 2,
@@ -304,6 +449,16 @@
     },
     {
       "path": "/vi/blog/bubbles-in-sbs-membrane-torch-application-guide/",
+      "images": 4,
+      "tables": 2,
+      "forms": 1,
+      "ids": 19,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/blog/bubbles-in-sbs-membrane-torch-application-guide/",
       "images": 4,
       "tables": 2,
       "forms": 1,
@@ -333,6 +488,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/blog/how-many-rolls-of-sbs-membrane-fit-in-a-container/",
+      "images": 3,
+      "tables": 2,
+      "forms": 1,
+      "ids": 23,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/blog/how-to-read-sbs-membrane-tds/",
       "images": 3,
       "tables": 1,
@@ -344,6 +509,16 @@
     },
     {
       "path": "/vi/blog/how-to-read-sbs-membrane-tds/",
+      "images": 3,
+      "tables": 1,
+      "forms": 1,
+      "ids": 26,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/blog/how-to-read-sbs-membrane-tds/",
       "images": 3,
       "tables": 1,
       "forms": 1,
@@ -373,6 +548,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/blog/page/2/",
+      "images": 7,
+      "tables": 0,
+      "forms": 1,
+      "ids": 8,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/blog/page/3/",
       "images": 2,
       "tables": 0,
@@ -384,6 +569,16 @@
     },
     {
       "path": "/vi/blog/page/3/",
+      "images": 2,
+      "tables": 0,
+      "forms": 1,
+      "ids": 8,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/blog/page/3/",
       "images": 2,
       "tables": 0,
       "forms": 1,
@@ -413,6 +608,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/blog/pvc-vs-tpo-roofing-membrane-selection/",
+      "images": 4,
+      "tables": 2,
+      "forms": 1,
+      "ids": 26,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/blog/py-g-pyg-sbs-membrane-reinforcement-guide/",
       "images": 3,
       "tables": 2,
@@ -424,6 +629,16 @@
     },
     {
       "path": "/vi/blog/py-g-pyg-sbs-membrane-reinforcement-guide/",
+      "images": 3,
+      "tables": 2,
+      "forms": 1,
+      "ids": 24,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/blog/py-g-pyg-sbs-membrane-reinforcement-guide/",
       "images": 3,
       "tables": 2,
       "forms": 1,
@@ -453,6 +668,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/blog/sbs-membrane-basement-foundation-waterproofing/",
+      "images": 2,
+      "tables": 2,
+      "forms": 1,
+      "ids": 22,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/blog/sbs-membrane-type-i-vs-type-ii-guide/",
       "images": 3,
       "tables": 3,
@@ -464,6 +689,16 @@
     },
     {
       "path": "/vi/blog/sbs-membrane-type-i-vs-type-ii-guide/",
+      "images": 3,
+      "tables": 3,
+      "forms": 1,
+      "ids": 23,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/blog/sbs-membrane-type-i-vs-type-ii-guide/",
       "images": 3,
       "tables": 3,
       "forms": 1,
@@ -493,6 +728,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/blog/sbs-vs-app-modified-bitumen-membranes/",
+      "images": 1,
+      "tables": 1,
+      "forms": 1,
+      "ids": 22,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/blog/self-adhesive-vs-torch-applied-membrane-comparison/",
       "images": 5,
       "tables": 1,
@@ -504,6 +749,16 @@
     },
     {
       "path": "/vi/blog/self-adhesive-vs-torch-applied-membrane-comparison/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 21,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/blog/self-adhesive-vs-torch-applied-membrane-comparison/",
       "images": 5,
       "tables": 1,
       "forms": 1,
@@ -533,6 +788,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/blog/tpo-walkway-pad-selection-guide/",
+      "images": 3,
+      "tables": 1,
+      "forms": 1,
+      "ids": 20,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/blog/tunnel-waterproofing-membrane-selection/",
       "images": 2,
       "tables": 2,
@@ -544,6 +809,16 @@
     },
     {
       "path": "/vi/blog/tunnel-waterproofing-membrane-selection/",
+      "images": 2,
+      "tables": 2,
+      "forms": 1,
+      "ids": 25,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/blog/tunnel-waterproofing-membrane-selection/",
       "images": 2,
       "tables": 2,
       "forms": 1,
@@ -573,6 +848,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/categories/",
+      "images": 8,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/categories/asphalt-shingles/",
       "images": 5,
       "tables": 0,
@@ -584,6 +869,16 @@
     },
     {
       "path": "/vi/categories/asphalt-shingles/",
+      "images": 5,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/categories/asphalt-shingles/",
       "images": 5,
       "tables": 0,
       "forms": 0,
@@ -613,6 +908,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/categories/bitumen-membranes/",
+      "images": 6,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/categories/geosynthetics/",
       "images": 4,
       "tables": 0,
@@ -624,6 +929,16 @@
     },
     {
       "path": "/vi/categories/geosynthetics/",
+      "images": 4,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/categories/geosynthetics/",
       "images": 4,
       "tables": 0,
       "forms": 0,
@@ -653,6 +968,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/categories/polymer-membranes/",
+      "images": 7,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/categories/roofing-accessories/",
       "images": 3,
       "tables": 0,
@@ -664,6 +989,16 @@
     },
     {
       "path": "/vi/categories/roofing-accessories/",
+      "images": 3,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/categories/roofing-accessories/",
       "images": 3,
       "tables": 0,
       "forms": 0,
@@ -693,6 +1028,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/categories/waterproof-coatings/",
+      "images": 10,
+      "tables": 1,
+      "forms": 0,
+      "ids": 2,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/categories/waterproof-tapes/",
       "images": 5,
       "tables": 0,
@@ -704,6 +1049,16 @@
     },
     {
       "path": "/vi/categories/waterproof-tapes/",
+      "images": 5,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/categories/waterproof-tapes/",
       "images": 5,
       "tables": 0,
       "forms": 0,
@@ -733,6 +1088,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/contact/",
+      "images": 1,
+      "tables": 0,
+      "forms": 1,
+      "ids": 21,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/privacy-policy/",
       "images": 1,
       "tables": 0,
@@ -744,6 +1109,16 @@
     },
     {
       "path": "/vi/privacy-policy/",
+      "images": 1,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/privacy-policy/",
       "images": 1,
       "tables": 0,
       "forms": 0,
@@ -773,6 +1148,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/",
+      "images": 27,
+      "tables": 0,
+      "forms": 0,
+      "ids": 4,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/products/3-tab-asphalt-shingles-wholesale/",
       "images": 4,
       "tables": 1,
@@ -784,6 +1169,16 @@
     },
     {
       "path": "/vi/products/3-tab-asphalt-shingles-wholesale/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/products/3-tab-asphalt-shingles-wholesale/",
       "images": 4,
       "tables": 1,
       "forms": 1,
@@ -813,6 +1208,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/app-modified-bitumen-waterproofing-membrane-manufacturer/",
+      "images": 10,
+      "tables": 4,
+      "forms": 1,
+      "ids": 13,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/products/artistic-asphalt-shingles-supplier/",
       "images": 4,
       "tables": 1,
@@ -824,6 +1229,16 @@
     },
     {
       "path": "/vi/products/artistic-asphalt-shingles-supplier/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/products/artistic-asphalt-shingles-supplier/",
       "images": 4,
       "tables": 1,
       "forms": 1,
@@ -853,6 +1268,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/asphalt-roofing-felt-manufacturer/",
+      "images": 11,
+      "tables": 3,
+      "forms": 1,
+      "ids": 13,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/products/butyl-waterproof-sealing-tape-supplier/",
       "images": 5,
       "tables": 1,
@@ -864,6 +1289,16 @@
     },
     {
       "path": "/vi/products/butyl-waterproof-sealing-tape-supplier/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/products/butyl-waterproof-sealing-tape-supplier/",
       "images": 5,
       "tables": 1,
       "forms": 1,
@@ -893,6 +1328,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/epdm-waterproofing-membrane-wholesale/",
+      "images": 4,
+      "tables": 4,
+      "forms": 1,
+      "ids": 18,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/products/epoxy-floor-coating-manufacturer/",
       "images": 7,
       "tables": 1,
@@ -904,6 +1349,16 @@
     },
     {
       "path": "/vi/products/epoxy-floor-coating-manufacturer/",
+      "images": 7,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/products/epoxy-floor-coating-manufacturer/",
       "images": 7,
       "tables": 1,
       "forms": 1,
@@ -933,6 +1388,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/geotextile-fabric-manufacturer/",
+      "images": 3,
+      "tables": 1,
+      "forms": 1,
+      "ids": 16,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/products/hdpe-geomembrane-liner-manufacturer/",
       "images": 4,
       "tables": 1,
@@ -944,6 +1409,16 @@
     },
     {
       "path": "/vi/products/hdpe-geomembrane-liner-manufacturer/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 16,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/products/hdpe-geomembrane-liner-manufacturer/",
       "images": 4,
       "tables": 1,
       "forms": 1,
@@ -973,6 +1448,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/laminated-asphalt-shingles-manufacturer/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/products/metal-roof-steel-structure-waterproof-coating/",
       "images": 4,
       "tables": 1,
@@ -984,6 +1469,16 @@
     },
     {
       "path": "/vi/products/metal-roof-steel-structure-waterproof-coating/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 13,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/products/metal-roof-steel-structure-waterproof-coating/",
       "images": 4,
       "tables": 1,
       "forms": 1,
@@ -1013,6 +1508,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/non-curing-rubber-asphalt-waterproof-coating/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 15,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/products/polymer-cement-js-waterproof-coating-factory/",
       "images": 5,
       "tables": 1,
@@ -1024,6 +1529,16 @@
     },
     {
       "path": "/vi/products/polymer-cement-js-waterproof-coating-factory/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/products/polymer-cement-js-waterproof-coating-factory/",
       "images": 5,
       "tables": 1,
       "forms": 1,
@@ -1053,6 +1568,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/polymer-modified-asphalt-waterproof-coating/",
+      "images": 6,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/products/polyurethane-waterproof-coating-factory/",
       "images": 6,
       "tables": 1,
@@ -1064,6 +1589,16 @@
     },
     {
       "path": "/vi/products/polyurethane-waterproof-coating-factory/",
+      "images": 6,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/products/polyurethane-waterproof-coating-factory/",
       "images": 6,
       "tables": 1,
       "forms": 1,
@@ -1093,6 +1628,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/pp-pe-composite-membrane-factory/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/products/pre-applied-hdpe-membrane-supplier/",
       "images": 6,
       "tables": 1,
@@ -1104,6 +1649,16 @@
     },
     {
       "path": "/vi/products/pre-applied-hdpe-membrane-supplier/",
+      "images": 6,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/products/pre-applied-hdpe-membrane-supplier/",
       "images": 6,
       "tables": 1,
       "forms": 1,
@@ -1133,6 +1688,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/pvc-waterproofing-membrane-manufacturer/",
+      "images": 12,
+      "tables": 2,
+      "forms": 1,
+      "ids": 18,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/products/sbs-bitumen-waterproofing-membrane-manufacturer/",
       "images": 11,
       "tables": 4,
@@ -1144,6 +1709,16 @@
     },
     {
       "path": "/vi/products/sbs-bitumen-waterproofing-membrane-manufacturer/",
+      "images": 11,
+      "tables": 4,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/products/sbs-bitumen-waterproofing-membrane-manufacturer/",
       "images": 11,
       "tables": 4,
       "forms": 1,
@@ -1173,6 +1748,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/self-adhesive-bitumen-tape-wholesale/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/",
       "images": 10,
       "tables": 2,
@@ -1184,6 +1769,16 @@
     },
     {
       "path": "/vi/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/",
+      "images": 10,
+      "tables": 2,
+      "forms": 1,
+      "ids": 13,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/",
       "images": 10,
       "tables": 2,
       "forms": 1,
@@ -1213,6 +1808,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/spray-polyurea-waterproofing-coating/",
+      "images": 5,
+      "tables": 2,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/",
       "images": 5,
       "tables": 1,
@@ -1224,6 +1829,16 @@
     },
     {
       "path": "/vi/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/",
+      "images": 5,
+      "tables": 1,
+      "forms": 1,
+      "ids": 14,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/",
       "images": 5,
       "tables": 1,
       "forms": 1,
@@ -1253,6 +1868,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/tpe-joint-lap-tape-reinforcement/",
+      "images": 4,
+      "tables": 1,
+      "forms": 1,
+      "ids": 17,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/products/tpo-walkway-pad-manufacturer/",
       "images": 11,
       "tables": 4,
@@ -1264,6 +1889,16 @@
     },
     {
       "path": "/vi/products/tpo-walkway-pad-manufacturer/",
+      "images": 11,
+      "tables": 4,
+      "forms": 1,
+      "ids": 18,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/products/tpo-walkway-pad-manufacturer/",
       "images": 11,
       "tables": 4,
       "forms": 1,
@@ -1293,6 +1928,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/products/tpo-waterproofing-membrane-manufacturer/",
+      "images": 11,
+      "tables": 4,
+      "forms": 1,
+      "ids": 15,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/projects/",
       "images": 1,
       "tables": 0,
@@ -1304,6 +1949,16 @@
     },
     {
       "path": "/vi/projects/",
+      "images": 1,
+      "tables": 0,
+      "forms": 1,
+      "ids": 8,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/projects/",
       "images": 1,
       "tables": 0,
       "forms": 1,
@@ -1333,6 +1988,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/sitemap/",
+      "images": 1,
+      "tables": 0,
+      "forms": 0,
+      "ids": 2,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/technical/",
       "images": 2,
       "tables": 1,
@@ -1344,6 +2009,16 @@
     },
     {
       "path": "/vi/technical/",
+      "images": 2,
+      "tables": 1,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/technical/",
       "images": 2,
       "tables": 1,
       "forms": 0,
@@ -1373,6 +2048,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/technical/faq/",
+      "images": 1,
+      "tables": 0,
+      "forms": 0,
+      "ids": 4,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/technical/installation-guide/",
       "images": 1,
       "tables": 0,
@@ -1393,6 +2078,16 @@
       "numericParity": true
     },
     {
+      "path": "/es/technical/installation-guide/",
+      "images": 1,
+      "tables": 0,
+      "forms": 1,
+      "ids": 8,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
       "path": "/th/terms-of-use/",
       "images": 1,
       "tables": 0,
@@ -1404,6 +2099,16 @@
     },
     {
       "path": "/vi/terms-of-use/",
+      "images": 1,
+      "tables": 0,
+      "forms": 0,
+      "ids": 1,
+      "layoutParity": true,
+      "interactionParity": true,
+      "numericParity": true
+    },
+    {
+      "path": "/es/terms-of-use/",
       "images": 1,
       "tables": 0,
       "forms": 0,

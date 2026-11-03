@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 const overrides=JSON.parse(await readFile('src/i18n/full-overrides.json','utf8'));
-for(const prefix of ['full','pdf']) for(const locale of ['th','vi']) {
+for(const prefix of ['full','pdf']) for(const locale of ['th','vi','es']) {
   const file=`src/i18n/${prefix}-${locale}.json`;
   let existing;
   try { existing=JSON.parse(await readFile(file,'utf8')); }
@@ -71,6 +71,17 @@ for(const prefix of ['full','pdf']) for(const locale of ['th','vi']) {
       if(source==='Sep 9, 2026')target='9 tháng Chín, 2026';
       if(source.startsWith('20FT figures are factory'))target=target.replace(/gấp đôi/g,'gấp 2');
       if(source.startsWith('Torch-applied is generally'))target=target.replace(/Với công việc dưới 0°C/g,'Với công việc ở nhiệt độ âm');
+    }
+    if(locale==='es') {
+      target=target.replace(/betún/gi,'asfalto');
+      if(/shingles?/i.test(source))target=target.replace(/herpes z[oó]ster/gi,'tejas asfálticas');
+      if(/laps?/i.test(source))target=target.replace(/vueltas/gi,'solapes');
+      if(/\bmin\b|\dmin\b/.test(source))target=target.replace(/minutos?/gi,'min');
+      if(source.includes('2026-05-01'))target=target.replace(/01-05-2026|01\/05\/2026/g,'2026-05-01');
+      if(source.startsWith('20FT figures are factory'))target=target.replace(/del doble de volumen/g,'de 2× el volumen');
+      if(source==='min')target='min';
+      if(source.includes('sq ft'))target=target.replace(/pies²/g,'sq ft');
+      if(source==='Elongation at peak % ≥30 - ≥40 - -')target='Alargamiento en el pico % ≥30 - ≥40 - -';
     }
     target=target.replace(/\b(kg|g)\s*\/\s*m([²³23])/g,'$1/m$2').replace(/\bN\s*\/\s*(50)?\s*mm/g,'N/$1mm');
     dictionary[source]=target.replace(/ {2,}/g,' ').trim();

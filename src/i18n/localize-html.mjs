@@ -2,7 +2,7 @@ import { parse, serialize } from 'parse5';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
-import { localizedPaths, languageAlternates, languages } from './routes.mjs';
+import { localizedPaths, languageAlternates, languages, translationLocales } from './routes.mjs';
 import ui from './ui.json' with { type: 'json' };
 
 const origin = 'https://www.tyuanwaterproof.com';
@@ -25,7 +25,7 @@ function setText(node, value) {
   node.childNodes[0].parentNode = node;
 }
 function hasClass(node, name) { return (attr(node, 'class') || '').split(/\s+/).includes(name); }
-const stable = /^(?:Tianyuan Waterproof|Weifang Tianyuan Waterproof Material Co\.,? Ltd\.?|WhatsApp|WHATSAPP|OEM(?:\s*\/\s*ODM)?|CE(?:\s+RoHS)?|ISO[\d\s:.-]+|EN|TH|VI|English|ไทย|Tiếng Việt|TDS|MSDS|PDF|SBS|APP|PVC|TPO|EPDM|HDPE|PU|JS|ASTM|GB\/T|MD|CD|PY|PYG|ALU|N|G|I|II|III|B2B|A\+B|TY-SHIELD™)$/;
+const stable = /^(?:Tianyuan Waterproof|Weifang Tianyuan Waterproof Material Co\.,? Ltd\.?|WhatsApp|WHATSAPP|OEM(?:\s*\/\s*ODM)?|CE(?:\s+RoHS)?|ISO[\d\s:.-]+|EN|TH|VI|English|ไทย|Tiếng Việt|Español|TDS|MSDS|PDF|SBS|APP|PVC|TPO|EPDM|HDPE|PU|JS|ASTM|GB\/T|MD|CD|PY|PYG|ALU|N|G|I|II|III|B2B|A\+B|TY-SHIELD™)$/;
 export function needsTranslation(value) {
   return /[A-Za-z]{2}/.test(value) && !stable.test(value) && !/^https?:|^[\w.+-]+@|^\+?[\d\s()-]+$/.test(value) && !/^(?:mm|cm|kg|g|m²|m2|MPa|N\/mm|kPa|°C|ft|lb|pcs|kg\/m²)$/i.test(value);
 }
@@ -105,7 +105,7 @@ function configureLanguagePicker(document, path, locale) {
     if (summary) {
       set(summary,'aria-label',`${ui[locale].language}: ${current.label}`);
       for (const child of summary.childNodes) {
-        if (child.tagName === 'img') set(child,'src',`/flags/${locale==='th'?'th':'vn'}.svg`);
+        if (child.tagName === 'img') set(child,'src',`/flags/${locale==='th'?'th':locale==='vi'?'vn':'es'}.svg`);
         if (child.tagName === 'span') { setText(child,current.label); set(child,'lang',locale); }
       }
     }
@@ -128,11 +128,11 @@ function configureLanguagePicker(document, path, locale) {
   });
 }
 export async function localizePages(directory) {
-  const dictionaries = Object.fromEntries(await Promise.all(['th','vi'].map(async locale => [locale,JSON.parse(await readFile(new URL(`./full-${locale}.json`,import.meta.url),'utf8'))])));
+  const dictionaries = Object.fromEntries(await Promise.all(translationLocales.map(async locale => [locale,JSON.parse(await readFile(new URL(`./full-${locale}.json`,import.meta.url),'utf8'))])));
   let count=0;
   for (const path of localizedPaths) {
     const source = await readFile(outputFile(directory,path),'utf8');
-    for (const locale of ['th','vi']) {
+    for (const locale of translationLocales) {
       const document = parse(source);
       const dictionary=dictionaries[locale];
       mapStrings(document, value => {
@@ -147,14 +147,14 @@ export async function localizePages(directory) {
           if (original?.startsWith('/') && !original.startsWith('//') && !original.startsWith('/flags/') && localizedHref(original,locale)===original && !original.startsWith(`/${locale}/`)) set(node,'hreflang','en');
           if (original?.startsWith('https://wa.me/') && original.includes('text=')) {
             const whatsapp=new URL(original);
-            whatsapp.searchParams.set('text',locale==='th'?'สวัสดี สนใจวัสดุกันซึมของ Tianyuan Waterproof ขอข้อมูลผลิตภัณฑ์และใบเสนอราคา':'Xin chào, tôi quan tâm đến vật liệu chống thấm Tianyuan Waterproof. Vui lòng gửi thông tin và báo giá.');
+            whatsapp.searchParams.set('text',locale==='es'?'Hola, me interesan los materiales impermeabilizantes de Tianyuan Waterproof. Solicito información del producto y una cotización.':locale==='th'?'สวัสดี สนใจวัสดุกันซึมของ Tianyuan Waterproof ขอข้อมูลผลิตภัณฑ์และใบเสนอราคา':'Xin chào, tôi quan tâm đến vật liệu chống thấm Tianyuan Waterproof. Vui lòng gửi thông tin và báo giá.');
             set(node,'href',whatsapp.href);
           }
         }
         if (node.tagName==='link' && attr(node,'rel')==='canonical') set(node,'href',origin+`/${locale}${path}`);
         if (node.tagName==='link' && ['prev','next'].includes(attr(node,'rel'))) set(node,'href',localizedHref(attr(node,'href'),locale));
         if (node.tagName==='meta' && attr(node,'property')==='og:url') set(node,'content',origin+`/${locale}${path}`);
-        if (node.tagName==='meta' && attr(node,'property')==='og:locale') set(node,'content',locale==='th'?'th_TH':'vi_VN');
+        if (node.tagName==='meta' && attr(node,'property')==='og:locale') set(node,'content',locale==='th'?'th_TH':locale==='vi'?'vi_VN':'es_ES');
         if (node.tagName==='script' && attr(node,'type')==='application/ld+json') setText(node,JSON.stringify(localizeSchema(JSON.parse(node.childNodes[0].value),locale)));
         if (node.tagName==='form') {
           set(node,'data-success-title',ui[locale].success);

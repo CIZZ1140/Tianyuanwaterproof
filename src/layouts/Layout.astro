@@ -13,7 +13,7 @@ const footerProps = ui ? {
   footerGroups: [
     { title: ui.products, links: Object.entries(ui.groupNames).map(([id, label]) => ({label, href: `/${locale}/categories/${id}/`})) },
     { title: ui.about, links: [{label: ui.about, href: `/${locale}/about/`}, {label: ui.contact, href: `/${locale}/contact/`}] },
-    { title: ui.language, links: [{label: 'English', href: '/'}, {label: 'ไทย', href: '/th/'}, {label: 'Tiếng Việt', href: '/vi/'}] }
+    { title: ui.language, links: [{label: 'English', href: '/'}, {label: 'ไทย', href: '/th/'}, {label: 'Tiếng Việt', href: '/vi/'}, {label: 'Español', href: '/es/'}] }
   ],
   contactItems: [{label: ui.location, value: ui.address}, {label: ui.email, value: site.email, href: `mailto:${site.email}`}, {label: 'WhatsApp', value: site.whatsapp, href: 'https://wa.me/' + site.whatsapp.replace(/\D/g, '')}],
   legalLinks: [{label: ui.privacy, href: '/privacy-policy/'}, {label: ui.terms, href: '/terms-of-use/'}],

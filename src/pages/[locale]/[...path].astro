@@ -1,10 +1,10 @@
 ---
-import { localizedPaths } from '../../i18n/routes.mjs';
+import { localizedPaths, translationLocales } from '../../i18n/routes.mjs';
 
 // Register real localized routes for Astro and the sitemap. The build integration
 // renders the final HTML from the corresponding English page, not a second template.
 export function getStaticPaths() {
-  return ['th', 'vi'].flatMap(locale => localizedPaths.map(path => ({
+  return translationLocales.flatMap(locale => localizedPaths.map(path => ({
     params: { locale, path: path === '/' ? undefined : path.slice(1, -1) }
   })));
 }

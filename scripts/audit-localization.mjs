@@ -1,9 +1,10 @@
+import {translationLocales} from '../src/i18n/routes.mjs';
 import {readFile,writeFile} from 'node:fs/promises';
 import {technicalUnits as units} from './localization-values.mjs';
 const numbers=s=>(s.match(/\d+(?:[.,]\d+)*/g)||[]).sort();
 const eq=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
 const findings=[];
-for(const kind of ['full','pdf'])for(const language of ['th','vi']){
+for(const kind of ['full','pdf'])for(const language of translationLocales){
  const source=JSON.parse(await readFile(`src/i18n/${kind}-source.json`,'utf8'));
  const dict=JSON.parse(await readFile(`src/i18n/${kind}-${language}.json`,'utf8'));
  for(const s of source){const t=dict[s]||'';const errors=[];

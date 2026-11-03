@@ -78,5 +78,45 @@
     "sourceAppendixPages": 4,
     "translatedBlocks": 58,
     "bytes": 917491
+  },
+  {
+    "file": "public\\docs\\es\\asphalt-felt-tds.pdf",
+    "language": "es",
+    "translatedPages": 4,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 67,
+    "bytes": 721240
+  },
+  {
+    "file": "public\\docs\\es\\sbs-membrane-installation-manual.pdf",
+    "language": "es",
+    "translatedPages": 12,
+    "sourceAppendixPages": 12,
+    "translatedBlocks": 187,
+    "bytes": 731388
+  },
+  {
+    "file": "public\\docs\\es\\sbs-waterproofing-membrane-tds.pdf",
+    "language": "es",
+    "translatedPages": 4,
+    "sourceAppendixPages": 2,
+    "translatedBlocks": 65,
+    "bytes": 936859
+  },
+  {
+    "file": "public\\docs\\es\\self-adhesive-bitumen-membrane-tds.pdf",
+    "language": "es",
+    "translatedPages": 7,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 139,
+    "bytes": 1083515
+  },
+  {
+    "file": "public\\docs\\es\\tpo-walkway-pad-tds.pdf",
+    "language": "es",
+    "translatedPages": 3,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 58,
+    "bytes": 706375
   }
 ]

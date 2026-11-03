@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile, writeFile, mkdir, readdir, access } from 'node:fs/promises';
 import { parse } from 'parse5';
-import { localizedPaths } from '../src/i18n/routes.mjs';
+import { localizedPaths, translationLocales, languages } from '../src/i18n/routes.mjs';
 import { outputFile, extractStrings } from '../src/i18n/localize-html.mjs';
 import { technicalUnits as units } from './localization-values.mjs';
 
@@ -20,13 +20,13 @@ const strings=await extractStrings('dist');
 const englishPaths=[];
 async function discover(directory,path='/') {
   for(const item of await readdir(directory,{withFileTypes:true})) {
-    if(item.isDirectory()&&!['th','vi','_astro','docs'].includes(item.name)) await discover(`${directory}/${item.name}`,`${path}${item.name}/`);
+    if(item.isDirectory()&&![...translationLocales,'_astro','docs'].includes(item.name)) await discover(`${directory}/${item.name}`,`${path}${item.name}/`);
     if(item.isFile()&&item.name==='index.html') englishPaths.push(path);
   }
 }
 await discover('dist');
 assert.deepEqual([...localizedPaths].sort(),englishPaths.sort(),'Every published English page must have both language versions');
-for(const locale of ['th','vi']) {
+for(const locale of translationLocales) {
   const dictionary=JSON.parse(await readFile(`src/i18n/full-${locale}.json`,'utf8'));
   for(const source of strings) {
     assert(dictionary[source],`Missing ${locale}: ${source}`);
@@ -44,7 +44,7 @@ for(const path of localizedPaths) {
   const tables=nodes(english,n=>n.tagName==='table');
   const ids=nodes(english,n=>get(n,'id')).map(n=>get(n,'id'));
   const classes=layoutClasses(english);
-  for(const locale of ['th','vi']) {
+  for(const locale of translationLocales) {
     const doc=parse(await readFile(outputFile('dist',`/${locale}${path}`),'utf8'));
     assert.equal(get(nodes(doc,n=>n.tagName==='html')[0],'lang'),locale);
     assert.equal(get(nodes(doc,n=>n.tagName==='link'&&get(n,'rel')==='canonical')[0],'href'),`https://www.tyuanwaterproof.com/${locale}${path}`);
@@ -64,7 +64,7 @@ for(const path of localizedPaths) {
     assert.equal(forms.length,nodes(english,n=>n.tagName==='form').length);
     forms.forEach(form=>assert(nodes(form,n=>n.tagName==='input'&&get(n,'name')==='Language'&&get(n,'value')===locale).length===1));
     const alternates=nodes(doc,n=>n.tagName==='link'&&get(n,'rel')==='alternate');
-    assert.equal(alternates.length,4);
+    assert.equal(alternates.length,languages.length+1);
     const links=nodes(doc,n=>n.tagName==='a'&&get(n,'href')?.startsWith(`/${locale}/`));
     for(const link of links) {
       const url=new URL(get(link,'href'),'https://www.tyuanwaterproof.com');

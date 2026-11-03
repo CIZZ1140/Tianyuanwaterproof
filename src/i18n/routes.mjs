@@ -3,18 +3,20 @@ import pagePaths from './page-paths.json' with { type: 'json' };
 export const languages = [
   { code: 'en', label: 'English' },
   { code: 'th', label: 'ไทย' },
-  { code: 'vi', label: 'Tiếng Việt' }
+  { code: 'vi', label: 'Tiếng Việt' },
+  { code: 'es', label: 'Español' }
 ];
+export const translationLocales = languages.filter(language => language.code !== 'en').map(language => language.code);
 export const localizedPaths = pagePaths;
 export const productSlugs = pagePaths.filter(path => /^\/products\/[^/]+\/$/.test(path)).map(path => path.split('/')[2]);
 export const categoryIds = pagePaths.filter(path => /^\/categories\/[^/]+\/$/.test(path)).map(path => path.split('/')[2]);
-/** @param {string} path @returns {'en' | 'th' | 'vi'} */
+/** @param {string} path @returns {'en' | 'th' | 'vi' | 'es'} */
 export function localeOf(path) {
-  const locale = path.match(/^\/(th|vi)(?:\/|$)/)?.[1];
-  return locale === 'th' || locale === 'vi' ? locale : 'en';
+  const locale = path.match(/^\/(th|vi|es)(?:\/|$)/)?.[1];
+  return locale === 'th' || locale === 'vi' || locale === 'es' ? locale : 'en';
 }
 export function basePath(path) {
-  const result = path.replace(/^\/(th|vi)(?=\/|$)/, '') || '/';
+  const result = path.replace(/^\/(th|vi|es)(?=\/|$)/, '') || '/';
   return result.endsWith('/') ? result : result + '/';
 }
 export function languagePath(path, locale) {
