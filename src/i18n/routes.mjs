@@ -1,18 +1,13 @@
-import products from './products.json' with { type: 'json' };
+import pagePaths from './page-paths.json' with { type: 'json' };
 
 export const languages = [
   { code: 'en', label: 'English' },
   { code: 'th', label: 'ไทย' },
   { code: 'vi', label: 'Tiếng Việt' }
 ];
-export const productSlugs = Object.keys(products);
-/** @type {Array<'bitumen-membranes' | 'asphalt-shingles' | 'waterproof-tapes' | 'waterproof-coatings'>} */
-export const categoryIds = ['bitumen-membranes', 'asphalt-shingles', 'waterproof-tapes', 'waterproof-coatings'];
-export const localizedPaths = [
-  '/', '/products/', '/about/', '/contact/',
-  ...categoryIds.map(id => `/categories/${id}/`),
-  ...productSlugs.map(slug => `/products/${slug}/`)
-];
+export const localizedPaths = pagePaths;
+export const productSlugs = pagePaths.filter(path => /^\/products\/[^/]+\/$/.test(path)).map(path => path.split('/')[2]);
+export const categoryIds = pagePaths.filter(path => /^\/categories\/[^/]+\/$/.test(path)).map(path => path.split('/')[2]);
 /** @param {string} path @returns {'en' | 'th' | 'vi'} */
 export function localeOf(path) {
   const locale = path.match(/^\/(th|vi)(?:\/|$)/)?.[1];

@@ -6,6 +6,7 @@ import { localizedPaths, languageAlternates, languages } from './routes.mjs';
 import ui from './ui.json' with { type: 'json' };
 
 const origin = 'https://www.tyuanwaterproof.com';
+const localizedDownloads = new Set(['asphalt-felt-tds.pdf','sbs-membrane-installation-manual.pdf','sbs-waterproofing-membrane-tds.pdf','self-adhesive-bitumen-membrane-tds.pdf','tpo-walkway-pad-tds.pdf']);
 const attr = (node, name) => node.attrs?.find(a => a.name === name)?.value;
 function set(node, name, value) {
   node.attrs ||= [];
@@ -71,10 +72,16 @@ export async function extractStrings(directory) {
   return [...strings].sort();
 }
 function localizedHref(value, locale) {
+  if (value === 'https://img.tyuanwaterproof.com/docs/asphalt-felt-tds.pdf') return `/docs/${locale}/asphalt-felt-tds.pdf`;
   if (!value || (!value.startsWith('/') && !value.startsWith(origin))) return value;
   if (value.startsWith('//')) return value;
   const url = new URL(value, origin);
   if (url.origin !== origin) return value;
+  const document=url.pathname.match(/^\/docs\/([^/]+\.pdf)$/)?.[1];
+  if (document && localizedDownloads.has(document)) {
+    url.pathname=`/docs/${locale}/${document}`;
+    return value.startsWith(origin)?url.href:url.pathname+url.search+url.hash;
+  }
   const path = url.pathname.endsWith('/') ? url.pathname : url.pathname + '/';
   if (localizedPaths.includes(path)) {
     url.pathname = `/${locale}${path}`;
@@ -145,6 +152,7 @@ export async function localizePages(directory) {
           }
         }
         if (node.tagName==='link' && attr(node,'rel')==='canonical') set(node,'href',origin+`/${locale}${path}`);
+        if (node.tagName==='link' && ['prev','next'].includes(attr(node,'rel'))) set(node,'href',localizedHref(attr(node,'href'),locale));
         if (node.tagName==='meta' && attr(node,'property')==='og:url') set(node,'content',origin+`/${locale}${path}`);
         if (node.tagName==='meta' && attr(node,'property')==='og:locale') set(node,'content',locale==='th'?'th_TH':'vi_VN');
         if (node.tagName==='script' && attr(node,'type')==='application/ld+json') setText(node,JSON.stringify(localizeSchema(JSON.parse(node.childNodes[0].value),locale)));

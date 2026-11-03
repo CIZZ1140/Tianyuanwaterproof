@@ -1,8 +1,9 @@
 import assert from 'node:assert/strict';
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, readdir, access } from 'node:fs/promises';
 import { parse } from 'parse5';
 import { localizedPaths } from '../src/i18n/routes.mjs';
 import { outputFile, extractStrings } from '../src/i18n/localize-html.mjs';
+import { technicalUnits as units } from './localization-values.mjs';
 
 const get=(node,name)=>node.attrs?.find(item=>item.name===name)?.value;
 function nodes(root,predicate) {
@@ -12,10 +13,19 @@ function nodes(root,predicate) {
 }
 function content(node) { return node.nodeName==='#text'?node.value:(node.childNodes||[]).map(content).join(''); }
 const numbers=value=>(value.match(/\d+(?:[.,]\d+)*/g)||[]).sort();
-const units=value=>(value.match(/(?<!\p{L})(?:N\/(?:50)?mm|kg\/m[²2]|g\/(?:cm[³3]|m[²2])|mm|cm|kg|MPa|kPa|m[²³23]|min|pcs|lbs?|ft|g|m)(?!\p{L})/gu)||[]).sort();
 const layoutClasses=doc=>nodes(doc,n=>get(n,'class')&&!get(n,'aria-current')&&n.tagName!=='a'&&!['ml-auto shrink-0','lucide lucide-check ml-auto shrink-0'].includes(get(n,'class'))).map(n=>get(n,'class'));
 const dictionaryReport=[];
 const strings=await extractStrings('dist');
+// Future English routes must be added to the locale manifest before publishing.
+const englishPaths=[];
+async function discover(directory,path='/') {
+  for(const item of await readdir(directory,{withFileTypes:true})) {
+    if(item.isDirectory()&&!['th','vi','_astro','docs'].includes(item.name)) await discover(`${directory}/${item.name}`,`${path}${item.name}/`);
+    if(item.isFile()&&item.name==='index.html') englishPaths.push(path);
+  }
+}
+await discover('dist');
+assert.deepEqual([...localizedPaths].sort(),englishPaths.sort(),'Every published English page must have both language versions');
 for(const locale of ['th','vi']) {
   const dictionary=JSON.parse(await readFile(`src/i18n/full-${locale}.json`,'utf8'));
   for(const source of strings) {
@@ -59,6 +69,10 @@ for(const path of localizedPaths) {
     for(const link of links) {
       const url=new URL(get(link,'href'),'https://www.tyuanwaterproof.com');
       assert(localizedPaths.includes(url.pathname.slice(3)),`Unknown localized link ${url.pathname}`);
+    }
+    for(const link of nodes(doc,n=>n.tagName==='a'&&get(n,'href')?.startsWith('/docs/'))) {
+      assert(get(link,'href').startsWith(`/docs/${locale}/`),`Unlocalized PDF ${get(link,'href')}`);
+      await access('dist'+new URL(get(link,'href'),'https://www.tyuanwaterproof.com').pathname);
     }
     pages.push({path:`/${locale}${path}`,images:images.length,tables:tables.length,forms:forms.length,ids:ids.length,layoutParity:true,interactionParity:true,numericParity:true});
   }

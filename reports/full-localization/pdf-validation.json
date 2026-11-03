@@ -1,0 +1,82 @@
+[
+  {
+    "file": "public\\docs\\th\\asphalt-felt-tds.pdf",
+    "language": "th",
+    "translatedPages": 3,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 67,
+    "bytes": 722333
+  },
+  {
+    "file": "public\\docs\\th\\sbs-membrane-installation-manual.pdf",
+    "language": "th",
+    "translatedPages": 10,
+    "sourceAppendixPages": 12,
+    "translatedBlocks": 187,
+    "bytes": 735985
+  },
+  {
+    "file": "public\\docs\\th\\sbs-waterproofing-membrane-tds.pdf",
+    "language": "th",
+    "translatedPages": 4,
+    "sourceAppendixPages": 2,
+    "translatedBlocks": 65,
+    "bytes": 937709
+  },
+  {
+    "file": "public\\docs\\th\\self-adhesive-bitumen-membrane-tds.pdf",
+    "language": "th",
+    "translatedPages": 6,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 139,
+    "bytes": 1084883
+  },
+  {
+    "file": "public\\docs\\th\\tpo-walkway-pad-tds.pdf",
+    "language": "th",
+    "translatedPages": 3,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 58,
+    "bytes": 707630
+  },
+  {
+    "file": "public\\docs\\vi\\asphalt-felt-tds.pdf",
+    "language": "vi",
+    "translatedPages": 4,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 67,
+    "bytes": 934932
+  },
+  {
+    "file": "public\\docs\\vi\\sbs-membrane-installation-manual.pdf",
+    "language": "vi",
+    "translatedPages": 11,
+    "sourceAppendixPages": 12,
+    "translatedBlocks": 187,
+    "bytes": 979718
+  },
+  {
+    "file": "public\\docs\\vi\\sbs-waterproofing-membrane-tds.pdf",
+    "language": "vi",
+    "translatedPages": 4,
+    "sourceAppendixPages": 2,
+    "translatedBlocks": 65,
+    "bytes": 946485
+  },
+  {
+    "file": "public\\docs\\vi\\self-adhesive-bitumen-membrane-tds.pdf",
+    "language": "vi",
+    "translatedPages": 6,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 139,
+    "bytes": 1095952
+  },
+  {
+    "file": "public\\docs\\vi\\tpo-walkway-pad-tds.pdf",
+    "language": "vi",
+    "translatedPages": 3,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 58,
+    "bytes": 917491
+  }
+]

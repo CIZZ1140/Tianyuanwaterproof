@@ -7,12 +7,13 @@ import concurrent.futures
 import json
 import re
 import time
+import sys
 from pathlib import Path
 import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'src/i18n/full-source.json'
-UNITS = r'(?<![A-Za-z])(?:N/(?:50)?mm|kg/m[²2]|g/(?:cm[³3]|m[²2])|mm|cm|kg|MPa|kPa|m[²³23]|min|pcs|lbs?|ft|g|m)(?![A-Za-z])'
+UNITS = r'(?<![A-Za-z])(?:N/(?:50)?mm|kg/m[²2]|g/(?:cm[³3]|m[²2])|mm|cm|kg|MPa|kPa|m[²³23]|min|pcs|lbs?|ft|kN|h|s|g|m)(?![A-Za-z])'
 TOKEN = re.compile(r'https?://\S+|[\w.+-]+@[\w.-]+|\b(?:Type\s+[IVX]+|Class\s+[A-Z]+|Tianyuan Waterproof|Weifang Tianyuan Waterproof Material Co\.,? Ltd\.?|GB(?:/T)?\s*\d+(?:[.\-]\d+)*|ASTM\s*[A-Z]?\d+(?:[.\-]\d+)*|EN\s*\d+(?:[.\-]\d+)*|ISO\s*\d+(?::\d+)?|SBS|APP|PVC|TPO|EPDM|HDPE|PU|JS|TDS|MSDS|OEM|ODM|UV|PET|PE|PP)\b|'+UNITS+r'|\d+(?:[.,]\d+)*', re.I)
 
 def protect(value):
@@ -57,9 +58,10 @@ def translate_batch(batch,locale):
     return result
 
 def main():
-    strings=json.loads(SOURCE.read_text(encoding='utf-8'))
+    pdf_mode='--pdf' in sys.argv
+    strings=json.loads((ROOT/'src/i18n/pdf-source.json' if pdf_mode else SOURCE).read_text(encoding='utf-8'))
     for locale in ['th','vi']:
-        target=ROOT/f'src/i18n/full-{locale}.json'
+        target=ROOT/f'src/i18n/{"pdf" if pdf_mode else "full"}-{locale}.json'
         dictionary=json.loads(target.read_text(encoding='utf-8')) if target.exists() else {}
         overrides=json.loads((ROOT/'src/i18n/full-overrides.json').read_text(encoding='utf-8'))
         dictionary.update(overrides.get(locale,{}))
