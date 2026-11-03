@@ -13,14 +13,23 @@ import sys
 
 ROOT=Path(__file__).resolve().parents[1]
 LABELS={
+ 'fr':{'title':'Documentation technique en français','source':'Page de référence originale','note':'Traduction de référence préparée avec des outils de traduction assistée. Vérifiez les données techniques avec le document original anglais et la fiche technique du produit proposé. Le document original complet figure en annexe.'},
+ 'ar':{'title':'الوثائق الفنية باللغة العربية','source':'صفحة المرجع الأصلي','note':'ترجمة مرجعية أُعدت بأدوات ترجمة مساعدة. يرجى التحقق من البيانات الفنية بمقارنتها بالأصل الإنجليزي ونشرة البيانات الفنية للمنتج المعروض. أُرفق المستند الإنجليزي الأصلي بالكامل في الملحق.'},
  'pt-br':{'title':'Documentação técnica em português','source':'Página de referência original','note':'Tradução de referência preparada com ferramentas de tradução assistida. Confira os dados técnicos com o original em inglês e a ficha técnica do produto oferecido. O documento original completo está no apêndice.'},
  'es':{'title':'Documentación técnica en español','source':'Página de referencia original','note':'Traducción de referencia preparada con herramientas de traducción asistida. Verifique los datos técnicos con el original en inglés y la ficha técnica del producto ofrecido. El documento original completo se incluye en el apéndice.'},
  'th':{'title':'เอกสารทางเทคนิคฉบับภาษาไทย','source':'หน้าอ้างอิงต้นฉบับ','note':'คำแปลเพื่อใช้อ้างอิงประกอบการจัดซื้อ จัดทำโดยใช้เครื่องมือช่วยแปล โปรดตรวจสอบข้อมูลทางเทคนิคกับเอกสารภาษาอังกฤษต้นฉบับและ TDS ที่ใช้กับสินค้าที่เสนอ เอกสารภาษาอังกฤษฉบับสมบูรณ์อยู่ในภาคผนวก'},
  'vi':{'title':'Tài liệu kỹ thuật bằng tiếng Việt','source':'Trang nguồn tham chiếu','note':'Bản dịch tham khảo phục vụ mua hàng, được chuẩn bị với công cụ hỗ trợ dịch. Vui lòng đối chiếu thông tin kỹ thuật với bản gốc tiếng Anh và TDS áp dụng cho sản phẩm được cung cấp. Bản tiếng Anh đầy đủ nằm trong phần phụ lục.'}
 }
+def reference_text(value, locale):
+    if locale=='ar':
+        # MuPDF shapes Arabic correctly. Explicit LTR embeddings keep signs and
+        # measurements in engineering order inside the RTL reading text.
+        pattern=r'(?:\bTY-SHIELD™?|\d+(?:[.,]\d+)*(?:\s*(?:mm|cm|m|ft)?\s*[×x/]\s*\d+(?:[.,]\d+)*\s*(?:mm|cm|m|ft)?)+|\b(?:GB(?:/T)?|ASTM|ISO|EN|GRI-GM)\s*[A-Z]?\d[\dA-Z./:–-]*|\b(?:SBS|APP|PVC|TPO|EPDM|HDPE|PU|JS|PYG|PY|OEM|TDS|MSDS)\b|(?:[+≥≤±−-]\s*)?\d+(?:[.,]\d+)*(?:\s*[×/–-]\s*\d+(?:[.,]\d+)*)?(?:\s*(?:N/(?:50)?mm|kg/m[²2]|g/m[²2]|MPa|kPa|mm|cm|kg|m[²³23]?|min|mil|FT|HQ|%))?)'
+        value=re.sub(pattern,lambda m:'\u202a'+m.group()+'\u202c',value)
+    return html.escape(value)
 def main():
     output=ROOT/'output/pdf'; output.mkdir(parents=True,exist_ok=True)
-    locales=sys.argv[1:] or ['th','vi','es','pt-br']
+    locales=sys.argv[1:] or ['th','vi','es','pt-br','fr','ar']
     report_path=ROOT/'reports/full-localization/pdf-validation.json'
     report=[item for item in json.loads(report_path.read_text(encoding='utf-8')) if item['language'] not in locales] if report_path.exists() else []
     for locale in locales:
@@ -41,7 +50,7 @@ def main():
                     numbers=lambda s: sorted(re.findall(r'\d+(?:[.,]\d+)*',s))
                     if numbers(value)!=numbers(translated): raise ValueError(f'PDF numeric mismatch: {value} -> {translated}')
                     strings.append(value)
-                    parts.append('<p>'+html.escape(translated)+'</p>')
+                    parts.append('<p>'+reference_text(translated,locale)+'</p>')
                 sections.append('<h2>'+labels['source']+' '+str(page.number+1)+'</h2>'+''.join(parts))
             document='<h1>Tianyuan Waterproof</h1><h2>'+labels['title']+'</h2><p class="note">'+labels['note']+'</p>'+''.join(sections)
             css='''@font-face{font-family:NotoThai;src:url(NotoSansThai.ttf)}
@@ -50,6 +59,10 @@ def main():
             h1{font-size:22pt;color:#0e2a47;margin:0 0 12pt}h2{font-size:14pt;color:#174d7a;margin:18pt 0 8pt}
             p{margin:0 0 8pt;orphans:2;widows:2}.note{padding:12pt;background:#edf4fb;font-size:10pt}
             '''
+            if locale=='ar':
+                # Avoid dir=rtl containers: their intrinsic-width handling in
+                # Story can defeat right alignment. Arabic bidi is automatic.
+                css+='@font-face{font-family:NotoArabic;src:url(NotoNaskhArabic.ttf)} body{font-family:NotoArabic,Noto,sans-serif} h1,h2,p{text-align:right}'
             temporary=ROOT/'tmp/pdfs'/f'{source.stem}-{locale}-text.pdf'
             temporary.parent.mkdir(parents=True,exist_ok=True)
             writer=fitz.DocumentWriter(str(temporary))
@@ -69,7 +82,8 @@ def main():
             public=ROOT/f'public/docs/{locale}/{source.name}'; public.parent.mkdir(parents=True,exist_ok=True)
             public.write_bytes(destination.read_bytes())
             verification=fitz.open(destination)
-            if not re.search('[\u0e00-\u0e7f]' if locale=='th' else ('[áéíóúñü]' if locale in ['es','pt-br'] else '[àáảãạăâđêôơư]'), ''.join(p.get_text() for p in verification[:translated_pages]),re.I): raise ValueError('Missing localized glyphs')
+            glyphs={'th':'[\u0e00-\u0e7f]','vi':'[àáảãạăâđêôơư]','es':'[áéíóúñü]','pt-br':'[áéíóúãõç]','fr':'[àâçéèêëîïôùûüÿœ]','ar':'[\u0600-\u06ff]'}
+            if not re.search(glyphs[locale], ''.join(p.get_text() for p in verification[:translated_pages]),re.I): raise ValueError('Missing localized glyphs')
             if verification.page_count != translated_pages+original.page_count: raise ValueError('Incomplete source appendix')
             qa=ROOT/'reports/full-localization/pdf-preview'; qa.mkdir(exist_ok=True,parents=True)
             for page in verification:

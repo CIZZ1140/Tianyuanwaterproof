@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 const overrides=JSON.parse(await readFile('src/i18n/full-overrides.json','utf8'));
-for(const prefix of ['full','pdf']) for(const locale of ['th','vi','es','pt-br']) {
+for(const prefix of ['full','pdf']) for(const locale of ['th','vi','es','pt-br','fr','ar']) {
   const file=`src/i18n/${prefix}-${locale}.json`;
   let existing;
   try { existing=JSON.parse(await readFile(file,'utf8')); }
@@ -39,6 +39,17 @@ for(const prefix of ['full','pdf']) for(const locale of ['th','vi','es','pt-br']
     // Keep the source document's numeric notation. Translation services use
     // decimal commas, thousands dots, and sometimes Thai Buddhist years.
     let target=dictionary[source];
+    if(locale==='ar')target=target.replace(/[٠-٩]/g,n=>String(n.charCodeAt(0)-0x660)).replace(/[۰-۹]/g,n=>String(n.charCodeAt(0)-0x6f0)).replace(/٪/g,'%').replace(/٫/g,'.').replace(/٬/g,',');
+    if(['fr','ar'].includes(locale)) {
+      // Restore only grouping formats whose digits exactly match a number in
+      // the English source; never infer or change a numeric value.
+      for(const n of source.match(/\d+(?:[.,]\d+)*/g)||[]) {
+        if(/^\d{1,3}(?:,\d{3})+$/.test(n)||/^\d{4,}$/.test(n)) {
+          const grouped=n.replace(/,/g,'').replace(/\B(?=(\d{3})+(?!\d))/g,'[ \\u00a0\\u202f,]');
+          target=target.replace(new RegExp('(?<!\\d)'+grouped+'(?!\\d)','g'),n);
+        }
+      }
+    }
     const sourceNumbers=source.match(/\d+(?:[.,]\d+)*/g)||[];
     const targetNumbers=target.match(/\d+(?:[.,]\d+)*/g)||[];
     if(sourceNumbers.length===targetNumbers.length) {
@@ -95,6 +106,57 @@ for(const prefix of ['full','pdf']) for(const locale of ['th','vi','es','pt-br']
       if(/laps?/i.test(source))target=target.replace(/voltas/gi,'sobreposições');
       if(/\bmin\b|\dmin\b/.test(source))target=target.replace(/minutos?/gi,'min');
       if(source.includes('2026-05-01'))target=target.replace(/01-05-2026|01\/05\/2026/g,'2026-05-01');
+    }
+    if(locale==='fr') {
+      if(/shingles?/i.test(source))target=target.replace(/zona/gi,'bardeaux bitumés');
+      if(/\bTDS\b/.test(source)&&!source.includes('MSDS'))target=target.replace(/\bFDS\b/g,'TDS');
+      if(source.includes('2026-05-01'))target=target.replace(/01-05-2026|01\/05\/2026/g,'2026-05-01');
+      if(/\bmin\b|\dmin\b/.test(source))target=target.replace(/minutes?/gi,'min');
+      if(source.includes('1 business day'))target=target.replace(/d'un jour ouvrable/g,'de 1 jour ouvrable');
+      if(source.startsWith('20FT figures are factory'))target=target.replace(/du double du volume/g,'de 2 fois le volume');
+      if(source.includes('sq ft'))target=target.replace(/pieds? carrés?/gi,'sq ft');
+    }
+    if(locale==='ar') {
+      if(/shingles?/i.test(source))target=target.replace(/القوباء المنطقية|الهربس النطاقي/g,'قرميد الأسفلت');
+      if(/glass (?:fiber )?(?:felt|mat)/i.test(source))target=target.replace(/الصوف الزجاجي/g,'لباد الألياف الزجاجية');
+      if(/quot(?:e|ation)/i.test(source))target=target.replace(/الاقتباسات/g,'عروض الأسعار').replace(/الاقتباس/g,'عرض السعر');
+      if(source.includes('B2B')&&!target.includes('B2B'))target+=' (B2B)';
+      if(/2\s*h\b/.test(source))target=target.replace(/ساعتان|ساعتين/g,'2 h');
+      if(/\bmin\b|\dmin\b/.test(source))target=target.replace(/دقائق|دقيقة/g,'min');
+      target=target.replace(/°\s*م/g,'°C')
+        .replace(/الأمتار المربعة|المتر المربع|أمتار مربعة|مترًا مربعًا|متر مربع/g,' m² ')
+        .replace(/متر مكعب/g,' m³ ')
+        .replace(/(?<![\p{L}\p{M}])(?:متر|م)([²³23])(?![\p{L}\p{M}])/gu,(_,n)=>'m'+n)
+        .replace(/(?<![\p{L}\p{M}])سم([³3])(?![\p{L}\p{M}])/gu,'cm$1')
+        .replace(/(?<![\p{L}\p{M}])سم(?![\p{L}\p{M}])/gu,'cm')
+        .replace(/(?<![\p{L}\p{M}])(?:مترًا|أمتار|متر|م)(?![\p{L}\p{M}²³23])/gu,' m ')
+        .replace(/(?<![\p{L}\p{M}])(?:كيلوغرام|جرام|غرام)(?![\p{L}\p{M}])/gu,m=>m==='كيلوغرام'?'kg':'g')
+        .replace(/(?<![\p{L}\p{M}])كغ(?![\p{L}\p{M}])/gu,' kg ')
+        .replace(/(?<![\p{L}\p{M}])غ(?![\p{L}\p{M}])/gu,' g ')
+        .replace(/نيوتن/g,'N')
+        .replace(/(?<![\p{L}\p{M}])ن(?![\p{L}\p{M}])/gu,'N')
+        .replace(/رطل/g,match=>/\blbs?\b/.test(source)?'lb':match)
+        .replace(/(?<![\p{L}\p{M}])مم(?![\p{L}\p{M}])/gu,' mm ')
+        .replace(/(?<![\p{L}\p{M}])ملم(?![\p{L}\p{M}])/gu,' mm ')
+        .replace(/(?<![\p{L}\p{M}])كجم(?![\p{L}\p{M}])/gu,' kg ')
+        .replace(/(?<![\p{L}\p{M}])جم(?![\p{L}\p{M}])/gu,' g ')
+        .replace(/متر مربع|مترًا مربعًا|متر مكعب/g,m=>m.includes('مكعب')?' m³ ':' m² ')
+        .replace(/ميجا ?باسكال|ميغا ?باسكال/g,' MPa ').replace(/كيلو ?باسكال/g,' kPa ');
+      if(source.includes('2026-05-01'))target=target.replace(/01-05-2026|01\/05\/2026/g,'2026-05-01');
+      if(source.includes('1 business day'))target=target.replace(/خلال يوم عمل واحد/g,'خلال 1 يوم عمل');
+      if(source.startsWith('20FT figures are factory'))target=target.replace(/ضعفي? الحجم/g,'2× الحجم');
+      if(source.includes('sq ft'))target=target.replace(/قدم(?:ًا)? مربع(?:ة)?|قدم²/g,'sq ft');
+      target=target.replace(/(?<![\p{L}\p{M}])ج\s*\//gu,'g/');
+      if(source.startsWith('TPO walkway pad pricing'))target=target.replace(/لكل\s+m\s+طولي/g,'لكل متر طولي');
+      if(source.startsWith('Measure the total walkway length'))target=target.replace(/20\s+m\s+(خط\S+)/g,'20 مترًا $1');
+    }
+    if(['fr','ar'].includes(locale)) {
+      for(const range of source.matchAll(/(\d+(?:[.,]\d+)*)([-–])(\d+(?:[.,]\d+)*)/g)) {
+        const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+        const separator=locale==='fr'?'à|–|-':'إلى|الى|حتى|–|-';
+        target=target.replace(new RegExp(escape(range[1])+'\\s*(?:'+separator+')\\s*'+escape(range[3]),'g'),range[0]);
+      }
+      if(source.includes('−'))for(const m of source.matchAll(/−\d+(?:[.,]\d+)*/g))target=target.replace(m[0].replace('−','-'),m[0]);
     }
     target=target.replace(/\b(kg|g)\s*\/\s*m([²³23])/g,'$1/m$2').replace(/\bN\s*\/\s*(50)?\s*mm/g,'N/$1mm');
     dictionary[source]=target.replace(/ {2,}/g,' ').trim();

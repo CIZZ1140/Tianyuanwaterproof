@@ -47,6 +47,7 @@ for(const path of localizedPaths) {
   for(const locale of translationLocales) {
     const doc=parse(await readFile(outputFile('dist',`/${locale}${path}`),'utf8'));
     assert.equal(get(nodes(doc,n=>n.tagName==='html')[0],'lang'),locale);
+    if(locale==='ar')assert.equal(get(nodes(doc,n=>n.tagName==='html')[0],'dir'),'rtl');
     assert.equal(get(nodes(doc,n=>n.tagName==='link'&&get(n,'rel')==='canonical')[0],'href'),`https://www.tyuanwaterproof.com/${locale}${path}`);
     assert.equal(nodes(doc,n=>n.tagName==='h1').length,nodes(english,n=>n.tagName==='h1').length);
     assert.deepEqual(nodes(doc,n=>get(n,'id')).map(n=>get(n,'id')),ids,`Module IDs ${locale}${path}`);

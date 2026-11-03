@@ -12,7 +12,7 @@ for(const kind of ['full','pdf'])for(const language of translationLocales){
  if(!eq(numbers(s),numbers(t)))errors.push('numbers');
  for(const p of [/[≥≤±%]/g,/[−-]\d+(?:[.,]\d+)*/g])if(!eq((s.match(p)||[]).sort(),(t.match(p)||[]).sort()))errors.push('signs');
  if(units(s).length&&!eq(units(s),units(t)))errors.push('units');
- if(/[\u3040-\u30ff\u3400-\u9fff\u0400-\u052f\u0600-\u06ff\uac00-\ud7af]/.test(t))errors.push('CJK');
+ if((language==='ar'?/[\u3040-\u30ff\u3400-\u9fff\u0400-\u052f\uac00-\ud7af]/:/[\u3040-\u30ff\u3400-\u9fff\u0400-\u052f\u0600-\u06ff\uac00-\ud7af]/).test(t))errors.push('CJK');
  if(errors.length)findings.push({kind,language,source:s,translation:t,errors});
  }
 }

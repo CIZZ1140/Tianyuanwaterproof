@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
 import { localizedPaths, languageAlternates, languages, translationLocales } from './routes.mjs';
 import ui from './ui.json' with { type: 'json' };
+import { applyArabicDirection } from './rtl.mjs';
 
 const origin = 'https://www.tyuanwaterproof.com';
 const localizedDownloads = new Set(['asphalt-felt-tds.pdf','sbs-membrane-installation-manual.pdf','sbs-waterproofing-membrane-tds.pdf','self-adhesive-bitumen-membrane-tds.pdf','tpo-walkway-pad-tds.pdf']);
@@ -25,7 +26,7 @@ function setText(node, value) {
   node.childNodes[0].parentNode = node;
 }
 function hasClass(node, name) { return (attr(node, 'class') || '').split(/\s+/).includes(name); }
-const stable = /^(?:Tianyuan Waterproof|Weifang Tianyuan Waterproof Material Co\.,? Ltd\.?|WhatsApp|WHATSAPP|OEM(?:\s*\/\s*ODM)?|CE(?:\s+RoHS)?|ISO[\d\s:.-]+|EN|TH|VI|English|ไทย|Tiếng Việt|Español|Português|TDS|MSDS|PDF|SBS|APP|PVC|TPO|EPDM|HDPE|PU|JS|ASTM|GB\/T|MD|CD|PY|PYG|ALU|N|G|I|II|III|B2B|A\+B|TY-SHIELD™)$/;
+const stable = /^(?:Tianyuan Waterproof|Weifang Tianyuan Waterproof Material Co\.,? Ltd\.?|WhatsApp|WHATSAPP|OEM(?:\s*\/\s*ODM)?|CE(?:\s+RoHS)?|ISO[\d\s:.-]+|EN|TH|VI|English|ไทย|Tiếng Việt|Español|Português|Français|العربية|TDS|MSDS|PDF|SBS|APP|PVC|TPO|EPDM|HDPE|PU|JS|ASTM|GB\/T|MD|CD|PY|PYG|ALU|N|G|I|II|III|B2B|A\+B|TY-SHIELD™)$/;
 export function needsTranslation(value) {
   return /[A-Za-z]{2}/.test(value) && !stable.test(value) && !/^https?:|^[\w.+-]+@|^\+?[\d\s()-]+$/.test(value) && !/^(?:mm|cm|kg|g|m²|m2|MPa|N\/mm|kPa|°C|ft|lb|pcs|kg\/m²)$/i.test(value);
 }
@@ -105,7 +106,7 @@ function configureLanguagePicker(document, path, locale) {
     if (summary) {
       set(summary,'aria-label',`${ui[locale].language}: ${current.label}`);
       for (const child of summary.childNodes) {
-        if (child.tagName === 'img') set(child,'src',`/flags/${locale==='th'?'th':locale==='vi'?'vn':locale==='es'?'es':'br'}.svg`);
+        if (child.tagName === 'img') set(child,'src',`/flags/${locale==='th'?'th':locale==='vi'?'vn':locale==='es'?'es':locale==='pt-br'?'br':locale==='fr'?'fr':'sa'}.svg`);
         if (child.tagName === 'span') { setText(child,current.label); set(child,'lang',locale); }
       }
     }
@@ -147,14 +148,14 @@ export async function localizePages(directory) {
           if (original?.startsWith('/') && !original.startsWith('//') && !original.startsWith('/flags/') && localizedHref(original,locale)===original && !original.startsWith(`/${locale}/`)) set(node,'hreflang','en');
           if (original?.startsWith('https://wa.me/') && original.includes('text=')) {
             const whatsapp=new URL(original);
-            whatsapp.searchParams.set('text',locale==='pt-br'?'Olá, tenho interesse nos materiais impermeabilizantes da Tianyuan Waterproof. Solicito informações sobre o produto e um orçamento.':locale==='es'?'Hola, me interesan los materiales impermeabilizantes de Tianyuan Waterproof. Solicito información del producto y una cotización.':locale==='th'?'สวัสดี สนใจวัสดุกันซึมของ Tianyuan Waterproof ขอข้อมูลผลิตภัณฑ์และใบเสนอราคา':'Xin chào, tôi quan tâm đến vật liệu chống thấm Tianyuan Waterproof. Vui lòng gửi thông tin và báo giá.');
+            whatsapp.searchParams.set('text',locale==='fr'?'Bonjour, je souhaite obtenir des informations sur les matériaux d’étanchéité Tianyuan Waterproof et un devis.':locale==='ar'?'مرحباً، أرغب في معلومات عن مواد العزل المائي من Tianyuan Waterproof وطلب عرض سعر.':locale==='pt-br'?'Olá, tenho interesse nos materiais impermeabilizantes da Tianyuan Waterproof. Solicito informações sobre o produto e um orçamento.':locale==='es'?'Hola, me interesan los materiales impermeabilizantes de Tianyuan Waterproof. Solicito información del producto y una cotización.':locale==='th'?'สวัสดี สนใจวัสดุกันซึมของ Tianyuan Waterproof ขอข้อมูลผลิตภัณฑ์และใบเสนอราคา':'Xin chào, tôi quan tâm đến vật liệu chống thấm Tianyuan Waterproof. Vui lòng gửi thông tin và báo giá.');
             set(node,'href',whatsapp.href);
           }
         }
         if (node.tagName==='link' && attr(node,'rel')==='canonical') set(node,'href',origin+`/${locale}${path}`);
         if (node.tagName==='link' && ['prev','next'].includes(attr(node,'rel'))) set(node,'href',localizedHref(attr(node,'href'),locale));
         if (node.tagName==='meta' && attr(node,'property')==='og:url') set(node,'content',origin+`/${locale}${path}`);
-        if (node.tagName==='meta' && attr(node,'property')==='og:locale') set(node,'content',locale==='th'?'th_TH':locale==='vi'?'vi_VN':locale==='es'?'es_ES':'pt_BR');
+        if (node.tagName==='meta' && attr(node,'property')==='og:locale') set(node,'content',locale==='th'?'th_TH':locale==='vi'?'vi_VN':locale==='es'?'es_ES':locale==='pt-br'?'pt_BR':locale==='fr'?'fr_FR':'ar_AR');
         if (node.tagName==='script' && attr(node,'type')==='application/ld+json') setText(node,JSON.stringify(localizeSchema(JSON.parse(node.childNodes[0].value),locale)));
         if (node.tagName==='form') {
           set(node,'data-success-title',ui[locale].success);
@@ -171,6 +172,7 @@ export async function localizePages(directory) {
         }
       });
       configureLanguagePicker(document,path,locale);
+      if(locale==='ar')applyArabicDirection(document);
       const destination=outputFile(directory,`/${locale}${path}`);
       await mkdir(dirname(destination),{recursive:true});
       await writeFile(destination,serialize(document),'utf8');

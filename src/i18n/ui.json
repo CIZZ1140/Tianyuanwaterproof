@@ -243,5 +243,57 @@
       "waterproof-tapes": "Fitas impermeabilizantes",
       "waterproof-coatings": "Revestimentos impermeabilizantes"
     }
+  },
+  "fr": {
+    "home": "Accueil",
+    "products": "Produits",
+    "about": "À propos",
+    "contact": "Contact",
+    "menu": "Menu",
+    "language": "Langue",
+    "quote": "Demander un devis",
+    "skip": "Aller au contenu",
+    "contactInfo": "Coordonnées",
+    "location": "Usine",
+    "address": "Weifang, Shandong, Chine",
+    "email": "E-mail",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d’utilisation",
+    "rights": "Tous droits réservés.",
+    "success": "Demande envoyée !",
+    "successNote": "Merci. Notre équipe examinera votre demande et vous contactera.",
+    "error": "Impossible d’envoyer votre demande. Réessayez ou contactez-nous par e-mail ou WhatsApp.",
+    "groupNames": {
+      "bitumen-membranes": "Membranes bitumineuses",
+      "asphalt-shingles": "Bardeaux bitumés",
+      "waterproof-tapes": "Bandes d’étanchéité",
+      "waterproof-coatings": "Revêtements d’étanchéité"
+    }
+  },
+  "ar": {
+    "home": "الرئيسية",
+    "products": "المنتجات",
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "menu": "القائمة",
+    "language": "اللغة",
+    "quote": "طلب عرض سعر",
+    "skip": "انتقل إلى المحتوى",
+    "contactInfo": "معلومات الاتصال",
+    "location": "المصنع",
+    "address": "ويفانغ، شاندونغ، الصين",
+    "email": "البريد الإلكتروني",
+    "privacy": "سياسة الخصوصية",
+    "terms": "شروط الاستخدام",
+    "rights": "جميع الحقوق محفوظة.",
+    "success": "تم إرسال الاستفسار!",
+    "successNote": "شكراً لك. سيراجع فريقنا استفسارك ويتواصل معك.",
+    "error": "تعذر إرسال الاستفسار. حاول مجدداً أو تواصل معنا عبر البريد الإلكتروني أو WhatsApp.",
+    "groupNames": {
+      "bitumen-membranes": "أغشية العزل البيتومينية",
+      "asphalt-shingles": "قرميد الأسفلت",
+      "waterproof-tapes": "أشرطة العزل المائي",
+      "waterproof-coatings": "طلاءات العزل المائي"
+    }
   }
 }

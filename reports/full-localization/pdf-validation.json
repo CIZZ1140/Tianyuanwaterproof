@@ -158,5 +158,85 @@
     "sourceAppendixPages": 4,
     "translatedBlocks": 58,
     "bytes": 706413
+  },
+  {
+    "file": "public\\docs\\fr\\asphalt-felt-tds.pdf",
+    "language": "fr",
+    "translatedPages": 4,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 67,
+    "bytes": 721335
+  },
+  {
+    "file": "public\\docs\\fr\\sbs-membrane-installation-manual.pdf",
+    "language": "fr",
+    "translatedPages": 12,
+    "sourceAppendixPages": 12,
+    "translatedBlocks": 187,
+    "bytes": 732160
+  },
+  {
+    "file": "public\\docs\\fr\\sbs-waterproofing-membrane-tds.pdf",
+    "language": "fr",
+    "translatedPages": 4,
+    "sourceAppendixPages": 2,
+    "translatedBlocks": 65,
+    "bytes": 936902
+  },
+  {
+    "file": "public\\docs\\fr\\self-adhesive-bitumen-membrane-tds.pdf",
+    "language": "fr",
+    "translatedPages": 7,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 139,
+    "bytes": 1083512
+  },
+  {
+    "file": "public\\docs\\fr\\tpo-walkway-pad-tds.pdf",
+    "language": "fr",
+    "translatedPages": 3,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 58,
+    "bytes": 706542
+  },
+  {
+    "file": "public\\docs\\ar\\asphalt-felt-tds.pdf",
+    "language": "ar",
+    "translatedPages": 3,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 67,
+    "bytes": 971101
+  },
+  {
+    "file": "public\\docs\\ar\\sbs-membrane-installation-manual.pdf",
+    "language": "ar",
+    "translatedPages": 9,
+    "sourceAppendixPages": 12,
+    "translatedBlocks": 187,
+    "bytes": 1030756
+  },
+  {
+    "file": "public\\docs\\ar\\sbs-waterproofing-membrane-tds.pdf",
+    "language": "ar",
+    "translatedPages": 3,
+    "sourceAppendixPages": 2,
+    "translatedBlocks": 65,
+    "bytes": 984729
+  },
+  {
+    "file": "public\\docs\\ar\\self-adhesive-bitumen-membrane-tds.pdf",
+    "language": "ar",
+    "translatedPages": 6,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 139,
+    "bytes": 1140608
+  },
+  {
+    "file": "public\\docs\\ar\\tpo-walkway-pad-tds.pdf",
+    "language": "ar",
+    "translatedPages": 3,
+    "sourceAppendixPages": 4,
+    "translatedBlocks": 58,
+    "bytes": 954424
   }
 ]

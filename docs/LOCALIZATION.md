@@ -1,6 +1,6 @@
-# Full-page Thai, Vietnamese, Spanish and Brazilian Portuguese localization
+# Full-page localization in six translated languages
 
-English is the only layout/content source. Thai `/th/`, Vietnamese `/vi/`, Spanish `/es/` and Brazilian Portuguese `/pt-br/` each
+English is the only layout/content source. Thai `/th/`, Vietnamese `/vi/`, Spanish `/es/` Brazilian Portuguese `/pt-br/`, French `/fr/` and Arabic `/ar/` each
 have all 70 published English pages: 26 product details, category/catalog pages,
 applications, projects, blog articles and pagination, technical resources,
 contact/about, policies and the sitemap. `src/i18n/page-paths.json` is the full
@@ -23,7 +23,7 @@ The English development server alone does not run the post-build localization.
 
 ## Translation sources
 
-- `full-th.json`, `full-vi.json` `full-es.json` and `full-pt-br.json`: checked-in full-copy dictionaries.
+- `full-th.json`, `full-vi.json`, `full-es.json`, `full-pt-br.json`, `full-fr.json` and `full-ar.json`: checked-in full-copy dictionaries.
 - `full-overrides.json`: curated UI/terminology and technical translations.
 - `scripts/finalize-localization.mjs`: applies those overrides and terminology fixes.
 - `scripts/extract-localization.mjs`: collects current English strings from `dist`.
@@ -37,12 +37,12 @@ The English development server alone does not run the post-build localization.
   overrides. Review caches and model files are not deployment dependencies.
 - `scripts/audit-localization.mjs`: checks webpage and PDF dictionaries for
   missing strings, numeric/sign/unit parity and unintended writing systems.
-- `scripts/localize-downloads.py`: builds Thai/Vietnamese/Spanish/Brazilian Portuguese reading editions of all
+- `scripts/localize-downloads.py`: builds Thai/Vietnamese/Spanish/Brazilian Portuguese/French/Arabic reading editions of all
   five first-party PDF resources. Full translated text appears first, followed
   by the complete unchanged English source appendix including original diagrams,
-  tables and photographs. `pdf-th.json` / `pdf-vi.json` / `pdf-es.json` / `pdf-pt-br.json` hold their translated copy.
+  tables and photographs. `pdf-th.json` / `pdf-vi.json` / `pdf-es.json` / `pdf-pt-br.json` / `pdf-fr.json` / `pdf-ar.json` hold their translated copy.
   Original English downloads remain available; localized pages link to
-  `/docs/th/`, `/docs/vi/` `/docs/es/` or `/docs/pt-br/`. Third-party reference PDFs retain their source URLs.
+  `/docs/th/`, `/docs/vi/` `/docs/es/` `/docs/pt-br/`, `/docs/fr/` or `/docs/ar/`. Third-party reference PDFs retain their source URLs.
   Product photography, packaging print and original certificates are unchanged.
 
 Initial full-copy translation is machine-assisted, with targeted terminology and
@@ -58,7 +58,7 @@ Never remove modules or technical rows to work around missing translations.
 ## Verification
 
 Run `npx astro check`, `npx astro build` and
-`node scripts/verify-full-localization.mjs`. The parity check covers all 280 localized pages:
+`node scripts/verify-full-localization.mjs`. The parity check covers all 420 localized pages:
 module IDs, layout classes, source image sets, table/row counts, technical numbers
 and measurement units, interaction scripts, canonical/alternate URLs, supported
 links and inquiry locale fields. `reports/full-localization/validation.json`
@@ -73,3 +73,5 @@ field names and option values compatible with the English inquiry flow.
 Spanish uses broadly understood Latin American purchasing terminology (cotización), with generic `es` language targeting. The Spanish flag identifies the language picker; it does not restrict search targeting to Spain. Original English layout and technical data remain the source.
 
 Brazilian Portuguese uses the `pt-br` route/language tag and Brazilian flag, with native purchasing vocabulary such as orçamento and manta asfáltica. Language tags are case-insensitive; `pt-br` denotes Brazilian Portuguese.
+
+French and Arabic each mirror all 70 English pages: seven languages total, 490 sitemap URLs. Arabic uses `dir="rtl"` with isolated Latin model codes, standards, dimensions and numeric values; technical table cells without Arabic retain LTR direction. Download editions use Arabic shaping and direction isolation for technical values.
