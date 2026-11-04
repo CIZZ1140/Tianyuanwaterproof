@@ -5,6 +5,7 @@ import { join, dirname } from 'node:path';
 import { localizedPaths, languageAlternates, languages, translationLocales } from './routes.mjs';
 import ui from './ui.json' with { type: 'json' };
 import { applyArabicDirection } from './rtl.mjs';
+import { refinePvcChecklist } from './article-pvc-checklist.mjs';
 
 const origin = 'https://www.tyuanwaterproof.com';
 const localizedDownloads = new Set(['asphalt-felt-tds.pdf','sbs-membrane-installation-manual.pdf','sbs-waterproofing-membrane-tds.pdf','self-adhesive-bitumen-membrane-tds.pdf','tpo-walkway-pad-tds.pdf']);
@@ -172,6 +173,7 @@ export async function localizePages(directory) {
         }
       });
       configureLanguagePicker(document,path,locale);
+      refinePvcChecklist(document,path,locale);
       if(locale==='ar')applyArabicDirection(document);
       const destination=outputFile(directory,`/${locale}${path}`);
       await mkdir(dirname(destination),{recursive:true});
