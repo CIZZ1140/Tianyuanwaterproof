@@ -8,7 +8,7 @@ meta_description: "EPDM rubber waterproofing membrane to GB/T 18173.1 / ASTM D46
 main_image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
 image: "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp"
 
-technical_scope: "EPDM, JL1 Vulcanized, 1.5mm, Standard Black (Representative Configuration)"
+technical_scope: "EPDM, JL1 Vulcanized, 1.5mm, Standard Black"
 technical_disclaimer: "Values shown apply to the stated product configuration. Other types (vulcanized / non-vulcanized), thicknesses (1.2mm / 1.5mm / 2.0mm), and surface finishes may have different performance values. GB/T 18173.1-2012 is the current edition; confirm the applicable product TDS, batch test report, and project requirements before specification or procurement."
 
 hero_description: "TY-SHIELD™ EPDM (Ethylene-Propylene Diene Monomer) rubber waterproofing membrane with a saturated polymer backbone that resists UV and ozone attack. Vulcanized grades deliver ≥ 7.5 MPa tensile strength, ≥ 450% elongation, and -40°C low-temperature flexibility. Seams are bonded cold with contact adhesive or splicing tape — no open flame, no hot-air welder. Available in JL1 vulcanized and non-vulcanized types across 1.2mm, 1.5mm, and 2.0mm thicknesses. Confirm the applicable product TDS before specification."
@@ -79,7 +79,7 @@ technical_data:
     unit: "°C"
     standard: "GB/T 18173.1"
     requirement: "-40°C No crack"
-    value: "Typical value; confirm with the product TDS"
+    value: "Request configuration-specific test data"
   - label: "Ozone Aging"
     unit: "168h"
     standard: "GB/T 18173.1"

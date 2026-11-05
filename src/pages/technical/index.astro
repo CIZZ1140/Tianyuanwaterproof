@@ -56,14 +56,29 @@ const getDocumentUrl = (product: any, keys: string[]) => {
   return "";
 };
 
+const getDocuments = (product: any) => {
+  const data = getData(product);
+  const docs = Array.isArray(data.downloads) ? data.downloads : [];
+  const candidates = [
+    ...docs.map((doc: any) => ({ title: doc.title || "Product document", href: doc.href })),
+    { title: "Technical Data Sheet", href: getDocumentUrl(product, ["tds_url", "tds"]) },
+    { title: "Safety Data Sheet", href: getDocumentUrl(product, ["msds_url", "msds"]) },
+  ];
+  const seen = new Set<string>();
+  return candidates.filter((doc) => {
+    if (typeof doc.href !== "string" || !/^(\/docs\/|https:\/\/)/.test(doc.href) || seen.has(doc.href)) return false;
+    seen.add(doc.href);
+    return true;
+  });
+};
+
 const knownCategoryGroups = categoryOrder.map((categorySlug) => {
   const items = products
     .filter((product) => getCategory(product) === categorySlug)
     .map((product) => ({
       slug: product.slug,
       title: getProductTitle(product),
-      tdsUrl: getDocumentUrl(product, ["tds_url", "tds"]),
-      msdsUrl: getDocumentUrl(product, ["msds_url", "msds"]),
+      documents: getDocuments(product),
     }))
     .sort((a, b) => a.title.localeCompare(b.title));
 
@@ -88,8 +103,7 @@ const extraCategoryGroups = extraCategorySlugs.map((categorySlug) => {
     .map((product) => ({
       slug: product.slug,
       title: getProductTitle(product),
-      tdsUrl: getDocumentUrl(product, ["tds_url", "tds"]),
-      msdsUrl: getDocumentUrl(product, ["msds_url", "msds"]),
+      documents: getDocuments(product),
     }))
     .sort((a, b) => a.title.localeCompare(b.title));
 
@@ -226,7 +240,7 @@ const technicalSchema = {
       headline: 'Technical Documentation & TDS Center',
       url: technicalUrl,
       description:
-        "Download technical data sheets (TDS), MSDS, and installation manuals for Tianyuan's full range of waterproofing membranes and coatings.",
+        "Find available product TDS and installation PDFs, or request configuration-specific documents for Tianyuan waterproofing materials.",
       publisher: { '@id': 'https://www.tyuanwaterproof.com/#organization' }
     },
     {
@@ -242,17 +256,17 @@ const technicalSchema = {
 
 <Layout
   title="Technical Documentation & TDS Center | Tianyuan Waterproof"
-  description="Download technical data sheets (TDS), MSDS, and installation manuals for Tianyuan's full range of waterproofing membranes and coatings."
+  description="Find available product TDS and installation PDFs, or request configuration-specific documents for Tianyuan waterproofing materials."
   ogType="website"
 >
   <script type="application/ld+json" is:inline set:html={JSON.stringify(technicalSchema)} />
-  <main class="relative bg-[#F5F7FA] text-[#102033]">
+  <div class="relative bg-[#F5F7FA] text-[#102033]">
     <section class="relative overflow-hidden bg-[#0E2A47]">
       <div class="absolute inset-0 bg-[linear-gradient(120deg,rgba(14,42,71,0.95),rgba(14,42,71,0.86),rgba(245,138,31,0.18))]"></div>
 
       <div class="relative mx-auto grid max-w-7xl gap-10 px-6 py-20 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:px-10 lg:py-24">
         <div class="flex flex-col justify-center">
-          <p class="mb-4 inline-flex w-fit rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#F58A1F]">
+          <p class="mb-4 inline-flex w-fit rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#934300]">
             Technical Support Center
           </p>
 
@@ -279,7 +293,7 @@ const technicalSchema = {
             <div class="grid gap-3 pt-4 sm:grid-cols-3">
               <div class="rounded-2xl bg-white/10 p-4">
                 <p class="text-2xl font-extrabold text-white">{totalDocumentProducts}</p>
-                <p class="mt-1 text-xs font-semibold uppercase tracking-wide text-white/65">Product Files</p>
+                <p class="mt-1 text-xs font-semibold uppercase tracking-wide text-white/65">Products Covered</p>
               </div>
 
               <div class="rounded-2xl bg-white/10 p-4">
@@ -299,7 +313,7 @@ const technicalSchema = {
 
     <section class="mx-auto max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
       <div class="mb-8 max-w-3xl">
-        <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">
+        <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#934300]">
           The Engineer's Toolbox
         </p>
         <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-[#102033] sm:text-4xl">
@@ -321,14 +335,14 @@ const technicalSchema = {
                 </svg>
               </div>
 
-              <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#F58A1F]">{card.label}</p>
+              <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#934300]">{card.label}</p>
               <h3 class="mt-2 text-xl font-extrabold text-[#102033]">{card.title}</h3>
               <p class="mt-3 text-sm leading-6 text-[#102033]/70">{card.description}</p>
 
               <ul class="mt-5 space-y-3">
                 {card.points.map((point) => (
                   <li class="flex items-center gap-3 text-sm font-semibold text-[#102033]">
-                    <span class="flex h-5 w-5 items-center justify-center rounded-full bg-[#F58A1F]/10 text-[#F58A1F]">
+                    <span class="flex h-5 w-5 items-center justify-center rounded-full bg-[#F58A1F]/10 text-[#934300]">
                       <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                         <path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
@@ -347,14 +361,14 @@ const technicalSchema = {
       <div class="rounded-[2rem] border border-[#dbe7f5] bg-white p-6 shadow-sm sm:p-8 lg:p-10">
         <div class="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#934300]">
               Product Data Hub
             </p>
             <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-[#102033] sm:text-4xl">
               Technical Document Center
             </h2>
             <p class="mt-4 max-w-2xl text-base leading-7 text-[#102033]/70">
-              Access comprehensive technical data sheets (TDS), compliance certificates, and installation guides for our entire waterproofing product range. Ensuring your project meets international standards.
+              Download the published files below. For other configurations, safety documents and test reports, request the applicable document before specification or procurement.
             </p>
           </div>
 
@@ -373,7 +387,7 @@ const technicalSchema = {
                 <section class="rounded-[1.25rem] border border-[#dbe7f5] bg-[#F5F7FA] p-5">
                   <div class="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                     <h3 class="text-xl font-extrabold text-[#102033]">{group.categoryName}</h3>
-                    <span class="w-fit rounded-full bg-white px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#102033]/60">
+                    <span class="w-fit rounded-full bg-white px-3 py-1 text-xs font-bold uppercase tracking-wide text-slate-600">
                       {group.items.length} Products
                     </span>
                   </div>
@@ -384,50 +398,27 @@ const technicalSchema = {
                         <div>
                           <a
                             href={`/products/${product.slug}/`}
-                            class="text-base font-extrabold text-[#102033] transition hover:text-[#F58A1F]"
+                            class="text-base font-extrabold text-[#102033] transition hover:text-[#934300]"
                           >
                             {product.title}
                           </a>
-                          <p class="mt-1 text-xs text-[#102033]/55">
-                            Product documentation and technical support
+                          <p class="mt-1 text-xs text-slate-600">
+                            Published files where available; other documents on request
                           </p>
                         </div>
 
                         <div class="flex flex-wrap gap-2">
-                          {product.tdsUrl && (
-                            <a
-                              href={product.tdsUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              class="inline-flex items-center justify-center gap-2 rounded-lg bg-[#F58A1F] px-4 py-2 text-xs font-bold text-white transition hover:bg-[#e57710]"
-                            >
-                              TDS
-                              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                                <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg>
+                          {product.documents.map((doc) => (
+                            <a href={doc.href} target="_blank" rel="noopener noreferrer"
+                              class="inline-flex items-center justify-center rounded-lg bg-[#0E2A47] px-4 py-2 text-xs font-bold text-white underline underline-offset-4 hover:bg-[#183d63]"
+                              aria-label={`Download ${doc.title} for ${product.title}`}>
+                              {doc.title} (PDF)
                             </a>
-                          )}
-
-                          {product.msdsUrl && (
-                            <a
-                              href={product.msdsUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              class="inline-flex items-center justify-center gap-2 rounded-lg border border-[#0E2A47]/15 bg-white px-4 py-2 text-xs font-bold text-[#0E2A47] transition hover:border-[#0E2A47] hover:bg-[#0E2A47] hover:text-white"
-                            >
-                              MSDS
-                              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                                <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg>
-                            </a>
-                          )}
-
-                          {!product.tdsUrl && !product.msdsUrl && (
-                            <a
-                              href="/contact/"
-                              class="inline-flex items-center justify-center rounded-lg border border-[#dbe7f5] bg-[#F5F7FA] px-4 py-2 text-xs font-bold text-[#102033]/70 transition hover:border-[#F58A1F] hover:text-[#F58A1F]"
-                            >
-                              Request Document
+                          ))}
+                          {product.documents.length === 0 && (
+                            <a href={`/contact/?${new URLSearchParams({ product: product.title, intent: "Request technical documents", source: "/technical/" }).toString()}`}
+                              class="inline-flex items-center justify-center rounded-lg border border-[#0E2A47]/30 bg-white px-4 py-2 text-xs font-bold text-[#0E2A47] underline underline-offset-4 hover:bg-slate-100">
+                              Request document
                             </a>
                           )}
                         </div>
@@ -451,7 +442,7 @@ const technicalSchema = {
 
     <section class="mx-auto max-w-7xl px-6 pb-16 sm:px-8 lg:px-10">
       <div class="mb-8 max-w-3xl">
-        <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">
+        <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#934300]">
           Installation Guides
         </p>
         <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-[#102033] sm:text-4xl">
@@ -467,7 +458,7 @@ const technicalSchema = {
           installationGuides.map((guide, index) => (
             <article class="rounded-[1.5rem] border border-[#dbe7f5] bg-white p-6 shadow-sm">
               <div class="flex items-start gap-4">
-                <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#F58A1F]/12 text-sm font-extrabold text-[#F58A1F]">
+                <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#F58A1F]/12 text-sm font-extrabold text-[#934300]">
                   {String(index + 1).padStart(2, "0")}
                 </div>
 
@@ -491,7 +482,7 @@ const technicalSchema = {
           <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">
             Testing & Compliance
           </p>
-          <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
             Product-level testing support
           </h2>
           <p class="mt-5 text-base leading-8 text-white/75">
@@ -543,7 +534,7 @@ const technicalSchema = {
     <section class="mx-auto max-w-7xl px-6 pb-16 sm:px-8 lg:px-10">
       <div class="rounded-[2rem] border border-[#dbe7f5] bg-white p-6 shadow-sm sm:p-8 lg:p-10">
         <div class="mb-8 max-w-3xl">
-          <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#F58A1F]">
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-[#934300]">
             Technical FAQ
           </p>
           <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-[#102033] sm:text-4xl">
@@ -557,7 +548,7 @@ const technicalSchema = {
               <details class="group rounded-2xl border border-[#dbe7f5] bg-[#F5F7FA] p-5">
                 <summary class="flex cursor-pointer list-none items-start justify-between gap-5 text-base font-extrabold text-[#102033]">
                   {faq.question}
-                  <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-[#F58A1F] transition group-open:rotate-45">
+                  <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white text-[#934300] transition group-open:rotate-45">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                       <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                     </svg>
@@ -582,7 +573,7 @@ const technicalSchema = {
             <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
               Need a technical document or project recommendation?
             </h2>
-            <p class="mt-4 max-w-3xl text-base leading-7 text-white/72">
+            <p class="mt-4 max-w-3xl text-base leading-7 text-slate-100">
               Send us your product type, application area and project requirements. Our technical team will help you choose the right waterproofing solution.
             </p>
           </div>
@@ -607,5 +598,5 @@ const technicalSchema = {
         </div>
       </div>
     </section>
-  </main>
+  </div>
 </Layout>

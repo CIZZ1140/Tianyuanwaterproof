@@ -1,0 +1,2079 @@
+{
+  "https://img.tyuanwaterproof.com/app-tunnel-waterproofing.webp": {
+    "width": 800,
+    "height": 450,
+    "originalBytes": 46456,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/b8486bd3698b74c7-160.webp",
+        "width": 160,
+        "height": 90,
+        "bytes": 1832
+      },
+      "480": {
+        "src": "/images/product-responsive/b8486bd3698b74c7-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 10142
+      },
+      "800": {
+        "src": "/images/product-responsive/b8486bd3698b74c7-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 29198
+      },
+      "1200": {
+        "src": "/images/product-responsive/b8486bd3698b74c7-1200.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 29198
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/blog/2026-market-report-cover.jpg": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 420144,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/9d44bc27f17161e0-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 4018
+      },
+      "480": {
+        "src": "/images/product-responsive/9d44bc27f17161e0-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 31440
+      },
+      "800": {
+        "src": "/images/product-responsive/9d44bc27f17161e0-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 84208
+      },
+      "1200": {
+        "src": "/images/product-responsive/9d44bc27f17161e0-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 168502
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/blog/basement-foundation-sbs-cover.webp": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 158386,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/662e068f04900bdd-160.webp",
+        "width": 160,
+        "height": 107,
+        "bytes": 2846
+      },
+      "480": {
+        "src": "/images/product-responsive/662e068f04900bdd-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 20096
+      },
+      "800": {
+        "src": "/images/product-responsive/662e068f04900bdd-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 48872
+      },
+      "1200": {
+        "src": "/images/product-responsive/662e068f04900bdd-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 92582
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/blog/pvc-vs-tpo/pvc-vs-tpo-cover-v3.webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 118924,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/17f1f4e8bdb7692c-160.webp",
+        "width": 160,
+        "height": 90,
+        "bytes": 2226
+      },
+      "480": {
+        "src": "/images/product-responsive/17f1f4e8bdb7692c-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 9618
+      },
+      "800": {
+        "src": "/images/product-responsive/17f1f4e8bdb7692c-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18966
+      },
+      "1200": {
+        "src": "/images/product-responsive/17f1f4e8bdb7692c-1200.webp",
+        "width": 1200,
+        "height": 675,
+        "bytes": 37374
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/blog/sbs-container-loading-cover.webp": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 190338,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/06fda9c6c4307588-160.webp",
+        "width": 160,
+        "height": 107,
+        "bytes": 2908
+      },
+      "480": {
+        "src": "/images/product-responsive/06fda9c6c4307588-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 17888
+      },
+      "800": {
+        "src": "/images/product-responsive/06fda9c6c4307588-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 47312
+      },
+      "1200": {
+        "src": "/images/product-responsive/06fda9c6c4307588-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 104022
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/blog/sbs-reinforcement-cover-v4.webp": {
+    "width": 1536,
+    "height": 864,
+    "originalBytes": 115784,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/69b5f02f8c39ad59-160.webp",
+        "width": 160,
+        "height": 90,
+        "bytes": 1734
+      },
+      "480": {
+        "src": "/images/product-responsive/69b5f02f8c39ad59-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 10762
+      },
+      "800": {
+        "src": "/images/product-responsive/69b5f02f8c39ad59-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 27794
+      },
+      "1200": {
+        "src": "/images/product-responsive/69b5f02f8c39ad59-1200.webp",
+        "width": 1200,
+        "height": 675,
+        "bytes": 59854
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/blog/sbs-tds-reading-cover.webp": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 93868,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/504ba9e2c89b22a2-160.webp",
+        "width": 160,
+        "height": 107,
+        "bytes": 1810
+      },
+      "480": {
+        "src": "/images/product-responsive/504ba9e2c89b22a2-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 8434
+      },
+      "800": {
+        "src": "/images/product-responsive/504ba9e2c89b22a2-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 18594
+      },
+      "1200": {
+        "src": "/images/product-responsive/504ba9e2c89b22a2-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 42390
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/blog/sbs-thickness-measurement-cover.webp": {
+    "width": 1536,
+    "height": 864,
+    "originalBytes": 41356,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/f7cfe4c18b51c306-160.webp",
+        "width": 160,
+        "height": 90,
+        "bytes": 2198
+      },
+      "480": {
+        "src": "/images/product-responsive/f7cfe4c18b51c306-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 10202
+      },
+      "800": {
+        "src": "/images/product-responsive/f7cfe4c18b51c306-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18072
+      },
+      "1200": {
+        "src": "/images/product-responsive/f7cfe4c18b51c306-1200.webp",
+        "width": 1200,
+        "height": 675,
+        "bytes": 28248
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/blog/sbs-torch-application-cover.webp": {
+    "width": 1536,
+    "height": 864,
+    "originalBytes": 155796,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/deb8d8f2778b68c6-160.webp",
+        "width": 160,
+        "height": 90,
+        "bytes": 3554
+      },
+      "480": {
+        "src": "/images/product-responsive/deb8d8f2778b68c6-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 23176
+      },
+      "800": {
+        "src": "/images/product-responsive/deb8d8f2778b68c6-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 57602
+      },
+      "1200": {
+        "src": "/images/product-responsive/deb8d8f2778b68c6-1200.webp",
+        "width": 1200,
+        "height": 675,
+        "bytes": 103890
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/blog/sbs-type-grade-cover.webp": {
+    "width": 1536,
+    "height": 864,
+    "originalBytes": 79474,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/bc5a19b373945883-160.webp",
+        "width": 160,
+        "height": 90,
+        "bytes": 2508
+      },
+      "480": {
+        "src": "/images/product-responsive/bc5a19b373945883-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 12382
+      },
+      "800": {
+        "src": "/images/product-responsive/bc5a19b373945883-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 27388
+      },
+      "1200": {
+        "src": "/images/product-responsive/bc5a19b373945883-1200.webp",
+        "width": 1200,
+        "height": 675,
+        "bytes": 50572
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/blog/self-adhesive-bitumen-overview-clean.webp": {
+    "width": 1024,
+    "height": 1024,
+    "originalBytes": 170784,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/d5039c8467cceefd-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 2368
+      },
+      "480": {
+        "src": "/images/product-responsive/d5039c8467cceefd-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 32262
+      },
+      "800": {
+        "src": "/images/product-responsive/d5039c8467cceefd-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 90420
+      },
+      "1200": {
+        "src": "/images/product-responsive/d5039c8467cceefd-1200.webp",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 149128
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/blog/tpo-walkway-pad-selection-cover.webp": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 144730,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/37c8d075e4a56689-160.webp",
+        "width": 160,
+        "height": 107,
+        "bytes": 2848
+      },
+      "480": {
+        "src": "/images/product-responsive/37c8d075e4a56689-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 19212
+      },
+      "800": {
+        "src": "/images/product-responsive/37c8d075e4a56689-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 49402
+      },
+      "1200": {
+        "src": "/images/product-responsive/37c8d075e4a56689-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 91962
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/factory-main.webp": {
+    "width": 1200,
+    "height": 900,
+    "originalBytes": 88524,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/a42b049d81bd58b7-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3410
+      },
+      "480": {
+        "src": "/images/product-responsive/a42b049d81bd58b7-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 16672
+      },
+      "800": {
+        "src": "/images/product-responsive/a42b049d81bd58b7-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 36216
+      },
+      "1200": {
+        "src": "/images/product-responsive/a42b049d81bd58b7-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 67908
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/app-membrane-branded-roll.webp": {
+    "width": 750,
+    "height": 750,
+    "originalBytes": 108606,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/2b05550433be1803-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 3268
+      },
+      "480": {
+        "src": "/images/product-responsive/2b05550433be1803-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 42466
+      },
+      "800": {
+        "src": "/images/product-responsive/2b05550433be1803-800.webp",
+        "width": 750,
+        "height": 750,
+        "bytes": 108432
+      },
+      "1200": {
+        "src": "/images/product-responsive/2b05550433be1803-1200.webp",
+        "width": 750,
+        "height": 750,
+        "bytes": 108432
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/app-membrane-installation.webp": {
+    "width": 1254,
+    "height": 940,
+    "originalBytes": 286644,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/0722e0d124b061da-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3708
+      },
+      "480": {
+        "src": "/images/product-responsive/0722e0d124b061da-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 31368
+      },
+      "800": {
+        "src": "/images/product-responsive/0722e0d124b061da-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 105248
+      },
+      "1200": {
+        "src": "/images/product-responsive/0722e0d124b061da-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 248270
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/app-membrane-structure.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 28940,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/93aa2b28f7d9e223-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 2294
+      },
+      "480": {
+        "src": "/images/product-responsive/93aa2b28f7d9e223-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 9538
+      },
+      "800": {
+        "src": "/images/product-responsive/93aa2b28f7d9e223-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 17004
+      },
+      "1200": {
+        "src": "/images/product-responsive/93aa2b28f7d9e223-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 27100
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/app-membrane-torch-application.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 189998,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/8d5246724bdda093-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 2684
+      },
+      "480": {
+        "src": "/images/product-responsive/8d5246724bdda093-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 23298
+      },
+      "800": {
+        "src": "/images/product-responsive/8d5246724bdda093-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 72216
+      },
+      "1200": {
+        "src": "/images/product-responsive/8d5246724bdda093-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 162984
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/asphalt-felt-flexibility.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 142182,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/6161f0648bddfca4-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 3310
+      },
+      "480": {
+        "src": "/images/product-responsive/6161f0648bddfca4-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 24772
+      },
+      "800": {
+        "src": "/images/product-responsive/6161f0648bddfca4-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 64848
+      },
+      "1200": {
+        "src": "/images/product-responsive/6161f0648bddfca4-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 125142
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/asphalt-felt-main.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 195800,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/a4a691f19494a953-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 3592
+      },
+      "480": {
+        "src": "/images/product-responsive/a4a691f19494a953-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 28274
+      },
+      "800": {
+        "src": "/images/product-responsive/a4a691f19494a953-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 83416
+      },
+      "1200": {
+        "src": "/images/product-responsive/a4a691f19494a953-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 171410
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/asphalt-felt-material.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 158898,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/70faacb51d454972-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 3840
+      },
+      "480": {
+        "src": "/images/product-responsive/70faacb51d454972-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 28736
+      },
+      "800": {
+        "src": "/images/product-responsive/70faacb51d454972-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 73928
+      },
+      "1200": {
+        "src": "/images/product-responsive/70faacb51d454972-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 138362
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/asphalt-felt-supply-oem.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 175488,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/c1e0923f1443552c-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 5774
+      },
+      "480": {
+        "src": "/images/product-responsive/c1e0923f1443552c-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 35040
+      },
+      "800": {
+        "src": "/images/product-responsive/c1e0923f1443552c-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 81962
+      },
+      "1200": {
+        "src": "/images/product-responsive/c1e0923f1443552c-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 149372
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/asphalt-felt-underlayment.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 182036,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/16884964dc1c2ac7-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 5052
+      },
+      "480": {
+        "src": "/images/product-responsive/16884964dc1c2ac7-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 34152
+      },
+      "800": {
+        "src": "/images/product-responsive/16884964dc1c2ac7-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 85526
+      },
+      "1200": {
+        "src": "/images/product-responsive/16884964dc1c2ac7-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 159730
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/asphalt-shingles-3-tab.webp": {
+    "width": 800,
+    "height": 800,
+    "originalBytes": 187892,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/f1195229a1e6d85b-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 3002
+      },
+      "480": {
+        "src": "/images/product-responsive/f1195229a1e6d85b-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 54832
+      },
+      "800": {
+        "src": "/images/product-responsive/f1195229a1e6d85b-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 160812
+      },
+      "1200": {
+        "src": "/images/product-responsive/f1195229a1e6d85b-1200.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 160812
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/asphalt-shingles-artistic.webp": {
+    "width": 1500,
+    "height": 1000,
+    "originalBytes": 593700,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/94ad1d25db382ea0-160.webp",
+        "width": 160,
+        "height": 107,
+        "bytes": 5788
+      },
+      "480": {
+        "src": "/images/product-responsive/94ad1d25db382ea0-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 62432
+      },
+      "800": {
+        "src": "/images/product-responsive/94ad1d25db382ea0-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 169612
+      },
+      "1200": {
+        "src": "/images/product-responsive/94ad1d25db382ea0-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 346272
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/asphalt-shingles-laminated.webp": {
+    "width": 800,
+    "height": 800,
+    "originalBytes": 125752,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/d14f7e263b094a21-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 1420
+      },
+      "480": {
+        "src": "/images/product-responsive/d14f7e263b094a21-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 28280
+      },
+      "800": {
+        "src": "/images/product-responsive/d14f7e263b094a21-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 100512
+      },
+      "1200": {
+        "src": "/images/product-responsive/d14f7e263b094a21-1200.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 100512
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/bitumen-tape.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 60946,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/0ed3ca479b07e27e-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 1578
+      },
+      "480": {
+        "src": "/images/product-responsive/0ed3ca479b07e27e-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 7258
+      },
+      "800": {
+        "src": "/images/product-responsive/0ed3ca479b07e27e-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 21540
+      },
+      "1200": {
+        "src": "/images/product-responsive/0ed3ca479b07e27e-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 43224
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/butyl-tape.webp": {
+    "width": 799,
+    "height": 766,
+    "originalBytes": 35228,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/efdf21b91e52cde7-160.webp",
+        "width": 160,
+        "height": 153,
+        "bytes": 2810
+      },
+      "480": {
+        "src": "/images/product-responsive/efdf21b91e52cde7-480.webp",
+        "width": 480,
+        "height": 460,
+        "bytes": 14706
+      },
+      "800": {
+        "src": "/images/product-responsive/efdf21b91e52cde7-800.webp",
+        "width": 799,
+        "height": 766,
+        "bytes": 29654
+      },
+      "1200": {
+        "src": "/images/product-responsive/efdf21b91e52cde7-1200.webp",
+        "width": 799,
+        "height": 766,
+        "bytes": 29654
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/epdm-rubber-waterproofing-membrane.webp": {
+    "width": 1000,
+    "height": 921,
+    "originalBytes": 29458,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/495a0d42d6e4fd20-160.webp",
+        "width": 160,
+        "height": 147,
+        "bytes": 2022
+      },
+      "480": {
+        "src": "/images/product-responsive/495a0d42d6e4fd20-480.webp",
+        "width": 480,
+        "height": 442,
+        "bytes": 10006
+      },
+      "800": {
+        "src": "/images/product-responsive/495a0d42d6e4fd20-800.webp",
+        "width": 800,
+        "height": 737,
+        "bytes": 19014
+      },
+      "1200": {
+        "src": "/images/product-responsive/495a0d42d6e4fd20-1200.webp",
+        "width": 1000,
+        "height": 921,
+        "bytes": 26540
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/epoxy-floor-coating-application-kit.webp": {
+    "width": 1254,
+    "height": 940,
+    "originalBytes": 139200,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/bbf0f75e9c2c4d55-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 5744
+      },
+      "480": {
+        "src": "/images/product-responsive/bbf0f75e9c2c4d55-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 30818
+      },
+      "800": {
+        "src": "/images/product-responsive/bbf0f75e9c2c4d55-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 66854
+      },
+      "1200": {
+        "src": "/images/product-responsive/bbf0f75e9c2c4d55-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 117168
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/epoxy-floor-coating-production-workshop.webp": {
+    "width": 1254,
+    "height": 940,
+    "originalBytes": 105230,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/34dd31faab10eb22-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 4792
+      },
+      "480": {
+        "src": "/images/product-responsive/34dd31faab10eb22-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 25630
+      },
+      "800": {
+        "src": "/images/product-responsive/34dd31faab10eb22-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 54124
+      },
+      "1200": {
+        "src": "/images/product-responsive/34dd31faab10eb22-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 91460
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/epoxy-floor-coating-warehouse-floor.webp": {
+    "width": 1254,
+    "height": 940,
+    "originalBytes": 118934,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/7cd74f6f50ef4606-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 4556
+      },
+      "480": {
+        "src": "/images/product-responsive/7cd74f6f50ef4606-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 24648
+      },
+      "800": {
+        "src": "/images/product-responsive/7cd74f6f50ef4606-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 55934
+      },
+      "1200": {
+        "src": "/images/product-responsive/7cd74f6f50ef4606-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 100418
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/epoxy-floor-paint.jpg": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 202572,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/bd9516fcf099c260-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 4696
+      },
+      "480": {
+        "src": "/images/product-responsive/bd9516fcf099c260-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 21020
+      },
+      "800": {
+        "src": "/images/product-responsive/bd9516fcf099c260-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 40086
+      },
+      "1200": {
+        "src": "/images/product-responsive/bd9516fcf099c260-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 64388
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/geotextile-nonwoven.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 191101,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/bdf6a4ab4a7c0798-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 1624
+      },
+      "480": {
+        "src": "/images/product-responsive/bdf6a4ab4a7c0798-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 10824
+      },
+      "800": {
+        "src": "/images/product-responsive/bdf6a4ab4a7c0798-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 30602
+      },
+      "1200": {
+        "src": "/images/product-responsive/bdf6a4ab4a7c0798-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 61722
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/hdpe-geomembrane-liner-roll.webp?v=2": {
+    "width": 592,
+    "height": 592,
+    "originalBytes": 23870,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/77bf5df51b8c8e12-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 3336
+      },
+      "480": {
+        "src": "/images/product-responsive/77bf5df51b8c8e12-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 15468
+      },
+      "800": {
+        "src": "/images/product-responsive/77bf5df51b8c8e12-800.webp",
+        "width": 592,
+        "height": 592,
+        "bytes": 22660
+      },
+      "1200": {
+        "src": "/images/product-responsive/77bf5df51b8c8e12-1200.webp",
+        "width": 592,
+        "height": 592,
+        "bytes": 22660
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/hdpe-waterproof-membrane.webp": {
+    "width": 1770,
+    "height": 1770,
+    "originalBytes": 73276,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/b732ad2cad45c864-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 1576
+      },
+      "480": {
+        "src": "/images/product-responsive/b732ad2cad45c864-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 7672
+      },
+      "800": {
+        "src": "/images/product-responsive/b732ad2cad45c864-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 16750
+      },
+      "1200": {
+        "src": "/images/product-responsive/b732ad2cad45c864-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 30766
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating-v2.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 116548,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/fe403b0bc17ad6ca-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 5020
+      },
+      "480": {
+        "src": "/images/product-responsive/fe403b0bc17ad6ca-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 24890
+      },
+      "800": {
+        "src": "/images/product-responsive/fe403b0bc17ad6ca-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 47636
+      },
+      "1200": {
+        "src": "/images/product-responsive/fe403b0bc17ad6ca-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 76532
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/metal-roof-acrylic-coating.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 170375,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/f9f3cb50c4b0c0d6-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 3810
+      },
+      "480": {
+        "src": "/images/product-responsive/f9f3cb50c4b0c0d6-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 16820
+      },
+      "800": {
+        "src": "/images/product-responsive/f9f3cb50c4b0c0d6-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 32864
+      },
+      "1200": {
+        "src": "/images/product-responsive/f9f3cb50c4b0c0d6-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 53232
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v3.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 122720,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/d0e7606f34a79516-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 5410
+      },
+      "480": {
+        "src": "/images/product-responsive/d0e7606f34a79516-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 26492
+      },
+      "800": {
+        "src": "/images/product-responsive/d0e7606f34a79516-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 50632
+      },
+      "1200": {
+        "src": "/images/product-responsive/d0e7606f34a79516-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 81260
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/polyethylene-propylene-waterproof-membrane.webp": {
+    "width": 800,
+    "height": 800,
+    "originalBytes": 101398,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/7a6843f283d663f5-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 2614
+      },
+      "480": {
+        "src": "/images/product-responsive/7a6843f283d663f5-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 29948
+      },
+      "800": {
+        "src": "/images/product-responsive/7a6843f283d663f5-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 76018
+      },
+      "1200": {
+        "src": "/images/product-responsive/7a6843f283d663f5-1200.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 76018
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-coating-v2.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 106496,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/bfbbc71c1660b56a-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 4738
+      },
+      "480": {
+        "src": "/images/product-responsive/bfbbc71c1660b56a-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 23438
+      },
+      "800": {
+        "src": "/images/product-responsive/bfbbc71c1660b56a-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 46214
+      },
+      "1200": {
+        "src": "/images/product-responsive/bfbbc71c1660b56a-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 74650
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 127594,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/575636a14aec5461-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 4972
+      },
+      "480": {
+        "src": "/images/product-responsive/575636a14aec5461-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 24042
+      },
+      "800": {
+        "src": "/images/product-responsive/575636a14aec5461-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 47096
+      },
+      "1200": {
+        "src": "/images/product-responsive/575636a14aec5461-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 75032
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/pvc-bulk-supply-packing.jpg": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 266418,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/44df7cead4ba4f4c-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 4320
+      },
+      "480": {
+        "src": "/images/product-responsive/44df7cead4ba4f4c-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 23376
+      },
+      "800": {
+        "src": "/images/product-responsive/44df7cead4ba4f4c-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 51500
+      },
+      "1200": {
+        "src": "/images/product-responsive/44df7cead4ba4f4c-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 91906
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/pvc-hot-air-welded-seam.jpg": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 335720,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/129669e8267d9b57-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 6312
+      },
+      "480": {
+        "src": "/images/product-responsive/129669e8267d9b57-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 34064
+      },
+      "800": {
+        "src": "/images/product-responsive/129669e8267d9b57-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 73804
+      },
+      "1200": {
+        "src": "/images/product-responsive/129669e8267d9b57-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 126142
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/pvc-membrane-roll.jpg": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 105401,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/d5983b64ef51041e-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 920
+      },
+      "480": {
+        "src": "/images/product-responsive/d5983b64ef51041e-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 3594
+      },
+      "800": {
+        "src": "/images/product-responsive/d5983b64ef51041e-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 7412
+      },
+      "1200": {
+        "src": "/images/product-responsive/d5983b64ef51041e-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 13848
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/pvc-membrane-type-options.jpg": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 121414,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/c302119b9384307e-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 1560
+      },
+      "480": {
+        "src": "/images/product-responsive/c302119b9384307e-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 9468
+      },
+      "800": {
+        "src": "/images/product-responsive/c302119b9384307e-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 21098
+      },
+      "1200": {
+        "src": "/images/product-responsive/c302119b9384307e-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 36378
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/pvc-waterproof-membrane.webp": {
+    "width": 1434,
+    "height": 910,
+    "originalBytes": 155528,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/9ba44b6eab0da208-160.webp",
+        "width": 160,
+        "height": 102,
+        "bytes": 1790
+      },
+      "480": {
+        "src": "/images/product-responsive/9ba44b6eab0da208-480.webp",
+        "width": 480,
+        "height": 305,
+        "bytes": 7904
+      },
+      "800": {
+        "src": "/images/product-responsive/9ba44b6eab0da208-800.webp",
+        "width": 800,
+        "height": 508,
+        "bytes": 17280
+      },
+      "1200": {
+        "src": "/images/product-responsive/9ba44b6eab0da208-1200.webp",
+        "width": 1200,
+        "height": 762,
+        "bytes": 40858
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/sa-gallery/sa-application-aluminum-foil.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 130534,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/51f2527b76390c52-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 3290
+      },
+      "480": {
+        "src": "/images/product-responsive/51f2527b76390c52-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 22882
+      },
+      "800": {
+        "src": "/images/product-responsive/51f2527b76390c52-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 56420
+      },
+      "1200": {
+        "src": "/images/product-responsive/51f2527b76390c52-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 107264
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/sa-gallery/sa-heat-compare.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 195392,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/903f70e967bbc3a5-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 4712
+      },
+      "480": {
+        "src": "/images/product-responsive/903f70e967bbc3a5-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 31126
+      },
+      "800": {
+        "src": "/images/product-responsive/903f70e967bbc3a5-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 80470
+      },
+      "1200": {
+        "src": "/images/product-responsive/903f70e967bbc3a5-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 158308
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/sa-gallery/sa-surface-types.webp": {
+    "width": 1122,
+    "height": 1402,
+    "originalBytes": 280226,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/c81e35bb63234e51-160.webp",
+        "width": 128,
+        "height": 160,
+        "bytes": 6006
+      },
+      "480": {
+        "src": "/images/product-responsive/c81e35bb63234e51-480.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 45634
+      },
+      "800": {
+        "src": "/images/product-responsive/c81e35bb63234e51-800.webp",
+        "width": 640,
+        "height": 800,
+        "bytes": 112086
+      },
+      "1200": {
+        "src": "/images/product-responsive/c81e35bb63234e51-1200.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 209368
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 153288,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/3fe44e9b7b2dad76-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 2278
+      },
+      "480": {
+        "src": "/images/product-responsive/3fe44e9b7b2dad76-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 16496
+      },
+      "800": {
+        "src": "/images/product-responsive/3fe44e9b7b2dad76-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 51896
+      },
+      "1200": {
+        "src": "/images/product-responsive/3fe44e9b7b2dad76-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 111596
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-bulk.webp": {
+    "width": 1422,
+    "height": 1106,
+    "originalBytes": 236290,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/7d61ca98f3ebf62a-160.webp",
+        "width": 160,
+        "height": 124,
+        "bytes": 4576
+      },
+      "480": {
+        "src": "/images/product-responsive/7d61ca98f3ebf62a-480.webp",
+        "width": 480,
+        "height": 373,
+        "bytes": 28738
+      },
+      "800": {
+        "src": "/images/product-responsive/7d61ca98f3ebf62a-800.webp",
+        "width": 800,
+        "height": 622,
+        "bytes": 76576
+      },
+      "1200": {
+        "src": "/images/product-responsive/7d61ca98f3ebf62a-1200.webp",
+        "width": 1200,
+        "height": 933,
+        "bytes": 159982
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-detail.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 236130,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/478e712942b634b0-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 5772
+      },
+      "480": {
+        "src": "/images/product-responsive/478e712942b634b0-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 46284
+      },
+      "800": {
+        "src": "/images/product-responsive/478e712942b634b0-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 114586
+      },
+      "1200": {
+        "src": "/images/product-responsive/478e712942b634b0-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 207016
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/sbs-waterproof-membrane-surface.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 423602,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/c793209997caf511-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 5048
+      },
+      "480": {
+        "src": "/images/product-responsive/c793209997caf511-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 59778
+      },
+      "800": {
+        "src": "/images/product-responsive/c793209997caf511-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 187560
+      },
+      "1200": {
+        "src": "/images/product-responsive/c793209997caf511-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 381850
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/self-adhesive-membrane.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 119644,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/f83811a940e4588f-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 1642
+      },
+      "480": {
+        "src": "/images/product-responsive/f83811a940e4588f-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 15762
+      },
+      "800": {
+        "src": "/images/product-responsive/f83811a940e4588f-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 44882
+      },
+      "1200": {
+        "src": "/images/product-responsive/f83811a940e4588f-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 87812
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/spray-polyurea-coating-v3.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 82886,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/646d9260b9cc3293-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 3910
+      },
+      "480": {
+        "src": "/images/product-responsive/646d9260b9cc3293-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 19308
+      },
+      "800": {
+        "src": "/images/product-responsive/646d9260b9cc3293-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 37796
+      },
+      "1200": {
+        "src": "/images/product-responsive/646d9260b9cc3293-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 61210
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt-v2.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 130712,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/f7cc007e66b63d62-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 5888
+      },
+      "480": {
+        "src": "/images/product-responsive/f7cc007e66b63d62-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 28962
+      },
+      "800": {
+        "src": "/images/product-responsive/f7cc007e66b63d62-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 57310
+      },
+      "1200": {
+        "src": "/images/product-responsive/f7cc007e66b63d62-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 94728
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/tpe-joint-expansion-tape.webp": {
+    "width": 800,
+    "height": 800,
+    "originalBytes": 17793,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/296118636c1cda47-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 1558
+      },
+      "480": {
+        "src": "/images/product-responsive/296118636c1cda47-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 6996
+      },
+      "800": {
+        "src": "/images/product-responsive/296118636c1cda47-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 13944
+      },
+      "1200": {
+        "src": "/images/product-responsive/296118636c1cda47-1200.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 13944
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-roll-closeup.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 85430,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/4dcbd04cc0029dfb-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 1676
+      },
+      "480": {
+        "src": "/images/product-responsive/4dcbd04cc0029dfb-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 11616
+      },
+      "800": {
+        "src": "/images/product-responsive/4dcbd04cc0029dfb-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 32330
+      },
+      "1200": {
+        "src": "/images/product-responsive/4dcbd04cc0029dfb-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 63916
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-roof-installation.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 51560,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/f441c0b6dbe88acd-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 2842
+      },
+      "480": {
+        "src": "/images/product-responsive/f441c0b6dbe88acd-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 13112
+      },
+      "800": {
+        "src": "/images/product-responsive/f441c0b6dbe88acd-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 26128
+      },
+      "1200": {
+        "src": "/images/product-responsive/f441c0b6dbe88acd-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 44400
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-seam-welding.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 52156,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/bf1f4ba60f84bf6e-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 2280
+      },
+      "480": {
+        "src": "/images/product-responsive/bf1f4ba60f84bf6e-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 11662
+      },
+      "800": {
+        "src": "/images/product-responsive/bf1f4ba60f84bf6e-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 25510
+      },
+      "1200": {
+        "src": "/images/product-responsive/bf1f4ba60f84bf6e-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 44916
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-weld-nozzle.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 77380,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/1a882ebefb5e1e00-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 1742
+      },
+      "480": {
+        "src": "/images/product-responsive/1a882ebefb5e1e00-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 9854
+      },
+      "800": {
+        "src": "/images/product-responsive/1a882ebefb5e1e00-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 31098
+      },
+      "1200": {
+        "src": "/images/product-responsive/1a882ebefb5e1e00-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 67806
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/tpo-gallery/tpo-white-roll-main.webp": {
+    "width": 1254,
+    "height": 1254,
+    "originalBytes": 11540,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/2ad0b07882b86bb5-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 670
+      },
+      "480": {
+        "src": "/images/product-responsive/2ad0b07882b86bb5-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 2552
+      },
+      "800": {
+        "src": "/images/product-responsive/2ad0b07882b86bb5-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 5184
+      },
+      "1200": {
+        "src": "/images/product-responsive/2ad0b07882b86bb5-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 9712
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/tpo-walkway-pad-application.webp": {
+    "width": 1200,
+    "height": 1200,
+    "originalBytes": 114434,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/e5c63d0e69acaae8-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 4798
+      },
+      "480": {
+        "src": "/images/product-responsive/e5c63d0e69acaae8-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 26920
+      },
+      "800": {
+        "src": "/images/product-responsive/e5c63d0e69acaae8-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 60610
+      },
+      "1200": {
+        "src": "/images/product-responsive/e5c63d0e69acaae8-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 108844
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/tpo-walkway-pad-main.webp": {
+    "width": 1200,
+    "height": 1200,
+    "originalBytes": 117238,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/b9698f5d5bd0cf84-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 3438
+      },
+      "480": {
+        "src": "/images/product-responsive/b9698f5d5bd0cf84-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 26618
+      },
+      "800": {
+        "src": "/images/product-responsive/b9698f5d5bd0cf84-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 61796
+      },
+      "1200": {
+        "src": "/images/product-responsive/b9698f5d5bd0cf84-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 112076
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/tpo-walkway-pad-oem.webp": {
+    "width": 1200,
+    "height": 1200,
+    "originalBytes": 79846,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/df5f78abd44f5de0-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 4216
+      },
+      "480": {
+        "src": "/images/product-responsive/df5f78abd44f5de0-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 22530
+      },
+      "800": {
+        "src": "/images/product-responsive/df5f78abd44f5de0-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 45146
+      },
+      "1200": {
+        "src": "/images/product-responsive/df5f78abd44f5de0-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 76766
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/tpo-walkway-pad-roll.webp": {
+    "width": 1200,
+    "height": 1200,
+    "originalBytes": 96172,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/7fc271ddb389eb77-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 4416
+      },
+      "480": {
+        "src": "/images/product-responsive/7fc271ddb389eb77-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 23726
+      },
+      "800": {
+        "src": "/images/product-responsive/7fc271ddb389eb77-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 49210
+      },
+      "1200": {
+        "src": "/images/product-responsive/7fc271ddb389eb77-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 87708
+      }
+    }
+  },
+  "https://img.tyuanwaterproof.com/products/tpo-walkway-pad-texture.webp": {
+    "width": 1200,
+    "height": 1200,
+    "originalBytes": 228260,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/c4aa71073e6612fc-160.webp",
+        "width": 160,
+        "height": 160,
+        "bytes": 6164
+      },
+      "480": {
+        "src": "/images/product-responsive/c4aa71073e6612fc-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 50634
+      },
+      "800": {
+        "src": "/images/product-responsive/c4aa71073e6612fc-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 120688
+      },
+      "1200": {
+        "src": "/images/product-responsive/c4aa71073e6612fc-1200.webp",
+        "width": 1200,
+        "height": 1200,
+        "bytes": 222478
+      }
+    }
+  }
+}

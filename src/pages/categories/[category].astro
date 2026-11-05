@@ -190,7 +190,7 @@ const categorySchema = {
   ogType="website"
 >
   <script type="application/ld+json" is:inline set:html={JSON.stringify(categorySchema)} />
-  <main class="bg-slate-50 min-h-screen">
+  <div class="bg-slate-50 min-h-screen">
     <!-- Category Hero Header -->
     <section class="relative py-28 bg-[#0B1E3B] text-white overflow-hidden border-b border-white/10">
       <div class="absolute inset-0 z-0">
@@ -332,5 +332,5 @@ const categorySchema = {
       )}
     </section>
     {cat.id === 'waterproof-coatings' && <CoatingSelectionGuide />}
-  </main>
+  </div>
 </Layout>

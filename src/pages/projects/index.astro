@@ -4,10 +4,10 @@ import CTA from '@/components/CTA.astro';
 
 const projectsUrl = 'https://www.tyuanwaterproof.com/projects/';
 const projectSectors = [
-  { title: 'Roofing Projects', desc: 'Successful waterproofing for large-scale industrial warehouses and flat roof commercial complexes.' },
-  { title: 'Basement Projects', desc: 'Foundation and underground retaining wall sealing for high-rise residential developments.' },
-  { title: 'Tunnel Projects', desc: 'Specialized high-polymer membranes used in subway systems and civil tunnel infrastructure.' },
-  { title: 'Industrial Building Projects', desc: 'Complete moisture barrier systems for chemical plants, refineries, and manufacturing facilities.' }
+  { title: 'Roofing Applications', desc: 'SBS and APP bitumen membranes, plus TPO and PVC roofing sheets, with thickness, reinforcement and surface options for commercial and industrial roofs.' },
+  { title: 'Basement Applications', desc: 'Torch-applied SBS, self-adhesive bituminous and pre-applied HDPE membranes for foundation slabs and retaining walls, with configuration and detailing support.' },
+  { title: 'Tunnel Applications', desc: 'PVC and HDPE membrane options for tunnel waterproofing, supported by product specifications, seam treatment guidance and technical documentation.' },
+  { title: 'Industrial Applications', desc: 'TPO and bitumen roof membranes, waterproof coatings and sealing tapes for factory roofs, warehouses, roof penetrations and junction details.' }
 ];
 
 const projectsSchema = {
@@ -17,9 +17,9 @@ const projectsSchema = {
       '@type': 'CollectionPage',
       '@id': `${projectsUrl}#webpage`,
       url: projectsUrl,
-      name: 'Global Waterproofing Projects & Case Studies | TY-SHIELD™',
+      name: 'International Waterproofing Supply & Applications | Tianyuan',
       description:
-        'Explore our successful waterproofing projects across 50+ countries. Learn how Tianyuan materials are used in major roofing, basement, and tunnel infrastructure works.',
+        'Tianyuan supplies waterproofing materials to customers across multiple countries, with product selection, OEM packaging and export coordination for B2B orders.',
       isPartOf: { '@id': 'https://www.tyuanwaterproof.com/#website' }
     },
     {
@@ -44,13 +44,21 @@ const projectsSchema = {
 };
 ---
 <Layout 
-  title="Global Waterproofing Projects & Case Studies | TY-SHIELD™"
-  description="Waterproofing projects across 50+ countries — roofing, basement, tunnel and industrial works using Tianyuan membranes, coatings and tapes."
+  title="International Waterproofing Supply & Applications | Tianyuan"
+  description="International waterproofing supply from Tianyuan: SBS, APP, self-adhesive and polymer membranes, with OEM packaging, technical documentation and export support."
   ogType="website"
 >
   <script type="application/ld+json" is:inline set:html={JSON.stringify(projectsSchema)} />
-  <section class="bg-navy py-16 text-white"><div class="container-wrap"><p class="eyebrow">Projects</p><h1 class="mt-3 text-4xl font-black text-white md:text-5xl">Application cases</h1><p class="mt-5 max-w-3xl text-white/70">Tianyuan Waterproofing solutions have been successfully deployed in major commercial, residential, and industrial infrastructure projects across more than 50 countries.</p></div></section>
+  <section class="bg-navy py-16 text-white"><div class="container-wrap"><p class="eyebrow">Projects</p><h1 class="mt-3 text-4xl font-black text-white md:text-5xl">International Supply & Waterproofing Applications</h1><p class="mt-5 max-w-3xl text-white/70">Tianyuan supplies waterproofing materials to customers across multiple countries. We support distributors, contractors and project procurement teams with membrane configuration, OEM packaging, technical documentation and export coordination.</p></div></section>
   <section class="py-16"><div class="container-wrap grid gap-6 md:grid-cols-2 lg:grid-cols-4">{projectSectors.map((item) => <div class="card"><h2 class="text-xl font-bold">{item.title}</h2><p class="mt-3 text-sm leading-6 text-slate-600">{item.desc}</p></div>)}</div></section>
+  <section class="py-12 bg-slate-50"><div class="container-wrap">
+    <h2 class="text-2xl font-bold text-slate-950">Export Support from Product Selection to Shipment</h2>
+    <div class="mt-6 grid gap-6 md:grid-cols-3">
+      <article class="card"><h3 class="text-lg font-bold">Configuration &amp; Documentation</h3><p class="mt-3 text-sm leading-6 text-slate-600">Specify thickness, reinforcement, surface finish and application method. Our technical sales team coordinates the corresponding TDS and quotation.</p><a class="mt-4 inline-block font-semibold text-blue-800 underline" href="/technical/">View technical documents</a></article>
+      <article class="card"><h3 class="text-lg font-bold">OEM &amp; Export Packing</h3><p class="mt-3 text-sm leading-6 text-slate-600">Private-label roll printing, wrapper design and pallet marking support distributor and bulk purchasing requirements.</p><a class="mt-4 inline-block font-semibold text-blue-800 underline" href="/products/">Explore product configurations</a></article>
+      <article class="card"><h3 class="text-lg font-bold">Order &amp; Shipment Coordination</h3><p class="mt-3 text-sm leading-6 text-slate-600">Share your quantity and destination port for packing, container loading and shipping-document coordination.</p><a class="mt-4 inline-block font-semibold text-blue-800 underline" href="/contact/">Discuss your export order</a></article>
+    </div>
+  </div></section>
   <CTA />
 </Layout>
 

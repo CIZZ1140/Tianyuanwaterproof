@@ -57,7 +57,7 @@ const pageSchema = {
 
 <Layout title={pageTitle} description={pageDescription} ogType="website">
   <script type="application/ld+json" is:inline set:html={JSON.stringify(pageSchema)} />
-  <main class="min-h-screen bg-[#F5F7FA] text-[#102033]">
+  <div class="min-h-screen bg-[#F5F7FA] text-[#102033]">
     <section class="bg-[#0E2A47] px-4 py-10 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-[1680px]">
         <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-sm font-medium text-slate-300">
@@ -129,5 +129,5 @@ const pageSchema = {
         <CTA />
       </div>
     </section>
-  </main>
+  </div>
 </Layout>

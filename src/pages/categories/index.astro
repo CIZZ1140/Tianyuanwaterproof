@@ -42,7 +42,7 @@ const categoriesSchema = {
 
 <Layout title={pageTitle} description={pageDescription} ogType="website">
   <script type="application/ld+json" is:inline set:html={JSON.stringify(categoriesSchema)} />
-  <main class="bg-[#F5F7FA] min-h-screen pb-20">
+  <div class="bg-[#F5F7FA] min-h-screen pb-20">
     <section class="bg-[#0B1E3B] text-white py-24 px-6 text-center">
       <h1 class="text-4xl md:text-5xl font-black mb-6">Product Categories</h1>
       <p class="text-slate-300 max-w-2xl mx-auto text-lg leading-relaxed">
@@ -69,5 +69,5 @@ const categoriesSchema = {
         ))}
       </div>
     </section>
-  </main>
+  </div>
 </Layout>

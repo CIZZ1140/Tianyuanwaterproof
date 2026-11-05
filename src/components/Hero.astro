@@ -24,8 +24,8 @@ type HeroProps = {
 };
 
 const {
-  imageSrc = "https://img.tyuanwaterproof.com/banner.webp",
-  mobileImageSrc = "https://img.tyuanwaterproof.com/banner-mobile.webp",
+  imageSrc = "/images/banner-db55821805.webp",
+  mobileImageSrc = "/images/banner-mobile-75a8e6b726.webp",
   imageAlt = "Professional waterproofing membrane installation on a modern roof",
   title = "Waterproofing Materials Supplier from China",
   description = "Factory supply of waterproofing membranes, tapes and coatings with OEM packaging, technical data support and fast quotation service.",
@@ -54,9 +54,11 @@ const stats: HeroStat[] = [
     <!-- Background Image - Focused on top/center to show product -->
     <div class="absolute inset-0 z-0">
       <picture>
-        <source srcset={mobileImageSrc} media="(max-width: 768px)" width="768" height="1024" />
+        <source srcset={mobileImageSrc} media="(max-width: 768px)" width="648" height="810" />
         <img
           src={imageSrc}
+          width="1600"
+          height="667"
           alt={imageAlt}
           class="absolute inset-0 h-full w-full object-cover object-top md:object-center lg:object-[center_right]"
           loading="eager"

@@ -2,61 +2,41 @@
 const sitekey = "0x4AAAAAAEFV-aa3nhpRSCsJ";
 ---
 
-<!-- Cloudflare Turnstile widget (api.js injected lazily when the widget nears the viewport) -->
-<div class="cf-turnstile" data-sitekey={sitekey}></div>
-
+<!-- Load verification near a form or when that form is used, not on unrelated scrolling. -->
+<div class="cf-turnstile min-h-[65px]" data-sitekey={sitekey}></div>
 <script>
-  (function () {
+  (() => {
+    let scheduled = false;
     let loaded = false;
-
+    const widgets = document.querySelectorAll<HTMLElement>('.cf-turnstile');
     function loadTurnstile() {
       if (loaded) return;
       loaded = true;
+      if (document.querySelector('script[src^="https://challenges.cloudflare.com/turnstile/v0/api.js"]')) return;
       const script = document.createElement('script');
       script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
       script.async = true;
       document.head.appendChild(script);
-      // Cleanup listeners
-      ['scroll', 'mousemove', 'touchstart', 'keydown', 'pointerdown'].forEach((ev) => {
-        window.removeEventListener(ev, schedule);
-      });
     }
-
     function schedule() {
-      // Defer actual injection to idle time to avoid blocking the main thread
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(loadTurnstile, { timeout: 3000 });
-      } else {
-        setTimeout(loadTurnstile, 1500);
-      }
+      if (scheduled) return;
+      scheduled = true;
+      if ('requestIdleCallback' in window) requestIdleCallback(loadTurnstile, { timeout: 1000 });
+      else setTimeout(loadTurnstile, 0);
     }
-
-    // Primary trigger: inject when the widget enters the viewport
-    const widget = document.querySelector('.cf-turnstile');
-    if (widget && 'IntersectionObserver' in window) {
-      const io = new IntersectionObserver(
-        (entries) => {
-          if (entries.some((e) => e.isIntersecting)) {
-            io.disconnect();
-            schedule();
-          }
-        },
-        { rootMargin: '300px 0px' }
-      );
-      io.observe(widget);
-    } else {
-      schedule();
-    }
-
-    // Fallback: first user interaction anywhere on the page
-    ['scroll', 'mousemove', 'touchstart', 'keydown', 'pointerdown'].forEach((ev) => {
-      window.addEventListener(ev, schedule, { passive: true });
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        if (entries.some(entry => entry.isIntersecting)) {
+          observer.disconnect();
+          schedule();
+        }
+      }, { rootMargin: '300px 0px' });
+      widgets.forEach(widget => observer.observe(widget));
+    } else schedule();
+    widgets.forEach(widget => {
+      const form = widget.closest('form');
+      form?.addEventListener('focusin', schedule, { once: true });
+      form?.addEventListener('pointerdown', schedule, { once: true, passive: true });
     });
-
-    // NOTE: no `load` safety net here on purpose. An idle-time fallback after
-    // load fires almost immediately on a quiet thread, pulling Turnstile api.js
-    // into the lab-measured TBT window even when the form never enters the
-    // viewport. Real users are covered by the IntersectionObserver trigger above
-    // (scroll-to-form) and the interaction fallback.
   })();
 </script>

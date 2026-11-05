@@ -45,7 +45,7 @@ const {
 } = Astro.props;
 
 // Canonical URL logic: follow the configured site URL, always with trailing slash
-const canonicalPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : Astro.url.pathname + '/';
+const canonicalPath = /^\/404(?:\.html)?\/?$/.test(Astro.url.pathname) ? '/404.html' : (Astro.url.pathname.endsWith('/') ? Astro.url.pathname : Astro.url.pathname + '/');
 const canonicalURL = new URL(canonicalPath, Astro.site).href;
 
 const whatsappText = locale === 'th' ? 'สวัสดี สนใจวัสดุกันซึมของ Tianyuan Waterproof ขอข้อมูลผลิตภัณฑ์และใบเสนอราคา' : locale === 'vi' ? 'Xin chào, tôi quan tâm đến vật liệu chống thấm Tianyuan Waterproof. Vui lòng gửi thông tin và báo giá.' : "Hi, I'm interested in your waterproofing materials. Could you please send me a catalog and price list?";
@@ -92,7 +92,7 @@ const whatsappLink = 'https://wa.me/' + site.whatsapp.replace(/\D/g, '') + '?tex
 				<link 
 					rel="preload" 
 					as="image" 
-					href="https://img.tyuanwaterproof.com/banner-mobile.webp" 
+					href="/images/banner-mobile-75a8e6b726.webp"
 					media="(max-width: 768px)"
 					type="image/webp"
 					fetchpriority="high"
@@ -100,7 +100,7 @@ const whatsappLink = 'https://wa.me/' + site.whatsapp.replace(/\D/g, '') + '?tex
 				<link 
 					rel="preload" 
 					as="image" 
-					href="https://img.tyuanwaterproof.com/banner.webp" 
+					href="/images/banner-db55821805.webp"
 					media="(min-width: 769px)" 
 					type="image/webp"
 					fetchpriority="high"

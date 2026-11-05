@@ -23,8 +23,8 @@ hero_tags:
   - "PE / Sand / Mineral / ALU"
   - "OEM Available"
 
-technical_scope: "SBS PY II, 4mm, PE Film Surface (Representative Configuration)"
-technical_disclaimer: "Values shown apply to the stated product configuration. Other reinforcement types (PY / G / PYG), thicknesses (3mm / 4mm / 5mm), surface materials (PE / S / M / ALU), and performance grades (Type I / II) may have different performance values. Technical values reference the former GB 18242-2008 requirements; the current edition is GB/T 18242-2025 (effective 2026-05-01). Request the corresponding TDS and batch test report before specification or procurement."
+technical_scope: "SBS PY II, 4mm, PE Film Surface"
+technical_disclaimer: "Performance values apply to the configuration above and the stated test methods. The table uses the former GB 18242-2008 requirements; documentation for supply to GB/T 18242-2025 is available through our technical team. Other grades and constructions have separate technical data sheets."
 
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/sbs-torch-membrane-main.webp"
@@ -105,7 +105,7 @@ technical_data:
     unit: "N/50mm"
     standard: "GB/T 18242"
     requirement: "≥ 900"
-    value: "Typical value; confirm with the product TDS"
+    value: "Request configuration-specific test data"
   - label: "Elongation at Peak (PY Type II)"
     unit: "%"
     standard: "GB/T 18242"
@@ -140,7 +140,7 @@ technical_data:
     unit: "%"
     standard: "GB/T 18242"
     requirement: "≤ 1.0"
-    value: "Typical value; confirm with the product TDS"
+    value: "Request configuration-specific test data"
 
 application_guide:
   - title: "Surface Preparation"
@@ -187,16 +187,16 @@ standards_mapping:
     en: "EN 12311-1"
   - property: "Low Temp Flexibility"
     gb: "-25°C"
-    astm: "Reference value; confirm with the product TDS"
-    en: "Reference value; confirm with the product TDS"
+    astm: "Product-specific test data"
+    en: "Product-specific test data"
   - property: "Heat Resistance"
     gb: "90°C / 105°C"
     astm: "ASTM D5147"
     en: "EN 1110"
   - property: "Compliance Status"
     gb: "GB/T 18242"
-    astm: "Equivalent"
-    en: "Equivalent"
+    astm: "Product-specific test documentation"
+    en: "Product-specific test documentation"
 
 supply_info:
   - title: "MOQ"
@@ -252,7 +252,7 @@ downloads:
     version: "2026.01"
     pages: "4"
     size: "380 KB"
-    href: "/docs/sbs-waterproofing-membrane-tds.pdf"
+    href: ""
   - title: "SBS Membrane Installation Manual"
     model: "All SBS torch-applied configurations"
     version: "2026.01"
@@ -294,7 +294,7 @@ faqs:
 
 ### How to Choose the Right SBS Waterproofing Membrane for Your Project?
 
-**Direct Answer:** For cold climates (below -20°C) and heavy civil infrastructure, specify **SBS Type II (4mm/5mm)** with Polyester (PY) reinforcement. Based on 2026 factory performance benchmarks, SBS Type II maintains full flexibility down to **-25°C**, effectively preventing 98% of low-temperature cracking in high-altitude or refrigerated projects.
+**Direct Answer:** For cold climates (below -20°C) and heavy civil infrastructure, specify **SBS Type II (4mm/5mm)** with Polyester (PY) reinforcement. For a specified low-temperature flexibility of **-25°C**, request the applicable configuration-specific TDS and supporting test report. Select the membrane grade, reinforcement and installation system against the project specification.
 
 <div class="not-prose my-10 overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
   <table class="w-full min-w-[600px] border-collapse text-left text-sm">
@@ -328,7 +328,7 @@ faqs:
 <div class="not-prose rounded-2xl border-2 border-blue-600/20 bg-blue-50/10 p-8 my-16 shadow-lg text-left">
 <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
 <div class="max-w-2xl">
-<h2 class="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">2026 SBS Membrane Pricing & Inquiry Guide</h2>
+<h2 class="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">SBS Membrane Pricing & Bulk Orders</h2>
 <p class="text-base text-slate-700 leading-relaxed mb-6">Looking for the latest <strong>SBS membrane price</strong>? As a direct manufacturer, our wholesale rates vary based on current bitumen market indices and your specific project configuration.</p>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
 <div class="p-3 bg-white rounded-xl border border-blue-100 shadow-sm">
@@ -364,17 +364,17 @@ faqs:
   <!-- Feature Grid -->
   <div class="grid gap-4 sm:grid-cols-3">
     <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-sm transition hover:shadow-md">
-      <div class="mb-3 text-blue-700 font-black text-sm uppercase tracking-widest opacity-70">Engineered Resilience</div>
+      <div class="mb-3 text-blue-700 font-black text-sm uppercase tracking-widest ">Engineered Resilience</div>
       <p class="text-base font-bold text-slate-950 mb-2">Cold Flexibility</p>
       <p class="text-sm text-slate-600 leading-relaxed">Retains elastomeric properties down to <span class="text-blue-700 font-bold">-25°C</span>, ensuring reliable sealing in cold climates.</p>
     </div>
     <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-sm transition hover:shadow-md">
-      <div class="mb-3 text-blue-700 font-black text-sm uppercase tracking-widest opacity-70">Structural Compatibility</div>
+      <div class="mb-3 text-blue-700 font-black text-sm uppercase tracking-widest ">Structural Compatibility</div>
       <p class="text-base font-bold text-slate-950 mb-2">Anti-Cracking</p>
       <p class="text-sm text-slate-600 leading-relaxed">Designed for projects where substrate movement and crack-bridging are critical safety requirements.</p>
     </div>
     <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-sm transition hover:shadow-md">
-      <div class="mb-3 text-blue-700 font-black text-sm uppercase tracking-widest opacity-70">Technical Compliance</div>
+      <div class="mb-3 text-blue-700 font-black text-sm uppercase tracking-widest ">Technical Compliance</div>
       <p class="text-base font-bold text-slate-950 mb-2">New GB Standard</p>
       <p class="text-sm text-slate-600 leading-relaxed">Manufactured per <span class="text-blue-700 font-bold">GB/T 18242-2025</span> (Type II). Batch test reports available for project specification.</p>
     </div>
@@ -382,7 +382,7 @@ faqs:
 
   <!-- Selection Tip Box -->
   <div class="rounded-2xl bg-slate-50 p-8 border border-slate-200">
-    <h4 class="text-sm font-black uppercase text-slate-400 mb-6 tracking-widest">Expert Recommendation & Selection Tip</h4>
+    <h4 class="text-sm font-black uppercase text-slate-600 mb-6 tracking-widest">Expert Recommendation & Selection Tip</h4>
     <div class="grid gap-10 sm:grid-cols-2">
       <div>
         <p class="text-base font-black text-slate-900 mb-2">Hot Climate or Exposed Roof?</p>

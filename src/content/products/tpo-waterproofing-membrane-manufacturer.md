@@ -25,7 +25,7 @@ gallery:
     title: "Weld Nozzle & Roller Close-Up"
     alt: "close-up of hot-air weld nozzle inserted under TPO membrane seam with silicone roller pressing weld"
 
-technical_scope: "TPO, Type P (Reinforced), 1.5mm, White Surface (Representative Configuration)"
+technical_scope: "TPO, Type P (Reinforced), 1.5mm, White Surface"
 technical_disclaimer: "Values shown apply to the stated product configuration. Other types (H / L / P), thicknesses (1.2mm / 1.5mm / 2.0mm), colors, and reinforcement options may have different performance values. GB 27789-2011 is the current edition; confirm the applicable product TDS and batch test report before specification or procurement."
 
 hero_description: "TPO (Thermoplastic Polyolefin) waterproofing membrane is a hot-air weldable single-ply sheet for roofing systems. Available configurations include homogeneous, fabric-backed and reinforced sheets. Confirm the product-specific thickness, reinforcement, backing and test documentation for the proposed roof assembly. Reflective performance and welding settings must be verified for the supplied product."
@@ -107,7 +107,7 @@ technical_data:
     unit: "°C"
     standard: "GB 27789"
     requirement: "-40°C No crack"
-    value: "Typical value; confirm with the product TDS"
+    value: "Request configuration-specific test data"
   - label: "Joint Peeling Strength"
     unit: "N/mm"
     standard: "GB 27789"
@@ -122,7 +122,7 @@ technical_data:
     unit: "%"
     standard: "GB 27789"
     requirement: "≤ 1.0"
-    value: "Typical value; confirm with the product TDS"
+    value: "Request configuration-specific test data"
 
 application_guide:
   - title: "Base Course Preparation"

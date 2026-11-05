@@ -137,7 +137,7 @@ const aboutPageSchema = {
 <Layout title={pageTitle} description={pageDescription} preloadImage={hero.image} preloadImageMobile={hero.imageMobile}>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(aboutPageSchema)} />
 
-  <main class="overflow-hidden bg-white text-slate-600 font-sans">
+  <div class="overflow-hidden bg-white text-slate-600 font-sans">
     <!-- 1. Hero -->
     <section class="relative isolate min-h-[580px] overflow-hidden bg-[#0E2A47]">
       <picture>
@@ -489,5 +489,5 @@ const aboutPageSchema = {
          </div>
       </div>
     </section>
-  </main>
+  </div>
 </Layout>

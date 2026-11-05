@@ -21,7 +21,7 @@ hero_tags:
   - "OEM Available"
   - "GB 23441-2009"
 
-technical_scope: "Self-Adhesive, Class PY / PET Surface / Type II (Representative Configuration)"
+technical_scope: "Self-Adhesive, Class PY / PET Surface / Type II"
 technical_disclaimer: "Values shown apply to the stated product configuration. Other reinforcement types (N / PY), surface materials (PE / PET / ALU / Sand / D), and performance grades (Type I / II) may have different performance values. Request the corresponding TDS and batch test report before specification or procurement."
 
 gallery:
@@ -105,7 +105,7 @@ technical_data:
     unit: "%"
     standard: "GB 23441"
     requirement: "≥ 250 (I) / ≥ 150 (II)"
-    value: "Typical value; confirm with the product TDS"
+    value: "Request configuration-specific test data"
   - label: "Heat Resistance"
     unit: "°C / 2h"
     standard: "GB 23441"
@@ -145,7 +145,7 @@ technical_data:
     unit: "min"
     standard: "GB 23441"
     requirement: "≥ 20 (N) / ≥ 15 (PY)"
-    value: "Typical value; confirm with the product TDS"
+    value: "Request configuration-specific test data"
 
 application_guide:
   - title: "Surface Preparation"
@@ -185,7 +185,7 @@ downloads:
   - title: "Self-Adhesive Membrane TDS"
     description: "Complete technical data sheet with full GB 23441-2009 classification tables, N-type and PY-type physical properties, and performance indices."
     type: "PDF"
-    href: "/docs/self-adhesive-bitumen-membrane-tds.pdf"
+    href: ""
   - title: "Construction & Installation Manual"
     description: "Step-by-step cold-application guide covering surface preparation, priming, overlap detailing, and protection for basement, roof, and tunnel systems."
     type: "PDF"

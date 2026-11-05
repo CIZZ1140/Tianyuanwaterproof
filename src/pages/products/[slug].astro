@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import CTA from "../../components/CTA.astro";
+import { productImage, productImageSet } from "../../utils/productImages";
 import {
   ArrowRight,
   Box,
@@ -134,15 +135,8 @@ const contactHref = (intent: string) => {
 const mainImage = normalizeAsset(data.main_image || data.image);
 const gallery = normalizeGallery(data.gallery || []);
 const initialImage = gallery.length > 0 ? gallery[0].image : mainImage;
-const mainImageW = data.image_width || 1254;
-// JS coating currently has no 640px derivative in R2; use its original image
-// on mobile until that derivative is uploaded.
-const mainImage640 = initialImage.startsWith("https://img.tyuanwaterproof.com/") && entry.slug !== "polymer-cement-js-waterproof-coating-factory"
-  ? initialImage.replace(/\.(webp|jpg|jpeg|png)$/i, "-640.$1")
-  : null;
-const mainImageSrcset = mainImage640
-  ? `${mainImage640} 640w, ${initialImage} ${mainImageW}w`
-  : initialImage;
+const displayImage = productImage(initialImage);
+const mainImageSrcset = productImageSet(initialImage);
 
 const heroTags = data.hero_tags || [];
 const heroDesc = normalizeString(data.hero_description, `Industrial grade ${title} for global B2B supply.`);
@@ -277,7 +271,7 @@ const breadcrumbLd = {
     })} />
   )}
   <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)} />
-  <main class="bg-slate-50 text-slate-950 pb-12">
+  <div class="bg-slate-50 text-slate-950 pb-12">
     
     <!-- 1. Breadcrumb -->
     <nav class="mx-auto w-full max-w-[1680px] px-4 pt-4 pb-2 sm:px-6 lg:px-8" aria-label="Breadcrumb">
@@ -299,34 +293,37 @@ const breadcrumbLd = {
           <!-- Left: Gallery Switcher -->
           <div class="flex flex-col">
             <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 flex-1 min-h-[300px] flex items-center justify-center relative shadow-inner">
-              {mainImage640 && (
-                <link rel="preload" as="image" href={mainImage640} media="(max-width: 767px)" fetchpriority="high" />
-              )}
-              <link rel="preload" as="image" href={initialImage} media="(min-width: 768px)" fetchpriority="high" />
               <img 
                 id="main-product-image" 
-                src={initialImage} 
+                src={displayImage?.src || initialImage}
                 data-fallback={initialImage}
                 alt={title} 
-                width={data.image_width ?? undefined} 
-                height={data.image_height ?? undefined} 
+                width={displayImage?.width || data.image_width || 1200}
+                height={displayImage?.height || data.image_height || 900}
                 fetchpriority="high" 
                 loading="eager"
                 srcset={mainImageSrcset} 
-                sizes="(min-width: 1024px) 600px, 100vw" 
+                sizes="(min-width: 1680px) 680px, (min-width: 1024px) 42vw, calc(100vw - 68px)"
                 class="max-h-[620px] w-full object-contain transition-opacity duration-300" 
               />
             </div>
+            <a id="full-product-image" href={initialImage} target="_blank" rel="noopener" class="mt-3 text-sm font-semibold text-blue-800 underline underline-offset-4">View full-size product image</a>
             {gallery.length > 1 && (
               <div class={"mt-4 grid gap-3 grid-cols-4" + (gallery.length > 4 ? " sm:grid-cols-5" : "")}>
                 {gallery.slice(0, 8).map((item, index) => (
                   <button 
                     class={`gallery-thumb group flex rounded-2xl border-2 transition shadow-sm overflow-hidden ${index === 0 ? 'active border-blue-600 ring-2 ring-blue-100' : 'border-slate-200 bg-white hover:border-blue-400'}`} 
                     data-full={item.image}
+                    data-display={productImage(item.image)?.src || item.image}
+                    data-srcset={productImageSet(item.image)}
+                    data-alt={item.alt || item.title}
+                    data-width={productImage(item.image)?.width}
+                    data-height={productImage(item.image)?.height}
+                    aria-pressed={index === 0 ? "true" : "false"}
                     aria-label={`View product image ${index + 1}`}
                   >
                     <div class="aspect-[4/3] w-full bg-slate-50 p-1 flex items-center justify-center pointer-events-none">
-                      <img src={item.image} alt={item.alt || item.title} class="h-full w-full object-contain transition group-hover:scale-105" loading="lazy" />
+                      <img src={productImage(item.image, 160)?.src || item.image} width={productImage(item.image, 160)?.width} height={productImage(item.image, 160)?.height} alt={item.alt || item.title} class="h-full w-full object-contain transition group-hover:scale-105" loading="lazy" />
                     </div>
                   </button>
                 ))}
@@ -349,7 +346,7 @@ const breadcrumbLd = {
                   return (
                     <div class="rounded-2xl border border-slate-100 bg-slate-50/50 p-4 transition hover:bg-slate-50">
                       <div class="mb-3 flex items-center gap-2 text-blue-700">
-                        <Icon class="h-4 w-4" /><p class="text-[9px] font-black uppercase tracking-widest opacity-60">{item.label}</p>
+                        <Icon class="h-4 w-4" /><p class="text-[11px] font-black uppercase tracking-widest ">{item.label}</p>
                       </div>
                       <p class="text-sm font-bold text-slate-950 leading-relaxed">{item.value}</p>
                     </div>
@@ -364,9 +361,9 @@ const breadcrumbLd = {
               <a href={contactHref("tds")} class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-blue-100 bg-blue-50 px-8 py-3.5 text-sm font-black text-blue-800 transition hover:bg-blue-100 sm:w-auto"><FileText class="h-4 w-4" /> Request TDS</a>
             </div>
             
-            <p class="mt-4 text-[11px] font-medium text-slate-400 italic">For project-specific pricing, send your technical requirements and destination port.</p>
+            <p class="mt-4 text-[11px] font-medium text-slate-600 italic">For project-specific pricing, send your technical requirements and destination port.</p>
 
-            <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-[10px] font-black uppercase tracking-widest text-slate-400 border-t border-slate-100 pt-6 mt-auto">
+            <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-[10px] font-black uppercase tracking-widest text-slate-600 border-t border-slate-100 pt-6 mt-auto">
               <span class="flex items-center gap-2"><Factory class="h-3.5 w-3.5" /> Direct Supply</span>
               <span class="flex items-center gap-2"><ShieldCheck class="h-3.5 w-3.5" /> OEM Labeling</span>
               <span class="flex items-center gap-2"><FileText class="h-3.5 w-3.5" /> Technical Support</span>
@@ -476,7 +473,7 @@ const breadcrumbLd = {
       {technicalData.length > 0 && (
         <section id="technical-specifications" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4 tracking-tight">{isPolyureaGradeTable ? "Technical specifications — pure polyurea" : "Technical specifications"}</h2>
-          {data.technical_scope && <p class="mb-6 text-sm font-medium text-slate-500">{data.technical_scope}</p>}
+          {data.technical_scope && <p class="mb-6 text-sm font-medium text-slate-500">{data.technical_scope.replace(/\s*\(Representative Configuration\)/g, "")}</p>}
           <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
             <table class="w-full text-left text-sm border-collapse">
               <caption class="sr-only">Technical specifications of {title}</caption>
@@ -515,11 +512,11 @@ const breadcrumbLd = {
               <caption class="sr-only">Technical specifications — Hybrid Polyurea</caption>
               <thead class="bg-slate-50">
                 <tr>
-                  <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Test Item</th>
-                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Unit</th>}
-                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">{isPolyureaGradeTable ? "Test Condition" : "Test Method"}</th>}
-                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">{isPolyureaGradeTable ? "Technical Index" : "Requirement"}</th>}
-                  {!isPolyureaGradeTable && <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Result / Notes</th>}
+                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Test Item</th>
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Unit</th>}
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">{isPolyureaGradeTable ? "Test Condition" : "Test Method"}</th>}
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">{isPolyureaGradeTable ? "Technical Index" : "Requirement"}</th>}
+                  {!isPolyureaGradeTable && <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Result / Notes</th>}
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-100">
@@ -542,21 +539,21 @@ const breadcrumbLd = {
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4 border-b border-slate-100 pb-6">
             <div>
-              <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-1 tracking-tight">Global standard alignment</h2>
-              <p class="text-sm font-medium text-slate-500">Cross-reference for engineering specifications & global procurement</p>
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-1 tracking-tight">Standards & test methods</h2>
+              <p class="text-sm font-medium text-slate-500">Product standards and test methods for engineering specifications</p>
             </div>
 
           </div>
           
           <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-slate-50">
             <table class="w-full text-left text-sm border-collapse">
-              <caption class="sr-only">Global standard alignment of {title}</caption>
+              <caption class="sr-only">Standards & test methods of {title}</caption>
               <thead>
                 <tr class="bg-slate-100/50">
-                  <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Property</th>
-                  <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">China (GB)</th>
-                  <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">USA (ASTM)</th>
-                  <th scope="col" class="px-6 py-4 font-black text-slate-500 uppercase text-[11px] tracking-wider">Europe (EN)</th>
+                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Property</th>
+                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">China (GB)</th>
+                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">USA (ASTM)</th>
+                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Europe (EN)</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-200 bg-white">
@@ -585,7 +582,7 @@ const breadcrumbLd = {
           </div>
           <p class="mt-2 text-[11px] font-medium text-slate-500 md:hidden">Swipe to view the full table →</p>
           <p class="mt-6 text-[11px] font-medium text-slate-600 italic bg-slate-50 p-4 rounded-xl border border-slate-100">
-            * Technical Note: The values shown are reference information for the selected product configuration. Confirm the applicable standard, test method, certification scope, and product-specific documentation with our technical team before specification.
+            Test methods and certification requirements depend on the selected product and destination market. Our technical team supports document matching for your specification.
           </p>
         </section>
       )}
@@ -668,7 +665,7 @@ const breadcrumbLd = {
               <div class="overflow-hidden rounded-2xl border border-blue-200 bg-white shadow-sm">
                 <div class="bg-blue-700 px-6 py-4 text-white flex items-center gap-3">
                   <Truck class="h-5 w-5" />
-                  <span class="text-xs font-black uppercase tracking-widest">Export Loading Reference</span>
+                  <span class="text-xs font-black uppercase tracking-widest">Container Loading</span>
                 </div>
                 <div class="divide-y divide-slate-100">
                   {loadingData.map(row => (
@@ -690,7 +687,7 @@ const breadcrumbLd = {
           <div class="overflow-hidden rounded-2xl border border-blue-200 bg-white shadow-sm">
             <div class="bg-blue-700 px-6 py-4 text-white flex items-center gap-3">
               <Truck class="h-5 w-5" />
-              <span class="text-xs font-black uppercase tracking-widest">Export Supply Reference</span>
+              <span class="text-xs font-black uppercase tracking-widest">Ordering & Export Supply</span>
             </div>
             <div class="divide-y divide-slate-100">
               {supplyInfo.map(row => (
@@ -714,7 +711,7 @@ const breadcrumbLd = {
                   {ref.image ? (
                     <img src={ref.image} alt={ref.title} class="h-full w-full object-cover" loading="lazy" />
                   ) : (
-                    <div class="h-full w-full flex items-center justify-center text-slate-400 text-sm font-medium">Project Photo</div>
+                    <div class="h-full w-full flex items-center justify-center text-slate-600 text-sm font-medium">Project Photo</div>
                   )}
                 </div>
                 <div class="p-5">
@@ -762,9 +759,9 @@ const breadcrumbLd = {
               {relatedProducts.map((rp: { href: string; image: string; title: string }) => (
                 <a href={rp.href} class="group flex flex-col gap-3">
                   <div class="aspect-[4/3] overflow-hidden rounded-2xl bg-slate-100 border border-slate-200">
-                    <img src={rp.image} class="h-full w-full object-contain transition duration-500 group-hover:scale-105" alt={rp.title} />
+                    <img src={productImage(rp.image, 480)?.src || rp.image} width={productImage(rp.image, 480)?.width} height={productImage(rp.image, 480)?.height} loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-500 group-hover:scale-105" alt={rp.title} />
                   </div>
-                  <h4 class="text-xs font-black text-slate-900 line-clamp-1 group-hover:text-blue-700 transition-colors">{rp.title}</h4>
+                  <h3 class="text-xs font-black text-slate-900 line-clamp-1 group-hover:text-blue-700 transition-colors">{rp.title}</h3>
                 </a>
               ))}
             </div>
@@ -782,7 +779,7 @@ const breadcrumbLd = {
               <details class="group rounded-2xl border border-slate-200 bg-slate-50/50 overflow-hidden transition hover:border-blue-200">
                 <summary class="flex items-center justify-between px-6 py-5 cursor-pointer list-none font-black text-slate-900 text-sm leading-snug group-open:text-blue-700 transition-colors">
                   <span class="pr-8">{f.question}</span>
-                  <span class="flex-shrink-0 text-slate-400 group-open:rotate-180 transition-transform duration-200">
+                  <span class="flex-shrink-0 text-slate-600 group-open:rotate-180 transition-transform duration-200">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                   </span>
                 </summary>
@@ -809,79 +806,79 @@ const breadcrumbLd = {
               <>
                 <a href="/blog/self-adhesive-vs-torch-applied-membrane-comparison/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
                   <div>
-                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Selection Guide</div>
-                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Self-Adhesive vs Torch-Applied: Safety & Efficiency Compared</h4>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest ">Selection Guide</div>
+                    <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Self-Adhesive vs Torch-Applied: Safety & Efficiency Compared</h3>
                   </div>
-                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                  <div class="mt-6 text-slate-600 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
                 </a>
                 <a href="/blog/tunnel-waterproofing-membrane-selection/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
                   <div>
-                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Infrastructure</div>
-                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Tunnel Waterproofing: Why Self-Adhesive is the Safety Standard</h4>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest ">Infrastructure</div>
+                    <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Tunnel Waterproofing: Why Self-Adhesive is the Safety Standard</h3>
                   </div>
-                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                  <div class="mt-6 text-slate-600 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
                 </a>
                 <a href="/blog/2026-global-sbs-membrane-market-analysis/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
                   <div>
-                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Market Insights</div>
-                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">2026 Bitumen Membrane Market Analysis & Procurement Guide</h4>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest ">Market Insights</div>
+                    <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">2026 Bitumen Membrane Market Analysis & Procurement Guide</h3>
                   </div>
-                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                  <div class="mt-6 text-slate-600 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
                 </a>
               </>
             ) : entry.slug === "asphalt-roofing-felt-manufacturer" ? (
               <>
                 <a href="/blog/sbs-vs-app-modified-bitumen-membranes/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
                   <div>
-                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Selection Guide</div>
-                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Roofing Underlayment: Choosing the Right Secondary Layer</h4>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest ">Selection Guide</div>
+                    <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Roofing Underlayment: Choosing the Right Secondary Layer</h3>
                   </div>
-                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                  <div class="mt-6 text-slate-600 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
                 </a>
                 <a href="/blog/py-g-pyg-sbs-membrane-reinforcement-guide/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
                   <div>
-                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Materials Science</div>
-                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Understanding ASTM D226: Standards for Asphalt Felt</h4>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest ">Materials Science</div>
+                    <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Understanding ASTM D226: Standards for Asphalt Felt</h3>
                   </div>
-                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                  <div class="mt-6 text-slate-600 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
                 </a>
                 <a href="/blog/how-many-rolls-of-sbs-membrane-fit-in-a-container/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
                   <div>
-                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Logistics</div>
-                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Shipping Efficiency: How many rolls fit in a 20FT Container?</h4>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest ">Logistics</div>
+                    <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">Shipping Efficiency: How many rolls fit in a 20FT Container?</h3>
                   </div>
-                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                  <div class="mt-6 text-slate-600 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
                 </a>
               </>
             ) : (
               <>
                 <a href="/blog/3mm-vs-4mm-sbs-waterproofing-membrane/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
                   <div>
-                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Selection Guide</div>
-                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">3mm vs 4mm SBS Membrane: When does thickness matter?</h4>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest ">Selection Guide</div>
+                    <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">3mm vs 4mm SBS Membrane: When does thickness matter?</h3>
                   </div>
-                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                  <div class="mt-6 text-slate-600 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
                 </a>
                 <a href="/blog/sbs-vs-app-modified-bitumen-membranes/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
                   <div>
-                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Climate Logic</div>
-                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">SBS vs APP: How to Choose the Right System for Your Climate?</h4>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest ">Climate Logic</div>
+                    <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">SBS vs APP: How to Choose the Right System for Your Climate?</h3>
                   </div>
-                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                  <div class="mt-6 text-slate-600 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
                 </a>
                 <a href="/blog/how-to-read-sbs-membrane-tds/" class="group rounded-2xl border border-slate-200 p-6 transition-all hover:border-blue-600 hover:shadow-xl bg-white flex flex-col justify-between">
                   <div>
-                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest opacity-60">Standards & TDS</div>
-                    <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">How to Read an SBS TDS: Key Metrics for Engineers</h4>
+                    <div class="mb-4 text-blue-700 font-black text-[10px] uppercase tracking-widest ">Standards & TDS</div>
+                    <h3 class="text-base font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-snug">How to Read an SBS TDS: Key Metrics for Engineers</h3>
                   </div>
-                  <div class="mt-6 text-slate-400 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
+                  <div class="mt-6 text-slate-600 group-hover:text-blue-600 transition-colors text-[10px] font-black tracking-widest">READ GUIDE →</div>
                 </a>
               </>
             )}
           </div>
           
           <div class="mt-10 pt-8 border-t border-slate-200/60 flex justify-center">
-            <a href="/blog/" class="text-xs font-black uppercase tracking-widest text-slate-400 hover:text-blue-700 transition-colors">View All Technical Articles →</a>
+            <a href="/blog/" class="text-xs font-black uppercase tracking-widest text-slate-600 hover:text-blue-700 transition-colors">View All Technical Articles →</a>
           </div>
         </div>
       </section>
@@ -891,48 +888,37 @@ const breadcrumbLd = {
 
     <script is:inline>
       const mainImg = document.getElementById('main-product-image');
-      if (mainImg) {
-        // Fallback: if the srcset candidate (e.g. -640 variant) fails to load,
-        // drop srcset and retry with the full-size source URL.
-        let fallbackUsed = false;
-        mainImg.addEventListener('error', () => {
-          if (fallbackUsed) return;
-          const fb = mainImg.getAttribute('data-fallback');
-          if (!fb) return;
-          fallbackUsed = true;
-          mainImg.removeAttribute('srcset');
-          mainImg.removeAttribute('src');
-          mainImg.src = fb;
-        });
-      }
+      const fullLink = document.getElementById('full-product-image');
       const thumbs = document.querySelectorAll('.gallery-thumb');
-      if (mainImg && thumbs.length > 0) {
-        let switchToken = 0;
-        let hoverTimer = null;
-        thumbs.forEach((thumb, i) => {
-          thumb.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
-          const switchTo = () => {
-            const token = ++switchToken;
-            const newSrc = thumb.getAttribute('data-full');
-            if (newSrc && mainImg.src !== newSrc) {
-              thumbs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-pressed', 'false'); });
-              thumb.classList.add('active');
-              thumb.setAttribute('aria-pressed', 'true');
-              mainImg.style.opacity = '0';
-              setTimeout(() => {
-                if (token !== switchToken) return;
-                mainImg.removeAttribute('srcset');
-                mainImg.src = newSrc;
-                mainImg.onload = () => { if (token === switchToken) mainImg.style.opacity = '1'; };
-              }, 200);
+      if (mainImg) {
+        mainImg.addEventListener('error', () => {
+          const fallback = mainImg.dataset.fallback;
+          if (!fallback || mainImg.src === fallback) return;
+          mainImg.removeAttribute('srcset');
+          mainImg.src = fallback;
+        });
+        thumbs.forEach((thumb) => {
+          thumb.addEventListener('click', () => {
+            const original = thumb.getAttribute('data-full');
+            const display = thumb.getAttribute('data-display');
+            if (!original || !display) return;
+            thumbs.forEach(t => {
+              const active = t === thumb;
+              t.classList.toggle('active', active);
+              t.setAttribute('aria-pressed', String(active));
+            });
+            mainImg.dataset.fallback = original;
+            const srcset = thumb.getAttribute('data-srcset');
+            if (srcset) mainImg.setAttribute('srcset', srcset);
+            else mainImg.removeAttribute('srcset');
+            mainImg.src = display;
+            mainImg.alt = thumb.getAttribute('data-alt') || '';
+            for (const attr of ['width', 'height']) {
+              const value = thumb.getAttribute('data-' + attr);
+              if (value) mainImg.setAttribute(attr, value);
             }
-          };
-          thumb.addEventListener('click', switchTo);
-          thumb.addEventListener('mouseenter', () => {
-            clearTimeout(hoverTimer);
-            hoverTimer = setTimeout(switchTo, 250);
+            if (fullLink) fullLink.setAttribute('href', original);
           });
-          thumb.addEventListener('mouseleave', () => clearTimeout(hoverTimer));
         });
       }
     </script>
@@ -942,5 +928,5 @@ const breadcrumbLd = {
         .product-editorial-content table { display: block; max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; }
       }
     </style>
-  </main>
+  </div>
 </Layout>

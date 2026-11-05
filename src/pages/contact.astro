@@ -40,13 +40,13 @@ const contactCards = [
     value: 'sales@tyuanwaterproof.com',
     href: 'mailto:sales@tyuanwaterproof.com',
     iconBg: 'bg-[#F3E8D4]',
-    iconText: 'text-[#A87835]',
+    iconText: 'text-[#784a16]',
     icon: 'email',
   },
   {
     label: 'Factory',
     value: 'Weifang, Shandong, China',
-    href: '',
+    href: '/about/',
     iconBg: 'bg-[#E8E2D8]',
     iconText: 'text-[#7B746B]',
     icon: 'location',
@@ -236,11 +236,11 @@ const contactPageSchema = {
       background: #555;
     }
   </style>
-  <main class="min-h-screen bg-[#F9F7F2] py-16 sm:py-24 font-sans">
+  <div class="min-h-screen bg-[#F9F7F2] py-16 sm:py-24 font-sans">
     <div class="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
       <!-- Header -->
       <div class="mb-12 max-w-2xl">
-        <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#A87835]">
+        <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#784a16]">
           Contact Tianyuan Waterproof
         </p>
         <h1 class="mt-4 font-serif text-4xl font-bold text-[#241F1A] sm:text-5xl leading-[1.2]">
@@ -317,7 +317,7 @@ const contactPageSchema = {
                       </div>
                       <div class="max-h-60 overflow-y-auto custom-scrollbar" id="country-list">
                         {countries.map(c => (
-                          <div class="country-item px-4 py-3 text-sm text-slate-600 hover:bg-slate-50 hover:text-[#A87835] cursor-pointer flex justify-between items-center transition-colors" data-code={c.code} data-name={c.name}>
+                          <div class="country-item px-4 py-3 text-sm text-slate-600 hover:bg-slate-50 hover:text-[#784a16] cursor-pointer flex justify-between items-center transition-colors" data-code={c.code} data-name={c.name}>
                             <span class="font-medium">{c.code}</span>
                             <span class="text-xs text-slate-400">{c.name}</span>
                           </div>
@@ -381,7 +381,7 @@ const contactPageSchema = {
                 Submit Inquiry
                 <ArrowRight class="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </button>
-              <p class="text-center text-[11px] font-medium text-[#94A3B8]">
+              <p class="text-center text-[11px] font-medium text-slate-600">
                 * Our sales team will reply within 1 business day.
               </p>
             </div>
@@ -402,7 +402,7 @@ const contactPageSchema = {
                     </span>
                     <span class="min-w-0">
                       <span class="block text-xs font-bold tracking-wider text-[#6F6255]">{card.label}</span>
-                      <EmailLink className="mt-1 block break-words text-sm font-black text-[#241F1A] group-hover:text-[#A87835] transition-colors" />
+                      <EmailLink className="mt-1 block break-words text-sm font-black text-[#241F1A] group-hover:text-[#784a16] transition-colors" />
                     </span>
                   </div>
                 ) : (
@@ -415,7 +415,7 @@ const contactPageSchema = {
                     </span>
                     <span class="min-w-0">
                       <span class="block text-xs font-bold tracking-wider text-[#6F6255]">{card.label}</span>
-                      <span class="mt-1 block break-words text-sm font-black text-[#241F1A] group-hover:text-[#A87835] transition-colors">{card.value}</span>
+                      <span class="mt-1 block break-words text-sm font-black text-[#241F1A] group-hover:text-[#784a16] transition-colors">{card.value}</span>
                     </span>
                   </a>
                 )
@@ -423,7 +423,7 @@ const contactPageSchema = {
             </div>
 
             <div class="mt-8 border-t border-[#D1C7B7]/60 pt-6">
-              <p class="text-[11px] font-bold uppercase tracking-[0.15em] text-[#A0A0A0] mb-3">Follow Us</p>
+              <p class="text-[11px] font-bold uppercase tracking-[0.15em] text-slate-600 mb-3">Follow Us</p>
               <a
                 href="https://www.facebook.com/people/Tianyuan-Waterproof-Materials-Manufacturer/61568156258850/"
                 target="_blank"
@@ -438,7 +438,7 @@ const contactPageSchema = {
         </aside>
       </div>
     </div>
-  </main>
+  </div>
 
   <!-- Inquiry context and phone selector logic -->
   <script>

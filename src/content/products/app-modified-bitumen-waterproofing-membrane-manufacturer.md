@@ -21,8 +21,8 @@ hero_tags:
   - "PE / Sand / Mineral / ALU"
   - "OEM Available"
 
-technical_scope: "APP Modified Bitumen, PY / Mineral Surface / Type II / 4mm (Representative Configuration)"
-technical_disclaimer: "Values shown apply to the stated product configuration. Other reinforcement types (PY / G / PYG), surface materials (PE / S / M / ALU), and performance grades (Type I / II) may have different performance values. Request the corresponding TDS and batch test report before specification or procurement."
+technical_scope: "APP Modified Bitumen, PY / Mineral Surface / Type II / 4mm"
+technical_disclaimer: "Performance values apply to the configuration above. Other reinforcement, surface and grade combinations have separate technical data sheets."
 
 gallery:
   - image: "https://img.tyuanwaterproof.com/products/app-membrane-branded-roll.webp"
@@ -122,7 +122,7 @@ technical_data:
     unit: "N"
     standard: "GB 18243"
     requirement: "≥ 300"
-    value: "Typical value; confirm with the product TDS"
+    value: "Request configuration-specific test data"
   - label: "Thermal Aging — Dimensional Change"
     unit: "%"
     standard: "GB 18243"
@@ -132,7 +132,7 @@ technical_data:
     unit: "g"
     standard: "GB 18243"
     requirement: "≤ 2.0 (loss)"
-    value: "Typical value; confirm with the product TDS"
+    value: "Request configuration-specific test data"
 
 application_guide:
   - title: "Prepare the Substrate"
@@ -237,12 +237,12 @@ standards_mapping:
     en: "EN 1110"
   - property: "Low Temp Flexibility"
     gb: "-5°C / -15°C"
-    astm: "Reference value; confirm with the product TDS"
-    en: "Reference value; confirm with the product TDS"
+    astm: "Product-specific test data"
+    en: "Product-specific test data"
   - property: "Compliance Status"
     gb: "GB 18243-2008"
-    astm: "Equivalent"
-    en: "Equivalent"
+    astm: "Product-specific test documentation"
+    en: "Product-specific test documentation"
 
 supply_info:
   - title: "MOQ"
@@ -328,17 +328,17 @@ configurations:
     <h4 class="text-base font-black uppercase text-slate-900 mb-4 tracking-tight">Reinforcement Selection Guide</h4>
     <div class="grid gap-4 sm:grid-cols-3">
       <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-sm">
-        <div class="mb-2 text-blue-700 font-black text-sm uppercase tracking-widest opacity-70">Polyester Felt (PY)</div>
+        <div class="mb-2 text-blue-700 font-black text-sm uppercase tracking-widest ">Polyester Felt (PY)</div>
         <p class="text-base font-bold text-slate-950 mb-2">High Tensile & Elongation</p>
         <p class="text-sm text-slate-500 leading-relaxed">Best for exposed roofing and large-area projects where structural movement is expected.</p>
       </div>
       <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-sm">
-        <div class="mb-2 text-blue-700 font-black text-sm uppercase tracking-widest opacity-70">Glass Fiber (G)</div>
+        <div class="mb-2 text-blue-700 font-black text-sm uppercase tracking-widest ">Glass Fiber (G)</div>
         <p class="text-base font-bold text-slate-950 mb-2">Dimensional Stability</p>
         <p class="text-sm text-slate-500 leading-relaxed">Best for multi-layer non-exposed systems and substrates with minimal thermal movement.</p>
       </div>
       <div class="rounded-xl border border-slate-100 bg-white p-6 shadow-sm">
-        <div class="mb-2 text-blue-700 font-black text-sm uppercase tracking-widest opacity-70">Composite (PYG)</div>
+        <div class="mb-2 text-blue-700 font-black text-sm uppercase tracking-widest ">Composite (PYG)</div>
         <p class="text-base font-bold text-slate-950 mb-2">The Balanced Performer</p>
         <p class="text-sm text-slate-500 leading-relaxed">Combines PY's strength with G's stability. Ideal for commercial roofs and high-wind infrastructure.</p>
       </div>
@@ -370,7 +370,7 @@ configurations:
 
   <!-- Expert Recommendation Box -->
   <div class="rounded-2xl bg-slate-50 p-8 border border-slate-200">
-    <h4 class="text-sm font-black uppercase text-slate-400 mb-6 tracking-widest">Expert Recommendation & Selection Tip</h4>
+    <h4 class="text-sm font-black uppercase text-slate-600 mb-6 tracking-widest">Expert Recommendation & Selection Tip</h4>
     <div class="grid gap-10 sm:grid-cols-2">
       <div>
         <p class="text-base font-black text-slate-900 mb-2">Extreme Cold Climate?</p>

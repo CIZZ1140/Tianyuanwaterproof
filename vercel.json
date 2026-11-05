@@ -38,6 +38,111 @@
       "permanent": true
     },
     {
+      "source": "/docs/sbs-waterproofing-membrane-tds.pdf",
+      "destination": "/contact/?product=SBS+Waterproofing+Membrane&intent=Request+TDS&source=%2Fdocs%2Fsbs-waterproofing-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/th/sbs-waterproofing-membrane-tds.pdf",
+      "destination": "/th/contact/?product=SBS+Waterproofing+Membrane&intent=Request+TDS&source=%2Fdocs%2Fth%2Fsbs-waterproofing-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/vi/sbs-waterproofing-membrane-tds.pdf",
+      "destination": "/vi/contact/?product=SBS+Waterproofing+Membrane&intent=Request+TDS&source=%2Fdocs%2Fvi%2Fsbs-waterproofing-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/es/sbs-waterproofing-membrane-tds.pdf",
+      "destination": "/es/contact/?product=SBS+Waterproofing+Membrane&intent=Request+TDS&source=%2Fdocs%2Fes%2Fsbs-waterproofing-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/pt-br/sbs-waterproofing-membrane-tds.pdf",
+      "destination": "/pt-br/contact/?product=SBS+Waterproofing+Membrane&intent=Request+TDS&source=%2Fdocs%2Fpt-br%2Fsbs-waterproofing-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/fr/sbs-waterproofing-membrane-tds.pdf",
+      "destination": "/fr/contact/?product=SBS+Waterproofing+Membrane&intent=Request+TDS&source=%2Fdocs%2Ffr%2Fsbs-waterproofing-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/ar/sbs-waterproofing-membrane-tds.pdf",
+      "destination": "/ar/contact/?product=SBS+Waterproofing+Membrane&intent=Request+TDS&source=%2Fdocs%2Far%2Fsbs-waterproofing-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/self-adhesive-bitumen-membrane-tds.pdf",
+      "destination": "/contact/?product=Self-Adhesive+Bituminous+Membrane&intent=Request+TDS&source=%2Fdocs%2Fself-adhesive-bitumen-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/th/self-adhesive-bitumen-membrane-tds.pdf",
+      "destination": "/th/contact/?product=Self-Adhesive+Bituminous+Membrane&intent=Request+TDS&source=%2Fdocs%2Fth%2Fself-adhesive-bitumen-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/vi/self-adhesive-bitumen-membrane-tds.pdf",
+      "destination": "/vi/contact/?product=Self-Adhesive+Bituminous+Membrane&intent=Request+TDS&source=%2Fdocs%2Fvi%2Fself-adhesive-bitumen-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/es/self-adhesive-bitumen-membrane-tds.pdf",
+      "destination": "/es/contact/?product=Self-Adhesive+Bituminous+Membrane&intent=Request+TDS&source=%2Fdocs%2Fes%2Fself-adhesive-bitumen-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/pt-br/self-adhesive-bitumen-membrane-tds.pdf",
+      "destination": "/pt-br/contact/?product=Self-Adhesive+Bituminous+Membrane&intent=Request+TDS&source=%2Fdocs%2Fpt-br%2Fself-adhesive-bitumen-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/fr/self-adhesive-bitumen-membrane-tds.pdf",
+      "destination": "/fr/contact/?product=Self-Adhesive+Bituminous+Membrane&intent=Request+TDS&source=%2Fdocs%2Ffr%2Fself-adhesive-bitumen-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/ar/self-adhesive-bitumen-membrane-tds.pdf",
+      "destination": "/ar/contact/?product=Self-Adhesive+Bituminous+Membrane&intent=Request+TDS&source=%2Fdocs%2Far%2Fself-adhesive-bitumen-membrane-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/tpo-walkway-pad-tds.pdf",
+      "destination": "/contact/?product=TPO+Walkway+Pad&intent=Request+TDS&source=%2Fdocs%2Ftpo-walkway-pad-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/th/tpo-walkway-pad-tds.pdf",
+      "destination": "/th/contact/?product=TPO+Walkway+Pad&intent=Request+TDS&source=%2Fdocs%2Fth%2Ftpo-walkway-pad-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/vi/tpo-walkway-pad-tds.pdf",
+      "destination": "/vi/contact/?product=TPO+Walkway+Pad&intent=Request+TDS&source=%2Fdocs%2Fvi%2Ftpo-walkway-pad-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/es/tpo-walkway-pad-tds.pdf",
+      "destination": "/es/contact/?product=TPO+Walkway+Pad&intent=Request+TDS&source=%2Fdocs%2Fes%2Ftpo-walkway-pad-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/pt-br/tpo-walkway-pad-tds.pdf",
+      "destination": "/pt-br/contact/?product=TPO+Walkway+Pad&intent=Request+TDS&source=%2Fdocs%2Fpt-br%2Ftpo-walkway-pad-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/fr/tpo-walkway-pad-tds.pdf",
+      "destination": "/fr/contact/?product=TPO+Walkway+Pad&intent=Request+TDS&source=%2Fdocs%2Ffr%2Ftpo-walkway-pad-tds.pdf",
+      "permanent": false
+    },
+    {
+      "source": "/docs/ar/tpo-walkway-pad-tds.pdf",
+      "destination": "/ar/contact/?product=TPO+Walkway+Pad&intent=Request+TDS&source=%2Fdocs%2Far%2Ftpo-walkway-pad-tds.pdf",
+      "permanent": false
+    },
+    {
       "source": "/applications/basement-waterproofing/(.*)",
       "destination": "/applications/underground-waterproofing/",
       "permanent": true

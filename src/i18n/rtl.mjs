@@ -9,7 +9,7 @@ export function applyArabicDirection(document) {
     if((attr(node,'class')||'').split(' ').includes('site-header-brand'))set(node,'dir','ltr');
     if(['td','th'].includes(node.tagName)&&!/[\u0600-\u06ff]/.test(contents(node)))set(node,'dir','ltr');
   });
-  const technical=/(?:\bTY-SHIELD™?|\d+(?:[.,]\d+)*(?:\s*(?:mm|cm|m|ft)?\s*[×x/]\s*\d+(?:[.,]\d+)*\s*(?:mm|cm|m|ft)?)+|\b(?:GB(?:\/T)?|ASTM|ISO|EN|GRI-GM)\s*[A-Z]?\d[\dA-Z./:–-]*|\b(?:SBS|APP|PVC|TPO|EPDM|HDPE|PU|JS|PYG|PY|OEM|TDS|MSDS)\b|[+≥≤±−-]?\d+(?:[.,]\d+)*(?:\s*[×/–-]\s*\d+(?:[.,]\d+)*)?(?:\s*(?:°[CF]|kN\/m|N\/(?:50)?mm|MPa|kPa|kg\/m[²2]|g\/m[²2]|mm|cm|kg|m[²³23]?|min|mil|FT|HQ|%))?)/g;
+  const technical=/(?:\bTY-SHIELD™?|\d+(?:[.,]\d+)*(?:\s*(?:mm|cm|m|ft)?\s*[×x/]\s*\d+(?:[.,]\d+)*\s*(?:mm|cm|m|ft)?)+|\b(?:GB(?:\/T)?|ASTM|ISO|EN|GRI-GM)\s*[A-Z]?\d[\dA-Z./:–-]*|\b(?:SBS|APP|PVC|TPO|EPDM|HDPE|PU|JS|PYG|PY|OEM|TDS|MSDS)\b|[+≥≤±−-]?\d+(?:[.,]\d+)*(?:\s*[×/–-]\s*\d+(?:[.,]\d+)*)?(?:\s*(?:°[CF]|kN\/m|N\/(?:50)?mm|MPa|kPa|kg\/m[²2]|g\/m[²2]|mm|cm|kg|min|mil|m[²³23]?|FT|HQ|%))?)/g;
   function isolate(node,skip=false){
     const excluded=skip||['head','script','style','code','pre','svg','bdi','textarea','option'].includes(node.tagName);
     if(!excluded&&node.childNodes)node.childNodes=node.childNodes.flatMap(child=>{

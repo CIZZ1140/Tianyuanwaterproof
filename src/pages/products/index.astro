@@ -88,7 +88,7 @@ const itemListJson = JSON.stringify({
 ---
 
 <Layout title={pageTitle} description={pageDescription}>
-  <main class="bg-[#F5F7FA] min-h-screen">
+  <div class="bg-[#F5F7FA] min-h-screen">
     <script type="application/ld+json" set:html={itemListJson} />
     <section class="relative overflow-hidden bg-gradient-to-r from-[#0B1E3B] to-[#162D55] text-white py-20 px-6 border-b border-white/10">
       <div class="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.04]" aria-hidden="true"></div>
@@ -169,7 +169,7 @@ const itemListJson = JSON.stringify({
         </div>
       </div>
     </section>
-  </main>
+  </div>
 
   <script>
     const buttons = document.querySelectorAll('[data-category-filter]');

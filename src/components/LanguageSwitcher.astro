@@ -4,7 +4,7 @@ import { Globe, ChevronDown, Check } from 'lucide-astro';
 const { inline = false } = Astro.props;
 const path = Astro.url.pathname;
 const locale = localeOf(path);
-const base = basePath(path);
+const base = /^\/404(?:\.html)?\/?$/.test(path) ? '/' : basePath(path);
 const hasEquivalent = localizedPaths.includes(base);
 const label = locale === 'th' ? 'ภาษา' : locale === 'vi' ? 'Ngôn ngữ' : locale === 'fr' ? 'Langue' : locale === 'ar' ? 'اللغة' : ['es','pt-br'].includes(locale) ? 'Idioma' : 'Language';
 const homeLabel = locale === 'th' ? 'หน้าแรก' : locale === 'vi' ? 'Trang chủ' : locale === 'fr' ? 'Accueil' : locale === 'ar' ? 'الرئيسية' : locale === 'pt-br' ? 'Início' : locale === 'es' ? 'Inicio' : 'Home';

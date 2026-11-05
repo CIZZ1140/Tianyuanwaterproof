@@ -58,7 +58,7 @@ technical_data:
     unit: "°C"
     standard: "GB 18173.1"
     requirement: "-20°C No crack"
-    value: "Typical value; confirm with the product TDS"
+    value: "Request configuration-specific test data"
   - label: "Peel Strength"
     unit: "N"
     standard: "GB 18173.1"
