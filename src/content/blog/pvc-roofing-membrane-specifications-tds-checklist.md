@@ -4,6 +4,8 @@ seoTitle: "PVC Roofing Membrane Specifications: TDS Checklist"
 description: "A PVC membrane TDS checklist for importers and project buyers: compare thickness, test evidence, quotation scope and delivery acceptance before a bulk order."
 category: "product-guides"
 publishDate: 2026-11-04
+coverImage: "https://img.tyuanwaterproof.com/products/pvc-membrane-roll.jpg"
+coverAlt: "Roll of PVC waterproofing membrane"
 author: "Tianyuan Waterproof Technical Team"
 draft: false
 tags: ["PVC Roofing", "Membrane Specifications", "Technical Data Sheet", "B2B Procurement"]
