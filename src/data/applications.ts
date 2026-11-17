@@ -6,8 +6,10 @@ export const applications = [
       'Roof waterproofing for flat, pitched and industrial roofs — SBS/APP bitumen, TPO and PVC single-ply membranes, plus liquid PU for gutters and details.',
     intro: 'Roof waterproofing solutions for concrete flat roofs, industrial buildings, warehouses, commercial roofs and roofing renovation projects.',
     recommended: [
-      { title: 'SBS / APP Bitumen Membrane', href: '/products/sbs-bitumen-waterproofing-membrane-manufacturer/' },
-      { title: 'TPO / PVC Roofing Membrane', href: '/products/tpo-waterproofing-membrane-manufacturer/' },
+      { title: 'SBS Bitumen Membrane', href: '/products/sbs-bitumen-waterproofing-membrane-manufacturer/' },
+      { title: 'APP Modified Bitumen Membrane', href: '/products/app-modified-bitumen-waterproofing-membrane-manufacturer/' },
+      { title: 'TPO Roofing Membrane', href: '/products/tpo-waterproofing-membrane-manufacturer/' },
+      { title: 'PVC Roofing Membrane', href: '/products/pvc-waterproofing-membrane-manufacturer/' },
       { title: 'Self-Adhesive Bitumen Membrane', href: '/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/' },
       { title: 'PU Waterproof Coating', href: '/products/polyurethane-waterproof-coating-factory/' }
     ],
@@ -27,8 +29,9 @@ export const applications = [
     recommended: [
       { title: 'Pre-applied HDPE Membrane', href: '/products/pre-applied-hdpe-membrane-supplier/' },
       { title: 'Self-Adhesive Bitumen Membrane', href: '/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/' },
-      { title: 'SBS / APP Modified Bitumen Membrane', href: '/products/sbs-bitumen-waterproofing-membrane-manufacturer/' },
-      { title: 'Drainage Board & Geotextile', href: '/products/geotextile-fabric-manufacturer/' },
+      { title: 'SBS Bitumen Membrane', href: '/products/sbs-bitumen-waterproofing-membrane-manufacturer/' },
+      { title: 'APP Modified Bitumen Membrane', href: '/products/app-modified-bitumen-waterproofing-membrane-manufacturer/' },
+      { title: 'Geotextile Protection Layer', href: '/products/geotextile-fabric-manufacturer/' },
       { title: 'Waterproof Coating', href: '/products/polyurethane-waterproof-coating-factory/' }
     ],
     points: [
@@ -63,12 +66,7 @@ export const applications = [
     description:
       'Tunnel waterproofing for subway, railway and road tunnels — PVC-P and FPO membranes with geotextile protection, full-round and umbrella systems.',
     intro: 'Flexible sheet membrane systems for subway, railway, road tunnel and underground infrastructure waterproofing.',
-    recommended: [
-      { title: 'PVC-P Tunnel Waterproofing Membrane', href: '/products/pvc-waterproofing-membrane-manufacturer/' },
-      { title: 'FPO / TPO Tunnel Waterproofing Membrane', href: '/products/tpo-waterproofing-membrane-manufacturer/' },
-      { title: 'Nonwoven Geotextile Protection Layer', href: '/products/geotextile-fabric-manufacturer/' },
-      { title: 'Drainage Board / Drainage Composite', href: '/products/geotextile-fabric-manufacturer/' }
-    ],
+    recommended: [],
     points: [
       'PVC-P and FPO sheet membranes for subway, railway and road tunnel waterproofing',
       'Geotextile protection layers help protect the membrane against rough shotcrete surfaces',
@@ -81,14 +79,9 @@ export const applications = [
     slug: 'bridge-infrastructure',
     title: 'Bridge & Infrastructure',
     description:
-      'Bridge deck and civil infrastructure waterproofing — modified bitumen membranes and liquid PU or polyurea for chloride-resistant deck protection.',
+      'Bridge deck waterproofing selection checks for concrete preparation, membrane bonding, overlay compatibility and paving conditions.',
     intro: 'Waterproofing systems designed for highway bridges, railways, culverts and municipal engineering.',
-    recommended: [
-      { title: 'SBS / APP Modified Bitumen Bridge Deck Membrane', href: '/products/sbs-bitumen-waterproofing-membrane-manufacturer/' },
-      { title: 'Liquid-Applied PU / Polyurea Waterproofing Membrane', href: '/products/polyurethane-waterproof-coating-factory/' },
-      { title: 'Self-Adhesive Bitumen Membrane', href: '/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/' },
-      { title: 'Protection Layer / Geotextile', href: '/products/geotextile-fabric-manufacturer/' }
-    ],
+    recommended: [],
     points: [
       'Modified bitumen membranes for concrete bridge decks under asphalt overlays',
       'Liquid-applied PU / polyurea membranes for seamless bridge deck protection',
