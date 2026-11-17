@@ -20,12 +20,12 @@ export const applications = [
   },
   {
     slug: 'underground-waterproofing',
-    title: 'Underground Waterproofing',
+    title: 'Basements & Foundations',
     description:
       'Below-grade waterproofing for basements, foundations and retaining walls — pre-applied HDPE, self-adhesive bitumen, drainage board and geotextile.',
     intro: 'Reliable below-grade waterproofing systems for basements, foundations, retaining walls and metro infrastructure.',
     recommended: [
-      { title: 'Pre-applied HDPE / FPO Membrane', href: '/products/hdpe-geomembrane-liner-manufacturer/' },
+      { title: 'Pre-applied HDPE Membrane', href: '/products/pre-applied-hdpe-membrane-supplier/' },
       { title: 'Self-Adhesive Bitumen Membrane', href: '/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/' },
       { title: 'SBS / APP Modified Bitumen Membrane', href: '/products/sbs-bitumen-waterproofing-membrane-manufacturer/' },
       { title: 'Drainage Board & Geotextile', href: '/products/geotextile-fabric-manufacturer/' },
@@ -98,14 +98,15 @@ export const applications = [
   },
   {
     slug: 'industrial-building',
-    title: 'Industrial Building',
+    title: 'Industrial & Metal Roofs',
     description:
       'Waterproofing for warehouses, logistics centres and steel-structure plants — TPO and PVC single-ply roofing, with reflective cool-roof grades available.',
     intro: 'Comprehensive waterproofing for warehouses, logistics centers, and large-scale steel structure plants.',
     recommended: [
       { title: 'TPO Roofing Membrane', href: '/products/tpo-waterproofing-membrane-manufacturer/' },
       { title: 'PVC Roofing Membrane', href: '/products/pvc-waterproofing-membrane-manufacturer/' },
-      { title: 'SBS / APP Bitumen Membrane', href: '/products/sbs-bitumen-waterproofing-membrane-manufacturer/' }
+      { title: 'Metal Roof Waterproof Coating', href: '/products/metal-roof-steel-structure-waterproof-coating/' },
+      { title: 'Butyl Flashing Tape', href: '/products/butyl-waterproof-sealing-tape-supplier/' }
     ],
     points: [
       'TPO and PVC single-ply roofing membranes for factories, warehouses and logistics centers',

@@ -1,8 +1,32 @@
 ---
 import Layout from '@/layouts/Layout.astro';
+import { ArrowDown, ArrowRight, ChevronRight } from 'lucide-astro';
 import CTA from '@/components/CTA.astro';
-import { applications } from '@/data/site';
+import { applications as cards } from '@/data/site';
+import { applications as details } from '@/data/applications';
+const applications = cards.map((card) => ({ ...card, title: details.find((detail) => detail.slug === card.slug)?.title ?? card.title }));
 const base = import.meta.env.BASE_URL;
+const title = 'Waterproofing Solutions by Application | Roof to Tunnel';
+const description = 'Compare waterproofing systems for roofs, basements, tunnels, bridge decks, industrial buildings, wet areas and joints. Find materials for your project.';
+const groups = [
+  { id: 'buildings', label: 'Buildings', slugs: ['roof-waterproofing', 'underground-waterproofing', 'industrial-building', 'bathroom-waterproofing'] },
+  { id: 'civil-works', label: 'Civil works', slugs: ['tunnel-waterproofing', 'bridge-infrastructure'] },
+  { id: 'details', label: 'Joints and details', slugs: ['joint-detail-sealing'] }
+].map((group) => ({
+  ...group,
+  items: group.slugs.flatMap((slug) => applications.filter((app) => app.slug === slug))
+}));
+const orderedApplications = groups.flatMap((group) => group.items);
+const materials: Record<string, string[]> = {
+  'roof-waterproofing': ['SBS / APP bitumen', 'TPO', 'PVC'],
+  'industrial-building': ['TPO', 'PVC', 'SBS / APP bitumen'],
+  'bathroom-waterproofing': ['Polymer cement (JS)', 'PU coating', 'Butyl flashing'],
+  'underground-waterproofing': ['Pre-applied HDPE', 'Self-adhesive bitumen'],
+  'tunnel-waterproofing': ['PVC-P', 'FPO / TPO', 'Geotextile'],
+  'bridge-infrastructure': ['SBS / APP bitumen', 'PU / polyurea'],
+  'joint-detail-sealing': ['Butyl flashing tape', 'Self-adhesive bitumen tape']
+};
+const featuredImage = orderedApplications[0].image;
 
 const applicationsUrl = 'https://www.tyuanwaterproof.com/applications/';
 const applicationsSchema = {
@@ -12,9 +36,8 @@ const applicationsSchema = {
       '@type': 'CollectionPage',
       '@id': `${applicationsUrl}#webpage`,
       url: applicationsUrl,
-      name: 'Waterproofing Solutions for Roofing, Basement & Infrastructure',
-      description:
-        'Discover professional waterproofing application solutions for commercial and industrial projects, including roofs, basements, tunnels, and pools.',
+      name: title,
+      description,
       isPartOf: { '@id': 'https://www.tyuanwaterproof.com/#website' }
     },
     {
@@ -27,8 +50,8 @@ const applicationsSchema = {
     {
       '@type': 'ItemList',
       name: 'Waterproofing solutions by application',
-      numberOfItems: applications.length,
-      itemListElement: applications.map((app, i) => ({
+      numberOfItems: orderedApplications.length,
+      itemListElement: orderedApplications.map((app, i) => ({
         '@type': 'ListItem',
         position: i + 1,
         name: app.title,
@@ -38,13 +61,72 @@ const applicationsSchema = {
   ]
 };
 ---
-<Layout 
-  title="Waterproofing Solutions by Application | Roof to Tunnel"
-  description="Discover professional waterproofing application solutions for commercial and industrial projects, including roofs, basements, tunnels, and pools."
-  ogType="website"
->
+<Layout title={title} description={description} ogType="website">
   <script type="application/ld+json" is:inline set:html={JSON.stringify(applicationsSchema)} />
-  <section class="bg-[#0E2A47] py-16 text-white"><div class="container mx-auto px-4"><p class="text-[#F58A1F] text-xs font-black uppercase tracking-widest">Solutions</p>      <h1 class="mt-3 text-4xl font-black text-white md:text-5xl leading-[1.2] pb-2">Waterproofing solutions by application</h1><p class="mt-5 max-w-3xl text-white/70">Help buyers select suitable membranes, tapes and coatings according to project area.</p></div></section>
-  <section class="py-16"><div class="container mx-auto px-4 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{applications.map((app) => <a class="group block p-8 bg-white border border-slate-200 rounded-3xl transition-all hover:shadow-xl hover:-translate-y-1" href={`${base}applications/${app.slug}/`}><h2 class="text-2xl font-extrabold text-[#0E2A47]">{app.title}</h2><p class="mt-3 text-sm leading-7 text-slate-600">{app.summary}</p><span class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#F58A1F]">View solution <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:translate-x-1"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>)}</div></section>
-  <CTA />
+  <section class="relative isolate overflow-hidden bg-[#0E2A47] text-white">
+    <div class="container-wrap grid items-center gap-6 py-8 md:grid-cols-2 md:gap-12 md:py-14">
+      <div>
+        <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-sm text-slate-300">
+          <a class="hover:text-white hover:underline" href={base}>Home</a>
+          <ChevronRight class="h-4 w-4" aria-hidden="true" />
+          <span aria-current="page">Solutions</span>
+        </nav>
+        <h1 class="text-4xl font-black leading-tight tracking-tight text-white lg:text-6xl">Waterproofing solutions by application</h1>
+        <p class="mt-5 max-w-xl text-base leading-relaxed text-slate-200 md:text-lg">
+          Find membranes, coatings and sealing tapes for roofs, below-grade structures, civil works and wet areas.
+        </p>
+        <div class="mt-7 flex flex-wrap items-center gap-4">
+          <a href="#applications" class="inline-flex items-center gap-2 rounded-lg bg-[#F58A1F] px-5 py-3 font-bold text-[#0E2A47] hover:bg-orange-300">
+            Find Your Application <ArrowDown class="h-4 w-4" aria-hidden="true" />
+          </a>
+          <a href="#inquiry" class="rounded-lg border border-white/40 px-5 py-3 font-bold text-white hover:bg-white/10">Discuss Your Project</a>
+        </div>
+      </div>
+      <img src={featuredImage} alt="" width="800" height="500" fetchpriority="high"
+        class="aspect-[16/7] w-full rounded-lg object-cover md:absolute md:inset-y-0 md:left-[48%] md:-z-10 md:h-full md:w-[52%] md:rounded-none md:[clip-path:polygon(16%_0,100%_0,100%_100%,0_100%)]" />
+    </div>
+  </section>
+
+  <section id="applications" class="scroll-mt-28 bg-slate-50 py-12 md:py-16" aria-labelledby="applications-title">
+    <div class="container-wrap">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+      <h2 id="applications-title" class="text-3xl font-black tracking-tight text-[#0E2A47] md:text-4xl">Find your application</h2>
+      <nav aria-label="Application groups" class="flex flex-wrap gap-2">
+        {groups.map((group) => (
+          <a class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-[#0E2A47] hover:border-[#0E2A47]" href={`#${group.id}`}>
+            {group.label}
+          </a>
+        ))}
+      </nav>
+      </div>
+      {groups.map((group) => (
+        <section id={group.id} aria-labelledby={`${group.id}-title`} class="mt-10 scroll-mt-28 border-t border-slate-200 pt-7">
+          <h3 id={`${group.id}-title`} class="mb-5 text-xl font-extrabold text-[#0E2A47]">{group.label}</h3>
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {group.items.map((app) => (
+              <a href={`${base}applications/${app.slug}/`}
+                class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-shadow hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0E2A47]">
+                <img src={app.image} alt="" width="640" height="360" loading="lazy" decoding="async" class="aspect-video w-full object-cover" />
+                <div class="flex flex-1 flex-col p-5">
+                  <h4 class="text-xl font-extrabold text-[#0E2A47]">{app.title}</h4>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">{app.summary}</p>
+                  <ul aria-label="Material options" class="mb-5 mt-4 flex flex-wrap gap-2">
+                    {materials[app.slug].map((material) => (
+                      <li class="rounded bg-slate-100 px-2 py-1 text-xs font-medium text-slate-700">{material}</li>
+                    ))}
+                  </ul>
+                  <span aria-hidden="true" class="mt-auto flex items-center gap-2 text-sm font-bold text-[#A54409]">
+                    View solution <ArrowRight class="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </section>
+  <div class="[&>#inquiry]:scroll-mt-24">
+    <CTA />
+  </div>
 </Layout>

@@ -3,10 +3,12 @@ import { site } from '../data/site';
 import EmailLink from './EmailLink.astro';
 import Turnstile from './Turnstile.astro';
 import FormAjax from './FormAjax.astro';
+const { application } = Astro.props as { application?: string };
+const projectBrief = application ? `Project location:\nSubstrate or detail:\nEstimated area or quantity:\nProject requirements:\n` : undefined;
 const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?text=Hi%2C%20I'm%20interested%20in%20your%20waterproofing%20materials.";
 ---
 
-<section class="bg-white py-16" id="inquiry" aria-labelledby="inq-title">
+<section class="scroll-mt-24 bg-white py-16" id="inquiry" aria-labelledby="inq-title">
   <div class="container mx-auto px-4">
     <div class="rounded-[2rem] bg-gradient-to-br from-[#0E2A47] to-[#1F4E8C] px-5 pt-8 pb-12 md:p-12 shadow-2xl relative overflow-hidden">
       <!-- Background Decorative Elements -->
@@ -90,8 +92,9 @@ const whatsappLink = "https://wa.me/" + site.whatsapp.replace(/\D/g, '') + "?tex
               </select>
             </div>
             <div>
+              {application && <input type="hidden" name="Application" value={application} />}
               <label for="message-text" class="block text-[10px] sm:text-[11px] font-bold text-slate-600 uppercase tracking-widest mb-1.5 ml-1">Message</label>
-              <textarea id="message-text" name="Message" placeholder="How can we help you? (Quantity, Specifications...)" required class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all resize-none h-20 sm:h-32"></textarea>
+              <textarea id="message-text" name="Message" placeholder={projectBrief ?? "How can we help you? (Quantity, Specifications...)"} required class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm text-navy focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none transition-all resize-none h-28 sm:h-36"></textarea>
             </div>
 
             <Turnstile />

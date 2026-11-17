@@ -1,9 +1,84 @@
 ---
 import Layout from '@/layouts/Layout.astro';
+import { ArrowRight, ChevronRight } from 'lucide-astro';
+import { applications as cards } from '@/data/site';
 import CTA from '@/components/CTA.astro';
 import { applications } from '@/data/applications';
 export function getStaticPaths() { return applications.map((app) => ({ params: { slug: app.slug }, props: { app } })); }
 const { app } = Astro.props;
+const image = cards.find((card) => card.slug === app.slug)?.image;
+const base = import.meta.env.BASE_URL;
+const selection = {
+  'roof-waterproofing': {
+    intro: 'Compare waterproofing systems for new and existing concrete roofs, exposed flat roofs and complex roof details.',
+    options: [
+      ['Concrete flat roofs', 'Evaluate SBS or APP bitumen membranes for compatible concrete substrates. Confirm slope, drainage and whether the membrane will be exposed or protected.'],
+      ['Exposed single-ply roofs', 'Evaluate TPO or PVC where the specified roof assembly supports the membrane and attachment method. Confirm wind uplift and compatibility with the existing layers.'],
+      ['Renovation and roof details', 'Where open-flame work is restricted, review self-adhered systems. For drains, upstands and pipe penetrations, use compatible detailing accessories or liquid-applied materials.']
+    ],
+    checks: ['Parapet upstands and terminations', 'Drain flanges and overflow routes', 'Pipe penetrations and transitions'],
+    resource: ['Compare SBS and APP membranes', '/blog/sbs-vs-app-modified-bitumen-membranes/'],
+    related: ['Industrial & Metal Roofs', 'industrial-building']
+  },
+  'underground-waterproofing': {
+    intro: 'Choose below-grade waterproofing by construction sequence, access and groundwater conditions.',
+    options: [
+      ['Before the slab is poured', 'Evaluate pre-applied HDPE for blindside or under-slab work. Check the membrane-to-concrete bond, overlaps and the transition from the slab to the wall.'],
+      ['After the wall is cast', 'Where the outside face is accessible, evaluate self-adhered or modified bitumen membranes. Confirm wall preparation, termination, backfill protection and drainage.'],
+      ['Groundwater and construction joints', 'Confirm groundwater level and design pressure. Coordinate waterstops and penetrations with the specified waterproofing system.']
+    ],
+    checks: ['Slab-to-wall continuity', 'Service penetrations and construction joints', 'Protection before backfill'],
+    resource: ['Read the basement and foundation guide', '/blog/sbs-membrane-basement-foundation-waterproofing/']
+  },
+  'industrial-building': {
+    intro: 'Plan leak repairs and roof renovation for warehouses, factories and steel buildings.',
+    options: [
+      ['Localized leaks', 'Inspect side laps, fasteners, skylight curbs and penetrations. Evaluate compatible butyl flashing or detail coatings after checking corrosion, movement and substrate condition.'],
+      ['Coating-based refurbishment', 'For a sound metal roof, confirm adhesion, primer compatibility and reinforcement at details before considering a coating system.'],
+      ['Full roof renovation', 'Evaluate a TPO or PVC assembly where the existing deck and attachment design support it. Check wind loads, insulation, condensation risk and drainage.']
+    ],
+    checks: ['Metal sheet laps and fastener heads', 'Skylight curbs and service penetrations', 'Corrosion and roof movement'],
+    related: ['Roof Waterproofing', 'roof-waterproofing']
+  },
+  'tunnel-waterproofing': {
+    intro: 'Review sheet membrane systems for road, railway and subway tunnels based on drainage design and lining sequence.',
+    options: [
+      ['Drained tunnel designs', 'For an umbrella layout, coordinate the membrane coverage with side drains and outlets specified by the project engineer.'],
+      ['Undrained tunnel designs', 'For a full-round layout, confirm hydrostatic design pressure and how the membrane joins across the invert, walls and crown.'],
+      ['Membrane and protection layers', 'Evaluate project-approved PVC-P or FPO grades, compatible protective geotextile and the specified weld testing and inspection method.']
+    ],
+    checks: ['Protection against rough shotcrete', 'Welded seams and inspection access', 'Invert transitions and compartment boundaries'],
+    resource: ['Read the tunnel membrane selection guide', '/blog/tunnel-waterproofing-membrane-selection/']
+  },
+  'bridge-infrastructure': {
+    intro: 'Select a bridge deck waterproofing system around the concrete substrate, wearing course and project specification.',
+    options: [
+      ['Decks receiving asphalt overlays', 'Evaluate approved fully bonded bitumen sheets. Confirm compatibility with paving temperature, traffic loading and the required bond to the deck and wearing course.'],
+      ['Liquid-applied systems', 'Evaluate project-approved PU or polyurea where deck geometry favors a continuous coating. Verify cure conditions and compatibility with the specified overlay.'],
+      ['Drainage and terminations', 'Coordinate deck drains, edge terminations and movement joints with the drainage and paving designs.']
+    ],
+    checks: ['Concrete preparation and adhesion', 'Deck drains, kerbs and terminations', 'Overlay compatibility and paving temperature']
+  },
+  'bathroom-waterproofing': {
+    intro: 'Plan waterproofing for tiled bathrooms, showers and other wet areas, with separate checks for balconies and exposed locations.',
+    options: [
+      ['Tiled floors and shower walls', 'Evaluate polymer cement (JS) coatings for compatible mineral substrates. Confirm required coverage and suitability beneath the specified tile adhesive.'],
+      ['Balconies and exposed areas', 'Evaluate a compatible PU system where the exposure, finish and drainage design allow it. Confirm UV exposure, protection and standing-water requirements.'],
+      ['Wet-area details', 'Coordinate compatible detailing tapes or reinforcement with the coating at wall-to-floor corners, drains and pipe sleeves.']
+    ],
+    checks: ['Wall-to-floor corners', 'Drain flanges and floor falls', 'Pipe sleeves and transitions to dry areas'],
+    resource: ['Compare waterproof coating systems', '/categories/waterproof-coatings/']
+  },
+  'joint-detail-sealing': {
+    intro: 'Compare flashing and sealing materials for roof laps, perimeter details and service penetrations.',
+    options: [
+      ['Metal laps and flashings', 'Evaluate compatible butyl flashing tape for the metal or adjacent substrate. Confirm surface preparation, compression and exposure limits.'],
+      ['Compatible bituminous repairs', 'Evaluate self-adhesive bitumen flashing where the substrate and existing waterproofing allow it. Check temperature, primer and exposure requirements.'],
+      ['Structural movement joints', 'Use a designed joint assembly matched to the movement range and project specification. Check how it connects to the surrounding waterproofing.']
+    ],
+    checks: ['Lap orientation and water runoff', 'Substrate and sealant compatibility', 'Joint movement and exposure']
+  }
+}[app.slug];
 
 const appUrl = `https://www.tyuanwaterproof.com/applications/${app.slug}/`;
 const applicationSchema = {
@@ -39,39 +114,65 @@ const applicationSchema = {
   ]
 };
 ---
-<Layout title={`${app.title} | Waterproofing Solutions`} description={app.description} ogType="website">
+<Layout title={`${app.title} | Waterproofing Solutions`} description={app.description} ogImage={image} ogType="website">
   <script type="application/ld+json" is:inline set:html={JSON.stringify(applicationSchema)} />
-  <section class="bg-[#0E2A47] py-20 text-white border-b border-white/5">
-    <div class="container-wrap">
-      <p class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 text-white/70 text-[10px] font-bold uppercase tracking-widest mb-6">Application Solution</p>
-      <h1 class="text-4xl font-black text-white md:text-5xl lg:text-6xl tracking-tight">{app.title}</h1>
-      <p class="mt-6 max-w-3xl text-lg text-white/70 leading-relaxed font-medium">{app.intro}</p>
+  <section class="bg-[#0E2A47] text-white">
+    <div class="container-wrap grid items-center gap-7 py-9 md:grid-cols-2 md:gap-12 md:py-14">
+      <div>
+        <nav aria-label="Breadcrumb" class="mb-5 flex items-center gap-2 text-sm text-slate-300">
+          <a href={`${base}applications/`} class="hover:text-white hover:underline">Solutions</a>
+          <ChevronRight class="h-4 w-4" aria-hidden="true" />
+          <span aria-current="page">{app.title}</span>
+        </nav>
+        <h1 class="text-4xl font-black tracking-tight text-white md:text-5xl">{app.title}</h1>
+        <p class="mt-4 max-w-xl text-base leading-relaxed text-slate-200 md:text-lg">{selection.intro}</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#system-selection" class="rounded-lg bg-[#F58A1F] px-5 py-3 font-bold text-[#0E2A47] hover:bg-orange-300">Compare systems</a>
+          <a href="#inquiry" class="rounded-lg border border-white/40 px-5 py-3 font-bold text-white hover:bg-white/10">Discuss your project</a>
+        </div>
+      </div>
+      {image && <img src={image} alt="" width="800" height="500" fetchpriority="high" class="aspect-[16/8] w-full rounded-xl object-cover md:aspect-[8/5]" />}
     </div>
   </section>
-  <section class="py-16"><div class="container-wrap grid gap-10 lg:grid-cols-[.9fr_1.1fr]">
-    <div class="card">
-      <h2 class="text-2xl font-bold text-[#0B1E3B]">Recommended products</h2>
-      <div class="mt-6 space-y-3">
-        {app.recommended.map((item) => (
-          <a 
-            href={item.href} 
-            class="flex items-center justify-between group rounded-2xl bg-slate-50 border border-slate-100 px-5 py-4 transition-all hover:bg-white hover:border-[#3B82F6] hover:shadow-md hover:-translate-y-0.5"
-          >
-            <span class="font-bold text-[#102033] group-hover:text-[#3B82F6] transition-colors">{item.title}</span>
-            <svg class="w-4 h-4 text-slate-300 group-hover:text-[#3B82F6] transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
-          </a>
+  <section id="system-selection" class="scroll-mt-24 bg-slate-50 py-12 md:py-16" aria-labelledby="system-title">
+    <div class="container-wrap">
+      <h2 id="system-title" class="text-3xl font-black text-[#0E2A47]">Choose by project condition</h2>
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        {selection.options.map(([heading, text]) => (
+          <div class="rounded-xl border border-slate-200 border-t-4 border-t-[#F58A1F] bg-white p-5 md:p-6">
+            <h3 class="text-lg font-extrabold text-[#0E2A47]">{heading}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-700">{text}</p>
+          </div>
         ))}
       </div>
+      <div class="mt-8 rounded-xl bg-[#EAF1F7] p-6">
+        <h3 class="text-xl font-extrabold text-[#0E2A47]">Details to check</h3>
+        <ul class="mt-4 grid gap-3 md:grid-cols-3">
+          {selection.checks.map((check) => (
+            <li class="flex gap-3 text-sm font-medium text-[#0E2A47]"><span aria-hidden="true" class="font-bold text-[#A54409]">✓</span>{check}</li>
+          ))}
+        </ul>
+      </div>
     </div>
-    <div><h2 class="text-3xl font-bold">Solution notes</h2><div class="mt-6 grid gap-4">{app.points.map((point) => <div class="card"><p class="font-semibold">✓ {point}</p></div>)}</div></div>
-  </div></section>
-  {(app.slug === 'tunnel-waterproofing' || app.slug === 'underground-waterproofing' || app.slug === 'bathroom-waterproofing') && (
-    <section class="pb-16"><div class="container-wrap"><div class="card">
-      <h2 class="text-2xl font-bold text-[#0B1E3B]">Plan the waterproofing specification</h2>
-      {app.slug === 'tunnel-waterproofing' && <p class="mt-4 leading-relaxed text-slate-600">Compare construction sequence, drainage design and seam inspection in our <a class="font-semibold text-blue-700 underline" href="/blog/tunnel-waterproofing-membrane-selection/">tunnel waterproofing membrane selection guide</a> before requesting a project quotation.</p>}
-      {app.slug === 'underground-waterproofing' && <p class="mt-4 leading-relaxed text-slate-600">Use our <a class="font-semibold text-blue-700 underline" href="/blog/sbs-membrane-basement-foundation-waterproofing/">SBS basement and foundation waterproofing guide</a> to compare wall access, slab construction, joints and protection before backfill.</p>}
-      {app.slug === 'bathroom-waterproofing' && <p class="mt-4 leading-relaxed text-slate-600">Compare <a class="font-semibold text-blue-700 underline" href="/categories/waterproof-coatings/">waterproof coating types and selection checks</a> for the substrate, tiled finish and installation sequence.</p>}
-    </div></div></section>
-  )}
-  <CTA />
+  </section>
+  <section class="py-12 md:py-16" aria-labelledby="products-title">
+    <div class="container-wrap">
+      <h2 id="products-title" class="text-3xl font-black text-[#0E2A47]">Products and technical resources</h2>
+      <ul class="mt-6 grid gap-3 md:grid-cols-2">
+        {app.recommended.map((item) => (
+          <li>
+            <a href={`${base}${item.href.slice(1)}`} class="flex h-full items-center justify-between gap-3 rounded-lg border border-slate-200 px-4 py-4 font-semibold text-[#0E2A47] hover:border-[#F58A1F]">
+              {item.title}<ArrowRight class="h-4 w-4 shrink-0" aria-hidden="true" />
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div class="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm font-bold text-[#0E2A47]">
+        <a href={`${base}technical/`} class="underline underline-offset-4">Browse technical data</a>
+        {'resource' in selection && selection.resource && <a href={`${base}${selection.resource[1].slice(1)}`} class="underline underline-offset-4">{selection.resource[0]}</a>}
+        {'related' in selection && selection.related && <a href={`${base}applications/${selection.related[1]}/`} class="underline underline-offset-4">{selection.related[0]}</a>}
+      </div>
+    </div>
+  </section>
+  <CTA application={app.title} />
 </Layout>
