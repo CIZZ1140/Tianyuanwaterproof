@@ -164,3 +164,7 @@ Tianyuan offers Type I and Type II grades. Type I provides greater elongation fo
 Substrate condition determines preparation and primer selection. Corners, drains, cracks and other movement points may need reinforcement. Specify a protective finish for assemblies where the coating will not remain exposed.
 
 For a different material approach to interior wet areas, see [JS polymer cement waterproof coating](/products/polymer-cement-js-waterproof-coating-factory/). For sheet-based below-grade waterproofing, see [self-adhesive bitumen membrane](/products/self-adhesive-bitumen-waterproofing-membrane-wholesale/).
+
+### Need an A/B Reaction-Curing System?
+
+Compare our [two-component polyurethane waterproof coating](/products/two-component-polyurethane-waterproof-coating/) for applications requiring an A/B system. Review mixing requirements, substrate conditions and the protective finish against your project specification.
