@@ -2,6 +2,19 @@
 title: "Polymer Modified Asphalt Waterproof Coating | L & H Grades"
 displayName: "Polymer Modified Asphalt Coating"
 category: "waterproof-coatings"
+detail_layout: coating-v1
+coating_details:
+  intro: Water-based, cold-applied asphalt coating for protected concrete waterproofing. Available in L and H grades.
+  overview: For buried concrete, covered roofs and detailed junctions. Confirm compatibility when combining with sheet membranes.
+  notice: L grade prioritizes low-temperature flexibility; H grade prioritizes heat resistance. For direct weather exposure, request an exposed-use
+    system.
+  highlights:
+  - title: Cold-applied format
+    text: Apply without heating the coating or torching a sheet.
+  - title: L or H grade
+    text: Select by the required heat resistance and low-temperature flexibility.
+  - title: Continuous film
+    text: Coats prepared surfaces and complex details beneath the specified protection.
 featured: true
 order: 55
 meta_description: "Source water-based polymer modified asphalt waterproof coating in L and H grades. Compare heat resistance, low-temperature flexibility and bond strength for B2B projects."

@@ -2,6 +2,19 @@
 title: "Spray Polyurea Waterproof Coating | Pure & Hybrid A+B"
 displayName: "Spray Polyurea Waterproof Coating"
 category: "waterproof-coatings"
+detail_layout: coating-v1
+coating_details:
+  intro: Two-component spray coating for waterproofing and protective lining. Compare pure polyurea and polyurethane-polyurea hybrid grades.
+  overview: For engineered decks, underground works and protective lining. Share the substrate, service conditions and required finish for selection.
+  notice: Requires heated, high-pressure plural-component spray equipment. Initial setting time is not the return-to-service time. Confirm exposure
+    and approval requirements for each project.
+  highlights:
+  - title: Pure or hybrid grades
+    text: Compare separate performance tables to select the appropriate A+B system.
+  - title: Sprayed continuous layer
+    text: Follows curved surfaces and details with the specified primer and joint treatment.
+  - title: Project-specific finish
+    text: Specify protection, surfacing and inspection requirements with the coating.
 featured: true
 order: 55
 meta_description: "Compare pure and hybrid spray polyurea waterproof coating by gel time, tensile strength, elongation and A+B spray setup. Request a project-specific quote."

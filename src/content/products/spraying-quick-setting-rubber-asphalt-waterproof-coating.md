@@ -2,6 +2,19 @@
 title: "Spray Quick-Setting Rubber Asphalt Coating | A+B System"
 displayName: "Spray Quick-Setting Rubber Asphalt Coating"
 category: "waterproof-coatings"
+detail_layout: coating-v1
+coating_details:
+  intro: Two-component, spray-applied rubber asphalt coating for project waterproofing. Confirm the matched materials and spray setup before ordering.
+  overview: A sprayed waterproofing layer for prepared substrates and detailed junctions. Match the grade and assembly to the project conditions.
+  notice: Use the matched components and specified spray equipment. Confirm substrate preparation, film thickness, drying and protection requirements
+    in the product instructions.
+  highlights:
+  - title: Two-component spray system
+    text: Order the coating and companion component as a matched supply.
+  - title: Continuous coverage
+    text: Spray application follows prepared surfaces and details.
+  - title: Plan the complete assembly
+    text: Confirm drying, inspection and the protective finish for the intended use.
 featured: true
 order: 45
 meta_description: "Source two-component spray quick-setting rubber asphalt waterproof coating. Compare gel time, drying, elasticity and equipment needs for project procurement."

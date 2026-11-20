@@ -1,0 +1,120 @@
+---
+const { data, title, technicalData, technicalDataHybrid, isBitumenTapeIndexTable, isButylTapeIndexTable, isEpoxyFloorIndexTable, isJsGradeTable, isLaminatedShingleIndexTable, isNonCuringIndexTable, isPolymerAsphaltGradeTable, isPolyureaGradeTable, isPuCatalogTable, isSimpleTechnicalTable, isSprayAsphaltIndexTable, isThreeTabShingleIndexTable, isTpeTapeIndexTable } = Astro.props;
+---
+
+      {technicalData.length > 0 && (
+        <section id="technical-specifications" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4 tracking-tight">{isPolyureaGradeTable ? "Technical specifications — pure polyurea" : "Technical specifications"}</h2>
+          {data.technical_scope && <p class="mb-6 text-sm font-medium text-slate-500">{data.technical_scope.replace(/\s*\(Representative Configuration\)/g, "")}</p>}
+          <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+            <table class="w-full text-left text-sm border-collapse">
+              <caption class="sr-only">Technical specifications of {title}</caption>
+              <thead class="bg-slate-50">
+                <tr class="border-b border-slate-200">
+                  <th scope="col" class="px-6 py-4 font-black">{isTpeTapeIndexTable || isThreeTabShingleIndexTable || isLaminatedShingleIndexTable ? "Specification" : "Test Item"}</th>
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black">Unit</th>}
+                  {!isSimpleTechnicalTable && !isPuCatalogTable && <th scope="col" class="px-6 py-4 font-black">{isTpeTapeIndexTable || isLaminatedShingleIndexTable ? "Basis" : isThreeTabShingleIndexTable ? "Condition / Basis" : isJsGradeTable ? "Type I" : isEpoxyFloorIndexTable || isButylTapeIndexTable || isBitumenTapeIndexTable ? "Test Basis / Condition" : isNonCuringIndexTable || isPolymerAsphaltGradeTable || isSprayAsphaltIndexTable || isPolyureaGradeTable ? "Test Condition" : "Test Method"}</th>}
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black">{isPuCatalogTable ? "Type I" : isJsGradeTable ? "Type II" : isNonCuringIndexTable || isSprayAsphaltIndexTable || isPolyureaGradeTable || isEpoxyFloorIndexTable || isButylTapeIndexTable || isBitumenTapeIndexTable || isTpeTapeIndexTable || isThreeTabShingleIndexTable || isLaminatedShingleIndexTable ? "Project Index" : isPolymerAsphaltGradeTable ? "L Grade" : "Requirement"}</th>}
+                  {!isNonCuringIndexTable && !isSprayAsphaltIndexTable && !isPolyureaGradeTable && !isEpoxyFloorIndexTable && !isButylTapeIndexTable && !isBitumenTapeIndexTable && !isTpeTapeIndexTable && !isThreeTabShingleIndexTable && <th scope="col" class="px-6 py-4 font-black">{isPuCatalogTable ? "Type II" : isJsGradeTable ? "Type III" : isPolymerAsphaltGradeTable ? "H Grade" : "Result / Notes"}</th>}
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                {technicalData.map(row => (
+                  <tr class="hover:bg-blue-50/20 transition-colors">
+                    <td class="px-6 py-4 font-bold text-slate-800">{row.label}</td>
+                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.unit || "—"}</td>}
+                    {!isSimpleTechnicalTable && !isPuCatalogTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.standard || "—"}</td>}
+                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.requirement || "—"}</td>}
+                    {!isNonCuringIndexTable && !isSprayAsphaltIndexTable && !isPolyureaGradeTable && !isEpoxyFloorIndexTable && !isButylTapeIndexTable && !isBitumenTapeIndexTable && !isTpeTapeIndexTable && !isThreeTabShingleIndexTable && <td class="px-6 py-4 font-bold text-slate-900">{row.value || "Available on request"}</td>}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-2 text-[11px] font-medium text-slate-500 md:hidden">Swipe to view the full table →</p>
+          {data.technical_disclaimer && <p class="mt-4 text-sm font-medium text-slate-600">{data.technical_disclaimer}</p>}
+        </section>
+      )}
+
+      {technicalDataHybrid.length > 0 && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4 tracking-tight">Technical specifications — hybrid polyurea</h2>
+          <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+            <table class="w-full text-left text-sm border-collapse">
+              <caption class="sr-only">Technical specifications — Hybrid Polyurea</caption>
+              <thead class="bg-slate-50">
+                <tr>
+                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Test Item</th>
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Unit</th>}
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">{isPolyureaGradeTable ? "Test Condition" : "Test Method"}</th>}
+                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">{isPolyureaGradeTable ? "Technical Index" : "Requirement"}</th>}
+                  {!isPolyureaGradeTable && <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Result / Notes</th>}
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                {technicalDataHybrid.map(row => (
+                  <tr class="hover:bg-blue-50/20 transition-colors">
+                    <td class="px-6 py-4 font-bold text-slate-800">{row.label}</td>
+                    <td class="px-6 py-4 text-slate-600 font-medium">{row.unit || "—"}</td>
+                    <td class="px-6 py-4 text-slate-600 font-medium">{row.standard || "—"}</td>
+                    <td class="px-6 py-4 text-slate-600 font-medium">{row.requirement || "—"}</td>
+                    {!isPolyureaGradeTable && <td class="px-6 py-4 font-bold text-slate-900">{row.value || "Available on request"}</td>}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
+      {data.standards_mapping && (
+        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
+          <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4 border-b border-slate-100 pb-6">
+            <div>
+              <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-1 tracking-tight">Standards & test methods</h2>
+              <p class="text-sm font-medium text-slate-500">Product standards and test methods for engineering specifications</p>
+            </div>
+
+          </div>
+          
+          <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-slate-50">
+            <table class="w-full text-left text-sm border-collapse">
+              <caption class="sr-only">Standards & test methods of {title}</caption>
+              <thead>
+                <tr class="bg-slate-100/50">
+                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Property</th>
+                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">China (GB)</th>
+                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">USA (ASTM)</th>
+                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Europe (EN)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200 bg-white">
+                {data.standards_mapping.map((item: any) => (
+                  <tr class="hover:bg-blue-50/20 transition-colors">
+                    <td class="px-6 py-4 font-bold text-slate-800">{item.property}</td>
+                    <td class="px-6 py-4 font-medium text-slate-600">
+                      {item.gb === 'FULL MATCH' || item.gb === 'GB/T 18242' ? (
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-emerald-100 text-emerald-700 border border-emerald-200 tracking-tighter">{item.gb}</span>
+                      ) : item.gb}
+                    </td>
+                    <td class="px-6 py-4 font-medium text-slate-600">
+                      {item.astm === 'Equivalent' ? (
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-blue-100 text-blue-700 border border-blue-200 tracking-tighter">{item.astm}</span>
+                      ) : item.astm}
+                    </td>
+                    <td class="px-6 py-4 font-medium text-slate-600">
+                      {item.en === 'Equivalent' ? (
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-blue-100 text-blue-700 border border-blue-200 tracking-tighter">{item.en}</span>
+                      ) : item.en}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-2 text-[11px] font-medium text-slate-500 md:hidden">Swipe to view the full table →</p>
+          <p class="mt-6 text-[11px] font-medium text-slate-600 italic bg-slate-50 p-4 rounded-xl border border-slate-100">
+            Test methods and certification requirements depend on the selected product and destination market. Our technical team supports document matching for your specification.
+          </p>
+        </section>
+      )}

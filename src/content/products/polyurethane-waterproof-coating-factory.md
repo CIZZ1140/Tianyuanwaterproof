@@ -2,6 +2,18 @@
 title: "Single-Component PU Waterproof Coating | Type I & II"
 displayName: "Single-Component PU Waterproof Coating"
 category: "waterproof-coatings"
+detail_layout: coating-v1
+coating_details:
+  intro: Single-component, moisture-curing PU coating for protected concrete waterproofing. Available in Type I and Type II grades.
+  overview: For below-grade concrete, wet areas, balconies and protected roofs. Choose a grade to suit the required strength and movement.
+  notice: A protective finish is required for roof applications. Confirm substrate moisture limits and primer selection before use.
+  highlights:
+  - title: One-component supply
+    text: No separate A/B proportioning; follow the supplied stirring and handling instructions.
+  - title: Type I or Type II
+    text: Compare elongation, tensile strength and tear strength for your project.
+  - title: Coverage around details
+    text: Liquid application follows corners, drains and pipe penetrations.
 featured: true
 order: 65
 meta_description: "Factory-direct single-component PU waterproof coating in Type I and Type II grades for protected below-grade, wet-area and roofing systems. Request a quote or TDS."

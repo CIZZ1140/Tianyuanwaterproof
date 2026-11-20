@@ -3,6 +3,18 @@ title: "Two-Component Polyurethane Waterproof Coating | Tianyuan"
 displayName: "Two-Component Polyurethane Waterproof Coating"
 category: "waterproof-coatings"
 order: 66
+detail_layout: "coating-v1"
+coating_details:
+  intro: "A two-component liquid coating for continuous, flexible waterproofing on prepared concrete. Suitable for basements, wet areas and protected roof assemblies."
+  overview: "For prepared concrete in basements, wet areas, terraces and roofs with a protective finish. Apply after treating corners, joints and pipe penetrations."
+  notice: "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system."
+  highlights:
+    - title: "Continuous, flexible film"
+      text: "Forms a continuous waterproofing layer over the prepared substrate."
+    - title: "Coats corners and penetrations"
+      text: "Applied around drains, joints and pipe penetrations, with reinforcement where required."
+    - title: "Applied in successive coats"
+      text: "Builds the specified waterproofing thickness over successive coats."
 meta_description: "Tianyuan two-component polyurethane waterproof coating for basements, wet areas and protected roofs. Explore A/B mixing, application and project enquiries."
 description: "A/B reaction-curing polyurethane coating for continuous waterproofing in basements, wet areas and protected roof assemblies."
 product_category: "Waterproof Coatings"
@@ -22,7 +34,7 @@ gallery:
     title: "A/B packaging design"
     alt: "Illustration of Tianyuan two-component polyurethane coating packaging, Part A and Part B"
   - image: "/images/two-component-pu-reference1-v4.webp"
-    title: "Concrete deck waterproofing"
+    title: "Concrete deck waterproofing — application illustration"
     alt: "Application illustration of coating spread on a concrete deck before a protective finish"
   - image: "/images/two-component-pu-reference3-v4.webp"
     title: "Roller application detail"
@@ -34,15 +46,15 @@ spec_table:
   - label: "Product Form"
     value: "Two liquid components: Part A and Part B"
   - label: "Curing Mechanism"
-    value: "Chemical reaction after mixing the two components"
+    value: "Reaction-curing after A/B mixing"
   - label: "Main Applications"
     value: "Basements, wet areas, terraces and non-exposed roofs"
   - label: "Application Method"
     value: "Brush or scraper application in successive coats"
-  - label: "Roof Service"
-    value: "Non-exposed waterproofing beneath a protective finish"
-  - label: "Detail Treatment"
-    value: "Additional waterproofing at corners, pipe penetrations and joints"
+  - label: "Protective Finish"
+    value: "Required; confirm compatibility with the project design"
+  - label: "Critical Details"
+    value: "Corners, drains, joints and pipe penetrations"
 features:
   - title: "Continuous Waterproofing Film"
     text: "The mixed material cures into a flexible, continuous layer that follows the shape of the prepared substrate."
@@ -58,16 +70,16 @@ features:
     icon: "ruler"
 applications:
   - title: "Basements & Below-Grade Concrete"
-    text: "For waterproofing prepared concrete surfaces in protected below-grade assemblies, with particular attention to joints and penetrations."
+    text: "Apply to prepared concrete and protect the coating before backfilling. Treat joints and penetrations as part of the waterproofing system."
     icon: "building"
   - title: "Bathrooms & Kitchens"
-    text: "For wet-area waterproofing beneath the designed protective finish, with additional treatment around drains and wall-floor junctions."
+    text: "Use beneath the specified protective finish. Reinforce drains and wall-to-floor junctions as required."
     icon: "droplets"
   - title: "Terraces"
-    text: "For terrace waterproofing beneath a compatible protective finish. Coordinate drainage, movement joints and the final covering with the waterproofing design."
+    text: "Use beneath a compatible protective finish. Include drainage and movement joints in the waterproofing design."
     icon: "layers"
   - title: "Non-Exposed Roofs"
-    text: "For roof assemblies incorporating a protective layer. Include the protective finish and drainage details in the roof waterproofing design."
+    text: "Use within a roof assembly with a protective layer and designed drainage. For an exposed roof, request a system recommendation."
     icon: "shield"
 technical_data:
   - label: "Part A"
@@ -82,13 +94,13 @@ technical_data:
     value: "Prepare substrate, reinforce details, coat the main area, seal edges, inspect and protect"
 application_guide:
   - title: "Prepare the Substrate"
-    text: "Use a sound, smooth, clean substrate without standing water. Repair defects and prepare corners, joints and penetrations before coating. Select substrate preparation and primer for the project system."
+    text: "Clean and repair the substrate; remove standing water. Prepare corners and joints, and use the primer specified for the system."
   - title: "Mix Part A & Part B"
-    text: "Measure the components in the product-specified proportion. Use clean, dry mixing equipment and stir until uniform. Plan batch size around the specified working time."
-  - title: "Detail & Coat"
-    text: "Treat corners, pipe roots and joints first, incorporating reinforcement where specified. Brush or scrape successive coats evenly; apply each coat only after the previous layer has cured sufficiently."
+    text: "Measure A and B using the ratio and measurement basis on the product label. Mix uniformly with clean, dry equipment and use within the specified working time."
+  - title: "Treat Details & Apply Coats"
+    text: "Reinforce critical details as specified, then brush or scrape on even coats. Follow the product instructions for thickness and intervals between coats."
   - title: "Inspect & Protect"
-    text: "Check coating continuity and specified film thickness, seal edges and complete the required inspection before installing the designed protective layer."
+    text: "Check for gaps, confirm film thickness and seal edges. Complete the specified inspection before installing the protective finish."
 supply_info:
   - title: "Project Details"
     text: "Send the waterproofing location, substrate, protected or exposed service conditions and project specification."
@@ -106,28 +118,24 @@ related_products:
     image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating.webp"
     href: "/products/polymer-cement-js-waterproof-coating-factory/"
 faqs:
-  - question: "What is a two-component polyurethane waterproof coating?"
-    answer: "It is an A/B liquid-applied system. The components are mixed before application and react to form a continuous, flexible waterproofing film."
   - question: "How does it differ from single-component polyurethane coating?"
-    answer: "The two-component product requires proportioning and mixing Part A and Part B. The single-component product is supplied as one component and cures through reaction with moisture in the air. Selection depends on the application, handling requirements and project specification."
+    answer: "This product requires mixing Part A and Part B before application. Single-component PU does not require separate A/B mixing and cures with moisture. Choose according to the project specification and site handling requirements."
   - question: "What mixing ratio should be used?"
-    answer: "Measure Part A and Part B according to the ratio and measurement basis on the supplied product label, then mix thoroughly using clean, dry equipment."
+    answer: "Use the ratio and measurement basis on the supplied product label. Request the product instructions before ordering so your team can plan mixing and batch sizes."
   - question: "Can it remain exposed on a roof?"
-    answer: "The roof application described here is a non-exposed assembly with a protective finish. For a directly exposed roof, provide the full roof build-up for a separate system recommendation."
-  - question: "How much material is needed and how long is the working time?"
-    answer: "Quantity depends on the specified film thickness, substrate profile and application losses. Use the supplied application instructions to plan batch sizes, working time and coat intervals."
+    answer: "A protective finish is required for this application. For a roof exposed directly to sunlight or traffic, send your roof build-up and exposure conditions for a system recommendation."
+  - question: "How much coating should I order?"
+    answer: "Send the application area, substrate condition and required film thickness for a quantity estimate. Allow for substrate profile and application losses; confirm coverage and working time in the product instructions."
+  - question: "What packaging and lead time are available?"
+    answer: "Request A/B pack sizes, total set weight and lead time with your quotation. Include your required quantity and destination port."
   - question: "What should I provide for a quotation?"
-    answer: "Send the application, substrate, area or quantity, required performance, protective finish and destination port. Include drawings or a specification where available."
+    answer: "Send the application, substrate, area or quantity, and destination port. Add the required film thickness, performance criteria or project specification if available."
 ---
 
-## A/B Polyurethane Waterproofing for Protected Assemblies
+## Choosing a Coating for Your Project
 
-Two-component polyurethane waterproof coating is supplied as a reactive pair. After the components are proportioned and mixed, the liquid can be applied over the prepared substrate and around details to form a continuous waterproofing layer.
+Consider the substrate, exposure, protective finish and site mixing arrangements together. Confirm the mixing ratio, working time and coat intervals in the instructions supplied for the selected product.
 
-Successful application requires more than coating the main surface. Corners, penetrations, movement joints, terminations and the protective finish should be considered as part of the assembly. The mixing ratio, mixed working time and coat intervals must match the supplied product and site conditions.
+Compare [single-component polyurethane coating](/products/polyurethane-waterproof-coating-factory/) if separate A/B mixing is unsuitable for your site. For interior wet areas, [JS polymer cement coating](/products/polymer-cement-js-waterproof-coating-factory/) is another option to review against the project specification.
 
-### Choosing Between One-Component and Two-Component PU
-
-Choose with the project specification and site handling in mind. A two-component system requires accurate A/B proportioning and mixing before application. A [single-component polyurethane waterproof coating](/products/polyurethane-waterproof-coating-factory/) uses a moisture-curing mechanism and does not require combining separate A and B components. Component count alone does not determine which product has better strength, flexibility or suitability for a particular project.
-
-For an alternative material in interior wet areas, compare [JS polymer cement waterproof coating](/products/polymer-cement-js-waterproof-coating-factory/). Share the substrate, finish and project requirements when requesting a recommendation.
+Component count alone does not determine strength, flexibility or project suitability. Send your performance requirements or drawings for a product recommendation.

@@ -57,7 +57,9 @@ for(const path of localizedPaths) {
     assert.equal(localizedTables.length,tables.length,`Tables ${locale}${path}`);
     tables.forEach((table,index)=>{
       assert.equal(nodes(localizedTables[index],n=>n.tagName==='tr').length,nodes(table,n=>n.tagName==='tr').length,`Rows ${locale}${path}`);
-      assert.deepEqual(numbers(content(localizedTables[index])),numbers(content(table)),`Table values ${locale}${path}`);
+      // Cell boundaries separate measurements even when HTML minification removes whitespace.
+      const cellText = value => nodes(value,n=>['td','th'].includes(n.tagName)).map(content).join(' ');
+      assert.deepEqual(numbers(cellText(localizedTables[index])),numbers(cellText(table)),`Table values ${locale}${path}`);
     });
     const enScripts=nodes(english,n=>n.tagName==='script'&&get(n,'type')!=='application/ld+json').map(n=>[get(n,'src'),content(n)]);
     assert.deepEqual(nodes(doc,n=>n.tagName==='script'&&get(n,'type')!=='application/ld+json').map(n=>[get(n,'src'),content(n)]),enScripts,`Interaction scripts ${locale}${path}`);

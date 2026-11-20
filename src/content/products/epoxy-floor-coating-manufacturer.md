@@ -2,6 +2,20 @@
 title: "Epoxy Color Sand Self-Leveling Floor Coating | Project Supply"
 displayName: "Epoxy Color Sand Self-Leveling Floor Coating"
 category: "waterproof-coatings"
+detail_layout: coating-v1
+coating_details:
+  intro: Two-component epoxy and colored-quartz flooring for indoor concrete. Specify the appearance, texture and traffic requirements for your
+    project.
+  overview: For showrooms, commercial interiors and suitable industrial floors. Select the floor build-up by substrate condition and actual traffic.
+  notice: Indoor flooring system. Confirm concrete moisture, surface preparation, slip requirements and chemical exposure. Approve the color and
+    texture sample before bulk supply.
+  highlights:
+  - title: Colored-quartz finish
+    text: Choose the sand blend, texture and sealing layer for the required appearance.
+  - title: Matched floor build-up
+    text: Include primer, repairs, leveling and the selected topcoat in the quotation.
+  - title: Specify the traffic
+    text: Share pedestrian or equipment loads and cleaning conditions for system selection.
 product_category: "Waterproof Coatings"
 main_image: "https://img.tyuanwaterproof.com/products/epoxy-floor-paint.jpg"
 image: "https://img.tyuanwaterproof.com/products/epoxy-floor-paint.jpg"

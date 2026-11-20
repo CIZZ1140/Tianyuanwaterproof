@@ -141,6 +141,11 @@ export async function localizePages(directory) {
         if (!dictionary[value]) throw new Error(`Missing ${locale} translation: ${value}`);
         return dictionary[value];
       });
+      let productName = '';
+      if (path.startsWith('/products/') && path !== '/products/') {
+        const nodeText = node => node.nodeName === '#text' ? node.value : (node.childNodes || []).map(nodeText).join('');
+        walk(document, node => { if (node.tagName === 'h1') productName = nodeText(node).trim(); });
+      }
       walk(document,node => {
         if (node.tagName==='html') set(node,'lang',locale);
         if (node.tagName==='a' && !hasClass(node.parentNode,'language-switcher')) {
@@ -150,6 +155,7 @@ export async function localizePages(directory) {
           if (original?.startsWith('https://wa.me/') && original.includes('text=')) {
             const whatsapp=new URL(original);
             whatsapp.searchParams.set('text',locale==='fr'?'Bonjour, je souhaite obtenir des informations sur les matériaux d’étanchéité Tianyuan Waterproof et un devis.':locale==='ar'?'مرحباً، أرغب في معلومات عن مواد العزل المائي من Tianyuan Waterproof وطلب عرض سعر.':locale==='pt-br'?'Olá, tenho interesse nos materiais impermeabilizantes da Tianyuan Waterproof. Solicito informações sobre o produto e um orçamento.':locale==='es'?'Hola, me interesan los materiales impermeabilizantes de Tianyuan Waterproof. Solicito información del producto y una cotización.':locale==='th'?'สวัสดี สนใจวัสดุกันซึมของ Tianyuan Waterproof ขอข้อมูลผลิตภัณฑ์และใบเสนอราคา':'Xin chào, tôi quan tâm đến vật liệu chống thấm Tianyuan Waterproof. Vui lòng gửi thông tin và báo giá.');
+            if (productName) whatsapp.searchParams.set('text', whatsapp.searchParams.get('text') + '\n' + productName + '\n' + origin + `/${locale}${path}`);
             set(node,'href',whatsapp.href);
           }
         }

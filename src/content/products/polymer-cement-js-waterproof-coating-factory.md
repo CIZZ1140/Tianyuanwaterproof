@@ -2,6 +2,19 @@
 title: "JS Polymer Cement Waterproof Coating | Type I, II & III"
 displayName: "JS Polymer Cement Waterproof Coating"
 category: "waterproof-coatings"
+detail_layout: coating-v1
+coating_details:
+  intro: Two-component polymer cement coating for concrete and mortar waterproofing. Choose Type I, II or III to match your project.
+  overview: For bathrooms, balconies and protected below-grade concrete. Water-retaining applications require project-specific review.
+  notice: Select the grade before ordering. Mixing ratios and liquid/powder pack sizes must match that grade. Confirm any required water-contact
+    approvals separately.
+  highlights:
+  - title: Three grade options
+    text: Compare flexibility, tensile strength and adhesion before selecting Type I, II or III.
+  - title: For mineral substrates
+    text: Designed for prepared concrete and mortar within a compatible protected assembly.
+  - title: Liquid + powder kit
+    text: Order matched components and confirm the grade-specific packing list.
 featured: true
 order: 60
 meta_description: "Two-component JS polymer cement waterproof coating for bathrooms, balconies and below-grade concrete. Compare Type I/II/III and request a quote."

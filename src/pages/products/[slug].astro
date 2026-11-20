@@ -2,6 +2,8 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import CTA from "../../components/CTA.astro";
+import CoatingProductDetails from "../../components/CoatingProductDetails.astro";
+import ProductTechnicalSpecifications from "../../components/ProductTechnicalSpecifications.astro";
 import { productImage, productImageSet } from "../../utils/productImages";
 import {
   ArrowRight,
@@ -107,8 +109,10 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 const data = entry.data as any;
+const coatingLayout = data.category === "waterproof-coatings" && data.detail_layout === "coating-v1";
 
 const title = normalizeString(data.displayName || data.title, "Product Detail");
+const productWhatsappHref = `https://wa.me/8615263640998?text=${encodeURIComponent(`Hi, I'm interested in ${title}. Could you help me choose a suitable product and share pricing and packaging options?`)}`;
 // SEO title: use frontmatter title when explicitly different from displayName (custom crafted), otherwise fallback to "displayName | Brand"
 const hasCustomSeoTitle = data.displayName && data.title && data.title.trim() !== data.displayName.trim();
 const seoTitle = hasCustomSeoTitle ? data.title.trim() : `${title} | Tianyuan Waterproof`;
@@ -139,7 +143,7 @@ const displayImage = productImage(initialImage);
 const mainImageSrcset = productImageSet(initialImage);
 
 const heroTags = data.hero_tags || [];
-const heroDesc = normalizeString(data.hero_description, `Industrial grade ${title} for global B2B supply.`);
+const heroDesc = normalizeString(coatingLayout ? data.coating_details?.intro : data.hero_description, data.hero_description || `Industrial grade ${title} for global B2B supply.`);
 const installationSummary = normalizeString(data.installation_summary, "Refer to the applicable product TDS for substrate preparation, application conditions and detailing requirements.");
 
 const specTable = normalizeRows(data.spec_table || []);
@@ -170,22 +174,28 @@ const projectReferences = Array.isArray(data.project_references) ? data.project_
 const faqs = (data.faqs || []).filter((f: any) => f.question && f.answer);
 
 const allProducts = await getCollection("products");
-const autoRelated = allProducts
-  .filter(p => p.slug !== entry.slug && p.data.category === entry.data.category)
-  .slice(0, 4)
+const autoRelated = [
+  ...allProducts.filter(p => p.slug !== entry.slug && p.data.category === entry.data.category),
+  ...allProducts.filter(p => p.slug !== entry.slug && p.data.category !== entry.data.category),
+]
   .map(p => ({
     href: `/products/${p.slug}/`,
     image: normalizeAsset(p.data.main_image || p.data.image),
     title: p.data.displayName || p.data.title,
   }));
-// Fallback to hand-curated related_products when the category has no siblings
-// (e.g. first product in a new category like roofing-accessories)
+// Keep curated recommendations first, then fill with category siblings and other products.
 const manualRelated = (data.related_products || []).slice(0, 4).map((rp: { href: string; image: string; title: string }) => ({
   href: rp.href,
   image: normalizeAsset(rp.image),
   title: rp.title,
 }));
-const relatedProducts = manualRelated.length > 0 ? manualRelated : autoRelated;
+const relatedHrefs = new Set([`/products/${entry.slug}`]);
+const relatedProducts = [...manualRelated, ...autoRelated].filter((product) => {
+  const href = product.href.replace(/\/+$/, "");
+  if (relatedHrefs.has(href)) return false;
+  relatedHrefs.add(href);
+  return true;
+}).slice(0, 4);
 
 const heroSpecCards = isThreeTabShingleIndexTable ? [
   { label: "Shingle Profile", value: "Single-layer, three-tab", icon: Boxes },
@@ -224,6 +234,7 @@ const packagingIcons = [Package, Truck, Box, Factory, FileText, FlaskConical];
 
 const hasBody = entry.body && entry.body.replace(/---[\s\S]*?---/, "").trim().length > 0;
 const isSimpleTechnicalTable = technicalData.every(row => !row.unit && !row.standard && !row.requirement);
+const technicalProps = { data, title, technicalData, technicalDataHybrid, isBitumenTapeIndexTable, isButylTapeIndexTable, isEpoxyFloorIndexTable, isJsGradeTable, isLaminatedShingleIndexTable, isNonCuringIndexTable, isPolymerAsphaltGradeTable, isPolyureaGradeTable, isPuCatalogTable, isSimpleTechnicalTable, isSprayAsphaltIndexTable, isThreeTabShingleIndexTable, isTpeTapeIndexTable };
 
 // B2B Schema — inquiry-based; no price/offers/rating fabricated
 const productJsonLd = {
@@ -291,13 +302,13 @@ const breadcrumbLd = {
       <div class="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 lg:p-10">
         <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <!-- Left: Gallery Switcher -->
-          <div class="flex flex-col">
+          <div class="flex min-w-0 flex-col">
             <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 flex-1 min-h-[300px] flex items-center justify-center relative shadow-inner">
               <img 
                 id="main-product-image" 
                 src={displayImage?.src || initialImage}
                 data-fallback={initialImage}
-                alt={title}
+                alt={gallery[0]?.alt || title}
                 width={displayImage?.width || data.image_width || 1200}
                 height={displayImage?.height || data.image_height || 900}
                 fetchpriority="high" 
@@ -331,7 +342,7 @@ const breadcrumbLd = {
             )}
           </div>
           <!-- Right: Info Area -->
-          <div class="flex flex-col">
+          <div class="flex min-w-0 flex-col">
             <h1 class="text-3xl font-black text-slate-950 sm:text-4xl lg:text-5xl tracking-tight leading-tight">{title}</h1>
             <p class="mt-6 text-base leading-8 text-slate-600 sm:text-lg">{heroDesc}</p>
             
@@ -355,13 +366,13 @@ const breadcrumbLd = {
               </div>
             )}
 
-            <div class="mt-10 flex flex-col items-center gap-3 sm:flex-row">
+            <div class="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap">
               <a href={contactHref("quote")} class="inline-flex w-full items-center justify-center rounded-xl bg-blue-700 px-10 py-3.5 text-sm font-black text-white shadow-xl shadow-blue-700/20 transition hover:bg-blue-800 sm:w-auto">Get Factory Quote</a>
-              <a href="https://wa.me/8615263640998" target="_blank" rel="noopener" class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-emerald-100 bg-emerald-50 px-8 py-3.5 text-sm font-black text-emerald-700 transition hover:bg-emerald-100 sm:w-auto"><MessageCircle class="h-4 w-4" /> WhatsApp</a>
+              <a href={productWhatsappHref} target="_blank" rel="noopener" class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-emerald-100 bg-emerald-50 px-8 py-3.5 text-sm font-black text-emerald-700 transition hover:bg-emerald-100 sm:w-auto"><MessageCircle class="h-4 w-4" /> Chat on WhatsApp</a>
               <a href={contactHref("tds")} class="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-blue-100 bg-blue-50 px-8 py-3.5 text-sm font-black text-blue-800 transition hover:bg-blue-100 sm:w-auto"><FileText class="h-4 w-4" /> Request TDS</a>
             </div>
             
-            <p class="mt-4 text-[11px] font-medium text-slate-600 italic">For project-specific pricing, send your technical requirements and destination port.</p>
+            <p class="mt-4 text-[11px] font-medium text-slate-600 italic">{coatingLayout ? "Start with your application and approximate quantity. Ask us about product selection, pricing and packaging." : "For project-specific pricing, send your technical requirements and destination port."}</p>
 
             <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-[10px] font-black uppercase tracking-widest text-slate-600 border-t border-slate-100 pt-6 mt-auto">
               <span class="flex items-center gap-2"><Factory class="h-3.5 w-3.5" /> Direct Supply</span>
@@ -375,6 +386,31 @@ const breadcrumbLd = {
 
     <!-- 3. Full Width Modular Blocks -->
     <div class="mx-auto w-full max-w-[1680px] space-y-4 px-4 sm:px-6 lg:px-8">
+      {coatingLayout && <CoatingProductDetails
+        title={title}
+        overview={data.coating_details?.overview || heroDesc}
+        notice={data.coating_details?.notice}
+        applications={applications}
+        features={normalizeCards(data.coating_details?.highlights || features)}
+        specs={specTable}
+        technical={technicalData}
+        steps={applicationGuide}
+        images={gallery.length > 1 ? gallery.slice(1) : gallery.length ? gallery : [{ image: mainImage, title, alt: title }]}
+        procurement={[...packaging, ...supplyInfo, ...loadingData.map(row => ({ title: row.label, text: row.value }))]}
+        selectionNotes={quickFacts}
+        showComponentDetails={entry.slug === "two-component-polyurethane-waterproof-coating"}
+        hasOverview={hasBody}
+        quoteHref={contactHref("quote")}
+        whatsappHref={productWhatsappHref}
+        tdsHref={contactHref("tds")}
+      >
+        <Content />
+        {entry.slug !== "two-component-polyurethane-waterproof-coating" && <div slot="technical" class="space-y-4">
+      <ProductTechnicalSpecifications {...technicalProps} />
+
+        </div>}
+      </CoatingProductDetails>}
+      {!coatingLayout && <>
       
       {specTable.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
@@ -470,122 +506,7 @@ const breadcrumbLd = {
         </section>
       )}
 
-      {technicalData.length > 0 && (
-        <section id="technical-specifications" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4 tracking-tight">{isPolyureaGradeTable ? "Technical specifications — pure polyurea" : "Technical specifications"}</h2>
-          {data.technical_scope && <p class="mb-6 text-sm font-medium text-slate-500">{data.technical_scope.replace(/\s*\(Representative Configuration\)/g, "")}</p>}
-          <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
-            <table class="w-full text-left text-sm border-collapse">
-              <caption class="sr-only">Technical specifications of {title}</caption>
-              <thead class="bg-slate-50">
-                <tr class="border-b border-slate-200">
-                  <th scope="col" class="px-6 py-4 font-black">{isTpeTapeIndexTable || isThreeTabShingleIndexTable || isLaminatedShingleIndexTable ? "Specification" : "Test Item"}</th>
-                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black">Unit</th>}
-                  {!isSimpleTechnicalTable && !isPuCatalogTable && <th scope="col" class="px-6 py-4 font-black">{isTpeTapeIndexTable || isLaminatedShingleIndexTable ? "Basis" : isThreeTabShingleIndexTable ? "Condition / Basis" : isJsGradeTable ? "Type I" : isEpoxyFloorIndexTable || isButylTapeIndexTable || isBitumenTapeIndexTable ? "Test Basis / Condition" : isNonCuringIndexTable || isPolymerAsphaltGradeTable || isSprayAsphaltIndexTable || isPolyureaGradeTable ? "Test Condition" : "Test Method"}</th>}
-                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black">{isPuCatalogTable ? "Type I" : isJsGradeTable ? "Type II" : isNonCuringIndexTable || isSprayAsphaltIndexTable || isPolyureaGradeTable || isEpoxyFloorIndexTable || isButylTapeIndexTable || isBitumenTapeIndexTable || isTpeTapeIndexTable || isThreeTabShingleIndexTable || isLaminatedShingleIndexTable ? "Project Index" : isPolymerAsphaltGradeTable ? "L Grade" : "Requirement"}</th>}
-                  {!isNonCuringIndexTable && !isSprayAsphaltIndexTable && !isPolyureaGradeTable && !isEpoxyFloorIndexTable && !isButylTapeIndexTable && !isBitumenTapeIndexTable && !isTpeTapeIndexTable && !isThreeTabShingleIndexTable && <th scope="col" class="px-6 py-4 font-black">{isPuCatalogTable ? "Type II" : isJsGradeTable ? "Type III" : isPolymerAsphaltGradeTable ? "H Grade" : "Result / Notes"}</th>}
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-100">
-                {technicalData.map(row => (
-                  <tr class="hover:bg-blue-50/20 transition-colors">
-                    <td class="px-6 py-4 font-bold text-slate-800">{row.label}</td>
-                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.unit || "—"}</td>}
-                    {!isSimpleTechnicalTable && !isPuCatalogTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.standard || "—"}</td>}
-                    {!isSimpleTechnicalTable && <td class="px-6 py-4 text-slate-600 font-medium">{row.requirement || "—"}</td>}
-                    {!isNonCuringIndexTable && !isSprayAsphaltIndexTable && !isPolyureaGradeTable && !isEpoxyFloorIndexTable && !isButylTapeIndexTable && !isBitumenTapeIndexTable && !isTpeTapeIndexTable && !isThreeTabShingleIndexTable && <td class="px-6 py-4 font-bold text-slate-900">{row.value || "Available on request"}</td>}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p class="mt-2 text-[11px] font-medium text-slate-500 md:hidden">Swipe to view the full table →</p>
-          {data.technical_disclaimer && <p class="mt-4 text-sm font-medium text-slate-600">{data.technical_disclaimer}</p>}
-        </section>
-      )}
-
-      {technicalDataHybrid.length > 0 && (
-        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-4 tracking-tight">Technical specifications — hybrid polyurea</h2>
-          <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
-            <table class="w-full text-left text-sm border-collapse">
-              <caption class="sr-only">Technical specifications — Hybrid Polyurea</caption>
-              <thead class="bg-slate-50">
-                <tr>
-                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Test Item</th>
-                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Unit</th>}
-                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">{isPolyureaGradeTable ? "Test Condition" : "Test Method"}</th>}
-                  {!isSimpleTechnicalTable && <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">{isPolyureaGradeTable ? "Technical Index" : "Requirement"}</th>}
-                  {!isPolyureaGradeTable && <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Result / Notes</th>}
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-100">
-                {technicalDataHybrid.map(row => (
-                  <tr class="hover:bg-blue-50/20 transition-colors">
-                    <td class="px-6 py-4 font-bold text-slate-800">{row.label}</td>
-                    <td class="px-6 py-4 text-slate-600 font-medium">{row.unit || "—"}</td>
-                    <td class="px-6 py-4 text-slate-600 font-medium">{row.standard || "—"}</td>
-                    <td class="px-6 py-4 text-slate-600 font-medium">{row.requirement || "—"}</td>
-                    {!isPolyureaGradeTable && <td class="px-6 py-4 font-bold text-slate-900">{row.value || "Available on request"}</td>}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-      )}
-
-      {data.standards_mapping && (
-        <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-          <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4 border-b border-slate-100 pb-6">
-            <div>
-              <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-1 tracking-tight">Standards & test methods</h2>
-              <p class="text-sm font-medium text-slate-500">Product standards and test methods for engineering specifications</p>
-            </div>
-
-          </div>
-          
-          <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-slate-50">
-            <table class="w-full text-left text-sm border-collapse">
-              <caption class="sr-only">Standards & test methods of {title}</caption>
-              <thead>
-                <tr class="bg-slate-100/50">
-                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Property</th>
-                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">China (GB)</th>
-                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">USA (ASTM)</th>
-                  <th scope="col" class="px-6 py-4 font-black text-slate-700 uppercase text-[11px] tracking-wider">Europe (EN)</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-200 bg-white">
-                {data.standards_mapping.map((item: any) => (
-                  <tr class="hover:bg-blue-50/20 transition-colors">
-                    <td class="px-6 py-4 font-bold text-slate-800">{item.property}</td>
-                    <td class="px-6 py-4 font-medium text-slate-600">
-                      {item.gb === 'FULL MATCH' || item.gb === 'GB/T 18242' ? (
-                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-emerald-100 text-emerald-700 border border-emerald-200 tracking-tighter">{item.gb}</span>
-                      ) : item.gb}
-                    </td>
-                    <td class="px-6 py-4 font-medium text-slate-600">
-                      {item.astm === 'Equivalent' ? (
-                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-blue-100 text-blue-700 border border-blue-200 tracking-tighter">{item.astm}</span>
-                      ) : item.astm}
-                    </td>
-                    <td class="px-6 py-4 font-medium text-slate-600">
-                      {item.en === 'Equivalent' ? (
-                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-black bg-blue-100 text-blue-700 border border-blue-200 tracking-tighter">{item.en}</span>
-                      ) : item.en}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p class="mt-2 text-[11px] font-medium text-slate-500 md:hidden">Swipe to view the full table →</p>
-          <p class="mt-6 text-[11px] font-medium text-slate-600 italic bg-slate-50 p-4 rounded-xl border border-slate-100">
-            Test methods and certification requirements depend on the selected product and destination market. Our technical team supports document matching for your specification.
-          </p>
-        </section>
-      )}
+      <ProductTechnicalSpecifications {...technicalProps} />
 
       {applicationGuide.length > 0 ? (
         <section id="installation-guide" class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
@@ -701,6 +622,7 @@ const breadcrumbLd = {
         </section>
       )}
 
+      </>}
       {projectReferences.length > 0 && (
         <section class="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
           <h2 class="text-xl font-black text-slate-950 sm:text-2xl mb-8 tracking-tight">Project references</h2>
@@ -753,15 +675,17 @@ const breadcrumbLd = {
           </div>
         </section>}
         {relatedProducts.length > 0 && (
-          <section class="min-w-0 rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm">
-            <h2 class="text-xl font-black text-slate-950 mb-8 tracking-tight">Related product</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <section class="min-w-0 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 class="text-xl font-black text-slate-950 mb-5 tracking-tight">Related product</h2>
+            <div class={downloads.length > 0
+              ? "grid grid-cols-1 min-[480px]:grid-cols-2 gap-4 max-w-xl"
+              : "grid grid-cols-1 min-[480px]:grid-cols-2 xl:grid-cols-4 gap-4 max-w-[1168px]"}>
               {relatedProducts.map((rp: { href: string; image: string; title: string }) => (
-                <a href={rp.href} class="group flex flex-col gap-3">
+                <a href={rp.href} class="group flex min-w-0 max-w-[280px] flex-col gap-2">
                   <div class="aspect-[4/3] overflow-hidden rounded-2xl bg-slate-100 border border-slate-200">
                     <img src={productImage(rp.image, 480)?.src || rp.image} width={productImage(rp.image, 480)?.width} height={productImage(rp.image, 480)?.height} loading="lazy" decoding="async" class="h-full w-full object-contain transition duration-500 group-hover:scale-105" alt={rp.title} />
                   </div>
-                  <h3 class="text-xs font-black text-slate-900 line-clamp-1 group-hover:text-blue-700 transition-colors">{rp.title}</h3>
+                  <h3 class="text-xs font-black text-slate-900 line-clamp-2 group-hover:text-blue-700 transition-colors">{rp.title}</h3>
                 </a>
               ))}
             </div>

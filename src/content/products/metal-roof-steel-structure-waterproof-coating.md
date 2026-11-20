@@ -2,6 +2,21 @@
 title: "Metal Roof & Steel Structure Waterproof Coating"
 displayName: "Metal Roof Waterproof Coating"
 category: "waterproof-coatings"
+detail_layout: coating-v1
+coating_details:
+  intro: Acrylic-based coating for metal roofs and steel structures. Discuss your roof condition and leak locations to select a suitable coating
+    system.
+  overview: For metal roof sheets, gutters, flashing and junctions. Include substrate preparation, primer and detail reinforcement in the repair
+    plan.
+  notice: Remove loose rust and prepare the metal before coating. Confirm primer compatibility and reinforcement at laps, fasteners and joints
+    for the selected system.
+  highlights:
+  - title: For metal roof details
+    text: Coats prepared sheets, flashing and junctions within the selected roof system.
+  - title: Flexible coating layer
+    text: Accommodates movement within the limits of the specified system.
+  - title: Brush, roller or spray
+    text: Choose the application method for the roof geometry and product instructions.
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/metal-roof-acrylic-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/metal-roof-acrylic-coating.webp"
@@ -30,13 +45,7 @@ spec_table:
   - label: "Drying Time"
     value: "Touch dry: 2h / Full cure: 24h"
 
-quick_facts:
-  - title: "Rust & Leak Protection"
-    text: "Provides a seamless, rubber-like membrane that seals fasteners, laps, and joints while preventing rust formation on metal surfaces."
-  - title: "Energy Efficient"
-    text: "Reflects up to 85% of solar radiation, significantly reducing the surface temperature of the roof and lowering indoor cooling costs."
-  - title: "Superior Adhesion"
-    text: "Bonding strength exceeds 1.5 MPa on aluminum, galvanized steel, and rusted metal (when treated with primer)."
+quick_facts: []
 
 applications:
   - title: "Steel Structure Roofs"

@@ -2,6 +2,19 @@
 title: "Non-Curing Rubber Asphalt Coating Manufacturer | Hot-Applied"
 displayName: "Non-Curing Rubber Asphalt Waterproof Coating"
 category: "waterproof-coatings"
+detail_layout: coating-v1
+coating_details:
+  intro: Hot-applied rubber asphalt that remains tacky after cooling. Use beneath a compatible sheet membrane in protected waterproofing systems.
+  overview: For basement slabs and walls, podiums and protected roof decks. Select the coating and sheet membrane as a system.
+  notice: Requires controlled heating, a compatible sheet membrane and protection. The tacky coating is not a finished exposed or traffic-bearing
+    surface.
+  highlights:
+  - title: Stays tacky after cooling
+    text: Provides a bonding interface beneath the selected sheet membrane.
+  - title: Spray or scrape application
+    text: Use suitable heated equipment and the working temperature specified for the grade.
+  - title: 20 kg or 25 kg drums
+    text: Request the preferred drum size and quantity with your project quotation.
 featured: true
 order: 50
 meta_description: "Hot-applied non-curing rubber asphalt coating for protected basement and roof systems. Compare technical indices, membrane pairing and drum supply; request a quote."
