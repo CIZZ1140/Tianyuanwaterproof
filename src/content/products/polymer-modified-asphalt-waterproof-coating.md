@@ -4,6 +4,10 @@ displayName: "Polymer Modified Asphalt Coating"
 category: "waterproof-coatings"
 detail_layout: coating-v1
 coating_details:
+  application_images:
+  - image: /images/coating-polymerasphalt-application-v1.webp
+    title: Below-grade concrete waterproofing — application illustration
+    alt: 'Illustration: Below-grade concrete waterproofing'
   intro: Water-based, cold-applied asphalt coating for protected concrete waterproofing. Available in L and H grades.
   overview: For buried concrete, covered roofs and detailed junctions. Confirm compatibility when combining with sheet membranes.
   notice: L grade prioritizes low-temperature flexibility; H grade prioritizes heat resistance. For direct weather exposure, request an exposed-use
@@ -28,10 +32,20 @@ hero_tags:
   - "Cold Applied"
   - "Protected Waterproofing"
   - "Project Supply"
+main_image_caption: "Product packaging and application illustrations"
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-coating-v2.webp"
-    title: "Polymer Modified Asphalt Waterproof Coating"
-    alt: "Tianyuan polymer modified asphalt waterproof coating pail for project supply"
+- image: https://img.tyuanwaterproof.com/products/polymer-modified-asphalt-coating-v2.webp
+  title: Polymer Modified Asphalt Waterproof Coating
+  alt: Tianyuan polymer modified asphalt waterproof coating pail for project supply
+- image: /images/coating-polymerasphalt-gallery-brush-v1.webp
+  title: Cold-applied asphalt coating — illustration
+  alt: 'Illustration: Cold-applied asphalt coating'
+- image: /images/coating-polymerasphalt-gallery-film-v1.webp
+  title: Asphalt coating film detail — illustration
+  alt: 'Illustration: Asphalt coating film detail'
+- image: /images/coating-polymerasphalt-gallery-deck-v1.webp
+  title: Covered deck waterproofing — illustration
+  alt: 'Illustration: Covered deck waterproofing'
 spec_table:
   - label: "Product Form"
     value: "Single-component, water-based modified asphalt coating"

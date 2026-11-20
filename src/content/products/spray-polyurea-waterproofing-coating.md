@@ -4,6 +4,10 @@ displayName: "Spray Polyurea Waterproof Coating"
 category: "waterproof-coatings"
 detail_layout: coating-v1
 coating_details:
+  application_images:
+  - image: /images/coating-polyurea-application-v1.webp
+    title: Engineered deck waterproofing — application illustration
+    alt: 'Illustration: Engineered deck waterproofing'
   intro: Two-component spray coating for waterproofing and protective lining. Compare pure polyurea and polyurethane-polyurea hybrid grades.
   overview: For engineered decks, underground works and protective lining. Share the substrate, service conditions and required finish for selection.
   notice: Requires heated, high-pressure plural-component spray equipment. Initial setting time is not the return-to-service time. Confirm exposure
@@ -28,10 +32,20 @@ hero_tags:
   - "Heated Plural Spray"
   - "Fast-Setting Membrane"
   - "Project-Specific Build-Up"
+main_image_caption: "Product packaging and application illustrations"
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/spray-polyurea-coating-v3.webp"
-    title: "Spray Polyurea Waterproof Coating"
-    alt: "Tianyuan spray polyurea waterproof coating product pail"
+- image: https://img.tyuanwaterproof.com/products/spray-polyurea-coating-v3.webp
+  title: Spray Polyurea Waterproof Coating
+  alt: Tianyuan spray polyurea waterproof coating product pail
+- image: /images/coating-polyurea-gallery-spray-v1.webp
+  title: Plural-component spray application — illustration
+  alt: 'Illustration: Plural-component spray application'
+- image: /images/coating-polyurea-gallery-equipment-v1.webp
+  title: Polyurea spray equipment — illustration
+  alt: 'Illustration: Polyurea spray equipment'
+- image: /images/coating-polyurea-gallery-surface-v1.webp
+  title: Sprayed polyurea surface detail — illustration
+  alt: 'Illustration: Sprayed polyurea surface detail'
 spec_table:
   - label: "Grade Options"
     value: "Pure polyurea and polyurethane–polyurea hybrid"

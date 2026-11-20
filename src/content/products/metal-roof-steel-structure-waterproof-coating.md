@@ -4,6 +4,10 @@ displayName: "Metal Roof Waterproof Coating"
 category: "waterproof-coatings"
 detail_layout: coating-v1
 coating_details:
+  application_images:
+  - image: /images/coating-metal-application-v1.webp
+    title: Metal roof waterproofing system — application illustration
+    alt: 'Illustration: Metal roof waterproofing system'
   intro: Acrylic-based coating for metal roofs and steel structures. Discuss your roof condition and leak locations to select a suitable coating
     system.
   overview: For metal roof sheets, gutters, flashing and junctions. Include substrate preparation, primer and detail reinforcement in the repair
@@ -29,10 +33,19 @@ hero_tags:
   - "Solar Reflective"
   - "10+ Years Durability"
 
+main_image_caption: "Product packaging and application illustrations"
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/metal-roof-acrylic-coating.webp"
-    title: "Acrylic Waterproof Coating"
-
+- image: https://img.tyuanwaterproof.com/products/metal-roof-acrylic-coating.webp
+  title: Acrylic Waterproof Coating
+- image: /images/coating-metal-gallery-preparation-v1.webp
+  title: Metal roof surface preparation — illustration
+  alt: 'Illustration: Metal roof surface preparation'
+- image: /images/coating-metal-gallery-roller-v1.webp
+  title: Roller application on metal roofing — illustration
+  alt: 'Illustration: Roller application on metal roofing'
+- image: /images/coating-metal-gallery-flashing-v1.webp
+  title: Reinforced metal roof lap detail — illustration
+  alt: 'Illustration: Reinforced metal roof lap detail'
 spec_table:
   - label: "Material Base"
     value: "Premium Acrylic Polymer Emulsion"

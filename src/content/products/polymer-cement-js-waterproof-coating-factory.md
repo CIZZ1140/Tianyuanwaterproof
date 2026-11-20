@@ -37,11 +37,20 @@ hero_tags:
 
 technical_scope: "Type I, Type II and Type III grade performance specifications"
 
+main_image_caption: "Product packaging and application illustrations"
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/js-polymer-cement-coating-v2.webp"
-    title: "Tianyuan JS Polymer Cement Waterproof Coating"
-    alt: "Tianyuan JS polymer cement waterproof coating bucket"
-
+- image: https://img.tyuanwaterproof.com/products/js-polymer-cement-coating-v2.webp
+  title: Tianyuan JS Polymer Cement Waterproof Coating
+  alt: Tianyuan JS polymer cement waterproof coating bucket
+- image: /images/coating-js-gallery-mixing-v1.webp
+  title: Liquid and powder mixing — illustration
+  alt: 'Illustration: Liquid and powder mixing'
+- image: /images/coating-js-gallery-corner-v1.webp
+  title: JS wall-floor corner treatment — illustration
+  alt: 'Illustration: JS wall-floor corner treatment'
+- image: /images/coating-js-gallery-balcony-v1.webp
+  title: Balcony waterproofing before covering — illustration
+  alt: 'Illustration: Balcony waterproofing before covering'
 spec_table:
   - label: "Product Form"
     value: "Two-component polymer emulsion and cement-based powder"

@@ -1,6 +1,6 @@
 ---
 import { ArrowRight, Check, FileText, MessageCircle } from 'lucide-astro';
-import { productImage } from '../utils/productImages';
+import { productImage, productImageSet } from '../utils/productImages';
 
 interface Props {
   title: string;
@@ -27,7 +27,7 @@ const { title, overview, notice, applications, features, specs, technical, steps
   <div class="grid lg:grid-cols-2">
     <div class="min-w-0 bg-slate-100">
       {images[0] && <figure class="h-full flex flex-col">
-        <img src={productImage(images[0].image, 960)?.src || images[0].image} alt={images[0].alt} width="960" height="720" loading="lazy" class="aspect-[4/3] w-full object-contain lg:min-h-[360px]" />
+        <img src={productImage(images[0].image, 800)?.src || images[0].image} srcset={productImageSet(images[0].image)} sizes="(min-width: 1680px) 800px, (min-width: 1024px) 46vw, calc(100vw - 64px)" alt={images[0].alt} width="960" height="720" loading="lazy" decoding="async" class="aspect-[4/3] w-full object-contain lg:min-h-[360px]" />
         <figcaption class="bg-slate-100 px-6 py-3 text-xs text-slate-600">{images[0].title}</figcaption>
       </figure>}
     </div>

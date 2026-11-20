@@ -25,15 +25,20 @@ for (const slug of slugs) for (const { code } of languages) {
   const ids = find(doc, node => attr(node, 'id')).map(node => attr(node, 'id'));
   assert.equal(ids.length, new Set(ids).size, `Duplicate IDs: ${path}`);
   assert(ids.includes('coating-applications'), `Missing coating module: ${path}`);
-  if (['two-component-polyurethane-waterproof-coating', 'polymer-cement-js-waterproof-coating-factory'].includes(slug)) {
+  {
     const application = find(doc,node=>attr(node,'aria-labelledby')==='coating-applications')[0];
     const applicationImages = find(application,node=>node.tagName==='img').map(node=>attr(node,'src'));
     const galleryImages = [attr(find(doc,node=>attr(node,'id')==='main-product-image')[0],'src')];
-    for (const thumb of find(doc,node=>(attr(node,'class')||'').split(' ').includes('gallery-thumb'))) {
+    const thumbnails = find(doc,node=>(attr(node,'class')||'').split(' ').includes('gallery-thumb'));
+    assert.equal(thumbnails.length,4,`Four hero gallery images: ${path}`);
+    for (const thumb of thumbnails) {
       galleryImages.push(...find(thumb,node=>node.tagName==='img').map(node=>attr(node,'src')));
     }
     assert.equal(applicationImages.length,1,`Dedicated application image: ${path}`);
-    assert(applicationImages.every(src=>!galleryImages.includes(src)),`Application image repeats hero gallery: ${path}`);
+    const originalKey = src => (src || '').replace(/-(160|480|800|1200)\.webp$/, '.webp');
+    const thumbnailSources = thumbnails.flatMap(node=>find(node,child=>child.tagName==='img').map(child=>originalKey(attr(child,'src'))));
+    assert.equal(new Set(thumbnailSources).size,4,`Unique gallery images: ${path}`);
+    assert(applicationImages.every(src=>!galleryImages.map(originalKey).includes(originalKey(src))),`Application image repeats hero gallery: ${path}`);
   }
   assert.equal(find(doc, node => node.tagName === 'h1').length, 1);
   const title = text(find(doc, node => node.tagName === 'h1')[0]).trim();

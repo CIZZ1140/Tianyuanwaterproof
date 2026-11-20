@@ -4,6 +4,10 @@ displayName: "Spray Quick-Setting Rubber Asphalt Coating"
 category: "waterproof-coatings"
 detail_layout: coating-v1
 coating_details:
+  application_images:
+  - image: /images/coating-quickasphalt-application-v1.webp
+    title: Underground concrete spray waterproofing — application illustration
+    alt: 'Illustration: Underground concrete spray waterproofing'
   intro: Two-component, spray-applied rubber asphalt coating for project waterproofing. Confirm the matched materials and spray setup before ordering.
   overview: A sprayed waterproofing layer for prepared substrates and detailed junctions. Match the grade and assembly to the project conditions.
   notice: Use the matched components and specified spray equipment. Confirm substrate preparation, film thickness, drying and protection requirements
@@ -28,10 +32,20 @@ hero_tags:
   - "Gel Time ≤5 s"
   - "Hard Dry ≤24 h"
   - "Large-Area Projects"
+main_image_caption: "Product packaging and application illustrations"
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt-v2.webp"
-    title: "Spray Quick-Setting Rubber Asphalt Waterproof Coating"
-    alt: "Tianyuan spray quick-setting rubber asphalt waterproof coating pail"
+- image: https://img.tyuanwaterproof.com/products/spraying-quick-setting-rubber-asphalt-v2.webp
+  title: Spray Quick-Setting Rubber Asphalt Waterproof Coating
+  alt: Tianyuan spray quick-setting rubber asphalt waterproof coating pail
+- image: /images/coating-quickasphalt-gallery-nozzle-v1.webp
+  title: Dual-nozzle asphalt spray — illustration
+  alt: 'Illustration: Dual-nozzle asphalt spray'
+- image: /images/coating-quickasphalt-gallery-equipment-v1.webp
+  title: Matched spray-system setup — illustration
+  alt: 'Illustration: Matched spray-system setup'
+- image: /images/coating-quickasphalt-gallery-film-v1.webp
+  title: Rubber asphalt coating continuity — illustration
+  alt: 'Illustration: Rubber asphalt coating continuity'
 spec_table:
   - label: "System"
     value: "Component A modified rubber-asphalt emulsion + Component B coagulant"

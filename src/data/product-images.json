@@ -2075,5 +2075,935 @@
         "bytes": 222478
       }
     }
+  },
+  "/images/coating-metal-gallery-preparation-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 236624,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/3bc23babf35ff561-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 4516
+      },
+      "480": {
+        "src": "/images/product-responsive/3bc23babf35ff561-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 27258
+      },
+      "800": {
+        "src": "/images/product-responsive/3bc23babf35ff561-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 65536
+      },
+      "1200": {
+        "src": "/images/product-responsive/3bc23babf35ff561-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 121446
+      }
+    }
+  },
+  "/images/coating-metal-gallery-roller-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 186784,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/aec94da3a5a34845-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3894
+      },
+      "480": {
+        "src": "/images/product-responsive/aec94da3a5a34845-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 19566
+      },
+      "800": {
+        "src": "/images/product-responsive/aec94da3a5a34845-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 47342
+      },
+      "1200": {
+        "src": "/images/product-responsive/aec94da3a5a34845-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 95088
+      }
+    }
+  },
+  "/images/coating-metal-gallery-flashing-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 223040,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/d04748c6afc21618-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3460
+      },
+      "480": {
+        "src": "/images/product-responsive/d04748c6afc21618-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 25534
+      },
+      "800": {
+        "src": "/images/product-responsive/d04748c6afc21618-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 64700
+      },
+      "1200": {
+        "src": "/images/product-responsive/d04748c6afc21618-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 120510
+      }
+    }
+  },
+  "/images/coating-metal-application-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 197990,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/47b8f1fcc3d8700e-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3374
+      },
+      "480": {
+        "src": "/images/product-responsive/47b8f1fcc3d8700e-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 20744
+      },
+      "800": {
+        "src": "/images/product-responsive/47b8f1fcc3d8700e-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 50138
+      },
+      "1200": {
+        "src": "/images/product-responsive/47b8f1fcc3d8700e-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 98722
+      }
+    }
+  },
+  "/images/coating-noncuring-gallery-scrape-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 271360,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/f40e77396f096192-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3620
+      },
+      "480": {
+        "src": "/images/product-responsive/f40e77396f096192-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 29498
+      },
+      "800": {
+        "src": "/images/product-responsive/f40e77396f096192-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 75958
+      },
+      "1200": {
+        "src": "/images/product-responsive/f40e77396f096192-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 147802
+      }
+    }
+  },
+  "/images/coating-noncuring-gallery-sheet-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 350014,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/cff009ae69501e60-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3936
+      },
+      "480": {
+        "src": "/images/product-responsive/cff009ae69501e60-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 33252
+      },
+      "800": {
+        "src": "/images/product-responsive/cff009ae69501e60-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 93878
+      },
+      "1200": {
+        "src": "/images/product-responsive/cff009ae69501e60-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 189510
+      }
+    }
+  },
+  "/images/coating-noncuring-gallery-equipment-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 325338,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/f3b394d505a45be5-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 5868
+      },
+      "480": {
+        "src": "/images/product-responsive/f3b394d505a45be5-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 38498
+      },
+      "800": {
+        "src": "/images/product-responsive/f3b394d505a45be5-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 94942
+      },
+      "1200": {
+        "src": "/images/product-responsive/f3b394d505a45be5-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 180674
+      }
+    }
+  },
+  "/images/coating-noncuring-application-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 364856,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/5c20ca65f9f2aa21-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 4638
+      },
+      "480": {
+        "src": "/images/product-responsive/5c20ca65f9f2aa21-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 37430
+      },
+      "800": {
+        "src": "/images/product-responsive/5c20ca65f9f2aa21-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 100208
+      },
+      "1200": {
+        "src": "/images/product-responsive/5c20ca65f9f2aa21-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 201194
+      }
+    }
+  },
+  "/images/coating-js-gallery-mixing-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 187010,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/c86856a63b912973-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 4304
+      },
+      "480": {
+        "src": "/images/product-responsive/c86856a63b912973-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 23194
+      },
+      "800": {
+        "src": "/images/product-responsive/c86856a63b912973-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 52746
+      },
+      "1200": {
+        "src": "/images/product-responsive/c86856a63b912973-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 96206
+      }
+    }
+  },
+  "/images/coating-js-gallery-corner-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 325084,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/f63e9caba48622ea-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 2122
+      },
+      "480": {
+        "src": "/images/product-responsive/f63e9caba48622ea-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 23012
+      },
+      "800": {
+        "src": "/images/product-responsive/f63e9caba48622ea-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 76474
+      },
+      "1200": {
+        "src": "/images/product-responsive/f63e9caba48622ea-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 167648
+      }
+    }
+  },
+  "/images/coating-js-gallery-balcony-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 148734,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/aae607675fe9d0dd-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 1882
+      },
+      "480": {
+        "src": "/images/product-responsive/aae607675fe9d0dd-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 11212
+      },
+      "800": {
+        "src": "/images/product-responsive/aae607675fe9d0dd-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 28288
+      },
+      "1200": {
+        "src": "/images/product-responsive/aae607675fe9d0dd-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 59642
+      }
+    }
+  },
+  "/images/coating-polymerasphalt-gallery-brush-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 244844,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/6808e2057ad7fcd3-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3570
+      },
+      "480": {
+        "src": "/images/product-responsive/6808e2057ad7fcd3-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 25520
+      },
+      "800": {
+        "src": "/images/product-responsive/6808e2057ad7fcd3-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 65814
+      },
+      "1200": {
+        "src": "/images/product-responsive/6808e2057ad7fcd3-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 129350
+      }
+    }
+  },
+  "/images/coating-polymerasphalt-gallery-film-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 312362,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/27cafbca562e85cf-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3300
+      },
+      "480": {
+        "src": "/images/product-responsive/27cafbca562e85cf-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 34868
+      },
+      "800": {
+        "src": "/images/product-responsive/27cafbca562e85cf-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 92896
+      },
+      "1200": {
+        "src": "/images/product-responsive/27cafbca562e85cf-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 178694
+      }
+    }
+  },
+  "/images/coating-polymerasphalt-gallery-deck-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 257648,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/b90147ce6b3c55c6-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3294
+      },
+      "480": {
+        "src": "/images/product-responsive/b90147ce6b3c55c6-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 22796
+      },
+      "800": {
+        "src": "/images/product-responsive/b90147ce6b3c55c6-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 63192
+      },
+      "1200": {
+        "src": "/images/product-responsive/b90147ce6b3c55c6-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 132580
+      }
+    }
+  },
+  "/images/coating-polymerasphalt-application-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 340016,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/a18657435e1ef30a-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3054
+      },
+      "480": {
+        "src": "/images/product-responsive/a18657435e1ef30a-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 26268
+      },
+      "800": {
+        "src": "/images/product-responsive/a18657435e1ef30a-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 78690
+      },
+      "1200": {
+        "src": "/images/product-responsive/a18657435e1ef30a-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 173770
+      }
+    }
+  },
+  "/images/coating-singlepu-gallery-stirring-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 154158,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/14a10dd90a92d3b0-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3298
+      },
+      "480": {
+        "src": "/images/product-responsive/14a10dd90a92d3b0-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 18824
+      },
+      "800": {
+        "src": "/images/product-responsive/14a10dd90a92d3b0-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 42032
+      },
+      "1200": {
+        "src": "/images/product-responsive/14a10dd90a92d3b0-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 76568
+      }
+    }
+  },
+  "/images/coating-singlepu-gallery-balcony-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 147432,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/2f70b57f17dca664-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 2646
+      },
+      "480": {
+        "src": "/images/product-responsive/2f70b57f17dca664-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 14966
+      },
+      "800": {
+        "src": "/images/product-responsive/2f70b57f17dca664-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 36256
+      },
+      "1200": {
+        "src": "/images/product-responsive/2f70b57f17dca664-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 72002
+      }
+    }
+  },
+  "/images/coating-singlepu-gallery-detail-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 200686,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/256045f7cc6d5c3c-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 2608
+      },
+      "480": {
+        "src": "/images/product-responsive/256045f7cc6d5c3c-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 18816
+      },
+      "800": {
+        "src": "/images/product-responsive/256045f7cc6d5c3c-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 50026
+      },
+      "1200": {
+        "src": "/images/product-responsive/256045f7cc6d5c3c-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 101066
+      }
+    }
+  },
+  "/images/coating-singlepu-application-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 234190,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/06e5b1dee9eb6e87-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 2714
+      },
+      "480": {
+        "src": "/images/product-responsive/06e5b1dee9eb6e87-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 18276
+      },
+      "800": {
+        "src": "/images/product-responsive/06e5b1dee9eb6e87-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 51252
+      },
+      "1200": {
+        "src": "/images/product-responsive/06e5b1dee9eb6e87-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 109056
+      }
+    }
+  },
+  "/images/coating-polyurea-gallery-spray-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 175294,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/a752e4e1ee7addc6-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3882
+      },
+      "480": {
+        "src": "/images/product-responsive/a752e4e1ee7addc6-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 23220
+      },
+      "800": {
+        "src": "/images/product-responsive/a752e4e1ee7addc6-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 51256
+      },
+      "1200": {
+        "src": "/images/product-responsive/a752e4e1ee7addc6-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 94202
+      }
+    }
+  },
+  "/images/coating-polyurea-gallery-equipment-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 274188,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/d674979ef7d10161-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 5628
+      },
+      "480": {
+        "src": "/images/product-responsive/d674979ef7d10161-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 35524
+      },
+      "800": {
+        "src": "/images/product-responsive/d674979ef7d10161-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 82776
+      },
+      "1200": {
+        "src": "/images/product-responsive/d674979ef7d10161-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 151934
+      }
+    }
+  },
+  "/images/coating-polyurea-gallery-surface-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 300824,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/2d6434de9874ec2f-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 1822
+      },
+      "480": {
+        "src": "/images/product-responsive/2d6434de9874ec2f-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 27848
+      },
+      "800": {
+        "src": "/images/product-responsive/2d6434de9874ec2f-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 82376
+      },
+      "1200": {
+        "src": "/images/product-responsive/2d6434de9874ec2f-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 164776
+      }
+    }
+  },
+  "/images/coating-polyurea-application-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 218822,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/e3eab87dc0db6985-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3726
+      },
+      "480": {
+        "src": "/images/product-responsive/e3eab87dc0db6985-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 23226
+      },
+      "800": {
+        "src": "/images/product-responsive/e3eab87dc0db6985-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 56548
+      },
+      "1200": {
+        "src": "/images/product-responsive/e3eab87dc0db6985-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 110608
+      }
+    }
+  },
+  "/images/coating-quickasphalt-gallery-nozzle-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 309410,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/71677ce0955c12c0-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3528
+      },
+      "480": {
+        "src": "/images/product-responsive/71677ce0955c12c0-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 29996
+      },
+      "800": {
+        "src": "/images/product-responsive/71677ce0955c12c0-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 82778
+      },
+      "1200": {
+        "src": "/images/product-responsive/71677ce0955c12c0-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 170464
+      }
+    }
+  },
+  "/images/coating-quickasphalt-gallery-equipment-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 283262,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/c7c955ef07ee79c6-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 4388
+      },
+      "480": {
+        "src": "/images/product-responsive/c7c955ef07ee79c6-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 33184
+      },
+      "800": {
+        "src": "/images/product-responsive/c7c955ef07ee79c6-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 83808
+      },
+      "1200": {
+        "src": "/images/product-responsive/c7c955ef07ee79c6-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 156180
+      }
+    }
+  },
+  "/images/coating-quickasphalt-gallery-film-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 435846,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/8a22653eac0e97b1-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 1166
+      },
+      "480": {
+        "src": "/images/product-responsive/8a22653eac0e97b1-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 23532
+      },
+      "800": {
+        "src": "/images/product-responsive/8a22653eac0e97b1-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 94848
+      },
+      "1200": {
+        "src": "/images/product-responsive/8a22653eac0e97b1-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 226754
+      }
+    }
+  },
+  "/images/coating-quickasphalt-application-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 353722,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/9cefd96a326c8032-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 3810
+      },
+      "480": {
+        "src": "/images/product-responsive/9cefd96a326c8032-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 32724
+      },
+      "800": {
+        "src": "/images/product-responsive/9cefd96a326c8032-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 91592
+      },
+      "1200": {
+        "src": "/images/product-responsive/9cefd96a326c8032-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 187202
+      }
+    }
+  },
+  "/images/coating-epoxy-application-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 326092,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/abc2a7bc01e1832b-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 4488
+      },
+      "480": {
+        "src": "/images/product-responsive/abc2a7bc01e1832b-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 38764
+      },
+      "800": {
+        "src": "/images/product-responsive/abc2a7bc01e1832b-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 98880
+      },
+      "1200": {
+        "src": "/images/product-responsive/abc2a7bc01e1832b-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 186354
+      }
+    }
+  },
+  "/images/two-component-pu-application-pipe-detail-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 179654,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/466740b32d612e46-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 1674
+      },
+      "480": {
+        "src": "/images/product-responsive/466740b32d612e46-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 12364
+      },
+      "800": {
+        "src": "/images/product-responsive/466740b32d612e46-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 34510
+      },
+      "1200": {
+        "src": "/images/product-responsive/466740b32d612e46-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 74564
+      }
+    }
+  },
+  "/images/js-coating-application-wet-area-v1.webp": {
+    "width": 1448,
+    "height": 1086,
+    "originalBytes": 226572,
+    "variants": {
+      "160": {
+        "src": "/images/product-responsive/5fbc17012f61daab-160.webp",
+        "width": 160,
+        "height": 120,
+        "bytes": 2162
+      },
+      "480": {
+        "src": "/images/product-responsive/5fbc17012f61daab-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 12824
+      },
+      "800": {
+        "src": "/images/product-responsive/5fbc17012f61daab-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 38064
+      },
+      "1200": {
+        "src": "/images/product-responsive/5fbc17012f61daab-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 84822
+      }
+    }
   }
 }

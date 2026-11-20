@@ -53,5 +53,50 @@
     "Do not infer Tianyuan mix ratio, color availability, approval or installed-system performance from competitor material.",
     "Application images are excluded from the hero gallery.",
     "Localized captions and alt text explicitly describe illustrations."
-  ]
+  ],
+  "gallery_completion": {
+    "new_assets": 28,
+    "gallery_additions": 21,
+    "application_additions": 7,
+    "result": "All nine products have four gallery images and one separate application image.",
+    "responsive_variants": 120,
+    "originals_preserved": true,
+    "sources": [
+      {
+        "product": "single-component PU",
+        "url": "https://gbr.sika.com/en/distribution/roofing/roof-repair/sikaroof-liquid-membrane.html",
+        "use": "Brush/roller application and one-component handling only; exposed-use claims not transferred."
+      },
+      {
+        "product": "non-curing rubber asphalt",
+        "url": "https://www.joaboatech.com/NRB_Non_Curing_Rubber_Bituminous_Waterproofing_Coating_Paint.html",
+        "use": "Hot application and composite coating/sheet assembly."
+      },
+      {
+        "product": "cold-applied polymer asphalt",
+        "url": "https://www.certainteed.com/products/commercial-roofing-products/smartcoat-220-asphalt-emulsion",
+        "use": "Water-based cold-applied bituminous coating context, not Tianyuan grade specifications."
+      },
+      {
+        "product": "metal roof acrylic",
+        "url": "https://www.metacrylics.com/documents/MASTER-ACRYLIC-APPLICATION-SPEC-BOOK-Mar-2023.pdf",
+        "use": "Roof laps and fastener reinforcement presentation; no service-life or reflective claims transferred."
+      },
+      {
+        "product": "spray polyurea",
+        "url": "https://specialty-products.com/pdf/msds/polyurea/POLYSHIELD%20SS-100.pdf",
+        "use": "Heated plural-component equipment and primed substrate context; material figures not transferred."
+      },
+      {
+        "product": "quick-setting rubber asphalt",
+        "url": "https://jlywaterproof.en.made-in-china.com/product/LmRUdOfosprY/China-Sprayed-Quick-Setting-Sqs-Rubber-Asphalt-Two-Component-Waterproof-Coating-Spraying-Quick-Solidified-Bitumen-Paint.html",
+        "use": "Rubber-asphalt emulsion/coagulant two-component cold-spray context."
+      },
+      {
+        "product": "epoxy quartz flooring",
+        "url": "https://can.sika.com/dms/getdocument.get/8991cb6c-c0bc-4547-ac31-d4f369975dcb/sikafloor-quartzitetrowelsystem.pdf",
+        "use": "Trowelled fine quartz/epoxy and sealed flooring concept; no thickness or ratings transferred."
+      }
+    ]
+  }
 }

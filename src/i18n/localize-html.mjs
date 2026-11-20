@@ -31,7 +31,7 @@ const stable = /^(?:Tianyuan Waterproof|Weifang Tianyuan Waterproof Material Co\
 export function needsTranslation(value) {
   return /[A-Za-z]{2}/.test(value) && !stable.test(value) && !/^https?:|^[\w.+-]+@|^\+?[\d\s()-]+$/.test(value) && !/^(?:mm|cm|kg|g|m²|m2|MPa|N\/mm|kPa|°C|ft|lb|pcs|kg\/m²)$/i.test(value);
 }
-const visibleAttributes = new Set(['alt', 'aria-label', 'title', 'placeholder', 'data-tooltip', 'data-category-label']);
+const visibleAttributes = new Set(['alt', 'data-alt', 'aria-label', 'title', 'placeholder', 'data-tooltip', 'data-category-label']);
 const schemaTextKeys = new Set(['name', 'description', 'text', 'headline', 'alternativeHeadline']);
 
 function schemaStrings(value, visit, key = '') {

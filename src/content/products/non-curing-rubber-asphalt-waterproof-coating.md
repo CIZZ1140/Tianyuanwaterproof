@@ -4,6 +4,10 @@ displayName: "Non-Curing Rubber Asphalt Waterproof Coating"
 category: "waterproof-coatings"
 detail_layout: coating-v1
 coating_details:
+  application_images:
+  - image: /images/coating-noncuring-application-v1.webp
+    title: Protected basement waterproofing assembly — illustration
+    alt: 'Illustration: Protected basement waterproofing assembly'
   intro: Hot-applied rubber asphalt that remains tacky after cooling. Use beneath a compatible sheet membrane in protected waterproofing systems.
   overview: For basement slabs and walls, podiums and protected roof decks. Select the coating and sheet membrane as a system.
   notice: Requires controlled heating, a compatible sheet membrane and protection. The tacky coating is not a finished exposed or traffic-bearing
@@ -31,11 +35,20 @@ hero_tags:
   - "SBS Composite Systems"
   - "Protected Applications"
 
+main_image_caption: "Product packaging and application illustrations"
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v3.webp"
-    title: "Non-Curing Rubber Asphalt Coating"
-    alt: "Tianyuan non-curing rubber asphalt waterproof coating in steel drums"
-
+- image: https://img.tyuanwaterproof.com/products/non-curing-rubber-asphalt-coating-v3.webp
+  title: Non-Curing Rubber Asphalt Coating
+  alt: Tianyuan non-curing rubber asphalt waterproof coating in steel drums
+- image: /images/coating-noncuring-gallery-scrape-v1.webp
+  title: Hot-applied rubber asphalt spreading — illustration
+  alt: 'Illustration: Hot-applied rubber asphalt spreading'
+- image: /images/coating-noncuring-gallery-sheet-v1.webp
+  title: Coating and sheet membrane assembly — illustration
+  alt: 'Illustration: Coating and sheet membrane assembly'
+- image: /images/coating-noncuring-gallery-equipment-v1.webp
+  title: Controlled heating equipment setup — illustration
+  alt: 'Illustration: Controlled heating equipment setup'
 spec_table:
   - label: "Product Form"
     value: "Single-component rubber asphalt paste"

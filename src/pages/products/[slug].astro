@@ -395,9 +395,7 @@ const breadcrumbLd = {
         specs={specTable}
         technical={technicalData}
         steps={applicationGuide}
-        images={data.coating_details?.application_images?.length
-          ? normalizeGallery(data.coating_details.application_images)
-          : gallery.length > 1 ? gallery.slice(1) : gallery.length ? gallery : [{ image: mainImage, title, alt: title }]}
+        images={normalizeGallery(data.coating_details?.application_images || [])}
         procurement={[...packaging, ...supplyInfo, ...loadingData.map(row => ({ title: row.label, text: row.value }))]}
         selectionNotes={quickFacts}
         showComponentDetails={entry.slug === "two-component-polyurethane-waterproof-coating"}

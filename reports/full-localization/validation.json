@@ -2,32 +2,32 @@
   "dictionaries": [
     {
       "locale": "th",
-      "strings": 5565,
+      "strings": 5597,
       "numericParity": true
     },
     {
       "locale": "vi",
-      "strings": 5565,
+      "strings": 5597,
       "numericParity": true
     },
     {
       "locale": "es",
-      "strings": 5565,
+      "strings": 5597,
       "numericParity": true
     },
     {
       "locale": "pt-br",
-      "strings": 5565,
+      "strings": 5597,
       "numericParity": true
     },
     {
       "locale": "fr",
-      "strings": 5565,
+      "strings": 5597,
       "numericParity": true
     },
     {
       "locale": "ar",
-      "strings": 5565,
+      "strings": 5597,
       "numericParity": true
     }
   ],
@@ -2914,7 +2914,7 @@
     },
     {
       "path": "/th/products/metal-roof-steel-structure-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 14,
@@ -2924,7 +2924,7 @@
     },
     {
       "path": "/vi/products/metal-roof-steel-structure-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 14,
@@ -2934,7 +2934,7 @@
     },
     {
       "path": "/es/products/metal-roof-steel-structure-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 14,
@@ -2944,7 +2944,7 @@
     },
     {
       "path": "/pt-br/products/metal-roof-steel-structure-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 14,
@@ -2954,7 +2954,7 @@
     },
     {
       "path": "/fr/products/metal-roof-steel-structure-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 14,
@@ -2964,7 +2964,7 @@
     },
     {
       "path": "/ar/products/metal-roof-steel-structure-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 14,
@@ -2974,7 +2974,7 @@
     },
     {
       "path": "/th/products/non-curing-rubber-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 16,
@@ -2984,7 +2984,7 @@
     },
     {
       "path": "/vi/products/non-curing-rubber-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 16,
@@ -2994,7 +2994,7 @@
     },
     {
       "path": "/es/products/non-curing-rubber-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 16,
@@ -3004,7 +3004,7 @@
     },
     {
       "path": "/pt-br/products/non-curing-rubber-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 16,
@@ -3014,7 +3014,7 @@
     },
     {
       "path": "/fr/products/non-curing-rubber-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 16,
@@ -3024,7 +3024,7 @@
     },
     {
       "path": "/ar/products/non-curing-rubber-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 16,
@@ -3034,7 +3034,7 @@
     },
     {
       "path": "/th/products/polymer-cement-js-waterproof-coating-factory/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3044,7 +3044,7 @@
     },
     {
       "path": "/vi/products/polymer-cement-js-waterproof-coating-factory/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3054,7 +3054,7 @@
     },
     {
       "path": "/es/products/polymer-cement-js-waterproof-coating-factory/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3064,7 +3064,7 @@
     },
     {
       "path": "/pt-br/products/polymer-cement-js-waterproof-coating-factory/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3074,7 +3074,7 @@
     },
     {
       "path": "/fr/products/polymer-cement-js-waterproof-coating-factory/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3084,7 +3084,7 @@
     },
     {
       "path": "/ar/products/polymer-cement-js-waterproof-coating-factory/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3094,7 +3094,7 @@
     },
     {
       "path": "/th/products/polymer-modified-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3104,7 +3104,7 @@
     },
     {
       "path": "/vi/products/polymer-modified-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3114,7 +3114,7 @@
     },
     {
       "path": "/es/products/polymer-modified-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3124,7 +3124,7 @@
     },
     {
       "path": "/pt-br/products/polymer-modified-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3134,7 +3134,7 @@
     },
     {
       "path": "/fr/products/polymer-modified-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3144,7 +3144,7 @@
     },
     {
       "path": "/ar/products/polymer-modified-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3154,7 +3154,7 @@
     },
     {
       "path": "/th/products/polyurethane-waterproof-coating-factory/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 16,
@@ -3164,7 +3164,7 @@
     },
     {
       "path": "/vi/products/polyurethane-waterproof-coating-factory/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 16,
@@ -3174,7 +3174,7 @@
     },
     {
       "path": "/es/products/polyurethane-waterproof-coating-factory/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 16,
@@ -3184,7 +3184,7 @@
     },
     {
       "path": "/pt-br/products/polyurethane-waterproof-coating-factory/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 16,
@@ -3194,7 +3194,7 @@
     },
     {
       "path": "/fr/products/polyurethane-waterproof-coating-factory/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 16,
@@ -3204,7 +3204,7 @@
     },
     {
       "path": "/ar/products/polyurethane-waterproof-coating-factory/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 16,
@@ -3574,7 +3574,7 @@
     },
     {
       "path": "/th/products/spray-polyurea-waterproofing-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 2,
       "forms": 1,
       "ids": 15,
@@ -3584,7 +3584,7 @@
     },
     {
       "path": "/vi/products/spray-polyurea-waterproofing-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 2,
       "forms": 1,
       "ids": 15,
@@ -3594,7 +3594,7 @@
     },
     {
       "path": "/es/products/spray-polyurea-waterproofing-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 2,
       "forms": 1,
       "ids": 15,
@@ -3604,7 +3604,7 @@
     },
     {
       "path": "/pt-br/products/spray-polyurea-waterproofing-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 2,
       "forms": 1,
       "ids": 15,
@@ -3614,7 +3614,7 @@
     },
     {
       "path": "/fr/products/spray-polyurea-waterproofing-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 2,
       "forms": 1,
       "ids": 15,
@@ -3624,7 +3624,7 @@
     },
     {
       "path": "/ar/products/spray-polyurea-waterproofing-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 2,
       "forms": 1,
       "ids": 15,
@@ -3634,7 +3634,7 @@
     },
     {
       "path": "/th/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3644,7 +3644,7 @@
     },
     {
       "path": "/vi/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3654,7 +3654,7 @@
     },
     {
       "path": "/es/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3664,7 +3664,7 @@
     },
     {
       "path": "/pt-br/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3674,7 +3674,7 @@
     },
     {
       "path": "/fr/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,
@@ -3684,7 +3684,7 @@
     },
     {
       "path": "/ar/products/spraying-quick-setting-rubber-asphalt-waterproof-coating/",
-      "images": 7,
+      "images": 11,
       "tables": 1,
       "forms": 1,
       "ids": 15,

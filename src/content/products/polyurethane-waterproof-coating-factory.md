@@ -4,6 +4,10 @@ displayName: "Single-Component PU Waterproof Coating"
 category: "waterproof-coatings"
 detail_layout: coating-v1
 coating_details:
+  application_images:
+  - image: /images/coating-singlepu-application-v1.webp
+    title: Protected concrete waterproofing — application illustration
+    alt: 'Illustration: Protected concrete waterproofing'
   intro: Single-component, moisture-curing PU coating for protected concrete waterproofing. Available in Type I and Type II grades.
   overview: For below-grade concrete, wet areas, balconies and protected roofs. Choose a grade to suit the required strength and movement.
   notice: A protective finish is required for roof applications. Confirm substrate moisture limits and primer selection before use.
@@ -30,11 +34,20 @@ hero_tags:
   - "Liquid-Applied"
   - "Factory-Direct Supply"
 
+main_image_caption: "Product packaging and application illustrations"
 gallery:
-  - image: "https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp"
-    title: "Tianyuan Polyurethane Waterproof Coating"
-    alt: "Tianyuan-branded polyurethane waterproof coating bucket"
-
+- image: https://img.tyuanwaterproof.com/products/pu-waterproof-coating.webp
+  title: Tianyuan Polyurethane Waterproof Coating
+  alt: Tianyuan-branded polyurethane waterproof coating bucket
+- image: /images/coating-singlepu-gallery-stirring-v1.webp
+  title: Single-component coating preparation — illustration
+  alt: 'Illustration: Single-component coating preparation'
+- image: /images/coating-singlepu-gallery-balcony-v1.webp
+  title: PU coating on a protected balcony — illustration
+  alt: 'Illustration: PU coating on a protected balcony'
+- image: /images/coating-singlepu-gallery-detail-v1.webp
+  title: Polyurethane coating at concrete junction — illustration
+  alt: 'Illustration: Polyurethane coating at concrete junction'
 spec_table:
   - label: "Product Form"
     value: "Single-component, liquid-applied polyurethane coating"
