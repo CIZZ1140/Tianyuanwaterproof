@@ -25,6 +25,16 @@ for (const slug of slugs) for (const { code } of languages) {
   const ids = find(doc, node => attr(node, 'id')).map(node => attr(node, 'id'));
   assert.equal(ids.length, new Set(ids).size, `Duplicate IDs: ${path}`);
   assert(ids.includes('coating-applications'), `Missing coating module: ${path}`);
+  if (['two-component-polyurethane-waterproof-coating', 'polymer-cement-js-waterproof-coating-factory'].includes(slug)) {
+    const application = find(doc,node=>attr(node,'aria-labelledby')==='coating-applications')[0];
+    const applicationImages = find(application,node=>node.tagName==='img').map(node=>attr(node,'src'));
+    const galleryImages = [attr(find(doc,node=>attr(node,'id')==='main-product-image')[0],'src')];
+    for (const thumb of find(doc,node=>(attr(node,'class')||'').split(' ').includes('gallery-thumb'))) {
+      galleryImages.push(...find(thumb,node=>node.tagName==='img').map(node=>attr(node,'src')));
+    }
+    assert.equal(applicationImages.length,1,`Dedicated application image: ${path}`);
+    assert(applicationImages.every(src=>!galleryImages.includes(src)),`Application image repeats hero gallery: ${path}`);
+  }
   assert.equal(find(doc, node => node.tagName === 'h1').length, 1);
   const title = text(find(doc, node => node.tagName === 'h1')[0]).trim();
   const links = find(doc, node => node.tagName === 'a');

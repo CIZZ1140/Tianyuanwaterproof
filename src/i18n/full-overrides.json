@@ -111,7 +111,11 @@
     "Chat on WhatsApp": "แชทผ่าน WhatsApp",
     "Ask if this coating fits your project": "สอบถามว่าวัสดุกันซึมนี้เหมาะกับโครงการของคุณหรือไม่",
     "Grade selection & ordering notes": "การเลือกเกรดและข้อมูลการสั่งซื้อ",
-    "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system.": "ต้องมีชั้นป้องกันวัสดุกันซึม หากหลังคาสัมผัสแสงแดดโดยตรงหรือมีคนเดินใช้งาน โปรดติดต่อเราเพื่อเลือกระบบกันซึมที่เหมาะสม"
+    "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system.": "ต้องมีชั้นป้องกันวัสดุกันซึม หากหลังคาสัมผัสแสงแดดโดยตรงหรือมีคนเดินใช้งาน โปรดติดต่อเราเพื่อเลือกระบบกันซึมที่เหมาะสม",
+    "Pipe and wall-floor junction treatment — application illustration": "การทากันซึมรอบท่อและรอยต่อผนังกับพื้น — ภาพประกอบการใช้งาน",
+    "Illustration of polyurethane coating brushed around a pipe base and concrete wall-floor junction before a protective finish": "ภาพประกอบการทาวัสดุกันซึมโพลียูรีเทนด้วยแปรงรอบโคนท่อและรอยต่อผนังคอนกรีตกับพื้น ก่อนทำชั้นป้องกัน",
+    "Bathroom waterproofing before tiling — application illustration": "การกันซึมห้องน้ำก่อนปูกระเบื้อง — ภาพประกอบการใช้งาน",
+    "Illustration of brush-applied grey polymer cement waterproofing on an unfinished bathroom floor and wall-floor junctions before tiling": "ภาพประกอบการใช้แปรงทาวัสดุกันซึมซีเมนต์พอลิเมอร์สีเทาบนพื้นห้องน้ำที่ยังไม่ปูกระเบื้องและบริเวณรอยต่อผนังกับพื้น"
   },
   "vi": {
     "0.2 MPa / 120 min, no": "0.2 MPa / 120 min, không có",
@@ -205,7 +209,11 @@
     "Chat on WhatsApp": "Trao đổi qua WhatsApp",
     "Ask if this coating fits your project": "Hỏi xem sản phẩm này có phù hợp với công trình của bạn không",
     "Grade selection & ordering notes": "Chọn cấp sản phẩm và thông tin đặt hàng",
-    "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system.": "Cần có lớp bảo vệ cho màng chống thấm. Với mái tiếp xúc trực tiếp với ánh nắng hoặc có người đi lại, hãy liên hệ để được tư vấn hệ chống thấm phù hợp."
+    "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system.": "Cần có lớp bảo vệ cho màng chống thấm. Với mái tiếp xúc trực tiếp với ánh nắng hoặc có người đi lại, hãy liên hệ để được tư vấn hệ chống thấm phù hợp.",
+    "Pipe and wall-floor junction treatment — application illustration": "Xử lý chân ống và góc tiếp giáp tường–sàn — hình minh họa thi công",
+    "Illustration of polyurethane coating brushed around a pipe base and concrete wall-floor junction before a protective finish": "Hình minh họa quét lớp phủ polyurethane quanh chân ống và góc tiếp giáp tường–sàn bê tông trước khi thi công lớp bảo vệ",
+    "Bathroom waterproofing before tiling — application illustration": "Chống thấm phòng tắm trước khi ốp lát — hình minh họa thi công",
+    "Illustration of brush-applied grey polymer cement waterproofing on an unfinished bathroom floor and wall-floor junctions before tiling": "Hình minh họa quét vật liệu chống thấm xi măng polymer màu xám lên sàn và các góc tiếp giáp tường–sàn của phòng tắm đang thi công, trước khi ốp lát"
   },
   "es": {
     "Home": "Inicio",
@@ -339,7 +347,11 @@
     "Chat on WhatsApp": "Consultar por WhatsApp",
     "Ask if this coating fits your project": "Consulte si este revestimiento es adecuado para su proyecto",
     "Grade selection & ordering notes": "Selección del tipo e información para pedidos",
-    "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system.": "Se requiere una capa de protección. Si la cubierta estará expuesta directamente al sol o al tránsito peatonal, consúltenos para seleccionar un sistema de impermeabilización adecuado."
+    "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system.": "Se requiere una capa de protección. Si la cubierta estará expuesta directamente al sol o al tránsito peatonal, consúltenos para seleccionar un sistema de impermeabilización adecuado.",
+    "Pipe and wall-floor junction treatment — application illustration": "Tratamiento de tuberías y encuentros entre pared y suelo — ilustración de aplicación",
+    "Illustration of polyurethane coating brushed around a pipe base and concrete wall-floor junction before a protective finish": "Ilustración de la aplicación de poliuretano con brocha alrededor de una tubería y del encuentro entre pared y suelo de hormigón, antes de la capa de protección",
+    "Bathroom waterproofing before tiling — application illustration": "Impermeabilización de baños antes del alicatado — ilustración de aplicación",
+    "Illustration of brush-applied grey polymer cement waterproofing on an unfinished bathroom floor and wall-floor junctions before tiling": "Ilustración de la aplicación con brocha de impermeabilizante gris de cemento polimérico en el suelo de un baño en obra y en los encuentros entre pared y suelo, antes del alicatado"
   },
   "pt-br": {
     "Home": "Início",
@@ -467,7 +479,11 @@
     "Chat on WhatsApp": "Conversar pelo WhatsApp",
     "Ask if this coating fits your project": "Consulte se este revestimento é adequado ao seu projeto",
     "Grade selection & ordering notes": "Seleção do tipo e orientações para pedidos",
-    "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system.": "É necessária uma camada de proteção. Para coberturas expostas diretamente ao sol ou ao tráfego de pessoas, entre em contato para avaliar um sistema de impermeabilização adequado."
+    "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system.": "É necessária uma camada de proteção. Para coberturas expostas diretamente ao sol ou ao tráfego de pessoas, entre em contato para avaliar um sistema de impermeabilização adequado.",
+    "Pipe and wall-floor junction treatment — application illustration": "Tratamento de tubulações e encontros entre parede e piso — ilustração de aplicação",
+    "Illustration of polyurethane coating brushed around a pipe base and concrete wall-floor junction before a protective finish": "Ilustração da aplicação de poliuretano com pincel ao redor da base de um tubo e do encontro entre parede e piso de concreto, antes da camada de proteção",
+    "Bathroom waterproofing before tiling — application illustration": "Impermeabilização de banheiro antes do assentamento de revestimentos — ilustração de aplicação",
+    "Illustration of brush-applied grey polymer cement waterproofing on an unfinished bathroom floor and wall-floor junctions before tiling": "Ilustração da aplicação com brocha de impermeabilizante cimentício polimérico cinza no piso de um banheiro em obra e nos encontros entre parede e piso, antes do revestimento"
   },
   "fr": {
     "Home": "Accueil",
@@ -580,7 +596,11 @@
     "Chat on WhatsApp": "Échanger sur WhatsApp",
     "Ask if this coating fits your project": "Vérifiez avec nous si ce revêtement convient à votre projet",
     "Grade selection & ordering notes": "Choix de la classe et informations de commande",
-    "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system.": "Une couche de protection est nécessaire. Pour une toiture directement exposée au soleil ou à la circulation piétonne, contactez-nous pour choisir un système d’étanchéité adapté."
+    "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system.": "Une couche de protection est nécessaire. Pour une toiture directement exposée au soleil ou à la circulation piétonne, contactez-nous pour choisir un système d’étanchéité adapté.",
+    "Pipe and wall-floor junction treatment — application illustration": "Traitement des traversées de tuyaux et des jonctions mur-sol — illustration de mise en œuvre",
+    "Illustration of polyurethane coating brushed around a pipe base and concrete wall-floor junction before a protective finish": "Illustration de l’application au pinceau d’un revêtement polyuréthane autour d’un tuyau et d’une jonction mur-sol en béton, avant la couche de protection",
+    "Bathroom waterproofing before tiling — application illustration": "Étanchéité de salle de bains avant carrelage — illustration de mise en œuvre",
+    "Illustration of brush-applied grey polymer cement waterproofing on an unfinished bathroom floor and wall-floor junctions before tiling": "Illustration de l’application à la brosse d’un revêtement d’étanchéité gris à base de ciment modifié aux polymères sur le sol et les jonctions mur-sol d’une salle de bains en travaux, avant carrelage"
   },
   "ar": {
     "Home": "الرئيسية",
@@ -710,6 +730,10 @@
     "Chat on WhatsApp": "تواصل عبر WhatsApp",
     "Ask if this coating fits your project": "استفسر عن ملاءمة هذا الطلاء لمشروعك",
     "Grade selection & ordering notes": "اختيار الدرجة ومعلومات الطلب",
-    "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system.": "يلزم تنفيذ طبقة حماية. إذا كان السطح معرضاً مباشرة للشمس أو لحركة المشاة، تواصل معنا لاختيار نظام عزل مائي مناسب."
+    "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system.": "يلزم تنفيذ طبقة حماية. إذا كان السطح معرضاً مباشرة للشمس أو لحركة المشاة، تواصل معنا لاختيار نظام عزل مائي مناسب.",
+    "Pipe and wall-floor junction treatment — application illustration": "معالجة اختراقات الأنابيب والتقاء الجدار بالأرضية — رسم توضيحي للتطبيق",
+    "Illustration of polyurethane coating brushed around a pipe base and concrete wall-floor junction before a protective finish": "رسم توضيحي لتطبيق طلاء البولي يوريثان بالفرشاة حول قاعدة أنبوب وعند التقاء جدار خرساني بالأرضية قبل تنفيذ طبقة الحماية",
+    "Bathroom waterproofing before tiling — application illustration": "عزل أرضية الحمام قبل تركيب البلاط — رسم توضيحي للتطبيق",
+    "Illustration of brush-applied grey polymer cement waterproofing on an unfinished bathroom floor and wall-floor junctions before tiling": "رسم توضيحي لتطبيق عازل إسمنتي بوليمري رمادي بالفرشاة على أرضية حمام قيد الإنشاء وعند التقاء الجدران بالأرضية قبل تركيب البلاط"
   }
 }

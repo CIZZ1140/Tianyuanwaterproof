@@ -5,6 +5,10 @@ category: "waterproof-coatings"
 order: 66
 detail_layout: "coating-v1"
 coating_details:
+  application_images:
+    - image: "/images/two-component-pu-application-pipe-detail-v1.webp"
+      title: "Pipe and wall-floor junction treatment — application illustration"
+      alt: "Illustration of polyurethane coating brushed around a pipe base and concrete wall-floor junction before a protective finish"
   intro: "A two-component liquid coating for continuous, flexible waterproofing on prepared concrete. Suitable for basements, wet areas and protected roof assemblies."
   overview: "For prepared concrete in basements, wet areas, terraces and roofs with a protective finish. Apply after treating corners, joints and pipe penetrations."
   notice: "A protective finish is required. For roofs exposed directly to sunlight or foot traffic, contact us to discuss a suitable waterproofing system."

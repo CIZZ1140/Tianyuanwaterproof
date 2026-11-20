@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-20",
+  "purpose": "Separate product gallery from application imagery. Original generated concepts, not customer case-study evidence.",
+  "products": [
+    {
+      "slug": "two-component-polyurethane-waterproof-coating",
+      "asset": "/images/two-component-pu-application-pipe-detail-v1.webp",
+      "scene": "Pipe base and wall-floor junction detail before protective finish",
+      "sources": [
+        {
+          "url": "https://gcc.sika.com/en/construction/waterproofing/liquid-applied-membrane/sikalastic-m-266.html",
+          "role": "Two-component polyurethane application methods; horizontal squeegee/trowel application. Competitor specifications are not Tianyuan specifications."
+        },
+        {
+          "url": "https://www.joaboa-tech.com/china-911-two-component-polyurethane-waterproofing-coating-37736296.html",
+          "role": "Same-product manufacturer application presentation."
+        },
+        {
+          "url": "https://oriental-yuhong.en.made-in-china.com/product/nydxvHfjncVu/China-Two-Component-Polyurethane-Waterproof-Coating.html",
+          "role": "Marketplace same-product presentation and protective layer context."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=FXkKNqNAwro",
+          "role": "Same-product application video discovery; not used as a copied visual."
+        }
+      ]
+    },
+    {
+      "slug": "polymer-cement-js-waterproof-coating-factory",
+      "asset": "/images/js-coating-application-wet-area-v1.webp",
+      "scene": "Brush-applied cementitious waterproofing in an unfinished bathroom before tiling",
+      "sources": [
+        {
+          "url": "https://www.beipenggroup.net/products/js-waterproof-coating/",
+          "role": "Same-product independent-site wet-area, balcony and detail imagery."
+        },
+        {
+          "url": "https://www.jiaobaomaterial.com/en/products/js-polymer-cement-waterproof-coating",
+          "role": "Liquid/powder composition, mineral substrate and under-tile use."
+        },
+        {
+          "url": "https://www.alibaba.com/showroom/polymer-modified-cement-waterproofing.html",
+          "role": "Marketplace image reference for wet-area presentation."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=l08yHISpadU",
+          "role": "JS construction-process video discovery."
+        }
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not infer Tianyuan mix ratio, color availability, approval or installed-system performance from competitor material.",
+    "Application images are excluded from the hero gallery.",
+    "Localized captions and alt text explicitly describe illustrations."
+  ]
+}

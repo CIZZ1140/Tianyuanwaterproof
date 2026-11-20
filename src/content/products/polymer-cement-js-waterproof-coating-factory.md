@@ -4,6 +4,10 @@ displayName: "JS Polymer Cement Waterproof Coating"
 category: "waterproof-coatings"
 detail_layout: coating-v1
 coating_details:
+  application_images:
+    - image: "/images/js-coating-application-wet-area-v1.webp"
+      title: "Bathroom waterproofing before tiling — application illustration"
+      alt: "Illustration of brush-applied grey polymer cement waterproofing on an unfinished bathroom floor and wall-floor junctions before tiling"
   intro: Two-component polymer cement coating for concrete and mortar waterproofing. Choose Type I, II or III to match your project.
   overview: For bathrooms, balconies and protected below-grade concrete. Water-retaining applications require project-specific review.
   notice: Select the grade before ordering. Mixing ratios and liquid/powder pack sizes must match that grade. Confirm any required water-contact
