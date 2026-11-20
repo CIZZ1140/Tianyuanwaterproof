@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import Turnstile from '../../components/Turnstile.astro';
-import CoatingSelectionGuide from '../../components/CoatingSelectionGuide.astro';
 
 export async function getStaticPaths() {
   const categories = [
@@ -331,6 +330,5 @@ const categorySchema = {
         </div>
       )}
     </section>
-    {cat.id === 'waterproof-coatings' && <CoatingSelectionGuide />}
   </div>
 </Layout>

@@ -2,32 +2,32 @@
   "dictionaries": [
     {
       "locale": "th",
-      "strings": 5597,
+      "strings": 5553,
       "numericParity": true
     },
     {
       "locale": "vi",
-      "strings": 5597,
+      "strings": 5553,
       "numericParity": true
     },
     {
       "locale": "es",
-      "strings": 5597,
+      "strings": 5553,
       "numericParity": true
     },
     {
       "locale": "pt-br",
-      "strings": 5597,
+      "strings": 5553,
       "numericParity": true
     },
     {
       "locale": "fr",
-      "strings": 5597,
+      "strings": 5553,
       "numericParity": true
     },
     {
       "locale": "ar",
-      "strings": 5597,
+      "strings": 5553,
       "numericParity": true
     }
   ],
@@ -2015,9 +2015,9 @@
     {
       "path": "/th/categories/waterproof-coatings/",
       "images": 11,
-      "tables": 1,
+      "tables": 0,
       "forms": 0,
-      "ids": 2,
+      "ids": 1,
       "layoutParity": true,
       "interactionParity": true,
       "numericParity": true
@@ -2025,9 +2025,9 @@
     {
       "path": "/vi/categories/waterproof-coatings/",
       "images": 11,
-      "tables": 1,
+      "tables": 0,
       "forms": 0,
-      "ids": 2,
+      "ids": 1,
       "layoutParity": true,
       "interactionParity": true,
       "numericParity": true
@@ -2035,9 +2035,9 @@
     {
       "path": "/es/categories/waterproof-coatings/",
       "images": 11,
-      "tables": 1,
+      "tables": 0,
       "forms": 0,
-      "ids": 2,
+      "ids": 1,
       "layoutParity": true,
       "interactionParity": true,
       "numericParity": true
@@ -2045,9 +2045,9 @@
     {
       "path": "/pt-br/categories/waterproof-coatings/",
       "images": 11,
-      "tables": 1,
+      "tables": 0,
       "forms": 0,
-      "ids": 2,
+      "ids": 1,
       "layoutParity": true,
       "interactionParity": true,
       "numericParity": true
@@ -2055,9 +2055,9 @@
     {
       "path": "/fr/categories/waterproof-coatings/",
       "images": 11,
-      "tables": 1,
+      "tables": 0,
       "forms": 0,
-      "ids": 2,
+      "ids": 1,
       "layoutParity": true,
       "interactionParity": true,
       "numericParity": true
@@ -2065,9 +2065,9 @@
     {
       "path": "/ar/categories/waterproof-coatings/",
       "images": 11,
-      "tables": 1,
+      "tables": 0,
       "forms": 0,
-      "ids": 2,
+      "ids": 1,
       "layoutParity": true,
       "interactionParity": true,
       "numericParity": true

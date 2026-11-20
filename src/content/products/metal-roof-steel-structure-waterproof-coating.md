@@ -43,7 +43,7 @@ gallery:
 - image: /images/coating-metal-gallery-roller-v1.webp
   title: Roller application on metal roofing — illustration
   alt: 'Illustration: Roller application on metal roofing'
-- image: /images/coating-metal-gallery-flashing-v1.webp
+- image: /images/coating-metal-gallery-flashing-v2.webp
   title: Reinforced metal roof lap detail — illustration
   alt: 'Illustration: Reinforced metal roof lap detail'
 spec_table:
