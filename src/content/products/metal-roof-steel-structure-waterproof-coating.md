@@ -24,28 +24,26 @@ coating_details:
 product_category: "Waterproof Coatings"
 image: "https://img.tyuanwaterproof.com/products/metal-roof-acrylic-coating.webp"
 main_image: "https://img.tyuanwaterproof.com/products/metal-roof-acrylic-coating.webp"
-hero_description: "High-performance acrylic-based waterproof coating specifically designed for metal roofs and steel structures. Features excellent adhesion, anti-corrosion properties, and superior UV resistance to extend the service life of metal buildings."
-meta_description: "Acrylic waterproof coating for metal roofs and steel structures. Rust-preventive, solar reflective and elastic - brush, roller or spray applied. Factory direct."
+hero_description: "For metal roof sheets, gutters, flashing and junctions. Include substrate preparation, primer and detail reinforcement in the repair plan."
+meta_description: "For metal roof sheets, gutters, flashing and junctions. Include substrate preparation, primer and detail reinforcement in the repair plan."
 
 hero_tags:
-  - "Metal Roof Expert"
-  - "Anti-Corrosion"
-  - "Solar Reflective"
-  - "10+ Years Durability"
+  - "For metal roof details"
+  - "Brush, roller or spray"
 
 main_image_caption: "Product packaging and application illustrations"
 gallery:
 - image: https://img.tyuanwaterproof.com/products/metal-roof-acrylic-coating.webp
   title: Acrylic Waterproof Coating
-- image: /images/coating-metal-gallery-preparation-v1.webp
+- image: /images/coating-metal-gallery-substrate-v3.webp
   title: Metal roof surface preparation — illustration
   alt: 'Illustration: Metal roof surface preparation'
-- image: /images/coating-metal-gallery-roller-v1.webp
+- image: /images/coating-metal-gallery-rolling-v3.webp
   title: Roller application on metal roofing — illustration
   alt: 'Illustration: Roller application on metal roofing'
-- image: /images/coating-metal-gallery-flashing-v2.webp
-  title: Reinforced metal roof lap detail — illustration
-  alt: 'Illustration: Reinforced metal roof lap detail'
+- image: /images/coating-metal-gallery-finished-v3.webp
+  title: Coated metal roof — illustration
+  alt: 'Coated metal roof — illustration'
 spec_table:
   - label: "Material Base"
     value: "Premium Acrylic Polymer Emulsion"
@@ -65,16 +63,6 @@ applications:
     text: "The ideal solution for factories, warehouses, and logistics centers with corrugated metal roofing."
   - title: "Metal Gutters & Flashing"
     text: "Seals complex detail areas where traditional membranes are difficult to install."
-  - title: "Rust Prevention"
-    text: "Functions as a protective topcoat to stop oxidation and maintain the structural integrity of the steel."
-
-features:
-  - title: "Water-Based & Eco-Friendly"
-    text: "Non-toxic, low VOC, and safe for applicators and the environment."
-  - title: "Long-Term Elasticity"
-    text: "Remains flexible through extreme thermal expansion and contraction cycles of metal roofs."
-  - title: "Easy Application"
-    text: "Can be applied by brush, roller, or airless spray for high-speed project completion."
 
 technical_data:
   - label: "Tensile Strength"
@@ -113,4 +101,4 @@ related_products:
 
 ## Metal Roof & Steel Structure Waterproof Coating
 
-**TY-SHIELD™ Metal Roof Coating** is an advanced elastomeric system designed to solve the unique challenges of steel structure maintenance. Unlike traditional bitumen products that crack under thermal stress, our acrylic-based formula moves with the roof, providing a durable, solar-reflective shield.
+For metal roof sheets, gutters, flashing and junctions. Include substrate preparation, primer and detail reinforcement in the repair plan.

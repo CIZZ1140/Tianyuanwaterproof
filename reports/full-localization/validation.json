@@ -2,32 +2,32 @@
   "dictionaries": [
     {
       "locale": "th",
-      "strings": 5553,
+      "strings": 5497,
       "numericParity": true
     },
     {
       "locale": "vi",
-      "strings": 5553,
+      "strings": 5497,
       "numericParity": true
     },
     {
       "locale": "es",
-      "strings": 5553,
+      "strings": 5497,
       "numericParity": true
     },
     {
       "locale": "pt-br",
-      "strings": 5553,
+      "strings": 5497,
       "numericParity": true
     },
     {
       "locale": "fr",
-      "strings": 5553,
+      "strings": 5497,
       "numericParity": true
     },
     {
       "locale": "ar",
-      "strings": 5553,
+      "strings": 5497,
       "numericParity": true
     }
   ],

@@ -45,9 +45,9 @@ gallery:
 - image: /images/coating-singlepu-gallery-balcony-v1.webp
   title: PU coating on a protected balcony — illustration
   alt: 'Illustration: PU coating on a protected balcony'
-- image: /images/coating-singlepu-gallery-detail-v1.webp
-  title: Polyurethane coating at concrete junction — illustration
-  alt: 'Illustration: Polyurethane coating at concrete junction'
+- image: /images/single-pu-blue-roof.png
+  title: Blue-coated rooftop
+  alt: 'Blue-coated rooftop'
 spec_table:
   - label: "Product Form"
     value: "Single-component, liquid-applied polyurethane coating"
