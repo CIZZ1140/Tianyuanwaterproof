@@ -1,3 +1,4 @@
+import tpoArticleOverrides from './tpo-types-overrides.json' with { type: 'json' };
 import { parse, serialize } from 'parse5';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
@@ -138,8 +139,9 @@ export async function localizePages(directory) {
       const document = parse(source);
       const dictionary=dictionaries[locale];
       mapStrings(document, value => {
-        if (!dictionary[value]) throw new Error(`Missing ${locale} translation: ${value}`);
-        return dictionary[value];
+        const translation = path === '/blog/tpo-roofing-membrane-types-procurement-guide/' ? (tpoArticleOverrides[locale]?.[value] ?? dictionary[value]) : dictionary[value];
+        if (!translation) throw new Error(`Missing ${locale} translation: ${value}`);
+        return translation;
       });
       let productName = '';
       if (path.startsWith('/products/') && path !== '/products/') {
